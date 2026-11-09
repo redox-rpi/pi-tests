@@ -50,23 +50,74 @@ The systemd user service `redox-serial.service` records everything to
 
 ## Stable image
 
-Whenever no test runs, the stable image is staged in `/srv/tftp/redox`. It
-is the newest build of redox-rpi main that passed `pi-test.py` in the
-nightly run. `/srv/tftp/stable` points to its copy in
-`/srv/tftp/backup-<build ID>/`. Restore it after a test:
+<!-- stable-image: written by scripts/update-stable.sh -->
+Staged on the TFTP server whenever no test runs: `v0.4.0-dev-819-gde8aa6e5+x9f76`, tested
+2026-11-09 with `scripts/pi-test.py` ([report](reports/stable-2026-11-09.md), starts:
+0 of 300 failed). A copy is in `/srv/tftp/backup-v0.4.0-dev-819-gde8aa6e5+x9f76/`, and
+`/srv/tftp/stable` points to it.
+<!-- /stable-image -->
+
+The stable image is the newest build of redox-rpi main that passed
+`pi-test.py` in the nightly run. Restore it after a test:
 
 ```bash
 cp -p /srv/tftp/stable/* /srv/tftp/redox/
 ```
 
-then reset the Pi. The current build ID and the nightly's rules are in
-redox-rpi [docs/test-plan.md, "Stable image"](https://github.com/redox-rpi/redox-rpi/blob/main/docs/test-plan.md#stable-image)
-until the switch-over. Each nightly report is in `reports/stable-<date>.md`.
+then reset the Pi. Older stable images stay in `/srv/tftp/backup-<build ID>/`.
 
-**The Pi may reboot at night.** At 03:30 UTC `scripts/update-stable.sh`
-builds origin/main, stages it, resets the Pi and runs `pi-test.py`. It
-skips the night if a row is marked **on the Pi**. Keep 03:15–04:15 UTC free
-of tests, and mark a row that runs overnight **on the Pi** (or `paused`).
+### Nightly update
+
+**The Pi may reboot at night.** Every night at 03:30 UTC the build host runs
+redox-rpi [`scripts/update-stable.sh`](https://github.com/redox-rpi/redox-rpi/blob/main/scripts/update-stable.sh)
+(systemd user timer `redox-stable.timer`) from its clone `~/redox-rpi-stable`:
+
+1. It stops if `patches/`, `config/`, `scripts/` and `tools/` on redox-rpi
+   `origin/main` are unchanged since the stable image's commit, or if a row
+   in [queue.md](queue.md) on this repository's main is marked **on the Pi**.
+   A test that runs over night must be marked so, or `paused`. Keep
+   03:15–04:15 UTC free of tests.
+2. It builds redox-rpi `origin/main` with the options in
+   [config/stable-image.conf](https://github.com/redox-rpi/redox-rpi/blob/main/config/stable-image.conf),
+   stages it, resets the Pi and runs `scripts/pi-test.py`.
+3. Pass: the image becomes the stable image. The script backs it up,
+   updates the block above, writes the report to `reports/stable-<date>.md`
+   and pushes both to this repository's main (clone `~/pi-tests-stable`).
+4. Fail: the previous stable image is staged again, and the redox-rpi issue
+   "Nightly: main fails on the Pi" (`topic:ci`, `needs:pi`) gets the build ID
+   and the failing checks.
+
+Logs: `~/redox-rpi/logs/stable/<date>.log` on the build host. Run it by hand
+by marking its queue row N **on the Pi** and running
+`scripts/update-stable.sh --force --taken N` (`--force`: build even without
+changes; `--taken N`: row N is this run, any other test on the Pi still
+stops it; `--no-push`: no push, no issue).
+
+### Nightly visit images
+
+Images for tests with a person at the Pi are built every night after the
+stable image ([redox-rpi ci.md](https://github.com/redox-rpi/redox-rpi/blob/main/docs/topics/ci.md#nightly-visit-images)),
+one per line in [config/visit-images.conf](https://github.com/redox-rpi/redox-rpi/blob/main/config/visit-images.conf).
+A row that needs one writes "nightly visit `desktop`" (the image's name) in
+its Image column instead of a build ID; http://homenodellm:8080/visit/ then
+lists the row with the image, so a tester at the Pi sees what to check.
+Before the test, check that the image is OK and new enough, then stage it
+like the stable image:
+
+```bash
+cat /srv/tftp/visit/status.txt /srv/tftp/visit/desktop/latest/visit.txt
+cp -p /srv/tftp/visit/desktop/latest/redox/* /srv/tftp/redox/
+```
+
+Write the build ID from `/srv/tftp/visit/desktop/latest/BUILD_ID` into the
+report. An image with `--sdcard` in the config is also on the image server
+as family `redox-rpi-visit-<name>`; the tester flashes the newest build with
+`sudo swiftflash redox:redox-rpi-visit-<name>`.
+
+**SD images in a row:** publish them with redox-rpi `scripts/publish-sdcard.sh`
+and write the SwiftFlash command it prints into the row, for example "For
+the person: `sudo swiftflash redox:redox-rpi-openfw-3bp`" (the newest build
+of that family), and the file name when the test needs exactly that build.
 
 ## Images
 
