@@ -10,10 +10,11 @@ Owner: verification and validation (V&V, the Pi test agent). The coordinator
 sets the order of the queue. The maintainer decided on 2026-11-09 (RFC 0002
 phase 2) that V&V pushes to `main` here directly, without pull requests.
 
-> **Status: being set up.** Until the redox-rpi pull request that points
-> `docs/test-plan.md` here is merged, the live queue is still
-> [docs/test-plan.md](https://github.com/redox-rpi/redox-rpi/blob/main/docs/test-plan.md).
-> [queue.md](queue.md) is a copy, and nobody adds rows to it yet.
+Since 2026-11-10 ([redox-rpi PR #318](https://github.com/redox-rpi/redox-rpi/pull/318))
+this is the only test queue. redox-rpi `docs/test-plan.md` and
+`docs/test-reports.md` point here, and the nightly stable run
+(`scripts/update-stable.sh`) reads [queue.md](queue.md) and writes to
+[lab.md](lab.md) and `reports/stable-<date>.md`.
 
 ## What is where
 
