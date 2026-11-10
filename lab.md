@@ -10,7 +10,7 @@ internet.
 
 | Board | Use | How it boots | Notes |
 |---|---|---|---|
-| Raspberry Pi 3B+ (rev `0x00a020d3`, 1 GiB) | the test Pi: every automated row and most person tests | network boot from homenodellm (`/srv/tftp/redox`), netboot card with the U-Boot boot menu; or an SD card for card tests | LAN7800 Ethernet, IP 192.168.178.148, devsh on port 2323 in test images; serial console on homenodellm; HDMI to the NanoKVM |
+| Raspberry Pi 3B+ (rev `0x00a020d3`, 1 GiB) | the test Pi: every automated row and most person tests | network boot from homenodellm (`/srv/tftp/redox`), through the boot selector card (since 2026-11-10, [#313](reports/313.md): our serial monitor as `bootcode.bin`; Enter within 5 s keeps it open, otherwise it chains Broadcom's code; `bootcode-broadcom.bin` on the card is the way back); or an SD card for card tests | LAN7800 Ethernet, IP 192.168.178.148, devsh on port 2323 in test images; serial console on homenodellm; HDMI to the NanoKVM |
 | Raspberry Pi Zero 2 W | second board, release checks | SD card (`--zero2w` images) | network through a USB hub with an RTL8153 adapter; tested from the card for v0.4.0-rc2 (row 286) |
 | Raspberry Pi 400 | coming soon | | port work on the `pi400` branches ([#311](https://github.com/redox-rpi/redox-rpi/issues/311)); not on the test network yet |
 
