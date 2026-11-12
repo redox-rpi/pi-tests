@@ -76,3 +76,10 @@
 {"date": "2026-11-12", "build": "v0.5.0-dev-104-g927c7b7d+x4f8a", "source": "row 362 (A)", "kind": "boot", "devsh_s": 1.3, "login_s": 35.5}
 {"date": "2026-11-12", "build": "v0.5.0-dev-108-g16eabcda+x4f8a", "source": "row 362 (B)", "kind": "boot", "devsh_s": 1.3, "login_s": 35.9}
 {"date": "2026-11-12", "build": "v0.5.0-dev-203-gbf356d8a+x1570", "source": "row 369", "kind": "boot", "devsh_s": 1.4, "login_s": 37.9}
+{"date": "2026-11-12", "build": "v0.5.0-dev-188-g30e580f2+x2d42", "source": "row 370", "kind": "boot", "devsh_s": 1.4, "login_s": 36.4}
+{"date": "2026-11-12", "build": "v0.5.0-dev-195-g3d09ac81+x9040", "source": "row 379", "kind": "boot", "devsh_s": 1.3, "login_s": 36.5}
+{"date": "2026-11-12", "build": "v0.5.0-dev-195-g3d09ac81+x9040", "source": "row 379 (after freeze)", "kind": "boot", "devsh_s": 1.3, "login_s": 37.2}
+{"date": "2026-11-12", "build": "v0.5.0-dev-195-g3d09ac81+x9040", "source": "row 379 (after freeze)", "kind": "boot", "devsh_s": 1.3, "login_s": 36.5}
+{"date": "2026-11-12", "build": "v0.5.0-dev-188-g3c13d3f2+xc1ab", "source": "row 376", "kind": "boot", "devsh_s": 1.3, "login_s": 36.5}
+{"date": "2026-11-12", "build": "v0.5.0-dev-182-g88cfa36f+x95b6", "source": "row 378 (before)", "kind": "boot", "devsh_s": 1.3, "login_s": 36.3}
+{"date": "2026-11-12", "build": "v0.5.0-dev-183-ge15311fd+x95b6", "source": "row 378 (after)", "kind": "boot", "devsh_s": 1.3, "login_s": 36.1}
