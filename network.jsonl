@@ -66,3 +66,5 @@
 {"date": "2026-11-12", "build": "v0.5.0-dev-103-g08bc7239+xb4a3", "source": "row 352", "kind": "boot", "devsh_s": null, "login_s": 36.3}
 {"date": "2026-11-12", "build": "v0.5.0-dev-106-g0e7b4571+xb4a3", "source": "row 352b", "kind": "boot", "devsh_s": 1.3, "login_s": 35.9}
 {"date": "2026-11-12", "build": "v0.5.0-dev-110-gcd9cee2f+x097a", "source": "row 355", "kind": "boot", "devsh_s": 1.3, "login_s": 36.4}
+{"date": "2026-11-12", "build": "v0.5.0-dev-102-g0d83238a+x6f6f", "source": "row 354", "kind": "boot", "devsh_s": 1.3, "login_s": 36.3}
+{"date": "2026-11-12", "build": "v0.5.0-dev-104-gd87d12d3+x6f6f", "source": "row 354", "kind": "boot", "devsh_s": 1.3, "login_s": 36.1}
