@@ -62,3 +62,4 @@
 {"date": "2026-11-12", "build": "v0.5.0-dev-86-gd4571835+x42c6", "source": "row 348", "kind": "boot", "devsh_s": 1.4, "network": true, "stuck": 0, "login_s": 36.4}
 {"date": "2026-11-12", "build": "v0.5.0-dev-86-gd4571835+x42c6", "source": "row 348", "kind": "boot", "devsh_s": 1.4, "network": true, "stuck": 0, "login_s": 39.4}
 {"date": "2026-11-12", "build": "v0.5.0-dev-86-gd4571835+x42c6", "source": "row 348", "kind": "boot", "devsh_s": 1.4, "network": true, "stuck": 0, "login_s": 36.8}
+{"date": "2026-11-12", "build": "v0.5.0-dev-104-g684e11ed+x42c6", "source": "row 350", "kind": "boot", "devsh_s": 1.2, "login_s": 35.9}
