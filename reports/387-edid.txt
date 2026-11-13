@@ -1,0 +1,25 @@
+vc4d: edid: DDC controller at 0x3f805000
+vc4d: edid: raw 000: 00 ff ff ff ff ff ff 00 4e 04 01 33 15 00 00 00
+vc4d: edid: raw 010: 1e 23 01 03 80 30 1b 78 2a 69 25 a3 5b 50 a3 27
+vc4d: edid: raw 020: 11 50 54 a5 4b 00 d1 c0 81 80 01 01 01 01 01 01
+vc4d: edid: raw 030: 01 01 01 01 01 01 02 3a 80 18 71 38 2d 40 58 2c
+vc4d: edid: raw 040: 45 00 dc 0c 11 00 00 1e 00 00 00 ff 00 4e 61 6e
+vc4d: edid: raw 050: 6f 4b 56 4d 0a 20 20 20 20 20 00 00 00 fc 00 4e
+vc4d: edid: raw 060: 61 6e 6f 4b 56 4d 0a 20 20 20 20 20 00 00 00 fd
+vc4d: edid: raw 070: 00 38 4c 1e 53 11 00 0a 20 20 20 20 20 20 01 f5
+vc4d: edid: raw 080: 02 03 11 30 46 04 1f 14 13 01 10 65 03 0c 00 10
+vc4d: edid: raw 090: 00 02 3a 80 18 71 38 2d 40 58 2c 45 00 dc 0c 11
+vc4d: edid: raw 0a0: 00 00 1e 01 1d 00 72 51 d0 1e 20 6e 28 55 00 dc
+vc4d: edid: raw 0b0: 0c 11 00 00 1e 00 00 00 00 00 00 00 00 00 00 00
+vc4d: edid: raw 0c0: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+vc4d: edid: raw 0d0: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+vc4d: edid: raw 0e0: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+vc4d: edid: raw 0f0: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 da
+vc4d: edid: PASS: SPD product 0x3301 serial 21 "NanoKVM", EDID 1.3, made week 30 of 2025, digital, 48x27 cm, 1 extension(s)
+vc4d: edid: preferred 1920x1080@60.000 Hz, pixel clock 148.500 MHz, h 1920 fp 88 sync 44 bp 148 (total 2200), v 1080 fp 4 sync 5 bp 36 (total 1125), sync ++
+vc4d: edid: range 56-76 Hz vertical, 30-83 kHz horizontal, pixel clock up to 170 MHz
+vc4d: edid: established 720x400@70 640x480@60 640x480@75 800x600@60 800x600@75 1024x768@60 1024x768@75 1280x1024@75
+vc4d: edid: standard 1920x1080@60 1280x1024@60
+vc4d: edid: CEA-861 rev 3, HDMI, video codes 4=1280x720@60 31=1920x1080@50 20=1920x1080i@50 19=1280x720@50 1=640x480@60 16=1920x1080@60
+vc4d: edid: CEA detailed 1920x1080@60.000 Hz, pixel clock 148.500 MHz, h 1920 fp 88 sync 44 bp 148 (total 2200), v 1080 fp 4 sync 5 bp 36 (total 1125), sync ++
+vc4d: edid: CEA detailed 1280x720@60.000 Hz, pixel clock 74.250 MHz, h 1280 fp 110 sync 40 bp 220 (total 1650), v 720 fp 5 sync 5 bp 20 (total 750), sync ++
