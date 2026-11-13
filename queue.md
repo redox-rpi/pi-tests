@@ -135,10 +135,10 @@ itself.
 
 | Date | Test | Build ID | Result |
 |---|---|---|---|
-x
-401
-400
-399
+| 2026-11-13 | 399 (firmware) #230 M3 step 4l: where rpi-firmwared stops under our firmware (rpi-open-firmware e043500, fwdebug-230), Pi 3B+ | `bootcode-m3-20261113p.bin` + `redox-3bp-20261111.dtb`, `v0.5.0-dev-185-g2d11a18c+x34b9` | **found**: last line `rpi-firmwared dbg: wrote 0xc1d66008` (first call, tag 0x00030007, status 0 before), then silence, no 1 s timeout line; VPU never sees it: `mbox: alive` to 600 s, 9 requests, both status words 40000000; no panic. [Report](reports/399-fw.md) |
+| 2026-11-13 | 401 #407 nc exit status, netutils from source (PR #408), Pi 3B+ | `v0.5.0-dev-192-gb1628be6+x42c6` | **pass**: refused port exit 1 (error on stderr only), `nc -x` exit 1 (`invalid argument -x`), transfer exit 0 with 1035 bytes and empty stderr; ping 5/5; ifconfig and `ifconfig eth0` show 192.168.178.148/24 (MAC zeros, known; `ifconfig eth0` 5.1 s); pi-test all pass, no panic. [Report](reports/401.md) |
+| 2026-11-13 | 400 #404 nc gets the whole reply (draft PR #406 + #403), Pi 3B+ | `v0.5.0-dev-195-g03a36568+x42c6` | **pass**: nc test 5 of 5 PASS, 1035 bytes in 60 of 60 rounds (row 398: 35 bytes in 7-12 of 12); refused port ends in 0.5 s with `Transport endpoint is not connected` (exit status 0, noted); pi-test all pass, no panic. [Report](reports/400.md) |
+| 2026-11-13 | 399 #335 Sopwith sound with the A3 sleep (PR #354 + main), Pi 3B+ | `v0.5.0-dev-190-gd4bb5119+x6ab3` | **partial**: steps 1-3 and 5 pass (idle yes/sleeps 1 after desktop, Sopwith wakes the driver, loud_chunks 133 to 5851, dma_faults 0, underruns 1 from boot, SDL redox audio driver, pi-test all pass, no panic); **step 4 fails as written**: `kill` (SIGTERM) does not end Sopwith; with `kill -KILL` it ends and the driver sleeps again in 10 s (idle yes, sleeps 1 to 2). [Report](reports/399.md) |
 | 2026-11-13 | 398 #401 kill-before-block fix (PR #403, scheme-dead-reply), Pi 3B+ | `v0.5.0-dev-210-g4a2c0c5c+xa030` | **pass**: nc test PASS 5 of 5, no 48-byte reply-of (one 499-byte, nothing lost); chaos 30 rounds 0 failed; pi-test pass, no panic. nc.bin often 35 bytes (data not arriving), noted. [Report](reports/398.md) |
 | 2026-11-13 | 383 TinyCC VC4 `vc4-opt` step 2 (register variables), real VPU speed, Pi 3B+ | G4 / L2 / L3 (vc4-tcc 68e5831f) | **pass**: `fl START.ELF` G4 3.68 s, L2 8.16 s, **L3 4.18 s** (1.95× faster than L2, 1.14× G4), same crc32 everywhere; L3 extra checks and go test ok, chain back to G4 ok. [Report](reports/383.md) |
 | 2026-11-13 | 397 #401 where the rare lost line goes (scheme-dead-reply), Pi 3B+ | `v0.5.0-dev-206-gba2e5ad2+xa030` | **found**: 2 lost lines in 3 nc runs, each at the same second as `scheme 40: reply of 48 bytes for a caller being killed`; no other reply-of lines; pi-test pass, no panic. [Report](reports/397.md) |
