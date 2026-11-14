@@ -136,7 +136,7 @@ itself.
 - `rate_last_measured_hz` and `rate_window_hz` within 1 % of 44100 in every stats
 - `mai_underflow_polls` and `dma_faults` stay 0
 - `loud_chunks` grows, `TONE 0`, no panic
-Note `long_gaps`. Restore stable afterwards. Results to reports/418.md and the audio session. QEMU 2026-11-14: 18/18. | audio session (#423), Pi test agent | `v0.5.0-dev-232-g1bae7cec+x0304` (branch `hdmi-audio`, `--experiment hdmi-audio`, plus the test experiments), homenodellm `~/redox-rpi-audio/keep/hdmi423b/` | test Pi 3B+, network, serial console, NanoKVM on HDMI (as now) | queued |
+Note `long_gaps`. Restore stable afterwards. Results to reports/418.md and the audio session. QEMU 2026-11-14: 18/18. | audio session (#423), Pi test agent | `v0.5.0-dev-232-g1bae7cec+x0304` (branch `hdmi-audio`, `--experiment hdmi-audio`, plus the test experiments), homenodellm `~/redox-rpi-audio/keep/hdmi423b/` | test Pi 3B+, network, serial console, NanoKVM on HDMI (as now) | **on the Pi** (2026-11-14, Pi test agent) |
 
 ## Done
 
