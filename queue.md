@@ -133,7 +133,7 @@ itself.
 - `pixel_hz 148500000 pllh` (the NanoKVM's 1080p60, within 0.1 %), and the boot line says `(pllh)`
 - `cts` about 0x000243fe, as in row 418
 - the rest as in row 418: `hdmi-dma`, `hdmi_mode yes`, `infoframe_active yes`, `rate_settled yes`, rates within 1 % of 44100, `mai_underflow_polls` and `dma_faults` 0, `TONE 0`, no panic
-**If** `pixel_hz` is a different value or `default`: copy the `pllh ctrl=… frac=… ana1=… pix=…` line, which is the result; that alone doesn't fail the row. Restore stable afterwards. Results to reports/419.md and the audio session. QEMU 2026-11-14: 18/18. | audio session (#423), Pi test agent | `v0.5.0-dev-233-g8221e7a8+x0304` (branch `hdmi-audio`, `--experiment hdmi-audio`, plus the test experiments), homenodellm `~/redox-rpi-audio/keep/hdmi423c/` | test Pi 3B+, network, serial console, NanoKVM on HDMI (as now) | queued |
+**If** `pixel_hz` is a different value or `default`: copy the `pllh ctrl=… frac=… ana1=… pix=…` line, which is the result; that alone doesn't fail the row. Restore stable afterwards. Results to reports/419.md and the audio session. QEMU 2026-11-14: 18/18. | audio session (#423), Pi test agent | `v0.5.0-dev-233-g8221e7a8+x0304` (branch `hdmi-audio`, `--experiment hdmi-audio`, plus the test experiments), homenodellm `~/redox-rpi-audio/keep/hdmi423c/` | test Pi 3B+, network, serial console, NanoKVM on HDMI (as now) | **on the Pi** (2026-11-14, Pi test agent) |
 
 ## Done
 
