@@ -16,7 +16,7 @@ on the SD card's data partition), `starts` (dynamically linked `ls` and
 Run on the build host, with the Pi netbooted from it:
 
 ```bash
-scripts/pi-test.py 192.168.178.148 --manifest build/manifests/netboot-latest.toml \
+scripts/pi-test.py <Pi 3B+> --manifest build/manifests/netboot-latest.toml \
     --report docs/test-reports.md
 ```
 
@@ -233,7 +233,7 @@ sdhost in high speed mode, to compare the two drivers.
 Real Pi 3B+ (`b8:27:eb:08:e0:aa`) without SD card, test #10 of the
 [test plan](../queue.md). Branch `firmware-netboot` (`7fbb950`): the TFTP
 root holds the Pi firmware and U-Boot built with
-`scripts/build-uboot.sh rpi-net 192.168.178.120`
+`scripts/build-uboot.sh rpi-net <host>`
 (`scripts/netboot-firmware.sh`), and dnsmasq runs as a proxy DHCP server
 next to the FritzBox (`config/dnsmasq-pxe-proxy.conf`). The build host is on
 Wi-Fi. Serial console and the dnsmasq log were recorded; a person pulled
@@ -746,7 +746,7 @@ Part A, automated:
 | sdcard | pass | write, read back, delete on /scheme/data |
 | starts | pass | 0 of 300 failed |
 | hubs | info | hub 1 (4 ports) and hub 2 (3 ports, the LAN7515's) switch power per port; the external hub with the keyboard (05e3:0610) is ganged |
-| port cycles | pass | `scripts/pi-hotplug-test.sh 192.168.178.148 3`: 3 of 3 times the LAN7800's port (hub 2 port 1) lost power, disconnected after 102–104 ms, was found again and took the network back; devshd answered after 7, 9 and 10 s |
+| port cycles | pass | `scripts/pi-hotplug-test.sh <Pi 3B+> 3`: 3 of 3 times the LAN7800's port (hub 2 port 1) lost power, disconnected after 102–104 ms, was found again and took the network back; devshd answered after 7, 9 and 10 s |
 | dwc2d CPU | info | 2.84 s user + 2.98 s system after boot, `pi-test.py` and the 300 starts |
 
 Part B, with a person:
@@ -1051,7 +1051,7 @@ Test 47 ([#27](https://github.com/redox-rpi/redox-rpi/issues/27),
 `net-pi-test`. Extra checks; homenodellm is on Wi-Fi (`wlp13s0`) and has no
 `ping`, so the pings used an unprivileged ICMP socket from Python:
 
-- `/scheme/netcfg/ifaces/eth0/addr/list`: `192.168.178.148/24`,
+- `/scheme/netcfg/ifaces/eth0/addr/list`: `<Pi 3B+>/24`,
   `fe80::ba27:ebff:fe08:e0aa/64`, `fdeb:d4ef:a7ac:0:ba27:ebff:fe08:e0aa/64`
   (SLAAC from the Fritz!Box's ULA prefix). **No global `2a02:…` address**,
   also after 9.5 minutes, and no IPv6 default route in
@@ -1064,7 +1064,7 @@ Test 47 ([#27](https://github.com/redox-rpi/redox-rpi/issues/27),
 - Ping from homenodellm: `fe80::ba27:ebff:fe08:e0aa%wlp13s0` 3 of 3
   (2–4 ms), `fdeb:d4ef:a7ac:0:ba27:ebff:fe08:e0aa` 3 of 3; no global
   address to ping.
-- `mdns-query.py redox-rpi.local`: `A 192.168.178.148` from the Pi (ttl
+- `mdns-query.py redox-rpi.local`: `A <Pi 3B+>` from the Pi (ttl
   120), also from the Fritz!Box's cache. `mdns-query.py _devsh._tcp.local
   PTR`: `redox-rpi._devsh._tcp.local`; asked for SRV: `port 2323 target
   redox-rpi.local`, TXT empty: **pass**.
@@ -1099,14 +1099,14 @@ scripts `udp-echo.py` and `mdns-query.py` from `mdns6`:
 - `net6 resolve example.com` in 0.22 s: two IPv4 and two IPv6 addresses
   (`2606:4700:10::ac42:93f3`, `2606:4700:10::6814:179a`): **pass**.
 - `net6 udp`: to homenodellm's ULA `[fdeb:…:4a45:e6ff:fea0:b063]:7777`
-  and to `192.168.178.120:7777` the reply comes back (the echo saw the Pi's
+  and to `<host>:7777` the reply comes back (the echo saw the Pi's
   ULA and IPv4 address): **pass**. To homenodellm's global
   `[2a02:590:1507:c201:4a45:e6ff:fea0:b063]:7777`: `receive: Connection
   timed out`, nothing reached the echo (no global address or IPv6 route on
   the Pi).
 - Ping from homenodellm to the Pi's ULA: 3 of 3; no `2a02` address to ping.
 - `mdns-query.py redox-rpi.local AAAA -6 wlp13s0`: the Pi answers over
-  IPv6 with AAAA `fe80::…` and `fdeb:…` plus A `192.168.178.148`;
+  IPv6 with AAAA `fe80::…` and `fdeb:…` plus A `<Pi 3B+>`;
   `mdns-query.py redox-rpi.local` over IPv4: A plus both AAAA as
   additional records: **pass** (the LAN7800 takes `33:33:00:00:00:fb`).
 - Standard checks pass; only the known `pcid` panic in the serial log.
@@ -1130,7 +1130,7 @@ Same image as the QEMU check above, real Pi 3B+ over netboot.
 
 Boot log: none of the `pcid` panic, `pcid-spawner`, `audiod` or `rtcd`
 lines; no other failed service. `dwc2d: LAN78xx link up`, DHCP bound to
-192.168.178.148. `ps` over devsh: no `pcid`, `audiod` or `rtcd` process.
+<Pi 3B+>. `ps` over devsh: no `pcid`, `audiod` or `rtcd` process.
 
 | Check | Result | Detail |
 |---|---|---|
@@ -1495,7 +1495,7 @@ Built 2026-10-29T14:09:20Z, `libc.so` `d19d472ff4ba92c2…`, real Pi 3B+ over ne
 Test 58 ([#49](https://github.com/redox-rpi/redox-rpi/issues/49)), branch
 `mqtt`; mosquitto on homenodellm (`~/mqtt-broker/pi-test-broker.sh`).
 
-- `echo 192.168.178.120 > /etc/mqtt-host`; `mqtt-pub -t redox/pi/hello -q 1
+- `echo <host> > /etc/mqtt-host`; `mqtt-pub -t redox/pi/hello -q 1
   -m hello` exit 0, the broker has `redox/pi/hello hello`: **pass**.
 - `mosquitto_pub … -t redox/cmd/x -m to-pi` while `mqtt-sub -t 'redox/cmd/#'
   -q 1 -v -C 1` runs on the Pi: prints `redox/cmd/x to-pi`, exit 0: **pass**.
@@ -1531,7 +1531,7 @@ Test 65 ([#49](https://github.com/redox-rpi/redox-rpi/issues/49)), branch
 
 - The boot took longer than the others: the `redox-rpi v…` banner came 80 s
   after `network boot` (others about 22 s).
-- `echo 192.168.178.120 > /etc/mqtt-host`, then nothing reached the broker
+- `echo <host> > /etc/mqtt-host`, then nothing reached the broker
   for 2 minutes. As in test 58, the first `ha-bridge` run (PIDs 38, 42,
   started by timerd at 17:48, before the host was set) hung, and timerd
   logged `ha-bridge: still running, skipped this run` every minute. After
@@ -1812,15 +1812,15 @@ Real Pi 3B+ over netboot. Experiment: `netstack-multi`. test 74 ([#53](https://g
 image `~/redox-rpi-zrtl/keep/nsm-v0.3.0-dev-261-gaca5de2+x368f.img`, staged
 with stable's bootloader and reset over the serial console.
 
-- Boot: `DHCP: eth0 got 192.168.178.148/24` and
-  `DHCP: default route via 192.168.178.1 (eth0)`: **pass**.
-- Before testnetd: eth0 `192.168.178.148/24`; routes `default via
-  192.168.178.1 dev eth0`, `127.0.0.0/8 dev loopback`, `192.168.178.0/24 dev eth0`.
+- Boot: `DHCP: eth0 got <Pi 3B+>/24` and
+  `DHCP: default route via <router> (eth0)`: **pass**.
+- Before testnetd: eth0 `<Pi 3B+>/24`; routes `default via
+  <router> dev eth0`, `127.0.0.0/8 dev loopback`, `<LAN>/24 dev eth0`.
 - `/usr/lib/drivers/testnetd &` over devsh: within a few seconds the serial log
   has `DHCP: eth1 got 10.0.9.2/24` (the `network.test0 registered` line went to
   devsh, not to the serial log). eth1 addr `10.0.9.2/24`; routes still have
-  `default via 192.168.178.1 dev eth0` plus `10.0.9.0/24 dev eth1`: **pass**.
-- `ping -c 3 10.0.9.1`: 3/3, about 3 ms. `ping -c 3 192.168.178.1`: 3/3,
+  `default via <router> dev eth0` plus `10.0.9.0/24 dev eth1`: **pass**.
+- `ping -c 3 10.0.9.1`: 3/3, about 3 ms. `ping -c 3 <router>`: 3/3,
   0.8–1.7 ms: **pass**.
 - `/tmp/testnetd.log`: `dhcp 2 dhcp_foreign 0 foreign_src 0 ping 3`: no eth0
   traffic leaked onto eth1.
@@ -1830,10 +1830,10 @@ with stable's bootloader and reset over the serial console.
   `smolnetd` lines; the two `DHCP client bound` lines are U-Boot's netboot):
 
 ```
-DHCP client bound to address 192.168.178.148 (6 ms)
-DHCP client bound to address 192.168.178.148 (2 ms)
-DHCP: eth0 got 192.168.178.148/24
-DHCP: default route via 192.168.178.1 (eth0)
+DHCP client bound to address <Pi 3B+> (6 ms)
+DHCP client bound to address <Pi 3B+> (2 ms)
+DHCP: eth0 got <Pi 3B+>/24
+DHCP: default route via <router> (eth0)
 DHCP: eth1 got 10.0.9.2/24
 ```
 
@@ -1887,13 +1887,13 @@ Stable image restored afterwards.
 Real Pi 3B+ over netboot. Experiments: `ha-bridge`, `ldso-diagnostics`, `mqtt`, `mqtt-tls-test`, `timerd`, `timesync`. test 76 ([#56](https://github.com/redox-rpi/redox-rpi/issues/56) MQTT over TLS), Pi test agent
 
 **TLS works; fails on the ha-bridge start and a memory loss.** Broker
-`~/mqtt-broker/pi-test-broker-tls.sh` (TLS 192.168.178.120:8883, plain :1883);
+`~/mqtt-broker/pi-test-broker-tls.sh` (TLS <host>:8883, plain :1883);
 capture saved as `~/pitest-tools/broker76.out` on homenodellm.
 
 - Standard checks pass, manifest matches, 0 of 300 starts failed.
 - `date -u`: `Fri Oct 30 07:10:12 UTC 2026` (after the CA date).
   `head -1 /etc/mqtt-ca.crt`: `-----BEGIN CERTIFICATE-----`. Then
-  `echo 192.168.178.120 > /etc/mqtt-host` at 07:10:24.
+  `echo <host> > /etc/mqtt-host` at 07:10:24.
 - **Fail:** no `ha-bridge: 6 sensors announced …` within 30 s, and no
   availability or discovery. The image starts ha-bridge only from timerd, every
   minute, without `-d` (`/usr/lib/timer.d/ha-bridge.toml`, `cmd = "ha-bridge"`).
@@ -2010,7 +2010,7 @@ Real Pi 3B+ over netboot. Experiments: `timesync`, `rtl8152`, `pty-sigint`. test
 `~/redox-rpi-relibc/keep/netboot-v0.3.0-dev-236-gd47707f+x810f.img`.
 
 - Standard checks pass, 0 of 300 starts failed.
-- `patches/experiments/pty-sigint/ctrlc-test.py 192.168.178.148 --rounds 20`
+- `patches/experiments/pty-sigint/ctrlc-test.py <Pi 3B+> --rounds 20`
   (from `origin/pty-sigint`): rounds 1–10 Ctrl-C after 1 s, rounds 11–20
   after 3 s, all `stopped by SIGINT`. `Ctrl-C at the prompt: shell still
   answers`. `PASS: 20 of 20 stopped`.
@@ -2040,7 +2040,7 @@ Real Pi 3B+ over netboot. Experiments: `timesync`, `rtl8152`, `sshd`. test 81 ([
   temporary files: **pass**.
 - Standard checks pass, 0 of 300 starts failed.
 - Test key put into `/home/root/.ssh/authorized_keys` over devsh. `ssh
-  root@192.168.178.148 'echo OK; id; uname -a'`: `OK`, `uid=0(root)
+  root@<Pi 3B+> 'echo OK; id; uname -a'`: `OK`, `uid=0(root)
   gid=0(root)`, `Redox redox 0.5.12 … aarch64 Redox`, **1.3 s** including the
   login: **pass**.
 - `ssh-session.exp` (host and port set to the Pi, `-p 22`, key file): prompt,
@@ -2141,7 +2141,7 @@ Stable image restored afterwards.
 Real Pi 3B+ over netboot. Experiments: `timesync`, `pkg-hold`, `pkg-repo`. test 73 ([#44](https://github.com/redox-rpi/redox-rpi/issues/44) our package repository and `pkg update` that replaces files), Pi test agent
 
 **Pass.** Image `~/redox-rpi-boot/keep/repoC-harddrive.img`. `/etc/pkg.d`:
-`40_redox-rpi` = `http://192.168.178.120:8080/pkg`, `50_redox` =
+`40_redox-rpi` = `http://<host>:8080/pkg`, `50_redox` =
 `https://static.redox-os.org/pkg`.
 
 | file | before | after `pkg update --yes` |
@@ -2166,7 +2166,7 @@ Real Pi 3B+ over netboot. Experiments: `timesync`, `pkg-hold`, `pkg-repo`. test 
 - Standard checks after the update and install pass, 0 of 300 starts failed.
   I didn't run a separate standard check before the update; the boot itself
   was normal.
-- The repository at `http://192.168.178.120:8080/pkg` can be used again.
+- The repository at `http://<host>:8080/pkg` can be used again.
 
 Stable image restored afterwards.
 
@@ -2175,7 +2175,7 @@ Stable image restored afterwards.
 Real Pi 3B+ over netboot. Experiments: `timesync`, `welcome`. test 78 ([#24](https://github.com/redox-rpi/redox-rpi/issues/24) first-boot welcome app), Pi test agent
 
 **Pass.** Staged with `~/t18-work/wel-stage/scripts/netboot.sh --server
-192.168.178.120 --tftp-dir /srv/tftp --image ~/t18-work/image-wel/harddrive.img`
+<host> --tftp-dir /srv/tftp --image ~/t18-work/image-wel/harddrive.img`
 (the image's own bootloader and `netboot.scr`). Afterwards the saved stable
 files went back into `/srv/tftp/redox`, including `netboot.cmd`/`netboot.scr`.
 
@@ -2297,7 +2297,7 @@ Stable image restored afterwards.
 
 Real Pi 3B+ over netboot, the stable image already on the Pi. test 92 ([#10](https://github.com/redox-rpi/redox-rpi/issues/10) start loop with crash details, second round, branch `t10-start-loop` 61ea421), Pi test agent
 
-**Pass for the tool.** `scripts/pi-test.py 192.168.178.148 --starts 1000
+**Pass for the tool.** `scripts/pi-test.py <Pi 3B+> --starts 1000
 --serial-log ~/redox-rpi/logs/serial.log --crash-log ~/t10-crash.jsonl --report
 /tmp/t10-report.md`. Copies are on homenodellm in
 `~/pitest-tools/t92-crash.jsonl` and `~/pitest-tools/t92-report.md`.
@@ -2377,12 +2377,12 @@ Failed starts (build `v0.3.0-dev-15-g24fbb96+x9f76`):
 The crash log lines (for #1):
 
 ```
-{"host": "192.168.178.148", "build_id": "v0.3.0-dev-15-g24fbb96+x9f76", "libc": "d4f0dedd5403751a71d75fabd5eaf3caa5e2035b135dcde39f2c64d65b3b1815", "time": "2026-10-30T08:48:29Z", "starts": "51-100", "program": "pwd", "status": "exit 1", "messages": [], "crash": {"kind": "ty=100100", "far": "0x1281dd0", "elr": "0xc15c0c", "esr": "0x92000006", "ec": "0x24", "lr": "0xc03d30", "sp": "0x7ffffffff590", "pid": 144, "cpu": 2, "name": "/usr/bin/pwd", "trace": ["0xc03d30", "0xbcb654", "0xc044a0", "0xbcc6cc", "0xbcd428", "0xc2c6f0", "0xad1038"]}, "serial": ["kernel::arch::aarch64::interrupt::exception:ERROR -- FATAL: Not an SVC induced synchronous exception (ty=100100)", "FAR_EL1: 0x1281dd0", "ELR_EL1: 0000000000C15C0C", "ESR_EL1: 0000000092000006", "kernel::context::signal:INFO -- UNHANDLED EXCEPTION, CPU #2, PID 144, NAME /usr/bin/pwd, CONTEXT 0xfffffe800015eb50"]}
-{"host": "192.168.178.148", "build_id": "v0.3.0-dev-15-g24fbb96+x9f76", "libc": "d4f0dedd5403751a71d75fabd5eaf3caa5e2035b135dcde39f2c64d65b3b1815", "time": "2026-10-30T08:48:29Z", "starts": "101-150", "program": "ls", "status": "exit 1", "messages": [], "crash": {"kind": "ty=100100", "far": "0x1281dd0", "elr": "0xc15c0c", "esr": "0x92000006", "ec": "0x24", "lr": "0xc03d30", "sp": "0x7ffffffff590", "pid": 202, "cpu": 1, "name": "/usr/bin/ls", "trace": ["0xc03d30", "0xbcb654", "0xc044a0", "0xbcc6cc", "0xbcd428", "0xc2c6f0", "0xad1038"]}, "serial": ["kernel::arch::aarch64::interrupt::exception:ERROR -- FATAL: Not an SVC induced synchronous exception (ty=100100)", "FAR_EL1: 0x1281dd0", "ELR_EL1: 0000000000C15C0C", "ESR_EL1: 0000000092000006", "kernel::context::signal:INFO -- UNHANDLED EXCEPTION, CPU #1, PID 202, NAME /usr/bin/ls, CONTEXT 0xfffffe800014c330"]}
-{"host": "192.168.178.148", "build_id": "v0.3.0-dev-15-g24fbb96+x9f76", "libc": "d4f0dedd5403751a71d75fabd5eaf3caa5e2035b135dcde39f2c64d65b3b1815", "time": "2026-10-30T08:48:29Z", "starts": "101-150", "program": "pwd", "status": "exit 1", "messages": [], "crash": {"kind": "ty=100010", "far": "0x1", "elr": "0x1", "esr": "0x8a000000", "ec": "0x22", "lr": "0xbcc7b0", "sp": "0x7ffffffff9d0", "pid": 209, "cpu": 0, "name": "/usr/bin/pwd", "trace": ["0xbcd428", "0xc2c6f0", "0xad1038"]}, "serial": ["kernel::arch::aarch64::interrupt::exception:ERROR -- FATAL: Not an SVC induced synchronous exception (ty=100010)", "FAR_EL1: 0x1", "ELR_EL1: 0000000000000001", "ESR_EL1: 000000008A000000", "kernel::context::signal:INFO -- UNHANDLED EXCEPTION, CPU #0, PID 209, NAME /usr/bin/pwd, CONTEXT 0xfffffe800014c730"]}
-{"host": "192.168.178.148", "build_id": "v0.3.0-dev-15-g24fbb96+x9f76", "libc": "d4f0dedd5403751a71d75fabd5eaf3caa5e2035b135dcde39f2c64d65b3b1815", "time": "2026-10-30T08:48:29Z", "starts": "201-250", "program": "ls", "status": "exit 1", "messages": [], "crash": {"kind": "ty=100100", "far": "0x1281dc8", "elr": "0xc15c0c", "esr": "0x92000006", "ec": "0x24", "lr": "0xc03d30", "sp": "0x7ffffffff590", "pid": 296, "cpu": 0, "name": "/usr/bin/ls", "trace": ["0xc03d30", "0xbcb654", "0xc044a0", "0xbcc6cc", "0xbcd428", "0xc2c6f0", "0xad1038"]}, "serial": ["kernel::arch::aarch64::interrupt::exception:ERROR -- FATAL: Not an SVC induced synchronous exception (ty=100100)", "FAR_EL1: 0x1281dc8", "ELR_EL1: 0000000000C15C0C", "ESR_EL1: 0000000092000006", "kernel::context::signal:INFO -- UNHANDLED EXCEPTION, CPU #0, PID 296, NAME /usr/bin/ls, CONTEXT 0xfffffe800014c730"]}
-{"host": "192.168.178.148", "build_id": "v0.3.0-dev-15-g24fbb96+x9f76", "libc": "d4f0dedd5403751a71d75fabd5eaf3caa5e2035b135dcde39f2c64d65b3b1815", "time": "2026-10-30T08:48:29Z", "starts": "551-600", "program": "ls", "status": "exit 1", "messages": [], "crash": {"kind": "ty=100100", "far": "0x1281dd0", "elr": "0xc15c0c", "esr": "0x92000006", "ec": "0x24", "lr": "0xc03d30", "sp": "0x7ffffffff590", "pid": 665, "cpu": 2, "name": "/usr/bin/ls", "trace": ["0xc03d30", "0xbcb654", "0xc044a0", "0xbcc6cc", "0xbcd428", "0xc2c6f0", "0xad1038"]}, "serial": ["kernel::arch::aarch64::interrupt::exception:ERROR -- FATAL: Not an SVC induced synchronous exception (ty=100100)", "FAR_EL1: 0x1281dd0", "ELR_EL1: 0000000000C15C0C", "ESR_EL1: 0000000092000006", "kernel::context::signal:INFO -- UNHANDLED EXCEPTION, CPU #2, PID 665, NAME /usr/bin/ls, CONTEXT 0xfffffe800014c730"]}
-{"host": "192.168.178.148", "build_id": "v0.3.0-dev-15-g24fbb96+x9f76", "libc": "d4f0dedd5403751a71d75fabd5eaf3caa5e2035b135dcde39f2c64d65b3b1815", "time": "2026-10-30T08:48:29Z", "starts": "801-850", "program": "pwd", "status": "exit 1", "messages": [], "crash": {"kind": "ty=100100", "far": "0x1281dc8", "elr": "0xc15c0c", "esr": "0x92000006", "ec": "0x24", "lr": "0xc03d30", "sp": "0x7ffffffff590", "pid": 893, "cpu": 0, "name": "/usr/bin/pwd", "trace": ["0xc03d30", "0xbcb654", "0xc044a0", "0xbcc6cc", "0xbcd428", "0xc2c6f0", "0xad1038"]}, "serial": ["kernel::arch::aarch64::interrupt::exception:ERROR -- FATAL: Not an SVC induced synchronous exception (ty=100100)", "FAR_EL1: 0x1281dc8", "ELR_EL1: 0000000000C15C0C", "ESR_EL1: 0000000092000006", "kernel::context::signal:INFO -- UNHANDLED EXCEPTION, CPU #0, PID 893, NAME /usr/bin/pwd, CONTEXT 0xfffffe800014c730"]}
+{"host": "<Pi 3B+>", "build_id": "v0.3.0-dev-15-g24fbb96+x9f76", "libc": "d4f0dedd5403751a71d75fabd5eaf3caa5e2035b135dcde39f2c64d65b3b1815", "time": "2026-10-30T08:48:29Z", "starts": "51-100", "program": "pwd", "status": "exit 1", "messages": [], "crash": {"kind": "ty=100100", "far": "0x1281dd0", "elr": "0xc15c0c", "esr": "0x92000006", "ec": "0x24", "lr": "0xc03d30", "sp": "0x7ffffffff590", "pid": 144, "cpu": 2, "name": "/usr/bin/pwd", "trace": ["0xc03d30", "0xbcb654", "0xc044a0", "0xbcc6cc", "0xbcd428", "0xc2c6f0", "0xad1038"]}, "serial": ["kernel::arch::aarch64::interrupt::exception:ERROR -- FATAL: Not an SVC induced synchronous exception (ty=100100)", "FAR_EL1: 0x1281dd0", "ELR_EL1: 0000000000C15C0C", "ESR_EL1: 0000000092000006", "kernel::context::signal:INFO -- UNHANDLED EXCEPTION, CPU #2, PID 144, NAME /usr/bin/pwd, CONTEXT 0xfffffe800015eb50"]}
+{"host": "<Pi 3B+>", "build_id": "v0.3.0-dev-15-g24fbb96+x9f76", "libc": "d4f0dedd5403751a71d75fabd5eaf3caa5e2035b135dcde39f2c64d65b3b1815", "time": "2026-10-30T08:48:29Z", "starts": "101-150", "program": "ls", "status": "exit 1", "messages": [], "crash": {"kind": "ty=100100", "far": "0x1281dd0", "elr": "0xc15c0c", "esr": "0x92000006", "ec": "0x24", "lr": "0xc03d30", "sp": "0x7ffffffff590", "pid": 202, "cpu": 1, "name": "/usr/bin/ls", "trace": ["0xc03d30", "0xbcb654", "0xc044a0", "0xbcc6cc", "0xbcd428", "0xc2c6f0", "0xad1038"]}, "serial": ["kernel::arch::aarch64::interrupt::exception:ERROR -- FATAL: Not an SVC induced synchronous exception (ty=100100)", "FAR_EL1: 0x1281dd0", "ELR_EL1: 0000000000C15C0C", "ESR_EL1: 0000000092000006", "kernel::context::signal:INFO -- UNHANDLED EXCEPTION, CPU #1, PID 202, NAME /usr/bin/ls, CONTEXT 0xfffffe800014c330"]}
+{"host": "<Pi 3B+>", "build_id": "v0.3.0-dev-15-g24fbb96+x9f76", "libc": "d4f0dedd5403751a71d75fabd5eaf3caa5e2035b135dcde39f2c64d65b3b1815", "time": "2026-10-30T08:48:29Z", "starts": "101-150", "program": "pwd", "status": "exit 1", "messages": [], "crash": {"kind": "ty=100010", "far": "0x1", "elr": "0x1", "esr": "0x8a000000", "ec": "0x22", "lr": "0xbcc7b0", "sp": "0x7ffffffff9d0", "pid": 209, "cpu": 0, "name": "/usr/bin/pwd", "trace": ["0xbcd428", "0xc2c6f0", "0xad1038"]}, "serial": ["kernel::arch::aarch64::interrupt::exception:ERROR -- FATAL: Not an SVC induced synchronous exception (ty=100010)", "FAR_EL1: 0x1", "ELR_EL1: 0000000000000001", "ESR_EL1: 000000008A000000", "kernel::context::signal:INFO -- UNHANDLED EXCEPTION, CPU #0, PID 209, NAME /usr/bin/pwd, CONTEXT 0xfffffe800014c730"]}
+{"host": "<Pi 3B+>", "build_id": "v0.3.0-dev-15-g24fbb96+x9f76", "libc": "d4f0dedd5403751a71d75fabd5eaf3caa5e2035b135dcde39f2c64d65b3b1815", "time": "2026-10-30T08:48:29Z", "starts": "201-250", "program": "ls", "status": "exit 1", "messages": [], "crash": {"kind": "ty=100100", "far": "0x1281dc8", "elr": "0xc15c0c", "esr": "0x92000006", "ec": "0x24", "lr": "0xc03d30", "sp": "0x7ffffffff590", "pid": 296, "cpu": 0, "name": "/usr/bin/ls", "trace": ["0xc03d30", "0xbcb654", "0xc044a0", "0xbcc6cc", "0xbcd428", "0xc2c6f0", "0xad1038"]}, "serial": ["kernel::arch::aarch64::interrupt::exception:ERROR -- FATAL: Not an SVC induced synchronous exception (ty=100100)", "FAR_EL1: 0x1281dc8", "ELR_EL1: 0000000000C15C0C", "ESR_EL1: 0000000092000006", "kernel::context::signal:INFO -- UNHANDLED EXCEPTION, CPU #0, PID 296, NAME /usr/bin/ls, CONTEXT 0xfffffe800014c730"]}
+{"host": "<Pi 3B+>", "build_id": "v0.3.0-dev-15-g24fbb96+x9f76", "libc": "d4f0dedd5403751a71d75fabd5eaf3caa5e2035b135dcde39f2c64d65b3b1815", "time": "2026-10-30T08:48:29Z", "starts": "551-600", "program": "ls", "status": "exit 1", "messages": [], "crash": {"kind": "ty=100100", "far": "0x1281dd0", "elr": "0xc15c0c", "esr": "0x92000006", "ec": "0x24", "lr": "0xc03d30", "sp": "0x7ffffffff590", "pid": 665, "cpu": 2, "name": "/usr/bin/ls", "trace": ["0xc03d30", "0xbcb654", "0xc044a0", "0xbcc6cc", "0xbcd428", "0xc2c6f0", "0xad1038"]}, "serial": ["kernel::arch::aarch64::interrupt::exception:ERROR -- FATAL: Not an SVC induced synchronous exception (ty=100100)", "FAR_EL1: 0x1281dd0", "ELR_EL1: 0000000000C15C0C", "ESR_EL1: 0000000092000006", "kernel::context::signal:INFO -- UNHANDLED EXCEPTION, CPU #2, PID 665, NAME /usr/bin/ls, CONTEXT 0xfffffe800014c730"]}
+{"host": "<Pi 3B+>", "build_id": "v0.3.0-dev-15-g24fbb96+x9f76", "libc": "d4f0dedd5403751a71d75fabd5eaf3caa5e2035b135dcde39f2c64d65b3b1815", "time": "2026-10-30T08:48:29Z", "starts": "801-850", "program": "pwd", "status": "exit 1", "messages": [], "crash": {"kind": "ty=100100", "far": "0x1281dc8", "elr": "0xc15c0c", "esr": "0x92000006", "ec": "0x24", "lr": "0xc03d30", "sp": "0x7ffffffff590", "pid": 893, "cpu": 0, "name": "/usr/bin/pwd", "trace": ["0xc03d30", "0xbcb654", "0xc044a0", "0xbcc6cc", "0xbcd428", "0xc2c6f0", "0xad1038"]}, "serial": ["kernel::arch::aarch64::interrupt::exception:ERROR -- FATAL: Not an SVC induced synchronous exception (ty=100100)", "FAR_EL1: 0x1281dc8", "ELR_EL1: 0000000000C15C0C", "ESR_EL1: 0000000092000006", "kernel::context::signal:INFO -- UNHANDLED EXCEPTION, CPU #0, PID 893, NAME /usr/bin/pwd, CONTEXT 0xfffffe800014c730"]}
 ```
 
 ## 2026-10-30: `v0.3.0-dev-354-gc656808+x6039`
@@ -2428,7 +2428,7 @@ Stable image restored afterwards.
 Real Pi 3B+ over netboot. Experiments: `timesync`, `rtl8152` (today's main, the stable image config). test 94 ([#1](https://github.com/redox-rpi/redox-rpi/issues/1) remaining start crashes), Pi test agent
 
 **Pass: 0 of 3000 starts failed.** Staged with
-`~/t18-work/t1-stage/scripts/netboot.sh --server 192.168.178.120 --tftp-dir
+`~/t18-work/t1-stage/scripts/netboot.sh --server <host> --tftp-dir
 /srv/tftp --image ~/t18-work/image-t1/harddrive.img`, bootloader md5
 `7a5e2023…`. Afterwards the saved stable files went back into
 `/srv/tftp/redox` (`netboot.cmd`/`netboot.scr` included).
@@ -2456,7 +2456,7 @@ The Fritz!Box's global prefix today is `2a02:590:1504:9901::/64` (homenodellm:
 
 - About a minute after boot, `eth0` addresses: `fe80::ba27:ebff:fe08:e0aa/64`,
   **`2a02:590:1504:9901:ba27:ebff:fe08:e0aa/64`**,
-  `fdeb:d4ef:a7ac:0:ba27:ebff:fe08:e0aa/64`, `192.168.178.148/24`: **pass**.
+  `fdeb:d4ef:a7ac:0:ba27:ebff:fe08:e0aa/64`, `<Pi 3B+>/24`: **pass**.
 - Routes: **`default via fe80::b6fc:7dff:fe53:b289 dev eth0 src
   2a02:590:1504:9901:ba27:ebff:fe08:e0aa`**, plus `2a02:590:1504:9901::/64`,
   `fdeb:d4ef:a7ac::/64` and `fe80::/64` on eth0: **pass**.
@@ -2555,7 +2555,7 @@ skipped (no zone files in this image). Pi test 78 passed later; the rebased bran
 
 Real Pi 3B+ over netboot. Experiments: `ldso-diagnostics`, `timesync`, `timerd`, `mqtt`, `mqtt-demo`, `ha-bridge`. test 88 ([#49](https://github.com/redox-rpi/redox-rpi/issues/49) retest of tests 58 and 65 with the connect fix), Pi test agent
 
-**Pass.** Broker `~/mqtt-broker/pi-test-broker.sh` (plain, 192.168.178.120:1883);
+**Pass.** Broker `~/mqtt-broker/pi-test-broker.sh` (plain, <host>:1883);
 capture saved as `~/pitest-tools/broker88.out` on homenodellm. Manifest matches.
 
 - Standard checks pass, 0 of 300 starts failed.
@@ -2565,8 +2565,8 @@ capture saved as `~/pitest-tools/broker88.out` on homenodellm. Manifest matches.
   run, 3×). Every timer run ended `exited with code 1 after 10.1–10.4 s`, and
   there was **no** `still running, skipped this run`. `timerd -l` answered at once
   (0.3 s) with all three timers and their last runs: **pass**.
-- `echo 192.168.178.120 > /etc/mqtt-host` at 09:47:52, nothing killed. The log
-  had `ha-bridge: 6 sensors announced on 192.168.178.120:1883 as
+- `echo <host> > /etc/mqtt-host` at 09:47:52, nothing killed. The log
+  had `ha-bridge: 6 sensors announced on <host>:1883 as
   redox-rpi/redox` after **40 s** (a little over the 30 s in the row: the
   service retries every 30 s, plus the 10 s timeout). The broker got
   `redox-rpi/redox/availability online` and the six `homeassistant/…/config`
@@ -2575,7 +2575,7 @@ capture saved as `~/pitest-tools/broker88.out` on homenodellm. Manifest matches.
   (the timer runs already published at 09:48:00): **pass**.
 - `mosquitto_pub … -t homeassistant/status -m online`: the six configs came
   again (6 → 12 in the capture): **pass**.
-- `mqtt-pub -h 192.168.178.99 -t x -m x`: `no answer from the broker within
+- `mqtt-pub -h <unused address> -t x -m x`: `no answer from the broker within
   10 s`, exit 1, after 10.05 s: **pass**.
 - `echo reset > /scheme/sys/kstop` at 09:50:33. `redox-rpi/redox/availability
   offline` came at 09:51:03, **about 30 s** after the reset: **pass**.
@@ -2600,8 +2600,8 @@ TLS.** Broker `~/mqtt-broker/pi-test-broker-tls.sh`; capture saved as
   the timer runs, each `exited with code 1 after 10.1 s`. **No** `still
   running, skipped this run`: **pass**. `/usr/lib/init.d/75_ha-bridge.service`
   runs `ha-bridge -d`; `ps` shows `ha-bridge` (pid 38, two threads).
-- `echo 192.168.178.120 > /etc/mqtt-host` at 10:04:04, nothing killed. `ha-bridge:
-  6 sensors announced on 192.168.178.120:8883 (TLS) as redox-rpi/redox` after
+- `echo <host> > /etc/mqtt-host` at 10:04:04, nothing killed. `ha-bridge:
+  6 sensors announced on <host>:8883 (TLS) as redox-rpi/redox` after
   about 26 s. The broker got `redox-rpi/redox/availability online`, the six
   configs, and `redox-rpi/redox/state` once a minute: **pass**.
 - `mqtt-pub -t tls/pi -m hello -q 1`: exit 0, `tls/pi hello` arrived: **pass**.
@@ -2693,9 +2693,9 @@ Real Pi 3B+ over netboot. Experiments: `multicast`, `ipv6`, `lan78xx-multicast`,
 - `mdnsd:` lines: `redox-rpi.local on 224.0.0.251 and ff02::fb port 5353, 2
   services configured`, `redox-rpi._devsh._tcp.local port 2323 announced`,
   `redox-rpi._ssh._tcp.local port 22 announced`, `redox-rpi.local is
-  192.168.178.148, fe80::ba27:ebff:fe08:e0aa, 2a02:590:1504:9901:ba27:ebff:fe08:e0aa,
+  <Pi 3B+>, fe80::ba27:ebff:fe08:e0aa, 2a02:590:1504:9901:ba27:ebff:fe08:e0aa,
   fdeb:d4ef:a7ac:0:ba27:ebff:fe08:e0aa`.
-- `mdns-query.py redox-rpi.local`: A `192.168.178.148` (ttl 120) and the three
+- `mdns-query.py redox-rpi.local`: A `<Pi 3B+>` (ttl 120) and the three
   AAAA: **pass**.
 - `mdns-query.py _ssh._tcp.local PTR`: PTR `redox-rpi._ssh._tcp.local` (ttl
   4500), plus A/AAAA. `redox-rpi._ssh._tcp.local SRV`: **SRV port 22 target
@@ -2708,7 +2708,7 @@ Real Pi 3B+ over netboot. Experiments: `multicast`, `ipv6`, `lan78xx-multicast`,
   directly) port 2323: **pass**.
 - `_services._dns-sd._udp.local PTR`: the Pi lists `_devsh._tcp.local` and
   `_ssh._tcp.local`: **pass**.
-- `ssh -v root@192.168.178.148` (the address from mDNS, test key put into
+- `ssh -v root@<Pi 3B+>` (the address from mDNS, test key put into
   `/home/root/.ssh/authorized_keys` over devsh): `Server host key: ssh-ed25519
   SHA256:6b9SpKQH…` (the same as test 81, kept on `/scheme/data`),
   `Authenticated … using "publickey"`, `OK`, `Redox redox-rpi 0.5.12 …`: **pass**.
@@ -2888,7 +2888,7 @@ Real Pi 3B+ over netboot. Experiments: `timesync`, `rtl8152`, `sshd`. test 101 (
   files, private ones `-rw-------`. Standard checks pass, 0 of 300 starts failed.
 - `polltest`: 5 × `poll N: ret 0 revents 0x0 after 2004–2010 ms; accept: Try
   again (os error 11)`: **pass** (before the fix: `ret 1` at once).
-- `ssh root@192.168.178.148 'echo OK; id'`: `OK`, `uid=0(root) gid=0(root)`,
+- `ssh root@<Pi 3B+> 'echo OK; id'`: `OK`, `uid=0(root) gid=0(root)`,
   **1.23 s** including the login. `ssh-session.exp` (Pi, port 22, key file):
   prompt, command, backspace, `exit` all ok, exit at once: **pass**.
 - `sshd` CPU (`ps`, SCHTIME): 0.43 s about 1 minute after boot, 1.81 s after
@@ -3010,8 +3010,8 @@ minute; goal under 1).** Image
 matches. TLS broker `~/mqtt-broker/pi-test-broker-tls.sh` on homenodellm.
 
 - Standard checks pass, 0 of 300 starts failed.
-- `echo 192.168.178.120 > /etc/mqtt-host` at 18:14:07 UTC; 25 s later the
-  serial log has `ha-bridge: 6 sensors announced on 192.168.178.120:8883 (TLS)
+- `echo <host> > /etc/mqtt-host` at 18:14:07 UTC; 25 s later the
+  serial log has `ha-bridge: 6 sensors announced on <host>:8883 (TLS)
   as redox-rpi/redox`. The broker got the state once a minute, 37 times in
   31 minutes.
 - Readings, one devsh command `free; cat /scheme/sys/context` every 3 minutes:
@@ -3229,7 +3229,7 @@ matches.
   came every minute, 21:12:00 to 21:32:00, no gap. `echo pong` over devsh
   answered all 16 times. No panic.
 - **Ping:** my ping from homenodellm (ICMP, works against the router) got no
-  answer in any of the 16 minutes. `ping -c 2 192.168.178.120` from the Pi
+  answer in any of the 16 minutes. `ping -c 2 <host>` from the Pi
   works, 0 % loss. So the Pi is reachable and the network works, but it does
   not answer incoming ping. I did not look into it further.
 - `/srv/tftp/redox` has the stable image again; stable booted.
@@ -3241,7 +3241,7 @@ Real Pi 3B+ over netboot. Experiments: `timesync`, `pkg-hold`, `pkg-repo`, `sigr
 **Pass: 15 upstream packages updated, none of ours, our files unchanged,
 300 starts afterwards without a failure, nano and bash install and run,
 `bash-ok`.** Image `~/redox-rpi-boot/keep/repoG-harddrive.img`, repository
-`http://192.168.178.120:8080/pkg` from the same build.
+`http://<host>:8080/pkg` from the same build.
 
 - Standard checks pass, 0 of 300 starts failed.
 - `pkg update --yes` at **20:37:18 UTC**, 11.5 s: `Packages to update:`
@@ -3254,7 +3254,7 @@ Real Pi 3B+ over netboot. Experiments: `timesync`, `pkg-hold`, `pkg-repo`, `sigr
 - `sha256sum` before and after, unchanged: kernel `d1e4f5d9…`, `libc.so`
   `7ec8c067…`, `pkg` `9d058799…`, `reboot` `ff39315b…`.
 - `pkg info coreutils`: `remote: static.redox-os.org`. `pkg info pkgutils`:
-  `remote: 192.168.178.120` (0.3.3, build time 2026-10-30T20:01:51Z).
+  `remote: <host>` (0.3.3, build time 2026-10-30T20:01:51Z).
 - Second `pkg update --yes`: only `Fetch complete.`, nothing to do (0.9 s).
 - Standard checks again with the updated upstream programs: all pass, **0 of
   300 starts failed**.
@@ -3348,7 +3348,7 @@ Real Pi 3B+ over netboot. Experiments: `timesync`, `rtl8152`, `pty-sigint` (Ion 
   service stayed on, the script read its file, and it typed `sleep 40` one
   character every 0.15 s. The delay counts from the Enter, as in the
   original, and the Ctrl-C is one byte.
-- devsh: `patches/experiments/pty-sigint/ctrlc-test.py 192.168.178.148
+- devsh: `patches/experiments/pty-sigint/ctrlc-test.py <Pi 3B+>
   --rounds 10` (a6966cc): 10 of 10 `stopped by SIGINT 0.0 s after Ctrl-C`
   (5 after 1 s, 5 after 3 s), Ctrl-C at the prompt leaves the shell answering:
   **PASS**.
@@ -3386,14 +3386,14 @@ after a reset with the same host keys.** Image
 `~/redox-rpi-relibc/keep/netboot-v0.3.0-dev-407-g741b667+x4ec1.img` (no
 manifest next to it).
 
-- (1) `ssh-keyscan -t rsa,ecdsa,ed25519 192.168.178.148`: **3 keys**,
+- (1) `ssh-keyscan -t rsa,ecdsa,ed25519 <Pi 3B+>`: **3 keys**,
   `ssh-rsa`, `ecdsa-sha2-nistp256`, `ssh-ed25519` (#81: RSA only).
-  `ssh-keyscan 192.168.178.148` without `-t` (about 30 s later): the same 3
+  `ssh-keyscan <Pi 3B+>` without `-t` (about 30 s later): the same 3
   types. No dropped connection.
 - (2) `/home/root/.ssh/authorized_keys` does not exist on the image. A new
   test key (`ed25519`, no comment) went into
   `/scheme/data/home/root/.ssh/authorized_keys` (after `mkdir -p`).
-  `ssh -i <key> root@192.168.178.148 echo ok`: `ok` in 1.2 s.
+  `ssh -i <key> root@<Pi 3B+> echo ok`: `ok` in 1.2 s.
 - (3) After `echo reset > /scheme/sys/kstop`: the same key login works
   (`ok`, `uid=0(root) gid=0(root)`) without adding the key again. Host key
   fingerprints before and after the reset are the same: RSA
@@ -3418,8 +3418,8 @@ shortened from 03:00 to 01:30 UTC so tests 109 step 6 and 121 fit before 03:15.
 Afterwards the saved stable files went back into `/srv/tftp/redox`.
 
 - 25 readings, one every 10 to 11 minutes, each a single devsh connection: **all
-  25 answered**, eth0 kept `192.168.178.148/24` and the default route every time,
-  each `cat` of `addr/list` took 0.4 s, and **`ping -c 3 192.168.178.1` from the
+  25 answered**, eth0 kept `<Pi 3B+>/24` and the default route every time,
+  each `cat` of `addr/list` took 0.4 s, and **`ping -c 3 <router>` from the
   Pi had 0 % loss every time**.
 - No devsh failure, so no serial readings or reset were needed.
 - The host's ping to the Pi got no answer in all 260 tries (one a minute). This is
@@ -3651,26 +3651,26 @@ directory doesn't work. Image `~/redox-rpi-zrtl/keep/nsm-v0.3.0-dev-478-g1764270
   0 of 300 starts failed both times).
 - `/usr/lib/drivers/testnetd &`, then after 30 s:
   - `cat /scheme/netcfg/ifaces/eth1/addr/list` → **`10.0.9.2/24`**;
-    `eth0/addr/list` → `192.168.178.148/24`.
+    `eth0/addr/list` → `<Pi 3B+>/24`.
   - `cat /scheme/netcfg/route/list` has **one default route**, plus
     `10.0.9.0/24 dev eth1`:
 
 ```
-default via 192.168.178.1 dev eth0 src 192.168.178.148
+default via <router> dev eth0 src <Pi 3B+>
 127.0.0.0/8  dev loopback src 127.0.0.1
 10.0.9.0/24  dev eth1 src 10.0.9.2
-192.168.178.0/24  dev eth0 src 192.168.178.148
+<LAN>/24  dev eth0 src <Pi 3B+>
 ```
 
-  - `ping -c 3 10.0.9.1`: 3/3 (2.4–2.9 ms); `ping -c 3 192.168.178.1`: 3/3 (1.0–1.8 ms).
+  - `ping -c 3 10.0.9.1`: 3/3 (2.4–2.9 ms); `ping -c 3 <router>`: 3/3 (1.0–1.8 ms).
   - `cat /tmp/testnetd.log`: `dhcp 2 dhcp_foreign 0 foreign_src 0 ping 3`.
 - Every `DHCP:`/`smolnetd` line of the serial log (no `smolnetd` line and no panic):
 
 ```
-DHCP client bound to address 192.168.178.148 (5 ms)
-DHCP client bound to address 192.168.178.148 (8 ms)
-DHCP: eth0 got 192.168.178.148/24
-DHCP: default route via 192.168.178.1 (eth0)
+DHCP client bound to address <Pi 3B+> (5 ms)
+DHCP client bound to address <Pi 3B+> (8 ms)
+DHCP: eth0 got <Pi 3B+>/24
+DHCP: default route via <router> (eth0)
 DHCP: eth1 got 10.0.9.2/24
 ```
 
@@ -3692,31 +3692,31 @@ Query tool from `origin/mdns:patches/experiments/mdns/mdns-query.py`.
 ```
 mdnsd: redox-rpi.local on 224.0.0.251 and ff02::fb port 5353, 2 services configured
 mdnsd: redox-rpi._devsh._tcp.local port 2323 announced
-mdnsd: redox-rpi.local is 192.168.178.148, fe80::ba27:ebff:fe08:e0aa, 2a02:590:1504:9901:ba27:ebff:fe08:e0aa, fdeb:d4ef:a7ac:0:ba27:ebff:fe08:e0aa
+mdnsd: redox-rpi.local is <Pi 3B+>, fe80::ba27:ebff:fe08:e0aa, 2a02:590:1504:9901:ba27:ebff:fe08:e0aa, fdeb:d4ef:a7ac:0:ba27:ebff:fe08:e0aa
 ```
 
 - (1) `python3 /tmp/mdns-query.py _devsh._tcp.local PTR`: one answer with PTR,
   **SRV, TXT, A**, and three AAAA:
 
 ```
-192.168.178.148: _devsh._tcp.local PTR redox-rpi._devsh._tcp.local (ttl 4500)
-192.168.178.148: redox-rpi._devsh._tcp.local SRV port 2323 target redox-rpi.local (ttl 120)
-192.168.178.148: redox-rpi._devsh._tcp.local TXT 00 (ttl 4500)
-192.168.178.148: redox-rpi.local A 192.168.178.148 (ttl 120)
-192.168.178.148: redox-rpi.local AAAA fe80::ba27:ebff:fe08:e0aa (ttl 120)
-192.168.178.148: redox-rpi.local AAAA 2a02:590:1504:9901:ba27:ebff:fe08:e0aa (ttl 120)
-192.168.178.148: redox-rpi.local AAAA fdeb:d4ef:a7ac:0:ba27:ebff:fe08:e0aa (ttl 120)
+<Pi 3B+>: _devsh._tcp.local PTR redox-rpi._devsh._tcp.local (ttl 4500)
+<Pi 3B+>: redox-rpi._devsh._tcp.local SRV port 2323 target redox-rpi.local (ttl 120)
+<Pi 3B+>: redox-rpi._devsh._tcp.local TXT 00 (ttl 4500)
+<Pi 3B+>: redox-rpi.local A <Pi 3B+> (ttl 120)
+<Pi 3B+>: redox-rpi.local AAAA fe80::ba27:ebff:fe08:e0aa (ttl 120)
+<Pi 3B+>: redox-rpi.local AAAA 2a02:590:1504:9901:ba27:ebff:fe08:e0aa (ttl 120)
+<Pi 3B+>: redox-rpi.local AAAA fdeb:d4ef:a7ac:0:ba27:ebff:fe08:e0aa (ttl 120)
 ```
 
-- (2) `python3 /tmp/mdns-query.py redox-rpi.local`: A `192.168.178.148`, plus the
+- (2) `python3 /tmp/mdns-query.py redox-rpi.local`: A `<Pi 3B+>`, plus the
   three AAAA. The router also answered from its cache with the same A (ttl 10).
 
 ```
-192.168.178.148: redox-rpi.local A 192.168.178.148 (ttl 120)
-192.168.178.148: redox-rpi.local AAAA fe80::ba27:ebff:fe08:e0aa (ttl 120)
-192.168.178.148: redox-rpi.local AAAA 2a02:590:1504:9901:ba27:ebff:fe08:e0aa (ttl 120)
-192.168.178.148: redox-rpi.local AAAA fdeb:d4ef:a7ac:0:ba27:ebff:fe08:e0aa (ttl 120)
-192.168.178.1: redox-rpi.local A 192.168.178.148 (ttl 10)
+<Pi 3B+>: redox-rpi.local A <Pi 3B+> (ttl 120)
+<Pi 3B+>: redox-rpi.local AAAA fe80::ba27:ebff:fe08:e0aa (ttl 120)
+<Pi 3B+>: redox-rpi.local AAAA 2a02:590:1504:9901:ba27:ebff:fe08:e0aa (ttl 120)
+<Pi 3B+>: redox-rpi.local AAAA fdeb:d4ef:a7ac:0:ba27:ebff:fe08:e0aa (ttl 120)
+<router>: redox-rpi.local A <Pi 3B+> (ttl 10)
 ```
 
 - (3) `python3 /tmp/mdns-query.py redox-rpi.local AAAA -6 wlp13s0`: answered from
@@ -3726,7 +3726,7 @@ mdnsd: redox-rpi.local is 192.168.178.148, fe80::ba27:ebff:fe08:e0aa, 2a02:590:1
 fe80::ba27:ebff:fe08:e0aa: redox-rpi.local AAAA fe80::ba27:ebff:fe08:e0aa (ttl 120)
 fe80::ba27:ebff:fe08:e0aa: redox-rpi.local AAAA 2a02:590:1504:9901:ba27:ebff:fe08:e0aa (ttl 120)
 fe80::ba27:ebff:fe08:e0aa: redox-rpi.local AAAA fdeb:d4ef:a7ac:0:ba27:ebff:fe08:e0aa (ttl 120)
-fe80::ba27:ebff:fe08:e0aa: redox-rpi.local A 192.168.178.148 (ttl 120)
+fe80::ba27:ebff:fe08:e0aa: redox-rpi.local A <Pi 3B+> (ttl 120)
 ```
 
 - (4) `python3 /tmp/mdns-query.py _services._dns-sd._udp.local PTR`: the Pi's lines
@@ -3734,11 +3734,11 @@ fe80::ba27:ebff:fe08:e0aa: redox-rpi.local A 192.168.178.148 (ttl 120)
   The Pi lists only **`_devsh._tcp.local`, no `_ssh._tcp`**:
 
 ```
-192.168.178.148: _services._dns-sd._udp.local PTR _devsh._tcp.local (ttl 4500)
-192.168.178.148: redox-rpi.local A 192.168.178.148 (ttl 120)
-192.168.178.148: redox-rpi.local AAAA fe80::ba27:ebff:fe08:e0aa (ttl 120)
-192.168.178.148: redox-rpi.local AAAA 2a02:590:1504:9901:ba27:ebff:fe08:e0aa (ttl 120)
-192.168.178.148: redox-rpi.local AAAA fdeb:d4ef:a7ac:0:ba27:ebff:fe08:e0aa (ttl 120)
+<Pi 3B+>: _services._dns-sd._udp.local PTR _devsh._tcp.local (ttl 4500)
+<Pi 3B+>: redox-rpi.local A <Pi 3B+> (ttl 120)
+<Pi 3B+>: redox-rpi.local AAAA fe80::ba27:ebff:fe08:e0aa (ttl 120)
+<Pi 3B+>: redox-rpi.local AAAA 2a02:590:1504:9901:ba27:ebff:fe08:e0aa (ttl 120)
+<Pi 3B+>: redox-rpi.local AAAA fdeb:d4ef:a7ac:0:ba27:ebff:fe08:e0aa (ttl 120)
 ```
 
 - mdnsd CPU when idle: `top -n 1` printed no mdnsd line, so I used `ps`. ACTTIME
@@ -4177,7 +4177,7 @@ ls /scheme/netcfg/ifaces                  → eth0
 ls /scheme/netcfg/ifaces/eth0             → addr  mac
 ls /scheme/netcfg/ifaces/eth0/addr        → list  set
 ls /scheme/netcfg/route                   → add  list  rm
-cat /scheme/netcfg/ifaces/eth0/addr/list  → 192.168.178.148/24
+cat /scheme/netcfg/ifaces/eth0/addr/list  → <Pi 3B+>/24
 ```
 
 Stable image restored afterwards.
@@ -4297,7 +4297,7 @@ manifest next to it.
   `~/pitest-tools/ctrlc118.py`: the logging service stayed on and the script
   read its file. `sleep 40` was typed one character every 0.15 s, and the delay
   counts from the Enter. The Ctrl-C is one byte.
-- devsh: `patches/experiments/pty-sigint/ctrlc-test.py 192.168.178.148 --rounds 10
+- devsh: `patches/experiments/pty-sigint/ctrlc-test.py <Pi 3B+> --rounds 10
   --delays 0,0.01,0.02,0.03,0.1` (from `ctrlc-raw`): 10 of 10 `stopped by SIGINT
   0.1 s after Ctrl-C`, and after a Ctrl-C at the prompt the shell still answers: **PASS**.
 - Standard checks with `--manifest`: all pass (manifest matches, 0 of 300 starts failed).
@@ -4317,12 +4317,12 @@ next to it), with the new stable's bootloader. Same setup as #120.
 
 - `TODO` lines in the serial log after boot, before any login: **0**.
 - The test key (`ed25519`) went into `/scheme/data/home/root/.ssh/authorized_keys`, as in #120.
-- 5 × `ssh -i <key> root@192.168.178.148 echo ok`: **5 × `ok`**, 0.98–1.06 s each.
+- 5 × `ssh -i <key> root@<Pi 3B+> echo ok`: **5 × `ok`**, 0.98–1.06 s each.
 - `ssh-session.exp`: command, prompt again, backspace, `exit` all ok; it exits at once.
 - `TODO` lines after all of this: 1, `[INFO sshd-session@src/header/sys_ioctl/redox/mod.rs:141]
   TODO: ioctl TIOCSCTTY`. No `madvise`, `getsockopt` or `setsockopt` (#101 had
   several per connection).
-- `ssh-keyscan -t rsa,ecdsa,ed25519 192.168.178.148`: **3 keys** (`ssh-rsa`,
+- `ssh-keyscan -t rsa,ecdsa,ed25519 <Pi 3B+>`: **3 keys** (`ssh-rsa`,
   `ecdsa-sha2-nistp256`, `ssh-ed25519`).
 - Standard checks: all pass (manifest present in the image, 0 of 300 starts
   failed). No panic or unhandled exception.
@@ -4393,8 +4393,8 @@ manifests match, with the new stable's bootloader.
   1 of 1. `cycle: hub 2 port 1 disconnected after` 102–114 ms (baseline) and
   101–113 ms (wait-irq).
 - (2) Why no TCP number: the Pi's `nc` (`nc [-l] host:port`) connects
-  (`Remote host: 192.168.178.120:5135`), but with
-  `dd if=/dev/zero bs=65536 count=256 | nc 192.168.178.120:5135` the host
+  (`Remote host: <host>:5135`), but with
+  `dd if=/dev/zero bs=65536 count=256 | nc <host>:5135` the host
   receives 0 bytes and `dd` stops with `Broken pipe` after `0+0 records`. The
   same happens with `echo hello`. A try the other way round, with the Pi
   listening (`nc -l 0.0.0.0:5136 > /dev/null`), accepted the connection but gave
@@ -4445,7 +4445,7 @@ to it; the one in the image passes), with the new stable's bootloader. No panic.
   `DHCP: eth1 got 10.0.9.2/24` and three `DHCP: eth1 renewed 10.0.9.2 for 30 s`
   (a fourth came later). `/tmp/testnetd.log`:
   `dhcp 5 dhcp_foreign 0 foreign_src 0 ping 0 renew 3`. `route/list` keeps
-  `default via 192.168.178.1 dev eth0`, plus `10.0.9.0/24 dev eth1`.
+  `default via <router> dev eth0`, plus `10.0.9.0/24 dev eth1`.
 - (2) `kill $(cat /tmp/network.test0.pid)` (pid 368), then 10 s: `… link eth1:
   No such device (os error 19); dropping it` and `DHCP: eth1 is gone`.
   `route/list` has **no eth1 line** and still the eth0 default route.
@@ -4459,8 +4459,8 @@ to it; the one in the image passes), with the new stable's bootloader. No panic.
 - Every `DHCP:` line and the `dropping it` line from the serial log:
 
 ```
-DHCP: eth0 got 192.168.178.148/24
-DHCP: default route via 192.168.178.1 (eth0)
+DHCP: eth0 got <Pi 3B+>/24
+DHCP: default route via <router> (eth0)
 DHCP: eth1 got 10.0.9.2/24
 DHCP: eth1 renewed 10.0.9.2 for 30 s
 DHCP: eth1 renewed 10.0.9.2 for 30 s
@@ -4568,8 +4568,8 @@ Real Pi 3B+ over netboot. Test 135 ([#104](https://github.com/redox-rpi/redox-rp
 
 **Not measurable: the file form doesn't send anything either.** On the
 wait-irq image, `dd if=/dev/zero of=/tmp/tx bs=65536 count=256` made
-`/tmp/tx` (16,777,216 bytes). Then twice `time nc 192.168.178.120:5135 < /tmp/tx`:
-each printed `Remote host: 192.168.178.120:5135` and ended after 0.04 s
+`/tmp/tx` (16,777,216 bytes). Then twice `time nc <host>:5135 < /tmp/tx`:
+each printed `Remote host: <host>:5135` and ended after 0.04 s
 (`real 0.043949064s`, `0.042097759s`). `nc -l 5135 | wc -c` on homenodellm counted
 **0 bytes** both times. dwc2d ACTTIME across each `nc`: 0.64 → 0.65 s and
 7.74 → 7.76 s. Between the two tries it rose at its idle rate (about 1.6 s per
@@ -4594,7 +4594,7 @@ matches, with the new stable's bootloader.
 - Boot 1, serial log:
 
 ```
-redox-rpi: network boot from 192.168.178.120
+redox-rpi: network boot from <host>
 redox-rpi: image loaded over HTTP
 init: switchroot to /scheme/initfs /scheme/initfs/etc
 rpi-fbd: EDID 256 bytes, monitor NanoKVM
@@ -4623,15 +4623,15 @@ Real Pi 3B+ over netboot. Test 139 ([#115](https://github.com/redox-rpi/redox-rp
 **Pass: all three steps and the standard checks.** Image
 `~/mqtt-test/keep/cc-netboot-v0.3.0-dev-491-g67c7d1d+x125f.img`, manifest
 matches, with the stable bootloader. Broker `client-cert-broker.sh
-192.168.178.120 3600` from branch `mqtt-cert` (port 8884, `require_certificate`);
+<host> 3600` from branch `mqtt-cert` (port 8884, `require_certificate`);
 certificate installed with `install-client-cert.py` (`/etc/mqtt-client.crt`
 595 bytes, `/etc/mqtt-client.key` 241 bytes, mode 600).
 
 | check | result |
 |---|---|
 | standard checks | **pass**: version, manifest, ps, ps-tty, sdcard; 0 of 300 starts failed |
-| (1) `mqtt-pub -p 8884 -t cc/pi -m with-cert -q 1` | **pass**: exit 0; broker subscriber `2026-10-31T12:49:18+0000 cc/pi with-cert`; mosquitto `New client connected from 192.168.178.148:49157 as mqtt-pub-396 (p2, c1, k60, u'redox-rpi')` |
-| (2) without the certificate | **pass**: exit 1, `mqtt-pub: 192.168.178.120:8884: TLS: received fatal alert: CertificateRequired (the broker wants a client certificate: give it with --cert and --key)`; nothing new at the subscriber; mosquitto `peer did not return a certificate`, `Client <unknown> disconnected: Protocol error.` |
+| (1) `mqtt-pub -p 8884 -t cc/pi -m with-cert -q 1` | **pass**: exit 0; broker subscriber `2026-10-31T12:49:18+0000 cc/pi with-cert`; mosquitto `New client connected from <Pi 3B+>:49157 as mqtt-pub-396 (p2, c1, k60, u'redox-rpi')` |
+| (2) without the certificate | **pass**: exit 1, `mqtt-pub: <host>:8884: TLS: received fatal alert: CertificateRequired (the broker wants a client certificate: give it with --cert and --key)`; nothing new at the subscriber; mosquitto `peer did not return a certificate`, `Client <unknown> disconnected: Protocol error.` |
 | (3) `ha-bridge -p 8884` | **pass**: exit 0; `redox-rpi/redox/state {"cpu_temperature":54.8,"cpu_clock":1400,"throttled":"OFF","uptime":135,"memory_free":576.3,"memory_used":20.6}`; mosquitto `as ha-bridge-402 (… u'redox-rpi')` |
 
 - `free` afterwards: 743612 total, 152048 used, 591564 free; `throttled`
@@ -5035,7 +5035,7 @@ Real Pi 3B+ over netboot. Test 149 ([#1](https://github.com/redox-rpi/redox-rpi/
 
 **Pass: 0 of 3000 starts failed** (test 94 on `v0.3.0-dev-339`: 0 of 3000).
 Image `~/redox-rpi-t12/keep/t1-v0.3.0-dev-764-gcf2025e+x9f76.img`, manifest
-matches, stable bootloader. `scripts/pi-test.py 192.168.178.148 --starts 3000
+matches, stable bootloader. `scripts/pi-test.py <Pi 3B+> --starts 3000
 --manifest … --serial-log ~/redox-rpi/logs/serial.log --crash-log
 t149-crashes.jsonl`:
 
@@ -5061,8 +5061,8 @@ Real Pi 3B+ over netboot. Test 152 (follow-up to [#51](https://github.com/redox-
 
 **Pass: every check as expected, and the standard checks pass.** Image
 `~/ntp-test/keep/ntp-v0.3.0-dev-773-g2ffa68b+x7f63.img`, manifest matches, stable
-bootloader. `fake-ntp.py 192.168.178.120 1800` from `origin/timesync-harden`
-(UDP 12301–12309). H = 192.168.178.120.
+bootloader. `fake-ntp.py <host> 1800` from `origin/timesync-harden`
+(UDP 12301–12309). H = <host>.
 
 **Boot** (serial):
 
@@ -5195,20 +5195,20 @@ after (0 of 300 starts failed each time).
 (1) Reset test, `rstserver.py 18998 1000000`:
 
 ```
-### netget http://192.168.178.120:18998/x --slow 5000  (10.3 s)
-GET http://192.168.178.120:18998/x
+### netget http://<host>:18998/x --slow 5000  (10.3 s)
+GET http://<host>:18998/x
 HTTP/1.0 200 OK
 read after 65535 bytes, 10.0 s: Transport endpoint is not connected (os error 107)
-### netget http://192.168.178.120:18998/x --slow 5000  (10.3 s)
-GET http://192.168.178.120:18998/x
+### netget http://<host>:18998/x --slow 5000  (10.3 s)
+GET http://<host>:18998/x
 HTTP/1.0 200 OK
 read after 65535 bytes, 10.0 s: Transport endpoint is not connected (os error 107)
 ```
 
-Server: `17:39:00 192.168.178.148: header, 437576 body bytes into the socket,
+Server: `17:39:00 <Pi 3B+>: header, 437576 body bytes into the socket,
 then reset`, and the same at 17:39:11. N = 65535 both times (pass: above 30000).
 
-(2) ARP, `netget http://192.168.178.120:8080/models/Qwen3-0.6B-Q4_0.gguf --log /scheme/debug` three times:
+(2) ARP, `netget http://<host>:8080/models/Qwen3-0.6B-Q4_0.gguf --log /scheme/debug` three times:
 
 | run | result | 16 MiB steps |
 |---|---|---|
@@ -5223,7 +5223,7 @@ then reset`, and the same at 17:39:11. N = 65535 both times (pass: above 30000).
 - Every `netget:` line from the serial log (`--log /scheme/debug`):
 
 ```
-netget: GET http://192.168.178.120:8080/models/Qwen3-0.6B-Q4_0.gguf
+netget: GET http://<host>:8080/models/Qwen3-0.6B-Q4_0.gguf
 netget: HTTP/1.0 200 OK
 netget:    16 MiB     2.2 s  7.75 MB/s
 netget:    32 MiB     4.3 s  7.87 MB/s
@@ -5248,7 +5248,7 @@ netget:   320 MiB    43.7 s  7.97 MB/s
 netget:   336 MiB    45.9 s  7.58 MB/s
 netget:   352 MiB    48.1 s  7.38 MB/s
 netget: 382156480 bytes in 49.8 s, 7.67 MB/s
-netget: GET http://192.168.178.120:8080/models/Qwen3-0.6B-Q4_0.gguf
+netget: GET http://<host>:8080/models/Qwen3-0.6B-Q4_0.gguf
 netget: HTTP/1.0 200 OK
 netget:    16 MiB     2.2 s  7.63 MB/s
 netget:    32 MiB     4.4 s  7.64 MB/s
@@ -5273,7 +5273,7 @@ netget:   320 MiB    43.2 s  7.86 MB/s
 netget:   336 MiB    45.4 s  7.79 MB/s
 netget:   352 MiB    47.5 s  7.89 MB/s
 netget: 382156480 bytes in 49.1 s, 7.78 MB/s
-netget: GET http://192.168.178.120:8080/models/Qwen3-0.6B-Q4_0.gguf
+netget: GET http://<host>:8080/models/Qwen3-0.6B-Q4_0.gguf
 netget: HTTP/1.0 200 OK
 netget:    16 MiB     2.2 s  7.74 MB/s
 netget:    32 MiB     4.3 s  7.80 MB/s
@@ -5658,7 +5658,7 @@ staged, reset over devsh; standard checks pass (0 of 300 starts failed).
 - **ICMP ping does not work here:** the build host has no `ping`, and
   `ping.py` (ICMP datagram socket) got **0 of 180** answers from the Pi
   (20:02:55 to 20:32:45). It also got 0 of 3 later while devsh answered; the
-  router 192.168.178.1 answers 2 of 2. So the Pi (or netstack) does not answer
+  router <router> answers 2 of 2. So the Pi (or netstack) does not answer
   echo requests from this host. I took that half as not measurable.
 - **Instead, minutes 32 to 62:** a TCP connect to closed port 9 every 10 s;
   each reset counts as answered. Result: **180 of 180 answered**, 2.1 to 87.0 ms.
@@ -5667,7 +5667,7 @@ staged, reset over devsh; standard checks pass (0 of 300 starts failed).
 
 | uptime | netstack ACTTIME / mem | dwc2d ACTTIME / mem | eth0 | used |
 |---|---|---|---|---|
-| 1m 26s | 0.19 s / 3.59 MB | 1.52 s / 1.70 MB | 192.168.178.148/24 | 137600 |
+| 1m 26s | 0.19 s / 3.59 MB | 1.52 s / 1.70 MB | <Pi 3B+>/24 | 137600 |
 | 16m 29s | 0.70 s / 3.72 MB | 21.57 s / 1.70 MB | same | 137980 |
 | 31m 26s | 1.22 s / 3.84 MB | 41.50 s / 1.70 MB | same | 138368 |
 | 47m 36s | 1.78 s / 3.97 MB | 62.95 s / 1.70 MB | same | 138748 |
@@ -5788,7 +5788,7 @@ staged with `~/redox-rpi-boot/scripts/netboot.sh`.
 
 - (1) `df -h /scheme/data`: 960.0M, 393.7M used, 566.3M free; no `netget.bin`
   or `w151.bin`.
-- (2) `netget http://192.168.178.120:8080/models/Qwen3-0.6B-Q4_0.gguf /scheme/data/netget.bin --log /scheme/debug`,
+- (2) `netget http://<host>:8080/models/Qwen3-0.6B-Q4_0.gguf /scheme/data/netget.bin --log /scheme/debug`,
   serial lines:
 
 ```
@@ -5922,7 +5922,7 @@ image as #167/#168 (md5 `15e52989`), staged with `~/redox-rpi-boot/scripts/netbo
 - netget and drop lines in order:
 
 ```
-netget: GET http://192.168.178.120:8080/models/Qwen3-0.6B-Q4_0.gguf
+netget: GET http://<host>:8080/models/Qwen3-0.6B-Q4_0.gguf
 netget: HTTP/1.0 200 OK
 dwc2d: hub 1 port 1: device at address 2 removed
 netget:    16 MiB    18.5 s  0.91 MB/s
@@ -6013,7 +6013,7 @@ to it; `experiments: dwc2d-netstats netget timesync usb-hub-drop`), staged with
 - netget lines from the serial console:
 
 ```
-netget: GET http://192.168.178.120:8080/models/Qwen3-0.6B-Q4_0.gguf
+netget: GET http://<host>:8080/models/Qwen3-0.6B-Q4_0.gguf
 netget: HTTP/1.0 200 OK
 netget:    16 MiB    12.4 s  1.36 MB/s
 netget:    32 MiB    19.8 s  2.26 MB/s
@@ -6405,7 +6405,7 @@ Staged 04:44, and the boot reached login with no `FATAL` or panic line.
 
 - `ls /etc/ssh`: the host keys were already there at the first look (04:45), ed25519, ecdsa, rsa and mldsa44_ed25519.
 - The test key `/tmp/qkey.pub` went into `/home/root/.ssh/authorized_keys` over devsh, in single quotes. `wc -c` gives `100` (the same as the file on homenodellm).
-- 5 key logins `ssh -i /tmp/qkey root@192.168.178.148 'echo loginN'`: `login1` … `login5`, all rc 0, with no failed login.
+- 5 key logins `ssh -i /tmp/qkey root@<Pi 3B+> 'echo loginN'`: `login1` … `login5`, all rc 0, with no failed login.
 - `ssh-session.exp` (port 22, Pi address): prompt, command, prompt-again, backspace, prompt-again, exit, all `ok`, rc 0.
 - **Login grace time:** the client sent nothing after the server banner `SSH-2.0-OpenSSH_10.5`. Three tries:
   - held 200 s: the server did not close. The line (`pid = 99`) was in the log right after the client closed.
@@ -6904,7 +6904,7 @@ Real Pi 3B+ over netboot. Test 194 ([#171](https://github.com/redox-rpi/redox-rp
   ```
   eth0:
   MAC Address: b8:27:eb:08:e0:aa
-  IP Address: 192.168.178.148
+  IP Address: <Pi 3B+>
   Netmask: 255.255.255.0
   ```
 - `cat /scheme/netcfg/ifaces/eth0/mac` gives `b8-27-eb-08-e0-aa`, the same address. It is not `00:00:00:00:00:00`.
