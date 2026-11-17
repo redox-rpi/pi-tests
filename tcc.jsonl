@@ -1,1 +1,2 @@
 {"kind":"csmith","date":"2026-11-14","week":"2026-W46","tinycc":"7eeb1663","csmith":"csmith 2.3.0","seed":202646000,"programs":1000,"same":621,"mismatches":0,"unsupported":217,"timeouts":162,"host_failures":0,"resim_gaps":0,"kept":"/home/zehrer/rbc-build/tcc-csmith-work/2026-W46/keep"}
+{"kind":"csmith","date":"2026-11-17","week":"2026-W47","tinycc":"b28e0801","csmith":"csmith 2.3.0","seed":202647000,"programs":1000,"same":618,"mismatches":0,"unsupported":227,"timeouts":155,"host_failures":0,"resim_gaps":0,"kept":"/home/zehrer/rbc-build/tcc-csmith-work/2026-W47/keep"}
