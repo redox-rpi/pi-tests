@@ -1011,7 +1011,7 @@ Test 53 ([#47](https://github.com/redox-rpi/redox-rpi/issues/47)), branch
 with that tree's `netboot.sh`, so the new `netboot.cmd` asks DHCP once).
 Four boots, each timed with `boot-timeline.py` on the serial log from the
 reset (`echo reset > /scheme/sys/kstop` over devsh); timelines in
-`~/t18-work/tl-pi-{stable-1,stable-2,bt-1,bt-2}.txt` on homenodellm.
+`~/t18-work/tl-pi-{stable-1,stable-2,bt-1,bt-2}.txt` on the build host.
 
 | Seconds from reset | stable-1 | stable-2 | bt-1 | bt-2 |
 |---|---|---|---|---|
@@ -1048,7 +1048,7 @@ Built 2026-10-29T12:45:26Z, `libc.so` `f4c29e0c5fc7c368…`, real Pi 3B+ over ne
 
 Test 47 ([#27](https://github.com/redox-rpi/redox-rpi/issues/27),
 [#37](https://github.com/redox-rpi/redox-rpi/issues/37)), branch
-`net-pi-test`. Extra checks; homenodellm is on Wi-Fi (`wlp13s0`) and has no
+`net-pi-test`. Extra checks; the build host is on Wi-Fi (`wlp13s0`) and has no
 `ping`, so the pings used an unprivileged ICMP socket from Python:
 
 - `/scheme/netcfg/ifaces/eth0/addr/list`: `<Pi 3B+>/24`,
@@ -1056,12 +1056,12 @@ Test 47 ([#27](https://github.com/redox-rpi/redox-rpi/issues/27),
   (SLAAC from the Fritz!Box's ULA prefix). **No global `2a02:…` address**,
   also after 9.5 minutes, and no IPv6 default route in
   `/scheme/netcfg/route/list`. The Fritz!Box does send router
-  advertisements with the global prefix: homenodellm has
+  advertisements with the global prefix: the build host has
   `2a02:590:1507:c201::/64 proto ra` and `fdeb:d4ef:a7ac::/64 proto ra`,
   with the default route via `fe80::b6fc:7dff:fe53:b289`. So the Pi takes
   the ULA prefix from the same advertisements and leaves out the global
   one and the default router.
-- Ping from homenodellm: `fe80::ba27:ebff:fe08:e0aa%wlp13s0` 3 of 3
+- Ping from <build host>: `fe80::ba27:ebff:fe08:e0aa%wlp13s0` 3 of 3
   (2–4 ms), `fdeb:d4ef:a7ac:0:ba27:ebff:fe08:e0aa` 3 of 3; no global
   address to ping.
 - `mdns-query.py redox-rpi.local`: `A <Pi 3B+>` from the Pi (ttl
@@ -1098,13 +1098,13 @@ scripts `udp-echo.py` and `mdns-query.py` from `mdns6`:
   (the Fritz!Box, from RDNSS): **pass**.
 - `net6 resolve example.com` in 0.22 s: two IPv4 and two IPv6 addresses
   (`2606:4700:10::ac42:93f3`, `2606:4700:10::6814:179a`): **pass**.
-- `net6 udp`: to homenodellm's ULA `[fdeb:…:4a45:e6ff:fea0:b063]:7777`
+- `net6 udp`: to the build host's ULA `[fdeb:…:4a45:e6ff:fea0:b063]:7777`
   and to `<host>:7777` the reply comes back (the echo saw the Pi's
-  ULA and IPv4 address): **pass**. To homenodellm's global
+  ULA and IPv4 address): **pass**. To the build host's global
   `[2a02:590:1507:c201:4a45:e6ff:fea0:b063]:7777`: `receive: Connection
   timed out`, nothing reached the echo (no global address or IPv6 route on
   the Pi).
-- Ping from homenodellm to the Pi's ULA: 3 of 3; no `2a02` address to ping.
+- Ping from the build host to the Pi's ULA: 3 of 3; no `2a02` address to ping.
 - `mdns-query.py redox-rpi.local AAAA -6 wlp13s0`: the Pi answers over
   IPv6 with AAAA `fe80::…` and `fdeb:…` plus A `<Pi 3B+>`;
   `mdns-query.py redox-rpi.local` over IPv4: A plus both AAAA as
@@ -1241,7 +1241,7 @@ Built 2026-10-29T14:51:21Z, `libc.so` `94f45c69b01420be…`, real Pi 3B+ over ne
 
 Test 67 ([#47](https://github.com/redox-rpi/redox-rpi/issues/47)), branch
 `dwc2d-boottime`. Two boots timed with `boot-timeline.py` from the reset
-over devsh; timelines in `~/dwc2boot-work/tl-pi-{1,2}.txt` on homenodellm.
+over devsh; timelines in `~/dwc2boot-work/tl-pi-{1,2}.txt` on the build host.
 
 | Seconds from reset | boot 1 | boot 2 |
 |---|---|---|
@@ -1493,7 +1493,7 @@ Built 2026-10-29T14:09:20Z, `libc.so` `d19d472ff4ba92c2…`, real Pi 3B+ over ne
 | starts | pass | 0 of 300 failed |
 
 Test 58 ([#49](https://github.com/redox-rpi/redox-rpi/issues/49)), branch
-`mqtt`; mosquitto on homenodellm (`~/mqtt-broker/pi-test-broker.sh`).
+`mqtt`; mosquitto on the build host (`~/mqtt-broker/pi-test-broker.sh`).
 
 - `echo <host> > /etc/mqtt-host`; `mqtt-pub -t redox/pi/hello -q 1
   -m hello` exit 0, the broker has `redox/pi/hello hello`: **pass**.
@@ -1577,7 +1577,7 @@ Test 66 ([#51](https://github.com/redox-rpi/redox-rpi/issues/51)), branch
 - `timesync -s '@1793282730'`: `2026-10-29 14:05:30 UTC by hand`, exit 0.
 - `timesync`: first `from the build time` (the clock was before the build
   time), then `2026-10-29 18:02:05 UTC from pool.ntp.org`, exit 0; `date -u`
-  18:02:06, the same second as homenodellm.
+  18:02:06, the same second as the build host.
 - `timesync -s 2030`: `-s wants 'YYYY-MM-DD HH:MM[:SS]' (UTC) or
   @<seconds>, not "2030"`, exit 2.
 - `/scheme/data/timesync.last` afterwards holds the NTP time (18:02), only
@@ -1741,7 +1741,7 @@ Test 68 ([#13](https://github.com/redox-rpi/redox-rpi/issues/13)), branch
 - `sigregs sender` (si_pid 371 from the thread, 372 from the child),
   `sigregs thread -n 3000`, `sigregs process -n 3000`: all **pass**.
 - `ion /usr/share/relibc-tests/run.ion` over devsh: finished
-  (`RELIBC-TESTS rc=1`), output saved on homenodellm in
+  (`RELIBC-TESTS rc=1`), output saved on the build host in
   `~/pitest-tools/t68-relibc-tests.txt`. `scripts/relibc-tests-compare.py`
   from `t-sigsegv-pi` with `config/relibc-tests-expected.txt`:
   `SUMMARY v0.3.0-dev-228-g5d21b70+x29ce: 319 tests, 11 failed (11 known,
@@ -1776,7 +1776,7 @@ Test 69 ([#47](https://github.com/redox-rpi/redox-rpi/issues/47)), branch
 `boot-time` 1d028a4, image `~/t18-work/image-bt5/`, staged with
 `~/t18-work/bt5-stage/scripts/netboot.sh` (boot-time `netboot.cmd`, the
 image's own bootloader with the 1 s wait, md5 `ce0d8b09…`). Three boots,
-timelines in `~/t18-work/tl-pi-bt5-{1,2,3}.txt` on homenodellm:
+timelines in `~/t18-work/tl-pi-bt5-{1,2,3}.txt` on <build host>:
 
 | Seconds | boot 1 (devsh reset) | boot 2 (serial reset) | boot 3 (devsh reset) |
 |---|---|---|---|
@@ -1888,7 +1888,7 @@ Real Pi 3B+ over netboot. Experiments: `ha-bridge`, `ldso-diagnostics`, `mqtt`, 
 
 **TLS works; fails on the ha-bridge start and a memory loss.** Broker
 `~/mqtt-broker/pi-test-broker-tls.sh` (TLS <host>:8883, plain :1883);
-capture saved as `~/pitest-tools/broker76.out` on homenodellm.
+capture saved as `~/pitest-tools/broker76.out` on the build host.
 
 - Standard checks pass, manifest matches, 0 of 300 starts failed.
 - `date -u`: `Fri Oct 30 07:10:12 UTC 2026` (after the CA date).
@@ -2079,7 +2079,7 @@ Stable image restored afterwards.
 
 ## 2026-10-30: `v0.3.0-dev-93-g2d1a2e4+xc99c` and `v0.3.0-dev-317-g40be428+xe828`
 
-Real Pi 3B+ over netboot. test 82 ([#23](https://github.com/redox-rpi/redox-rpi/issues/23) why the Pi never looks idle, follow-up to test 25), Pi test agent. Raw output on homenodellm in `~/pitest-tools/t82/` (`s82-a.txt`, `s82-b.txt`, `c82.txt`).
+Real Pi 3B+ over netboot. test 82 ([#23](https://github.com/redox-rpi/redox-rpi/issues/23) why the Pi never looks idle, follow-up to test 25), Pi test agent. Raw output on the build host in `~/pitest-tools/t82/` (`s82-a.txt`, `s82-b.txt`, `c82.txt`).
 
 **Found: on the `cpu-ondemand` image `dwc2d` holds CPU 2 the whole time. On
 current main (the `cputop` image) all four CPUs are idle.**
@@ -2271,7 +2271,7 @@ Real Pi 3B+ over netboot. Experiments: `ldso-diagnostics`, `timerd`, `timerd-tes
 from 08:23).
 
 - `date`: `Fri Oct 30 09:36:09 CET 2026`, `date -u`: `08:36:10 UTC`, the same
-  as `TZ=Europe/Berlin date` on homenodellm: **pass**.
+  as `TZ=Europe/Berlin date` on <build host>: **pass**.
 - `ls -l /etc/localtime`: `-> /usr/share/zoneinfo/Europe/Berlin`. `date -d
   '@1782907200'`: `Wed Jul  1 14:00:00 CEST 2026`: **pass**.
 - timerd logs local times (`clock set by timesync, 2026-10-30 09:27:45
@@ -2299,7 +2299,7 @@ Real Pi 3B+ over netboot, the stable image already on the Pi. test 92 ([#10](htt
 
 **Pass for the tool.** `scripts/pi-test.py <Pi 3B+> --starts 1000
 --serial-log ~/redox-rpi/logs/serial.log --crash-log ~/t10-crash.jsonl --report
-/tmp/t10-report.md`. Copies are on homenodellm in
+/tmp/t10-report.md`. Copies are on the build host in
 `~/pitest-tools/t92-crash.jsonl` and `~/pitest-tools/t92-report.md`.
 
 - The run ended. The other standard checks pass, and `starts` counts the failures:
@@ -2387,7 +2387,7 @@ The crash log lines (for #1):
 
 ## 2026-10-30: `v0.3.0-dev-354-gc656808+x6039`
 
-Real Pi 3B+ over netboot. Experiments: `timesync`, `rtl8152`, `cpu-ondemand`, `cputop`. test 93 ([#23](https://github.com/redox-rpi/redox-rpi/issues/23) CPU clock follows the load, second round), Pi test agent. Raw output on homenodellm in `~/pitest-tools/t93/`.
+Real Pi 3B+ over netboot. Experiments: `timesync`, `rtl8152`, `cpu-ondemand`, `cputop`. test 93 ([#23](https://github.com/redox-rpi/redox-rpi/issues/23) CPU clock follows the load, second round), Pi test agent. Raw output on the build host in `~/pitest-tools/t93/`.
 
 **Pass.** Image `~/redox-rpi-cpu/keep/v0.3.0-dev-354-gc656808+x6039/harddrive.img`.
 Boot log `rpi-firmwared: ARM clock 600 -> 1400 MHz`. Shelly read only, every
@@ -2451,7 +2451,7 @@ Stable image restored afterwards.
 Real Pi 3B+ over netboot. Experiments: `multicast`, `ipv6`, `lan78xx-multicast`, `mdns`, `rtl8152`, `timesync`. test 85 ([#27](https://github.com/redox-rpi/redox-rpi/issues/27) IPv6 global address and default route), Pi test agent
 
 **Pass.** Image `~/redox-rpi-zrtl/keep/slaac-v0.3.0-dev-217-g2d2f24c+xf552.img`.
-The Fritz!Box's global prefix today is `2a02:590:1504:9901::/64` (homenodellm:
+The Fritz!Box's global prefix today is `2a02:590:1504:9901::/64` (<build host>:
 `2a02:590:1504:9901:4a45:e6ff:fea0:b063`).
 
 - About a minute after boot, `eth0` addresses: `fe80::ba27:ebff:fe08:e0aa/64`,
@@ -2463,7 +2463,7 @@ The Fritz!Box's global prefix today is `2a02:590:1504:9901::/64` (homenodellm:
 - The serial log has no `router advertisement from …` lines (this image
   doesn't print them). The only router seen is the Fritz!Box,
   `fe80::b6fc:7dff:fe53:b289`.
-- `ping -6` to the Pi's global address from homenodellm: 3/3 (0.9–4.3 ms):
+- `ping -6` to the Pi's global address from <build host>: 3/3 (0.9–4.3 ms):
   **pass**.
 - `net6 udp [2a02:…:b063]:7777 hello`: reply `hello`, and `udp-echo.py` saw
   the Pi's `2a02:590:1504:9901:ba27:ebff:fe08:e0aa` (it timed out in test 55):
@@ -2488,7 +2488,7 @@ Real Pi 3B+ over netboot. Experiments: `timesync`, `rtl8152`, `boot-time`. test 
 **Pass: network in 5 of 5 boots, login about 21.4 s after `kreset`.** Staged
 with `~/t18-work/bt6-stage/scripts/netboot.sh` (bootloader md5 `549fc80b…`).
 Afterwards the saved stable files went back into `/srv/tftp/redox`. Timelines
-are on homenodellm in `~/t18-work/tl-pi-bt6-{1..5}.txt`; each boot was a devsh
+are on the build host in `~/t18-work/tl-pi-bt6-{1..5}.txt`; each boot was a devsh
 reset (boot 1 from the stable image).
 
 | Seconds | boot 1 | boot 2 | boot 3 | boot 4 | boot 5 |
@@ -2521,7 +2521,7 @@ Real Pi 3B+ over netboot. Experiments: `relibc-tests`, `timesync`, `rtl8152`, `s
   kept` (95 s). `sigregs process -n 3000`: `PASS process: 3000 signals, all
   registers kept` (95 s).
 - `ion /usr/share/relibc-tests/run.ion` over devsh: 51 s. Output saved on
-  homenodellm as `~/pitest-tools/relibc86.txt` (copy in
+  the build host as `~/pitest-tools/relibc86.txt` (copy in
   `~/redox-rpi-t12/build/relibc86-pi.txt`). `relibc-tests-compare.py` and
   `config/relibc-tests-expected.txt` from `t-g3-pi`:
   `SUMMARY v0.3.0-dev-238-g03161ba+x6026: 319 tests, 4 failed (4 known, 0
@@ -2556,7 +2556,7 @@ skipped (no zone files in this image). Pi test 78 passed later; the rebased bran
 Real Pi 3B+ over netboot. Experiments: `ldso-diagnostics`, `timesync`, `timerd`, `mqtt`, `mqtt-demo`, `ha-bridge`. test 88 ([#49](https://github.com/redox-rpi/redox-rpi/issues/49) retest of tests 58 and 65 with the connect fix), Pi test agent
 
 **Pass.** Broker `~/mqtt-broker/pi-test-broker.sh` (plain, <host>:1883);
-capture saved as `~/pitest-tools/broker88.out` on homenodellm. Manifest matches.
+capture saved as `~/pitest-tools/broker88.out` on the build host. Manifest matches.
 
 - Standard checks pass, 0 of 300 starts failed.
 - First 3 minutes, default broker 10.0.2.2: `mqtt-pub: 10.0.2.2:1883: no
@@ -2591,7 +2591,7 @@ Real Pi 3B+ over netboot. Experiments: `ldso-diagnostics`, `timesync`, `timerd`,
 
 **Pass, but free memory falls about 5.5 MB a minute while ha-bridge runs over
 TLS.** Broker `~/mqtt-broker/pi-test-broker-tls.sh`; capture saved as
-`~/pitest-tools/broker89.out` on homenodellm. Manifest matches.
+`~/pitest-tools/broker89.out` on the build host. Manifest matches.
 
 - Standard checks pass, 0 of 300 starts failed. A first try right after the
   boot printed nothing (probably before devsh was up); the second passed.
@@ -2722,7 +2722,7 @@ Stable image restored afterwards.
 Real Pi 3B+ over netboot. Experiments: `futex-wait-lock`, `relibc-tests`, `timesync`. test 98 ([#43](https://github.com/redox-rpi/redox-rpi/issues/43) lost futex wakeups, kernel backport of upstream `57ccc8f` and `5805059`), Pi test agent
 
 **Pass: 40 of 40 `cond_stress` runs without a lost wakeup; relibc suite 0 new
-failures.** Image `~/redox-rpi-t12/build/futex-pi.img`. Output on homenodellm
+failures.** Image `~/redox-rpi-t12/build/futex-pi.img`. Output on the build host
 in `~/redox-rpi-t12/build/cond98-pi.txt` and `relibc98-pi.txt`.
 
 - **First boot: no network.** `dwc2d` panicked during USB enumeration:
@@ -2826,7 +2826,7 @@ files went back into `/srv/tftp/redox`.
   `dwc2d: LAN78xx link up after 1710 ms` (once 1840 ms) and **no
   `panicked`**. The network came up every time: 0 of 6 boots with test 98's
   `enumerate.rs:173:40` panic.
-- Copies of the start-loop report and the reboot list are on homenodellm in
+- Copies of the start-loop report and the reboot list are on the build host in
   `~/redox-rpi-rel/keep/` (`t102-report.md`, `t102-reboots.txt`).
 
 Stable image restored afterwards.
@@ -3007,7 +3007,7 @@ Real Pi 3B+ over netboot. Experiments: `ldso-diagnostics`, `timesync`, `timerd`,
 **Pass: free memory fell 0.21 MB a minute over 30 minutes (#89: 5.5 MB a
 minute; goal under 1).** Image
 `~/mqtt-test/keep/leak-netboot-v0.3.0-dev-463-gac3dad4+x125f.img`, manifest
-matches. TLS broker `~/mqtt-broker/pi-test-broker-tls.sh` on homenodellm.
+matches. TLS broker `~/mqtt-broker/pi-test-broker-tls.sh` on the build host.
 
 - Standard checks pass, 0 of 300 starts failed.
 - `echo <host> > /etc/mqtt-host` at 18:14:07 UTC; 25 s later the
@@ -3178,7 +3178,7 @@ Real Pi 3B+ over netboot. Experiments: `timesync`, base `0049`. test 114 ([#88](
 `~/redox-rpi-zrtl/keep/leak-fix-v0.3.0-dev-458-ga97f08a+x12cb.img`.
 
 - Standard checks pass, 0 of 300 starts failed.
-- 120 devsh connections from homenodellm (connect to 2323, wait for
+- 120 devsh connections from the build host (connect to 2323, wait for
   `login:`, close, 0.3 s apart), 3 batches of 40; every connection got
   `login:` (0 failed). netstack PRIVATE from one devsh `cat /scheme/sys/context`:
 
@@ -3206,7 +3206,7 @@ Real Pi 3B+ over netboot. Experiments: `ldso-diagnostics`, `timesync`, `timerd`,
 
 **Pass: all time zone outputs as expected, and no freeze in 20 minutes
 (slowest timer run 5.3 s, #49: 438 s). One note: the Pi did not answer ping
-from homenodellm, though devsh answered every minute.** Image
+from the build host, though devsh answered every minute.** Image
 `~/tz-images/keep/tz-netboot-v0.3.0-dev-481-gcfa7d09+x9d2b.img`, manifest
 matches.
 
@@ -3228,7 +3228,7 @@ matches.
   started in the same second as `test-minute`), most under 1 s. A `date` line
   came every minute, 21:12:00 to 21:32:00, no gap. `echo pong` over devsh
   answered all 16 times. No panic.
-- **Ping:** my ping from homenodellm (ICMP, works against the router) got no
+- **Ping:** my ping from the build host (ICMP, works against the router) got no
   answer in any of the 16 minutes. `ping -c 2 <host>` from the Pi
   works, 0 % loss. So the Pi is reachable and the network works, but it does
   not answer incoming ping. I did not look into it further.
@@ -3424,7 +3424,7 @@ Afterwards the saved stable files went back into `/srv/tftp/redox`.
 - No devsh failure, so no serial readings or reset were needed.
 - The host's ping to the Pi got no answer in all 260 tries (one a minute). This is
   the same as earlier tests: the Pi pings out fine but answers no ICMP from
-  homenodellm. So this ping says nothing about #92.
+  the build host. So this ping says nothing about #92.
 - Counters: `uptime_ms`, `rx_frames` and `irqs` grew steadily all night
   (about 7,200 frames per 10 minutes). **`rx_errors` went to 1 once**
   (`rx_last_error 0x92`, at `uptime_ms` 7,449,997, about 23:15 UTC) and stayed at 1;
@@ -3463,7 +3463,7 @@ Afterwards the saved stable files went back into `/srv/tftp/redox`.
 | 01:14 | 14514456 | 104440 | 1 | 2582 | 0 | 103498 | 6.53 MB | 1.70 MB | 599956 | 0 % |
 | 01:24 | 15150748 | 109045 | 1 | 2666 | 0 | 108094 | 6.72 MB | 1.70 MB | 599576 | 0 % |
 
-Raw readings: homenodellm `~/pitest-tools/t119/` (`r-HHMM.txt`, `ping.txt`).
+Raw readings: the build host `~/pitest-tools/t119/` (`r-HHMM.txt`, `ping.txt`).
 Issue 92 didn't show up in this run. Stable image restored afterwards.
 
 ## 2026-10-31: `v0.3.0-dev-455-g9486f60+x7d9f` (test 109 step 6, BT_ON the Linux way)
@@ -3530,7 +3530,7 @@ DMA uses less ACTTIME (about 18–21 s per write against about 26 s) but more SC
 (+3.4 to +11.5 s against +3.1 to +3.5 s); PIO was steadier and a little faster
 here (8.1–9.0 MB/s). Coalescing made no clear difference with DMA or PIO.
 
-Images from homenodellm `~/redox-rpi-sd/keep/`, each manifest matches, staged in
+Images from the build host `~/redox-rpi-sd/keep/`, each manifest matches, staged in
 order A–D with stable's bootloader:
 
 - `scripts/pi-test.py` standard checks pass on all 4 (version, manifest, ps, ps-tty,
@@ -3569,7 +3569,7 @@ across the step.
 - Every image ran steps 1–4 right after the standard checks, on a fresh boot.
   The files were removed after each step.
 
-Raw output: homenodellm `~/pitest-tools/t121/` (`X-boot.txt`, `X-pitest.txt`, `X-dd.txt`).
+Raw output: the build host `~/pitest-tools/t121/` (`X-boot.txt`, `X-pitest.txt`, `X-dd.txt`).
 Stable image restored afterwards.
 
 ## 2026-10-31: `v0.3.0-dev-457-gfd3a726+x7d9f` (test 109 step 7, drive test and WL_ON)
@@ -4276,7 +4276,7 @@ SUMMARY v0.3.0-dev-417-gd2482d8+x9903: 319 tests, 13 failed (12 known, 0 flaky, 
   all come from the known signal tests in `run.ion` (`signals/sigprocmask…`,
   `sigpause-…`, `sigsegv`, `sigset-5`, `stackoverflow`). None came from the 1000 starts.
 
-Raw output: homenodellm `~/pitest-tools/t129/`. Stable image restored afterwards.
+Raw output: the build host `~/pitest-tools/t129/`. Stable image restored afterwards.
 
 ## 2026-10-31: `v0.3.0-dev-515-gf41008d+x810f` (ctrlc-raw, Ctrl-C 0.01–0.03 s after Enter)
 
@@ -4360,7 +4360,7 @@ SUMMARY v0.3.0-dev-574-g55e47fb+xb3d9: 319 tests, 16 failed (16 known, 0 flaky, 
 
   No `NEW` line, and `pthread/exit` passes in the suite too (in #129 it was `NEW` with SIGKILL).
 
-Raw output: homenodellm `~/pitest-tools/t133/`. Stable image restored afterwards.
+Raw output: the build host `~/pitest-tools/t133/`. Stable image restored afterwards.
 
 ## 2026-10-31: test 135, dwc2d waits for the channel interrupt (baseline vs `dwc2d-wait-irq`)
 
@@ -4570,7 +4570,7 @@ Real Pi 3B+ over netboot. Test 135 ([#104](https://github.com/redox-rpi/redox-rp
 wait-irq image, `dd if=/dev/zero of=/tmp/tx bs=65536 count=256` made
 `/tmp/tx` (16,777,216 bytes). Then twice `time nc <host>:5135 < /tmp/tx`:
 each printed `Remote host: <host>:5135` and ended after 0.04 s
-(`real 0.043949064s`, `0.042097759s`). `nc -l 5135 | wc -c` on homenodellm counted
+(`real 0.043949064s`, `0.042097759s`). `nc -l 5135 | wc -c` on the build host counted
 **0 bytes** both times. dwc2d ACTTIME across each `nc`: 0.64 → 0.65 s and
 7.74 → 7.76 s. Between the two tries it rose at its idle rate (about 1.6 s per
 minute, as in step 1), so the failed sends themselves cost nothing.
@@ -4637,7 +4637,7 @@ certificate installed with `install-client-cert.py` (`/etc/mqtt-client.crt`
 - `free` afterwards: 743612 total, 152048 used, 591564 free; `throttled`
   `0x00000000`; no `panicked` or `RELIBC PANIC` on the serial console.
 - Broker stopped afterwards (port 8884 closed); the other test brokers on
-  homenodellm were left running.
+  the build host were left running.
 
 Stable image restored afterwards.
 
@@ -4879,7 +4879,7 @@ address: 43:45:C0:00:1F:AC
 name: BCM43455 37.4MHz Raspberry Pi 3+-0190
 ### bt scan 10  (10.4 s)
 scan: LE for 10 s
-… 22 lines, among them ShellyPlugSG3-543204689994 rssi -44, ShellyPlus1-441793A8302C rssi -70,
+… 22 lines, among them <smart plug Wi-Fi> rssi -44, <smart relay Wi-Fi> rssi -70,
   Qingping Alarm Clock rssi -69, Govee_H70B3_2B93 rssi -85, SBBT-002C rssi -68
 scan: 22 devices
 ### bt inquiry 10  (10.6 s)
@@ -6272,7 +6272,7 @@ sha256 `6b359fc8…`, its first 4 MiB `e14fc5a4…`.
   requests / 135464 blocks, B 1310 / 169200, C 1296 / 169088, about 128–130
   blocks per request on all three. C's 4 KiB and 64 KiB steps: 2411 requests /
   90952 blocks (37.7 per request).
-- `bcm2835-sdhostd` lines per step are kept on homenodellm
+- `bcm2835-sdhostd` lines per step are kept on the build host
   (`~/pitest-tools/t177/*-stats.txt`). No error line, no panic.
 
 Stable image restored afterwards.
@@ -6404,7 +6404,7 @@ Staged 04:44, and the boot reached login with no `FATAL` or panic line.
 - `Timeout before authentication` is written to serial only **after the client closes the connection**, not about 2 min after it opens.
 
 - `ls /etc/ssh`: the host keys were already there at the first look (04:45), ed25519, ecdsa, rsa and mldsa44_ed25519.
-- The test key `/tmp/qkey.pub` went into `/home/root/.ssh/authorized_keys` over devsh, in single quotes. `wc -c` gives `100` (the same as the file on homenodellm).
+- The test key `/tmp/qkey.pub` went into `/home/root/.ssh/authorized_keys` over devsh, in single quotes. `wc -c` gives `100` (the same as the file on the build host).
 - 5 key logins `ssh -i /tmp/qkey root@<Pi 3B+> 'echo loginN'`: `login1` … `login5`, all rc 0, with no failed login.
 - `ssh-session.exp` (port 22, Pi address): prompt, command, prompt-again, backspace, prompt-again, exit, all `ok`, rc 0.
 - **Login grace time:** the client sent nothing after the server banner `SSH-2.0-OpenSSH_10.5`. Three tries:
@@ -6779,7 +6779,7 @@ Real Pi 3B+ over netboot. Test 190 ([#151](https://github.com/redox-rpi/redox-rp
   dwc2d: root port: Timeout("channel halt")
   dwc2d: root port: HPRT0 0x100d
   ```
-  - Then nothing more. The full `controller stuck` line, with all channels, is in `t190/r6-stuckline.txt` on homenodellm.
+  - Then nothing more. The full `controller stuck` line, with all channels, is in `t190/r6-stuckline.txt` on the build host.
   - Lines in run 6: `stuck` 1, `restarted` 0, `removed` 1 (`keyboard removed`), `Timeout` 11.
   - Read over serial at 12:02, `/tmp/dwc2d-usbstats`: `halt_failures 40`, `restarts 1`, `timeouts 36`, `last_error 0x80000000`, `root_events 2`, `hprt0 0x1005`, `last_hprt0 0x100d`, `gintsts 0x54000039`. `/tmp/dwc2d-step`: `582139 idle`.
   - netget's TCP connection did not survive, and the network did not come back within 6 min. devsh was dead.
@@ -6875,7 +6875,7 @@ Image `~/redox-rpi-rel/keep/v0.3.0-rc4-netboot.img`, staged 15:36 with the stabl
 - **(3)** No `pcid`, `audiod` or `rtcd` line in any of the 6 boots.
 - **(4) time:**
   - `timesync: clock set to 2026-11-01 15:37:08 UTC from pool.ntp.org`;
-  - `date -u` on the Pi gave `Sun Nov 1 15:37:56 UTC 2026`, the same second as homenodellm.
+  - `date -u` on the Pi gave `Sun Nov 1 15:37:56 UTC 2026`, the same second as the build host.
 - **(5)** `reboot` over devsh, 5 times: each came back to `redox login:` (20–22 s) and devsh answered (15:44:39 … 15:48:22).
 - **(11)** `serial-input-test.sh 20` (logged in as root on the console): **20 of 20 lines complete**.
 - **(13) governor:**

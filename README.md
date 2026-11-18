@@ -61,7 +61,7 @@ rule.
 2. **No images or binaries.** Images stay on the build host or the image
    server. A report names the path.
 3. **Large logs stay on the build host.** Raw logs over about 1 MB stay on
-   homenodellm under `~/pitest-tools/t<row>/`, and the report gives that
+   the build host under `~/pitest-tools/t<row>/`, and the report gives that
    path. Short excerpts go into the report.
 4. **No secrets.** No passwords, tokens, Wi-Fi settings or keys, not even in
    a log excerpt. Check excerpts before you commit them.

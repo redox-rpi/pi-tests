@@ -1,7 +1,7 @@
 # Lab
 
 The test hardware of redox-rpi and how to use it. The build host is
-**homenodellm** (Linux, x86_64), on the same LAN as the boards. It is the
+**The build host** (Linux, x86_64), on the same LAN as the boards. It is the
 TFTP and HTTP server for network boot, and it records the Pi's serial
 console. Everything here is on a private LAN; nothing is reachable from the
 internet.
@@ -10,16 +10,16 @@ internet.
 
 | Board | Use | How it boots | Notes |
 |---|---|---|---|
-| Raspberry Pi 3B+ (rev `0x00a020d3`, 1 GiB) | the test Pi: every automated row and most person tests | network boot from homenodellm (`/srv/tftp/redox`), through the boot selector card (since 2026-11-10, [#313](reports/313.md): our serial monitor as `bootcode.bin`; Enter within 5 s keeps it open, otherwise it chains Broadcom's code; `bootcode-broadcom.bin` on the card is the way back); or an SD card for card tests | LAN7800 Ethernet, IP 192.168.178.148, devsh on port 2323 in test images; serial console on homenodellm; HDMI to the NanoKVM |
+| Raspberry Pi 3B+ (rev `0x00a020d3`, 1 GiB) | the test Pi: every automated row and most person tests | network boot from the build host (`/srv/tftp/redox`), through the boot selector card (since 2026-11-10, [#313](reports/313.md): our serial monitor as `bootcode.bin`; Enter within 5 s keeps it open, otherwise it chains Broadcom's code; `bootcode-broadcom.bin` on the card is the way back); or an SD card for card tests | LAN7800 Ethernet, IP <Pi 3B+>, devsh on port 2323 in test images; serial console on the build host; HDMI to the NanoKVM |
 | Raspberry Pi Zero 2 W | second board, release checks | SD card (`--zero2w` images) | network through a USB hub with an RTL8153 adapter; tested from the card for v0.4.0-rc2 (row 286) |
 | Raspberry Pi 400 | coming soon | | port work on the `pi400` branches ([#311](https://github.com/redox-rpi/redox-rpi/issues/311)); not on the test network yet |
 
 ## Power: Shelly plug
 
-The Pi 3B+ is powered through a Shelly Plug S Gen3 (`shellyplug-01.fritz.box`),
-controlled over its HTTP RPC API from homenodellm:
+The Pi 3B+ is powered through a Shelly Plug S Gen3 (`<smart plug>`),
+controlled over its HTTP RPC API from <build host>:
 
-- Read: `curl -m 15 'http://shellyplug-01.fritz.box/rpc/Switch.GetStatus?id=0'` (output, power in W). Anyone may read it.
+- Read: `curl -m 15 'http://<smart plug>/rpc/Switch.GetStatus?id=0'` (output, power in W). Anyone may read it.
 - Switch: `Switch.Set?id=0&on=false|true`. Only the Pi test agent switches
   it, to recover a hung Pi or for a test that needs a power cycle. Never
   switch it while a person works at the Pi.
@@ -35,7 +35,7 @@ nothing is on HDMI, the firmware picks 656x416 (rows 291 and 294).
 
 ## Serial console
 
-The Pi's serial console is on `/dev/ttyUSB0` of homenodellm (115200 baud).
+The Pi's serial console is on `/dev/ttyUSB0` of the build host (115200 baud).
 The systemd user service `redox-serial.service` records everything to
 `~/redox-rpi/logs/serial.log` and restarts by itself.
 
@@ -99,7 +99,7 @@ Images for tests with a person at the Pi are built every night after the
 stable image ([redox-rpi ci.md](https://github.com/redox-rpi/redox-rpi/blob/main/docs/topics/ci.md#nightly-visit-images)),
 one per line in [config/visit-images.conf](https://github.com/redox-rpi/redox-rpi/blob/main/config/visit-images.conf).
 A row that needs one writes "nightly visit `desktop`" (the image's name) in
-its Image column instead of a build ID; http://homenodellm:8080/visit/ then
+its Image column instead of a build ID; http://<build host>:8080/visit/ then
 lists the row with the image, so a tester at the Pi sees what to check.
 Before the test, check that the image is OK and new enough, then stage it
 like the stable image:
@@ -121,9 +121,9 @@ of that family), and the file name when the test needs exactly that build.
 
 ## Images
 
-- Network images: `scripts/netboot.sh --server 192.168.178.120 --tftp-dir /srv/tftp --image <harddrive.img>`.
-- SD card images for a person: http://homenodellm:8080/sdcard/ or the image
+- Network images: `scripts/netboot.sh --server <host> --tftp-dir /srv/tftp --image <harddrive.img>`.
+- SD card images for a person: http://<build host>:8080/sdcard/ or the image
   server (`sudo swiftflash redox:<family>`).
-- Nightly visit images for person tests: http://homenodellm:8080/visit/.
+- Nightly visit images for person tests: http://<build host>:8080/visit/.
 - Images and raw logs never go into this repository (see the
   [rules](README.md#rules)).
