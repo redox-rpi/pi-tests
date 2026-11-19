@@ -51,9 +51,9 @@ The systemd user service `redox-serial.service` records everything to
 ## Stable image
 
 <!-- stable-image: written by scripts/update-stable.sh -->
-Staged on the TFTP server whenever no test runs: `v0.6.0-dev-101-gb2a098cc+x2d42`, tested
-2026-11-18 with `scripts/pi-test.py` ([report](reports/stable-2026-11-18.md), starts:
-0 of 300 failed). A copy is in `/srv/tftp/backup-v0.6.0-dev-101-gb2a098cc+x2d42/`, and
+Staged on the TFTP server whenever no test runs: `v0.6.0-dev-107-gf04e0cca+x2d42`, tested
+2026-11-19 with `scripts/pi-test.py` ([report](reports/stable-2026-11-19.md), starts:
+0 of 300 failed). A copy is in `/srv/tftp/backup-v0.6.0-dev-107-gf04e0cca+x2d42/`, and
 `/srv/tftp/stable` points to it.
 <!-- /stable-image -->
 
