@@ -35,13 +35,15 @@ nothing is on HDMI, the firmware picks 656x416 (rows 291 and 294).
 
 ## Serial console
 
-The Pi's serial console is on `/dev/ttyUSB0` of the build host (115200 baud).
+The Pi 3B+'s serial console is on the 3B+ console port of the build host (115200 baud).
+Use the port's fixed `/dev/serial/by-path/` name as the service uses it, never a bare
+`ttyUSBn`: the numbers can swap when the host restarts.
 The systemd user service `redox-serial.service` records everything to
 `~/redox-rpi/logs/serial.log` and restarts by itself.
 
 - **Read** from that file (`tail -f`, `tail -c`), never from the device: a
-  second reader on `/dev/ttyUSB0` takes bytes away from the log.
-- **Type** with `printf '...\r' > /dev/ttyUSB0`, only after the new boot's
+  second reader on the console port takes bytes away from the log.
+- **Type** with `printf '...\r'` to the 3B+ console port, only after the new boot's
   `redox login:` has appeared, one character every 0.15 s. Keys sent
   earlier reach the bootloader.
 - **Old output:** `redox-serial-rotate.timer` moves the log every night at
