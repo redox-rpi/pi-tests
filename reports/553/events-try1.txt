@@ -1,0 +1,14 @@
+start 17:03:20
+config: 20d19 < total_mem=1024 24a24,25 > hdmi_force_hotplug=1 > hdmi_drive=2  17:03:20
+staged /home/zehrer/redox-rpi-graphics/keep/gfx-v3dprobe4-netboot (build_id = "v0.6.0-dev-171-g44e88f9e+xa6ac") 17:03:20
+U-Boot prompt (load failed), typing boot (1) 17:03:59
+U-Boot prompt (load failed), typing boot (2) 17:04:36
+U-Boot prompt (load failed), typing boot (3) 17:06:01
+boot: uboot, U-Boot retries 3, banner:  17:06:32
+reboots seen after login: 1 17:06:47
+panic/UNHANDLED: 0 17:06:47
+config restored: same 17:06:47
+staged /home/zehrer/redox-rpi-graphics/keep/pi400-fbshot-stage (build_id = "v0.6.0-dev-105-gbef6d90a+xcf2a") 17:06:47
+boot: timeout, U-Boot retries 0, banner:  17:12:10
+restore: timeout 17:12:10
+recovery boot 1: login 17:13:18

@@ -1,0 +1,2 @@
+### cat /scheme/rpi-firmware/v3d_power  (0.3 s)
+off
