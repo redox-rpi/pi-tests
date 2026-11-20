@@ -1,0 +1,60 @@
+### serial login done
+### ps  (typing 0.3 s, total 0.9 s)
+root:~# proot:~# psroot:~# ps1970-01-01T00-04-17.247Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 1 submit #15200
+
+PID   EUID  EGID  STAT  CPU   AFFINITY   ACTTIME     SCHTIME     PRIVATE SHARED  NAME
+0     0     0     RR+   #0    1          00:00:00.00 00:00:00.00 65.0 KB 0 B     [kmain]
+0     0     0     RR    #1    2          00:00:00.00 00:00:00.00 65.0 KB 0 B     [kmain]
+0     0     0     RR    #2    4          00:00:00.00 00:00:00.00 65.0 KB 0 B     [kmain]
+0     0     0     RR    #3    8          00:00:00.00 00:00:00.00 65.0 KB 0 B     [kmain]
+0     0     0     UB    #1    F          00:00:00.03 00:00:00.00 1970-01-01T00-04-17.275Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 1 event #15200 cc 1 left 0
+27.1 MB 4.00 KB initfs
+0     0     0     UB    #3    F          00:00:00.04 00:00:00.00 1.37 MB 332 KB  procmgr
+0     0     0     UB    #3    F          00:00:00.19 00:00:00.00 1.37 MB 8.00 KB initnsmgr
+1     0     0     UB    #0    F          00:00:00.24 00:00:00.39 1.86 MB 0 B     /scheme/initfs/bin/init
+2     0     0     UB    #1    F          00:00:00.06 00:00:00.06 3.89 MB 16.0 KB /scheme/initfs/bin/logd
+2     0     0     UR+   #2    F          00:00:14.55 00:00:00.00 3.89 MB 16.0 KB /scheme/initfs/bin/logd
+3     0     0     UB    #3    F          00:00:00.00 00:00:00.01 1.62 MB 80.0 KB /scheme/initfs/bin/randd
+4     0     0     UB    #3    F          00:00:00.00 00:00:00.02 1.74 MB 0 B     /scheme/initfs/bin/ipcd
+5     0     0     UB    #3    F          00:00:00.00 00:00:00.00 1.55 MB 0 B     /scheme/initfs/bin/zerod
+6     0     0     UB    #3    F          00:00:00.00 00:00:00.00 1.55 MB 24.0 KB /scheme/initfs/bin/zerod
+7     0     0     UB    #0    F          00:00:00.04 00:00:00.00 3.27 MB 0 B     /scheme/initfs/bin/ramfs
+8     0     0     UB    #1    F          00:00:00.09 00:00:00.09 5.77 MB 0 B     /scheme/initfs/bin/rpi-firmwared
+8     0     0     US    #2    F          00:00:00.39 00:00:00.39 5.77 MB 0 B     /scheme/initfs/bin/rpi-firmwared
+8     0     0     US    #3    F          00:00:00.00 00:00:00.00 5.77 MB 0 B     /scheme/initfs/bin/rpi-firmwared
+9     0     0     UB    #1    F          00:00:00.00 00:00:00.00 1.67 MB 0 B     /scheme/initfs/bin/inputd
+10    0     0     UB    #3    F          00:00:00.03 00:00:00.01 1.79 MB 4.00 KB /scheme/initfs/bin/lived
+11    0     0     UB    #0    F          00:00:00.00 00:00:00.00 1.62 MB 0 B     /scheme/initfs/bin/bcm2835-gpiod
+12    0     0     UB    #1    F          00:00:00.00 00:00:00.00 1.68 MB 0 B     /scheme/initfs/bin/bcm2835-spid
+13    0     0     UB    #1    F          00:00:00.00 00:00:00.00 1.62 MB 0 B     /scheme/initfs/bin/bcm2835-i2cd
+16    0     0     UB    #1    F          00:00:00.02 00:00:00.03 5.86 MB 0 B     /scheme/initfs/bin/fbbootlogd
+20    0     0     UB    #2    F          00:00:00.00 00:00:00.26 1.79 MB 16.0 KB /scheme/initfs/bin/pcid
+23    0     0     UB    #3    F          00:00:00.70 00:00:00.22 34.7 MB 12.0 KB /scheme/initfs/bin/redoxfs
+25    0     0     UB    #1    F          00:00:02.54 00:00:00.43 15.1 MB 16.0 KB /usr/lib/drivers/xhcid
+25    0     0     US    #3    F          00:00:02.86 00:00:03.05 15.1 MB 16.0 KB /usr/lib/drivers/xhcid
+25    0     0     UB    #2    F          00:00:00.01 00:00:00.04 15.1 MB 16.0 KB /usr/lib/drivers/xhcid
+25    0     0     UB    #0    F          00:00:00.00 00:00:00.01 15.1 MB 16.0 KB /usr/lib/drivers/xhcid
+25    0     0     UB    #2    F          00:00:06.43 00:00:09.21 15.1 MB 16.0 KB /usr/lib/drivers/xhcid
+25    0     0     UB    #0    F          00:00:06.91 00:00:06.51 15.1 MB 16.0 KB /usr/lib/drivers/xhcid
+26    0     0     UB    #3    F          00:00:00.05 00:00:00.05 1.62 MB 12.0 KB /usr/bin/ptyd
+29    0     0     US    #2    F          00:00:00.19 00:00:00.59 1.73 MB 0 B     /usr/lib/drivers/usbhubd
+30    0     0     UB    #2    F          00:00:00.00 00:00:00.02 5.20 MB 0 B     /usr/bin/sudo
+31    0     0     UB    #1    F          00:00:00.04 00:00:00.10 6.86 MB 8.00 KB /usr/bin/netstack
+31    0     0     US    #1    F          00:00:00.00 00:00:00.00 6.86 MB 8.00 KB /usr/bin/netstack
+31    0     0     US    #1    F          00:00:00.02 00:00:00.02 6.86 MB 8.00 KB /usr/bin/netstack
+32    0     0     UB    #1    F          00:00:00.14 00:00:00.06 6.15 MB 4.00 KB /usr/bin/fbcond
+33    0     0     UR+   #1    F          00:00:00.62 00:00:00.29 1.86 MB 0 B     /usr/bin/getty
+34    0     0     US    #1    F          00:00:00.02 00:00:00.03 1.68 MB 0 B     /usr/bin/dhcpd
+35    0     0     UB    #2    F          00:00:00.00 00:00:00.02 5.21 MB 0 B     /usr/bin/devshd
+40    0     0     UB    #1    F          00:00:00.24 00:00:00.37 1.86 MB 0 B     /usr/bin/getty
+44    0     0     UB    #1    F          00:00:00.20 00:00:00.22 5.82 MB 0 B     /usr/bin/login
+45    0     0     UB    #1    F          00:00:00.00 00:00:00.02 5.88 MB 0 B     /usr/bin/login
+47    0     0     UB    #0    F          00:00:00.00 00:00:00.07 3.81 MB 0 B     /usr/lib/drivers/usbhidd
+47    0     0     US    #0    F          00:00:00.00 00:00:00.05 3.81 MB 0 B     /usr/lib/drivers/usbhidd
+50    0     0     UB    #1    F          00:00:03.42 00:00:04.69 3.81 MB 0 B     /usr/lib/drivers/usbhidd
+50    0     0     US    #2    F          00:00:00.03 00:00:00.32 3.81 MB 0 B     /usr/lib/drivers/usbhidd
+51    0     0     UR    #2    F          00:00:02.79 00:00:04.03 3.81 MB 0 B     /usr/lib/drivers/usbhidd
+51    0     0     US    #2    F          00:00:00.04 00:00:00.36 3.81 MB 0 B     /usr/lib/drivers/usbhidd
+55    0     0     UB    #3    F          00:00:00.01 00:00:00.03 7.65 MB 0 B     /usr/bin/ion
+57    0     0     UR+   #3    F          00:00:00.00 00:00:00.02 5.14 MB 0 B     /usr/bin/ps
+⏎                                                                                root:~# root:~# 

@@ -1,0 +1,22 @@
+1970-01-01T00-00-32.818Z [@usbhubd:244 INFO] power on port 1
+1970-01-01T00-00-32.849Z [@usbhubd:244 INFO] power on port 2
+1970-01-01T00-00-32.879Z [@usbhubd:244 INFO] power on port 3
+1970-01-01T00-00-32.903Z [@usbhubd:244 INFO] power on port 4
+experiments: netstack-watch pi400 usb-trace
+⏎                                                                                redox login: redox login: 1970-01-01T00-00-33.939Z [@usbhubd:239 INFO] port 1 status V2(HubPortStatusV2(POWER))
+1970-01-01T00-00-33.959Z [@usbhubd:239 INFO] port 2 status V2(HubPortStatusV2(CONNECTION | POWER | LOW_SPEED | CONNECTION_CHANGED))
+1970-01-01T00-00-33.980Z [@usbhubd:287 INFO] reset port 2
+1970-01-01T00-00-34.014Z [@usbhubd:239 INFO] port 3 status V2(HubPortStatusV2(POWER))
+1970-01-01T00-00-34.041Z [@usbhubd:239 INFO] port 4 status V2(HubPortStatusV2(CONNECTION | POWER | LOW_SPEED | CONNECTION_CHANGED))
+1970-01-01T00-00-35.092Z [@usbhubd:239 INFO] port 2 status V2(HubPortStatusV2(CONNECTION | ENABLE | POWER | LOW_SPEED | CONNECTION_CHANGED | RESET_CHANGED))
+1970-01-01T00-00-35.145Z [@usbhubd:150 INFO] attach port 1.2 at xHCI speed 2
+1970-01-01T00-00-35.331Z [@usbhidd:229 INFO] USB HID driver spawned with scheme `usb.pci-0000-01-00.0_xhci`, port 1.2, interface 0
+1970-01-01T00-00-35.352Z [@usbhidd:241 INFO] USB HID driver: "USB Optical Mouse" serial ""
+1970-01-01T00-00-35.370Z [@usbhidd:264 WARN] using endpoint 0x81 Interrupt In
+1970-01-01T00-00-35.386Z [@usbhubd:287 INFO] reset port 4
+1970-01-01T00-00-35.481Z [@xhcid::xhci::scheme:2964 ERROR] CONTROL_TRANSFER transfer Trb { data: 0000000000000000, status: 00000000, control: 00011020 } failed with event Trb { data: 000000000626D080, status: 06000000, control: 02018001 }
+1970-01-01T00-00-35.511Z [@usbhidd:326 WARN] failed to set idle: i/o error: I/O error (os error 5)
+1970-01-01T00-00-35.543Z [@xhcid::xhci::scheme:3007 INFO] usb-trace: port 1.2 ep 1 submit #1
+1970-01-01T00-01-35.557Z [@usbhidd:431 INFO] usb-trace: port 1.2 iface 0 reports 0
+1970-01-01T00-02-35.584Z [@usbhidd:431 INFO] usb-trace: port 1.2 iface 0 reports 0
+1970-01-01T00-03-35.612Z [@usbhidd:431 INFO] usb-trace: port 1.2 iface 0 reports 0

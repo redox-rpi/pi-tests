@@ -1,0 +1,761 @@
+1970-01-01T00-01-05.706Z [@usbhubd:244 INFO] power on port 1
+1970-01-01T00-01-05.746Z [@usbhubd:244 INFO] power on port 2
+1970-01-01T00-01-05.786Z [@usbhubd:244 INFO] power on port 3
+1970-01-01T00-01-05.816Z [@usbhubd:244 INFO] power on port 4
+experiments: netstack-watch pi400 usb-trace
+⏎                                                                                redox login: redox login: 1970-01-01T00-01-06.846Z [@usbhubd:239 INFO] port 1 status V2(HubPortStatusV2(POWER))
+1970-01-01T00-01-06.873Z [@usbhubd:239 INFO] port 2 status V2(HubPortStatusV2(CONNECTION | POWER | LOW_SPEED | CONNECTION_CHANGED))
+1970-01-01T00-01-06.894Z [@usbhubd:287 INFO] reset port 2
+1970-01-01T00-01-06.926Z [@usbhubd:239 INFO] port 3 status V2(HubPortStatusV2(POWER))
+1970-01-01T00-01-06.946Z [@usbhubd:239 INFO] port 4 status V2(HubPortStatusV2(CONNECTION | POWER | LOW_SPEED | CONNECTION_CHANGED))
+1970-01-01T00-01-07.996Z [@usbhubd:239 INFO] port 2 status V2(HubPortStatusV2(CONNECTION | ENABLE | POWER | LOW_SPEED | CONNECTION_CHANGED | RESET_CHANGED))
+1970-01-01T00-01-08.049Z [@usbhubd:150 INFO] attach port 1.2 at xHCI speed 2
+1970-01-01T00-01-08.257Z [@usbhidd:229 INFO] USB HID driver spawned with scheme `usb.pci-0000-01-00.0_xhci`, port 1.2, interface 0
+1970-01-01T00-01-08.278Z [@usbhidd:241 INFO] USB HID driver: "USB Optical Mouse" serial ""
+1970-01-01T00-01-08.295Z [@usbhidd:264 WARN] using endpoint 0x81 Interrupt In
+1970-01-01T00-01-08.306Z [@usbhubd:287 INFO] reset port 4
+1970-01-01T00-01-08.375Z [@xhcid::xhci::scheme:2986 ERROR] CONTROL_TRANSFER transfer Trb { data: 0000000000000000, status: 00000000, control: 00011020 } failed with event Trb { data: 0000000006100080, status: 06000000, control: 02018001 }
+1970-01-01T00-01-08.406Z [@usbhidd:326 WARN] failed to set idle: i/o error: I/O error (os error 5)
+1970-01-01T00-01-08.446Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.2 ep 1 submit #1
+1970-01-01T00-01-09.395Z [@usbhubd:239 INFO] port 4 status V2(HubPortStatusV2(CONNECTION | ENABLE | POWER | LOW_SPEED | CONNECTION_CHANGED | RESET_CHANGED))
+1970-01-01T00-01-09.449Z [@usbhubd:150 INFO] attach port 1.4 at xHCI speed 2
+1970-01-01T00-01-09.670Z [@usbhidd:229 INFO] USB HID driver spawned with scheme `usb.pci-0000-01-00.0_xhci`, port 1.4, interface 0
+1970-01-01T00-01-09.718Z [@usbhidd:241 INFO] USB HID driver: "Raspberry Pi Internal Keyboard" serial ""
+1970-01-01T00-01-09.725Z [@usbhidd:229 INFO] USB HID driver spawned with scheme `usb.pci-0000-01-00.0_xhci`, port 1.4, interface 1
+1970-01-01T00-01-09.737Z [@usbhidd:264 WARN] using endpoint 0x81 Interrupt In
+1970-01-01T00-01-09.758Z [@usbhidd:241 INFO] USB HID driver: "Raspberry Pi Internal Keyboard" serial ""
+1970-01-01T00-01-09.792Z [@usbhidd:264 WARN] using endpoint 0x82 Interrupt In
+1970-01-01T00-01-09.848Z [@xhcid::xhci::scheme:2986 ERROR] CONTROL_TRANSFER transfer Trb { data: 0000000000000000, status: 00000000, control: 00011020 } failed with event Trb { data: 000000000845E060, status: 06000000, control: 03018001 }
+1970-01-01T00-01-09.878Z [@xhcid::xhci::scheme:1293 WARN] port 1.4: SET_INTERFACE 0 refused (I/O error); it has one alternate setting, going on
+1970-01-01T00-01-09.928Z [@xhcid::xhci::scheme:2986 ERROR] CONTROL_TRANSFER transfer Trb { data: 0000000000000000, status: 00000000, control: 00011020 } failed with event Trb { data: 000000000845E080, status: 06000000, control: 03018001 }
+1970-01-01T00-01-09.958Z [@xhcid::xhci::scheme:1293 WARN] port 1.4: SET_INTERFACE 1 refused (I/O error); it has one alternate setting, going on
+1970-01-01T00-01-10.052Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 1 submit #1
+1970-01-01T00-01-10.069Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 2 submit #1
+1970-01-01T00-01-10.099Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 1 event #1 cc 1 left 0
+1970-01-01T00-01-10.117Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 2 event #1 cc 13 left 3
+1970-01-01T00-01-10.118Z [@usbhidd:137 WARN] unknown usage_page 0x7 usage 0x0
+1970-01-01T00-01-10.136Z [@usbhidd:676 INFO] unsupported usage 0xC:0xB5 value 0
+1970-01-01T00-01-10.152Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 1 submit #2
+1970-01-01T00-01-10.168Z [@usbhidd:676 INFO] unsupported usage 0xC:0xB6 value 0
+1970-01-01T00-01-10.201Z [@usbhidd:676 INFO] unsupported usage 0xC:0xEA value 0
+1970-01-01T00-01-10.196Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 1 event #2 cc 1 left 0
+1970-01-01T00-01-10.218Z [@usbhidd:676 INFO] unsupported usage 0xC:0xE9 value 0
+1970-01-01T00-01-10.252Z [@usbhidd:676 INFO] unsupported usage 0xC:0x223 value 0
+1970-01-01T00-01-10.268Z [@usbhidd:676 INFO] unsupported usage 0xC:0x192 value 0
+1970-01-01T00-01-10.285Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 1 submit #3
+1970-01-01T00-01-10.302Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 2 submit #2
+1970-01-01T00-01-10.320Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 1 event #3 cc 1 left 0
+1970-01-01T00-01-10.338Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 2 event #2 cc 13 left 3
+1970-01-01T00-01-10.357Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 1 submit #4
+1970-01-01T00-01-10.374Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 2 submit #3
+1970-01-01T00-01-10.392Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 1 event #4 cc 1 left 0
+1970-01-01T00-01-10.410Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 2 event #3 cc 13 left 3
+1970-01-01T00-01-10.429Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 1 submit #5
+1970-01-01T00-01-10.446Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 2 submit #4
+1970-01-01T00-01-10.464Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 1 event #5 cc 1 left 0
+1970-01-01T00-01-10.482Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 2 event #4 cc 13 left 3
+1970-01-01T00-01-10.501Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 1 submit #6
+1970-01-01T00-01-10.518Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 2 submit #5
+1970-01-01T00-01-10.536Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 1 event #6 cc 1 left 0
+1970-01-01T00-01-10.555Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 2 event #5 cc 13 left 3
+1970-01-01T00-01-10.574Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 1 submit #7
+1970-01-01T00-01-10.592Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 2 submit #6
+1970-01-01T00-01-10.609Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 1 event #7 cc 1 left 0
+1970-01-01T00-01-10.628Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 2 event #6 cc 13 left 3
+1970-01-01T00-01-10.646Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 1 submit #8
+1970-01-01T00-01-10.664Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 2 submit #7
+1970-01-01T00-01-10.681Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 1 event #8 cc 1 left 0
+1970-01-01T00-01-10.700Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 2 event #7 cc 13 left 3
+1970-01-01T00-01-10.718Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 1 submit #9
+1970-01-01T00-01-10.739Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 2 submit #8
+1970-01-01T00-01-10.757Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 1 event #9 cc 1 left 0
+1970-01-01T00-01-10.775Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 2 event #8 cc 13 left 3
+1970-01-01T00-01-10.794Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 1 submit #10
+1970-01-01T00-01-10.811Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 2 submit #9
+1970-01-01T00-01-10.829Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 1 event #10 cc 1 left 0
+1970-01-01T00-01-10.847Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 2 event #9 cc 13 left 3
+1970-01-01T00-01-10.866Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 1 submit #11
+1970-01-01T00-01-10.884Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 2 submit #10
+1970-01-01T00-01-10.901Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 1 event #11 cc 1 left 0
+1970-01-01T00-01-10.919Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 2 event #10 cc 13 left 3
+1970-01-01T00-01-10.938Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 1 submit #12
+1970-01-01T00-01-10.956Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 2 submit #11
+1970-01-01T00-01-10.973Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 1 event #12 cc 1 left 0
+1970-01-01T00-01-10.992Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 2 event #11 cc 13 left 3
+1970-01-01T00-01-11.010Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 1 submit #13
+1970-01-01T00-01-11.028Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 2 submit #12
+1970-01-01T00-01-11.046Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 1 event #13 cc 1 left 0
+1970-01-01T00-01-11.064Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 2 event #12 cc 13 left 3
+1970-01-01T00-01-11.083Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 1 submit #14
+1970-01-01T00-01-11.101Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 2 submit #13
+1970-01-01T00-01-13.120Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 1 event #14 cc 1 left 0
+1970-01-01T00-01-13.139Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 2 event #13 cc 13 left 3
+1970-01-01T00-01-13.158Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 1 submit #15
+1970-01-01T00-01-13.175Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 2 submit #14
+1970-01-01T00-01-13.193Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 1 event #15 cc 1 left 0
+1970-01-01T00-01-13.211Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 2 event #14 cc 13 left 3
+1970-01-01T00-01-13.230Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 1 submit #16
+1970-01-01T00-01-13.248Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 2 submit #15
+1970-01-01T00-01-13.265Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 1 event #16 cc 1 left 0
+1970-01-01T00-01-13.284Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 2 event #15 cc 13 left 3
+1970-01-01T00-01-13.302Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 1 submit #17
+1970-01-01T00-01-13.320Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 2 submit #16
+1970-01-01T00-01-13.338Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 1 event #17 cc 1 left 0
+1970-01-01T00-01-13.356Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 2 event #16 cc 13 left 3
+1970-01-01T00-01-13.375Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 1 submit #18
+1970-01-01T00-01-13.393Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 2 submit #17
+1970-01-01T00-01-13.410Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 1 event #18 cc 1 left 0
+1970-01-01T00-01-13.429Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 2 event #17 cc 13 left 3
+1970-01-01T00-01-13.447Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 1 submit #19
+1970-01-01T00-01-13.465Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 2 submit #18
+1970-01-01T00-01-13.482Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 1 event #19 cc 1 left 0
+1970-01-01T00-01-13.501Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 2 event #18 cc 13 left 3
+1970-01-01T00-01-13.519Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 1 submit #20
+1970-01-01T00-01-13.537Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 2 submit #19
+1970-01-01T00-01-13.555Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 1 event #20 cc 1 left 0
+1970-01-01T00-01-13.573Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 2 event #19 cc 13 left 3
+1970-01-01T00-01-13.592Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 2 submit #20
+1970-01-01T00-01-13.620Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 2 event #20 cc 13 left 3
+1970-01-01T00-01-14.450Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 1 submit #100
+1970-01-01T00-01-14.479Z [@xhcid::xhci::irq_reactor:411 INFO] xhcid: transfer event before its waiter, matched late (#1)
+1970-01-01T00-01-14.499Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 1 event #100 cc 1 left 0
+1970-01-01T00-01-14.539Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 2 submit #100
+1970-01-01T00-01-14.559Z [@xhcid::xhci::irq_reactor:411 INFO] xhcid: transfer event before its waiter, matched late (#2)
+1970-01-01T00-01-14.579Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 2 event #100 cc 13 left 3
+1970-01-01T00-01-15.619Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 1 submit #200
+1970-01-01T00-01-15.649Z [@xhcid::xhci::irq_reactor:411 INFO] xhcid: transfer event before its waiter, matched late (#3)
+1970-01-01T00-01-15.669Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 1 event #200 cc 1 left 0
+1970-01-01T00-01-15.699Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 2 submit #200
+1970-01-01T00-01-15.729Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 2 event #200 cc 13 left 3
+1970-01-01T00-01-16.809Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 1 submit #300
+1970-01-01T00-01-16.827Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 2 submit #300
+1970-01-01T00-01-16.859Z [@xhcid::xhci::irq_reactor:411 INFO] xhcid: transfer event before its waiter, matched late (#4)
+1970-01-01T00-01-16.878Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 1 event #300 cc 1 left 0
+1970-01-01T00-01-16.897Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 2 event #300 cc 13 left 3
+1970-01-01T00-01-18.029Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 2 submit #400
+1970-01-01T00-01-18.058Z [@xhcid::xhci::irq_reactor:411 INFO] xhcid: transfer event before its waiter, matched late (#5)
+1970-01-01T00-01-18.078Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 2 event #400 cc 13 left 3
+1970-01-01T00-01-18.097Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 1 submit #400
+1970-01-01T00-01-18.128Z [@xhcid::xhci::irq_reactor:411 INFO] xhcid: transfer event before its waiter, matched late (#6)
+1970-01-01T00-01-18.148Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 1 event #400 cc 1 left 0
+1970-01-01T00-01-19.268Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 2 submit #500
+1970-01-01T00-01-19.287Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 1 submit #500
+1970-01-01T00-01-19.318Z [@xhcid::xhci::irq_reactor:411 INFO] xhcid: transfer event before its waiter, matched late (#7)
+1970-01-01T00-01-19.339Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 2 event #500 cc 13 left 3
+1970-01-01T00-01-19.359Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 1 event #500 cc 1 left 0
+1970-01-01T00-01-20.059Z [@usbhidd:431 INFO] usb-trace: port 1.4 iface 1 reports 565
+1970-01-01T00-01-20.059Z [@usbhidd:431 INFO] usb-trace: port 1.4 iface 0 reports 563
+1970-01-01T00-01-20.419Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 2 submit #600
+1970-01-01T00-01-20.449Z [@xhcid::xhci::irq_reactor:411 INFO] xhcid: transfer event before its waiter, matched late (#8)
+1970-01-01T00-01-20.470Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 2 event #600 cc 13 left 3
+1970-01-01T00-01-20.540Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 1 submit #600
+1970-01-01T00-01-20.569Z [@xhcid::xhci::irq_reactor:411 INFO] xhcid: transfer event before its waiter, matched late (#9)
+1970-01-01T00-01-20.591Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 1 event #600 cc 1 left 0
+1970-01-01T00-01-21.601Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 2 submit #700
+1970-01-01T00-01-21.630Z [@xhcid::xhci::irq_reactor:411 INFO] xhcid: transfer event before its waiter, matched late (#10)
+1970-01-01T00-01-21.652Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 2 event #700 cc 13 left 3
+1970-01-01T00-01-21.722Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 1 submit #700
+1970-01-01T00-01-21.751Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 1 event #700 cc 1 left 0
+1970-01-01T00-01-22.752Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 2 submit #800
+1970-01-01T00-01-22.782Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 2 event #800 cc 13 left 3
+1970-01-01T00-01-22.902Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 1 submit #800
+1970-01-01T00-01-22.932Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 1 event #800 cc 1 left 0
+1970-01-01T00-01-23.882Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 2 submit #900
+1970-01-01T00-01-23.912Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 2 event #900 cc 13 left 3
+1970-01-01T00-01-24.042Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 1 submit #900
+1970-01-01T00-01-24.072Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 1 event #900 cc 1 left 0
+1970-01-01T00-01-25.003Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 2 submit #1000
+1970-01-01T00-01-25.032Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 2 event #1000 cc 13 left 3
+1970-01-01T00-01-25.183Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 1 submit #1000
+1970-01-01T00-01-25.212Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 1 event #1000 cc 1 left 0
+1970-01-01T00-01-26.143Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 2 submit #1100
+1970-01-01T00-01-26.172Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 2 event #1100 cc 13 left 3
+1970-01-01T00-01-26.333Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 1 submit #1100
+1970-01-01T00-01-26.362Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 1 event #1100 cc 1 left 0
+1970-01-01T00-01-27.263Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 2 submit #1200
+1970-01-01T00-01-27.292Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 2 event #1200 cc 13 left 3
+1970-01-01T00-01-27.493Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 1 submit #1200
+1970-01-01T00-01-27.522Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 1 event #1200 cc 1 left 0
+1970-01-01T00-01-28.423Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 2 submit #1300
+1970-01-01T00-01-28.453Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 2 event #1300 cc 13 left 3
+1970-01-01T00-01-28.623Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 1 submit #1300
+1970-01-01T00-01-28.653Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 1 event #1300 cc 1 left 0
+1970-01-01T00-01-30.103Z [@usbhidd:431 INFO] usb-trace: port 1.4 iface 0 reports 1380
+1970-01-01T00-01-30.103Z [@usbhidd:431 INFO] usb-trace: port 1.4 iface 1 reports 1396
+1970-01-01T00-01-31.654Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 2 submit #1400
+1970-01-01T00-01-31.683Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 2 event #1400 cc 13 left 3
+1970-01-01T00-01-31.833Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 1 submit #1400
+1970-01-01T00-01-31.863Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 1 event #1400 cc 1 left 0
+1970-01-01T00-01-32.774Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 2 submit #1500
+1970-01-01T00-01-32.803Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 2 event #1500 cc 13 left 3
+1970-01-01T00-01-32.964Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 1 submit #1500
+1970-01-01T00-01-32.993Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 1 event #1500 cc 1 left 0
+1970-01-01T00-01-33.944Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 2 submit #1600
+1970-01-01T00-01-33.973Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 2 event #1600 cc 13 left 3
+1970-01-01T00-01-34.104Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 1 submit #1600
+1970-01-01T00-01-34.133Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 1 event #1600 cc 1 left 0
+1970-01-01T00-01-35.084Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 2 submit #1700
+1970-01-01T00-01-35.113Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 2 event #1700 cc 13 left 3
+1970-01-01T00-01-35.244Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 1 submit #1700
+1970-01-01T00-01-35.273Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 1 event #1700 cc 1 left 0
+1970-01-01T00-01-36.234Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 2 submit #1800
+1970-01-01T00-01-36.264Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 2 event #1800 cc 13 left 3
+1970-01-01T00-01-36.375Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 1 submit #1800
+1970-01-01T00-01-36.404Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 1 event #1800 cc 1 left 0
+1970-01-01T00-01-37.385Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 2 submit #1900
+1970-01-01T00-01-37.424Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 2 event #1900 cc 13 left 3
+1970-01-01T00-01-37.505Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 1 submit #1900
+1970-01-01T00-01-37.544Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 1 event #1900 cc 1 left 0
+1970-01-01T00-01-38.575Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 2 submit #2000
+1970-01-01T00-01-38.604Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 2 event #2000 cc 13 left 3
+1970-01-01T00-01-38.665Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 1 submit #2000
+1970-01-01T00-01-38.694Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 1 event #2000 cc 1 left 0
+1970-01-01T00-01-39.714Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 2 submit #2100
+1970-01-01T00-01-39.744Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 2 event #2100 cc 13 left 3
+1970-01-01T00-01-39.793Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 1 submit #2100
+1970-01-01T00-01-39.814Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 1 event #2100 cc 1 left 0
+1970-01-01T00-01-40.124Z [@usbhidd:431 INFO] usb-trace: port 1.4 iface 0 reports 2122
+1970-01-01T00-01-40.141Z [@usbhidd:431 INFO] usb-trace: port 1.4 iface 1 reports 2130
+1970-01-01T00-01-40.841Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 2 submit #2200
+1970-01-01T00-01-40.861Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 2 event #2200 cc 13 left 3
+1970-01-01T00-01-40.990Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 1 submit #2200
+1970-01-01T00-01-41.021Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 1 event #2200 cc 1 left 0
+1970-01-01T00-01-44.052Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 2 submit #2300
+1970-01-01T00-01-44.081Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 2 event #2300 cc 13 left 3
+1970-01-01T00-01-44.242Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 1 submit #2300
+1970-01-01T00-01-44.271Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 1 event #2300 cc 1 left 0
+1970-01-01T00-01-45.192Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 2 submit #2400
+1970-01-01T00-01-45.231Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 2 event #2400 cc 13 left 3
+1970-01-01T00-01-45.482Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 1 submit #2400
+1970-01-01T00-01-45.511Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 1 event #2400 cc 1 left 0
+1970-01-01T00-01-46.322Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 2 submit #2500
+1970-01-01T00-01-46.352Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 2 event #2500 cc 13 left 3
+1970-01-01T00-01-46.612Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 1 submit #2500
+1970-01-01T00-01-46.642Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 1 event #2500 cc 1 left 0
+1970-01-01T00-01-47.492Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 2 submit #2600
+1970-01-01T00-01-47.522Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 2 event #2600 cc 13 left 3
+1970-01-01T00-01-47.753Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 1 submit #2600
+1970-01-01T00-01-47.782Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 1 event #2600 cc 1 left 0
+1970-01-01T00-01-48.593Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 2 submit #2700
+1970-01-01T00-01-48.622Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 2 event #2700 cc 13 left 3
+1970-01-01T00-01-48.893Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 1 submit #2700
+1970-01-01T00-01-48.922Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 1 event #2700 cc 1 left 0
+1970-01-01T00-01-49.773Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 2 submit #2800
+1970-01-01T00-01-49.802Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 2 event #2800 cc 13 left 3
+1970-01-01T00-01-50.033Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 1 submit #2800
+1970-01-01T00-01-50.062Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 1 event #2800 cc 1 left 0
+1970-01-01T00-01-50.142Z [@usbhidd:431 INFO] usb-trace: port 1.4 iface 0 reports 2805
+1970-01-01T00-01-50.160Z [@usbhidd:431 INFO] usb-trace: port 1.4 iface 1 reports 2828
+1970-01-01T00-01-50.901Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 2 submit #2900
+1970-01-01T00-01-50.930Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 2 event #2900 cc 13 left 3
+1970-01-01T00-01-51.211Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 1 submit #2900
+1970-01-01T00-01-51.240Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 1 event #2900 cc 1 left 0
+1970-01-01T00-01-52.031Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 2 submit #3000
+1970-01-01T00-01-52.061Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 2 event #3000 cc 13 left 3
+1970-01-01T00-01-52.351Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 1 submit #3000
+1970-01-01T00-01-52.381Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 1 event #3000 cc 1 left 0
+1970-01-01T00-01-53.152Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 2 submit #3100
+1970-01-01T00-01-53.181Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 2 event #3100 cc 13 left 3
+1970-01-01T00-01-53.521Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 1 submit #3100
+1970-01-01T00-01-53.551Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 1 event #3100 cc 1 left 0
+1970-01-01T00-01-54.302Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 2 submit #3200
+1970-01-01T00-01-54.331Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 2 event #3200 cc 13 left 3
+1970-01-01T00-01-54.692Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 1 submit #3200
+1970-01-01T00-01-54.721Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 1 event #3200 cc 1 left 0
+1970-01-01T00-01-55.442Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 2 submit #3300
+1970-01-01T00-01-55.471Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 2 event #3300 cc 13 left 3
+1970-01-01T00-01-55.852Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 1 submit #3300
+1970-01-01T00-01-55.881Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 1 event #3300 cc 1 left 0
+1970-01-01T00-01-56.582Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 2 submit #3400
+1970-01-01T00-01-56.611Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 2 event #3400 cc 13 left 3
+1970-01-01T00-01-57.002Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 1 submit #3400
+1970-01-01T00-01-57.031Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 1 event #3400 cc 1 left 0
+1970-01-01T00-01-57.703Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 2 submit #3500
+1970-01-01T00-01-57.732Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 2 event #3500 cc 13 left 3
+1970-01-01T00-01-58.133Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 1 submit #3500
+1970-01-01T00-01-58.162Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 1 event #3500 cc 1 left 0
+1970-01-01T00-01-58.852Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 2 submit #3600
+1970-01-01T00-01-58.882Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 2 event #3600 cc 13 left 3
+1970-01-01T00-01-59.262Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 1 submit #3600
+1970-01-01T00-01-59.292Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 1 event #3600 cc 1 left 0
+1970-01-01T00-01-59.983Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 2 submit #3700
+1970-01-01T00-02-00.012Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 2 event #3700 cc 13 left 3
+1970-01-01T00-02-00.162Z [@usbhidd:431 INFO] usb-trace: port 1.4 iface 0 reports 3675
+1970-01-01T00-02-00.180Z [@usbhidd:431 INFO] usb-trace: port 1.4 iface 1 reports 3712
+1970-01-01T00-02-00.451Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 1 submit #3700
+1970-01-01T00-02-00.480Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 1 event #3700 cc 1 left 0
+1970-01-01T00-02-01.101Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 2 submit #3800
+1970-01-01T00-02-01.130Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 2 event #3800 cc 13 left 3
+1970-01-01T00-02-01.581Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 1 submit #3800
+1970-01-01T00-02-01.610Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 1 event #3800 cc 1 left 0
+1970-01-01T00-02-02.211Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 2 submit #3900
+1970-01-01T00-02-02.240Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 2 event #3900 cc 13 left 3
+1970-01-01T00-02-02.681Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 1 submit #3900
+1970-01-01T00-02-02.710Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 1 event #3900 cc 1 left 0
+1970-01-01T00-02-03.331Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 2 submit #4000
+1970-01-01T00-02-03.360Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 2 event #4000 cc 13 left 3
+1970-01-01T00-02-03.821Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 1 submit #4000
+1970-01-01T00-02-03.851Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 1 event #4000 cc 1 left 0
+1970-01-01T00-02-04.432Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 2 submit #4100
+1970-01-01T00-02-04.461Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 2 event #4100 cc 13 left 3
+1970-01-01T00-02-04.982Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 1 submit #4100
+1970-01-01T00-02-05.011Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 1 event #4100 cc 1 left 0
+1970-01-01T00-02-05.582Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 2 submit #4200
+1970-01-01T00-02-05.611Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 2 event #4200 cc 13 left 3
+1970-01-01T00-02-06.122Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 1 submit #4200
+1970-01-01T00-02-06.151Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 1 event #4200 cc 1 left 0
+1970-01-01T00-02-06.712Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 2 submit #4300
+1970-01-01T00-02-06.741Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 2 event #4300 cc 13 left 3
+1970-01-01T00-02-07.262Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 1 submit #4300
+1970-01-01T00-02-07.291Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 1 event #4300 cc 1 left 0
+1970-01-01T00-02-07.842Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 2 submit #4400
+1970-01-01T00-02-07.872Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 2 event #4400 cc 13 left 3
+1970-01-01T00-02-08.402Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 1 submit #4400
+1970-01-01T00-02-08.432Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 1 event #4400 cc 1 left 0
+1970-01-01T00-02-08.462Z [@usbhidd:431 INFO] usb-trace: port 1.2 iface 0 reports 0
+1970-01-01T00-02-09.051Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 2 submit #4500
+1970-01-01T00-02-09.082Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 2 event #4500 cc 13 left 3
+1970-01-01T00-02-09.563Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 1 submit #4500
+1970-01-01T00-02-09.592Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 1 event #4500 cc 1 left 0
+1970-01-01T00-02-10.182Z [@usbhidd:431 INFO] usb-trace: port 1.4 iface 0 reports 4549
+1970-01-01T00-02-10.200Z [@usbhidd:431 INFO] usb-trace: port 1.4 iface 1 reports 4597
+1970-01-01T00-02-10.231Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 2 submit #4600
+1970-01-01T00-02-10.260Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 2 event #4600 cc 13 left 3
+1970-01-01T00-02-10.710Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 1 submit #4600
+1970-01-01T00-02-10.730Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 1 event #4600 cc 1 left 0
+1970-01-01T00-02-11.400Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 2 submit #4700
+1970-01-01T00-02-11.430Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 2 event #4700 cc 13 left 3
+1970-01-01T00-02-11.830Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 1 submit #4700
+1970-01-01T00-02-11.860Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 1 event #4700 cc 1 left 0
+1970-01-01T00-02-12.559Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 2 submit #4800
+1970-01-01T00-02-12.590Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 2 event #4800 cc 13 left 3
+1970-01-01T00-02-13.030Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 1 submit #4800
+1970-01-01T00-02-13.059Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 1 event #4800 cc 1 left 0
+1970-01-01T00-02-13.729Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 2 submit #4900
+1970-01-01T00-02-13.760Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 2 event #4900 cc 13 left 3
+1970-01-01T00-02-14.230Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 1 submit #4900
+1970-01-01T00-02-14.260Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 1 event #4900 cc 1 left 0
+1970-01-01T00-02-14.910Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 2 submit #5000
+1970-01-01T00-02-14.940Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 2 event #5000 cc 13 left 3
+1970-01-01T00-02-15.501Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 1 submit #5000
+1970-01-01T00-02-15.530Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 1 event #5000 cc 1 left 0
+1970-01-01T00-02-16.101Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 2 submit #5100
+1970-01-01T00-02-16.130Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 2 event #5100 cc 13 left 3
+1970-01-01T00-02-16.770Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 1 submit #5100
+1970-01-01T00-02-16.800Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 1 event #5100 cc 1 left 0
+1970-01-01T00-02-17.339Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 2 submit #5200
+1970-01-01T00-02-17.370Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 2 event #5200 cc 13 left 3
+1970-01-01T00-02-17.971Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 1 submit #5200
+1970-01-01T00-02-18.000Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 1 event #5200 cc 1 left 0
+1970-01-01T00-02-18.479Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 2 submit #5300
+1970-01-01T00-02-18.497Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 2 event #5300 cc 13 left 3
+1970-01-01T00-02-19.126Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 1 submit #5300
+1970-01-01T00-02-19.156Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 1 event #5300 cc 1 left 0
+1970-01-01T00-02-19.636Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 2 submit #5400
+1970-01-01T00-02-19.666Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 2 event #5400 cc 13 left 3
+1970-01-01T00-02-20.200Z [@usbhidd:431 INFO] usb-trace: port 1.4 iface 0 reports 5391
+1970-01-01T00-02-20.226Z [@usbhidd:431 INFO] usb-trace: port 1.4 iface 1 reports 5448
+1970-01-01T00-02-20.293Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 1 submit #5400
+1970-01-01T00-02-20.323Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 1 event #5400 cc 1 left 0
+1970-01-01T00-02-20.763Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 2 submit #5500
+1970-01-01T00-02-20.793Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 2 event #5500 cc 13 left 3
+1970-01-01T00-02-21.453Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 1 submit #5500
+1970-01-01T00-02-21.483Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 1 event #5500 cc 1 left 0
+1970-01-01T00-02-21.913Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 2 submit #5600
+1970-01-01T00-02-21.943Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 2 event #5600 cc 13 left 3
+1970-01-01T00-02-22.623Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 1 submit #5600
+1970-01-01T00-02-22.653Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 1 event #5600 cc 1 left 0
+1970-01-01T00-02-23.053Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 2 submit #5700
+1970-01-01T00-02-23.071Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 2 event #5700 cc 13 left 3
+1970-01-01T00-02-23.820Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 1 submit #5700
+1970-01-01T00-02-23.850Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 1 event #5700 cc 1 left 0
+1970-01-01T00-02-24.280Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 2 submit #5800
+1970-01-01T00-02-24.298Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 2 event #5800 cc 13 left 3
+1970-01-01T00-02-24.937Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 1 submit #5800
+1970-01-01T00-02-24.967Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 1 event #5800 cc 1 left 0
+1970-01-01T00-02-25.407Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 2 submit #5900
+1970-01-01T00-02-25.437Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 2 event #5900 cc 13 left 3
+1970-01-01T00-02-26.036Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 1 submit #5900
+1970-01-01T00-02-26.054Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 1 event #5900 cc 1 left 0
+1970-01-01T00-02-26.633Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 2 submit #6000
+1970-01-01T00-02-26.673Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 2 event #6000 cc 13 left 3
+1970-01-01T00-02-27.142Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 1 submit #6000
+1970-01-01T00-02-27.173Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 1 event #6000 cc 1 left 0
+1970-01-01T00-02-27.822Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 2 submit #6100
+1970-01-01T00-02-27.843Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 2 event #6100 cc 13 left 3
+1970-01-01T00-02-28.323Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 1 submit #6100
+1970-01-01T00-02-28.341Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 1 event #6100 cc 1 left 0
+1970-01-01T00-02-29.050Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 2 submit #6200
+1970-01-01T00-02-29.078Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 2 event #6200 cc 13 left 3
+1970-01-01T00-02-29.400Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 1 submit #6200
+1970-01-01T00-02-29.418Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 1 event #6200 cc 1 left 0
+1970-01-01T00-02-30.172Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 2 submit #6300
+1970-01-01T00-02-30.196Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 2 event #6300 cc 13 left 3
+1970-01-01T00-02-30.222Z [@usbhidd:431 INFO] usb-trace: port 1.4 iface 0 reports 6270
+1970-01-01T00-02-30.246Z [@usbhidd:431 INFO] usb-trace: port 1.4 iface 1 reports 6301
+1970-01-01T00-02-30.534Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 1 submit #6300
+1970-01-01T00-02-30.563Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 1 event #6300 cc 1 left 0
+1970-01-01T00-02-31.374Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 2 submit #6400
+1970-01-01T00-02-31.403Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 2 event #6400 cc 13 left 3
+1970-01-01T00-02-31.694Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 1 submit #6400
+1970-01-01T00-02-31.723Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 1 event #6400 cc 1 left 0
+1970-01-01T00-02-32.684Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 2 submit #6500
+1970-01-01T00-02-32.713Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 2 event #6500 cc 13 left 3
+1970-01-01T00-02-32.962Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 1 submit #6500
+1970-01-01T00-02-32.993Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 1 event #6500 cc 1 left 0
+1970-01-01T00-02-33.934Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 2 submit #6600
+1970-01-01T00-02-33.963Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 2 event #6600 cc 13 left 3
+1970-01-01T00-02-34.234Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 1 submit #6600
+1970-01-01T00-02-34.253Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 1 event #6600 cc 1 left 0
+1970-01-01T00-02-35.204Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 2 submit #6700
+1970-01-01T00-02-35.234Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 2 event #6700 cc 13 left 3
+1970-01-01T00-02-35.434Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 1 submit #6700
+1970-01-01T00-02-35.464Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 1 event #6700 cc 1 left 0
+1970-01-01T00-02-36.435Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 2 submit #6800
+1970-01-01T00-02-36.464Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 2 event #6800 cc 13 left 3
+1970-01-01T00-02-36.655Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 1 submit #6800
+1970-01-01T00-02-36.684Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 1 event #6800 cc 1 left 0
+1970-01-01T00-02-37.625Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 2 submit #6900
+1970-01-01T00-02-37.654Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 2 event #6900 cc 13 left 3
+1970-01-01T00-02-37.845Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 1 submit #6900
+1970-01-01T00-02-37.884Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 1 event #6900 cc 1 left 0
+1970-01-01T00-02-38.885Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 2 submit #7000
+1970-01-01T00-02-38.913Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 2 event #7000 cc 13 left 3
+1970-01-01T00-02-39.084Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 1 submit #7000
+1970-01-01T00-02-39.114Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 1 event #7000 cc 1 left 0
+1970-01-01T00-02-40.056Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 2 submit #7100
+1970-01-01T00-02-40.083Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 2 event #7100 cc 13 left 3
+1970-01-01T00-02-40.233Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 1 submit #7100
+1970-01-01T00-02-40.239Z [@usbhidd:431 INFO] usb-trace: port 1.4 iface 0 reports 7099
+1970-01-01T00-02-40.264Z [@usbhidd:431 INFO] usb-trace: port 1.4 iface 1 reports 7111
+1970-01-01T00-02-40.264Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 1 event #7100 cc 1 left 0
+1970-01-01T00-02-41.264Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 2 submit #7200
+1970-01-01T00-02-41.293Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 2 event #7200 cc 13 left 3
+1970-01-01T00-02-41.393Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 1 submit #7200
+1970-01-01T00-02-41.413Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 1 event #7200 cc 1 left 0
+1970-01-01T00-02-42.484Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 2 submit #7300
+1970-01-01T00-02-42.513Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 2 event #7300 cc 13 left 3
+1970-01-01T00-02-42.614Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 1 submit #7300
+1970-01-01T00-02-42.643Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 1 event #7300 cc 1 left 0
+1970-01-01T00-02-43.724Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 2 submit #7400
+1970-01-01T00-02-43.753Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 2 event #7400 cc 13 left 3
+1970-01-01T00-02-43.834Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 1 submit #7400
+1970-01-01T00-02-43.863Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 1 event #7400 cc 1 left 0
+1970-01-01T00-02-44.954Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 2 submit #7500
+1970-01-01T00-02-44.984Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 2 event #7500 cc 13 left 3
+1970-01-01T00-02-45.042Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 1 submit #7500
+1970-01-01T00-02-45.072Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 1 event #7500 cc 1 left 0
+1970-01-01T00-02-46.184Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 2 submit #7600
+1970-01-01T00-02-46.214Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 2 event #7600 cc 13 left 3
+1970-01-01T00-02-46.233Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 1 submit #7600
+1970-01-01T00-02-46.264Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 1 event #7600 cc 1 left 0
+1970-01-01T00-02-47.431Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 2 submit #7700
+1970-01-01T00-02-47.463Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 2 event #7700 cc 13 left 3
+1970-01-01T00-02-47.482Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 1 submit #7700
+1970-01-01T00-02-47.509Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 1 event #7700 cc 1 left 0
+1970-01-01T00-02-48.608Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 2 submit #7800
+1970-01-01T00-02-48.634Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 2 event #7800 cc 13 left 3
+1970-01-01T00-02-48.662Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 1 submit #7800
+1970-01-01T00-02-48.694Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 1 event #7800 cc 1 left 0
+1970-01-01T00-02-49.864Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 2 submit #7900
+1970-01-01T00-02-49.883Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 1 submit #7900
+1970-01-01T00-02-49.914Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 2 event #7900 cc 13 left 3
+1970-01-01T00-02-49.933Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 1 event #7900 cc 1 left 0
+1970-01-01T00-02-50.271Z [@usbhidd:431 INFO] usb-trace: port 1.4 iface 0 reports 7930
+1970-01-01T00-02-50.294Z [@usbhidd:431 INFO] usb-trace: port 1.4 iface 1 reports 7931
+1970-01-01T00-02-51.042Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 1 submit #8000
+1970-01-01T00-02-51.061Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 1 event #8000 cc 1 left 0
+1970-01-01T00-02-51.081Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 2 submit #8000
+1970-01-01T00-02-51.111Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 2 event #8000 cc 13 left 3
+1970-01-01T00-02-52.152Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 1 submit #8100
+1970-01-01T00-02-52.172Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 1 event #8100 cc 1 left 0
+1970-01-01T00-02-52.242Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 2 submit #8100
+1970-01-01T00-02-52.272Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 2 event #8100 cc 13 left 3
+1970-01-01T00-02-53.283Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 1 submit #8200
+1970-01-01T00-02-53.303Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 1 event #8200 cc 1 left 0
+1970-01-01T00-02-53.393Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 2 submit #8200
+1970-01-01T00-02-53.423Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 2 event #8200 cc 13 left 3
+1970-01-01T00-02-54.404Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 1 submit #8300
+1970-01-01T00-02-54.433Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 1 event #8300 cc 1 left 0
+1970-01-01T00-02-54.523Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 2 submit #8300
+1970-01-01T00-02-54.543Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 2 event #8300 cc 13 left 3
+1970-01-01T00-02-55.644Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 1 submit #8400
+1970-01-01T00-02-55.674Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 1 event #8400 cc 1 left 0
+1970-01-01T00-02-55.694Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 2 submit #8400
+1970-01-01T00-02-55.714Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 2 event #8400 cc 13 left 3
+1970-01-01T00-02-56.816Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 1 submit #8500
+1970-01-01T00-02-56.836Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 1 event #8500 cc 1 left 0
+1970-01-01T00-02-56.886Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 2 submit #8500
+1970-01-01T00-02-56.926Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 2 event #8500 cc 13 left 3
+1970-01-01T00-02-57.917Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 1 submit #8600
+1970-01-01T00-02-57.937Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 1 event #8600 cc 1 left 0
+1970-01-01T00-02-58.107Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 2 submit #8600
+1970-01-01T00-02-58.137Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 2 event #8600 cc 13 left 3
+1970-01-01T00-02-59.058Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 1 submit #8700
+1970-01-01T00-02-59.077Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 1 event #8700 cc 1 left 0
+1970-01-01T00-02-59.268Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 2 submit #8700
+1970-01-01T00-02-59.298Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 2 event #8700 cc 13 left 3
+1970-01-01T00-03-00.199Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 1 submit #8800
+1970-01-01T00-03-00.228Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 1 event #8800 cc 1 left 0
+1970-01-01T00-03-00.288Z [@usbhidd:431 INFO] usb-trace: port 1.4 iface 0 reports 8803
+1970-01-01T00-03-00.318Z [@usbhidd:431 INFO] usb-trace: port 1.4 iface 1 reports 8788
+1970-01-01T00-03-00.437Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 2 submit #8800
+1970-01-01T00-03-00.456Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 2 event #8800 cc 13 left 3
+1970-01-01T00-03-01.388Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 1 submit #8900
+1970-01-01T00-03-01.417Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 1 event #8900 cc 1 left 0
+1970-01-01T00-03-01.597Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 2 submit #8900
+1970-01-01T00-03-01.617Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 2 event #8900 cc 13 left 3
+1970-01-01T00-03-02.728Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 1 submit #9000
+1970-01-01T00-03-02.758Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 1 event #9000 cc 1 left 0
+1970-01-01T00-03-02.818Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 2 submit #9000
+1970-01-01T00-03-02.838Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 2 event #9000 cc 13 left 3
+1970-01-01T00-03-03.879Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 1 submit #9100
+1970-01-01T00-03-03.908Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 1 event #9100 cc 1 left 0
+1970-01-01T00-03-03.999Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 2 submit #9100
+1970-01-01T00-03-04.018Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 2 event #9100 cc 13 left 3
+1970-01-01T00-03-05.050Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 1 submit #9200
+1970-01-01T00-03-05.079Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 1 event #9200 cc 1 left 0
+1970-01-01T00-03-05.199Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 2 submit #9200
+1970-01-01T00-03-05.229Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 2 event #9200 cc 13 left 3
+1970-01-01T00-03-06.260Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 1 submit #9300
+1970-01-01T00-03-06.289Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 1 event #9300 cc 1 left 0
+1970-01-01T00-03-06.370Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 2 submit #9300
+1970-01-01T00-03-06.399Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 2 event #9300 cc 13 left 3
+1970-01-01T00-03-07.400Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 1 submit #9400
+1970-01-01T00-03-07.429Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 1 event #9400 cc 1 left 0
+1970-01-01T00-03-07.600Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 2 submit #9400
+1970-01-01T00-03-07.629Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 2 event #9400 cc 13 left 3
+1970-01-01T00-03-08.499Z [@usbhidd:431 INFO] usb-trace: port 1.2 iface 0 reports 0
+1970-01-01T00-03-08.540Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 1 submit #9500
+1970-01-01T00-03-08.559Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 1 event #9500 cc 1 left 0
+1970-01-01T00-03-08.800Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 2 submit #9500
+1970-01-01T00-03-08.830Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 2 event #9500 cc 13 left 3
+1970-01-01T00-03-09.681Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 1 submit #9600
+1970-01-01T00-03-09.710Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 1 event #9600 cc 1 left 0
+1970-01-01T00-03-10.000Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 2 submit #9600
+1970-01-01T00-03-10.020Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 2 event #9600 cc 13 left 3
+1970-01-01T00-03-10.307Z [@usbhidd:431 INFO] usb-trace: port 1.4 iface 0 reports 9649
+1970-01-01T00-03-10.341Z [@usbhidd:431 INFO] usb-trace: port 1.4 iface 1 reports 9625
+1970-01-01T00-03-10.850Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 1 submit #9700
+1970-01-01T00-03-10.879Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 1 event #9700 cc 1 left 0
+1970-01-01T00-03-11.180Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 2 submit #9700
+1970-01-01T00-03-11.209Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 2 event #9700 cc 13 left 3
+1970-01-01T00-03-12.000Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 1 submit #9800
+1970-01-01T00-03-12.029Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 1 event #9800 cc 1 left 0
+1970-01-01T00-03-12.360Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 2 submit #9800
+1970-01-01T00-03-12.379Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 2 event #9800 cc 13 left 3
+1970-01-01T00-03-13.170Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 1 submit #9900
+1970-01-01T00-03-13.209Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 1 event #9900 cc 1 left 0
+1970-01-01T00-03-13.501Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 2 submit #9900
+1970-01-01T00-03-13.530Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 2 event #9900 cc 13 left 3
+1970-01-01T00-03-14.321Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 1 submit #10000
+1970-01-01T00-03-14.351Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 1 event #10000 cc 1 left 0
+1970-01-01T00-03-14.691Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 2 submit #10000
+1970-01-01T00-03-14.720Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 2 event #10000 cc 13 left 3
+1970-01-01T00-03-15.481Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 1 submit #10100
+1970-01-01T00-03-15.511Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 1 event #10100 cc 1 left 0
+1970-01-01T00-03-15.901Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 2 submit #10100
+1970-01-01T00-03-15.931Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 2 event #10100 cc 13 left 3
+1970-01-01T00-03-16.592Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 1 submit #10200
+1970-01-01T00-03-16.621Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 1 event #10200 cc 1 left 0
+1970-01-01T00-03-17.061Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 2 submit #10200
+1970-01-01T00-03-17.081Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 2 event #10200 cc 13 left 3
+1970-01-01T00-03-17.752Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 1 submit #10300
+1970-01-01T00-03-17.781Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 1 event #10300 cc 1 left 0
+1970-01-01T00-03-18.212Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 2 submit #10300
+1970-01-01T00-03-18.241Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 2 event #10300 cc 13 left 3
+1970-01-01T00-03-18.893Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 1 submit #10400
+1970-01-01T00-03-18.922Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 1 event #10400 cc 1 left 0
+1970-01-01T00-03-19.363Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 2 submit #10400
+1970-01-01T00-03-19.392Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 2 event #10400 cc 13 left 3
+1970-01-01T00-03-20.053Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 1 submit #10500
+1970-01-01T00-03-20.082Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 1 event #10500 cc 1 left 0
+1970-01-01T00-03-20.327Z [@usbhidd:431 INFO] usb-trace: port 1.4 iface 0 reports 10520
+1970-01-01T00-03-20.362Z [@usbhidd:431 INFO] usb-trace: port 1.4 iface 1 reports 10484
+1970-01-01T00-03-20.511Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 2 submit #10500
+1970-01-01T00-03-20.530Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 2 event #10500 cc 13 left 3
+1970-01-01T00-03-21.221Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 1 submit #10600
+1970-01-01T00-03-21.250Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 1 event #10600 cc 1 left 0
+1970-01-01T00-03-21.621Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 2 submit #10600
+1970-01-01T00-03-21.640Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 2 event #10600 cc 13 left 3
+1970-01-01T00-03-22.382Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 1 submit #10700
+1970-01-01T00-03-22.411Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 1 event #10700 cc 1 left 0
+1970-01-01T00-03-22.762Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 2 submit #10700
+1970-01-01T00-03-22.781Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 2 event #10700 cc 13 left 3
+1970-01-01T00-03-23.532Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 1 submit #10800
+1970-01-01T00-03-23.552Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 1 event #10800 cc 1 left 0
+1970-01-01T00-03-23.933Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 2 submit #10800
+1970-01-01T00-03-23.962Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 2 event #10800 cc 13 left 3
+1970-01-01T00-03-24.673Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 1 submit #10900
+1970-01-01T00-03-24.702Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 1 event #10900 cc 1 left 0
+1970-01-01T00-03-25.123Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 2 submit #10900
+1970-01-01T00-03-25.153Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 2 event #10900 cc 13 left 3
+1970-01-01T00-03-25.823Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 1 submit #11000
+1970-01-01T00-03-25.853Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 1 event #11000 cc 1 left 0
+1970-01-01T00-03-26.313Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 2 submit #11000
+1970-01-01T00-03-26.343Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 2 event #11000 cc 13 left 3
+1970-01-01T00-03-26.954Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 1 submit #11100
+1970-01-01T00-03-26.984Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 1 event #11100 cc 1 left 0
+1970-01-01T00-03-27.454Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 2 submit #11100
+1970-01-01T00-03-27.474Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 2 event #11100 cc 13 left 3
+1970-01-01T00-03-28.115Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 1 submit #11200
+1970-01-01T00-03-28.144Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 1 event #11200 cc 1 left 0
+1970-01-01T00-03-28.605Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 2 submit #11200
+1970-01-01T00-03-28.634Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 2 event #11200 cc 13 left 3
+1970-01-01T00-03-29.305Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 1 submit #11300
+1970-01-01T00-03-29.334Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 1 event #11300 cc 1 left 0
+1970-01-01T00-03-29.755Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 2 submit #11300
+1970-01-01T00-03-29.775Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 2 event #11300 cc 13 left 3
+1970-01-01T00-03-30.347Z [@usbhidd:431 INFO] usb-trace: port 1.4 iface 0 reports 11385
+1970-01-01T00-03-30.385Z [@usbhidd:431 INFO] usb-trace: port 1.4 iface 1 reports 11354
+1970-01-01T00-03-30.524Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 1 submit #11400
+1970-01-01T00-03-30.543Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 1 event #11400 cc 1 left 0
+1970-01-01T00-03-30.907Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 2 submit #11400
+1970-01-01T00-03-30.933Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 2 event #11400 cc 13 left 3
+1970-01-01T00-03-31.674Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 1 submit #11500
+1970-01-01T00-03-31.693Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 1 event #11500 cc 1 left 0
+1970-01-01T00-03-32.124Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 2 submit #11500
+1970-01-01T00-03-32.154Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 2 event #11500 cc 13 left 3
+1970-01-01T00-03-32.865Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 1 submit #11600
+1970-01-01T00-03-32.885Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 1 event #11600 cc 1 left 0
+1970-01-01T00-03-33.316Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 2 submit #11600
+1970-01-01T00-03-33.335Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 2 event #11600 cc 13 left 3
+1970-01-01T00-03-34.026Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 1 submit #11700
+1970-01-01T00-03-34.055Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 1 event #11700 cc 1 left 0
+1970-01-01T00-03-34.466Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 2 submit #11700
+1970-01-01T00-03-34.486Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 2 event #11700 cc 13 left 3
+1970-01-01T00-03-35.198Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 1 submit #11800
+1970-01-01T00-03-35.226Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 1 event #11800 cc 1 left 0
+1970-01-01T00-03-35.667Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 2 submit #11800
+1970-01-01T00-03-35.686Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 2 event #11800 cc 13 left 3
+1970-01-01T00-03-36.388Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 1 submit #11900
+1970-01-01T00-03-36.417Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 1 event #11900 cc 1 left 0
+1970-01-01T00-03-36.847Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 2 submit #11900
+1970-01-01T00-03-36.867Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 2 event #11900 cc 13 left 3
+1970-01-01T00-03-37.518Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 1 submit #12000
+1970-01-01T00-03-37.537Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 1 event #12000 cc 1 left 0
+1970-01-01T00-03-37.988Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 2 submit #12000
+1970-01-01T00-03-38.008Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 2 event #12000 cc 13 left 3
+1970-01-01T00-03-38.669Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 1 submit #12100
+1970-01-01T00-03-38.698Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 1 event #12100 cc 1 left 0
+1970-01-01T00-03-39.189Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 2 submit #12100
+1970-01-01T00-03-39.219Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 2 event #12100 cc 13 left 3
+1970-01-01T00-03-39.850Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 1 submit #12200
+1970-01-01T00-03-39.879Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 1 event #12200 cc 1 left 0
+1970-01-01T00-03-40.369Z [@usbhidd:431 INFO] usb-trace: port 1.4 iface 0 reports 12242
+1970-01-01T00-03-40.388Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 2 submit #12200
+1970-01-01T00-03-40.407Z [@usbhidd:431 INFO] usb-trace: port 1.4 iface 1 reports 12199
+1970-01-01T00-03-40.427Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 2 event #12200 cc 13 left 3
+1970-01-01T00-03-41.005Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 1 submit #12300
+1970-01-01T00-03-41.035Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 1 event #12300 cc 1 left 0
+1970-01-01T00-03-41.545Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 2 submit #12300
+1970-01-01T00-03-41.565Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 2 event #12300 cc 13 left 3
+1970-01-01T00-03-42.176Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 1 submit #12400
+1970-01-01T00-03-42.195Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 1 event #12400 cc 1 left 0
+1970-01-01T00-03-42.746Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 2 submit #12400
+1970-01-01T00-03-42.766Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 2 event #12400 cc 13 left 3
+1970-01-01T00-03-43.347Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 1 submit #12500
+1970-01-01T00-03-43.386Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 1 event #12500 cc 1 left 0
+1970-01-01T00-03-43.917Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 2 submit #12500
+1970-01-01T00-03-43.937Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 2 event #12500 cc 13 left 3
+1970-01-01T00-03-44.537Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 1 submit #12600
+1970-01-01T00-03-44.566Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 1 event #12600 cc 1 left 0
+1970-01-01T00-03-45.087Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 2 submit #12600
+1970-01-01T00-03-45.116Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 2 event #12600 cc 13 left 3
+1970-01-01T00-03-45.677Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 1 submit #12700
+1970-01-01T00-03-45.707Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 1 event #12700 cc 1 left 0
+1970-01-01T00-03-46.237Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 2 submit #12700
+1970-01-01T00-03-46.257Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 2 event #12700 cc 13 left 3
+1970-01-01T00-03-46.828Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 1 submit #12800
+1970-01-01T00-03-46.857Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 1 event #12800 cc 1 left 0
+1970-01-01T00-03-47.388Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 2 submit #12800
+1970-01-01T00-03-47.407Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 2 event #12800 cc 13 left 3
+1970-01-01T00-03-47.978Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 1 submit #12900
+1970-01-01T00-03-47.998Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 1 event #12900 cc 1 left 0
+1970-01-01T00-03-48.579Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 2 submit #12900
+1970-01-01T00-03-48.599Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 2 event #12900 cc 13 left 3
+1970-01-01T00-03-49.110Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 1 submit #13000
+1970-01-01T00-03-49.139Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 1 event #13000 cc 1 left 0
+1970-01-01T00-03-49.760Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 2 submit #13000
+1970-01-01T00-03-49.789Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 2 event #13000 cc 13 left 3
+1970-01-01T00-03-50.310Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 1 submit #13100
+1970-01-01T00-03-50.339Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 1 event #13100 cc 1 left 0
+1970-01-01T00-03-50.389Z [@usbhidd:431 INFO] usb-trace: port 1.4 iface 0 reports 13102
+1970-01-01T00-03-50.430Z [@usbhidd:431 INFO] usb-trace: port 1.4 iface 1 reports 13047
+1970-01-01T00-03-51.028Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 2 submit #13100
+1970-01-01T00-03-51.048Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 2 event #13100 cc 13 left 3
+1970-01-01T00-03-51.479Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 1 submit #13200
+1970-01-01T00-03-51.508Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 1 event #13200 cc 1 left 0
+1970-01-01T00-03-52.229Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 2 submit #13200
+1970-01-01T00-03-52.259Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 2 event #13200 cc 13 left 3
+1970-01-01T00-03-54.800Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 1 submit #13300
+1970-01-01T00-03-54.819Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 1 event #13300 cc 1 left 0
+1970-01-01T00-03-55.520Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 2 submit #13300
+1970-01-01T00-03-55.549Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 2 event #13300 cc 13 left 3
+1970-01-01T00-03-55.991Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 1 submit #13400
+1970-01-01T00-03-56.020Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 1 event #13400 cc 1 left 0
+1970-01-01T00-03-56.690Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 2 submit #13400
+1970-01-01T00-03-56.720Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 2 event #13400 cc 13 left 3
+1970-01-01T00-03-57.141Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 1 submit #13500
+1970-01-01T00-03-57.170Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 1 event #13500 cc 1 left 0
+1970-01-01T00-03-57.851Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 2 submit #13500
+1970-01-01T00-03-57.870Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 2 event #13500 cc 13 left 3
+1970-01-01T00-03-58.331Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 1 submit #13600
+1970-01-01T00-03-58.360Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 1 event #13600 cc 1 left 0
+1970-01-01T00-03-59.031Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 2 submit #13600
+1970-01-01T00-03-59.051Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 2 event #13600 cc 13 left 3
+1970-01-01T00-03-59.492Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 1 submit #13700
+1970-01-01T00-03-59.521Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 1 event #13700 cc 1 left 0
+1970-01-01T00-04-00.222Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 2 submit #13700
+1970-01-01T00-04-00.241Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 2 event #13700 cc 13 left 3
+1970-01-01T00-04-00.409Z [@usbhidd:431 INFO] usb-trace: port 1.4 iface 0 reports 13770
+1970-01-01T00-04-00.452Z [@usbhidd:431 INFO] usb-trace: port 1.4 iface 1 reports 13715
+1970-01-01T00-04-00.762Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 1 submit #13800
+1970-01-01T00-04-00.793Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 1 event #13800 cc 1 left 0
+1970-01-01T00-04-01.383Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 2 submit #13800
+1970-01-01T00-04-01.402Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 2 event #13800 cc 13 left 3
+1970-01-01T00-04-01.923Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 1 submit #13900
+1970-01-01T00-04-01.953Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 1 event #13900 cc 1 left 0
+1970-01-01T00-04-02.514Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 2 submit #13900
+1970-01-01T00-04-02.543Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 2 event #13900 cc 13 left 3
+1970-01-01T00-04-03.084Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 1 submit #14000
+1970-01-01T00-04-03.114Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 1 event #14000 cc 1 left 0
+1970-01-01T00-04-03.734Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 2 submit #14000
+1970-01-01T00-04-03.754Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 2 event #14000 cc 13 left 3
+1970-01-01T00-04-04.265Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 1 submit #14100
+1970-01-01T00-04-04.295Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 1 event #14100 cc 1 left 0
+1970-01-01T00-04-04.905Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 2 submit #14100
+1970-01-01T00-04-04.934Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 2 event #14100 cc 13 left 3
+1970-01-01T00-04-05.425Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 1 submit #14200
+1970-01-01T00-04-05.445Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 1 event #14200 cc 1 left 0
+1970-01-01T00-04-06.106Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 2 submit #14200
+1970-01-01T00-04-06.135Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 2 event #14200 cc 13 left 3
+1970-01-01T00-04-06.567Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 1 submit #14300
+1970-01-01T00-04-06.596Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 1 event #14300 cc 1 left 0
+1970-01-01T00-04-07.276Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 2 submit #14300
+1970-01-01T00-04-07.306Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 2 event #14300 cc 13 left 3
+1970-01-01T00-04-07.726Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 1 submit #14400
+1970-01-01T00-04-07.756Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 1 event #14400 cc 1 left 0
+1970-01-01T00-04-08.437Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 2 submit #14400
+1970-01-01T00-04-08.456Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 2 event #14400 cc 13 left 3
+1970-01-01T00-04-08.536Z [@usbhidd:431 INFO] usb-trace: port 1.2 iface 0 reports 0
+1970-01-01T00-04-08.917Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 1 submit #14500
+1970-01-01T00-04-08.946Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 1 event #14500 cc 1 left 0
+1970-01-01T00-04-09.627Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 2 submit #14500
+1970-01-01T00-04-09.656Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 2 event #14500 cc 13 left 3
+1970-01-01T00-04-10.088Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 1 submit #14600
+1970-01-01T00-04-10.117Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 1 event #14600 cc 1 left 0
+1970-01-01T00-04-10.427Z [@usbhidd:431 INFO] usb-trace: port 1.4 iface 0 reports 14626
+1970-01-01T00-04-10.475Z [@usbhidd:431 INFO] usb-trace: port 1.4 iface 1 reports 14569
+1970-01-01T00-04-10.818Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 2 submit #14600
+1970-01-01T00-04-10.847Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 2 event #14600 cc 13 left 3
+1970-01-01T00-04-11.248Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 1 submit #14700
+1970-01-01T00-04-11.277Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 1 event #14700 cc 1 left 0
+1970-01-01T00-04-11.958Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 2 submit #14700
+1970-01-01T00-04-11.987Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 2 event #14700 cc 13 left 3
+1970-01-01T00-04-12.388Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 1 submit #14800
+1970-01-01T00-04-12.417Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 1 event #14800 cc 1 left 0
+1970-01-01T00-04-13.188Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 2 submit #14800
+1970-01-01T00-04-13.208Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 2 event #14800 cc 13 left 3
+1970-01-01T00-04-13.559Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 1 submit #14900
+1970-01-01T00-04-13.588Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 1 event #14900 cc 1 left 0

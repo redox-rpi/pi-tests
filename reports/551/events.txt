@@ -1,0 +1,17 @@
+start 21:34:00
+staged /home/zehrer/redox-rpi-pi400/keep/usbtrace-nb-before-stage (build_id = "v0.6.0-dev-121-g12f950bc+x1cc4-dirty.767208cece2d") 21:34:00
+boot: login, U-Boot retries 0, banner: redox-rpi v0.6.0-dev-121-g12f950bc+x1cc4-dirty.767208cece2d (netboot, 2026-11-20T16:30:21Z) 21:34:56
+A login, waiting 180 s untouched 21:34:56
+A: attach port 1.2 at xHCI speed 2; HID "USB Optical Mouse" serial ""; usb-trace lines 5 panic 0 21:37:56
+staged /home/zehrer/redox-rpi-pi400/keep/usbtrace-nb-after-0020-stage (build_id = "v0.6.0-dev-127-g5e48dca1+x1cc4-dirty.767208cece2d") 21:37:56
+U-Boot prompt (load failed), typing boot (1) 21:38:51
+boot: login, U-Boot retries 1, banner: redox-rpi v0.6.0-dev-127-g5e48dca1+x1cc4-dirty.767208cece2d (netboot, 2026-11-20T16:50:27Z) 21:39:32
+B login, waiting 180 s untouched 21:39:32
+B: attach port 1.2 at xHCI speed 2;port 1.4 at xHCI speed 2; HID "USB Optical Mouse" serial "";"Raspberry Pi Internal Keyboard" serial "";"Raspberry Pi Internal Keyboard" serial ""; usb-trace lines 715 panic 0 21:42:33
+serial B-ps done 21:42:36
+xhcid lines in ps: 8
+staged /home/zehrer/redox-rpi-graphics/keep/pi400-fbshot-stage (build_id = "v0.6.0-dev-105-gbef6d90a+xcf2a") 21:42:36
+U-Boot prompt (load failed), typing boot (1) 21:43:52
+U-Boot prompt (load failed), typing boot (2) 21:44:50
+boot: login, U-Boot retries 2, banner: redox-rpi v0.6.0-dev-105-gbef6d90a+xcf2a (netboot, 2026-11-18T04:35:59Z) 21:45:26
+restore: login 21:45:26
