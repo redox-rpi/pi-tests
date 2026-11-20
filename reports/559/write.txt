@@ -1,0 +1,289 @@
+### setenv autoload no
+setenv autoload no
+U-Boot>
+### usb start
+usb start
+U-Boot>
+### dhcp
+dhcp
+lan78xx_eth Waiting for PHY auto negotiation to complete........ done
+DHCP client bound to address <buildhost> (3 ms)
+U-Boot>
+### mmc dev 2
+mmc dev 2
+switch to partitions #0, OK
+mmc2 is current device
+U-Boot>
+### fatls mmc 2:1
+fatls mmc 2:1
+    61376   bootcode.bin
+  3023104   start.elf
+     7381   fixup.dat
+   844380   start_cd.elf
+     3280   fixup_cd.dat
+     1594   LICENCE.broadcom
+    34731   bcm2710-rpi-3-b.dtb
+    35252   bcm2710-rpi-3-b-plus.dtb
+    33708   bcm2710-rpi-zero-2-w.dtb
+            overlays/
+      605   config.txt
+      675   .uuid
+   956952   u-boot.bin
+      278   boot.scr
+     4096   ._config.txt
+      256   armstub8-redox.bin
+            .fseventsd/
+     4096   ._.uuid
+     4096   ._bootcode.bin
+    60686   bootcode-selector.bin
+            .TemporaryItems/
+     4096   ._bootcode-selector.bin
+    52624   bootcode-broadcom.bin
+    61040   bootcode-selector-233c8c5.bin
+    61040   redox-rpi-bootselect-3bp-20261110c-bootcode.bin
+     4096   ._redox-rpi-bootselect-3bp-20261110c-bootcode.bin
+    60812   redox-rpi-bootselect-3bp-20261110b-bootcode.bin
+     4096   ._redox-rpi-bootselect-3bp-20261110b-bootcode.bin
+
+25 file(s), 3 dir(s)
+
+U-Boot>
+### fatload mmc 2:1 0x10000000 armstub8-redox.bin
+fatload mmc 2:1 0x10000000 armstub8-redox.bin
+256 bytes read in 13 ms (18.6 KiB/s)
+U-Boot>
+### crc32 0x10000000 ${filesize}
+crc32 0x10000000 ${filesize}
+crc32 for 10000000 ... 100000ff ==> 17a03c01
+U-Boot>
+### fatwrite mmc 2:1 0x10000000 armstub8-redox.bin.t559 ${filesize}
+fatwrite mmc 2:1 0x10000000 armstub8-redox.bin.t559 ${filesize}
+256 bytes written in 82 ms (2.9 KiB/s)
+U-Boot>
+### fatload mmc 2:1 0x10000000 armstub8-redox.bin.t559
+fatload mmc 2:1 0x10000000 armstub8-redox.bin.t559
+256 bytes read in 22 ms (10.7 KiB/s)
+U-Boot>
+### crc32 0x10000000 ${filesize}
+crc32 0x10000000 ${filesize}
+crc32 for 10000000 ... 100000ff ==> 17a03c01
+U-Boot>
+### fatrm mmc 2:1 armstub8-redox.bin
+fatrm mmc 2:1 armstub8-redox.bin
+U-Boot>
+### fatload mmc 2:1 0x10000000 config.txt
+fatload mmc 2:1 0x10000000 config.txt
+605 bytes read in 17 ms (34.2 KiB/s)
+U-Boot>
+### crc32 0x10000000 ${filesize}
+crc32 0x10000000 ${filesize}
+crc32 for 10000000 ... 1000025c ==> 7ca40350
+U-Boot>
+### fatwrite mmc 2:1 0x10000000 config.txt.t559 ${filesize}
+fatwrite mmc 2:1 0x10000000 config.txt.t559 ${filesize}
+605 bytes written in 79 ms (6.8 KiB/s)
+U-Boot>
+### fatload mmc 2:1 0x10000000 config.txt.t559
+fatload mmc 2:1 0x10000000 config.txt.t559
+605 bytes read in 15 ms (39.1 KiB/s)
+U-Boot>
+### crc32 0x10000000 ${filesize}
+crc32 0x10000000 ${filesize}
+crc32 for 10000000 ... 1000025c ==> 7ca40350
+U-Boot>
+### wget 0x10000000 http://<buildhost>:8080/cw559/config-qsteps.txt
+wget 0x10000000 http://<buildhost>:8080/cw559/config-qsteps.txt
+##################################################
+820 bytes transferred in 3 ms (266.6 KiB/s)
+Bytes transferred = 820 (334 hex)
+U-Boot>
+### crc32 0x10000000 ${filesize}
+crc32 0x10000000 ${filesize}
+crc32 for 10000000 ... 10000333 ==> b91e3f0a
+U-Boot>
+### fatwrite mmc 2:1 0x10000000 config-qsteps.txt ${filesize}
+fatwrite mmc 2:1 0x10000000 config-qsteps.txt ${filesize}
+820 bytes written in 68 ms (11.7 KiB/s)
+U-Boot>
+### fatload mmc 2:1 0x10000000 config-qsteps.txt
+fatload mmc 2:1 0x10000000 config-qsteps.txt
+820 bytes read in 27 ms (29.3 KiB/s)
+U-Boot>
+### crc32 0x10000000 ${filesize}
+crc32 0x10000000 ${filesize}
+crc32 for 10000000 ... 10000333 ==> b91e3f0a
+U-Boot>
+### wget 0x10000000 http://<buildhost>:8080/cw559/config-qsteps-loud.txt
+wget 0x10000000 http://<buildhost>:8080/cw559/config-qsteps-loud.txt
+##################################################
+811 bytes transferred in 3 ms (263.7 KiB/s)
+Bytes transferred = 811 (32b hex)
+U-Boot>
+### crc32 0x10000000 ${filesize}
+crc32 0x10000000 ${filesize}
+crc32 for 10000000 ... 1000032a ==> 80a63e1e
+U-Boot>
+### fatwrite mmc 2:1 0x10000000 config-qsteps-loud.txt ${filesize}
+fatwrite mmc 2:1 0x10000000 config-qsteps-loud.txt ${filesize}
+811 bytes written in 69 ms (10.7 KiB/s)
+U-Boot>
+### fatload mmc 2:1 0x10000000 config-qsteps-loud.txt
+fatload mmc 2:1 0x10000000 config-qsteps-loud.txt
+811 bytes read in 27 ms (29.3 KiB/s)
+U-Boot>
+### crc32 0x10000000 ${filesize}
+crc32 0x10000000 ${filesize}
+crc32 for 10000000 ... 1000032a ==> 80a63e1e
+U-Boot>
+### wget 0x10000000 http://<buildhost>:8080/cw559/cmdline-quiet.txt
+wget 0x10000000 http://<buildhost>:8080/cw559/cmdline-quiet.txt
+##################################################
+22 bytes transferred in 3 ms (6.8 KiB/s)
+Bytes transferred = 22 (16 hex)
+U-Boot>
+### crc32 0x10000000 ${filesize}
+crc32 0x10000000 ${filesize}
+crc32 for 10000000 ... 10000015 ==> 8e601924
+U-Boot>
+### fatwrite mmc 2:1 0x10000000 cmdline-quiet.txt ${filesize}
+fatwrite mmc 2:1 0x10000000 cmdline-quiet.txt ${filesize}
+22 bytes written in 66 ms (0 Bytes/s)
+U-Boot>
+### fatload mmc 2:1 0x10000000 cmdline-quiet.txt
+fatload mmc 2:1 0x10000000 cmdline-quiet.txt
+22 bytes read in 25 ms (0 Bytes/s)
+U-Boot>
+### crc32 0x10000000 ${filesize}
+crc32 0x10000000 ${filesize}
+crc32 for 10000000 ... 10000015 ==> 8e601924
+U-Boot>
+### wget 0x10000000 http://<buildhost>:8080/cw559/cmdline-loud.txt
+wget 0x10000000 http://<buildhost>:8080/cw559/cmdline-loud.txt
+##################################################
+16 bytes transferred in 2 ms (7.8 KiB/s)
+Bytes transferred = 16 (10 hex)
+U-Boot>
+### crc32 0x10000000 ${filesize}
+crc32 0x10000000 ${filesize}
+crc32 for 10000000 ... 1000000f ==> fdcffa2f
+U-Boot>
+### fatwrite mmc 2:1 0x10000000 cmdline-loud.txt ${filesize}
+fatwrite mmc 2:1 0x10000000 cmdline-loud.txt ${filesize}
+16 bytes written in 66 ms (0 Bytes/s)
+U-Boot>
+### fatload mmc 2:1 0x10000000 cmdline-loud.txt
+fatload mmc 2:1 0x10000000 cmdline-loud.txt
+16 bytes read in 24 ms (0 Bytes/s)
+U-Boot>
+### crc32 0x10000000 ${filesize}
+crc32 0x10000000 ${filesize}
+crc32 for 10000000 ... 1000000f ==> fdcffa2f
+U-Boot>
+### wget 0x10000000 http://<buildhost>:8080/cw559/kernel8-qsteps.img
+wget 0x10000000 http://<buildhost>:8080/cw559/kernel8-qsteps.img
+##################################################
+1957888 bytes transferred in 113 ms (16.5 MiB/s)
+Bytes transferred = 1957888 (1de000 hex)
+U-Boot>
+### crc32 0x10000000 ${filesize}
+crc32 0x10000000 ${filesize}
+crc32 for 10000000 ... 101ddfff ==> 8f8b0987
+U-Boot>
+### fatwrite mmc 2:1 0x10000000 kernel8-qsteps.img ${filesize}
+fatwrite mmc 2:1 0x10000000 kernel8-qsteps.img ${filesize}
+1957888 bytes written in 364 ms (5.1 MiB/s)
+U-Boot>
+### fatload mmc 2:1 0x10000000 kernel8-qsteps.img
+fatload mmc 2:1 0x10000000 kernel8-qsteps.img
+1957888 bytes read in 199 ms (9.4 MiB/s)
+U-Boot>
+### crc32 0x10000000 ${filesize}
+crc32 0x10000000 ${filesize}
+crc32 for 10000000 ... 101ddfff ==> 8f8b0987
+U-Boot>
+### wget 0x10000000 http://<buildhost>:8080/cw559/initramfs-qsteps
+wget 0x10000000 http://<buildhost>:8080/cw559/initramfs-qsteps
+##################################################
+51363840 bytes transferred in 2943 ms (16.6 MiB/s)
+Bytes transferred = 51363840 (30fc000 hex)
+U-Boot>
+### crc32 0x10000000 ${filesize}
+crc32 0x10000000 ${filesize}
+crc32 for 10000000 ... 130fbfff ==> bd401b1a
+U-Boot>
+### fatwrite mmc 2:1 0x10000000 initramfs-qsteps ${filesize}
+fatwrite mmc 2:1 0x10000000 initramfs-qsteps ${filesize}
+51363840 bytes written in 8452 ms (5.8 MiB/s)
+U-Boot>
+### fatload mmc 2:1 0x10000000 initramfs-qsteps
+fatload mmc 2:1 0x10000000 initramfs-qsteps
+51363840 bytes read in 4621 ms (10.6 MiB/s)
+U-Boot>
+### crc32 0x10000000 ${filesize}
+crc32 0x10000000 ${filesize}
+crc32 for 10000000 ... 130fbfff ==> bd401b1a
+U-Boot>
+### wget 0x10000000 http://<buildhost>:8080/cw559/config-t489b.txt
+wget 0x10000000 http://<buildhost>:8080/cw559/config-t489b.txt
+##################################################
+186 bytes transferred in 3 ms (60.5 KiB/s)
+Bytes transferred = 186 (ba hex)
+U-Boot>
+### crc32 0x10000000 ${filesize}
+crc32 0x10000000 ${filesize}
+crc32 for 10000000 ... 100000b9 ==> fda1c460
+U-Boot>
+### fatwrite mmc 2:1 0x10000000 config-t489b.txt ${filesize}
+fatwrite mmc 2:1 0x10000000 config-t489b.txt ${filesize}
+186 bytes written in 434 ms (0 Bytes/s)
+U-Boot>
+### fatload mmc 2:1 0x10000000 config-t489b.txt
+fatload mmc 2:1 0x10000000 config-t489b.txt
+186 bytes read in 30 ms (5.9 KiB/s)
+U-Boot>
+### crc32 0x10000000 ${filesize}
+crc32 0x10000000 ${filesize}
+crc32 for 10000000 ... 100000b9 ==> fda1c460
+U-Boot>
+### fatls mmc 2:1
+fatls mmc 2:1
+    61376   bootcode.bin
+  3023104   start.elf
+     7381   fixup.dat
+   844380   start_cd.elf
+     3280   fixup_cd.dat
+     1594   LICENCE.broadcom
+    34731   bcm2710-rpi-3-b.dtb
+    35252   bcm2710-rpi-3-b-plus.dtb
+    33708   bcm2710-rpi-zero-2-w.dtb
+            overlays/
+      605   config.txt
+      675   .uuid
+   956952   u-boot.bin
+      278   boot.scr
+     4096   ._config.txt
+      605   config.txt.t559
+            .fseventsd/
+     4096   ._.uuid
+     4096   ._bootcode.bin
+    60686   bootcode-selector.bin
+            .TemporaryItems/
+     4096   ._bootcode-selector.bin
+    52624   bootcode-broadcom.bin
+    61040   bootcode-selector-233c8c5.bin
+    61040   redox-rpi-bootselect-3bp-20261110c-bootcode.bin
+     4096   ._redox-rpi-bootselect-3bp-20261110c-bootcode.bin
+    60812   redox-rpi-bootselect-3bp-20261110b-bootcode.bin
+     4096   ._redox-rpi-bootselect-3bp-20261110b-bootcode.bin
+      256   armstub8-redox.bin.t559
+      820   config-qsteps.txt
+      811   config-qsteps-loud.txt
+       22   cmdline-quiet.txt
+       16   cmdline-loud.txt
+  1957888   kernel8-qsteps.img
+ 51363840   initramfs-qsteps
+      186   config-t489b.txt
+
+33 file(s), 3 dir(s)
+
+U-Boot>

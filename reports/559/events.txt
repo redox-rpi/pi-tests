@@ -1,0 +1,30 @@
+start 22:24:33
+setup: power cycle into U-Boot 22:24:33
+power on 22:24:46
+at U-Boot prompt
+write crcs: 17a03c01 17a03c01 7ca40350 7ca40350 b91e3f0a b91e3f0a 80a63e1e 80a63e1e 8e601924 8e601924 fdcffa2f fdcffa2f 8f8b0987 8f8b0987 bd401b1a bd401b1a fda1c460 fda1c460  22:30:45
+power on 22:30:58
+A rbc-load: ok chain 48152 bytes, start 0x80000200, SDRAM running 22:31:08
+found after 13 s
+A: banner redox-rpi bootcode t43-7e346e2-A (release, boots from the SD card, boot screen on HDMI); steps 5; last 1; fallback 0; login 1; panic 0 22:31:26
+A ls /: 1 usr lines 22:31:30
+power on 22:31:43
+B rbc-load: ok chain 48156 bytes, start 0x80000200, SDRAM running 22:31:53
+found after 12 s
+B: banner redox-rpi bootcode t43-7e346e2-B (release, boots from the SD card, boot screen on HDMI); steps 0; last 0; fallback 0; login 1; panic 0 22:32:10
+B ls /: 1 usr lines 22:32:14
+C setup 22:32:14
+power on 22:32:26
+at U-Boot prompt
+write C crcs: b91e3f0a b91e3f0a  22:33:22
+power on 22:33:34
+found after 20 s
+C: banner ; steps 0; last 0; fallback 1; login 1; panic 0 22:33:59
+C ls /: 1 usr lines 22:34:03
+power on 22:34:16
+ub R rbc-load: ok chain 43064 bytes, start 0x80000200, SDRAM running 22:34:25
+at U-Boot prompt
+restore crcs: 7ca40350 7ca40350 17a03c01 17a03c01  22:36:22
+power on 22:36:34
+found after 36 s
+stable up: redox-rpi v0.6.0-dev-115-gb972ccfd+x2d42 (netboot, 2026-11-20T03:30:55Z) 22:37:12

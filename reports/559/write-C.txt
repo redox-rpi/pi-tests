@@ -1,0 +1,38 @@
+### setenv autoload no
+setenv autoload no
+U-Boot>
+### usb start
+usb start
+U-Boot>
+### dhcp
+dhcp
+lan78xx_eth Waiting for PHY auto negotiation to complete........ done
+DHCP client bound to address <buildhost> (3 ms)
+U-Boot>
+### mmc dev 2
+mmc dev 2
+switch to partitions #0, OK
+mmc2 is current device
+U-Boot>
+### wget 0x10000000 http://<buildhost>:8080/cw559/config-qsteps.txt
+wget 0x10000000 http://<buildhost>:8080/cw559/config-qsteps.txt
+##################################################
+820 bytes transferred in 3 ms (266.6 KiB/s)
+Bytes transferred = 820 (334 hex)
+U-Boot>
+### crc32 0x10000000 ${filesize}
+crc32 0x10000000 ${filesize}
+crc32 for 10000000 ... 10000333 ==> b91e3f0a
+U-Boot>
+### fatwrite mmc 2:1 0x10000000 config.txt ${filesize}
+fatwrite mmc 2:1 0x10000000 config.txt ${filesize}
+820 bytes written in 45 ms (17.6 KiB/s)
+U-Boot>
+### fatload mmc 2:1 0x10000000 config.txt
+fatload mmc 2:1 0x10000000 config.txt
+820 bytes read in 18 ms (43.9 KiB/s)
+U-Boot>
+### crc32 0x10000000 ${filesize}
+crc32 0x10000000 ${filesize}
+crc32 for 10000000 ... 10000333 ==> b91e3f0a
+U-Boot>
