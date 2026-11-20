@@ -1,0 +1,19 @@
+start 16:58:10
+config: 20d19 < total_mem=1024 24a24,25 > hdmi_force_hotplug=1 > hdmi_drive=2  16:58:10
+staged /home/zehrer/redox-rpi-graphics/keep/gfx-v3dprobe3-netboot (build_id = "v0.6.0-dev-170-gfdf56878+xa6ac") 16:58:10
+boot: login, U-Boot retries 0, banner: redox-rpi v0.6.0-dev-170-gfdf56878+xa6ac (netboot, 2026-11-20T16:55:13Z) 16:59:43
+devsh up 16:59:59
+pw1 rc=0:  17:00:00
+probe1 rc=0: v3dprobe: PASS: V3D 42 on the BCM2711  17:00:01
+off rc=0: v3dprobe: PASS: V3D 42 on the BCM2711  17:00:03
+pw3 rc=0:  17:00:04
+probe2 rc=0: v3dprobe: PASS: V3D 42 on the BCM2711  17:00:05
+vc4shot rc=0:  17:00:08
+still answers 17:00:09
+panic/UNHANDLED: 0 17:00:09
+config restored: same 17:00:09
+staged /home/zehrer/redox-rpi-graphics/keep/pi400-fbshot-stage (build_id = "v0.6.0-dev-105-gbef6d90a+xcf2a") 17:00:09
+U-Boot prompt (load failed), typing boot (1) 17:00:45
+U-Boot prompt (load failed), typing boot (2) 17:00:58
+boot: login, U-Boot retries 2, banner: redox-rpi v0.6.0-dev-105-gbef6d90a+xcf2a (netboot, 2026-11-18T04:35:59Z) 17:02:16
+restore: login 17:02:16

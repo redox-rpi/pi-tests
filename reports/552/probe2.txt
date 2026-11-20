@@ -1,0 +1,52 @@
+### v3dprobe  (0.3 s)
+v3dprobe: devicetree: v3d@7ec04000 (brcm,2711-v3d), status disabled
+v3dprobe: clock: emmc 250000000 250000000
+v3dprobe: clock: uart 48000000 1000000000
+v3dprobe: clock: arm 1800000000 1800000000
+v3dprobe: clock: core 200000000 500000000
+v3dprobe: clock: v3d 250000000 500000000
+v3dprobe: clock: h264 250000000 500000000
+v3dprobe: clock: isp 250000000 500000000
+v3dprobe: clock: sdram 400000000 400000000
+v3dprobe: map pm at 0xfe100000
+v3dprobe: map rpivid_asb at 0xfec11000
+v3dprobe: read pm 0x10c (PM_GRAFX)
+v3dprobe:   = 0x00001000
+v3dprobe: PM_GRAFX: power up false, power ok false, V3D reset asserted
+v3dprobe: read rpivid_asb 0x020 (ASB_AXI_BRDG_ID)
+v3dprobe:   = 0x62726467
+v3dprobe: read rpivid_asb 0x00c (ASB_V3D_M_CTRL)
+v3dprobe:   = 0x00000007
+v3dprobe: read rpivid_asb 0x008 (ASB_V3D_S_CTRL)
+v3dprobe:   = 0x00000007
+v3dprobe: v3d_power: off
+v3dprobe: asking the firmware for V3D power (/scheme/rpi-firmware/v3d_power = on)
+v3dprobe: read pm 0x10c (PM_GRAFX)
+v3dprobe:   = 0x00001000
+v3dprobe: after v3d_power on: v3d_power on, PM_GRAFX power ok false (not checked on the BCM2711, as in Linux)
+v3dprobe: releasing the V3D reset (PM_GRAFX |= V3DRSTN)
+v3dprobe: read pm 0x10c (PM_GRAFX)
+v3dprobe:   = 0x00001040
+v3dprobe: opening the ASB master bridge (0x7)
+v3dprobe:   ASB master: 0x4 after 0 us
+v3dprobe: opening the ASB slave bridge (0x7)
+v3dprobe:   ASB slave: 0x4 after 0 us
+v3dprobe: map hub at 0xfec00000
+v3dprobe: map core0 at 0xfec04000
+v3dprobe: read hub 0x008 (V3D_HUB_IDENT0)
+v3dprobe:   = 0x42554856
+v3dprobe: read hub 0x00c (V3D_HUB_IDENT1)
+v3dprobe:   = 0x000e1124
+v3dprobe: read hub 0x010 (V3D_HUB_IDENT2)
+v3dprobe:   = 0x00000100
+v3dprobe: read hub 0x014 (V3D_HUB_IDENT3)
+v3dprobe:   = 0x00000e00
+v3dprobe: read core0 0x000 (V3D_CTL_IDENT0)
+v3dprobe:   = 0x04443356
+v3dprobe: read core0 0x004 (V3D_CTL_IDENT1)
+v3dprobe:   = 0x81001422
+v3dprobe: read core0 0x008 (V3D_CTL_IDENT2)
+v3dprobe:   = 0x40078121
+v3dprobe: hub: ident0 0x42554856, V3D 4.2, cores 1, MMU true, L3C 0 KiB, TFU true, IP rev 14 idx 0
+v3dprobe: core0: "V3D" version 4, VPM 8 KiB, slices 2, QPUs per slice 4, TMUs per slice 1
+v3dprobe: PASS: V3D 42 on the BCM2711
