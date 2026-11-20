@@ -1,0 +1,48 @@
+### v3dprobe  (0.4 s)
+v3dprobe: devicetree: v3d@7ec04000 (brcm,2711-v3d), status disabled
+v3dprobe: clock: emmc 250000000 250000000
+v3dprobe: clock: uart 48000000 1000000000
+v3dprobe: clock: arm 1800000000 1800000000
+v3dprobe: clock: core 200000000 500000000
+v3dprobe: clock: v3d 250000000 500000000
+v3dprobe: clock: h264 250000000 500000000
+v3dprobe: clock: isp 250000000 500000000
+v3dprobe: clock: sdram 400000000 400000000
+v3dprobe: map pm at 0xfe100000
+v3dprobe: map rpivid_asb at 0xfec11000
+v3dprobe: read pm 0x10c (PM_GRAFX)
+v3dprobe:   = 0x00001000
+v3dprobe: PM_GRAFX: power up false, power ok false, V3D reset asserted
+v3dprobe: read rpivid_asb 0x020 (ASB_AXI_BRDG_ID)
+v3dprobe:   = 0x62726467
+v3dprobe: read rpivid_asb 0x00c (ASB_V3D_M_CTRL)
+v3dprobe:   = 0x00000007
+v3dprobe: read rpivid_asb 0x008 (ASB_V3D_S_CTRL)
+v3dprobe:   = 0x00000007
+v3dprobe: v3d_power: off
+v3dprobe: asking the firmware for V3D power (/scheme/rpi-firmware/v3d_power = on)
+v3dprobe: read pm 0x10c (PM_GRAFX)
+v3dprobe:   = 0x00001000
+v3dprobe: read pm 0x10c (PM_GRAFX)
+v3dprobe:   = 0x00001000
+v3dprobe: read pm 0x10c (PM_GRAFX)
+v3dprobe:   = 0x00001000
+v3dprobe: read pm 0x10c (PM_GRAFX)
+v3dprobe:   = 0x00001000
+v3dprobe: read pm 0x10c (PM_GRAFX)
+v3dprobe:   = 0x00001000
+v3dprobe: read pm 0x10c (PM_GRAFX)
+v3dprobe:   = 0x00001000
+v3dprobe: read pm 0x10c (PM_GRAFX)
+v3dprobe:   = 0x00001000
+v3dprobe: read pm 0x10c (PM_GRAFX)
+v3dprobe:   = 0x00001000
+v3dprobe: read pm 0x10c (PM_GRAFX)
+v3dprobe:   = 0x00001000
+v3dprobe: read pm 0x10c (PM_GRAFX)
+v3dprobe:   = 0x00001000
+v3dprobe: read pm 0x10c (PM_GRAFX)
+v3dprobe:   = 0x00001000
+v3dprobe: read pm 0x10c (PM_GRAFX)
+v3dprobe:   = 0x00001000
+v3dprobe: FAIL: GRAFX still has no power after v3d_power on: V3D power off again

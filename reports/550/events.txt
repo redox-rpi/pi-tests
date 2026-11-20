@@ -1,0 +1,21 @@
+start 16:48:03
+config: 20d19 < total_mem=1024 24a24,25 > hdmi_force_hotplug=1 > hdmi_drive=2  16:48:03
+staged /home/zehrer/redox-rpi-graphics/keep/gfx-v3dprobe2-netboot (build_id = "v0.6.0-dev-167-g1a57079c+xa6ac") 16:48:03
+U-Boot prompt (load failed), typing boot (1) 16:49:33
+boot: login, U-Boot retries 1, banner: redox-rpi v0.6.0-dev-167-g1a57079c+xa6ac (netboot, 2026-11-20T16:40:55Z) 16:50:21
+devsh up 16:50:37
+pw1 rc=0:  16:50:39
+probe1 rc=0: v3dprobe: FAIL: GRAFX still has no power after v3d_power on: V3D power off again  16:50:40
+pw2 rc=0:  16:50:46
+off rc=0: v3dprobe: FAIL: GRAFX still has no power after v3d_power on: V3D power off again  16:50:47
+pw3 rc=0:  16:50:48
+probe2 rc=0: v3dprobe: FAIL: GRAFX still has no power after v3d_power on: V3D power off again  16:50:50
+vc4shot rc=0:  16:50:52
+still answers 16:50:53
+panic/UNHANDLED: 0 16:50:53
+config restored: same 16:50:53
+staged /home/zehrer/redox-rpi-graphics/keep/pi400-fbshot-stage (build_id = "v0.6.0-dev-105-gbef6d90a+xcf2a") 16:50:53
+U-Boot prompt (load failed), typing boot (1) 16:51:53
+U-Boot prompt (load failed), typing boot (2) 16:52:36
+boot: login, U-Boot retries 2, banner: redox-rpi v0.6.0-dev-105-gbef6d90a+xcf2a (netboot, 2026-11-18T04:35:59Z) 16:53:12
+restore: login 16:53:12
