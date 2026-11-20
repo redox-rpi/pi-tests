@@ -1,0 +1,4 @@
+rpi-firmwared: mailbox at 0xfe00b880, revision 0x00c03131, model unknown
+rpi-firmwared: ARM clock 600 -> 1800 MHz
+rpi-firmwared: VL805 at PCI 0x00100000 reset, firmware loaded
+rpi-firmwared: V3D power on, firmware says Some(true)

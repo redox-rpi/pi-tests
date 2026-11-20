@@ -1,0 +1,90 @@
+### desktop: ['66    0     0     UB    #0    F          00:00:00.03 00:00:00.04 11.2 MB 1.18 MB /usr/bin/orbital', '69    0     0     UB    #0    F          00:00:00.06 00:00:00.09 14.5 MB 0 B     /usr/bin/orblogin']
+### login: ['pointer-bench: enter']
+### start: ['ion: bg [0] 89']
+### shot: ['vc4shot: channel 1 640x480, list at 2048, 2 planes, ctrl 0x828001e0 bkgnd 0x81000000 list 2048 active 2048 stat 0xa3824017 (mode 2, frame 36)', 'vc4shot: plane 0: ListPlane { unity: true, format: 7, x: 0, y: 0, width: 640, height: 480, bus: 3257352192, pitch: 2560, alpha: false }', 'vc4shot: plane 1: ListPlane { unity: true, format: 7, x: 0, y: 0, width: 64, height: 64, bus: 3258580992, pitch: 256, alpha: true }', 'vc4shot: wrote /tmp/v3d.ppm (921615 bytes)']
+### v3d.ppm 921615 bytes 640x480
+### v3d: pixels 0x2080ff: (65536, 64, 64, 319, 319)
+### v3d: centre of that area (191,191) RGB 2080ff
+### v3d: pixel (192,192) RGB 2080ff
+### v3d.log:
+v3dprobe: devicetree: v3d@7ec04000 (brcm,2711-v3d), status disabled
+v3dprobe: clock: emmc 250000000 250000000
+v3dprobe: clock: uart 48000000 1000000000
+v3dprobe: clock: arm 600000000 1800000000
+v3dprobe: clock: core 200000000 500000000
+v3dprobe: clock: v3d 250000000 500000000
+v3dprobe: clock: h264 250000000 500000000
+v3dprobe: clock: isp 250000000 500000000
+v3dprobe: clock: sdram 400000000 400000000
+v3dprobe: map pm at 0xfe100000
+v3dprobe: map rpivid_asb at 0xfec11000
+v3dprobe: read pm 0x020 (PM_RSTS)
+v3dprobe:   = 0x00000000
+v3dprobe: read pm 0x01c (PM_RSTC)
+v3dprobe:   = 0x00003202
+v3dprobe: read pm 0x10c (PM_GRAFX)
+v3dprobe:   = 0x00001000
+v3dprobe: PM_GRAFX: power up false, power ok false, V3D reset asserted
+v3dprobe: read rpivid_asb 0x020 (ASB_AXI_BRDG_ID)
+v3dprobe:   = 0x62726467
+v3dprobe: read rpivid_asb 0x00c (ASB_V3D_M_CTRL)
+v3dprobe:   = 0x00000007
+v3dprobe: read rpivid_asb 0x008 (ASB_V3D_S_CTRL)
+v3dprobe:   = 0x00000007
+v3dprobe: v3d_power: off
+v3dprobe: asking the firmware for V3D power (/scheme/rpi-firmware/v3d_power = on)
+v3dprobe: read pm 0x10c (PM_GRAFX)
+v3dprobe:   = 0x00001000
+v3dprobe: after v3d_power on: v3d_power on, PM_GRAFX power ok false (not checked on the BCM2711, as in Linux)
+v3dprobe: watchdog armed: 10 s, then a full SoC reset if v3dprobe hangs
+v3dprobe: releasing the V3D reset (PM_GRAFX |= V3DRSTN)
+v3dprobe: read pm 0x10c (PM_GRAFX)
+v3dprobe:   = 0x00001040
+v3dprobe: opening the ASB master bridge (0x7)
+v3dprobe:   ASB master: 0x4 after 1 us
+v3dprobe: opening the ASB slave bridge (0x7)
+v3dprobe:   ASB slave: 0x4 after 1 us
+v3dprobe: map hub at 0xfec00000
+v3dprobe: map core0 at 0xfec04000
+v3dprobe: read hub 0x008 (V3D_HUB_IDENT0)
+v3dprobe:   = 0x42554856
+v3dprobe: read hub 0x00c (V3D_HUB_IDENT1)
+v3dprobe:   = 0x000e1124
+v3dprobe: read hub 0x010 (V3D_HUB_IDENT2)
+v3dprobe:   = 0x00000100
+v3dprobe: read hub 0x014 (V3D_HUB_IDENT3)
+v3dprobe:   = 0x00000e00
+v3dprobe: read core0 0x000 (V3D_CTL_IDENT0)
+v3dprobe:   = 0x04443356
+v3dprobe: read core0 0x004 (V3D_CTL_IDENT1)
+v3dprobe:   = 0x81001422
+v3dprobe: read core0 0x008 (V3D_CTL_IDENT2)
+v3dprobe:   = 0x40078121
+v3dprobe: hub: ident0 0x42554856, V3D 4.2, cores 1, MMU true, L3C 0 KiB, TFU true, IP rev 14 idx 0
+v3dprobe: core0: "V3D" version 4, VPM 8 KiB, slices 2, QPUs per slice 4, TMUs per slice 1
+v3dprobe: PASS: V3D 42 on the BCM2711
+v3dprobe: render: page table at 0x23a4000, arena at 0x27a4000 (V3D 0x100000)
+v3dprobe: render: BCL 17 bytes [78, 00, 00, 00, 00, ff, 00, ff, 00, 13, 5c, 00, 00, 00, 00, 06, 04]
+v3dprobe: render: generic tile list 28 bytes [7d, 1a, 38, 02, 36, 00, 00, 00, 00, 15, 00, 1d, 00, b0, 01, 00, 40, 00, 00, 00, 00, 40, 10, 00, 19, 03, 1b, 12]
+v3dprobe: render: RCL 151 bytes, first [79, 00, 00, 01, 00, 01, 40, 00, 00, 79, 03, 20, 80, ff, ff, 00, 00, 00, 79, 81, 00, 00, 00, 00, 00, 00, 00, 79, 02, 00, 00, 00, 80, 3f, 00, 00, 7e, 04, 7b, 00, 40, 14, 00, 7a, 00, 00, 04, 04, 04, 40, 00, 00, 7c, 00, 00, 00, 1a, 1d, 08, 00, 00, 00, 00, 00]
+v3dprobe: render: bin job done after 9 us
+v3dprobe: render: CT0CS 0x0 CT0CA 0x100011, CT1CS 0x0 CT1CA 0x0, BFC 0x1, RFC 0x0, CTL_INT_STS 0xa
+v3dprobe: csd: CSD_STATUS 0x0, CTL_INT_STS 0xa, HUB_INT_STS 0x0, GMP_STATUS 0x30
+v3dprobe: csd: MMU_CTL 0x60d0c01, MMU_VIO_ADDR 0x0 (address 0x0), MMU_VIO_ID 0x0
+v3dprobe: render: render job done after 46 us
+v3dprobe: render: CT0CS 0x0 CT0CA 0x100011, CT1CS 0x0 CT1CA 0x101097, BFC 0x1, RFC 0x1, CTL_INT_STS 0xb
+v3dprobe: csd: CSD_STATUS 0x0, CTL_INT_STS 0xb, HUB_INT_STS 0x0, GMP_STATUS 0x30
+v3dprobe: csd: MMU_CTL 0x60d0c01, MMU_VIO_ADDR 0x0 (address 0x0), MMU_VIO_ID 0x0
+v3dprobe: render: pixels: 65536 of 65536 have 0xffff8020, 0 untouched; corners 0xffff8020 0xffff8020 0xffff8020 0xffff8020, centre 0xffff8020
+v3dprobe: render: first pixel of each tile in row 0: [
+0xffff8020,
+0xffff8020,
+0xffff8020,
+0xffff8020,
+]
+v3dprobe: render: PASS: 256x256 cleared to 0xffff8020 by bin and render control lists
+v3dprobe: watchdog stopped (PM_RSTC 0x102)
+v3dprobe: show: the picture is in an Orbital window (256x256 at 64,64) for 40 s
+### after shot: ['vc4shot: channel 1 640x480, list at 2304, 2 planes, ctrl 0x828001e0 bkgnd 0x81000000 list 2304 active 2304 stat 0xa3844131 (mode 2, frame 4)', 'vc4shot: plane 0: ListPlane { unity: true, format: 7, x: 0, y: 0, width: 640, height: 480, bus: 3256123392, pitch: 2560, alpha: false }', 'vc4shot: plane 1: ListPlane { unity: true, format: 7, x: 0, y: 0, width: 64, height: 64, bus: 3258580992, pitch: 256, alpha: true }', 'vc4shot: wrote /tmp/after.ppm (921615 bytes)']
+### after.ppm 921615 bytes 640x480; pixels 0x2080ff: (0,)
+### up: ['up']
