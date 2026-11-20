@@ -1,0 +1,78 @@
+kernel::scheme::user:DEBUG -- call_fdread: payload: 8 metadata: 2
+dwc2d: LAN7800 multicast filter: 1 groups
+1970-01-01T00-00-26.791Z [@fbcond::text:40 INFO] fbcond: Performing handoff
+kernel::scheme::user:DEBUG -- call_fdread: payload: 8 metadata: 2
+DHCP: eth0 got <lan>/24
+DHCP: default route via <lan> (eth0)
+devshd: listening on port 2323
+kernel::scheme::user:DEBUG -- call_fdread: payload: 8 metadata: 2
+kernel::scheme::user:DEBUG -- call_fdread: payload: 8 metadata: 2
+timesync: clock set to 2026-11-20 21:51:27 UTC from the build time
+RELIBC PANIC: panicked at /home/zehrer/redox-rpi-bump/upstream/redox/prefix/aarch64-unknown-redox/sysroot.partial/lib/rustlib/src/rust/library/core/src/cell.rs:1431:14:
+RefCell already borrowed
+kernel::arch::aarch64::interrupt::exception:ERROR -- FATAL: Not an SVC induced synchronous exception (ty=111100)
+FAR_EL1: 0x3088
+ELR_EL1: 00000000000AE7BC
+SPSR_EL1: 0000000040000000
+ESR_EL1: 00000000F2000001
+SP_EL0: 00007FFFFFFFF440
+X0:    0000000000000000
+X1:    0000000000270D37
+X2:    0000000000270D38
+X3:    0000000000234AA8
+X4:    0000000000000000
+X5:    0000000000000002
+X6:    00007FFFFFFFF2CE
+X7:    000000000000000A
+X8:    0000000000000000
+X9:    000000000000002B
+X10:   0000000000000034
+X11:   0000000000000000
+X12:   00000000002712A4
+X13:   0000000000002710
+X14:   000000000000147B
+X15:   0000000000271288
+X16:   0000000000000064
+X17:   000000000098967F
+X18:   0000000000000000
+X19:   00007FFFFFFFF67C
+volume: 70 from /scheme/data/audio-volume
+X20:   0000000000000003
+X21:   00000000003FD1B0
+X22:   00007FFFFFFFF588
+X23:   00007FFFFFFFF5C0
+########## Redox OS ##########
+# Login with the following:  #
+# `user`                     #
+# `root`:`password`          #
+##############################
+redox-rpi v0.6.0-dev-123-gf68f4bc1+x2d42 (netboot, 2026-11-20T21:51:27Z)
+experiments: netstack-watch rtl8152 timesync
+
+X24:   0000000000000001
+⏎                                                                                redox login: redox login: X25:   00007FFFFFFFF578
+X26:   00000000E58BC9C3
+X27:   000000000000007B
+X28:   0000000000000030
+X29:   00007FFFFFFFF660
+X30:   00000000000AE7BC
+  FP 00007ffffffff660: PC 0000000000009478
+  FP 00007ffffffffb60: PC 00000000000086b8
+  FP 00007ffffffffd10: PC 000000000000c8cc
+  FP 00007ffffffffd70: PC 000000000001744c
+  FP 00007ffffffffd90: PC 000000000000ae30
+  FP 00007ffffffffdf0: PC 00000000001bf0f8
+  <Invalid next frame pointer 0x0000000000000000; stack walk ended>
+  FP ffff80000598fd20: PC ffffff00000636a8
+    FFFFFF0000060CBC+29EC
+    <kernel::arch::aarch64::interrupt::handler::InterruptStack>::trace
+  FP ffff80000598fdd0: PC ffffff0000015bc8
+    FFFFFF0000015920+02A8
+    kernel::arch::aarch64::interrupt::exception::synchronous_exception_at_el0::inner
+  FP ffff80000598fe80: PC ffffff000000ab18
+    FFFFFF000000AAB4+0064
+    synchronous_exception_at_el0
+  FP ffff80000598fee0: PC 00000000f2000001
+  00007ffffffff440: GUARD PAGE
+kernel::context::signal:INFO -- UNHANDLED EXCEPTION, CPU #2, PID 37, NAME /usr/bin/timesync, CONTEXT 52
+startup-sound: played

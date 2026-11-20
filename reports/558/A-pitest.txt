@@ -1,0 +1,11 @@
+PASS version: v0.6.0-dev-123-gf68f4bc1+x2d42
+PASS manifest: build ID and libc.so hash match manifest.toml
+PASS ps: 58 processes (piped)
+PASS ps-tty: 58 lines straight to the terminal, rc=0
+PASS sdcard: write, read back, delete on /scheme/data
+PASS audio: mode pwm-dma, measured 44117 Hz, dma_faults 0, pwm_errors 0; tone -s 3 took 2.99 s, rc=0; audiod running
+FAIL time: no NTP answer yet (/tmp/timesync.synced missing): cat: /tmp/timesync.synced: No such file or directory; 1795211497
+PASS tcp: 10 MiB from the build host in 3.1 s, 3.2 MiB/s, SHA-256 matches
+PASS starts: 0 of 300 failed
+PASS cpu: ARM clock up to 1400 MHz, throttled 0x00000000
+PASS reboot: devsh back 36 s after reboot

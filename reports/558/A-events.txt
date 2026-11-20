@@ -1,0 +1,40 @@
+start 22:00:30
+staged build_id = "v0.6.0-dev-123-gf68f4bc1+x2d42" 22:00:30
+boot: found after 22 s; banner redox-rpi v0.6.0-dev-123-gf68f4bc1+x2d42 (netboot, 2026-11-20T21:51:27Z) 22:01:08
+devsh up 22:01:10
+pitest rc=1 22:02:40
+PASS version: v0.6.0-dev-123-gf68f4bc1+x2d42
+PASS manifest: build ID and libc.so hash match manifest.toml
+PASS ps: 58 processes (piped)
+PASS ps-tty: 58 lines straight to the terminal, rc=0
+PASS sdcard: write, read back, delete on /scheme/data
+PASS audio: mode pwm-dma, measured 44117 Hz, dma_faults 0, pwm_errors 0; tone -s 3 took 2.99 s, rc=0; audiod running
+FAIL time: no NTP answer yet (/tmp/timesync.synced missing): cat: /tmp/timesync.synced: No such file or directory; 1795211497
+PASS tcp: 10 MiB from the build host in 3.1 s, 3.2 MiB/s, SHA-256 matches
+PASS starts: 0 of 300 failed
+PASS cpu: ARM clock up to 1400 MHz, throttled 0x00000000
+PASS reboot: devsh back 36 s after reboot
+reboot 1: found after 32 s; nothing=0 panic=2 22:03:28
+reboot 2: found after 32 s; nothing=0 panic=2 22:04:15
+reboot 3: found after 35 s; nothing=0 panic=2 22:05:05
+reboot 4: found after 33 s; nothing=0 panic=2 22:05:52
+reboot 5: found after 32 s; nothing=0 panic=2 22:06:39
+reboot 6: found after 32 s; nothing=0 panic=2 22:07:26
+reboot 7: found after 32 s; nothing=0 panic=2 22:08:13
+reboot 8: found after 32 s; nothing=0 panic=2 22:09:00
+reboot 9: found after 32 s; nothing=0 panic=2 22:09:47
+reboot 10: found after 32 s; nothing=0 panic=2 22:10:34
+reboot 11: found after 32 s; nothing=0 panic=2 22:11:21
+reboot 12: found after 32 s; nothing=0 panic=2 22:12:08
+reboot 13: found after 32 s; nothing=0 panic=2 22:12:55
+reboot 14: found after 32 s; nothing=0 panic=2 22:13:42
+reboot 15: found after 30 s; nothing=0 panic=0 22:14:27
+reboot 16: found after 35 s; nothing=0 panic=2 22:15:17
+reboot 17: found after 32 s; nothing=0 panic=2 22:16:04
+reboot 18: found after 32 s; nothing=0 panic=2 22:16:51
+reboot 19: found after 32 s; nothing=0 panic=2 22:17:38
+reboot 20: found after 32 s; nothing=0 panic=2 22:18:25
+logins after reboot: 20/20 22:18:25
+staged build_id = "v0.6.0-dev-115-gb972ccfd+x2d42" 22:18:25
+boot: found after 20 s; banner redox-rpi v0.6.0-dev-115-gb972ccfd+x2d42 (netboot, 2026-11-20T03:30:55Z) 22:19:01
+devsh up 22:19:03

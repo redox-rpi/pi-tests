@@ -1,0 +1,3 @@
+### ls /scheme/  (typing 1.7 s, total 31.7 s, NO PROMPT)
+root:~# lroot:~# lsroot:~# ls root:~# ls /root:~# ls /sroot:~# ls /scroot:~# ls /schroot:~# ls /scheroot:~# ls /schemroot:~# ls /schemeroot:~# ls /scheme/root:~# ls /scheme/
+removing handle: id: 4, Some(List([48, 10]))

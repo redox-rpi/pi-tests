@@ -1,0 +1,17 @@
+start 22:09:26
+staged /home/zehrer/pitest-tools/s558b (build_id = "v0.6.0-dev-124-gc44d67cd+xbd17") 22:09:26
+boot: login, U-Boot retries 0, banner: redox-rpi v0.6.0-dev-124-gc44d67cd+xbd17 (netboot, 2026-11-20T21:52:10Z) 22:10:23
+boot 1: login; attach port 1.2 at xHCI speed 2; HID "USB Optical Mouse" serial ""; panic 0 failed 8 22:10:43
+U-Boot prompt (load failed), typing boot (1) 22:11:12
+U-Boot prompt (load failed), typing boot (2) 22:11:52
+boot: login, U-Boot retries 2, banner: redox-rpi v0.6.0-dev-124-gc44d67cd+xbd17 (netboot, 2026-11-20T21:52:10Z) 22:12:25
+boot 2: login; attach port 1.2 at xHCI speed 2; HID "USB Optical Mouse" serial ""; panic 0 failed 8 22:12:45
+boot: login, U-Boot retries 0, banner: redox-rpi v0.6.0-dev-124-gc44d67cd+xbd17 (netboot, 2026-11-20T21:52:10Z) 22:13:38
+boot 3: login; attach port 1.2 at xHCI speed 2; HID "USB Optical Mouse" serial ""; panic 0 failed 8 22:13:58
+logins: 3/3 22:13:58
+no devsh 22:16:07
+serial ps done 22:16:11
+serial ls done 22:16:43
+staged /home/zehrer/redox-rpi-graphics/keep/pi400-fbshot-stage (build_id = "v0.6.0-dev-105-gbef6d90a+xcf2a") 22:16:43
+boot: timeout, U-Boot retries 0, banner:  22:22:06
+restore: timeout 22:22:06
