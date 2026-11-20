@@ -1,0 +1,4 @@
+### vc4shot /tmp/s.ppm  (1.2 s)
+vc4shot: channel 1 640x480, list at 2048, 1 planes, ctrl 0x828001e0 bkgnd 0x81000000 list 2048 active 2048 stat 0xa1fa8165 (mode 2, frame 40)
+vc4shot: plane 0: ListPlane { unity: true, format: 7, x: 0, y: 0, width: 640, height: 480, bus: 3256123392, pitch: 2560, alpha: false }
+vc4shot: wrote /tmp/s.ppm (921615 bytes)
