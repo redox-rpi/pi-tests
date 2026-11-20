@@ -1,0 +1,13 @@
+start 22:03:39
+config: 20d19 < total_mem=1024 24a24,25 > hdmi_force_hotplug=1 > hdmi_drive=2  22:03:39
+staged /home/zehrer/redox-rpi-graphics/keep/gfx-v3dtri2-netboot (build_id = "v0.6.0-dev-177-ge66383bd+xa6ac") 22:03:40
+boot: login, U-Boot retries 0, banner: redox-rpi v0.6.0-dev-177-ge66383bd+xa6ac (netboot, 2026-11-20T21:52:50Z) 22:04:45
+devsh up 22:05:01
+show rc=0: v3dprobe: render: PASS: 256x256 cleared to 0xffff8020 by bin and render control lists v3dprobe: render: PASS: a red triangle on 0xffff8020, drawn by the QPUs through bin and render control lists v3dprobe: show: the picture is in an Orbital window (256x256 at 64,64) for 40 s v3dprobe: render: PASS: a 22:07:22
+still answers 22:07:28
+reboots seen after login: 2 22:07:28
+panic/UNHANDLED: 0 22:07:28
+config restored: same 22:07:28
+staged /home/zehrer/redox-rpi-graphics/keep/pi400-fbshot-stage (build_id = "v0.6.0-dev-105-gbef6d90a+xcf2a") 22:07:28
+boot: login, U-Boot retries 0, banner: redox-rpi v0.6.0-dev-105-gbef6d90a+xcf2a (netboot, 2026-11-18T04:35:59Z) 22:08:21
+restore: login 22:08:21

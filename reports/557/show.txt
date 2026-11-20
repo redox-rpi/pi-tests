@@ -1,0 +1,306 @@
+### desktop: ['67    0     0     UB    #0    F          00:00:00.03 00:00:00.04 11.2 MB 1.18 MB /usr/bin/orbital', '70    0     0     UB    #0    F          00:00:00.08 00:00:00.11 14.5 MB 0 B     /usr/bin/orblogin']
+### login: ['pointer-bench: enter']
+### step2 clear:
+v3dprobe: devicetree: v3d@7ec04000 (brcm,2711-v3d), status disabled
+v3dprobe: clock: emmc 250000000 250000000
+v3dprobe: clock: uart 48000000 1000000000
+v3dprobe: clock: arm 600000000 1800000000
+v3dprobe: clock: core 200000000 500000000
+v3dprobe: clock: v3d 250000000 500000000
+v3dprobe: clock: h264 250000000 500000000
+v3dprobe: clock: isp 250000000 500000000
+v3dprobe: clock: sdram 400000000 400000000
+v3dprobe: map pm at 0xfe100000
+v3dprobe: map rpivid_asb at 0xfec11000
+v3dprobe: read pm 0x020 (PM_RSTS)
+v3dprobe:   = 0x00000000
+v3dprobe: read pm 0x01c (PM_RSTC)
+v3dprobe:   = 0x00003202
+v3dprobe: read pm 0x10c (PM_GRAFX)
+v3dprobe:   = 0x00001000
+v3dprobe: PM_GRAFX: power up false, power ok false, V3D reset asserted
+v3dprobe: read rpivid_asb 0x020 (ASB_AXI_BRDG_ID)
+v3dprobe:   = 0x62726467
+v3dprobe: read rpivid_asb 0x00c (ASB_V3D_M_CTRL)
+v3dprobe:   = 0x00000007
+v3dprobe: read rpivid_asb 0x008 (ASB_V3D_S_CTRL)
+v3dprobe:   = 0x00000007
+v3dprobe: v3d_power: off
+v3dprobe: asking the firmware for V3D power (/scheme/rpi-firmware/v3d_power = on)
+v3dprobe: read pm 0x10c (PM_GRAFX)
+v3dprobe:   = 0x00001000
+v3dprobe: after v3d_power on: v3d_power on, PM_GRAFX power ok false (not checked on the BCM2711, as in Linux)
+v3dprobe: watchdog armed: 10 s, then a full SoC reset if v3dprobe hangs
+v3dprobe: releasing the V3D reset (PM_GRAFX |= V3DRSTN)
+v3dprobe: read pm 0x10c (PM_GRAFX)
+v3dprobe:   = 0x00001040
+v3dprobe: opening the ASB master bridge (0x7)
+v3dprobe:   ASB master: 0x4 after 0 us
+v3dprobe: opening the ASB slave bridge (0x7)
+v3dprobe:   ASB slave: 0x4 after 0 us
+v3dprobe: map hub at 0xfec00000
+v3dprobe: map core0 at 0xfec04000
+v3dprobe: read hub 0x008 (V3D_HUB_IDENT0)
+v3dprobe:   = 0x42554856
+v3dprobe: read hub 0x00c (V3D_HUB_IDENT1)
+v3dprobe:   = 0x000e1124
+v3dprobe: read hub 0x010 (V3D_HUB_IDENT2)
+v3dprobe:   = 0x00000100
+v3dprobe: read hub 0x014 (V3D_HUB_IDENT3)
+v3dprobe:   = 0x00000e00
+v3dprobe: read core0 0x000 (V3D_CTL_IDENT0)
+v3dprobe:   = 0x04443356
+v3dprobe: read core0 0x004 (V3D_CTL_IDENT1)
+v3dprobe:   = 0x81001422
+v3dprobe: read core0 0x008 (V3D_CTL_IDENT2)
+v3dprobe:   = 0x40078121
+v3dprobe: hub: ident0 0x42554856, V3D 4.2, cores 1, MMU true, L3C 0 KiB, TFU true, IP rev 14 idx 0
+v3dprobe: core0: "V3D" version 4, VPM 8 KiB, slices 2, QPUs per slice 4, TMUs per slice 1
+v3dprobe: PASS: V3D 42 on the BCM2711
+v3dprobe: render: page table at 0x23a8000, arena at 0x27a8000 (V3D 0x100000)
+v3dprobe: render: draw Clear
+v3dprobe: render: BCL 17 bytes [78, 00, 00, 00, 00, ff, 00, ff, 00, 13, 5c, 00, 00, 00, 00, 06, 04]
+v3dprobe: render: generic tile list 28 bytes [7d, 1a, 38, 02, 36, 00, 00, 00, 00, 15, 00, 1d, 00, b0, 01, 00, 40, 00, 00, 00, 00, 40, 10, 00, 19, 03, 1b, 12]
+v3dprobe: render: RCL 151 bytes, first [79, 00, 00, 01, 00, 01, 40, 00, 00, 79, 03, 20, 80, ff, ff, 00, 00, 00, 79, 81, 00, 00, 00, 00, 00, 00, 00, 79, 02, 00, 00, 00, 80, 3f, 00, 00, 7e, 04, 7b, 00, 40, 14, 00, 7a, 00, 00, 04, 04, 04, 40, 00, 00, 7c, 00, 00, 00, 1a, 1d, 08, 00, 00, 00, 00, 00]
+v3dprobe: render: bin job done after 4 us
+v3dprobe: render: CT0CS 0x0 CT0CA 0x100011, CT1CS 0x0 CT1CA 0x0, BFC 0x1, RFC 0x0, CTL_INT_STS 0xa
+v3dprobe: csd: CSD_STATUS 0x0, CTL_INT_STS 0xa, HUB_INT_STS 0x0, GMP_STATUS 0x30
+v3dprobe: csd: MMU_CTL 0x60d0c01, MMU_VIO_ADDR 0x0 (address 0x0), MMU_VIO_ID 0x0
+v3dprobe: render: render job done after 47 us
+v3dprobe: render: CT0CS 0x0 CT0CA 0x100011, CT1CS 0x0 CT1CA 0x101097, BFC 0x1, RFC 0x1, CTL_INT_STS 0xb
+v3dprobe: csd: CSD_STATUS 0x0, CTL_INT_STS 0xb, HUB_INT_STS 0x0, GMP_STATUS 0x30
+v3dprobe: csd: MMU_CTL 0x60d0c01, MMU_VIO_ADDR 0x0 (address 0x0), MMU_VIO_ID 0x0
+v3dprobe: render: pixels: 65536 of 65536 have 0xffff8020, 0 untouched; corners 0xffff8020 0xffff8020 0xffff8020 0xffff8020, centre 0xffff8020
+v3dprobe: render: first pixel of each tile in row 0: [
+0xffff8020,
+0xffff8020,
+0xffff8020,
+0xffff8020,
+]
+v3dprobe: render: PASS: 256x256 cleared to 0xffff8020 by bin and render control lists
+v3dprobe: watchdog stopped (PM_RSTC 0x102)
+v3dprobe: closed the ASB slave bridge (0x7)
+v3dprobe: closed the ASB master bridge (0x7)
+v3dprobe: V3D reset asserted again
+v3dprobe: v3d_power off: off, PM_GRAFX 0x1000
+### tri start: ['ion: bg [0] 90']
+### tri shot: ['vc4shot: channel 1 640x480, list at 2176, 2 planes, ctrl 0x828001e0 bkgnd 0x81000000 list 2176 active 2176 stat 0xa37f40db (mode 2, frame 52)', 'vc4shot: plane 0: ListPlane { unity: true, format: 7, x: 0, y: 0, width: 640, height: 480, bus: 3257352192, pitch: 2560, alpha: false }', 'vc4shot: plane 1: ListPlane { unity: true, format: 7, x: 0, y: 0, width: 64, height: 64, bus: 3258597376, pitch: 256, alpha: true }', 'vc4shot: wrote /tmp/tri.ppm (921615 bytes)']
+### tri.ppm 921615 bytes 640x480
+### tri: pixels 0x2080ff: (57344, 64, 64, 319, 319)
+### tri: red pixels 8192, x 128..255, y 128..254
+###   row y 128: x 128..255
+###   row y 191: x 160..223
+###   row y 254: x 191..192
+### tri log:
+v3dprobe: devicetree: v3d@7ec04000 (brcm,2711-v3d), status disabled
+v3dprobe: clock: emmc 250000000 250000000
+v3dprobe: clock: uart 48000000 1000000000
+v3dprobe: clock: arm 1800000000 1800000000
+v3dprobe: clock: core 200000000 500000000
+v3dprobe: clock: v3d 250000000 500000000
+v3dprobe: clock: h264 250000000 500000000
+v3dprobe: clock: isp 250000000 500000000
+v3dprobe: clock: sdram 400000000 400000000
+v3dprobe: map pm at 0xfe100000
+v3dprobe: map rpivid_asb at 0xfec11000
+v3dprobe: read pm 0x020 (PM_RSTS)
+v3dprobe:   = 0x00000000
+v3dprobe: read pm 0x01c (PM_RSTC)
+v3dprobe:   = 0x00000102
+v3dprobe: read pm 0x10c (PM_GRAFX)
+v3dprobe:   = 0x00001000
+v3dprobe: PM_GRAFX: power up false, power ok false, V3D reset asserted
+v3dprobe: read rpivid_asb 0x020 (ASB_AXI_BRDG_ID)
+v3dprobe:   = 0x62726467
+v3dprobe: read rpivid_asb 0x00c (ASB_V3D_M_CTRL)
+v3dprobe:   = 0x00000007
+v3dprobe: read rpivid_asb 0x008 (ASB_V3D_S_CTRL)
+v3dprobe:   = 0x00000007
+v3dprobe: v3d_power: off
+v3dprobe: asking the firmware for V3D power (/scheme/rpi-firmware/v3d_power = on)
+v3dprobe: read pm 0x10c (PM_GRAFX)
+v3dprobe:   = 0x00001000
+v3dprobe: after v3d_power on: v3d_power on, PM_GRAFX power ok false (not checked on the BCM2711, as in Linux)
+v3dprobe: watchdog armed: 10 s, then a full SoC reset if v3dprobe hangs
+v3dprobe: releasing the V3D reset (PM_GRAFX |= V3DRSTN)
+v3dprobe: read pm 0x10c (PM_GRAFX)
+v3dprobe:   = 0x00001040
+v3dprobe: opening the ASB master bridge (0x7)
+v3dprobe:   ASB master: 0x4 after 0 us
+v3dprobe: opening the ASB slave bridge (0x7)
+v3dprobe:   ASB slave: 0x4 after 0 us
+v3dprobe: map hub at 0xfec00000
+v3dprobe: map core0 at 0xfec04000
+v3dprobe: read hub 0x008 (V3D_HUB_IDENT0)
+v3dprobe:   = 0x42554856
+v3dprobe: read hub 0x00c (V3D_HUB_IDENT1)
+v3dprobe:   = 0x000e1124
+v3dprobe: read hub 0x010 (V3D_HUB_IDENT2)
+v3dprobe:   = 0x00000100
+v3dprobe: read hub 0x014 (V3D_HUB_IDENT3)
+v3dprobe:   = 0x00000e00
+v3dprobe: read core0 0x000 (V3D_CTL_IDENT0)
+v3dprobe:   = 0x04443356
+v3dprobe: read core0 0x004 (V3D_CTL_IDENT1)
+v3dprobe:   = 0x81001422
+v3dprobe: read core0 0x008 (V3D_CTL_IDENT2)
+v3dprobe:   = 0x40078121
+v3dprobe: hub: ident0 0x42554856, V3D 4.2, cores 1, MMU true, L3C 0 KiB, TFU true, IP rev 14 idx 0
+v3dprobe: core0: "V3D" version 4, VPM 8 KiB, slices 2, QPUs per slice 4, TMUs per slice 1
+v3dprobe: PASS: V3D 42 on the BCM2711
+v3dprobe: render: page table at 0x23a8000, arena at 0x27a8000 (V3D 0x100000)
+v3dprobe: render: draw CopyShaders
+v3dprobe: render: shader record + attributes [02, 00, 04, 00, 01, 01, 01, 01, 00, 81, 20, 00, 05, 86, 20, 00, 40, 83, 20, 00, 07, 85, 20, 00, 20, 83, 20, 00, 07, 84, 20, 00, 00, 83, 20, 00, 00, 82, 20, 00, 08, 04, 00, 00, 10, 00, 00, 00, ff, ff, ff, 00, 40, 82, 20, 00, b8, 42, 00, 00, 10, 00, 00, 00, ff, ff, ff, 00]
+v3dprobe: render: BCL 108 bytes [78, 00, 00, 00, 00, ff, 00, ff, 00, 13, 5c, 00, 00, 00, 00, 06, 6b, 00, 00, 00, 00, 00, 01, 00, 01, 60, 03, 70, 00, 68, 00, 00, 80, 3f, 69, 00, 00, 80, 3f, 6e, 00, 00, 00, 47, 00, 00, 00, 47, 6f, 00, 00, 00, 3f, 00, 00, 00, 3f, 6d, 00, 00, 00, 00, 00, 00, 80, 3f, 6c, 00, 80, 00, 00, 00, 80, 00, 00, 57, 00, 00, 00, 00, 61, 63, 58, 4a, 00, 5b, 0f, 00, 80, 3f, 47, 44, 40, 02, 80, 20, 00, 24, 04, 03, 00, 00, 00, 00, 00, 00, 00, 04]
+v3dprobe: render: generic tile list 28 bytes [7d, 1a, 38, 02, 36, 00, 00, 00, 00, 15, 00, 1d, 00, b0, 01, 00, 40, 00, 00, 00, 00, 40, 10, 00, 19, 03, 1b, 12]
+v3dprobe: render: RCL 151 bytes, first [79, 00, 00, 01, 00, 01, 40, 00, 00, 79, 03, 20, 80, ff, ff, 00, 00, 00, 79, 81, 00, 00, 00, 00, 00, 00, 00, 79, 02, 00, 00, 00, 80, 3f, 00, 00, 7e, 04, 7b, 00, 40, 14, 00, 7a, 00, 00, 04, 04, 04, 40, 00, 00, 7c, 00, 00, 00, 1a, 1d, 08, 00, 00, 00, 00, 00]
+v3dprobe: render: bin job done after 11 us
+v3dprobe: render: CT0CS 0x0 CT0CA 0x10006c, CT1CS 0x0 CT1CA 0x0, BFC 0x1, RFC 0x0, CTL_INT_STS 0xa
+v3dprobe: csd: CSD_STATUS 0x0, CTL_INT_STS 0xa, HUB_INT_STS 0x0, GMP_STATUS 0x30
+v3dprobe: csd: MMU_CTL 0x60d0c01, MMU_VIO_ADDR 0x0 (address 0x0), MMU_VIO_ID 0x0
+v3dprobe: render: render job done after 53 us
+v3dprobe: render: CT0CS 0x0 CT0CA 0x10006c, CT1CS 0x0 CT1CA 0x101097, BFC 0x1, RFC 0x1, CTL_INT_STS 0xb
+v3dprobe: csd: CSD_STATUS 0x0, CTL_INT_STS 0xb, HUB_INT_STS 0x0, GMP_STATUS 0x30
+v3dprobe: csd: MMU_CTL 0x60d0c01, MMU_VIO_ADDR 0x0 (address 0x0), MMU_VIO_ID 0x0
+v3dprobe: render: pixels: 57344 of 65536 have 0xffff8020, 0 untouched; corners 0xffff8020 0xffff8020 0xffff8020 0xffff8020, centre 0xff0000ff
+v3dprobe: render: first pixel of each tile in row 0: [
+0xffff8020,
+0xffff8020,
+0xffff8020,
+0xffff8020,
+]
+v3dprobe: render: |................................|
+v3dprobe: render: |................................|
+v3dprobe: render: |................................|
+v3dprobe: render: |................................|
+v3dprobe: render: |........###############.........|
+v3dprobe: render: |.........#############..........|
+v3dprobe: render: |..........###########...........|
+v3dprobe: render: |...........#########............|
+v3dprobe: render: |............#######.............|
+v3dprobe: render: |.............#####..............|
+v3dprobe: render: |..............###...............|
+v3dprobe: render: |...............#................|
+v3dprobe: render: |................................|
+v3dprobe: render: |................................|
+v3dprobe: render: |................................|
+v3dprobe: render: |................................|
+v3dprobe: render: triangle: 8192 red, 57344 clear, 0 other pixels (area 8192 expected red); base at row 64; centre 0xff0000ff; 0 wrong away from the edges, first None
+v3dprobe: render: PASS: a red triangle on 0xffff8020, drawn by the QPUs through bin and render control lists
+v3dprobe: watchdog stopped (PM_RSTC 0x102)
+v3dprobe: show: the picture is in an Orbital window (256x256 at 64,64) for 40 s
+v3dprobe: closed the ASB slave bridge (0x7)
+v3dprobe: closed the ASB master bridge (0x7)
+v3dprobe: V3D reset asserted again
+v3dprobe: v3d_power off: off, PM_GRAFX 0x1000
+### tri-math start: ['ion: bg [0] 103']
+### tri-math shot: ['vc4shot: channel 1 640x480, list at 2304, 2 planes, ctrl 0x828001e0 bkgnd 0x81000000 list 2304 active 2304 stat 0xa370c100 (mode 2, frame 12)', 'vc4shot: plane 0: ListPlane { unity: true, format: 7, x: 0, y: 0, width: 640, height: 480, bus: 3256123392, pitch: 2560, alpha: false }', 'vc4shot: plane 1: ListPlane { unity: true, format: 7, x: 0, y: 0, width: 64, height: 64, bus: 3258597376, pitch: 256, alpha: true }', 'vc4shot: wrote /tmp/tri-math.ppm (921615 bytes)']
+### tri-math.ppm 921615 bytes 640x480
+### tri-math: pixels 0x2080ff: (57344, 64, 64, 319, 319)
+### tri-math: red pixels 8192, x 128..255, y 128..254
+###   row y 128: x 128..255
+###   row y 191: x 160..223
+###   row y 254: x 191..192
+### tri-math log:
+v3dprobe: devicetree: v3d@7ec04000 (brcm,2711-v3d), status disabled
+v3dprobe: clock: emmc 250000000 250000000
+v3dprobe: clock: uart 48000000 1000000000
+v3dprobe: clock: arm 1800000000 1800000000
+v3dprobe: clock: core 200000000 500000000
+v3dprobe: clock: v3d 250000000 500000000
+v3dprobe: clock: h264 250000000 500000000
+v3dprobe: clock: isp 250000000 500000000
+v3dprobe: clock: sdram 400000000 400000000
+v3dprobe: map pm at 0xfe100000
+v3dprobe: map rpivid_asb at 0xfec11000
+v3dprobe: read pm 0x020 (PM_RSTS)
+v3dprobe:   = 0x00000000
+v3dprobe: read pm 0x01c (PM_RSTC)
+v3dprobe:   = 0x00000102
+v3dprobe: read pm 0x10c (PM_GRAFX)
+v3dprobe:   = 0x00001000
+v3dprobe: PM_GRAFX: power up false, power ok false, V3D reset asserted
+v3dprobe: read rpivid_asb 0x020 (ASB_AXI_BRDG_ID)
+v3dprobe:   = 0x62726467
+v3dprobe: read rpivid_asb 0x00c (ASB_V3D_M_CTRL)
+v3dprobe:   = 0x00000007
+v3dprobe: read rpivid_asb 0x008 (ASB_V3D_S_CTRL)
+v3dprobe:   = 0x00000007
+v3dprobe: v3d_power: off
+v3dprobe: asking the firmware for V3D power (/scheme/rpi-firmware/v3d_power = on)
+v3dprobe: read pm 0x10c (PM_GRAFX)
+v3dprobe:   = 0x00001000
+v3dprobe: after v3d_power on: v3d_power on, PM_GRAFX power ok false (not checked on the BCM2711, as in Linux)
+v3dprobe: watchdog armed: 10 s, then a full SoC reset if v3dprobe hangs
+v3dprobe: releasing the V3D reset (PM_GRAFX |= V3DRSTN)
+v3dprobe: read pm 0x10c (PM_GRAFX)
+v3dprobe:   = 0x00001040
+v3dprobe: opening the ASB master bridge (0x7)
+v3dprobe:   ASB master: 0x4 after 0 us
+v3dprobe: opening the ASB slave bridge (0x7)
+v3dprobe:   ASB slave: 0x4 after 0 us
+v3dprobe: map hub at 0xfec00000
+v3dprobe: map core0 at 0xfec04000
+v3dprobe: read hub 0x008 (V3D_HUB_IDENT0)
+v3dprobe:   = 0x42554856
+v3dprobe: read hub 0x00c (V3D_HUB_IDENT1)
+v3dprobe:   = 0x000e1124
+v3dprobe: read hub 0x010 (V3D_HUB_IDENT2)
+v3dprobe:   = 0x00000100
+v3dprobe: read hub 0x014 (V3D_HUB_IDENT3)
+v3dprobe:   = 0x00000e00
+v3dprobe: read core0 0x000 (V3D_CTL_IDENT0)
+v3dprobe:   = 0x04443356
+v3dprobe: read core0 0x004 (V3D_CTL_IDENT1)
+v3dprobe:   = 0x81001422
+v3dprobe: read core0 0x008 (V3D_CTL_IDENT2)
+v3dprobe:   = 0x40078121
+v3dprobe: hub: ident0 0x42554856, V3D 4.2, cores 1, MMU true, L3C 0 KiB, TFU true, IP rev 14 idx 0
+v3dprobe: core0: "V3D" version 4, VPM 8 KiB, slices 2, QPUs per slice 4, TMUs per slice 1
+v3dprobe: PASS: V3D 42 on the BCM2711
+v3dprobe: render: page table at 0x23a8000, arena at 0x27a8000 (V3D 0x100000)
+v3dprobe: render: draw MathShaders
+v3dprobe: render: shader record + attributes [02, 00, 04, 00, 01, 01, 01, 01, 00, 81, 20, 00, 05, 86, 20, 00, 40, 83, 20, 00, 07, 85, 20, 00, 20, 83, 20, 00, 07, 84, 20, 00, 00, 83, 20, 00, 00, 82, 20, 00, 08, 34, 00, 00, 10, 00, 00, 00, ff, ff, ff, 00, 00, 00, 00, 00, 00, 00, 00, 00, 00, 00, 00, 00, 00, 00, 00, 00]
+v3dprobe: render: BCL 108 bytes [78, 00, 00, 00, 00, ff, 00, ff, 00, 13, 5c, 00, 00, 00, 00, 06, 6b, 00, 00, 00, 00, 00, 01, 00, 01, 60, 03, 70, 00, 68, 00, 00, 80, 3f, 69, 00, 00, 80, 3f, 6e, 00, 00, 00, 47, 00, 00, 00, 47, 6f, 00, 00, 00, 3f, 00, 00, 00, 3f, 6d, 00, 00, 00, 00, 00, 00, 80, 3f, 6c, 00, 80, 00, 00, 00, 80, 00, 00, 57, 00, 00, 00, 00, 61, 63, 58, 4a, 00, 5b, 0f, 00, 80, 3f, 47, 44, 40, 01, 80, 20, 00, 24, 04, 03, 00, 00, 00, 00, 00, 00, 00, 04]
+v3dprobe: render: generic tile list 28 bytes [7d, 1a, 38, 02, 36, 00, 00, 00, 00, 15, 00, 1d, 00, b0, 01, 00, 40, 00, 00, 00, 00, 40, 10, 00, 19, 03, 1b, 12]
+v3dprobe: render: RCL 151 bytes, first [79, 00, 00, 01, 00, 01, 40, 00, 00, 79, 03, 20, 80, ff, ff, 00, 00, 00, 79, 81, 00, 00, 00, 00, 00, 00, 00, 79, 02, 00, 00, 00, 80, 3f, 00, 00, 7e, 04, 7b, 00, 40, 14, 00, 7a, 00, 00, 04, 04, 04, 40, 00, 00, 7c, 00, 00, 00, 1a, 1d, 08, 00, 00, 00, 00, 00]
+v3dprobe: render: bin job done after 10 us
+v3dprobe: render: CT0CS 0x0 CT0CA 0x10006c, CT1CS 0x0 CT1CA 0x0, BFC 0x1, RFC 0x0, CTL_INT_STS 0xa
+v3dprobe: csd: CSD_STATUS 0x0, CTL_INT_STS 0xa, HUB_INT_STS 0x0, GMP_STATUS 0x30
+v3dprobe: csd: MMU_CTL 0x60d0c01, MMU_VIO_ADDR 0x0 (address 0x0), MMU_VIO_ID 0x0
+v3dprobe: render: render job done after 53 us
+v3dprobe: render: CT0CS 0x0 CT0CA 0x10006c, CT1CS 0x0 CT1CA 0x101097, BFC 0x1, RFC 0x1, CTL_INT_STS 0xb
+v3dprobe: csd: CSD_STATUS 0x0, CTL_INT_STS 0xb, HUB_INT_STS 0x0, GMP_STATUS 0x30
+v3dprobe: csd: MMU_CTL 0x60d0c01, MMU_VIO_ADDR 0x0 (address 0x0), MMU_VIO_ID 0x0
+v3dprobe: render: pixels: 57344 of 65536 have 0xffff8020, 0 untouched; corners 0xffff8020 0xffff8020 0xffff8020 0xffff8020, centre 0xff0000ff
+v3dprobe: render: first pixel of each tile in row 0: [
+0xffff8020,
+0xffff8020,
+0xffff8020,
+0xffff8020,
+]
+v3dprobe: render: |................................|
+v3dprobe: render: |................................|
+v3dprobe: render: |................................|
+v3dprobe: render: |................................|
+v3dprobe: render: |........###############.........|
+v3dprobe: render: |.........#############..........|
+v3dprobe: render: |..........###########...........|
+v3dprobe: render: |...........#########............|
+v3dprobe: render: |............#######.............|
+v3dprobe: render: |.............#####..............|
+v3dprobe: render: |..............###...............|
+v3dprobe: render: |...............#................|
+v3dprobe: render: |................................|
+v3dprobe: render: |................................|
+v3dprobe: render: |................................|
+v3dprobe: render: |................................|
+v3dprobe: render: triangle: 8192 red, 57344 clear, 0 other pixels (area 8192 expected red); base at row 64; centre 0xff0000ff; 0 wrong away from the edges, first None
+v3dprobe: render: PASS: a red triangle on 0xffff8020, drawn by the QPUs through bin and render control lists
+v3dprobe: watchdog stopped (PM_RSTC 0x102)
+v3dprobe: show: the picture is in an Orbital window (256x256 at 64,64) for 40 s
+v3dprobe: closed the ASB slave bridge (0x7)
+v3dprobe: closed the ASB master bridge (0x7)
+v3dprobe: V3D reset asserted again
+v3dprobe: v3d_power off: off, PM_GRAFX 0x1000
+### up: ['up']
