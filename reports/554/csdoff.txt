@@ -1,0 +1,96 @@
+### v3dprobe --csd --off  (0.3 s)
+v3dprobe: devicetree: v3d@7ec04000 (brcm,2711-v3d), status disabled
+v3dprobe: clock: emmc 250000000 250000000
+v3dprobe: clock: uart 48000000 1000000000
+v3dprobe: clock: arm 1800000000 1800000000
+v3dprobe: clock: core 200000000 500000000
+v3dprobe: clock: v3d 250000000 500000000
+v3dprobe: clock: h264 250000000 500000000
+v3dprobe: clock: isp 250000000 500000000
+v3dprobe: clock: sdram 400000000 400000000
+v3dprobe: map pm at 0xfe100000
+v3dprobe: map rpivid_asb at 0xfec11000
+v3dprobe: read pm 0x020 (PM_RSTS)
+v3dprobe:   = 0x00000000
+v3dprobe: read pm 0x01c (PM_RSTC)
+v3dprobe:   = 0x00000102
+v3dprobe: read pm 0x10c (PM_GRAFX)
+v3dprobe:   = 0x00001040
+v3dprobe: PM_GRAFX: power up false, power ok false, V3D reset released
+v3dprobe: read rpivid_asb 0x020 (ASB_AXI_BRDG_ID)
+v3dprobe:   = 0x62726467
+v3dprobe: read rpivid_asb 0x00c (ASB_V3D_M_CTRL)
+v3dprobe:   = 0x00000004
+v3dprobe: read rpivid_asb 0x008 (ASB_V3D_S_CTRL)
+v3dprobe:   = 0x00000004
+v3dprobe: v3d_power: on
+v3dprobe: asking the firmware for V3D power (/scheme/rpi-firmware/v3d_power = on)
+v3dprobe: read pm 0x10c (PM_GRAFX)
+v3dprobe:   = 0x00001040
+v3dprobe: after v3d_power on: v3d_power on, PM_GRAFX power ok false (not checked on the BCM2711, as in Linux)
+v3dprobe: watchdog armed: 10 s, then a full SoC reset if v3dprobe hangs
+v3dprobe: opening the ASB master bridge (0x4)
+v3dprobe:   ASB master: 0x4 after 0 us
+v3dprobe: opening the ASB slave bridge (0x4)
+v3dprobe:   ASB slave: 0x4 after 1 us
+v3dprobe: map hub at 0xfec00000
+v3dprobe: map core0 at 0xfec04000
+v3dprobe: read hub 0x008 (V3D_HUB_IDENT0)
+v3dprobe:   = 0x42554856
+v3dprobe: read hub 0x00c (V3D_HUB_IDENT1)
+v3dprobe:   = 0x000e1124
+v3dprobe: read hub 0x010 (V3D_HUB_IDENT2)
+v3dprobe:   = 0x00000100
+v3dprobe: read hub 0x014 (V3D_HUB_IDENT3)
+v3dprobe:   = 0x00000e00
+v3dprobe: read core0 0x000 (V3D_CTL_IDENT0)
+v3dprobe:   = 0x04443356
+v3dprobe: read core0 0x004 (V3D_CTL_IDENT1)
+v3dprobe:   = 0x81001422
+v3dprobe: read core0 0x008 (V3D_CTL_IDENT2)
+v3dprobe:   = 0x40078121
+v3dprobe: hub: ident0 0x42554856, V3D 4.2, cores 1, MMU true, L3C 0 KiB, TFU true, IP rev 14 idx 0
+v3dprobe: core0: "V3D" version 4, VPM 8 KiB, slices 2, QPUs per slice 4, TMUs per slice 1
+v3dprobe: PASS: V3D 42 on the BCM2711
+v3dprobe: csd: MMU version 0, VA width 5, PA width 5 (MMU_DEBUG_INFO 0x550)
+v3dprobe: csd: page table at 0x23a5000, job memory at 0x27a5000
+v3dprobe: csd: PTEs: code 0x300027a5, uniforms 0x300027a6, result 0x300027a7
+v3dprobe: csd: MMU on: MMU_CTL 0x60d0c01, PT_PA_BASE 0x23a5
+v3dprobe: csd: CSD_STATUS 0x20, CTL_INT_STS 0x80, HUB_INT_STS 0x0, GMP_STATUS 0x30
+v3dprobe: csd: MMU_CTL 0x60d0c01, MMU_VIO_ADDR 0x0 (address 0x0), MMU_VIO_ID 0x0
+v3dprobe: csd: dispatch, cfg [
+0x10000,
+0x10000,
+0x10000,
+0xf010,
+0x0,
+0x1000,
+0x2000,
+]
+v3dprobe: csd: CSD_STATUS 0x30, CTL_INT_STS 0x80, HUB_INT_STS 0x0, GMP_STATUS 0x30
+v3dprobe: csd: MMU_CTL 0x60d0c01, MMU_VIO_ADDR 0x0 (address 0x0), MMU_VIO_ID 0x0
+v3dprobe: csd: job done after 7 us, CSD done interrupt bit true
+v3dprobe: csd: result [
+0x5a5a0000,
+0x5a5a0001,
+0x5a5a0002,
+0x5a5a0003,
+0x5a5a0004,
+0x5a5a0005,
+0x5a5a0006,
+0x5a5a0007,
+0x5a5a0008,
+0x5a5a0009,
+0x5a5a000a,
+0x5a5a000b,
+0x5a5a000c,
+0x5a5a000d,
+0x5a5a000e,
+0x5a5a000f,
+]
+v3dprobe: csd: PASS: 16 lanes wrote lane + 0x5a5a0000 through the MMU
+v3dprobe: watchdog stopped (PM_RSTC 0x102)
+v3dprobe: closed the ASB slave bridge (0x7)
+v3dprobe: closed the ASB master bridge (0x7)
+v3dprobe: V3D reset asserted again
+v3dprobe: v3d_power off: off, PM_GRAFX 0x1000
