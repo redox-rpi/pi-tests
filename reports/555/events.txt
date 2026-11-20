@@ -1,0 +1,23 @@
+start 17:35:50
+config: 20d19 < total_mem=1024 24a24,25 > hdmi_force_hotplug=1 > hdmi_drive=2  17:35:50
+staged /home/zehrer/redox-rpi-graphics/keep/gfx-v3drender-netboot (build_id = "v0.6.0-dev-173-g5f1452f6+xa6ac") 17:35:50
+U-Boot prompt (load failed), typing boot (1) 17:36:29
+boot: login, U-Boot retries 1, banner: redox-rpi v0.6.0-dev-173-g5f1452f6+xa6ac (netboot, 2026-11-20T17:33:58Z) 17:37:41
+devsh up 17:37:58
+r1 rc=0: v3dprobe: PASS: V3D 42 on the BCM2711 v3dprobe: render: PASS: 256x256 cleared to 0xffff8020 by bin and render control lists  17:37:59
+answers 30 s after r1 17:38:30
+r2 rc=0: v3dprobe: PASS: V3D 42 on the BCM2711 v3dprobe: render: PASS: 256x256 cleared to 0xffff8020 by bin and render control lists  17:38:31
+answers 30 s after r2 17:39:07
+rcsdoff rc=0: v3dprobe: csd: PASS: 16 lanes wrote lane + 0x5a5a0000 through the MMU v3dprobe: render: PASS: 256x256 cleared to 0xffff8020 by bin and render control lists  17:39:08
+answers 30 s after rcsdoff 17:39:39
+vc4shot rc=0:  17:39:41
+still answers 17:39:42
+reboots seen after login: 2 17:39:42
+panic/UNHANDLED: 0 17:39:42
+config restored: same 17:39:42
+staged /home/zehrer/redox-rpi-graphics/keep/pi400-fbshot-stage (build_id = "v0.6.0-dev-105-gbef6d90a+xcf2a") 17:39:42
+U-Boot prompt (load failed), typing boot (1) 17:40:42
+U-Boot prompt (load failed), typing boot (2) 17:41:49
+U-Boot prompt (load failed), typing boot (3) 17:42:17
+boot: login, U-Boot retries 3, banner: redox-rpi v0.6.0-dev-105-gbef6d90a+xcf2a (netboot, 2026-11-18T04:35:59Z) 17:42:47
+restore: login 17:42:47
