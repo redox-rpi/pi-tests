@@ -1,0 +1,110 @@
+### serial login done
+### ps  (typing 0.3 s, total 30.4 s, NO PROMPT)
+root:~# proot:~# psroot:~# ps
+PID   EUID  EGID  STAT  CPU   AFFINITY   ACTTIME     SCHTIME     PRIVATE SHARED  NAME
+0     0     0     RR+   #0    1          00:00:00.00 00:00:00.00 65.0 KB 0 B     [kmain]
+0     0     0     RR+   #1    2          00:00:00.00 00:00:00.00 65.0 KB 0 B     [kmain]
+0     0     0     RR+   #2    4          00:00:00.00 00:00:00.00 65.0 KB 0 B     [kmain]
+0     0     0     RR    #3    8          00:00:00.00 00:00:00.00 65.0 KB 0 B     [kmain]
+0     0     0     UB    #0    F          00:00:00.02 00:00:00.00 27.1 MB 4.00 KB initfs
+0     0     0     UB    #3    F          00:00:00.04 00:00:00.00 1.37 MB 316 KB  procmgr
+0     0     0     UB    #3    F          00:00:00.20 00:00:00.00 1.37 MB 8.00 KB initnsmgr
+1     0     0     UB    #1    F          00:00:00.10 00:00:00.24 1.86 MB 0 B     /scheme/initfs/bin/init
+2     0     0     UB    #1    F          00:00:00.04 00:00:00.04 3.77 MB 12.0 KB /scheme/initfs/bin/logd
+2     0     0     UB    #0    F          00:00:08.87 00:00:00.00 3.77 MB 12.0 KB /scheme/initfs/bin/logd
+3     0     0     UB    #3    F          00:00:00.00 00:00:00.00 1.62 MB 76.0 KB /scheme/initfs/bin/randd
+4     0     0     UB    #0    F          00:00:00.00 00:00:00.02 1.74 MB 0 B     /scheme/initfs/bin/ipcd
+5     0     0     UB    #0    F          00:00:00.00 00:00:00.00 1.55 MB 0 B     /scheme/initfs/bin/zerod
+6     0     0     UB    #2    F          00:00:00.00 00:00:00.00 1.55 MB 20.0 KB /scheme/initfs/bin/zerod
+7     0     0     UB    #0    F          00:00:00.02 00:00:00.00 3.08 MB 0 B     /scheme/initfs/bin/ramfs
+8     0     0     UB    #0    F          00:00:00.09 00:00:00.08 5.77 MB 0 B     /scheme/initfs/bin/rpi-firmwared
+8     0     0     US    #2    F          00:00:00.43 00:00:00.43 5.77 MB 0 B     /scheme/initfs/bin/rpi-firmwared
+8     0     0     US    #3    F          00:00:00.00 00:00:00.00 5.77 MB 0 B     /scheme/initfs/bin/rpi-firmwared
+9     0     0     UB    #2    F          00:00:00.00 00:00:00.00 1.67 MB 0 B     /scheme/initfs/bin/inputd
+10    0     0     UB    #3    F          00:00:00.03 00:00:00.01 1.79 MB 4.00 KB /scheme/initfs/bin/lived
+11    0     0     UB    #0    F          00:00:00.00 00:00:00.00 1.62 MB 0 B     /scheme/initfs/bin/bcm2835-gpiod
+12    0     0     UB    #0    F          00:00:00.00 00:00:00.00 1.68 MB 0 B     /scheme/initfs/bin/bcm2835-spid
+13    0     0     UB    #0    F          00:00:00.00 00:00:00.00 1.62 MB 0 B     /scheme/initfs/bin/bcm2835-i2cd
+16    0     0     UB    #1    F          00:00:00.01 00:00:00.02 5.86 MB 0 B     /scheme/initfs/bin/fbbootlogd
+20    0     0     UB    #1    F          00:00:00.00 00:00:00.26 1.79 MB 16.0 KB /scheme/initfs/bin/pcid
+23    0     0     UB    #3    F          00:00:00.70 00:00:00.22 34.7 MB 12.0 KB /scheme/initfs/bin/redoxfs
+25    0     0     UB    #1    F          00:00:01.42 00:00:00.31 13.1 MB 12.0 KB /usr/lib/drivers/xhcid
+25    0     0     US    #0    F          00:00:01.67 00:00:01.69 13.1 MB 12.0 KB /usr/lib/drivers/xhcid
+25    0     0     UB    #2    F          00:00:00.01 00:00:00.04 13.1 MB 12.0 KB /usr/lib/drivers/xhcid
+25    0     0     UB    #3    F          00:00:00.08 00:00:00.56 13.1 MB 12.0 KB /usr/lib/drivers/xhcid
+25    0     0     UB    #0    F          00:00:05.04 00:00:08.76 13.1 MB 12.0 KB /usr/lib/drivers/xhcid
+26    0     0     UB    #3    F          00:00:00.05 00:00:00.05 1.62 MB 12.0 KB /usr/bin/ptyd
+29    0     0     US    #1    F          00:00:00.14 00:00:00.50 1.73 MB 0 B     /usr/lib/drivers/usbhubd
+30    0     0     UB    #1    F          00:00:00.00 00:00:00.04 5.20 MB 0 B     /usr/bin/sudo
+31    0     0     US    #2    F          00:00:00.02 00:00:00.03 6.86 MB 8.00 KB /usr/bin/netstack
+31    0     0     UB    #2    F          00:00:00.04 00:00:00.10 6.86 MB 8.00 KB /usr/bin/netstack
+31    0     0     US    #1    F          00:00:00.00 00:00:00.00 6.86 MB 8.00 KB /usr/bin/netstack
+32    0     0     UB    #2    F          00:00:00.13 00:00:00.04 6.15 MB 4.00 KB /usr/bin/fbcond
+33    0     0     UB    #3    F          00:00:00.64 00:00:00.64 1.86 MB 0 B     /usr/bin/getty
+34    0     0     US    #2    F          00:00:00.02 00:00:00.04 1.68 MB 0 B     /usr/bin/dhcpd
+35    0     0     UB    #1    F          00:00:00.00 00:00:00.02 5.21 MB 0 B     /usr/bin/devshd
+40    0     0     UB    #2    F          00:00:00.24 00:00:00.37 1.86 MB 0 B     /usr/bin/getty
+44    0     0     UB    #3    F          00:00:00.18 00:00:00.11 5.82 MB 0 B     /usr/bin/login
+45    0     0     UB    #2    F          00:00:00.00 00:00:00.02 5.88 MB 0 B     /usr/bin/login
+47    0     0     UB    #1    F          00:00:02.40 00:00:03.66 3.81 MB 0 B     /usr/lib/drivers/usbhidd
+47    0     0     US    #1    F          00:00:00.04 00:00:00.34 3.81 MB 0 B     /usr/lib/drivers/usbhidd
+48    0     0     US    #3    F          00:00:00.00 00:00:00.05 3.81 MB 0 B     /usr/lib/drivers/usbhidd
+48    0     0     UB    #3    F          00:00:00.02 00:00:00.18 3.81 MB 0 B     /usr/lib/drivers/usbhidd
+54    0     0     UB    #3    F          00:00:00.01 00:00:00.03 7.65 MB 0 B     /usr/bin/ion
+56    0     0     UR+   #3    F          00:00:00.00 00:00:00.02 5.14 MB 0 B     /usr/bin/ps
+⏎                                                                                root:~# root:~# 1970-01-01T00-04-05.406Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 1 submit #16400
+1970-01-01T00-04-05.424Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 1 event #16400 cc 1 left 0
+1970-01-01T00-04-06.533Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 1 submit #16500
+1970-01-01T00-04-06.561Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 1 event #16500 cc 1 left 0
+1970-01-01T00-04-07.690Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 1 submit #16600
+1970-01-01T00-04-07.709Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 1 event #16600 cc 1 left 0
+1970-01-01T00-04-08.314Z [@usbhidd:431 INFO] usb-trace: port 1.4 iface 1 reports 199
+1970-01-01T00-04-08.775Z [@usbhidd:431 INFO] usb-trace: port 1.4 iface 0 reports 16695
+1970-01-01T00-04-08.820Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 1 submit #16700
+1970-01-01T00-04-08.849Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 1 event #16700 cc 1 left 0
+1970-01-01T00-04-09.960Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 1 submit #16800
+1970-01-01T00-04-09.979Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 1 event #16800 cc 1 left 0
+1970-01-01T00-04-11.090Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 1 submit #16900
+1970-01-01T00-04-11.109Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 1 event #16900 cc 1 left 0
+1970-01-01T00-04-12.219Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 1 submit #17000
+1970-01-01T00-04-12.239Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 1 event #17000 cc 1 left 0
+1970-01-01T00-04-13.349Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 1 submit #17100
+1970-01-01T00-04-13.378Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 1 event #17100 cc 1 left 0
+1970-01-01T00-04-14.499Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 1 submit #17200
+1970-01-01T00-04-14.518Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 1 event #17200 cc 1 left 0
+1970-01-01T00-04-15.629Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 1 submit #17300
+1970-01-01T00-04-15.658Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 1 event #17300 cc 1 left 0
+1970-01-01T00-04-16.758Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 1 submit #17400
+1970-01-01T00-04-16.787Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 1 event #17400 cc 1 left 0
+1970-01-01T00-04-17.908Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 1 submit #17500
+1970-01-01T00-04-17.927Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 1 event #17500 cc 1 left 0
+1970-01-01T00-04-18.795Z [@usbhidd:431 INFO] usb-trace: port 1.4 iface 0 reports 17575
+1970-01-01T00-04-19.068Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 1 submit #17600
+1970-01-01T00-04-19.097Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 1 event #17600 cc 1 left 0
+1970-01-01T00-04-20.218Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 1 submit #17700
+1970-01-01T00-04-20.237Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 1 event #17700 cc 1 left 0
+1970-01-01T00-04-21.357Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 1 submit #17800
+1970-01-01T00-04-21.386Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 1 event #17800 cc 1 left 0
+1970-01-01T00-04-22.497Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 1 submit #17900
+1970-01-01T00-04-22.516Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 1 event #17900 cc 1 left 0
+1970-01-01T00-04-23.577Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 1 submit #18000
+1970-01-01T00-04-23.596Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 1 event #18000 cc 1 left 0
+1970-01-01T00-04-24.727Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 1 submit #18100
+1970-01-01T00-04-24.756Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 1 event #18100 cc 1 left 0
+1970-01-01T00-04-25.866Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 1 submit #18200
+1970-01-01T00-04-25.886Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 1 event #18200 cc 1 left 0
+1970-01-01T00-04-26.986Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 1 submit #18300
+1970-01-01T00-04-27.005Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 1 event #18300 cc 1 left 0
+1970-01-01T00-04-28.126Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 1 submit #18400
+1970-01-01T00-04-28.145Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 1 event #18400 cc 1 left 0
+1970-01-01T00-04-28.814Z [@usbhidd:431 INFO] usb-trace: port 1.4 iface 0 reports 18458
+1970-01-01T00-04-29.266Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 1 submit #18500
+1970-01-01T00-04-29.285Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 1 event #18500 cc 1 left 0
+1970-01-01T00-04-30.406Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 1 submit #18600
+1970-01-01T00-04-30.425Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 1 event #18600 cc 1 left 0
+1970-01-01T00-04-31.536Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 1 submit #18700
+1970-01-01T00-04-31.565Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 1 event #18700 cc 1 left 0
+1970-01-01T00-04-32.685Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 1 submit #18800
+1970-01-01T00-04-32.704Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 1 event #18800 cc 1 left 0
+1970-01-01T00-04-33.815Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 1 submit #18900
+1970-01-01T00-04-33.834Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 1 event #18900 cc 1 left 0
