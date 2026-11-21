@@ -1,0 +1,6 @@
+### sleep 25  (25.4 s)
+
+### cat /scheme/rpi-firmware/arm_clock  (0.4 s)
+1400000000
+### cat /scheme/rpi-firmware/throttled  (0.3 s)
+0x00000000

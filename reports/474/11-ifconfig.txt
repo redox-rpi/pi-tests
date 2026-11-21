@@ -1,0 +1,5 @@
+### ifconfig  (0.3 s)
+eth0:
+MAC Address: b8:27:eb:<rest>
+IP Address: <lan-ip>
+Netmask: 255.255.255.0

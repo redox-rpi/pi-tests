@@ -1,0 +1,8 @@
+### dd if=/scheme/rand of=/scheme/data/c474.bin bs=4096 count=256  (0.5 s)
+256+0 records in
+256+0 records out
+1048576 bytes (1.0 MB, 1.0 MiB) copied, 0.122539 s, 8.6 MB/s
+### sha256sum /scheme/data/c474.bin  (0.4 s)
+4007e2d87389d670914c24374c89dba906991e1ae915b9676c786d69a6d57a37  /scheme/data/c474.bin
+### sync  (6.0 s)
+ion: command not found: sync

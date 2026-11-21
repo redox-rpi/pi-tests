@@ -1,0 +1,54 @@
+### ls /usr/bin  (0.4 s)
+'['	        curl		  groupmod   more	    pwd		     skill      uptime
+audiod	        curl-config	  gunzip     mtxt	    pwdx	     sleep      useradd
+b2sum	        cut		  gzip	     mv		    readlink	     snice      userdel
+b3sum	        date		  hashsum    nbdd	    realpath	     socdump    usermod
+background     dd		  head	     nc		    reboot	     sopwith    vdir
+base32	        desktop		  hugetop    netstack	    redoxerd	     sort       viewer
+base64	        desktop-session	  i2c	     nice	    redoxfs	     spi        vmstat
+basename       desktop-welcome	  id	     nl		    redoxfs-ar	     split      volume
+basenc	        devshd		  ifconfig   nproc	    redoxfs-clone    stat       watch
+bunzip2        df		  info	     numfmt	    redoxfs-mkfs     su	        wc
+bzcat	        dhcpd		  inputd     od		    redoxfs-resize   sudo       wcurl
+bzcmp	        diff		  install    onig-config    rem		     sum        which
+bzdiff	        diff3		  ion	     openssl	    reset	     sysctl     whoami
+bzegrep        dir		  join	     orbital	    resize	     tac        xkbcli
+bzfgrep        dircolors	  keymap     orblogin	    rm		     tail       xml2-config
+bzgrep	        dirname		  kibi	     orbterm	    rmdir	     tar        xmlcatalog
+bzip2	        dmesg		  kill	     passwd	    screenfetch	     tcc        xmllint
+bzip2recover   dns		  launcher   paste	    sdiff	     tee        xzcmp
+bzless	        drawbench	  less	     pcid	    sdl2-config	     test       xzdiff
+bzmore	        du		  link	     pcid-spawner   seq		     time       xzegrep
+c_rehash       echo		  ln	     pgrep	    sha1sum	     timeit     xzfgrep
+calc	        env		  login	     pidof	    sha224sum	     timesync   xzgrep
+cat	        expand		  ls	     pidwait	    sha256sum	     tload      xzless
+chmod	        expr		  lzcmp	     ping	    sha3-224sum	     tone       xzmore
+chown	        factor		  lzdiff     pkg	    sha3-256sum	     touch      yes
+cksum	        false		  lzegrep    pkill	    sha3-384sum	     tr	        zstd
+clear	        fbcond		  lzfgrep    pmap	    sha3-512sum	     true       zstdcat
+cmp	        fbshot		  lzgrep     poweroff	    sha384sum	     truncate   zstdgrep
+comm	        fmt		  lzless     pr		    sha3sum	     tsort      zstdless
+coreutils      fold		  lzmore     printenv	    sha512sum	     uname      zstdmt
+cosmic-files   free		  man	     printf	    shake128sum	     unexpand
+cosmic-term    getty		  md5sum     procps	    shake256sum	     uniq
+cp	        grep		  mdless     ps		    shred	     unlink
+csplit	        groupadd	  mkdir	     ptx	    shuf	     unzip
+cur	        groupdel	  mktemp     ptyd	    shutdown	     unzstd
+### time curl -sS -o /scheme/null -w 'code %{http_code}\n' http://router-name/  (0.3 s)
+[ld.so]: failed to link '/usr/bin/curl': NotFound
+[ld.so]: enable debug output with `LD_DEBUG=all` for more information
+real    0.110050417s
+### echo rc=$?  (0.2 s)
+rc=0
+### time curl -sS -o /scheme/null -w 'code %{http_code}\n' http://build-host:8080/  (0.3 s)
+[ld.so]: failed to link '/usr/bin/curl': NotFound
+[ld.so]: enable debug output with `LD_DEBUG=all` for more information
+real    0.099411145s
+### echo rc=$?  (0.2 s)
+rc=0
+### time curl -sS -o /scheme/null http://no-such-host-474.invalid/  (0.3 s)
+[ld.so]: failed to link '/usr/bin/curl': NotFound
+[ld.so]: enable debug output with `LD_DEBUG=all` for more information
+real    0.097497761s
+### echo rc=$?  (0.2 s)
+rc=0

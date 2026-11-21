@@ -1,0 +1,15 @@
+### date -u  (0.4 s)
+Sat Nov 21 18:24:43 UTC 2026
+### time nc <lan-ip>:18557 > /scheme/data/n.bin < /scheme/null  (20.3 s)
+Remote host: <lan-ip>:18557
+real    20.063682556s
+### echo rc=$?  (0.2 s)
+rc=0
+### date -u  (0.3 s)
+Sat Nov 21 18:25:04 UTC 2026
+### ls -l /scheme/data/n.bin  (0.4 s)
+-rw-r--r-- 1 root root 104857600 Nov 21 18:25 /scheme/data/n.bin
+### sha256sum /scheme/data/n.bin  (7.9 s)
+9d0342cb77d299c0a7a284d36e414137892fd68c5a92bfc7e9414e7f3cc0f1c0  /scheme/data/n.bin
+### rm /scheme/data/n.bin  (0.4 s)
+

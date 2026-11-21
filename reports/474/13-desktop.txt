@@ -1,0 +1,14 @@
+### desktop  (1.8 s)
+Redox desktop (beta)
+Super+F2   back to the text console
+Super+F3   back to the desktop
+(or type desktop on the console)
+Super+T    a terminal
+Known limits:
+- Slow: everything draws in software; dragging a
+window costs much of a core.
+- Once started, the desktop cannot be stopped; its
+memory (40 to 80 MB) comes back only with a reboot.
+- No browser, one screen resolution, no HDMI hotplug.
+desktop: starting Orbital, its log goes to /tmp/desktop.log
+desktop: Super+F2 goes back to the console, Super+F3 to the desktop

@@ -1,0 +1,14 @@
+### echo "int main(){printf(\"hello from tcc\\n\");return 0;}" > /tmp/h.c  (0.2 s)
+
+### tcc -run /tmp/h.c; echo TCC-RC=$?  (0.3 s)
+hello from tcc
+TCC-RC=0
+### echo "#!/usr/bin/tcc -run" > /tmp/s.c  (0.2 s)
+
+### echo "int main(){printf(\"script ok\\n\");return 0;}" >> /tmp/s.c  (0.2 s)
+
+### chmod +x /tmp/s.c  (0.4 s)
+
+### /tmp/s.c; echo SCRIPT-RC=$?  (0.3 s)
+script ok
+SCRIPT-RC=0

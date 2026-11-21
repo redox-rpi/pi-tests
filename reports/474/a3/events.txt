@@ -1,0 +1,8 @@
+start 18:48:02
+staged 18:48:08
+found after 28 s
+up 18:48:49
+step curl rc=0 18:49:17
+step dns rc=124 18:50:47
+found after 26 s
+stable up 18:51:26

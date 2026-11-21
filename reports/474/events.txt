@@ -1,0 +1,130 @@
+start 17:52:20
+staged v0.6.0-rc1-netboot: build_id = "v0.6.0-dev-125-g5acacd83+xc80e" 17:52:25
+reboot from stable sent 17:52:36
+found after 28 s
+A up 17:53:05
+1 banner: redox-rpi v0.6.0-rc1 (v0.6.0-dev-125-g5acacd83+xc80e) (netboot, 2026-11-21T16:33:43Z) 17:53:25
+startup-sound: ⏎                                                                                redox login: redox login: startup-sound: played  17:53:25
+step 1-boot 17:53:25
+step 1-boot rc=0 17:53:33
+pitest rc=0 17:55:52
+PASS version: v0.6.0-rc1 (v0.6.0-dev-125-g5acacd83+xc80e)
+PASS manifest: build ID and libc.so hash match v0.6.0-rc1-netboot.manifest.toml
+PASS ps: 63 processes (piped)
+PASS ps-tty: 63 lines straight to the terminal, rc=0
+PASS sdcard: write, read back, delete on /scheme/data
+PASS starts: 0 of 1000 failed
+step 2-idle 17:55:58
+step 2-idle rc=1 17:55:58
+step 3-ntp 17:55:58
+step 3-ntp rc=1 17:55:58
+step 7-audio 17:55:58
+step 7-audio rc=1 17:55:58
+reboot 1 sent 17:55:58
+timeout waiting for: redox login:
+reboot 1 NO login 18:00:14
+reboot 1 devsh NOT back 18:01:16
+no devsh, serial reboot 1 (USB warm-reboot fault #576?) 18:02:17
+found after 0 s
+no devsh, serial reboot 2 (USB warm-reboot fault #576?) 18:05:51
+found after 0 s
+recovered 18:06:41
+reboot 1: played=2 volume-line: ⏎                                                                                redox login: redox login: volume: 70 fr 18:06:41
+reboot 2 sent 18:06:52
+found after 13 s
+reboot 2 login 18:07:20
+reboot 2 devsh NOT back 18:09:37
+no devsh, serial reboot 1 (USB warm-reboot fault #576?) 18:11:40
+found after 0 s
+recovered 18:12:23
+reboot 2: played=1 volume-line: volume: 70 from /scheme/data/audio-volume 18:12:23
+reboot 3 sent 18:12:34
+found after 13 s
+reboot 3 login 18:13:02
+reboot 3 devsh back 18:13:03
+reboot 3: played=1 volume-line: volume: 70 from /scheme/data/audio-volume 18:13:03
+reboot 4 sent 18:13:14
+found after 12 s
+reboot 4 login 18:13:41
+reboot 4 devsh back 18:13:42
+reboot 4: played=1 volume-line: volume: 70 from /scheme/data/audio-volume 18:13:42
+reboot 5 sent 18:13:53
+found after 12 s
+reboot 5 login 18:14:20
+reboot 5 devsh NOT back 18:16:43
+no devsh, serial reboot 1 (USB warm-reboot fault #576?) 18:18:46
+found after 0 s
+recovered 18:19:28
+reboot 5: played=2 volume-line: volume: 70 from /scheme/data/audio-volume 18:19:28
+step 7-volume-after 18:19:43
+step 7-volume-after rc=0 18:19:45
+serial login rc=0 18:20:18
+serial input rc=0 18:22:33
+step 6-ls 18:22:33
+step 6-ls rc=0 18:22:35
+nowire rc=0 18:22:47
+step 8-dd 18:22:47
+step 8-dd rc=0 18:22:49
+sd-stress rc=0 18:24:36
+step 9-pipe 18:24:36
+step 9-pipe rc=0 18:24:39
+step 9-curl 18:24:39
+step 9-curl rc=0 18:24:42
+step 9-nc 18:24:42
+step 9-nc rc=0 18:25:13
+step 9-nc-closed 18:25:13
+step 9-nc-closed rc=0 18:25:14
+step 10-dns 18:25:14
+step 10-dns rc=0 18:25:17
+step 11-ifconfig 18:25:17
+step 11-ifconfig rc=0 18:25:19
+step 12-tcc 18:25:19
+step 12-tcc rc=0 18:25:21
+step 13-desktop 18:25:21
+step 13-desktop rc=0 18:25:24
+step 13-ps1 18:25:44
+step 13-ps1 rc=0 18:25:50
+step 13-sop 18:25:50
+step 13-sop rc=0 18:25:56
+step 13-ps2 18:26:26
+step 13-ps2 rc=0 18:26:29
+A serial: panic=0 exc=0 stuck=0 pcid=0 rtcd=0 throttl=0 audiod-err=0 18:26:29
+staged v0.6.0-rc1-release-netboot: build_id = "v0.6.0-dev-125-g5acacd83+xc80e" 18:26:33
+reboot from A sent 18:26:44
+found after 28 s
+B1 banner: redox-rpi v0.6.0-rc1 (v0.6.0-dev-125-g5acacd83+xc80e) (release-netboot, 2026-11-21T16:36:35Z) 18:27:43
+B2 nc 2323 rc=1 nc: connect to <lan-ip> port 2323 (tcp) failed: Connection refused  18:27:43
+B2 open TCP ports: [] (python connect scan 1-65535) 18:27:49
+B3 serial rc=0 18:28:00
+B3: login ok=1 devshd-ls: ls: cannot access '/usr/bin/devshd': No such file or directory  ps-devshd=0 18:28:00
+B serial: panic=0 exc=0 stuck=0 18:28:00
+staged v0.6.0-rc1-netboot: build_id = "v0.6.0-dev-125-g5acacd83+xc80e" 18:28:05
+found after 34 s
+C up 18:28:44
+step C1-file 18:28:44
+step C1-file rc=0 18:28:52
+C file sha 4007e2d87389d670914c24374c89dba906991e1ae915b9676c786d69a6d57a37 18:28:52
+C running power "apower":3.2 18:28:52
+C poweroff sent 18:28:59
+C power after poweroff: "apower":0.0 "apower":0.0 "apower":0.0 "apower":0.0 "apower":0.0 "apower":0.0 "apower":0.0 "apower":0.0 "apower":0.0 "apower":0.0 "apower":0.0 "apower":0.0  18:31:00
+C serial bytes in 120 s after: 0; poweroff log: ⏎                                                                                ]0;root: /home/rootroot:~# ]0;root: /home/rootroot:~# ]0;root: /home/rootroot:~# p]0;root: /home/rootroot:~# po 18:33:00
+power cycle (fallback) 18:33:13
+found after 38 s
+no devsh, serial reboot 1 (USB warm-reboot fault #576?) 18:36:03
+found after 0 s
+C up after power cycle 18:36:47
+step C4-file 18:36:47
+step C4-file rc=0 18:36:48
+C file sha after: 4007e2d87389d670914c24374c89dba906991e1ae915b9676c786d69a6d57a37 same=yes 18:36:48
+found after 28 s
+C reboot after wake: login 18:37:27
+step C5-clean 18:37:29
+step C5-clean rc=0 18:37:30
+C serial: panic=0 exc=0 18:37:30
+found after 0 s
+no devsh, serial reboot 1 (USB warm-reboot fault #576?) 18:39:57
+found after 0 s
+no devsh, serial reboot 2 (USB warm-reboot fault #576?) 18:43:24
+found after 0 s
+stable up 18:44:07
+staged now: build_id = "v0.6.0-dev-115-gb972ccfd+x2d42" 18:44:07

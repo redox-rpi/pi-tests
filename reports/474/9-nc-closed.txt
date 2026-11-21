@@ -1,0 +1,4 @@
+### nc <lan-ip>:1 > /tmp/o ^> /tmp/e < /scheme/null; echo exit $?; cat /tmp/e  (0.4 s)
+exit 1
+Remote host: <lan-ip>:1
+nc error: Error occurred while reading from file/socket: Transport endpoint is not connected (os error 107)

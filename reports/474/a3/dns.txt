@@ -1,0 +1,5 @@
+### time nc router-name:80 < /scheme/null  (30.3 s)
+Remote host: router-name:80
+real    30.048183441s
+### echo rc=$?  (0.2 s)
+rc=0

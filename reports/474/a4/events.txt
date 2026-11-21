@@ -1,0 +1,15 @@
+start 18:51:28
+staged 18:51:33
+found after 28 s
+up 18:52:13
+pitest rc=0 18:54:55
+devsh after pi-test try 1: 1 up 18:54:57
+devsh after pi-test try 2: 1 up 18:55:08
+devsh after pi-test try 3: 1 up 18:55:14
+devsh after pi-test try 4: 1 up 18:55:25
+devsh after pi-test try 5: 1 up 18:55:31
+devsh after pi-test try 6: 1 up 18:55:42
+found after 24 s
+no devsh, serial reboot 1 18:58:36
+found after 0 s
+stable up 18:59:19

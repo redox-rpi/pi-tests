@@ -1,0 +1,82 @@
+### LD_DEBUG=all curl --version  (0.3 s)
+0x1000!
+[ld.so]: executable has been already loaded at 0x0
+[ld.so]: looking for '/usr/bin/curl'
+[ld.so]: found at '/usr/bin/curl'!
+[ld.so]: loading object: /usr/bin/curl at 0x400000:0x460000 (pie: false)
+[ld.so]: looking for 'libcurl.so'
+[ld.so]: trying path '/usr/lib/libcurl.so'
+[ld.so]: found at '/usr/lib/libcurl.so'!
+[ld.so]: loading object: libcurl.so at 0x59a000:0x67a000 (pie: true)
+[ld.so]: looking for 'libssl.so.3'
+[ld.so]: trying path '/usr/lib/libssl.so.3'
+[ld.so]: found at '/usr/lib/libssl.so.3'!
+[ld.so]: loading object: libssl.so.3 at 0x7e1000:0x921000 (pie: true)
+[ld.so]: looking for 'libcrypto.so.3'
+[ld.so]: trying path '/usr/lib/libcrypto.so.3'
+[ld.so]: found at '/usr/lib/libcrypto.so.3'!
+[ld.so]: loading object: libcrypto.so.3 at 0xf18000:0x1438000 (pie: true)
+[ld.so]: looking for 'libz.so.1'
+[ld.so]: trying path '/usr/lib/libz.so.1'
+[ld.so]: trying path '/lib/libz.so.1'
+[ld.so]: failed to locate 'libz.so.1'
+[ld.so]: failed to link '/usr/bin/curl': NotFound
+[ld.so]: enable debug output with `LD_DEBUG=all` for more information
+### ls -l /usr/bin/curl  (0.4 s)
+-rwxr-xr-x 1 root root 285232 Nov 21 16:36 /usr/bin/curl
+### ls /usr/lib  (0.4 s)
+Scrt1.o			 libstdc++.so.6		      libxcb-xf86dri.so.0
+boot			 libstdc++.so.6.0.32	      libxcb-xf86dri.so.0.0.0
+charset.alias		 libstdc++.so.6.0.32-gdb.py   libxcb-xfixes.so
+cmake			 libtcc.a		      libxcb-xfixes.so.0
+crt0.o			 libxcb-composite.so	      libxcb-xfixes.so.0.0.0
+crt1.o			 libxcb-composite.so.0	      libxcb-xinerama.so
+crti.o			 libxcb-composite.so.0.0.0    libxcb-xinerama.so.0
+crtn.o			 libxcb-damage.so	      libxcb-xinerama.so.0.0.0
+drivers			 libxcb-damage.so.0	      libxcb-xinput.so
+engines-3		 libxcb-damage.so.0.0.0	      libxcb-xinput.so.0
+init.d			 libxcb-dbe.so		      libxcb-xinput.so.0.1.0
+ld.so.1			 libxcb-dbe.so.0	      libxcb-xkb.so
+libSDL2-2.0.so		 libxcb-dbe.so.0.0.0	      libxcb-xkb.so.1
+libSDL2-2.0.so.0	 libxcb-dpms.so		      libxcb-xkb.so.1.0.0
+libSDL2-2.0.so.0.3300.0	 libxcb-dpms.so.0	      libxcb-xtest.so
+libSDL2.so		 libxcb-dpms.so.0.0.0	      libxcb-xtest.so.0
+libSDL2_test.a		 libxcb-dri2.so		      libxcb-xtest.so.0.0.0
+libSDL2main.a		 libxcb-dri2.so.0	      libxcb-xv.so
+libXau.so		 libxcb-dri2.so.0.0.0	      libxcb-xv.so.0
+libXau.so.6		 libxcb-dri3.so		      libxcb-xv.so.0.0.0
+libXau.so.6.0.0		 libxcb-dri3.so.0	      libxcb-xvmc.so
+libbz2.a		 libxcb-dri3.so.0.1.0	      libxcb-xvmc.so.0
+libbz2.so		 libxcb-glx.so		      libxcb-xvmc.so.0.0.0
+libbz2.so.1		 libxcb-glx.so.0	      libxcb.so
+libbz2.so.1.0		 libxcb-glx.so.0.0.0	      libxcb.so.1
+libbz2.so.1.0.8		 libxcb-present.so	      libxcb.so.1.1.0
+libc.a			 libxcb-present.so.0	      libxkbcommon-x11.so
+libc.so			 libxcb-present.so.0.0.0      libxkbcommon-x11.so.0
+libc.so.6		 libxcb-randr.so	      libxkbcommon-x11.so.0.0.0
+libcrypto.so		 libxcb-randr.so.0	      libxkbcommon.so
+libcrypto.so.3		 libxcb-randr.so.0.1.0	      libxkbcommon.so.0
+libcurl.so		 libxcb-record.so	      libxkbcommon.so.0.0.0
+libdl.a			 libxcb-record.so.0	      libxkbregistry.so
+libgcc_s.so		 libxcb-record.so.0.0.0	      libxkbregistry.so.0
+libgcc_s.so.1		 libxcb-render.so	      libxkbregistry.so.0.0.0
+liblzma.a		 libxcb-render.so.0	      libxml2.a
+liblzma.so		 libxcb-render.so.0.0.0	      libxml2.so
+liblzma.so.5		 libxcb-res.so		      libxml2.so.2
+liblzma.so.5.2.13	 libxcb-res.so.0	      libxml2.so.2.11.3
+libm.a			 libxcb-res.so.0.0.0	      libz.a
+libnghttp2.so		 libxcb-screensaver.so	      libzstd.a
+libnghttp2.so.14	 libxcb-screensaver.so.0      libzstd.so
+libnghttp2.so.14.29.4	 libxcb-screensaver.so.0.0.0  libzstd.so.1
+libonig.so		 libxcb-shape.so	      libzstd.so.1.5.7
+libonig.so.5		 libxcb-shape.so.0	      os-release
+libonig.so.5.5.0	 libxcb-shape.so.0.0.0	      ossl-modules
+liborbital.so		 libxcb-shm.so		      pcid.d
+liborbital.so.0		 libxcb-shm.so.0	      pkgconfig
+libpthread.a		 libxcb-shm.so.0.0.0	      rpi-firmware
+librt.a			 libxcb-sync.so		      startup-sound.ion
+libssl.so		 libxcb-sync.so.1	      tcc
+libssl.so.3		 libxcb-sync.so.1.0.0	      xhcid.d
+libstdc++.so		 libxcb-xf86dri.so
+### wcurl --help  (6.0 s)
+ion: command not found: wcurl
