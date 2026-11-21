@@ -1,0 +1,71 @@
+start 15:40:01
+staged build_id = "v0.6.0-dev-124-gc1155a22+xa91e" 15:40:01
+boot: found after 22 s; banner redox-rpi v0.6.0-dev-124-gc1155a22+xa91e (netboot, 2026-11-21T15:33:33Z) 15:40:39
+devsh up 15:40:40
+C boot 1: NO devsh within 120 s; reset1=1 empty=1 rootempty=2 rootfail=0 pwr=1 full=0 enumfail=0 hub=0 linkup=0 noffer=7 relibc=0 unhandled=0 15:42:59
+found after 0 s
+found after 0 s
+power cycle 15:52:18
+recovered 15:57:33
+C boot 2: NO devsh within 120 s; reset1=0 empty=0 rootempty=0 rootfail=0 pwr=0 full=0 enumfail=0 hub=0 linkup=0 noffer=9 relibc=0 unhandled=0 15:59:41
+found after 0 s
+recovered 16:00:22
+C boot 3: devsh after 25+5 s; reset1=0 empty=0 rootempty=0 rootfail=0 pwr=0 full=0 enumfail=0 hub=2 linkup=1 noffer=0 relibc=0 unhandled=0 16:01:06
+C boot 4: devsh after 26+5 s; reset1=0 empty=0 rootempty=0 rootfail=0 pwr=0 full=0 enumfail=0 hub=2 linkup=1 noffer=0 relibc=0 unhandled=0 16:01:51
+C boot 5: devsh after 21+5 s; reset1=0 empty=0 rootempty=0 rootfail=0 pwr=0 full=0 enumfail=0 hub=2 linkup=1 noffer=0 relibc=0 unhandled=0 16:02:31
+C boot 6: NO devsh within 120 s; reset1=1 empty=0 rootempty=0 rootfail=2 pwr=1 full=9 enumfail=1 hub=0 linkup=0 noffer=7 relibc=0 unhandled=0 16:04:47
+found after 0 s
+recovered 16:05:30
+C boot 7: NO devsh within 120 s; reset1=1 empty=1 rootempty=2 rootfail=0 pwr=1 full=0 enumfail=0 hub=0 linkup=0 noffer=6 relibc=0 unhandled=0 16:07:49
+found after 0 s
+recovered 16:08:32
+C boot 8: NO devsh within 120 s; reset1=1 empty=1 rootempty=2 rootfail=0 pwr=1 full=0 enumfail=0 hub=0 linkup=0 noffer=6 relibc=0 unhandled=0 16:10:48
+found after 0 s
+found after 0 s
+power cycle 16:20:03
+recovered 16:21:09
+C boot 9: devsh after 23+5 s; reset1=0 empty=0 rootempty=0 rootfail=0 pwr=0 full=0 enumfail=0 hub=2 linkup=1 noffer=0 relibc=0 unhandled=0 16:21:51
+C boot 10: devsh after 22+5 s; reset1=0 empty=0 rootempty=0 rootfail=0 pwr=0 full=0 enumfail=0 hub=2 linkup=1 noffer=0 relibc=0 unhandled=0 16:22:33
+C boot 11: devsh after 22+5 s; reset1=0 empty=0 rootempty=0 rootfail=0 pwr=0 full=0 enumfail=0 hub=2 linkup=1 noffer=0 relibc=0 unhandled=0 16:23:14
+C boot 12: devsh after 25+5 s; reset1=0 empty=0 rootempty=0 rootfail=0 pwr=0 full=0 enumfail=0 hub=2 linkup=1 noffer=0 relibc=0 unhandled=0 16:23:58
+C boot 13: NO devsh within 120 s; reset1=1 empty=1 rootempty=2 rootfail=0 pwr=1 full=0 enumfail=0 hub=0 linkup=0 noffer=7 relibc=0 unhandled=0 16:26:14
+found after 0 s
+recovered 16:26:59
+C boot 14: NO devsh within 120 s; reset1=1 empty=1 rootempty=2 rootfail=0 pwr=1 full=0 enumfail=0 hub=0 linkup=0 noffer=7 relibc=0 unhandled=0 16:29:20
+found after 0 s
+recovered 16:30:01
+C boot 15: NO devsh within 120 s; reset1=1 empty=1 rootempty=2 rootfail=0 pwr=1 full=0 enumfail=0 hub=0 linkup=0 noffer=7 relibc=0 unhandled=0 16:32:17
+found after 0 s
+recovered 16:32:57
+C boot 16: devsh after 23+5 s; reset1=0 empty=0 rootempty=0 rootfail=0 pwr=0 full=0 enumfail=0 hub=2 linkup=1 noffer=0 relibc=0 unhandled=0 16:33:39
+C boot 17: NO devsh within 120 s; reset1=1 empty=1 rootempty=2 rootfail=0 pwr=1 full=0 enumfail=0 hub=0 linkup=0 noffer=7 relibc=0 unhandled=0 16:35:59
+found after 0 s
+recovered 16:36:41
+C boot 18: devsh after 38+5 s; reset1=0 empty=0 rootempty=0 rootfail=0 pwr=0 full=0 enumfail=0 hub=2 linkup=1 noffer=0 relibc=0 unhandled=0 16:37:38
+C boot 19: NO devsh within 120 s; reset1=1 empty=1 rootempty=2 rootfail=0 pwr=1 full=0 enumfail=0 hub=0 linkup=0 noffer=7 relibc=0 unhandled=0 16:39:56
+found after 0 s
+recovered 16:40:37
+C boot 20: devsh after 23+5 s; reset1=0 empty=0 rootempty=0 rootfail=0 pwr=0 full=0 enumfail=0 hub=2 linkup=1 noffer=0 relibc=0 unhandled=0 16:41:19
+C boot 21: devsh after 22+5 s; reset1=0 empty=0 rootempty=0 rootfail=0 pwr=0 full=0 enumfail=0 hub=2 linkup=1 noffer=0 relibc=0 unhandled=0 16:42:01
+C boot 22: devsh after 22+5 s; reset1=0 empty=0 rootempty=0 rootfail=0 pwr=0 full=0 enumfail=0 hub=2 linkup=1 noffer=0 relibc=0 unhandled=0 16:42:42
+C boot 23: NO devsh within 120 s; reset1=1 empty=1 rootempty=2 rootfail=0 pwr=1 full=0 enumfail=0 hub=0 linkup=0 noffer=6 relibc=0 unhandled=0 16:44:58
+found after 0 s
+found after 0 s
+recovered 16:50:11
+C boot 24: devsh after 22+5 s; reset1=0 empty=0 rootempty=0 rootfail=0 pwr=0 full=0 enumfail=0 hub=2 linkup=1 noffer=0 relibc=0 unhandled=0 16:50:52
+C boot 25: NO devsh within 120 s; reset1=1 empty=1 rootempty=2 rootfail=0 pwr=1 full=0 enumfail=0 hub=0 linkup=0 noffer=7 relibc=0 unhandled=0 16:53:09
+found after 0 s
+found after 0 s
+recovered 16:58:26
+C boot 26: devsh after 31+5 s; reset1=0 empty=0 rootempty=0 rootfail=0 pwr=0 full=0 enumfail=0 hub=2 linkup=1 noffer=0 relibc=0 unhandled=0 16:59:16
+C boot 27: devsh after 27+5 s; reset1=0 empty=0 rootempty=0 rootfail=0 pwr=0 full=0 enumfail=0 hub=2 linkup=1 noffer=0 relibc=0 unhandled=0 17:00:02
+C boot 28: devsh after 23+5 s; reset1=0 empty=0 rootempty=0 rootfail=0 pwr=0 full=0 enumfail=0 hub=2 linkup=1 noffer=0 relibc=0 unhandled=0 17:00:44
+C boot 29: devsh after 34+5 s; reset1=0 empty=0 rootempty=0 rootfail=0 pwr=0 full=0 enumfail=0 hub=2 linkup=1 noffer=0 relibc=0 unhandled=0 17:01:37
+C boot 30: devsh after 23+5 s; reset1=0 empty=0 rootempty=0 rootfail=0 pwr=0 full=0 enumfail=0 hub=2 linkup=1 noffer=0 relibc=0 unhandled=0 17:02:19
+C devsh within 120 s: 18/30 17:02:19
+staged build_id = "v0.6.0-dev-115-gb972ccfd+x2d42" 17:02:19
+boot: found after 18 s; banner redox-rpi v0.6.0-dev-115-gb972ccfd+x2d42 (netboot, 2026-11-20T03:30:55Z) 17:02:53
+no devsh 17:06:12
+found after 0 s
+found after 0 s
+recovered 17:11:23

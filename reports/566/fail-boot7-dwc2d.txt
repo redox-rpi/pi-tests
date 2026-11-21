@@ -1,0 +1,9 @@
+dwc2d: controller at 0x3f980000, core id 0x4f54280a
+dwc2d: at start HPRT0 0x100d PCGCCTL 0x0
+dwc2d: host mode, 8 channels
+dwc2d: root port empty: Timeout("device connect"), HPRT0 0x1000 GUSBCFG 0x20001400 GOTGCTL 0x1c0000 PCGCCTL 0x0 GINTSTS 0x54000029; port reset (1/2)
+dwc2d: root port empty: Timeout("device connect"), HPRT0 0x1000 GUSBCFG 0x20001400 GOTGCTL 0x1c0000 PCGCCTL 0x0 GINTSTS 0x54000029; port power off and on (2/2)
+dwc2d: nothing on the root port, HPRT0 0x1000 GUSBCFG 0x20001400 GOTGCTL 0x1c0000 PCGCCTL 0x0 GINTSTS 0x54000029
+dwc2d: devices ready after 7678 ms
+dwc2d: network address <pi-mac>
+dwc2d: interrupt /scheme/irq/phandle-1/1,9

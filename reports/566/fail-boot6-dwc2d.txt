@@ -1,0 +1,33 @@
+dwc2d: controller at 0x3f980000, core id 0x4f54280a
+dwc2d: at start HPRT0 0x100d PCGCCTL 0x0
+dwc2d: host mode, 8 channels
+dwc2d: device on root port, Full speed
+dwc2d: request [80, 06, 00, 01, 00, 00, 08, 00] to address 0 (max packet 8, Full speed) failed: Transfer(130)
+dwc2d: enumeration attempt 1 failed: Transfer(130), retrying
+dwc2d: device on root port, Full speed
+dwc2d: request [80, 06, 00, 01, 00, 00, 08, 00] to address 0 (max packet 8, Full speed) failed: Transfer(130)
+dwc2d: enumeration attempt 2 failed: Transfer(130), retrying
+dwc2d: device on root port, Full speed
+dwc2d: request [80, 06, 00, 01, 00, 00, 08, 00] to address 0 (max packet 8, Full speed) failed: Transfer(130)
+dwc2d: root port failed: Transfer(130), HPRT0 0x2140f GUSBCFG 0x20001400 GOTGCTL 0x1c0000 PCGCCTL 0x0 GINTSTS 0x55000029; port reset (1/2)
+dwc2d: device on root port, Full speed
+dwc2d: request [80, 06, 00, 01, 00, 00, 08, 00] to address 0 (max packet 8, Full speed) failed: Transfer(130)
+dwc2d: enumeration attempt 1 failed: Transfer(130), retrying
+dwc2d: device on root port, Full speed
+dwc2d: request [80, 06, 00, 01, 00, 00, 08, 00] to address 0 (max packet 8, Full speed) failed: Transfer(130)
+dwc2d: enumeration attempt 2 failed: Transfer(130), retrying
+dwc2d: device on root port, Full speed
+dwc2d: request [80, 06, 00, 01, 00, 00, 08, 00] to address 0 (max packet 8, Full speed) failed: Transfer(130)
+dwc2d: root port failed: Transfer(130), HPRT0 0x2140f GUSBCFG 0x20001400 GOTGCTL 0x1c0000 PCGCCTL 0x0 GINTSTS 0x55000029; port power off and on (2/2)
+dwc2d: device on root port, Full speed
+dwc2d: request [80, 06, 00, 01, 00, 00, 08, 00] to address 0 (max packet 8, Full speed) failed: Transfer(130)
+dwc2d: enumeration attempt 1 failed: Transfer(130), retrying
+dwc2d: device on root port, Full speed
+dwc2d: request [80, 06, 00, 01, 00, 00, 08, 00] to address 0 (max packet 8, Full speed) failed: Transfer(130)
+dwc2d: enumeration attempt 2 failed: Transfer(130), retrying
+dwc2d: device on root port, Full speed
+dwc2d: request [80, 06, 00, 01, 00, 00, 08, 00] to address 0 (max packet 8, Full speed) failed: Transfer(130)
+dwc2d: enumeration failed: Transfer(130), HPRT0 0x2140f GUSBCFG 0x20001400 GOTGCTL 0x1c0000 PCGCCTL 0x0 GINTSTS 0x75000029
+dwc2d: devices ready after 4047 ms
+dwc2d: network address <pi-mac>
+dwc2d: interrupt /scheme/irq/phandle-1/1,9
