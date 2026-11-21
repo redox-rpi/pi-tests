@@ -1,0 +1,6 @@
+PASS version: v0.6.0-dev-133-g9b1ce300+x9c18
+PASS manifest: build ID and libc.so hash match manifest.toml
+PASS ps: 67 processes (piped)
+PASS ps-tty: 66 lines straight to the terminal, rc=0
+PASS sdcard: write, read back, delete on /scheme/data
+PASS starts: 0 of 300 failed

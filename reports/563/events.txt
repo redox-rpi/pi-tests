@@ -1,0 +1,31 @@
+start 01:59:05
+staged build_id = "v0.6.0-dev-133-g9b1ce300+x0a9d" 01:59:05
+boot: found after 20 s; banner redox-rpi v0.6.0-dev-133-g9b1ce300+x0a9d (netboot, 2026-11-21T00:51:01Z) 01:59:41
+devsh up 01:59:43
+A global= ula= ll=3 v6route=0 02:00:45
+A pings done 02:00:45
+pitest rc=0 02:01:29
+PASS version: v0.6.0-dev-133-g9b1ce300+x0a9d
+PASS manifest: build ID and libc.so hash match manifest.toml
+PASS ps: 58 processes (piped)
+PASS ps-tty: 58 lines straight to the terminal, rc=0
+PASS sdcard: write, read back, delete on /scheme/data
+PASS starts: 0 of 300 failed
+A: relibc=0 unhandled=0 02:01:29
+staged build_id = "v0.6.0-dev-133-g9b1ce300+x9c18" 02:01:29
+boot: found after 22 s; banner redox-rpi v0.6.0-dev-133-g9b1ce300+x9c18 (netboot, 2026-11-21T00:54:49Z) 02:02:07
+devsh up 02:02:08
+B host keys 02:02:21
+B logins 0/5 02:07:48
+B session rc=1 0 ok, 1 fail 02:09:48
+pitest rc=0 02:10:31
+PASS version: v0.6.0-dev-133-g9b1ce300+x9c18
+PASS manifest: build ID and libc.so hash match manifest.toml
+PASS ps: 67 processes (piped)
+PASS ps-tty: 66 lines straight to the terminal, rc=0
+PASS sdcard: write, read back, delete on /scheme/data
+PASS starts: 0 of 300 failed
+B: relibc=0 unhandled=0 02:10:31
+staged build_id = "v0.6.0-dev-115-gb972ccfd+x2d42" 02:10:32
+boot: found after 20 s; banner redox-rpi v0.6.0-dev-115-gb972ccfd+x2d42 (netboot, 2026-11-20T03:30:55Z) 02:11:08
+devsh up 02:11:09
