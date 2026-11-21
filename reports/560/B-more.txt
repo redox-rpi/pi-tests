@@ -1,0 +1,37 @@
+### ls /scheme/ | wc -l  (typing 2.9 s, total 3.2 s)
+root:~# ls /scheme/root:~# ls /scheme/1970-01-01T00-04-38.135Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 2 submit #12900
+1970-01-01T00-04-38.165Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 2 event #12900 cc 13 left 3
+1970-01-01T00-04-38.235Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 1 submit #13100
+1970-01-01T00-04-38.253Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 1 event #13100 cc 1 left 0
+root:~# ls /scheme/root:~# ls /scheme/root:~# ls /scheme/root:~# ls /scheme/root:~# ls /scheme/root:~# ls /scheme/root:~# ls /scheme/1970-01-01T00-04-39.316Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 2 submit #13000
+root:~# ls /scheme/1970-01-01T00-04-39.343Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 2 event #13000 cc 13 left 3
+1970-01-01T00-04-39.434Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 1 submit #13200
+1970-01-01T00-04-39.463Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 1 event #13200 cc 1 left 0
+root:~# ls /scheme/root:~# ls /scheme/ root:~# ls /scheme/ |root:~# ls /scheme/ | root:~# ls /scheme/ | wroot:~# ls /scheme/ | wcroot:~# ls /scheme/ | wc 1970-01-01T00-04-40.512Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 2 submit #13100
+root:~# ls /scheme/ | wc -1970-01-01T00-04-40.542Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 2 event #13100 cc 13 left 3
+1970-01-01T00-04-40.613Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 1 submit #13300
+1970-01-01T00-04-40.642Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 1 event #13300 cc 1 left 0
+root:~# ls /scheme/ | wc -lroot:~# ls /scheme/ | wc -l
+1970-01-01T00-04-40.929Z [@inputd:275 ERROR] invalid path ''
+removing handle: id: 5, Some(List([48, 10]))
+38
+⏎                                                                                root:~# root:~# 
+### cat /scheme/sys/uname  (typing 3.2 s, total 3.5 s)
+root:~# croot:~# caroot:~# catroot:~# cat 1970-01-01T00-04-41.703Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 2 submit #13200
+root:~# cat /1970-01-01T00-04-41.731Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 2 event #13200 cc 13 left 3
+1970-01-01T00-04-41.813Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 1 submit #13400
+1970-01-01T00-04-41.842Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 1 event #13400 cc 1 left 0
+root:~# cat /sroot:~# cat /scroot:~# cat /schroot:~# cat /scheroot:~# cat /schemroot:~# cat /schemeroot:~# cat /scheme/1970-01-01T00-04-42.843Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 2 submit #13300
+1970-01-01T00-04-42.872Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 2 event #13300 cc 13 left 3
+root:~# cat /scheme/s1970-01-01T00-04-42.963Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 1 submit #13500
+1970-01-01T00-04-42.992Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 1 event #13500 cc 1 left 0
+root:~# cat /scheme/syroot:~# cat /scheme/sysroot:~# cat /scheme/sys/root:~# cat /scheme/sys/uroot:~# cat /scheme/sys/unroot:~# cat /scheme/sys/unaroot:~# cat /scheme/sys/unam1970-01-01T00-04-44.053Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 1 submit #13600
+1970-01-01T00-04-44.082Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 1 event #13600 cc 1 left 0
+1970-01-01T00-04-44.113Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 2 submit #13400
+root:~# cat /scheme/sys/uname1970-01-01T00-04-44.143Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 2 event #13400 cc 13 left 3
+root:~# cat /scheme/sys/uname
+Redox
+0.5.12
+aarch64
+c951af42c02ba6b7e6355923d46650ea4eadb367
+⏎                                                                                root:~# root:~# 

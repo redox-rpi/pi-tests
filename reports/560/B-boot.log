@@ -1,0 +1,1138 @@
+
+
+U-Boot 2026.10 (Nov 10 2026 - 17:24:57 +0000)
+
+DRAM:  947 MiB
+RPI 400 (0xc03131)
+Core:  213 devices, 17 uclasses, devicetree: board
+MMC:   mmcnr@7e300000: 1, mmc@7e340000: 0
+Loading Environment from FAT...Card did not respond to voltage select! : -110
+** Bad device specification mmc 0 **
+In:    serial,usbkbd
+Out:   serial,vidconsole
+Err:   serial,vidconsole
+Net:   eth0: ethernet@7d580000
+
+PCIe BRCM: link up, 5.0 Gbps x1 (SSC)
+starting USB...
+USB XHCI 1.00
+Bus xhci_pci: 4 USB Device(s) found
+       scanning usb for storage devices... 0 Storage Device(s) found
+Hit any key to stop autoboot: 2Hit any key to stop autoboot: 1Hit any key to stop autoboot: 0
+ethernet@7d580000 Waiting for PHY auto negotiation to complete. done
+DHCP client bound to address <lan-ip> (884 ms)
+
+HTTP client error 5
+Using ethernet@7d580000 device
+TFTP from server <lan-ip>; our IP address is <lan-ip>
+Filename 'pi400/netboot.scr'.
+Load address: 0x5400000
+Loading: ############################Timeout!
+Using ethernet@7d580000 device
+TFTP from server <lan-ip>; our IP address is <lan-ip>
+Filename 'pi400/netboot.scr'.
+Load address: 0x5400000
+Loading: 
+TFTP error: -1 (Request timeout)
+U-Boot> boot
+DHCP client bound to address <lan-ip> (3 ms)
+
+HTTP client error 5
+Using ethernet@7d580000 device
+TFTP from server <lan-ip>; our IP address is <lan-ip>
+Filename 'pi400/netboot.scr'.
+Load address: 0x5400000
+Loading: Timeout!
+Using ethernet@7d580000 device
+TFTP from server <lan-ip>; our IP address is <lan-ip>
+Filename 'pi400/netboot.scr'.
+Load address: 0x5400000
+Loading: ##########################################Timeout!
+U-Boot> boot
+DHCP client bound to address <lan-ip> (1004 ms)
+##################################################
+5146 bytes transferred in 2 ms (2.5 MiB/s)
+Bytes transferred = 5146 (141a hex)
+## Executing script at 05400000
+*** U-Boot Boot Menu ***Press UP/DOWN to move, ENTER to select, ESC to quit1. Network: pi400/2. Network: stable/0. ExitHit any key to stop autoboot: 3 Hit any key to stop autoboot: 2 Hit any key to stop autoboot: 1 redox-rpi: boot net pi400/
+redox-rpi: network boot from <lan-ip>
+##################################################
+51511141 bytes transferred in 2678 ms (18.3 MiB/s)
+Bytes transferred = 51511141 (311ff65 hex)
+redox-rpi: image loaded over HTTP
+Uncompressed size: 268435456 = 0x10000000
+Created "redox"
+Block 0x0+0x80000 mapped to 0x10000000
+
+Partition Map for blkmap device 0  --   Partition Type: EFI
+
+Part	Start LBA	End LBA		Name
+	Attributes
+	Type GUID
+	Partition GUID
+  1	0x00000022	0x000007ff	"BIOS"
+	attrs:	0x0000000000000000
+	type:	21686148-6449-6e6f-744e-656564454649
+	guid:	e1bb726a-8bd2-474c-93c2-56dfc2738594
+  2	0x00000800	0x000107ff	"EFI"
+	attrs:	0x0000000000000000
+	type:	c12a7328-f81f-11d2-ba4b-00a0c93ec93b
+	guid:	08cfb18f-1f7a-4a47-8e0b-950c14c372ba
+  3	0x00010800	0x0007f7ff	"REDOX"
+	attrs:	0x0000000000000000
+	type:	0fc63daf-8483-4772-8e79-3d69d8477de4
+	guid:	19b88c31-3e4e-4080-afdf-ccbb9cd5f36f
+##################################################
+166400 bytes transferred in 8 ms (19.8 MiB/s)
+Bytes transferred = 166400 (28a00 hex)
+78Timeout waiting for cmd & data inhibit
+Timeout waiting for cmd & data inhibit
+Timeout waiting for cmd & data inhibit
+mmc1 busy timeout increasing to: 200 ms
+mmc1 busy timeout increasing to: 400 ms
+mmc1 busy timeout increasing to: 800 ms
+mmc1 busy timeout increasing to: 1600 ms
+mmc1 busy timeout increasing to: 3200 ms
+mmc1 busy timeout
+Card did not respond to voltage select! : -110
+No EFI variables loaded
+Booting /\pi400\bootloader-live.efi
+WARN - Failed to locate Outputs: Status(0x800000000000000E) "not found"
+INFO - Currently in EL2
+Redox OS Bootloader 1.0.0 on aarch64/UEFI
+Hardware descriptor: DeviceTree(39b58000, f000)
+Looking for RedoxFS:
+WARN - Failed to find SimpleFileSystem protocol: Status(0x8000000000000003) "unsupported"
+RedoxFS 3a8a5bf6-a6e1-40e0-97b5-3cb51aa7797b: 222 MiB
+
+live: 0/222 MiBlive: 0/222 MiBlive: 1/222 MiBlive: 2/222 MiBlive: 3/222 MiBlive: 4/222 MiBlive: 5/222 MiBlive: 6/222 MiBlive: 7/222 MiBlive: 8/222 MiBlive: 9/222 MiBlive: 10/222 MiBlive: 11/222 MiBlive: 12/222 MiBlive: 13/222 MiBlive: 14/222 MiBlive: 15/222 MiBlive: 16/222 MiBlive: 17/222 MiBlive: 18/222 MiBlive: 19/222 MiBlive: 20/222 MiBlive: 21/222 MiBlive: 22/222 MiBlive: 23/222 MiBlive: 24/222 MiBlive: 25/222 MiBlive: 26/222 MiBlive: 27/222 MiBlive: 28/222 MiBlive: 29/222 MiBlive: 30/222 MiBlive: 31/222 MiBlive: 32/222 MiBlive: 33/222 MiBlive: 34/222 MiBlive: 35/222 MiBlive: 36/222 MiBlive: 37/222 MiBlive: 38/222 MiBlive: 39/222 MiBlive: 40/222 MiBlive: 41/222 MiBlive: 42/222 MiBlive: 43/222 MiBlive: 44/222 MiBlive: 45/222 MiBlive: 46/222 MiBlive: 47/222 MiBlive: 48/222 MiBlive: 49/222 MiBlive: 50/222 MiBlive: 51/222 MiBlive: 52/222 MiBlive: 53/222 MiBlive: 54/222 MiBlive: 55/222 MiBlive: 56/222 MiBlive: 57/222 MiBlive: 58/222 MiBlive: 59/222 MiBlive: 60/222 MiBlive: 61/222 MiBlive: 62/222 MiBlive: 63/222 MiBlive: 64/222 MiBlive: 65/222 MiBlive: 66/222 MiBlive: 67/222 MiBlive: 68/222 MiBlive: 69/222 MiBlive: 70/222 MiBlive: 71/222 MiBlive: 72/222 MiBlive: 73/222 MiBlive: 74/222 MiBlive: 75/222 MiBlive: 76/222 MiBlive: 77/222 MiBlive: 78/222 MiBlive: 79/222 MiBlive: 80/222 MiBlive: 81/222 MiBlive: 82/222 MiBlive: 83/222 MiBlive: 84/222 MiBlive: 85/222 MiBlive: 86/222 MiBlive: 87/222 MiBlive: 88/222 MiBlive: 89/222 MiBlive: 90/222 MiBlive: 91/222 MiBlive: 92/222 MiBlive: 93/222 MiBlive: 94/222 MiBlive: 95/222 MiBlive: 96/222 MiBlive: 97/222 MiBlive: 98/222 MiBlive: 99/222 MiBlive: 100/222 MiBlive: 101/222 MiBlive: 102/222 MiBlive: 103/222 MiBlive: 104/222 MiBlive: 105/222 MiBlive: 106/222 MiBlive: 107/222 MiBlive: 108/222 MiBlive: 109/222 MiBlive: 110/222 MiBlive: 111/222 MiBlive: 112/222 MiBlive: 113/222 MiBlive: 114/222 MiBlive: 115/222 MiBlive: 116/222 MiBlive: 117/222 MiBlive: 118/222 MiBlive: 119/222 MiBlive: 120/222 MiBlive: 121/222 MiBlive: 122/222 MiBlive: 123/222 MiBlive: 124/222 MiBlive: 125/222 MiBlive: 126/222 MiBlive: 127/222 MiBlive: 128/222 MiBlive: 129/222 MiBlive: 130/222 MiBlive: 131/222 MiBlive: 132/222 MiBlive: 133/222 MiBlive: 134/222 MiBlive: 135/222 MiBlive: 136/222 MiBlive: 137/222 MiBlive: 138/222 MiBlive: 139/222 MiBlive: 140/222 MiBlive: 141/222 MiBlive: 142/222 MiBlive: 143/222 MiBlive: 144/222 MiBlive: 145/222 MiBlive: 146/222 MiBlive: 147/222 MiBlive: 148/222 MiBlive: 149/222 MiBlive: 150/222 MiBlive: 151/222 MiBlive: 152/222 MiBlive: 153/222 MiBlive: 154/222 MiBlive: 155/222 MiBlive: 156/222 MiBlive: 157/222 MiBlive: 158/222 MiBlive: 159/222 MiBlive: 160/222 MiBlive: 161/222 MiBlive: 162/222 MiBlive: 163/222 MiBlive: 164/222 MiBlive: 165/222 MiBlive: 166/222 MiBlive: 167/222 MiBlive: 168/222 MiBlive: 169/222 MiBlive: 170/222 MiBlive: 171/222 MiBlive: 172/222 MiBlive: 173/222 MiBlive: 174/222 MiBlive: 175/222 MiBlive: 176/222 MiBlive: 177/222 MiBlive: 178/222 MiBlive: 179/222 MiBlive: 180/222 MiBlive: 181/222 MiBlive: 182/222 MiBlive: 183/222 MiBlive: 184/222 MiBlive: 185/222 MiBlive: 186/222 MiBlive: 187/222 MiBlive: 188/222 MiBlive: 189/222 MiBlive: 190/222 MiBlive: 191/222 MiBlive: 192/222 MiBlive: 193/222 MiBlive: 194/222 MiBlive: 195/222 MiBlive: 196/222 MiBlive: 197/222 MiBlive: 198/222 MiBlive: 199/222 MiBlive: 200/222 MiBlive: 201/222 MiBlive: 202/222 MiBlive: 203/222 MiBlive: 204/222 MiBlive: 205/222 MiBlive: 206/222 MiBlive: 207/222 MiBlive: 208/222 MiBlive: 209/222 MiBlive: 210/222 MiBlive: 211/222 MiBlive: 212/222 MiBlive: 213/222 MiBlive: 214/222 MiBlive: 215/222 MiBlive: 216/222 MiBlive: 217/222 MiBlive: 218/222 MiBlive: 219/222 MiBlive: 220/222 MiBlive: 221/222 MiBlive: 222/222 MiB
+Switching to live disk
+usr/lib/boot/kernel: 0/1 MiBusr/lib/boot/kernel: 0/1 MiBusr/lib/boot/kernel: 1/1 MiBusr/lib/boot/kernel: 1/1 MiB
+usr/lib/boot/initfs: 0/25 MiBusr/lib/boot/initfs: 0/25 MiBusr/lib/boot/initfs: 1/25 MiBusr/lib/boot/initfs: 2/25 MiBusr/lib/boot/initfs: 3/25 MiBusr/lib/boot/initfs: 4/25 MiBusr/lib/boot/initfs: 5/25 MiBusr/lib/boot/initfs: 6/25 MiBusr/lib/boot/initfs: 7/25 MiBusr/lib/boot/initfs: 8/25 MiBusr/lib/boot/initfs: 9/25 MiBusr/lib/boot/initfs: 10/25 MiBusr/lib/boot/initfs: 11/25 MiBusr/lib/boot/initfs: 12/25 MiBusr/lib/boot/initfs: 13/25 MiBusr/lib/boot/initfs: 14/25 MiBusr/lib/boot/initfs: 15/25 MiBusr/lib/boot/initfs: 16/25 MiBusr/lib/boot/initfs: 17/25 MiBusr/lib/boot/initfs: 18/25 MiBusr/lib/boot/initfs: 19/25 MiBusr/lib/boot/initfs: 20/25 MiBusr/lib/boot/initfs: 21/25 MiBusr/lib/boot/initfs: 22/25 MiBusr/lib/boot/initfs: 23/25 MiBusr/lib/boot/initfs: 24/25 MiBusr/lib/boot/initfs: 25/25 MiBusr/lib/boot/initfs: 25/25 MiB
+kernel_entry(0x39b76000, 0xffff800039ab3000, 0xffffff000007b038, 0x3abfbc30)
+KernelArgs {
+    kernel_base: 0x3990f000,
+    kernel_size: 0x17a938,
+    stack_base: 0x39a93000,
+    stack_size: 0x20000,
+    env_base: 0x398ff000,
+    env_size: 0xc5,
+    acpi_rsdp_base: 0x39b58000,
+    acpi_rsdp_size: 0xf000,
+    areas_base: 0x39ba4030,
+    areas_size: 0x6000,
+    bootstrap_base: 0x28602000,
+    bootstrap_size: 0x19ff000,
+}
+kernel::dtb::serial:INFO -- UART Compatible { string: "arm,pl011-axi\0arm,pl011\0arm,primecell" } at 0xFFFF8000FE201000 size 0x200
+kernel::arch::aarch64::start:INFO -- Redox OS starting...
+kernel::startup:DEBUG -- Kernel: 3990F000:39A89938
+kernel::startup:DEBUG -- Env: 398FF000:398FF0C5
+kernel::startup:DEBUG -- HWDESC: 39B58000:39B67000
+kernel::startup:DEBUG -- Areas: 39BA4030:39BAA030
+kernel::startup:DEBUG -- Bootstrap: 28602000:2A001000
+kernel::startup::memory:DEBUG -- Registering Reserved memory 2BA00000 size DE00000
+kernel::startup::memory:DEBUG -- Registering Reclaim memory 39B76000 size 1000
+kernel::startup::memory:DEBUG -- Registering Reclaim memory 39B74000 size 1000
+kernel::startup::memory:DEBUG -- Registering Reclaim memory 39B71000 size 1000
+kernel::startup::memory:DEBUG -- Registering Reclaim memory 39A8A000 size 9000
+kernel::startup::memory:DEBUG -- Registering Reclaim memory 398FB000 size 4000
+kernel::startup::memory:DEBUG -- Registering Reserved memory 0 size 1000
+kernel::startup::memory:DEBUG -- Registering Free memory 1000 size 28601000
+kernel::startup::memory:DEBUG -- Registering Reserved memory 28602000 size 111FF000
+kernel::startup::memory:DEBUG -- Registering Free memory 39801000 size FA000
+kernel::startup::memory:DEBUG -- Registering Reserved memory 398FB000 size 1B8000
+kernel::startup::memory:DEBUG -- Registering Free memory 39AB3000 size 25000
+kernel::startup::memory:DEBUG -- Registering Reserved memory 39AD8000 size 8F000
+kernel::startup::memory:DEBUG -- Registering Free memory 39B67000 size A000
+kernel::startup::memory:DEBUG -- Registering Reserved memory 39B71000 size 1000
+kernel::startup::memory:DEBUG -- Registering Free memory 39B72000 size 2000
+kernel::startup::memory:DEBUG -- Registering Reserved memory 39B74000 size 1000
+kernel::startup::memory:DEBUG -- Registering Free memory 39B75000 size 1000
+kernel::startup::memory:DEBUG -- Registering Reserved memory 39B76000 size 1000
+kernel::startup::memory:DEBUG -- Registering Free memory 39B77000 size 39000
+kernel::startup::memory:DEBUG -- Registering Reserved memory 39BB0000 size 12000
+kernel::startup::memory:DEBUG -- Registering Free memory 39BC2000 size 5000
+kernel::startup::memory:DEBUG -- Registering Reserved memory 39BC7000 size 1000
+kernel::startup::memory:DEBUG -- Registering Free memory 39BC8000 size 3000
+kernel::startup::memory:DEBUG -- Registering Reserved memory 39BCB000 size 21000
+kernel::startup::memory:DEBUG -- Registering Free memory 39BEC000 size 3000
+kernel::startup::memory:DEBUG -- Registering Reserved memory 39BEF000 size 1000
+kernel::startup::memory:DEBUG -- Registering Free memory 39BF0000 size 10AA000
+kernel::startup::memory:DEBUG -- Registering Reserved memory 3AC9A000 size 1000
+kernel::startup::memory:DEBUG -- Registering Free memory 3AC9B000 size 365000
+kernel::startup::memory:DEBUG -- Registering Reserved memory 3B000000 size 20000
+kernel::startup::memory:DEBUG -- Registering Free memory 3B020000 size 2E0000
+kernel::startup::memory:DEBUG -- Registering Reserved memory 3EE73000 size 1000
+kernel::startup::memory:DEBUG -- Registering Reserved memory FE100000 size 1000
+kernel::startup::memory:DEBUG -- Registering Reserved memory 0 size 1000
+kernel::dtb:DEBUG -- dynamic reserved-memory node linux,cma; ignoring it until allocation is supported
+kernel::startup::memory:DEBUG -- Registering Reserved memory 3EE73700 size 62
+kernel::startup::memory:DEBUG -- Registering Reserved memory 3EE737A0 size 200
+kernel::dtb:DEBUG -- dev mem 0x7e000000 0xfe000000 0x01800000
+kernel::dtb:DEBUG -- dev mem 0x7c000000 0xfc000000 0x02000000
+kernel::dtb:DEBUG -- dev mem 0x40000000 0xff800000 0x00800000
+kernel::dtb:DEBUG -- soc device timer@7e003000 0x7e003000 -> 0xfe003000 len 0x00001000
+kernel::startup::memory:DEBUG -- Registering Device memory FE003000 size 1000
+kernel::dtb:DEBUG -- soc device txp@7e004000 0x7e004000 -> 0xfe004000 len 0x00000020
+kernel::startup::memory:DEBUG -- Registering Device memory FE004000 size 20
+kernel::dtb:DEBUG -- soc device cprman@7e101000 0x7e101000 -> 0xfe101000 len 0x00002000
+kernel::startup::memory:DEBUG -- Registering Device memory FE101000 size 2000
+kernel::dtb:DEBUG -- soc device mailbox@7e00b880 0x7e00b880 -> 0xfe00b880 len 0x00000040
+kernel::startup::memory:DEBUG -- Registering Device memory FE00B880 size 40
+kernel::dtb:DEBUG -- soc device gpio@7e200000 0x7e200000 -> 0xfe200000 len 0x000000b4
+kernel::startup::memory:DEBUG -- Registering Device memory FE200000 size B4
+kernel::dtb:DEBUG -- soc device serial@7e201000 0x7e201000 -> 0xfe201000 len 0x00000200
+kernel::startup::memory:DEBUG -- Registering Device memory FE201000 size 200
+kernel::dtb:DEBUG -- soc device mmc@7e202000 0x7e202000 -> 0xfe202000 len 0x00000100
+kernel::startup::memory:DEBUG -- Registering Device memory FE202000 size 100
+kernel::dtb:DEBUG -- soc device i2s@7e203000 0x7e203000 -> 0xfe203000 len 0x00000024
+kernel::startup::memory:DEBUG -- Registering Device memory FE203000 size 24
+kernel::dtb:DEBUG -- soc device spi@7e204000 0x7e204000 -> 0xfe204000 len 0x00000200
+kernel::startup::memory:DEBUG -- Registering Device memory FE204000 size 200
+kernel::dtb:DEBUG -- soc device i2c@7e205000 0x7e205000 -> 0xfe205000 len 0x00000200
+kernel::startup::memory:DEBUG -- Registering Device memory FE205000 size 200
+kernel::dtb:DEBUG -- soc device dpi@7e208000 0x7e208000 -> 0xfe208000 len 0x0000008c
+kernel::startup::memory:DEBUG -- Registering Device memory FE208000 size 8C
+kernel::dtb:DEBUG -- soc device dsi@7e209000 0x7e209000 -> 0xfe209000 len 0x00000078
+kernel::startup::memory:DEBUG -- Registering Device memory FE209000 size 78
+kernel::dtb:DEBUG -- soc device aux@7e215000 0x7e215000 -> 0xfe215000 len 0x00000008
+kernel::startup::memory:DEBUG -- Registering Device memory FE215000 size 8
+kernel::dtb:DEBUG -- soc device serial@7e215040 0x7e215040 -> 0xfe215040 len 0x00000040
+kernel::startup::memory:DEBUG -- Registering Device memory FE215040 size 40
+kernel::dtb:DEBUG -- soc device spi@7e215080 0x7e215080 -> 0xfe215080 len 0x00000040
+kernel::startup::memory:DEBUG -- Registering Device memory FE215080 size 40
+kernel::dtb:DEBUG -- soc device spi@7e2150c0 0x7e2150c0 -> 0xfe2150c0 len 0x00000040
+kernel::startup::memory:DEBUG -- Registering Device memory FE2150C0 size 40
+kernel::dtb:DEBUG -- soc device pwm@7e20c000 0x7e20c000 -> 0xfe20c000 len 0x00000028
+kernel::startup::memory:DEBUG -- Registering Device memory FE20C000 size 28
+kernel::dtb:DEBUG -- soc device mmc@7e300000 0x7e300000 -> 0xfe300000 len 0x00000100
+kernel::startup::memory:DEBUG -- Registering Device memory FE300000 size 100
+kernel::dtb:DEBUG -- soc device hvs@7e400000 0x7e400000 -> 0xfe400000 len 0x00008000
+kernel::startup::memory:DEBUG -- Registering Device memory FE400000 size 8000
+kernel::dtb:DEBUG -- soc device dsi@7e700000 0x7e700000 -> 0xfe700000 len 0x0000008c
+kernel::startup::memory:DEBUG -- Registering Device memory FE700000 size 8C
+kernel::dtb:DEBUG -- soc device csi@7e800000 0x7e800000 -> 0xfe800000 len 0x00000800
+kernel::startup::memory:DEBUG -- Registering Device memory FE800000 size 800
+kernel::dtb:DEBUG -- soc device csi@7e800000 0x7e802000 -> 0xfe802000 len 0x00000004
+kernel::startup::memory:DEBUG -- Registering Device memory FE802000 size 4
+kernel::dtb:DEBUG -- soc device csi@7e801000 0x7e801000 -> 0xfe801000 len 0x00000800
+kernel::startup::memory:DEBUG -- Registering Device memory FE801000 size 800
+kernel::dtb:DEBUG -- soc device csi@7e801000 0x7e802004 -> 0xfe802004 len 0x00000004
+kernel::startup::memory:DEBUG -- Registering Device memory FE802004 size 4
+kernel::dtb:DEBUG -- soc device i2c@7e804000 0x7e804000 -> 0xfe804000 len 0x00001000
+kernel::startup::memory:DEBUG -- Registering Device memory FE804000 size 1000
+kernel::dtb:DEBUG -- soc device usb@7e980000 0x7e980000 -> 0xfe980000 len 0x00010000
+kernel::startup::memory:DEBUG -- Registering Device memory FE980000 size 10000
+kernel::dtb:DEBUG -- soc device usb@7e980000 0x7e00b200 -> 0xfe00b200 len 0x00000200
+kernel::startup::memory:DEBUG -- Registering Device memory FE00B200 size 200
+kernel::dtb:DEBUG -- soc device interrupt-controller@40000000 0x40000000 -> 0xff800000 len 0x00000100
+kernel::startup::memory:DEBUG -- Registering Device memory FF800000 size 100
+kernel::dtb:DEBUG -- soc device interrupt-controller@40041000 0x40041000 -> 0xff841000 len 0x00001000
+kernel::startup::memory:DEBUG -- Registering Device memory FF841000 size 1000
+kernel::dtb:DEBUG -- soc device interrupt-controller@40041000 0x40042000 -> 0xff842000 len 0x00002000
+kernel::startup::memory:DEBUG -- Registering Device memory FF842000 size 2000
+kernel::dtb:DEBUG -- soc device interrupt-controller@40041000 0x40044000 -> 0xff844000 len 0x00002000
+kernel::startup::memory:DEBUG -- Registering Device memory FF844000 size 2000
+kernel::dtb:DEBUG -- soc device interrupt-controller@40041000 0x40046000 -> 0xff846000 len 0x00002000
+kernel::startup::memory:DEBUG -- Registering Device memory FF846000 size 2000
+kernel::dtb:DEBUG -- soc device avs-monitor@7d5d2000 0x7d5d2000 -> 0xfd5d2000 len 0x00000f00
+kernel::startup::memory:DEBUG -- Registering Device memory FD5D2000 size F00
+kernel::dtb:DEBUG -- soc device dma-controller@7e007000 0x7e007000 -> 0xfe007000 len 0x00000b00
+kernel::startup::memory:DEBUG -- Registering Device memory FE007000 size B00
+kernel::dtb:DEBUG -- soc device watchdog@7e100000 0x7e100000 -> 0xfe100000 len 0x00000114
+kernel::startup::memory:DEBUG -- Registering Device memory FE100000 size 114
+kernel::dtb:DEBUG -- soc device watchdog@7e100000 0x7e00a000 -> 0xfe00a000 len 0x00000024
+kernel::startup::memory:DEBUG -- Registering Device memory FE00A000 size 24
+kernel::dtb:DEBUG -- soc device watchdog@7e100000 0x7ec11000 -> 0xfec11000 len 0x00000020
+kernel::startup::memory:DEBUG -- Registering Device memory FEC11000 size 20
+kernel::dtb:DEBUG -- soc device rng@7e104000 0x7e104000 -> 0xfe104000 len 0x00000028
+kernel::startup::memory:DEBUG -- Registering Device memory FE104000 size 28
+kernel::dtb:DEBUG -- soc device serial@7e201400 0x7e201400 -> 0xfe201400 len 0x00000200
+kernel::startup::memory:DEBUG -- Registering Device memory FE201400 size 200
+kernel::dtb:DEBUG -- soc device serial@7e201600 0x7e201600 -> 0xfe201600 len 0x00000200
+kernel::startup::memory:DEBUG -- Registering Device memory FE201600 size 200
+kernel::dtb:DEBUG -- soc device serial@7e201800 0x7e201800 -> 0xfe201800 len 0x00000200
+kernel::startup::memory:DEBUG -- Registering Device memory FE201800 size 200
+kernel::dtb:DEBUG -- soc device serial@7e201a00 0x7e201a00 -> 0xfe201a00 len 0x00000200
+kernel::startup::memory:DEBUG -- Registering Device memory FE201A00 size 200
+kernel::dtb:DEBUG -- soc device spi@7e204600 0x7e204600 -> 0xfe204600 len 0x00000200
+kernel::startup::memory:DEBUG -- Registering Device memory FE204600 size 200
+kernel::dtb:DEBUG -- soc device spi@7e204800 0x7e204800 -> 0xfe204800 len 0x00000200
+kernel::startup::memory:DEBUG -- Registering Device memory FE204800 size 200
+kernel::dtb:DEBUG -- soc device spi@7e204a00 0x7e204a00 -> 0xfe204a00 len 0x00000200
+kernel::startup::memory:DEBUG -- Registering Device memory FE204A00 size 200
+kernel::dtb:DEBUG -- soc device spi@7e204c00 0x7e204c00 -> 0xfe204c00 len 0x00000200
+kernel::startup::memory:DEBUG -- Registering Device memory FE204C00 size 200
+kernel::dtb:DEBUG -- soc device i2c@7e205600 0x7e205600 -> 0xfe205600 len 0x00000200
+kernel::startup::memory:DEBUG -- Registering Device memory FE205600 size 200
+kernel::dtb:DEBUG -- soc device i2c@7e205800 0x7e205800 -> 0xfe205800 len 0x00000200
+kernel::startup::memory:DEBUG -- Registering Device memory FE205800 size 200
+kernel::dtb:DEBUG -- soc device i2c@7e205a00 0x7e205a00 -> 0xfe205a00 len 0x00000200
+kernel::startup::memory:DEBUG -- Registering Device memory FE205A00 size 200
+kernel::dtb:DEBUG -- soc device i2c@7e205c00 0x7e205c00 -> 0xfe205c00 len 0x00000200
+kernel::startup::memory:DEBUG -- Registering Device memory FE205C00 size 200
+kernel::dtb:DEBUG -- soc device pixelvalve@7e206000 0x7e206000 -> 0xfe206000 len 0x00000100
+kernel::startup::memory:DEBUG -- Registering Device memory FE206000 size 100
+kernel::dtb:DEBUG -- soc device pixelvalve@7e207000 0x7e207000 -> 0xfe207000 len 0x00000100
+kernel::startup::memory:DEBUG -- Registering Device memory FE207000 size 100
+kernel::dtb:DEBUG -- soc device pixelvalve@7e20a000 0x7e20a000 -> 0xfe20a000 len 0x00000100
+kernel::startup::memory:DEBUG -- Registering Device memory FE20A000 size 100
+kernel::dtb:DEBUG -- soc device pwm@7e20c800 0x7e20c800 -> 0xfe20c800 len 0x00000028
+kernel::startup::memory:DEBUG -- Registering Device memory FE20C800 size 28
+kernel::dtb:DEBUG -- soc device pixelvalve@7e216000 0x7e216000 -> 0xfe216000 len 0x00000100
+kernel::startup::memory:DEBUG -- Registering Device memory FE216000 size 100
+kernel::dtb:DEBUG -- soc device pixelvalve@7ec12000 0x7ec12000 -> 0xfec12000 len 0x00000100
+kernel::startup::memory:DEBUG -- Registering Device memory FEC12000 size 100
+kernel::dtb:DEBUG -- soc device vec@7ec13000 0x7ec13000 -> 0xfec13000 len 0x00001000
+kernel::startup::memory:DEBUG -- Registering Device memory FEC13000 size 1000
+kernel::dtb:DEBUG -- soc device clock@7ef00000 0x7ef00000 -> 0xfef00000 len 0x00000010
+kernel::startup::memory:DEBUG -- Registering Device memory FEF00000 size 10
+kernel::dtb:DEBUG -- soc device interrupt-controller@7ef00100 0x7ef00100 -> 0xfef00100 len 0x00000030
+kernel::startup::memory:DEBUG -- Registering Device memory FEF00100 size 30
+kernel::dtb:DEBUG -- soc device hdmi@7ef00700 0x7ef00700 -> 0xfef00700 len 0x00000300
+kernel::startup::memory:DEBUG -- Registering Device memory FEF00700 size 300
+kernel::dtb:DEBUG -- soc device hdmi@7ef00700 0x7ef00300 -> 0xfef00300 len 0x00000200
+kernel::startup::memory:DEBUG -- Registering Device memory FEF00300 size 200
+kernel::dtb:DEBUG -- soc device hdmi@7ef00700 0x7ef00f00 -> 0xfef00f00 len 0x00000080
+kernel::startup::memory:DEBUG -- Registering Device memory FEF00F00 size 80
+kernel::dtb:DEBUG -- soc device hdmi@7ef00700 0x7ef00f80 -> 0xfef00f80 len 0x00000080
+kernel::startup::memory:DEBUG -- Registering Device memory FEF00F80 size 80
+kernel::dtb:DEBUG -- soc device hdmi@7ef00700 0x7ef01b00 -> 0xfef01b00 len 0x00000200
+kernel::startup::memory:DEBUG -- Registering Device memory FEF01B00 size 200
+kernel::dtb:DEBUG -- soc device hdmi@7ef00700 0x7ef01f00 -> 0xfef01f00 len 0x00000400
+kernel::startup::memory:DEBUG -- Registering Device memory FEF01F00 size 400
+kernel::dtb:DEBUG -- soc device hdmi@7ef00700 0x7ef00200 -> 0xfef00200 len 0x00000080
+kernel::startup::memory:DEBUG -- Registering Device memory FEF00200 size 80
+kernel::dtb:DEBUG -- soc device hdmi@7ef00700 0x7ef04300 -> 0xfef04300 len 0x00000100
+kernel::startup::memory:DEBUG -- Registering Device memory FEF04300 size 100
+kernel::dtb:DEBUG -- soc device hdmi@7ef00700 0x7ef20000 -> 0xfef20000 len 0x00000100
+kernel::startup::memory:DEBUG -- Registering Device memory FEF20000 size 100
+kernel::dtb:DEBUG -- soc device hdmi@7ef00700 0x7ef00100 -> 0xfef00100 len 0x00000030
+kernel::startup::memory:DEBUG -- Registering Device memory FEF00100 size 30
+kernel::dtb:DEBUG -- soc device i2c@7ef04500 0x7ef04500 -> 0xfef04500 len 0x00000100
+kernel::startup::memory:DEBUG -- Registering Device memory FEF04500 size 100
+kernel::dtb:DEBUG -- soc device i2c@7ef04500 0x7ef00b00 -> 0xfef00b00 len 0x00000300
+kernel::startup::memory:DEBUG -- Registering Device memory FEF00B00 size 300
+kernel::dtb:DEBUG -- soc device hdmi@7ef05700 0x7ef05700 -> 0xfef05700 len 0x00000300
+kernel::startup::memory:DEBUG -- Registering Device memory FEF05700 size 300
+kernel::dtb:DEBUG -- soc device hdmi@7ef05700 0x7ef05300 -> 0xfef05300 len 0x00000200
+kernel::startup::memory:DEBUG -- Registering Device memory FEF05300 size 200
+kernel::dtb:DEBUG -- soc device hdmi@7ef05700 0x7ef05f00 -> 0xfef05f00 len 0x00000080
+kernel::startup::memory:DEBUG -- Registering Device memory FEF05F00 size 80
+kernel::dtb:DEBUG -- soc device hdmi@7ef05700 0x7ef05f80 -> 0xfef05f80 len 0x00000080
+kernel::startup::memory:DEBUG -- Registering Device memory FEF05F80 size 80
+kernel::dtb:DEBUG -- soc device hdmi@7ef05700 0x7ef06b00 -> 0xfef06b00 len 0x00000200
+kernel::startup::memory:DEBUG -- Registering Device memory FEF06B00 size 200
+kernel::dtb:DEBUG -- soc device hdmi@7ef05700 0x7ef06f00 -> 0xfef06f00 len 0x00000400
+kernel::startup::memory:DEBUG -- Registering Device memory FEF06F00 size 400
+kernel::dtb:DEBUG -- soc device hdmi@7ef05700 0x7ef00280 -> 0xfef00280 len 0x00000080
+kernel::startup::memory:DEBUG -- Registering Device memory FEF00280 size 80
+kernel::dtb:DEBUG -- soc device hdmi@7ef05700 0x7ef09300 -> 0xfef09300 len 0x00000100
+kernel::startup::memory:DEBUG -- Registering Device memory FEF09300 size 100
+kernel::dtb:DEBUG -- soc device hdmi@7ef05700 0x7ef20000 -> 0xfef20000 len 0x00000100
+kernel::startup::memory:DEBUG -- Registering Device memory FEF20000 size 100
+kernel::dtb:DEBUG -- soc device hdmi@7ef05700 0x7ef00100 -> 0xfef00100 len 0x00000030
+kernel::startup::memory:DEBUG -- Registering Device memory FEF00100 size 30
+kernel::dtb:DEBUG -- soc device i2c@7ef09500 0x7ef09500 -> 0xfef09500 len 0x00000100
+kernel::startup::memory:DEBUG -- Registering Device memory FEF09500 size 100
+kernel::dtb:DEBUG -- soc device i2c@7ef09500 0x7ef05b00 -> 0xfef05b00 len 0x00000300
+kernel::startup::memory:DEBUG -- Registering Device memory FEF05B00 size 300
+kernel::dtb:DEBUG -- soc device mailbox@7e00b840 0x7e00b840 -> 0xfe00b840 len 0x0000003c
+kernel::startup::memory:DEBUG -- Registering Device memory FE00B840 size 3C
+kernel::dtb:DEBUG -- soc device mmcnr@7e300000 0x7e300000 -> 0xfe300000 len 0x00000100
+kernel::startup::memory:DEBUG -- Registering Device memory FE300000 size 100
+kernel::dtb:DEBUG -- soc device firmwarekms@7e600000 0x7e600000 -> 0xfe600000 len 0x00000100
+kernel::startup::memory:DEBUG -- Registering Device memory FE600000 size 100
+kernel::dtb:DEBUG -- soc device smi@7e600000 0x7e600000 -> 0xfe600000 len 0x00000100
+kernel::startup::memory:DEBUG -- Registering Device memory FE600000 size 100
+kernel::dtb:DEBUG -- soc device axiperf 0x7e009800 -> 0xfe009800 len 0x00000100
+kernel::startup::memory:DEBUG -- Registering Device memory FE009800 size 100
+kernel::dtb:DEBUG -- soc device axiperf 0x7ee08000 -> 0xfee08000 len 0x00000100
+kernel::startup::memory:DEBUG -- Registering Device memory FEE08000 size 100
+kernel::dtb:DEBUG -- soc device gpiomem 0x7e200000 -> 0xfe200000 len 0x00001000
+kernel::startup::memory:DEBUG -- Registering Device memory FE200000 size 1000
+kernel::dtb:DEBUG -- diagnostic UART 0xfe201000 size 0x00000200
+kernel::startup::memory:DEBUG -- Registering Device memory FE201000 size 200
+kernel::startup::memory:DEBUG -- Registering Kernel memory 3990F000 size 17A938
+kernel::startup::memory:DEBUG -- Registering IdentityMap memory 398FF000 size C5
+kernel::startup::memory:DEBUG -- Registering IdentityMap memory 39B58000 size F000
+kernel::startup::memory:DEBUG -- Registering IdentityMap memory 28602000 size 19FF000
+kernel::startup::memory:DEBUG -- Registering IdentityMap memory 39A93000 size 20000
+kernel::startup::memory:DEBUG -- 1000:28602000
+kernel::startup::memory:DEBUG -- 39801000:398FB000
+kernel::startup::memory:DEBUG -- 39AB3000:39AD8000
+kernel::startup::memory:DEBUG -- 39B67000:39B71000
+kernel::startup::memory:DEBUG -- 39B72000:39B74000
+kernel::startup::memory:DEBUG -- 39B75000:39B76000
+kernel::startup::memory:DEBUG -- 39B77000:39BB0000
+kernel::startup::memory:DEBUG -- 39BC2000:39BC7000
+kernel::startup::memory:DEBUG -- 39BC8000:39BCB000
+kernel::startup::memory:DEBUG -- 39BEC000:39BEF000
+kernel::startup::memory:DEBUG -- 39BF0000:3AC9A000
+kernel::startup::memory:DEBUG -- 3AC9B000:3B000000
+kernel::startup::memory:DEBUG -- 3B020000:3B300000
+kernel::startup::memory:DEBUG -- MemoryArea { base: [phys 0x1000], size: 28601000 }
+kernel::startup::memory:DEBUG -- MemoryArea { base: [phys 0x39801000], size: FA000 }
+kernel::startup::memory:DEBUG -- MemoryArea { base: [phys 0x39ab3000], size: 25000 }
+kernel::startup::memory:DEBUG -- MemoryArea { base: [phys 0x39b67000], size: A000 }
+kernel::startup::memory:DEBUG -- MemoryArea { base: [phys 0x39b72000], size: 2000 }
+kernel::startup::memory:DEBUG -- MemoryArea { base: [phys 0x39b75000], size: 1000 }
+kernel::startup::memory:DEBUG -- MemoryArea { base: [phys 0x39b77000], size: 39000 }
+kernel::startup::memory:DEBUG -- MemoryArea { base: [phys 0x39bc2000], size: 5000 }
+kernel::startup::memory:DEBUG -- MemoryArea { base: [phys 0x39bc8000], size: 3000 }
+kernel::startup::memory:DEBUG -- MemoryArea { base: [phys 0x39bec000], size: 3000 }
+kernel::startup::memory:DEBUG -- MemoryArea { base: [phys 0x39bf0000], size: 10AA000 }
+kernel::startup::memory:DEBUG -- MemoryArea { base: [phys 0x3ac9b000], size: 365000 }
+kernel::startup::memory:DEBUG -- MemoryArea { base: [phys 0x3b020000], size: 2E0000 }
+kernel::startup::memory:INFO -- Memory: 671 MB
+kernel::startup::memory:INFO -- Highest huge page level: 0
+kernel::startup::memory:DEBUG -- Contiguously mapping 0x1000 => 0xffff800000001000, 165377 pages, level 0
+kernel::startup::memory:DEBUG -- head+middle lvl 0 next 0 pages_per_iter 1 base 0x1000 remaining 165377
+kernel::startup::memory:DEBUG -- Contiguously mapping 0x39801000 => 0xffff800039801000, 250 pages, level 0
+kernel::startup::memory:DEBUG -- head+middle lvl 0 next 0 pages_per_iter 1 base 0x39801000 remaining 250
+kernel::startup::memory:DEBUG -- Contiguously mapping 0x39ab3000 => 0xffff800039ab3000, 37 pages, level 0
+kernel::startup::memory:DEBUG -- head+middle lvl 0 next 0 pages_per_iter 1 base 0x39ab3000 remaining 37
+kernel::startup::memory:DEBUG -- Contiguously mapping 0x39b67000 => 0xffff800039b67000, 10 pages, level 0
+kernel::startup::memory:DEBUG -- head+middle lvl 0 next 0 pages_per_iter 1 base 0x39b67000 remaining 10
+kernel::startup::memory:DEBUG -- Contiguously mapping 0x39b72000 => 0xffff800039b72000, 2 pages, level 0
+kernel::startup::memory:DEBUG -- head+middle lvl 0 next 0 pages_per_iter 1 base 0x39b72000 remaining 2
+kernel::startup::memory:DEBUG -- Contiguously mapping 0x39b75000 => 0xffff800039b75000, 1 pages, level 0
+kernel::startup::memory:DEBUG -- head+middle lvl 0 next 0 pages_per_iter 1 base 0x39b75000 remaining 1
+kernel::startup::memory:DEBUG -- Contiguously mapping 0x39b77000 => 0xffff800039b77000, 57 pages, level 0
+kernel::startup::memory:DEBUG -- head+middle lvl 0 next 0 pages_per_iter 1 base 0x39b77000 remaining 57
+kernel::startup::memory:DEBUG -- Contiguously mapping 0x39bc2000 => 0xffff800039bc2000, 5 pages, level 0
+kernel::startup::memory:DEBUG -- head+middle lvl 0 next 0 pages_per_iter 1 base 0x39bc2000 remaining 5
+kernel::startup::memory:DEBUG -- Contiguously mapping 0x39bc8000 => 0xffff800039bc8000, 3 pages, level 0
+kernel::startup::memory:DEBUG -- head+middle lvl 0 next 0 pages_per_iter 1 base 0x39bc8000 remaining 3
+kernel::startup::memory:DEBUG -- Contiguously mapping 0x39bec000 => 0xffff800039bec000, 3 pages, level 0
+kernel::startup::memory:DEBUG -- head+middle lvl 0 next 0 pages_per_iter 1 base 0x39bec000 remaining 3
+kernel::startup::memory:DEBUG -- Contiguously mapping 0x39bf0000 => 0xffff800039bf0000, 4266 pages, level 0
+kernel::startup::memory:DEBUG -- head+middle lvl 0 next 0 pages_per_iter 1 base 0x39bf0000 remaining 4266
+kernel::startup::memory:DEBUG -- Contiguously mapping 0x3ac9b000 => 0xffff80003ac9b000, 869 pages, level 0
+kernel::startup::memory:DEBUG -- head+middle lvl 0 next 0 pages_per_iter 1 base 0x3ac9b000 remaining 869
+kernel::startup::memory:DEBUG -- Contiguously mapping 0x3b020000 => 0xffff80003b020000, 736 pages, level 0
+kernel::startup::memory:DEBUG -- head+middle lvl 0 next 0 pages_per_iter 1 base 0x3b020000 remaining 736
+kernel::startup::memory:DEBUG -- MAPPING STACK, BASE 39a93000 SIZE 20000
+kernel::startup::memory:DEBUG -- Contiguously mapping 0x39a93000 => 0xffff800039a93000, 32 pages, level 0
+kernel::startup::memory:DEBUG -- head+middle lvl 0 next 0 pages_per_iter 1 base 0x39a93000 remaining 32
+kernel::startup::memory:DEBUG -- Table: 1000
+kernel::startup::memory:DEBUG -- 256: 2403
+kernel::startup::memory:DEBUG -- 510: 156403
+kernel::startup::memory:INFO -- Permanently used: 1468 KB
+kernel::acpi:ERROR -- NO RSDP FOUND
+kernel::memory:DEBUG -- Initial freelist consistent
+kernel::arch::aarch64::device:INFO -- PSCI INIT
+kernel::arch::aarch64::device::psci:WARN -- PSCI v0.2+ node not found; reset and power-off are unavailable
+kernel::arch::aarch64::device::bcm2835_wdt:INFO -- BCM2835 watchdog at 0xfe100000
+kernel::arch::aarch64::device:INFO -- CPU TOPOLOGY INIT
+kernel::arch::aarch64::device::cpu::topology:INFO -- DT CPU topology: 4 enabled, 0 disabled, BSP MPIDR=0x0, 3 startable secondaries
+kernel::arch::aarch64::device::cpu::topology:DEBUG -- CPU topology logical #0: MPIDR=0x0 boot=true enable-method=spin-table
+kernel::arch::aarch64::device::cpu::topology:DEBUG -- CPU topology logical #1: MPIDR=0x1 boot=false enable-method=spin-table
+kernel::arch::aarch64::device::cpu::topology:DEBUG -- CPU topology logical #2: MPIDR=0x2 boot=false enable-method=spin-table
+kernel::arch::aarch64::device::cpu::topology:DEBUG -- CPU topology logical #3: MPIDR=0x3 boot=false enable-method=spin-table
+kernel::arch::aarch64::device::cpu::boot:INFO -- BSP translation-table walks are inner-shareable: TCR_EL1=0x14b5103510
+kernel::arch::aarch64::device::cpu::boot:INFO -- CPU boot resources: 3 slots ready, trampoline=0x3ace4000, idmap=0x3ace5000
+kernel::arch::aarch64::device::cpu::boot:DEBUG -- CPU boot slot logical #1: MPIDR=0x1 stack_phys=0x3acf0000..0x3ad00000 percpu_phys=0x3ace9000 args_phys=0x3acea000
+kernel::arch::aarch64::device::cpu::boot:DEBUG -- CPU boot slot logical #2: MPIDR=0x2 stack_phys=0x3b040000..0x3b050000 percpu_phys=0x3aceb000 args_phys=0x3acec000
+kernel::arch::aarch64::device::cpu::boot:DEBUG -- CPU boot slot logical #3: MPIDR=0x3 stack_phys=0x3b050000..0x3b060000 percpu_phys=0x3aced000 args_phys=0x3acee000
+kernel::arch::aarch64::device:INFO -- IRQCHIP INIT
+kernel::dtb:DEBUG -- root parent = 0x00000001
+kernel::dtb:DEBUG -- gpio@7e200000, compatible = brcm,bcm2711-gpio, #interrupt-cells = 0x00000002, phandle = 0x00000007
+kernel::dtb:DEBUG -- interrupt-parent = 0x00000001
+kernel::dtb:DEBUG -- interrupts begin:
+kernel::dtb:DEBUG -- 0x00000000, 
+kernel::dtb:DEBUG -- 0x00000071, 
+kernel::dtb:DEBUG -- 0x00000004, 
+kernel::dtb:DEBUG -- 0x00000000, 
+kernel::dtb:DEBUG -- 0x00000072, 
+kernel::dtb:DEBUG -- 0x00000004, 
+kernel::dtb:DEBUG -- interrupts end
+kernel::dtb:DEBUG -- interrupt-controller@40041000, compatible = arm,gic-400, #interrupt-cells = 0x00000003, phandle = 0x00000001
+kernel::dtb:DEBUG -- interrupt-parent = 0x00000001
+kernel::dtb:DEBUG -- interrupts begin:
+kernel::dtb:DEBUG -- 0x00000001, 
+kernel::dtb:DEBUG -- 0x00000009, 
+kernel::dtb:DEBUG -- 0x00000f04, 
+kernel::dtb:DEBUG -- interrupts end
+kernel::dtb:DEBUG -- interrupt-controller@7ef00100, compatible = brcm,bcm2711-l2-intc, #interrupt-cells = 0x00000001, phandle = 0x0000002c
+kernel::dtb:DEBUG -- interrupt-parent = 0x00000001
+kernel::dtb:DEBUG -- interrupts begin:
+kernel::dtb:DEBUG -- 0x00000000, 
+kernel::dtb:DEBUG -- 0x00000060, 
+kernel::dtb:DEBUG -- 0x00000001, 
+kernel::dtb:DEBUG -- interrupts end
+kernel::dtb::irqchip:DEBUG -- gpio@7e200000, compatible = brcm,bcm2711-gpio, #interrupt-cells = 0x00000002, phandle = 0x00000007
+kernel::arch::aarch64::device::irqchip:WARN -- no driver for interrupt controller "brcm,bcm2711-gpio"
+kernel::dtb::irqchip:DEBUG -- interrupt-parent = 0x00000001
+kernel::dtb::irqchip:DEBUG -- interrupts begin:
+kernel::dtb::irqchip:DEBUG -- L3(0, 113, 4), 
+kernel::dtb::irqchip:DEBUG -- L3(0, 114, 4), 
+kernel::dtb::irqchip:DEBUG -- interrupts end
+kernel::dtb::irqchip:DEBUG -- interrupt-controller@40041000, compatible = arm,gic-400, #interrupt-cells = 0x00000003, phandle = 0x00000001
+kernel::dtb::irqchip:DEBUG -- interrupt-parent = 0x00000001
+kernel::dtb::irqchip:DEBUG -- interrupts begin:
+kernel::dtb::irqchip:DEBUG -- L3(1, 9, 3844), 
+kernel::dtb::irqchip:DEBUG -- interrupts end
+kernel::dtb::irqchip:DEBUG -- interrupt-controller@7ef00100, compatible = brcm,bcm2711-l2-intc, #interrupt-cells = 0x00000001, phandle = 0x0000002c
+kernel::arch::aarch64::device::irqchip:WARN -- no driver for interrupt controller "brcm,bcm2711-l2-intc"
+kernel::dtb::irqchip:DEBUG -- interrupt-parent = 0x00000001
+kernel::dtb::irqchip:DEBUG -- interrupts begin:
+kernel::dtb::irqchip:DEBUG -- L3(0, 96, 1), 
+kernel::dtb::irqchip:DEBUG -- interrupts end
+kernel::arch::aarch64::device::irqchip::gic:INFO -- gic: Distributor supports 4 CPUs and 256 IRQs
+kernel::arch::aarch64::device::irqchip::gic:INFO -- gic irq_range = (0, 256)
+kernel::arch::aarch64::device:INFO -- select 1 as root ic
+kernel::arch::aarch64::device:INFO -- GIT INIT
+kernel::arch::aarch64::device::generic_timer:DEBUG -- generic_timer use_virtual_timer = true
+kernel::arch::aarch64::device::generic_timer:DEBUG -- architected timer irq = L3(1, 11, 3848)
+kernel::arch::aarch64::device::generic_timer:INFO -- architected timer virq = 27 (virtual)
+kernel::arch::aarch64::device:INFO -- SERIAL INIT
+kernel::arch::aarch64::device::serial:INFO -- serial_port virq = 153
+kernel::arch::aarch64::device:INFO -- RTC INIT
+kernel::arch::aarch64::device::rtc:WARN -- No PL031 RTC found
+kernel::startup:INFO -- SECONDARY CPU INIT
+kernel::arch::aarch64::device::cpu::boot:INFO -- CPU logical #1: spin-table release MPIDR=0x1 at 0xe0
+kernel::arch::aarch64::device::cpu::boot:INFO -- CPU logical #1: local SGI/timer self-test passed
+kernel::arch::aarch64::device::cpu::boot:INFO -- CPU logical #1: online
+kernel::startup:DEBUG -- AP #1
+kernel::arch::aarch64::device::cpu::boot:INFO -- CPU logical #2: spin-table release MPIDR=0x2 at 0xe8
+kernel::arch::aarch64::device::cpu::boot:INFO -- CPU logical #2: local SGI/timer self-test passed
+kernel::arch::aarch64::device::cpu::boot:INFO -- CPU logical #2: online
+kernel::startup:DEBUG -- AP #2
+kernel::arch::aarch64::device::cpu::boot:INFO -- CPU logical #3: spin-table release MPIDR=0x3 at 0xf0
+kernel::arch::aarch64::device::cpu::boot:INFO -- CPU logical #3: local SGI/timer self-test passed
+kernel::arch::aarch64::device::cpu::boot:INFO -- CPU logical #3: online
+kernel::arch::aarch64::device::cpu::boot:INFO -- CPU activation complete: 4 CPUs online
+kernel::startup:DEBUG -- AP #3
+kernel::scheme::acpi:WARN -- expected RXSDT_ENUM to be initialized before AcpiScheme, is ACPI available?
+kernel::startup:DEBUG -- BSP: 4 CPUs
+kernel::startup:DEBUG -- Env: Ok("DTB_ADDR=0000000039b58000\nDTB_SIZE=000000000000f000\nDISK_LIVE_ADDR=000000002ba00000\nDISK_LIVE_SIZE=000000000de00000\nREDOXFS_BLOCK=0000000000000000\nREDOXFS_UUID=3a8a5bf6-a6e1-40e0-97b5-3cb51aa7797b\n")
+kernel::syscall::process:DEBUG -- Bootstrap entry point: 3000
+kernel::scheme::user:DEBUG -- call_fdread: payload: 8 metadata: 2
+init: switchroot to /scheme/initfs /scheme/initfs/etc
+kernel::scheme::user:DEBUG -- call_fdread: payload: 8 metadata: 2
+randd: Seeding failed, no entropy source.  Random numbers on this platform are NOT SECURE
+kernel::scheme::user:DEBUG -- call_fdread: payload: 8 metadata: 2
+kernel::scheme::user:DEBUG -- call_fdread: payload: 8 metadata: 2
+kernel::scheme::user:DEBUG -- call_fdread: payload: 8 metadata: 2
+kernel::scheme::user:DEBUG -- call_fdread: payload: 8 metadata: 2
+kernel::scheme::user:DEBUG -- call_fdread: payload: 8 metadata: 2
+kernel::scheme::user:DEBUG -- call_fdread: payload: 8 metadata: 2
+kernel::scheme::user:DEBUG -- call_fdread: payload: 8 metadata: 2
+kernel::scheme::user:DEBUG -- call_fdread: payload: 8 metadata: 2
+rpi-firmwared: mailbox at 0xfe00b880, revision 0x00c03131, model unknown
+rpi-firmwared: ARM clock 600 -> 1800 MHz
+kernel::scheme::user:DEBUG -- call_fdread: payload: 8 metadata: 2
+kernel::scheme::user:DEBUG -- call_fdread: payload: 8 metadata: 2
+kernel::scheme::user:DEBUG -- call_fdread: payload: 8 metadata: 2
+bcm2835-gpiod: 54 pins at 0xfe200000
+kernel::scheme::user:DEBUG -- call_fdread: payload: 8 metadata: 2
+bcm2835-spid: bus 0 at 0xfe204000, 1000 kHz (core 200 MHz)
+kernel::scheme::user:DEBUG -- call_fdread: payload: 8 metadata: 2
+bcm2835-i2cd: bus 1 at 0xfe804000, 100 kHz (core 200 MHz)
+kernel::scheme::user:DEBUG -- call_fdread: payload: 8 metadata: 2
+vesad: No boot framebuffer
+bcm2835-pwmaudiod: BCM2711, no PWM audio support yet; not starting
+init: env -i INIT_NOTIFY="4" LD_LIBRARY_PATH="/scheme/initfs/lib" PATH="/scheme/initfs/bin" RUST_BACKTRACE="1" "bcm2835-pwmaudiod" exited without notifying readiness
+fbbootlogd: No display present yet: Invalid argument (os error 22)
+kernel::scheme::user:DEBUG -- call_fdread: payload: 8 metadata: 2
+dwc2d: BCM2711, the DWC2 port is the power input; not starting
+bcm2835-sdhostd: BCM2711, the card is on EMMC2; not starting
+1970-01-01T00-02-01.312Z [@hwd:18 INFO] using devicetree backend
+1970-01-01T00-02-01.332Z [@pcid::cfg_access::brcmstb:109 INFO] pcid: BCM2711 PCIe at 0xfd500000, outbound CPU 0x600000000 = PCI 0xc0000000 (1024 MB), inbound PCI 0x400000000 = CPU 0x0 (1024 MB)
+1970-01-01T00-02-01.358Z [@pcid::cfg_access::brcmstb:160 INFO] pcid: PCIe bridge reset 0x3 (bridge in reset)
+1970-01-01T00-02-01.397Z [@pcid::cfg_access::brcmstb:171 INFO] pcid: PCIe bridge out of reset, revision 0x304
+1970-01-01T00-02-01.416Z [@pcid::cfg_access::brcmstb:186 INFO] pcid: dma-ranges has an offset; inbound window PCI 0 = CPU 0 (4096 MB) instead
+1970-01-01T00-02-01.547Z [@pcid::cfg_access::brcmstb:232 INFO] pcid: PCIe link up (status 0xb0)
+rpi-firmwared: VL805 at PCI 0x00100000 reset, firmware loaded
+1970-01-01T00-02-01.661Z [@pcid::cfg_access::brcmstb:393 INFO] pcid: firmware loaded the VL805 firmware
+1970-01-01T00-02-01.699Z [@pcid::cfg_access::brcmstb:323 INFO] pcid: 01:00.0 BAR0 at PCI 0xc0000000 (4096 bytes)
+1970-01-01T00-02-01.718Z [@pcid::cfg_access::brcmstb:262 INFO] pcid: 01:00.0 reading BAR0 at CPU 0x600000000 (PCI 0xc0000000)
+1970-01-01T00-02-01.739Z [@pcid::cfg_access::brcmstb:267 INFO] pcid: 01:00.0 BAR0 reads 0x01000020 (xHCI: CAPLENGTH low byte, HCIVERSION high half)
+1970-01-01T00-02-01.761Z [@pcid:253 INFO] PCI SG-BS:DV.F VEND:DEVI CL.SC.IN.RV
+1970-01-01T00-02-01.777Z [@pcid:350 INFO] PCI 0000:00:00.0 14E4:2711 06.04.00.20 PciPciBridge
+1970-01-01T00-02-01.795Z [@pcid:350 INFO] PCI 0000:01:00.0 1106:3483 0C.03.30.01 UsbController Xhci
+kernel::scheme::user:DEBUG -- call_fdread: payload: 8 metadata: 2
+kernel::scheme::user:DEBUG -- call_fdread: payload: 8 metadata: 2
+removing handle: id: 2, Some(List([48, 10]))
+init: switchroot to /usr /etc
+1970-01-01T00-02-01.895Z [@pcid_spawner:93 INFO] pcid-spawner: spawn "/usr/lib/drivers/xhcid"
+xhcid: mapping BAR0 Memory64 { addr: 25769803776, size: 4096 }
+xhcid: reading the capability registers at 0x15000
+xhcid: capability registers read, 64-byte contexts: false
+1970-01-01T00-02-01.944Z [@xhcid:98 INFO] XHCI pci-0000-01-00.0 on: 0=0000000600000000 IRQ: (phandle 1, [0, 143, 4])
+kernel::scheme::user:DEBUG -- call_fdread: payload: 8 metadata: 2
+kernel::scheme::user:DEBUG -- call_fdread: payload: 8 metadata: 2
+1970-01-01T00-02-02.087Z [@xhcid::xhci:1381 INFO] Loading subdriver "USB HUB" for port 1 iface 0 alternate 0 class 9.0 proto 0
+1970-01-01T00-02-02.117Z [@xhcid::xhci::device_enumerator:115 INFO] Device on port 1 was attached
+1970-01-01T00-02-02.196Z [@usbhubd:244 INFO] power on port 1
+kernel::scheme::user:DEBUG -- call_fdread: payload: 8 metadata: 2
+1970-01-01T00-02-02.225Z [@usbhubd:244 INFO] power on port 2
+1970-01-01T00-02-02.227Z [smolnetd@netstack:30 WARN] no network adapter yet
+kernel::scheme::user:DEBUG -- call_fdread: payload: 8 metadata: 2
+kernel::scheme::user:DEBUG -- call_fdread: payload: 8 metadata: 2
+kernel::scheme::user:DEBUG -- call_fdread: payload: 8 metadata: 2
+kernel::scheme::user:DEBUG -- call_fdread: payload: 8 metadata: 2
+kernel::scheme::user:DEBUG -- call_fdread: payload: 8 metadata: 2
+1970-01-01T00-02-02.288Z [@usbhubd:244 INFO] power on port 3
+1970-01-01T00-02-02.302Z [@fbcond::text:40 INFO] fbcond: Performing handoff
+1970-01-01T00-02-02.318Z [@fbcond::text:45 ERROR] fbcond: No display present yet: Invalid argument (os error 22)
+kernel::scheme::user:DEBUG -- call_fdread: payload: 8 metadata: 2
+1970-01-01T00-02-02.349Z [@usbhubd:244 INFO] power on port 4
+devshd: listening on port 2323
+audiod: No such device
+init: env -i INIT_NOTIFY="4" LD_LIBRARY_PATH="/usr/lib" PATH="/usr/bin" RUST_BACKTRACE="1" "audiod" exited without notifying readiness
+RedoxFS: IO ERROR: No such device (os error 19)
+[ERROR redoxfs] failed to open image /scheme/disk.mmc/0p1: I/O error
+[ERROR redoxfs] not able to mount path /scheme/disk.mmc/0p1
+init: env -i INIT_NOTIFY="4" LD_LIBRARY_PATH="/usr/lib" PATH="/usr/bin" RUST_BACKTRACE="1" "redoxfs" "/scheme/disk.mmc/0p1" "data" failed with exit status: 1
+########## Redox OS ##########
+# Login with the following:  #
+# `user`                     #
+# `root`:`password`          #
+##############################
+redox-rpi v0.6.0-dev-127-g5e48dca1+x1cc4-dirty.767208cece2d (netboot, 2026-11-20T16:50:27Z)
+experiments: netstack-watch pi400 usb-trace
+
+⏎                                                                                redox login: redox login: 1970-01-01T00-02-03.378Z [@usbhubd:239 INFO] port 1 status V2(HubPortStatusV2(POWER))
+1970-01-01T00-02-03.404Z [@usbhubd:239 INFO] port 2 status V2(HubPortStatusV2(CONNECTION | POWER | LOW_SPEED | CONNECTION_CHANGED))
+1970-01-01T00-02-03.425Z [@usbhubd:287 INFO] reset port 2
+1970-01-01T00-02-03.458Z [@usbhubd:239 INFO] port 3 status V2(HubPortStatusV2(POWER))
+1970-01-01T00-02-03.478Z [@usbhubd:239 INFO] port 4 status V2(HubPortStatusV2(CONNECTION | POWER | LOW_SPEED | CONNECTION_CHANGED))
+1970-01-01T00-02-04.529Z [@usbhubd:239 INFO] port 2 status V2(HubPortStatusV2(CONNECTION | ENABLE | POWER | LOW_SPEED | CONNECTION_CHANGED | RESET_CHANGED))
+1970-01-01T00-02-04.582Z [@usbhubd:150 INFO] attach port 1.2 at xHCI speed 2
+1970-01-01T00-02-04.598Z [@xhcid::xhci:858 INFO] port 1.2: speed 2 from its hub (root port speed 3)
+1970-01-01T00-02-04.616Z [@xhcid::xhci:1496 INFO] port 1.2: speed ID 2 not among the port's own IDs [3], default ID used: true
+1970-01-01T00-02-04.636Z [@xhcid::xhci:1163 INFO] port 1.2 parent_hub_slot_id 1 parent_port_num 2
+1970-01-01T00-02-04.738Z [@xhcid::xhci:1381 INFO] Loading subdriver "USB HID" for port 1.2 iface 0 alternate 0 class 3.1 proto 2
+1970-01-01T00-02-04.778Z [@usbhubd:287 INFO] reset port 4
+1970-01-01T00-02-04.794Z [@usbhidd:229 INFO] USB HID driver spawned with scheme `usb.pci-0000-01-00.0_xhci`, port 1.2, interface 0
+1970-01-01T00-02-04.816Z [@usbhidd:241 INFO] USB HID driver: "USB Optical Mouse" serial ""
+1970-01-01T00-02-04.833Z [@usbhidd:264 WARN] using endpoint 0x81 Interrupt In
+1970-01-01T00-02-04.909Z [@xhcid::xhci::scheme:2986 ERROR] CONTROL_TRANSFER transfer Trb { data: 0000000000000000, status: 00000000, control: 00011020 } failed with event Trb { data: 00000000071B1080, status: 06000000, control: 02018001 }
+1970-01-01T00-02-04.940Z [@usbhidd:326 WARN] failed to set idle: i/o error: I/O error (os error 5)
+1970-01-01T00-02-04.969Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.2 ep 1 submit #1
+1970-01-01T00-02-05.887Z [@usbhubd:239 INFO] port 4 status V2(HubPortStatusV2(CONNECTION | ENABLE | POWER | LOW_SPEED | CONNECTION_CHANGED | RESET_CHANGED))
+1970-01-01T00-02-05.936Z [@usbhubd:150 INFO] attach port 1.4 at xHCI speed 2
+1970-01-01T00-02-05.953Z [@xhcid::xhci:858 INFO] port 1.4: speed 2 from its hub (root port speed 3)
+1970-01-01T00-02-05.981Z [@xhcid::xhci:1496 INFO] port 1.4: speed ID 2 not among the port's own IDs [3], default ID used: true
+1970-01-01T00-02-06.001Z [@xhcid::xhci:1163 INFO] port 1.4 parent_hub_slot_id 1 parent_port_num 4
+1970-01-01T00-02-06.129Z [@xhcid::xhci:1381 INFO] Loading subdriver "USB HID" for port 1.4 iface 0 alternate 0 class 3.1 proto 1
+1970-01-01T00-02-06.158Z [@usbhidd:229 INFO] USB HID driver spawned with scheme `usb.pci-0000-01-00.0_xhci`, port 1.4, interface 0
+1970-01-01T00-02-06.179Z [@xhcid::xhci:1381 INFO] Loading subdriver "USB HID" for port 1.4 iface 1 alternate 0 class 3.0 proto 0
+1970-01-01T00-02-06.206Z [@usbhidd:241 INFO] USB HID driver: "Raspberry Pi Internal Keyboard" serial ""
+1970-01-01T00-02-06.209Z [@usbhidd:229 INFO] USB HID driver spawned with scheme `usb.pci-0000-01-00.0_xhci`, port 1.4, interface 1
+1970-01-01T00-02-06.225Z [@usbhidd:264 WARN] using endpoint 0x81 Interrupt In
+1970-01-01T00-02-06.246Z [@usbhidd:241 INFO] USB HID driver: "Raspberry Pi Internal Keyboard" serial ""
+1970-01-01T00-02-06.280Z [@usbhidd:264 WARN] using endpoint 0x82 Interrupt In
+1970-01-01T00-02-06.341Z [@xhcid::xhci::scheme:2986 ERROR] CONTROL_TRANSFER transfer Trb { data: 0000000000000000, status: 00000000, control: 00011020 } failed with event Trb { data: 000000000674B060, status: 06000000, control: 03018001 }
+1970-01-01T00-02-06.372Z [@xhcid::xhci::scheme:1293 WARN] port 1.4: SET_INTERFACE 0 refused (I/O error); it has one alternate setting, going on
+1970-01-01T00-02-06.426Z [@xhcid::xhci::scheme:2986 ERROR] CONTROL_TRANSFER transfer Trb { data: 0000000000000000, status: 00000000, control: 00011020 } failed with event Trb { data: 000000000674B080, status: 06000000, control: 03018001 }
+1970-01-01T00-02-06.456Z [@xhcid::xhci::scheme:1293 WARN] port 1.4: SET_INTERFACE 1 refused (I/O error); it has one alternate setting, going on
+1970-01-01T00-02-06.540Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 1 submit #1
+1970-01-01T00-02-06.557Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 2 submit #1
+1970-01-01T00-02-06.575Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 1 event #1 cc 1 left 0
+1970-01-01T00-02-06.593Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 2 event #1 cc 13 left 3
+1970-01-01T00-02-06.593Z [@usbhidd:137 WARN] unknown usage_page 0x7 usage 0x0
+1970-01-01T00-02-06.612Z [@usbhidd:676 INFO] unsupported usage 0xC:0xB5 value 0
+1970-01-01T00-02-06.628Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 1 submit #2
+1970-01-01T00-02-06.645Z [@usbhidd:676 INFO] unsupported usage 0xC:0xB6 value 0
+1970-01-01T00-02-06.678Z [@usbhidd:676 INFO] unsupported usage 0xC:0xEA value 0
+1970-01-01T00-02-06.675Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 1 event #2 cc 1 left 0
+1970-01-01T00-02-06.695Z [@usbhidd:676 INFO] unsupported usage 0xC:0xE9 value 0
+1970-01-01T00-02-06.713Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 1 submit #3
+1970-01-01T00-02-06.729Z [@usbhidd:676 INFO] unsupported usage 0xC:0x223 value 0
+1970-01-01T00-02-06.763Z [@usbhidd:676 INFO] unsupported usage 0xC:0x192 value 0
+1970-01-01T00-02-06.755Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 1 event #3 cc 1 left 0
+1970-01-01T00-02-06.797Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 2 submit #2
+1970-01-01T00-02-06.814Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 1 submit #4
+1970-01-01T00-02-06.832Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 2 event #2 cc 13 left 3
+1970-01-01T00-02-06.850Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 1 event #4 cc 1 left 0
+1970-01-01T00-02-06.869Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 2 submit #3
+1970-01-01T00-02-06.886Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 1 submit #5
+1970-01-01T00-02-06.904Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 2 event #3 cc 13 left 3
+1970-01-01T00-02-06.922Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 1 event #5 cc 1 left 0
+1970-01-01T00-02-06.941Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 2 submit #4
+1970-01-01T00-02-06.961Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 1 submit #6
+1970-01-01T00-02-06.980Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 2 event #4 cc 13 left 3
+1970-01-01T00-02-06.999Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 2 submit #5
+1970-01-01T00-02-07.029Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 1 event #6 cc 1 left 0
+1970-01-01T00-02-07.048Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 2 event #5 cc 13 left 3
+1970-01-01T00-02-07.067Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 1 submit #7
+1970-01-01T00-02-07.091Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 2 submit #6
+1970-01-01T00-02-07.109Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 1 event #7 cc 1 left 0
+1970-01-01T00-02-07.127Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 2 event #6 cc 13 left 3
+1970-01-01T00-02-07.146Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 1 submit #8
+1970-01-01T00-02-07.163Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 2 submit #7
+1970-01-01T00-02-07.181Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 1 event #8 cc 1 left 0
+1970-01-01T00-02-07.199Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 2 event #7 cc 13 left 3
+1970-01-01T00-02-07.218Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 1 submit #9
+1970-01-01T00-02-07.235Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 2 submit #8
+1970-01-01T00-02-07.253Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 1 event #9 cc 1 left 0
+1970-01-01T00-02-07.271Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 2 event #8 cc 13 left 3
+1970-01-01T00-02-07.290Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 1 submit #10
+1970-01-01T00-02-07.308Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 2 submit #9
+1970-01-01T00-02-07.325Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 1 event #10 cc 1 left 0
+1970-01-01T00-02-07.343Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 2 event #9 cc 13 left 3
+1970-01-01T00-02-07.362Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 1 submit #11
+1970-01-01T00-02-07.380Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 2 submit #10
+1970-01-01T00-02-07.397Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 1 event #11 cc 1 left 0
+1970-01-01T00-02-07.416Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 2 event #10 cc 13 left 3
+1970-01-01T00-02-07.434Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 1 submit #12
+1970-01-01T00-02-07.452Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 2 submit #11
+1970-01-01T00-02-07.469Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 1 event #12 cc 1 left 0
+1970-01-01T00-02-07.488Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 2 event #11 cc 13 left 3
+1970-01-01T00-02-07.507Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 1 submit #13
+1970-01-01T00-02-07.524Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 2 submit #12
+1970-01-01T00-02-07.542Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 1 event #13 cc 1 left 0
+1970-01-01T00-02-07.560Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 2 event #12 cc 13 left 3
+1970-01-01T00-02-07.579Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 1 submit #14
+1970-01-01T00-02-07.597Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 2 submit #13
+1970-01-01T00-02-07.614Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 1 event #14 cc 1 left 0
+1970-01-01T00-02-07.633Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 2 event #13 cc 13 left 3
+1970-01-01T00-02-07.651Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 1 submit #15
+1970-01-01T00-02-07.669Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 2 submit #14
+1970-01-01T00-02-07.686Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 1 event #15 cc 1 left 0
+1970-01-01T00-02-07.705Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 2 event #14 cc 13 left 3
+1970-01-01T00-02-07.724Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 1 submit #16
+1970-01-01T00-02-07.741Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 2 submit #15
+1970-01-01T00-02-07.759Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 1 event #16 cc 1 left 0
+1970-01-01T00-02-07.777Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 2 event #15 cc 13 left 3
+1970-01-01T00-02-07.796Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 1 submit #17
+1970-01-01T00-02-07.814Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 2 submit #16
+1970-01-01T00-02-07.831Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 1 event #17 cc 1 left 0
+1970-01-01T00-02-07.850Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 2 event #16 cc 13 left 3
+1970-01-01T00-02-07.869Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 1 submit #18
+1970-01-01T00-02-07.886Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 2 submit #17
+1970-01-01T00-02-07.904Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 1 event #18 cc 1 left 0
+1970-01-01T00-02-07.922Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 2 event #17 cc 13 left 3
+1970-01-01T00-02-07.941Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 1 submit #19
+1970-01-01T00-02-07.959Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 2 submit #18
+1970-01-01T00-02-07.976Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 1 event #19 cc 1 left 0
+1970-01-01T00-02-07.995Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 2 event #18 cc 13 left 3
+1970-01-01T00-02-08.013Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 1 submit #20
+1970-01-01T00-02-08.031Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 2 submit #19
+1970-01-01T00-02-08.049Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 1 event #20 cc 1 left 0
+1970-01-01T00-02-08.067Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 2 event #19 cc 13 left 3
+1970-01-01T00-02-08.086Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 2 submit #20
+1970-01-01T00-02-08.114Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 2 event #20 cc 13 left 3
+startup-sound: no data partition, using /etc/startup-sound
+ion: pipeline execution error: failed to redirect stdout to file '/scheme/audio': No such device (os error 19)
+1970-01-01T00-02-09.003Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 1 submit #100
+1970-01-01T00-02-09.021Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 1 event #100 cc 1 left 0
+1970-01-01T00-02-09.039Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 2 submit #100
+1970-01-01T00-02-09.074Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 2 event #100 cc 13 left 3
+1970-01-01T00-02-10.153Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 1 submit #200
+1970-01-01T00-02-10.184Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 1 event #200 cc 1 left 0
+1970-01-01T00-02-10.224Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 2 submit #200
+1970-01-01T00-02-10.242Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 2 event #200 cc 13 left 3
+1970-01-01T00-02-11.291Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 1 submit #300
+1970-01-01T00-02-11.309Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 1 event #300 cc 1 left 0
+1970-01-01T00-02-11.418Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 2 submit #300
+1970-01-01T00-02-11.448Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 2 event #300 cc 13 left 3
+1970-01-01T00-02-12.468Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 1 submit #400
+1970-01-01T00-02-12.485Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 1 event #400 cc 1 left 0
+1970-01-01T00-02-12.553Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 2 submit #400
+1970-01-01T00-02-12.581Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 2 event #400 cc 13 left 3
+1970-01-01T00-02-13.580Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 1 submit #500
+1970-01-01T00-02-13.597Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 1 event #500 cc 1 left 0
+1970-01-01T00-02-13.696Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 2 submit #500
+1970-01-01T00-02-13.714Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 2 event #500 cc 13 left 3
+1970-01-01T00-02-14.723Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 1 submit #600
+1970-01-01T00-02-14.753Z [@xhcid::xhci::irq_reactor:411 INFO] xhcid: transfer event before its waiter, matched late (#1)
+1970-01-01T00-02-14.773Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 1 event #600 cc 1 left 0
+1970-01-01T00-02-14.843Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 2 submit #600
+1970-01-01T00-02-14.861Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 2 event #600 cc 13 left 3
+1970-01-01T00-02-15.900Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 1 submit #700
+1970-01-01T00-02-15.929Z [@xhcid::xhci::irq_reactor:411 INFO] xhcid: transfer event before its waiter, matched late (#2)
+1970-01-01T00-02-15.949Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 1 event #700 cc 1 left 0
+1970-01-01T00-02-15.968Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 2 submit #700
+1970-01-01T00-02-15.999Z [@xhcid::xhci::irq_reactor:411 INFO] xhcid: transfer event before its waiter, matched late (#3)
+1970-01-01T00-02-16.019Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 2 event #700 cc 13 left 3
+1970-01-01T00-02-16.539Z [@usbhidd:431 INFO] usb-trace: port 1.4 iface 0 reports 750
+1970-01-01T00-02-16.539Z [@usbhidd:431 INFO] usb-trace: port 1.4 iface 1 reports 746
+1970-01-01T00-02-17.079Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 1 submit #800
+1970-01-01T00-02-17.099Z [@xhcid::xhci::irq_reactor:411 INFO] xhcid: transfer event before its waiter, matched late (#4)
+1970-01-01T00-02-17.119Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 1 event #800 cc 1 left 0
+1970-01-01T00-02-17.199Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 2 submit #800
+1970-01-01T00-02-17.229Z [@xhcid::xhci::irq_reactor:411 INFO] xhcid: transfer event before its waiter, matched late (#5)
+1970-01-01T00-02-17.248Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 2 event #800 cc 13 left 3
+1970-01-01T00-02-18.309Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 1 submit #900
+1970-01-01T00-02-18.338Z [@xhcid::xhci::irq_reactor:411 INFO] xhcid: transfer event before its waiter, matched late (#6)
+1970-01-01T00-02-18.358Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 1 event #900 cc 1 left 0
+1970-01-01T00-02-18.448Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 2 submit #900
+1970-01-01T00-02-18.478Z [@xhcid::xhci::irq_reactor:411 INFO] xhcid: transfer event before its waiter, matched late (#7)
+1970-01-01T00-02-18.498Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 2 event #900 cc 13 left 3
+1970-01-01T00-02-19.508Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 1 submit #1000
+1970-01-01T00-02-19.538Z [@xhcid::xhci::irq_reactor:411 INFO] xhcid: transfer event before its waiter, matched late (#8)
+1970-01-01T00-02-19.558Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 1 event #1000 cc 1 left 0
+1970-01-01T00-02-19.678Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 2 submit #1000
+1970-01-01T00-02-19.708Z [@xhcid::xhci::irq_reactor:411 INFO] xhcid: transfer event before its waiter, matched late (#9)
+1970-01-01T00-02-19.727Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 2 event #1000 cc 13 left 3
+1970-01-01T00-02-20.778Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 1 submit #1100
+1970-01-01T00-02-20.807Z [@xhcid::xhci::irq_reactor:411 INFO] xhcid: transfer event before its waiter, matched late (#10)
+1970-01-01T00-02-20.827Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 1 event #1100 cc 1 left 0
+1970-01-01T00-02-20.938Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 2 submit #1100
+1970-01-01T00-02-20.977Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 2 event #1100 cc 13 left 3
+1970-01-01T00-02-21.957Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 1 submit #1200
+1970-01-01T00-02-21.987Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 1 event #1200 cc 1 left 0
+1970-01-01T00-02-22.098Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 2 submit #1200
+1970-01-01T00-02-22.127Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 2 event #1200 cc 13 left 3
+1970-01-01T00-02-23.098Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 1 submit #1300
+1970-01-01T00-02-23.127Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 1 event #1300 cc 1 left 0
+1970-01-01T00-02-23.258Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 2 submit #1300
+1970-01-01T00-02-23.287Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 2 event #1300 cc 13 left 3
+1970-01-01T00-02-24.278Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 1 submit #1400
+1970-01-01T00-02-24.307Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 1 event #1400 cc 1 left 0
+1970-01-01T00-02-24.456Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 2 submit #1400
+1970-01-01T00-02-24.477Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 2 event #1400 cc 13 left 3
+1970-01-01T00-02-25.458Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 1 submit #1500
+1970-01-01T00-02-25.488Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 1 event #1500 cc 1 left 0
+1970-01-01T00-02-25.628Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 2 submit #1500
+1970-01-01T00-02-25.658Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 2 event #1500 cc 13 left 3
+1970-01-01T00-02-26.557Z [@usbhidd:431 INFO] usb-trace: port 1.4 iface 0 reports 1592
+1970-01-01T00-02-26.574Z [@usbhidd:431 INFO] usb-trace: port 1.4 iface 1 reports 1580
+1970-01-01T00-02-26.648Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 1 submit #1600
+1970-01-01T00-02-26.678Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 1 event #1600 cc 1 left 0
+1970-01-01T00-02-26.778Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 2 submit #1600
+1970-01-01T00-02-26.808Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 2 event #1600 cc 13 left 3
+1970-01-01T00-02-27.858Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 1 submit #1700
+1970-01-01T00-02-27.884Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 1 event #1700 cc 1 left 0
+1970-01-01T00-02-28.008Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 2 submit #1700
+1970-01-01T00-02-28.038Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 2 event #1700 cc 13 left 3
+1970-01-01T00-02-28.988Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 1 submit #1800
+1970-01-01T00-02-29.028Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 1 event #1800 cc 1 left 0
+1970-01-01T00-02-29.178Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 2 submit #1800
+1970-01-01T00-02-29.208Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 2 event #1800 cc 13 left 3
+1970-01-01T00-02-30.098Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 1 submit #1900
+1970-01-01T00-02-30.128Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 1 event #1900 cc 1 left 0
+1970-01-01T00-02-30.348Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 2 submit #1900
+1970-01-01T00-02-30.378Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 2 event #1900 cc 13 left 3
+1970-01-01T00-02-31.298Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 1 submit #2000
+1970-01-01T00-02-31.328Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 1 event #2000 cc 1 left 0
+1970-01-01T00-02-31.578Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 2 submit #2000
+1970-01-01T00-02-31.608Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 2 event #2000 cc 13 left 3
+1970-01-01T00-02-32.467Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 1 submit #2100
+1970-01-01T00-02-32.498Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 1 event #2100 cc 1 left 0
+1970-01-01T00-02-32.798Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 2 submit #2100
+1970-01-01T00-02-32.828Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 2 event #2100 cc 13 left 3
+1970-01-01T00-02-33.698Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 1 submit #2200
+1970-01-01T00-02-33.728Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 1 event #2200 cc 1 left 0
+1970-01-01T00-02-34.038Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 2 submit #2200
+1970-01-01T00-02-34.068Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 2 event #2200 cc 13 left 3
+1970-01-01T00-02-34.928Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 1 submit #2300
+1970-01-01T00-02-34.958Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 1 event #2300 cc 1 left 0
+1970-01-01T00-02-35.228Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 2 submit #2300
+1970-01-01T00-02-35.258Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 2 event #2300 cc 13 left 3
+1970-01-01T00-02-36.117Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 1 submit #2400
+1970-01-01T00-02-36.148Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 1 event #2400 cc 1 left 0
+1970-01-01T00-02-36.438Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 2 submit #2400
+1970-01-01T00-02-36.468Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 2 event #2400 cc 13 left 3
+1970-01-01T00-02-36.575Z [@usbhidd:431 INFO] usb-trace: port 1.4 iface 0 reports 2433
+1970-01-01T00-02-36.592Z [@usbhidd:431 INFO] usb-trace: port 1.4 iface 1 reports 2406
+1970-01-01T00-02-37.298Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 1 submit #2500
+1970-01-01T00-02-37.328Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 1 event #2500 cc 1 left 0
+1970-01-01T00-02-37.658Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 2 submit #2500
+1970-01-01T00-02-37.688Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 2 event #2500 cc 13 left 3
+1970-01-01T00-02-38.478Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 1 submit #2600
+1970-01-01T00-02-38.508Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 1 event #2600 cc 1 left 0
+1970-01-01T00-02-38.938Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 2 submit #2600
+1970-01-01T00-02-38.968Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 2 event #2600 cc 13 left 3
+redox login: 
+
+⏎                                                                                redox login: redox login: redox login: rredox login: roredox login: roo1970-01-01T00-02-39.667Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 1 submit #2700
+1970-01-01T00-02-39.697Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 1 event #2700 cc 1 left 0
+redox login: rootredox login: root
+password: 1970-01-01T00-02-40.097Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 2 submit #2700
+1970-01-01T00-02-40.127Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 2 event #2700 cc 13 left 3
+1970-01-01T00-02-40.787Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 1 submit #2800
+1970-01-01T00-02-40.825Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 1 event #2800 cc 1 left 0
+1970-01-01T00-02-41.277Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 2 submit #2800
+1970-01-01T00-02-41.307Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 2 event #2800 cc 13 left 3
+1970-01-01T00-02-41.917Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 1 submit #2900
+1970-01-01T00-02-41.947Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 1 event #2900 cc 1 left 0
+1970-01-01T00-02-42.496Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 2 submit #2900
+1970-01-01T00-02-42.517Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 2 event #2900 cc 13 left 3
+1970-01-01T00-02-43.056Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 1 submit #3000
+1970-01-01T00-02-43.087Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 1 event #3000 cc 1 left 0
+1970-01-01T00-02-43.728Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 2 submit #3000
+1970-01-01T00-02-43.757Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 2 event #3000 cc 13 left 3
+1970-01-01T00-02-44.208Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 1 submit #3100
+1970-01-01T00-02-44.237Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 1 event #3100 cc 1 left 0
+1970-01-01T00-02-44.988Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 2 submit #3100
+1970-01-01T00-02-45.017Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 2 event #3100 cc 13 left 3
+1970-01-01T00-02-45.398Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 1 submit #3200
+1970-01-01T00-02-45.427Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 1 event #3200 cc 1 left 0
+1970-01-01T00-02-46.228Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 2 submit #3200
+1970-01-01T00-02-46.257Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 2 event #3200 cc 13 left 3
+1970-01-01T00-02-46.568Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 1 submit #3300
+1970-01-01T00-02-46.597Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 1 event #3300 cc 1 left 0
+1970-01-01T00-02-46.597Z [@usbhidd:431 INFO] usb-trace: port 1.4 iface 0 reports 3299
+1970-01-01T00-02-46.616Z [@usbhidd:431 INFO] usb-trace: port 1.4 iface 1 reports 3229
+1970-01-01T00-02-47.418Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 2 submit #3300
+1970-01-01T00-02-47.448Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 2 event #3300 cc 13 left 3
+1970-01-01T00-02-47.758Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 1 submit #3400
+1970-01-01T00-02-47.787Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 1 event #3400 cc 1 left 0
+1970-01-01T00-02-48.648Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 2 submit #3400
+1970-01-01T00-02-48.678Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 2 event #3400 cc 13 left 3
+1970-01-01T00-02-48.938Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 1 submit #3500
+1970-01-01T00-02-48.965Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 1 event #3500 cc 1 left 0
+1970-01-01T00-02-49.908Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 2 submit #3500
+1970-01-01T00-02-49.938Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 2 event #3500 cc 13 left 3
+1970-01-01T00-02-50.107Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 1 submit #3600
+1970-01-01T00-02-50.138Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 1 event #3600 cc 1 left 0
+1970-01-01T00-02-51.118Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 2 submit #3600
+1970-01-01T00-02-51.148Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 2 event #3600 cc 13 left 3
+1970-01-01T00-02-51.278Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 1 submit #3700
+1970-01-01T00-02-51.308Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 1 event #3700 cc 1 left 0
+1970-01-01T00-02-52.348Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 2 submit #3700
+1970-01-01T00-02-52.378Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 2 event #3700 cc 13 left 3
+1970-01-01T00-02-52.418Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 1 submit #3800
+1970-01-01T00-02-52.448Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 1 event #3800 cc 1 left 0
+1970-01-01T00-02-53.558Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 2 submit #3800
+1970-01-01T00-02-53.588Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 2 event #3800 cc 13 left 3
+1970-01-01T00-02-53.607Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 1 submit #3900
+1970-01-01T00-02-53.638Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 1 event #3900 cc 1 left 0
+1970-01-01T00-02-54.748Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 2 submit #3900
+1970-01-01T00-02-54.778Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 2 event #3900 cc 13 left 3
+1970-01-01T00-02-54.797Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 1 submit #4000
+1970-01-01T00-02-54.828Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 1 event #4000 cc 1 left 0
+1970-01-01T00-02-55.948Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 1 submit #4100
+1970-01-01T00-02-55.978Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 1 event #4100 cc 1 left 0
+1970-01-01T00-02-56.018Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 2 submit #4000
+1970-01-01T00-02-56.048Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 2 event #4000 cc 13 left 3
+1970-01-01T00-02-56.638Z [@usbhidd:431 INFO] usb-trace: port 1.4 iface 0 reports 4155
+1970-01-01T00-02-56.655Z [@usbhidd:431 INFO] usb-trace: port 1.4 iface 1 reports 4050
+1970-01-01T00-02-57.115Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 1 submit #4200
+1970-01-01T00-02-57.145Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 1 event #4200 cc 1 left 0
+1970-01-01T00-02-57.175Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 2 submit #4100
+1970-01-01T00-02-57.213Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 2 event #4100 cc 13 left 3
+1970-01-01T00-02-58.274Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 1 submit #4300
+1970-01-01T00-02-58.305Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 1 event #4300 cc 1 left 0
+1970-01-01T00-02-58.415Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 2 submit #4200
+1970-01-01T00-02-58.445Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 2 event #4200 cc 13 left 3
+1970-01-01T00-02-59.464Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 1 submit #4400
+1970-01-01T00-02-59.495Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 1 event #4400 cc 1 left 0
+1970-01-01T00-02-59.674Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 2 submit #4300
+1970-01-01T00-02-59.711Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 2 event #4300 cc 13 left 3
+1970-01-01T00-03-00.585Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 1 submit #4500
+1970-01-01T00-03-00.615Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 1 event #4500 cc 1 left 0
+1970-01-01T00-03-00.874Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 2 submit #4400
+1970-01-01T00-03-00.894Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 2 event #4400 cc 13 left 3
+
+Welcome to Redox OS!
+ 
+ion: creating history file at "/home/root/.local/share/ion/history"
+⏎                                                                                ]0;root: /home/rootroot:~# ]0;root: /home/rootroot:~# ]0;root: /home/rootroot:~# p]0;root: /home/rootroot:~# ps1970-01-01T00-03-01.764Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 1 submit #4600
+1970-01-01T00-03-01.794Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 1 event #4600 cc 1 left 0
+]0;root: /home/rootroot:~# ps ]0;root: /home/rootroot:~# ps |1970-01-01T00-03-02.094Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 2 submit #4500
+1970-01-01T00-03-02.124Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 2 event #4500 cc 13 left 3
+]0;root: /home/rootroot:~# ps | ]0;root: /home/rootroot:~# ps | g]0;root: /home/rootroot:~# ps | gr]0;root: /home/rootroot:~# ps | gre]0;root: /home/rootroot:~# ps | grep]0;root: /home/rootroot:~# ps | grep 1970-01-01T00-03-02.924Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 1 submit #4700
+1970-01-01T00-03-02.954Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 1 event #4700 cc 1 left 0
+]0;root: /home/rootroot:~# ps | grep -]0;root: /home/rootroot:~# ps | grep -c1970-01-01T00-03-03.304Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 2 submit #4600
+]0;root: /home/rootroot:~# ps | grep -c 1970-01-01T00-03-03.334Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 2 event #4600 cc 13 left 3
+]0;root: /home/rootroot:~# ps | grep -c u]0;root: /home/rootroot:~# ps | grep -c us]0;root: /home/rootroot:~# ps | grep -c usb]0;root: /home/rootroot:~# ps | grep -c usbh1970-01-01T00-03-04.064Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 1 submit #4800
+]0;root: /home/rootroot:~# ps | grep -c usbhi1970-01-01T00-03-04.091Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 1 event #4800 cc 1 left 0
+]0;root: /home/rootroot:~# ps | grep -c usbhid]0;root: /home/rootroot:~# ps | grep -c usbhidd1970-01-01T00-03-04.524Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 2 submit #4700
+]0;root: /home/rootroot:~# ps | grep -c usbhidd
+1970-01-01T00-03-04.551Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 2 event #4700 cc 13 left 3
+6
+⏎                                                                                ]0;root: /home/rootroot:~# ]0;root: /home/rootroot:~# ]0;root: /home/rootroot:~# 
+⏎                                                                                ]0;root: /home/rootroot:~# ]0;root: /home/rootroot:~# 1970-01-01T00-03-04.992Z [@usbhidd:431 INFO] usb-trace: port 1.2 iface 0 reports 0
+1970-01-01T00-03-05.229Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 1 submit #4900
+1970-01-01T00-03-05.249Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 1 event #4900 cc 1 left 0
+1970-01-01T00-03-05.679Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 2 submit #4800
+1970-01-01T00-03-05.697Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 2 event #4800 cc 13 left 3
+1970-01-01T00-03-06.366Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 1 submit #5000
+1970-01-01T00-03-06.386Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 1 event #5000 cc 1 left 0
+1970-01-01T00-03-06.656Z [@usbhidd:431 INFO] usb-trace: port 1.4 iface 0 reports 5022
+1970-01-01T00-03-06.672Z [@usbhidd:431 INFO] usb-trace: port 1.4 iface 1 reports 4885
+1970-01-01T00-03-06.823Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 2 submit #4900
+1970-01-01T00-03-06.841Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 2 event #4900 cc 13 left 3
+1970-01-01T00-03-07.530Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 1 submit #5100
+1970-01-01T00-03-07.560Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 1 event #5100 cc 1 left 0
+1970-01-01T00-03-07.980Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 2 submit #5000
+1970-01-01T00-03-07.998Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 2 event #5000 cc 13 left 3
+1970-01-01T00-03-08.687Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 1 submit #5200
+1970-01-01T00-03-08.717Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 1 event #5200 cc 1 left 0
+1970-01-01T00-03-09.117Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 2 submit #5100
+1970-01-01T00-03-09.135Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 2 event #5100 cc 13 left 3
+1970-01-01T00-03-09.834Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 1 submit #5300
+1970-01-01T00-03-09.863Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 1 event #5300 cc 1 left 0
+1970-01-01T00-03-10.264Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 2 submit #5200
+1970-01-01T00-03-10.282Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 2 event #5200 cc 13 left 3
+1970-01-01T00-03-10.971Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 1 submit #5400
+1970-01-01T00-03-11.001Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 1 event #5400 cc 1 left 0
+1970-01-01T00-03-11.401Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 2 submit #5300
+1970-01-01T00-03-11.419Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 2 event #5300 cc 13 left 3
+1970-01-01T00-03-12.088Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 1 submit #5500
+1970-01-01T00-03-12.118Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 1 event #5500 cc 1 left 0
+1970-01-01T00-03-12.558Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 2 submit #5400
+1970-01-01T00-03-12.576Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 2 event #5400 cc 13 left 3
+1970-01-01T00-03-13.275Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 1 submit #5600
+1970-01-01T00-03-13.305Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 1 event #5600 cc 1 left 0
+1970-01-01T00-03-13.715Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 2 submit #5500
+1970-01-01T00-03-13.743Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 2 event #5500 cc 13 left 3
+1970-01-01T00-03-14.442Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 1 submit #5700
+1970-01-01T00-03-14.472Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 1 event #5700 cc 1 left 0
+1970-01-01T00-03-14.912Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 2 submit #5600
+1970-01-01T00-03-14.930Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 2 event #5600 cc 13 left 3
+1970-01-01T00-03-15.571Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 1 submit #5800
+1970-01-01T00-03-15.599Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 1 event #5800 cc 1 left 0
+1970-01-01T00-03-16.039Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 2 submit #5700
+1970-01-01T00-03-16.067Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 2 event #5700 cc 13 left 3
+1970-01-01T00-03-16.676Z [@usbhidd:431 INFO] usb-trace: port 1.4 iface 0 reports 5895
+1970-01-01T00-03-16.690Z [@usbhidd:431 INFO] usb-trace: port 1.4 iface 1 reports 5753
+1970-01-01T00-03-16.733Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 1 submit #5900
+1970-01-01T00-03-16.763Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 1 event #5900 cc 1 left 0
+1970-01-01T00-03-17.223Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 2 submit #5800
+1970-01-01T00-03-17.241Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 2 event #5800 cc 13 left 3
+1970-01-01T00-03-17.870Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 1 submit #6000
+1970-01-01T00-03-17.900Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 1 event #6000 cc 1 left 0
+1970-01-01T00-03-18.370Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 2 submit #5900
+1970-01-01T00-03-18.388Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 2 event #5900 cc 13 left 3
+1970-01-01T00-03-19.017Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 1 submit #6100
+1970-01-01T00-03-19.047Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 1 event #6100 cc 1 left 0
+1970-01-01T00-03-19.517Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 2 submit #6000
+1970-01-01T00-03-19.535Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 2 event #6000 cc 13 left 3
+]0;root: /home/rootroot:~# l]0;root: /home/rootroot:~# ls1970-01-01T00-03-20.184Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 1 submit #6200
+]0;root: /home/rootroot:~# ls 1970-01-01T00-03-20.212Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 1 event #6200 cc 1 left 0
+]0;root: /home/rootroot:~# ls /]0;root: /home/rootroot:~# ls /s]0;root: /home/rootroot:~# ls /sc1970-01-01T00-03-20.682Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 2 submit #6100
+1970-01-01T00-03-20.700Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 2 event #6100 cc 13 left 3
+]0;root: /home/rootroot:~# ls /sch]0;root: /home/rootroot:~# ls /sche]0;root: /home/rootroot:~# ls /schem]0;root: /home/rootroot:~# ls /scheme1970-01-01T00-03-21.329Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 1 submit #6300
+1970-01-01T00-03-21.359Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 1 event #6300 cc 1 left 0
+]0;root: /home/rootroot:~# ls /scheme/]0;root: /home/rootroot:~# ls /scheme/
+1970-01-01T00-03-21.650Z [@inputd:275 ERROR] invalid path ''
+removing handle: id: 4, Some(List([48, 10]))
+chan	   icmp		logging	 rand	       time
+debug	   initfs	memory	 rpi-firmware  udp
+disk.live  input	netcfg	 serio	       uds_dgram
+event	   ip		null	 shm	       uds_stream
+fbcon.2	   irq		pci	 spi	       usb.pci-0000-01-00.0_xhci
+file	   kernel.acpi	pipe	 sudo	       zero
+gpio	   kernel.dtb	proc	 sys
+i2c	   log		pty	 tcp
+⏎                                                                                ]0;root: /home/rootroot:~# ]0;root: /home/rootroot:~# 1970-01-01T00-03-21.799Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 2 submit #6200
+1970-01-01T00-03-21.817Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 2 event #6200 cc 13 left 3
+1970-01-01T00-03-22.456Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 1 submit #6400
+1970-01-01T00-03-22.486Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 1 event #6400 cc 1 left 0
+1970-01-01T00-03-22.957Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 2 submit #6300
+1970-01-01T00-03-22.984Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 2 event #6300 cc 13 left 3
+1970-01-01T00-03-23.584Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 1 submit #6500
+1970-01-01T00-03-23.613Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 1 event #6500 cc 1 left 0
+1970-01-01T00-03-24.074Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 2 submit #6400
+1970-01-01T00-03-24.092Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 2 event #6400 cc 13 left 3
+1970-01-01T00-03-24.731Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 1 submit #6600
+1970-01-01T00-03-24.760Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 1 event #6600 cc 1 left 0
+1970-01-01T00-03-25.211Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 2 submit #6500
+1970-01-01T00-03-25.241Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 2 event #6500 cc 13 left 3
+1970-01-01T00-03-25.851Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 1 submit #6700
+1970-01-01T00-03-25.881Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 1 event #6700 cc 1 left 0
+1970-01-01T00-03-26.351Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 2 submit #6600
+1970-01-01T00-03-26.381Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 2 event #6600 cc 13 left 3
+1970-01-01T00-03-26.701Z [@usbhidd:431 INFO] usb-trace: port 1.4 iface 0 reports 6771
+1970-01-01T00-03-26.710Z [@usbhidd:431 INFO] usb-trace: port 1.4 iface 1 reports 6623
+1970-01-01T00-03-27.018Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 1 submit #6800
+1970-01-01T00-03-27.047Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 1 event #6800 cc 1 left 0
+1970-01-01T00-03-27.548Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 2 submit #6700
+1970-01-01T00-03-27.578Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 2 event #6700 cc 13 left 3
+1970-01-01T00-03-28.158Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 1 submit #6900
+1970-01-01T00-03-28.188Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 1 event #6900 cc 1 left 0
+1970-01-01T00-03-28.708Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 2 submit #6800
+1970-01-01T00-03-28.738Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 2 event #6800 cc 13 left 3
+1970-01-01T00-03-29.299Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 1 submit #7000
+1970-01-01T00-03-29.328Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 1 event #7000 cc 1 left 0
+1970-01-01T00-03-29.839Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 2 submit #6900
+1970-01-01T00-03-29.868Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 2 event #6900 cc 13 left 3
+1970-01-01T00-03-30.419Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 1 submit #7100
+1970-01-01T00-03-30.448Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 1 event #7100 cc 1 left 0
+1970-01-01T00-03-30.949Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 2 submit #7000
+1970-01-01T00-03-30.979Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 2 event #7000 cc 13 left 3
+1970-01-01T00-03-31.509Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 1 submit #7200
+1970-01-01T00-03-31.548Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 1 event #7200 cc 1 left 0
+1970-01-01T00-03-32.089Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 2 submit #7100
+1970-01-01T00-03-32.118Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 2 event #7100 cc 13 left 3
+1970-01-01T00-03-32.620Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 1 submit #7300
+1970-01-01T00-03-32.649Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 1 event #7300 cc 1 left 0
+1970-01-01T00-03-33.229Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 2 submit #7200
+1970-01-01T00-03-33.259Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 2 event #7200 cc 13 left 3
+1970-01-01T00-03-33.750Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 1 submit #7400
+1970-01-01T00-03-33.779Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 1 event #7400 cc 1 left 0
+1970-01-01T00-03-34.350Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 2 submit #7300
+1970-01-01T00-03-34.379Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 2 event #7300 cc 13 left 3
+1970-01-01T00-03-34.880Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 1 submit #7500
+1970-01-01T00-03-34.909Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 1 event #7500 cc 1 left 0
+1970-01-01T00-03-35.480Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 2 submit #7400
+1970-01-01T00-03-35.509Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 2 event #7400 cc 13 left 3
+1970-01-01T00-03-36.000Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 1 submit #7600
+1970-01-01T00-03-36.029Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 1 event #7600 cc 1 left 0
+1970-01-01T00-03-36.600Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 2 submit #7500
+1970-01-01T00-03-36.629Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 2 event #7500 cc 13 left 3
+1970-01-01T00-03-36.720Z [@usbhidd:431 INFO] usb-trace: port 1.4 iface 0 reports 7663
+1970-01-01T00-03-36.736Z [@usbhidd:431 INFO] usb-trace: port 1.4 iface 1 reports 7505
+1970-01-01T00-03-37.138Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 1 submit #7700
+1970-01-01T00-03-37.168Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 1 event #7700 cc 1 left 0
+1970-01-01T00-03-37.788Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 2 submit #7600
+1970-01-01T00-03-37.818Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 2 event #7600 cc 13 left 3
+1970-01-01T00-03-38.279Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 1 submit #7800
+1970-01-01T00-03-38.308Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 1 event #7800 cc 1 left 0
+1970-01-01T00-03-38.949Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 2 submit #7700
+1970-01-01T00-03-38.988Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 2 event #7700 cc 13 left 3
+1970-01-01T00-03-39.419Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 1 submit #7900
+1970-01-01T00-03-39.448Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 1 event #7900 cc 1 left 0
+1970-01-01T00-03-40.099Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 2 submit #7800
+1970-01-01T00-03-40.128Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 2 event #7800 cc 13 left 3
+1970-01-01T00-03-40.540Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 1 submit #8000
+1970-01-01T00-03-40.569Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 1 event #8000 cc 1 left 0
+1970-01-01T00-03-41.220Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 2 submit #7900
+1970-01-01T00-03-41.249Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 2 event #7900 cc 13 left 3
+1970-01-01T00-03-41.659Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 1 submit #8100
+1970-01-01T00-03-41.689Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 1 event #8100 cc 1 left 0
+1970-01-01T00-03-42.350Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 2 submit #8000
+1970-01-01T00-03-42.379Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 2 event #8000 cc 13 left 3
+1970-01-01T00-03-42.780Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 1 submit #8200
+1970-01-01T00-03-42.809Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 1 event #8200 cc 1 left 0
+1970-01-01T00-03-43.470Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 2 submit #8100
+1970-01-01T00-03-43.500Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 2 event #8100 cc 13 left 3
+1970-01-01T00-03-43.900Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 1 submit #8300
+1970-01-01T00-03-43.929Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 1 event #8300 cc 1 left 0
+1970-01-01T00-03-44.630Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 2 submit #8200
+1970-01-01T00-03-44.660Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 2 event #8200 cc 13 left 3
+1970-01-01T00-03-45.000Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 1 submit #8400
+1970-01-01T00-03-45.019Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 1 event #8400 cc 1 left 0
+1970-01-01T00-03-45.781Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 2 submit #8300
+1970-01-01T00-03-45.810Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 2 event #8300 cc 13 left 3
+1970-01-01T00-03-46.150Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 1 submit #8500
+1970-01-01T00-03-46.180Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 1 event #8500 cc 1 left 0
+1970-01-01T00-03-46.741Z [@usbhidd:431 INFO] usb-trace: port 1.4 iface 0 reports 8550
+1970-01-01T00-03-46.758Z [@usbhidd:431 INFO] usb-trace: port 1.4 iface 1 reports 8382
+1970-01-01T00-03-46.919Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 2 submit #8400
+1970-01-01T00-03-46.949Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 2 event #8400 cc 13 left 3
+1970-01-01T00-03-47.289Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 1 submit #8600
+1970-01-01T00-03-47.311Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 1 event #8600 cc 1 left 0
+1970-01-01T00-03-48.070Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 2 submit #8500
+1970-01-01T00-03-48.109Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 2 event #8500 cc 13 left 3
+1970-01-01T00-03-48.409Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 1 submit #8700
+1970-01-01T00-03-48.439Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 1 event #8700 cc 1 left 0
+1970-01-01T00-03-49.220Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 2 submit #8600
+1970-01-01T00-03-49.249Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 2 event #8600 cc 13 left 3
+1970-01-01T00-03-49.520Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 1 submit #8800
+1970-01-01T00-03-49.549Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 1 event #8800 cc 1 left 0
+1970-01-01T00-03-50.330Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 2 submit #8700
+1970-01-01T00-03-50.359Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 2 event #8700 cc 13 left 3
+1970-01-01T00-03-50.640Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 1 submit #8900
+1970-01-01T00-03-50.669Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 1 event #8900 cc 1 left 0
+1970-01-01T00-03-51.470Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 2 submit #8800
+1970-01-01T00-03-51.499Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 2 event #8800 cc 13 left 3
+1970-01-01T00-03-51.750Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 1 submit #9000
+1970-01-01T00-03-51.779Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 1 event #9000 cc 1 left 0
+1970-01-01T00-03-52.600Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 2 submit #8900
+1970-01-01T00-03-52.630Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 2 event #8900 cc 13 left 3
+1970-01-01T00-03-52.870Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 1 submit #9100
+1970-01-01T00-03-52.900Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 1 event #9100 cc 1 left 0
+1970-01-01T00-03-53.711Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 2 submit #9000
+1970-01-01T00-03-53.740Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 2 event #9000 cc 13 left 3
+1970-01-01T00-03-54.001Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 1 submit #9200
+1970-01-01T00-03-54.030Z [@xhcid::xhci::scheme:3028 INFO] usb-trace: port 1.4 ep 1 event #9200 cc 1 left 0
+1970-01-01T00-03-54.841Z [@xhcid::xhci::scheme:3029 INFO] usb-trace: port 1.4 ep 2 submit #91

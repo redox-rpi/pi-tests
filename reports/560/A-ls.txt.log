@@ -1,0 +1,4 @@
+]0;root: /home/rootroot:~# 
+⏎                                                                                ]0;root: /home/rootroot:~# ]0;root: /home/rootroot:~# ]0;root: /home/rootroot:~# l]0;root: /home/rootroot:~# ls]0;root: /home/rootroot:~# ls ]0;root: /home/rootroot:~# ls /]0;root: /home/rootroot:~# ls /s]0;root: /home/rootroot:~# ls /sc]0;root: /home/rootroot:~# ls /sch]0;root: /home/rootroot:~# ls /sche]0;root: /home/rootroot:~# ls /schem]0;root: /home/rootroot:~# ls /scheme]0;root: /home/rootroot:~# ls /scheme/]0;root: /home/rootroot:~# ls /scheme/
+1970-01-01T00-02-30.530Z [@inputd:275 ERROR] invalid path ''
+removing handle: id: 4, Some(List([48, 10]))

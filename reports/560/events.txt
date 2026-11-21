@@ -1,0 +1,21 @@
+B start 15:13:33
+staged /home/zehrer/redox-rpi-pi400/keep/usbtrace-nb-after-0020-stage (build_id = "v0.6.0-dev-127-g5e48dca1+x1cc4-dirty.767208cece2d") 15:13:33
+U-Boot prompt (load failed), typing boot (1) 15:14:39
+U-Boot prompt (load failed), typing boot (2) 15:15:19
+boot: login, U-Boot retries 2, banner: redox-rpi v0.6.0-dev-127-g5e48dca1+x1cc4-dirty.767208cece2d (netboot, 2026-11-20T16:50:27Z) 15:16:04
+serial B-ps done 15:17:00
+B ls did NOT return within 30 s (rc 124) 15:17:45
+B HID: "USB Optical Mouse" serial "";"Raspberry Pi Internal Keyboard" serial "";"Raspberry Pi Internal Keyboard" serial ""; relibc=0 unhandled=0 panic=0 15:17:50
+B console stuck; needs a person 15:17:50
+staged /home/zehrer/redox-rpi-graphics/keep/pi400-fbshot-stage (build_id = "v0.6.0-dev-105-gbef6d90a+xcf2a") 15:17:50
+row 501 image staged for the person's restart 15:17:50
+A start 15:29:14
+staged /home/zehrer/redox-rpi-pi400/keep/usbtrace-nb-before-stage (build_id = "v0.6.0-dev-121-g12f950bc+x1cc4-dirty.767208cece2d") 15:29:14
+U-Boot prompt (load failed), typing boot (1) 15:30:44
+boot: login, U-Boot retries 1, banner: redox-rpi v0.6.0-dev-121-g12f950bc+x1cc4-dirty.767208cece2d (netboot, 2026-11-20T16:30:21Z) 15:31:20
+serial A-ps done 15:31:56
+A ls did NOT return within 30 s (rc 0) 15:32:30
+A HID: "USB Optical Mouse" serial ""; relibc=0 unhandled=0 panic=0 15:32:35
+A console stuck; needs a person 15:32:35
+staged /home/zehrer/redox-rpi-graphics/keep/pi400-fbshot-stage (build_id = "v0.6.0-dev-105-gbef6d90a+xcf2a") 15:32:35
+row 501 image staged for the person's restart 15:32:35
