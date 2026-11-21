@@ -1,0 +1,2 @@
+### echo -n all > /scheme/network.usb_lan78xx/multicast  (0.2 s)
+

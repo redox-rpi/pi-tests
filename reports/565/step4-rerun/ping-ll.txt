@@ -1,0 +1,4 @@
+reply from fe80::<pi-iid> seq=0 time=0.77 ms
+reply from fe80::<pi-iid> seq=1 time=1.07 ms
+reply from fe80::<pi-iid> seq=2 time=1.09 ms
+3 sent, 3 received

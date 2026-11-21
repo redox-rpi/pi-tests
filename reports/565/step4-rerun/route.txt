@@ -1,0 +1,9 @@
+### cat /scheme/netcfg/route/list  (0.4 s)
+default via <lan-ip> dev eth0 src <lan-ip>
+224.0.0.0/4  dev eth0 src <lan-ip>
+ff00::/8  dev eth0 src fe80::<pi-iid>
+127.0.0.0/8  dev loopback src 127.0.0.1
+<lan-ip>/24  dev eth0 src <lan-ip>
+<ula-prefix>::/64  dev eth0 src <ula-prefix>:0:<pi-iid>
+fe80::/64  dev eth0 src fe80::<pi-iid>
+::1/128  dev loopback src ::1

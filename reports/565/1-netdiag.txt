@@ -1,0 +1,54 @@
+### netdiag  (0.3 s)
+cpu/[kmain] 0
+cpu/audiod 41
+cpu/bcm2835-gpiod 0
+cpu/bcm2835-i2cd 0
+cpu/bcm2835-pwmau 45
+cpu/bcm2835-sdhos 15
+cpu/bcm2835-spid 0
+cpu/devshd 0
+cpu/dhcpd 1
+cpu/dwc2d 422
+cpu/fbbootlogd 13
+cpu/fbcond 1
+cpu/getty 54
+cpu/init 17
+cpu/initfs 3
+cpu/initnsmgr 19
+cpu/inputd 0
+cpu/ion 2
+cpu/ipcd 0
+cpu/lived 7
+cpu/logd 29
+cpu/login 56
+cpu/netstack 10
+cpu/procmgr 18
+cpu/ptyd 3
+cpu/ramfs 0
+cpu/randd 0
+cpu/redoxfs 111
+cpu/rpi-firmwared 18
+cpu/sudo 0
+cpu/timesync 1
+cpu/udsd 0
+cpu/vesad 10
+cpu/zerod 0
+irq/3 6845
+irq/50 531
+netcfg/eth0/addr/list <lan-ip>/24 fe80::<pi-iid>/64
+netcfg/eth0/mac <pi-mac>
+netcfg/route default via <lan-ip> dev eth0 src <lan-ip>; 224.0.0.0/4  dev eth0 src <lan-ip>; ff00::/8  dev eth0 src fe80::<pi-iid>; 127.0.0.0/8  dev loopback src 127.0.0.1; <lan-ip>/24  dev eth0 src <lan-ip>; fe80::/64  dev eth0 src fe80::<pi-iid>; ::1/128  dev loopback src ::1
+network.usb_lan78xx/adapter_3 lan7800 link 1 active
+network.usb_lan78xx/adapters 1
+network.usb_lan78xx/irqs 531
+network.usb_lan78xx/rx_errors 0
+network.usb_lan78xx/rx_frames 536
+network.usb_lan78xx/rx_last_error 0x0
+network.usb_lan78xx/rx_last_ms 63938
+network.usb_lan78xx/ticks 1576
+network.usb_lan78xx/tx_errors 0
+network.usb_lan78xx/tx_frames 62
+network.usb_lan78xx/tx_last_error 0x0
+network.usb_lan78xx/tx_last_ms 63937
+network.usb_lan78xx/uptime_ms 63966
+time_ms 1795272387610

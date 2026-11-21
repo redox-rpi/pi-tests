@@ -1,0 +1,2 @@
+### echo -n all > /scheme/network.usb/multicast  (6.0 s)
+ion: pipeline execution error: failed to redirect stdout to file '/scheme/network.usb/multicast': No such device (os error 19)

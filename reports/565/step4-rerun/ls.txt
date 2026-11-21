@@ -1,0 +1,2 @@
+### ls /scheme/network.usb_lan78xx  (0.4 s)
+/scheme/network.usb_lan78xx

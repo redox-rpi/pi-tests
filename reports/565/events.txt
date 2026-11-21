@@ -1,0 +1,38 @@
+start 14:40:46
+staged build_id = "v0.6.0-dev-133-g9b1ce300+x0a9d" 14:40:46
+boot: found after 20 s; banner redox-rpi v0.6.0-dev-133-g9b1ce300+x0a9d (netboot, 2026-11-21T00:51:01Z) 14:41:22
+no devsh (try 1), serial reboot 14:44:42
+found after 0 s
+devsh up 14:45:26
+step1 ll=fe80::<pi-iid> 14:46:29
+step2 3 sent, 3 received 14:46:32
+step3 min 1: <lan-ip>/24 fe80::<pi-iid>/64  14:47:33
+step3 min 2: <lan-ip>/24 fe80::<pi-iid>/64  14:48:35
+step3 min 3: <lan-ip>/24 fe80::<pi-iid>/64 <ula-prefix>:0:<pi-iid>/64  14:49:36
+step3 min 4: <lan-ip>/24 fe80::<pi-iid>/64 <ula-prefix>:0:<pi-iid>/64  14:50:38
+step3 min 5: <lan-ip>/24 fe80::<pi-iid>/64 <ula-prefix>:0:<pi-iid>/64  14:51:39
+step3 min 6: <lan-ip>/24 fe80::<pi-iid>/64 <ula-prefix>:0:<pi-iid>/64  14:52:41
+step3 min 7: <lan-ip>/24 fe80::<pi-iid>/64 <ula-prefix>:0:<pi-iid>/64  14:53:42
+step3 min 8: <lan-ip>/24 fe80::<pi-iid>/64 <ula-prefix>:0:<pi-iid>/64  14:54:44
+step3 min 9: <lan-ip>/24 fe80::<pi-iid>/64 <ula-prefix>:0:<pi-iid>/64  14:55:45
+step3 min 10: <lan-ip>/24 fe80::<pi-iid>/64 <ula-prefix>:0:<pi-iid>/64  14:56:47
+step3 min 11: <lan-ip>/24 fe80::<pi-iid>/64 <ula-prefix>:0:<pi-iid>/64  14:57:48
+step3 min 12: <lan-ip>/24 fe80::<pi-iid>/64 <ula-prefix>:0:<pi-iid>/64  14:58:50
+step4 filter off line: 0 14:59:00
+step4 min 1: <lan-ip>/24 fe80::<pi-iid>/64 <ula-prefix>:0:<pi-iid>/64  15:00:01
+step4 min 2: <lan-ip>/24 fe80::<pi-iid>/64 <ula-prefix>:0:<pi-iid>/64  15:01:03
+step4 min 3: <lan-ip>/24 fe80::<pi-iid>/64 <ula-prefix>:0:<pi-iid>/64  15:02:04
+step4 min 4:  15:04:04
+step4 min 5: <lan-ip>/24 fe80::<pi-iid>/64 <ula-prefix>:0:<pi-iid>/64  15:05:06
+step4 min 6: <lan-ip>/24 fe80::<pi-iid>/64 <ula-prefix>:0:<pi-iid>/64  15:06:07
+step4 min 7: <lan-ip>/24 fe80::<pi-iid>/64 <ula-prefix>:0:<pi-iid>/64  15:07:09
+step4 min 8: <lan-ip>/24 fe80::<pi-iid>/64 <ula-prefix>:0:<pi-iid>/64  15:08:10
+step4 min 9: <lan-ip>/24 fe80::<pi-iid>/64 <ula-prefix>:0:<pi-iid>/64  15:09:12
+step4 min 10: <lan-ip>/24 fe80::<pi-iid>/64 <ula-prefix>:0:<pi-iid>/64  15:10:13
+step4 min 11: <lan-ip>/24 fe80::<pi-iid>/64 <ula-prefix>:0:<pi-iid>/64  15:11:15
+step4 min 12: <lan-ip>/24 fe80::<pi-iid>/64 <ula-prefix>:0:<pi-iid>/64  15:12:17
+step4 ping 3 sent, 3 received 15:12:22
+relibc=0 unhandled=0 panic=0 15:12:22
+staged build_id = "v0.6.0-dev-115-gb972ccfd+x2d42" 15:12:22
+boot: found after 22 s; banner redox-rpi v0.6.0-dev-115-gb972ccfd+x2d42 (netboot, 2026-11-20T03:30:55Z) 15:13:00
+devsh up 15:13:02

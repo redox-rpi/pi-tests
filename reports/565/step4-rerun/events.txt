@@ -1,0 +1,24 @@
+start 15:13:51
+staged build_id = "v0.6.0-dev-133-g9b1ce300+x0a9d" 15:13:51
+boot: found after 20 s; banner redox-rpi v0.6.0-dev-133-g9b1ce300+x0a9d (netboot, 2026-11-21T00:51:01Z) 15:14:27
+devsh up 15:14:28
+ls: /scheme/network.usb_lan78xx  15:14:30
+start addr: <lan-ip>/24 fe80::<pi-iid>/64  15:14:31
+filter off:   serial line: dwc2d: LAN7800 multicast filter: 3 groups;dwc2d: LAN7800 multicast filter off, all multicast; 15:14:35
+min 1: <lan-ip>/24 fe80::<pi-iid>/64  15:15:37
+min 2: <lan-ip>/24 fe80::<pi-iid>/64  15:16:38
+min 3: <lan-ip>/24 fe80::<pi-iid>/64 <ula-prefix>:0:<pi-iid>/64  15:17:40
+min 4: <lan-ip>/24 fe80::<pi-iid>/64 <ula-prefix>:0:<pi-iid>/64  15:18:41
+min 5: <lan-ip>/24 fe80::<pi-iid>/64 <ula-prefix>:0:<pi-iid>/64  15:19:43
+min 6: <lan-ip>/24 fe80::<pi-iid>/64 <ula-prefix>:0:<pi-iid>/64  15:20:44
+min 7: <lan-ip>/24 fe80::<pi-iid>/64 <ula-prefix>:0:<pi-iid>/64  15:21:46
+min 8: <lan-ip>/24 fe80::<pi-iid>/64 <ula-prefix>:0:<pi-iid>/64  15:22:47
+min 9: <lan-ip>/24 fe80::<pi-iid>/64 <ula-prefix>:0:<pi-iid>/64  15:23:49
+min 10: <lan-ip>/24 fe80::<pi-iid>/64 <ula-prefix>:0:<pi-iid>/64  15:24:50
+min 11: <lan-ip>/24 fe80::<pi-iid>/64 <ula-prefix>:0:<pi-iid>/64  15:25:52
+min 12: <lan-ip>/24 fe80::<pi-iid>/64 <ula-prefix>:0:<pi-iid>/64  15:26:53
+ping 3 sent, 3 received 15:27:00
+relibc=0 unhandled=0 15:27:00
+staged build_id = "v0.6.0-dev-115-gb972ccfd+x2d42" 15:27:00
+boot: found after 20 s; banner redox-rpi v0.6.0-dev-115-gb972ccfd+x2d42 (netboot, 2026-11-20T03:30:55Z) 15:27:36
+devsh up 15:27:38
