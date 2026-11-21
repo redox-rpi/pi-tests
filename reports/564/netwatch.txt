@@ -1,0 +1,5 @@
+11:39:07 gw=DOWN shelly=ok
+11:40:57 gw=DOWN shelly=DOWN
+11:44:30 gw=DOWN shelly=ok
+11:53:10 (watcher fixed: ping missing on host, gateway now checked by TCP port 80; gw lines above are not valid)
+11:53:15 gw=ok shelly=ok

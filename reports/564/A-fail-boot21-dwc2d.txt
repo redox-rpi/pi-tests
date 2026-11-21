@@ -1,0 +1,14 @@
+dwc2d: controller at 0x3f980000, core id 0x4f54280a
+dwc2d: host mode, 8 channels
+dwc2d: device on root port, Full speed
+dwc2d: request [80, 06, 00, 01, 00, 00, 08, 00] to address 0 (max packet 8, Full speed) failed: Transfer(130)
+dwc2d: enumeration attempt 1 failed: Transfer(130), retrying
+dwc2d: device on root port, Full speed
+dwc2d: request [80, 06, 00, 01, 00, 00, 08, 00] to address 0 (max packet 8, Full speed) failed: Transfer(130)
+dwc2d: enumeration attempt 2 failed: Transfer(130), retrying
+dwc2d: device on root port, Full speed
+dwc2d: request [80, 06, 00, 01, 00, 00, 08, 00] to address 0 (max packet 8, Full speed) failed: Transfer(130)
+dwc2d: enumeration failed: Transfer(130)
+dwc2d: devices ready after 1851 ms
+dwc2d: network address b8:27:eb:08:e0:aa
+dwc2d: interrupt /scheme/irq/phandle-1/1,9

@@ -1,0 +1,8 @@
+dwc2d: controller at 0x3f980000, core id 0x4f54280a
+dwc2d: host mode, 8 channels
+dwc2d: root port empty: Timeout("device connect"), HPRT0 0x1000 GUSBCFG 0x20001400 GOTGCTL 0x1c0000; port power off and on (1/2)
+dwc2d: root port empty: Timeout("device connect"), HPRT0 0x1000 GUSBCFG 0x20001400 GOTGCTL 0x1c0000; port power off and on (2/2)
+dwc2d: nothing on the root port, HPRT0 0x1000 GUSBCFG 0x20001400 GOTGCTL 0x1c0000
+dwc2d: devices ready after 8087 ms
+dwc2d: network address b8:27:eb:08:e0:aa
+dwc2d: interrupt /scheme/irq/phandle-1/1,9

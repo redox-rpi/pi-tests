@@ -1,0 +1,6 @@
+dwc2d: controller at 0x3f980000, core id 0x4f54280a
+dwc2d: host mode, 8 channels
+dwc2d: nothing on the root port
+dwc2d: devices ready after 3060 ms
+dwc2d: network address b8:27:eb:08:e0:aa
+dwc2d: interrupt /scheme/irq/phandle-1/1,9
