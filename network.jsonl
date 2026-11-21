@@ -98,3 +98,5 @@
 {"date": "2026-11-19", "build": "v0.6.0-dev-107-gf04e0cca+x2d42", "source": "nightly", "kind": "soak", "minutes": 15, "pings": 90, "pings_lost": 0, "logins": 15, "logins_failed": 0, "losses": [], "ping": "tcp"}
 {"date": "2026-11-20", "build": "v0.6.0-dev-115-gb972ccfd+x2d42", "source": "nightly", "kind": "boot", "devsh_s": 0.5, "login_s": 5.5}
 {"date": "2026-11-20", "build": "v0.6.0-dev-115-gb972ccfd+x2d42", "source": "nightly", "kind": "soak", "minutes": 15, "pings": 90, "pings_lost": 0, "logins": 15, "logins_failed": 0, "losses": [], "ping": "tcp"}
+{"date": "2026-11-21", "build": "v0.6.0-dev-121-gf50a50c4+x2d42", "source": "nightly", "kind": "boot", "devsh_s": 0.5, "login_s": 6.0}
+{"date": "2026-11-21", "build": "v0.6.0-dev-121-gf50a50c4+x2d42", "source": "nightly", "kind": "soak", "minutes": 15, "pings": 90, "pings_lost": 0, "logins": 15, "logins_failed": 0, "losses": [], "ping": "tcp"}
