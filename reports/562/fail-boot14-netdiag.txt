@@ -1,0 +1,62 @@
+### serial login done
+### netdiag  (typing 1.1 s, total 1.4 s)
+root:~# nroot:~# neroot:~# netdhcpd: eth0: attempt 2: no offer: timed out
+root:~# netdroot:~# netdiroot:~# netdiaroot:~# netdiagroot:~# netdiag
+cpu/[kmain] 0
+cpu/audiod 70
+cpu/bcm2835-gpiod 0
+cpu/bcm2835-i2cd 0
+cpu/bcm2835-pwmau 81
+cpu/bcm2835-sdhos 16
+cpu/bcm2835-spid 0
+cpu/devshd 0
+cpu/dhcpd 2
+cpu/dwc2d 311
+cpu/fbbootlogd 9
+cpu/fbcond 1
+cpu/getty 67
+cpu/init 17
+cpu/initfs 3
+cpu/initnsmgr 20
+cpu/inputd 0
+cpu/ion 2
+cpu/ipcd 0
+cpu/lived 8
+cpu/logd 19
+cpu/login 54
+cpu/netstack 9
+cpu/procmgr 26
+cpu/ptyd 3
+cpu/ramfs 0
+cpu/randd 0
+cpu/redoxfs 102
+cpu/rpi-firmwared 30
+cpu/sudo 0
+cpu/timesync 3
+cpu/udsd 0
+cpu/vesad 4
+cpu/zerod 0
+irq/3 10760
+irq/98 23
+netcfg/eth0/addr/list Not configured
+netcfg/eth0/mac b8-27-eb-08-e0-aa
+netcfg/route 127.0.0.0/8  dev loopback src 127.0.0.1
+network.usb/adapters 0
+network.usb/irqs 0
+network.usb/rx_errors 0
+network.usb/rx_frames 0
+network.usb/rx_last_error 0x0
+network.usb/rx_last_ms 0
+network.usb/ticks 567
+network.usb/tx_errors 0
+network.usb/tx_frames 0
+network.usb/tx_last_error 0x0
+network.usb/tx_last_ms 0
+network.usb/uptime_ms 104284
+time_ms 1795223922054
+⏎                                                                                root:~# root:~# 
+### cat /scheme/netcfg/ifaces/eth0/addr/list  (typing 6.0 s, total 6.3 s)
+root:~# croot:~# caroot:~# catroot:~# cat root:~# cat /root:~# cat /sroot:~# cat /scroot:~# cat /schroot:~# cat /scheroot:~# cat /schemroot:~# cat /schemeroot:~# cat /scheme/root:~# cat /scheme/nroot:~# cat /scheme/neroot:~# cat /scheme/netroot:~# cat /scheme/netcroot:~# cat /scheme/netcfroot:~# cat /scheme/netcfgroot:~# cat /scheme/netcfg/root:~# cat /scheme/netcfg/iroot:~# cat /scheme/netcfg/ifroot:~# cat /scheme/netcfg/ifaroot:~# cat /scheme/netcfg/ifacroot:~# cat /scheme/netcfg/ifaceroot:~# cat /scheme/netcfg/ifacesroot:~# cat /scheme/netcfg/ifaces/root:~# cat /scheme/netcfg/ifaces/eroot:~# cat /scheme/netcfg/ifaces/etroot:~# cat /scheme/netcfg/ifaces/ethroot:~# cat /scheme/netcfg/ifaces/eth0dhcpd: eth0: attempt 3: no offer: timed out
+root:~# cat /scheme/netcfg/ifaces/eth0/root:~# cat /scheme/netcfg/ifaces/eth0/aroot:~# cat /scheme/netcfg/ifaces/eth0/adroot:~# cat /scheme/netcfg/ifaces/eth0/addroot:~# cat /scheme/netcfg/ifaces/eth0/addrroot:~# cat /scheme/netcfg/ifaces/eth0/addr/root:~# cat /scheme/netcfg/ifaces/eth0/addr/lroot:~# cat /scheme/netcfg/ifaces/eth0/addr/liroot:~# cat /scheme/netcfg/ifaces/eth0/addr/lisroot:~# cat /scheme/netcfg/ifaces/eth0/addr/listroot:~# cat /scheme/netcfg/ifaces/eth0/addr/list
+Not configured
+⏎                                                                                root:~# root:~# 

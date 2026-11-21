@@ -1,0 +1,63 @@
+start 01:04:09
+staged build_id = "v0.6.0-dev-133-g9b1ce300+x9f05" 01:04:09
+boot: found after 20 s; banner redox-rpi v0.6.0-dev-133-g9b1ce300+x9f05 (netboot, 2026-11-21T00:47:14Z) 01:04:46
+devsh up 01:04:47
+boot 1: devsh after 23+5 s; noffer=0 relibc=0 unhandled=0 01:05:30
+boot 2: devsh after 26+5 s; noffer=0 relibc=0 unhandled=0 01:06:15
+boot 3: devsh after 23+5 s; noffer=0 relibc=0 unhandled=0 01:06:57
+boot 4: devsh after 22+5 s; noffer=0 relibc=0 unhandled=0 01:07:38
+boot 5: devsh after 23+5 s; noffer=0 relibc=0 unhandled=0 01:08:20
+boot 6: devsh after 31+5 s; noffer=0 relibc=0 unhandled=0 01:09:11
+boot 7: devsh after 22+5 s; noffer=0 relibc=0 unhandled=0 01:09:52
+boot 8: NO devsh within 120 s 01:12:08
+boot 8 fail: linkup=0 noffer=9 got=0 01:12:45
+found after 35 s
+recovered 01:13:25
+boot 9: devsh after 26+5 s; noffer=0 relibc=0 unhandled=0 01:14:11
+boot 10: devsh after 22+5 s; noffer=0 relibc=0 unhandled=0 01:14:52
+boot 11: devsh after 23+5 s; noffer=0 relibc=0 unhandled=0 01:15:34
+boot 12: devsh after 30+5 s; noffer=0 relibc=0 unhandled=0 01:16:23
+boot 13: devsh after 23+5 s; noffer=0 relibc=0 unhandled=0 01:17:05
+boot 14: NO devsh within 120 s 01:19:21
+boot 14 fail: linkup=0 noffer=9 got=0 01:19:38
+found after 34 s
+recovered 01:20:17
+boot 15: NO devsh within 120 s 01:22:33
+boot 15 fail: linkup=0 noffer=9 got=0 01:22:50
+found after 32 s
+recovered 01:23:27
+boot 16: devsh after 36+5 s; noffer=0 relibc=0 unhandled=0 01:24:22
+boot 17: devsh after 22+5 s; noffer=0 relibc=0 unhandled=0 01:25:03
+boot 18: devsh after 23+5 s; noffer=0 relibc=0 unhandled=0 01:25:45
+boot 19: NO devsh within 120 s 01:28:01
+boot 19 fail: linkup=0 noffer=9 got=0 01:28:38
+found after 32 s
+recovered 01:29:15
+boot 20: devsh after 23+5 s; noffer=0 relibc=0 unhandled=0 01:29:57
+boot 21: NO devsh within 120 s 01:32:16
+boot 21 fail: linkup=0 noffer=9 got=0 01:32:33
+found after 32 s
+power cycle 01:37:47
+found after 0 s
+recovered 01:38:24
+boot 22: NO devsh within 120 s 01:40:40
+boot 22 fail: linkup=0 noffer=9 got=0 01:40:57
+found after 32 s
+recovered 01:41:34
+boot 23: NO devsh within 120 s 01:43:51
+boot 23 fail: linkup=0 noffer=9 got=0 01:44:08
+found after 34 s
+recovered 01:44:47
+boot 24: devsh after 27+5 s; noffer=0 relibc=0 unhandled=0 01:45:33
+boot 25: devsh after 22+5 s; noffer=0 relibc=0 unhandled=0 01:46:14
+boot 26: devsh after 23+5 s; noffer=0 relibc=0 unhandled=0 01:46:56
+boot 27: devsh after 22+5 s; noffer=0 relibc=0 unhandled=0 01:47:37
+boot 28: devsh after 23+5 s; noffer=0 relibc=0 unhandled=0 01:48:19
+boot 29: NO devsh within 120 s 01:50:35
+boot 29 fail: linkup=0 noffer=9 got=0 01:50:53
+found after 34 s
+recovered 01:51:32
+boot 30: devsh after 22+5 s; noffer=0 relibc=0 unhandled=0 01:52:13
+devsh within 120 s: 22/30 01:52:13
+staged build_id = "v0.6.0-dev-115-gb972ccfd+x2d42" 01:52:14
+boot: found after 20 s; banner redox-rpi v0.6.0-dev-115-gb972ccfd+x2d42 (netboot, 2026-11-20T03:30:55Z) 01:52:50
