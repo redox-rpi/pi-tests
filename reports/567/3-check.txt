@@ -1,0 +1,10 @@
+### ls -l /usr/bin/nano  (0.4 s)
+-rwxr-xr-x 1 root root 402072 Jan  1  1970 /usr/bin/nano
+### nano --version  (0.3 s)
+GNU nano, version 9.2
+(C) 2026 the Free Software Foundation and various contributors
+Compiled options: --disable-libmagic --disable-nls --enable-utf8
+### pkg-persist list  (0.3 s)
+nano
+ncursesw
+terminfo

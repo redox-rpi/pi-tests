@@ -1,0 +1,22 @@
+start 17:12:28
+staged build_id = "v0.6.0-dev-134-g8d83738f+xb170" 17:12:28
+boot: found after 20 s; banner redox-rpi v0.6.0-dev-134-g8d83738f+xb170 (netboot, 2026-11-21T15:40:25Z) 17:13:04
+no devsh (try 1, USB fault #576?), serial reboot 17:16:22
+found after 0 s
+devsh up 17:17:05
+step1 date: Sat Nov 21 17:17:26 UTC 2026 17:17:27
+step2 install rc=0: Committing changes [100%] [00:00:02] [==============================================] 209/209 (0s) Commit complete. pkg-persist: 207 files copied into /, 2 kept from the image (1903 ms)  17:18:02
+step2 nano: GNU nano, version 9.2 17:18:04
+boot: found after 20 s; banner redox-rpi v0.6.0-dev-134-g8d83738f+xb170 (netboot, 2026-11-21T15:40:25Z) 17:18:40
+devsh up 17:18:41
+step3 copy line: experiments: netstack-watch pkg-hold pkg-persist rtl8152 timesync; 17:18:41
+step3 nano: GNU nano, version 9.2 17:18:53
+step4 rc=0: Commit complete. pkg-persist: removed from /scheme/data/pkg; the copies in / stay until the next reset    17:18:59
+relibc=0 unhandled=0 17:18:59
+staged build_id = "v0.6.0-dev-115-gb972ccfd+x2d42" 17:18:59
+boot: found after 20 s; banner redox-rpi v0.6.0-dev-115-gb972ccfd+x2d42 (netboot, 2026-11-20T03:30:55Z) 17:19:35
+no devsh (try 1, USB fault #576?), serial reboot 17:22:57
+found after 0 s
+no devsh (try 2, USB fault #576?), serial reboot 17:26:24
+found after 0 s
+devsh up 17:27:10
