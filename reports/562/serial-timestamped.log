@@ -459,7 +459,7 @@
 01:04:44.519 dwc2d: link up on the LAN7800 at address 3
 01:04:44.529 dwc2d: devices ready after 4306 ms
 01:04:44.529 dwc2d: network on the adapter at address 3
-01:04:44.529 dwc2d: network address b8:27:eb:08:e0:aa
+01:04:44.529 dwc2d: network address <pi-mac>
 01:04:44.540 kernel::scheme::irq:DEBUG -- open_phandle_irq  virq=50
 01:04:44.540 dwc2d: interrupt /scheme/irq/phandle-1/1,9
 01:04:44.550 kernel::scheme::user:DEBUG -- call_fdread: payload: 8 metadata: 2
@@ -964,7 +964,7 @@
 01:05:22.759 dwc2d: link up on the LAN7800 at address 3
 01:05:22.759 dwc2d: devices ready after 4254 ms
 01:05:22.759 dwc2d: network on the adapter at address 3
-01:05:22.769 dwc2d: network address b8:27:eb:08:e0:aa
+01:05:22.769 dwc2d: network address <pi-mac>
 01:05:22.769 kernel::scheme::irq:DEBUG -- open_phandle_irq  virq=50
 01:05:22.780 dwc2d: interrupt /scheme/irq/phandle-1/1,9
 01:05:22.780 kernel::scheme::user:DEBUG -- call_fdread: payload: 8 metadata: 2
@@ -1467,7 +1467,7 @@
 01:06:07.369 dwc2d: link up on the LAN7800 at address 3
 01:06:07.380 dwc2d: devices ready after 4254 ms
 01:06:07.380 dwc2d: network on the adapter at address 3
-01:06:07.380 dwc2d: network address b8:27:eb:08:e0:aa
+01:06:07.380 dwc2d: network address <pi-mac>
 01:06:07.390 kernel::scheme::irq:DEBUG -- open_phandle_irq  virq=50
 01:06:07.390 dwc2d: interrupt /scheme/irq/phandle-1/1,9
 01:06:07.401 kernel::scheme::user:DEBUG -- call_fdread: payload: 8 metadata: 2
@@ -1971,7 +1971,7 @@
 01:06:50.250 dwc2d: link up on the LAN7800 at address 3
 01:06:50.261 dwc2d: devices ready after 4306 ms
 01:06:50.261 dwc2d: network on the adapter at address 3
-01:06:50.261 dwc2d: network address b8:27:eb:08:e0:aa
+01:06:50.261 dwc2d: network address <pi-mac>
 01:06:50.271 kernel::scheme::irq:DEBUG -- open_phandle_irq  virq=50
 01:06:50.282 dwc2d: interrupt /scheme/irq/phandle-1/1,9
 01:06:50.282 kernel::scheme::user:DEBUG -- call_fdread: payload: 8 metadata: 2
@@ -2475,7 +2475,7 @@
 01:07:31.793 dwc2d: link up on the LAN7800 at address 3
 01:07:31.793 dwc2d: devices ready after 4254 ms
 01:07:31.793 dwc2d: network on the adapter at address 3
-01:07:31.804 dwc2d: network address b8:27:eb:08:e0:aa
+01:07:31.804 dwc2d: network address <pi-mac>
 01:07:31.804 kernel::scheme::irq:DEBUG -- open_phandle_irq  virq=50
 01:07:31.814 dwc2d: interrupt /scheme/irq/phandle-1/1,9
 01:07:31.814 kernel::scheme::user:DEBUG -- call_fdread: payload: 8 metadata: 2
@@ -2977,7 +2977,7 @@
 01:08:13.428 dwc2d: link up on the LAN7800 at address 3
 01:08:13.439 dwc2d: devices ready after 4358 ms
 01:08:13.439 dwc2d: network on the adapter at address 3
-01:08:13.439 dwc2d: network address b8:27:eb:08:e0:aa
+01:08:13.439 dwc2d: network address <pi-mac>
 01:08:13.449 kernel::scheme::irq:DEBUG -- open_phandle_irq  virq=50
 01:08:13.450 dwc2d: interrupt /scheme/irq/phandle-1/1,9
 01:08:13.460 kernel::scheme::user:DEBUG -- call_fdread: payload: 8 metadata: 2
@@ -3482,7 +3482,7 @@
 01:08:55.733 dwc2d: link up on the LAN7800 at address 3
 01:08:55.734 dwc2d: devices ready after 4254 ms
 01:08:55.734 dwc2d: network on the adapter at address 3
-01:08:55.744 dwc2d: network address b8:27:eb:08:e0:aa
+01:08:55.744 dwc2d: network address <pi-mac>
 01:08:55.744 kernel::scheme::irq:DEBUG -- open_phandle_irq  virq=50
 01:08:55.754 dwc2d: interrupt /scheme/irq/phandle-1/1,9
 01:08:55.754 kernel::scheme::user:DEBUG -- call_fdread: payload: 8 metadata: 2
@@ -3985,7 +3985,7 @@
 01:09:45.380 dwc2d: link up on the LAN7800 at address 3
 01:09:45.380 dwc2d: devices ready after 4202 ms
 01:09:45.380 dwc2d: network on the adapter at address 3
-01:09:45.391 dwc2d: network address b8:27:eb:08:e0:aa
+01:09:45.391 dwc2d: network address <pi-mac>
 01:09:45.391 kernel::scheme::irq:DEBUG -- open_phandle_irq  virq=50
 01:09:45.401 dwc2d: interrupt /scheme/irq/phandle-1/1,9
 01:09:45.401 kernel::scheme::user:DEBUG -- call_fdread: payload: 8 metadata: 2
@@ -4464,7 +4464,7 @@
 01:10:22.781 dwc2d: host mode, 8 channels
 01:10:24.784 dwc2d: nothing on the root port
 01:10:25.789 dwc2d: devices ready after 3060 ms
-01:10:25.789 dwc2d: network address b8:27:eb:08:e0:aa
+01:10:25.789 dwc2d: network address <pi-mac>
 01:10:25.800 kernel::scheme::irq:DEBUG -- open_phandle_irq  virq=50
 01:10:25.800 dwc2d: interrupt /scheme/irq/phandle-1/1,9
 01:10:25.810 kernel::scheme::user:DEBUG -- call_fdread: payload: 8 metadata: 2
@@ -4572,7 +4572,7 @@
 01:12:33.080 irq/3 13054
 01:12:33.080 irq/98 23
 01:12:33.080 netcfg/eth0/addr/list Not configured
-01:12:33.080 netcfg/eth0/mac b8-27-eb-08-e0-aa
+01:12:33.080 netcfg/eth0/mac <pi-mac>
 01:12:33.090 netcfg/route 127.0.0.0/8  dev loopback src 127.0.0.1
 01:12:33.090 network.usb/adapters 0
 01:12:33.090 network.usb/irqs 0
@@ -4676,7 +4676,7 @@
 01:12:45.819 irq/3 14328
 01:12:45.819 irq/98 72
 01:12:45.819 netcfg/eth0/addr/list Not configured
-01:12:45.819 netcfg/eth0/mac b8-27-eb-08-e0-aa
+01:12:45.819 netcfg/eth0/mac <pi-mac>
 01:12:45.830 netcfg/route 127.0.0.0/8  dev loopback src 127.0.0.1
 01:12:45.830 network.usb/adapters 0
 01:12:45.830 network.usb/irqs 0
@@ -5162,7 +5162,7 @@
 01:13:21.178 dwc2d: link up on the LAN7800 at address 3
 01:13:21.188 dwc2d: devices ready after 4254 ms
 01:13:21.188 dwc2d: network on the adapter at address 3
-01:13:21.188 dwc2d: network address b8:27:eb:08:e0:aa
+01:13:21.188 dwc2d: network address <pi-mac>
 01:13:21.199 kernel::scheme::irq:DEBUG -- open_phandle_irq  virq=50
 01:13:21.209 dwc2d: interrupt /scheme/irq/phandle-1/1,9
 01:13:21.209 kernel::scheme::user:DEBUG -- call_fdread: payload: 8 metadata: 2
@@ -5666,7 +5666,7 @@
 01:14:02.518 dwc2d: link up on the LAN7800 at address 3
 01:14:02.518 dwc2d: devices ready after 4202 ms
 01:14:02.518 dwc2d: network on the adapter at address 3
-01:14:02.528 dwc2d: network address b8:27:eb:08:e0:aa
+01:14:02.528 dwc2d: network address <pi-mac>
 01:14:02.529 kernel::scheme::irq:DEBUG -- open_phandle_irq  virq=50
 01:14:02.539 dwc2d: interrupt /scheme/irq/phandle-1/1,9
 01:14:02.539 kernel::scheme::user:DEBUG -- call_fdread: payload: 8 metadata: 2
@@ -6169,7 +6169,7 @@
 01:14:45.336 dwc2d: link up on the LAN7800 at address 3
 01:14:45.347 dwc2d: devices ready after 4202 ms
 01:14:45.347 dwc2d: network on the adapter at address 3
-01:14:45.347 dwc2d: network address b8:27:eb:08:e0:aa
+01:14:45.347 dwc2d: network address <pi-mac>
 01:14:45.357 kernel::scheme::irq:DEBUG -- open_phandle_irq  virq=50
 01:14:45.357 dwc2d: interrupt /scheme/irq/phandle-1/1,9
 01:14:45.367 kernel::scheme::user:DEBUG -- call_fdread: payload: 8 metadata: 2
@@ -6672,7 +6672,7 @@
 01:15:26.996 dwc2d: link up on the LAN7800 at address 3
 01:15:26.996 dwc2d: devices ready after 4254 ms
 01:15:26.996 dwc2d: network on the adapter at address 3
-01:15:27.006 dwc2d: network address b8:27:eb:08:e0:aa
+01:15:27.006 dwc2d: network address <pi-mac>
 01:15:27.016 kernel::scheme::irq:DEBUG -- open_phandle_irq  virq=50
 01:15:27.016 dwc2d: interrupt /scheme/irq/phandle-1/1,9
 01:15:27.026 kernel::scheme::user:DEBUG -- call_fdread: payload: 8 metadata: 2
@@ -7175,7 +7175,7 @@
 01:16:08.499 dwc2d: link up on the LAN7800 at address 3
 01:16:08.499 dwc2d: devices ready after 4202 ms
 01:16:08.499 dwc2d: network on the adapter at address 3
-01:16:08.510 dwc2d: network address b8:27:eb:08:e0:aa
+01:16:08.510 dwc2d: network address <pi-mac>
 01:16:08.510 kernel::scheme::irq:DEBUG -- open_phandle_irq  virq=50
 01:16:08.520 dwc2d: interrupt /scheme/irq/phandle-1/1,9
 01:16:08.520 kernel::scheme::user:DEBUG -- call_fdread: payload: 8 metadata: 2
@@ -7678,7 +7678,7 @@
 01:16:57.987 dwc2d: link up on the LAN7800 at address 3
 01:16:57.987 dwc2d: devices ready after 4202 ms
 01:16:57.987 dwc2d: network on the adapter at address 3
-01:16:57.997 dwc2d: network address b8:27:eb:08:e0:aa
+01:16:57.997 dwc2d: network address <pi-mac>
 01:16:57.997 kernel::scheme::irq:DEBUG -- open_phandle_irq  virq=50
 01:16:58.007 dwc2d: interrupt /scheme/irq/phandle-1/1,9
 01:16:58.007 kernel::scheme::user:DEBUG -- call_fdread: payload: 8 metadata: 2
@@ -8158,7 +8158,7 @@
 01:17:38.133 dwc2d: host mode, 8 channels
 01:17:40.143 dwc2d: nothing on the root port
 01:17:41.139 dwc2d: devices ready after 3060 ms
-01:17:41.149 dwc2d: network address b8:27:eb:08:e0:aa
+01:17:41.149 dwc2d: network address <pi-mac>
 01:17:41.149 kernel::scheme::irq:DEBUG -- open_phandle_irq  virq=50
 01:17:41.149 dwc2d: interrupt /scheme/irq/phandle-1/1,9
 01:17:41.160 kernel::scheme::user:DEBUG -- call_fdread: payload: 8 metadata: 2
@@ -8264,7 +8264,7 @@
 01:19:25.496 irq/3 10760
 01:19:25.496 irq/98 23
 01:19:25.496 netcfg/eth0/addr/list Not configured
-01:19:25.506 netcfg/eth0/mac b8-27-eb-08-e0-aa
+01:19:25.506 netcfg/eth0/mac <pi-mac>
 01:19:25.506 netcfg/route 127.0.0.0/8  dev loopback src 127.0.0.1
 01:19:25.506 network.usb/adapters 0
 01:19:25.516 network.usb/irqs 0
@@ -8369,7 +8369,7 @@
 01:19:38.240 irq/3 12034
 01:19:38.240 irq/98 72
 01:19:38.240 netcfg/eth0/addr/list Not configured
-01:19:38.240 netcfg/eth0/mac b8-27-eb-08-e0-aa
+01:19:38.240 netcfg/eth0/mac <pi-mac>
 01:19:38.250 netcfg/route 127.0.0.0/8  dev loopback src 127.0.0.1
 01:19:38.250 network.usb/adapters 0
 01:19:38.250 network.usb/irqs 0
@@ -8855,7 +8855,7 @@
 01:20:13.713 dwc2d: link up on the LAN7800 at address 3
 01:20:13.723 dwc2d: devices ready after 4410 ms
 01:20:13.723 dwc2d: network on the adapter at address 3
-01:20:13.723 dwc2d: network address b8:27:eb:08:e0:aa
+01:20:13.723 dwc2d: network address <pi-mac>
 01:20:13.733 kernel::scheme::irq:DEBUG -- open_phandle_irq  virq=50
 01:20:13.744 dwc2d: interrupt /scheme/irq/phandle-1/1,9
 01:20:13.744 kernel::scheme::user:DEBUG -- call_fdread: payload: 8 metadata: 2
@@ -9344,7 +9344,7 @@
 01:20:49.606 dwc2d: request [80, 06, 00, 01, 00, 00, 08, 00] to address 0 (max packet 8, Full speed) failed: Transfer(130)
 01:20:49.606 dwc2d: enumeration failed: Transfer(130)
 01:20:50.612 dwc2d: devices ready after 1851 ms
-01:20:50.622 dwc2d: network address b8:27:eb:08:e0:aa
+01:20:50.622 dwc2d: network address <pi-mac>
 01:20:50.622 kernel::scheme::irq:DEBUG -- open_phandle_irq  virq=50
 01:20:50.622 dwc2d: interrupt /scheme/irq/phandle-1/1,9
 01:20:50.633 kernel::scheme::user:DEBUG -- call_fdread: payload: 8 metadata: 2
@@ -9450,7 +9450,7 @@
 01:22:37.622 irq/3 10907
 01:22:37.622 irq/98 23
 01:22:37.632 netcfg/eth0/addr/list Not configured
-01:22:37.632 netcfg/eth0/mac b8-27-eb-08-e0-aa
+01:22:37.632 netcfg/eth0/mac <pi-mac>
 01:22:37.632 netcfg/route 127.0.0.0/8  dev loopback src 127.0.0.1
 01:22:37.632 network.usb/adapters 0
 01:22:37.642 network.usb/irqs 0
@@ -9555,7 +9555,7 @@
 01:22:50.376 irq/3 12181
 01:22:50.376 irq/98 72
 01:22:50.376 netcfg/eth0/addr/list Not configured
-01:22:50.376 netcfg/eth0/mac b8-27-eb-08-e0-aa
+01:22:50.376 netcfg/eth0/mac <pi-mac>
 01:22:50.387 netcfg/route 127.0.0.0/8  dev loopback src 127.0.0.1
 01:22:50.387 network.usb/adapters 0
 01:22:50.387 network.usb/irqs 0
@@ -10040,7 +10040,7 @@
 01:23:25.143 dwc2d: link up on the LAN7800 at address 3
 01:23:25.143 dwc2d: devices ready after 4567 ms
 01:23:25.143 dwc2d: network on the adapter at address 3
-01:23:25.153 dwc2d: network address b8:27:eb:08:e0:aa
+01:23:25.153 dwc2d: network address <pi-mac>
 01:23:25.153 kernel::scheme::irq:DEBUG -- open_phandle_irq  virq=50
 01:23:25.164 dwc2d: interrupt /scheme/irq/phandle-1/1,9
 01:23:25.174 kernel::scheme::user:DEBUG -- call_fdread: payload: 8 metadata: 2
@@ -10545,7 +10545,7 @@
 01:24:05.789 dwc2d: link up on the LAN7800 at address 3
 01:24:05.789 dwc2d: devices ready after 4254 ms
 01:24:05.789 dwc2d: network on the adapter at address 3
-01:24:05.800 dwc2d: network address b8:27:eb:08:e0:aa
+01:24:05.800 dwc2d: network address <pi-mac>
 01:24:05.800 kernel::scheme::irq:DEBUG -- open_phandle_irq  virq=50
 01:24:05.810 dwc2d: interrupt /scheme/irq/phandle-1/1,9
 01:24:05.810 kernel::scheme::user:DEBUG -- call_fdread: payload: 8 metadata: 2
@@ -11048,7 +11048,7 @@
 01:24:56.741 dwc2d: link up on the LAN7800 at address 3
 01:24:56.741 dwc2d: devices ready after 4306 ms
 01:24:56.741 dwc2d: network on the adapter at address 3
-01:24:56.751 dwc2d: network address b8:27:eb:08:e0:aa
+01:24:56.751 dwc2d: network address <pi-mac>
 01:24:56.751 kernel::scheme::irq:DEBUG -- open_phandle_irq  virq=50
 01:24:56.762 dwc2d: interrupt /scheme/irq/phandle-1/1,9
 01:24:56.762 kernel::scheme::user:DEBUG -- call_fdread: payload: 8 metadata: 2
@@ -11551,7 +11551,7 @@
 01:25:38.227 dwc2d: link up on the LAN7800 at address 3
 01:25:38.238 dwc2d: devices ready after 4306 ms
 01:25:38.238 dwc2d: network on the adapter at address 3
-01:25:38.238 dwc2d: network address b8:27:eb:08:e0:aa
+01:25:38.238 dwc2d: network address <pi-mac>
 01:25:38.248 kernel::scheme::irq:DEBUG -- open_phandle_irq  virq=50
 01:25:38.248 dwc2d: interrupt /scheme/irq/phandle-1/1,9
 01:25:38.259 kernel::scheme::user:DEBUG -- call_fdread: payload: 8 metadata: 2
@@ -12031,7 +12031,7 @@
 01:26:15.648 dwc2d: host mode, 8 channels
 01:26:17.651 dwc2d: nothing on the root port
 01:26:18.658 dwc2d: devices ready after 3060 ms
-01:26:18.658 dwc2d: network address b8:27:eb:08:e0:aa
+01:26:18.658 dwc2d: network address <pi-mac>
 01:26:18.668 kernel::scheme::irq:DEBUG -- open_phandle_irq  virq=50
 01:26:18.668 dwc2d: interrupt /scheme/irq/phandle-1/1,9
 01:26:18.679 kernel::scheme::user:DEBUG -- call_fdread: payload: 8 metadata: 2
@@ -12139,7 +12139,7 @@
 01:28:25.339 irq/3 12993
 01:28:25.339 irq/98 23
 01:28:25.349 netcfg/eth0/addr/list Not configured
-01:28:25.349 netcfg/eth0/mac b8-27-eb-08-e0-aa
+01:28:25.349 netcfg/eth0/mac <pi-mac>
 01:28:25.349 netcfg/route 127.0.0.0/8  dev loopback src 127.0.0.1
 01:28:25.349 network.usb/adapters 0
 01:28:25.359 network.usb/irqs 0
@@ -12243,7 +12243,7 @@
 01:28:38.077 irq/3 14267
 01:28:38.077 irq/98 72
 01:28:38.088 netcfg/eth0/addr/list Not configured
-01:28:38.088 netcfg/eth0/mac b8-27-eb-08-e0-aa
+01:28:38.088 netcfg/eth0/mac <pi-mac>
 01:28:38.088 netcfg/route 127.0.0.0/8  dev loopback src 127.0.0.1
 01:28:38.088 network.usb/adapters 0
 01:28:38.098 network.usb/irqs 0
@@ -12727,7 +12727,7 @@
 01:29:12.591 dwc2d: link up on the LAN7800 at address 3
 01:29:12.601 dwc2d: devices ready after 4254 ms
 01:29:12.601 dwc2d: network on the adapter at address 3
-01:29:12.601 dwc2d: network address b8:27:eb:08:e0:aa
+01:29:12.601 dwc2d: network address <pi-mac>
 01:29:12.611 kernel::scheme::irq:DEBUG -- open_phandle_irq  virq=50
 01:29:12.611 dwc2d: interrupt /scheme/irq/phandle-1/1,9
 01:29:12.622 kernel::scheme::user:DEBUG -- call_fdread: payload: 8 metadata: 2
@@ -13230,7 +13230,7 @@
 01:29:49.920 dwc2d: link up on the LAN7800 at address 3
 01:29:49.930 dwc2d: devices ready after 4254 ms
 01:29:49.930 dwc2d: network on the adapter at address 3
-01:29:49.930 dwc2d: network address b8:27:eb:08:e0:aa
+01:29:49.930 dwc2d: network address <pi-mac>
 01:29:49.940 kernel::scheme::irq:DEBUG -- open_phandle_irq  virq=50
 01:29:49.951 dwc2d: interrupt /scheme/irq/phandle-1/1,9
 01:29:49.951 kernel::scheme::user:DEBUG -- call_fdread: payload: 8 metadata: 2
@@ -13710,7 +13710,7 @@
 01:30:27.300 dwc2d: host mode, 8 channels
 01:30:29.302 dwc2d: nothing on the root port
 01:30:30.301 dwc2d: devices ready after 3060 ms
-01:30:30.312 dwc2d: network address b8:27:eb:08:e0:aa
+01:30:30.312 dwc2d: network address <pi-mac>
 01:30:30.312 kernel::scheme::irq:DEBUG -- open_phandle_irq  virq=50
 01:30:30.312 dwc2d: interrupt /scheme/irq/phandle-1/1,9
 01:30:30.322 kernel::scheme::user:DEBUG -- call_fdread: payload: 8 metadata: 2
@@ -13817,7 +13817,7 @@
 01:32:20.826 irq/3 11378
 01:32:20.826 irq/98 23
 01:32:20.836 netcfg/eth0/addr/list Not configured
-01:32:20.836 netcfg/eth0/mac b8-27-eb-08-e0-aa
+01:32:20.836 netcfg/eth0/mac <pi-mac>
 01:32:20.836 netcfg/route 127.0.0.0/8  dev loopback src 127.0.0.1
 01:32:20.836 network.usb/adapters 0
 01:32:20.847 network.usb/irqs 0
@@ -13921,7 +13921,7 @@
 01:32:33.567 irq/3 12651
 01:32:33.567 irq/98 72
 01:32:33.567 netcfg/eth0/addr/list Not configured
-01:32:33.567 netcfg/eth0/mac b8-27-eb-08-e0-aa
+01:32:33.567 netcfg/eth0/mac <pi-mac>
 01:32:33.577 netcfg/route 127.0.0.0/8  dev loopback src 127.0.0.1
 01:32:33.577 network.usb/adapters 0
 01:32:33.577 network.usb/irqs 0
@@ -14381,7 +14381,7 @@
 01:33:03.887 dwc2d: host mode, 8 channels
 01:33:05.890 dwc2d: nothing on the root port
 01:33:06.888 dwc2d: devices ready after 3060 ms
-01:33:06.898 dwc2d: network address b8:27:eb:08:e0:aa
+01:33:06.898 dwc2d: network address <pi-mac>
 01:33:06.898 kernel::scheme::irq:DEBUG -- open_phandle_irq  virq=50
 01:33:06.898 dwc2d: interrupt /scheme/irq/phandle-1/1,9
 01:33:06.908 kernel::scheme::user:DEBUG -- call_fdread: payload: 8 metadata: 2
@@ -14902,7 +14902,7 @@
 01:38:21.954 dwc2d: link up on the LAN7800 at address 3
 01:38:21.964 dwc2d: devices ready after 4201 ms
 01:38:21.965 dwc2d: network on the adapter at address 3
-01:38:21.965 dwc2d: network address b8:27:eb:08:e0:aa
+01:38:21.965 dwc2d: network address <pi-mac>
 01:38:21.975 kernel::scheme::irq:DEBUG -- open_phandle_irq  virq=50
 01:38:21.975 dwc2d: interrupt /scheme/irq/phandle-1/1,9
 01:38:21.985 kernel::scheme::user:DEBUG -- call_fdread: payload: 8 metadata: 2
@@ -15381,7 +15381,7 @@
 01:38:54.400 dwc2d: host mode, 8 channels
 01:38:56.402 dwc2d: nothing on the root port
 01:38:57.408 dwc2d: devices ready after 3060 ms
-01:38:57.408 dwc2d: network address b8:27:eb:08:e0:aa
+01:38:57.408 dwc2d: network address <pi-mac>
 01:38:57.418 kernel::scheme::irq:DEBUG -- open_phandle_irq  virq=50
 01:38:57.419 dwc2d: interrupt /scheme/irq/phandle-1/1,9
 01:38:57.429 kernel::scheme::user:DEBUG -- call_fdread: payload: 8 metadata: 2
@@ -15488,7 +15488,7 @@
 01:40:44.689 irq/3 11055
 01:40:44.689 irq/98 23
 01:40:44.689 netcfg/eth0/addr/list Not configured
-01:40:44.699 netcfg/eth0/mac b8-27-eb-08-e0-aa
+01:40:44.699 netcfg/eth0/mac <pi-mac>
 01:40:44.699 netcfg/route 127.0.0.0/8  dev loopback src 127.0.0.1
 01:40:44.699 network.usb/adapters 0
 01:40:44.710 network.usb/irqs 0
@@ -15592,7 +15592,7 @@
 01:40:57.422 irq/3 12328
 01:40:57.422 irq/98 72
 01:40:57.432 netcfg/eth0/addr/list Not configured
-01:40:57.432 netcfg/eth0/mac b8-27-eb-08-e0-aa
+01:40:57.432 netcfg/eth0/mac <pi-mac>
 01:40:57.432 netcfg/route 127.0.0.0/8  dev loopback src 127.0.0.1
 01:40:57.432 network.usb/adapters 0
 01:40:57.443 network.usb/irqs 0
@@ -16076,7 +16076,7 @@
 01:41:31.838 dwc2d: link up on the LAN7800 at address 3
 01:41:31.848 dwc2d: devices ready after 4202 ms
 01:41:31.848 dwc2d: network on the adapter at address 3
-01:41:31.848 dwc2d: network address b8:27:eb:08:e0:aa
+01:41:31.848 dwc2d: network address <pi-mac>
 01:41:31.859 kernel::scheme::irq:DEBUG -- open_phandle_irq  virq=50
 01:41:31.859 dwc2d: interrupt /scheme/irq/phandle-1/1,9
 01:41:31.869 kernel::scheme::user:DEBUG -- call_fdread: payload: 8 metadata: 2
@@ -16556,7 +16556,7 @@
 01:42:05.124 dwc2d: host mode, 8 channels
 01:42:07.126 dwc2d: nothing on the root port
 01:42:08.129 dwc2d: devices ready after 3060 ms
-01:42:08.139 dwc2d: network address b8:27:eb:08:e0:aa
+01:42:08.139 dwc2d: network address <pi-mac>
 01:42:08.139 kernel::scheme::irq:DEBUG -- open_phandle_irq  virq=50
 01:42:08.139 dwc2d: interrupt /scheme/irq/phandle-1/1,9
 01:42:08.150 kernel::scheme::user:DEBUG -- call_fdread: payload: 8 metadata: 2
@@ -16663,7 +16663,7 @@
 01:43:55.357 irq/3 11049
 01:43:55.357 irq/98 23
 01:43:55.368 netcfg/eth0/addr/list Not configured
-01:43:55.368 netcfg/eth0/mac b8-27-eb-08-e0-aa
+01:43:55.368 netcfg/eth0/mac <pi-mac>
 01:43:55.368 netcfg/route 127.0.0.0/8  dev loopback src 127.0.0.1
 01:43:55.368 network.usb/adapters 0
 01:43:55.378 network.usb/irqs 0
@@ -16767,7 +16767,7 @@
 01:44:08.094 irq/3 12321
 01:44:08.094 irq/98 72
 01:44:08.094 netcfg/eth0/addr/list Not configured
-01:44:08.094 netcfg/eth0/mac b8-27-eb-08-e0-aa
+01:44:08.094 netcfg/eth0/mac <pi-mac>
 01:44:08.104 netcfg/route 127.0.0.0/8  dev loopback src 127.0.0.1
 01:44:08.104 network.usb/adapters 0
 01:44:08.104 network.usb/irqs 0
@@ -17256,7 +17256,7 @@
 01:44:43.769 dwc2d: link up on the LAN7800 at address 3
 01:44:43.769 dwc2d: devices ready after 4202 ms
 01:44:43.769 dwc2d: network on the adapter at address 3
-01:44:43.779 dwc2d: network address b8:27:eb:08:e0:aa
+01:44:43.779 dwc2d: network address <pi-mac>
 01:44:43.779 kernel::scheme::irq:DEBUG -- open_phandle_irq  virq=50
 01:44:43.790 dwc2d: interrupt /scheme/irq/phandle-1/1,9
 01:44:43.790 kernel::scheme::user:DEBUG -- call_fdread: payload: 8 metadata: 2
@@ -17760,7 +17760,7 @@
 01:45:24.814 dwc2d: link up on the LAN7800 at address 3
 01:45:24.814 dwc2d: devices ready after 4254 ms
 01:45:24.814 dwc2d: network on the adapter at address 3
-01:45:24.824 dwc2d: network address b8:27:eb:08:e0:aa
+01:45:24.824 dwc2d: network address <pi-mac>
 01:45:24.835 kernel::scheme::irq:DEBUG -- open_phandle_irq  virq=50
 01:45:24.835 dwc2d: interrupt /scheme/irq/phandle-1/1,9
 01:45:24.845 kernel::scheme::user:DEBUG -- call_fdread: payload: 8 metadata: 2
@@ -18263,7 +18263,7 @@
 01:46:07.687 dwc2d: link up on the LAN7800 at address 3
 01:46:07.697 dwc2d: devices ready after 4254 ms
 01:46:07.697 dwc2d: network on the adapter at address 3
-01:46:07.697 dwc2d: network address b8:27:eb:08:e0:aa
+01:46:07.697 dwc2d: network address <pi-mac>
 01:46:07.707 kernel::scheme::irq:DEBUG -- open_phandle_irq  virq=50
 01:46:07.718 dwc2d: interrupt /scheme/irq/phandle-1/1,9
 01:46:07.718 kernel::scheme::user:DEBUG -- call_fdread: payload: 8 metadata: 2
@@ -18767,7 +18767,7 @@
 01:46:49.205 dwc2d: link up on the LAN7800 at address 3
 01:46:49.216 dwc2d: devices ready after 4254 ms
 01:46:49.216 dwc2d: network on the adapter at address 3
-01:46:49.226 dwc2d: network address b8:27:eb:08:e0:aa
+01:46:49.226 dwc2d: network address <pi-mac>
 01:46:49.226 kernel::scheme::irq:DEBUG -- open_phandle_irq  virq=50
 01:46:49.236 dwc2d: interrupt /scheme/irq/phandle-1/1,9
 01:46:49.237 kernel::scheme::user:DEBUG -- call_fdread: payload: 8 metadata: 2
@@ -19271,7 +19271,7 @@
 01:47:30.777 dwc2d: link up on the LAN7800 at address 3
 01:47:30.777 dwc2d: devices ready after 4254 ms
 01:47:30.777 dwc2d: network on the adapter at address 3
-01:47:30.787 dwc2d: network address b8:27:eb:08:e0:aa
+01:47:30.787 dwc2d: network address <pi-mac>
 01:47:30.787 kernel::scheme::irq:DEBUG -- open_phandle_irq  virq=50
 01:47:30.797 dwc2d: interrupt /scheme/irq/phandle-1/1,9
 01:47:30.797 kernel::scheme::user:DEBUG -- call_fdread: payload: 8 metadata: 2
@@ -19774,7 +19774,7 @@
 01:48:12.277 dwc2d: link up on the LAN7800 at address 3
 01:48:12.277 dwc2d: devices ready after 4202 ms
 01:48:12.277 dwc2d: network on the adapter at address 3
-01:48:12.288 dwc2d: network address b8:27:eb:08:e0:aa
+01:48:12.288 dwc2d: network address <pi-mac>
 01:48:12.298 kernel::scheme::irq:DEBUG -- open_phandle_irq  virq=50
 01:48:12.298 dwc2d: interrupt /scheme/irq/phandle-1/1,9
 01:48:12.309 kernel::scheme::user:DEBUG -- call_fdread: payload: 8 metadata: 2
@@ -20254,7 +20254,7 @@
 01:48:52.489 dwc2d: host mode, 8 channels
 01:48:54.491 dwc2d: nothing on the root port
 01:48:55.486 dwc2d: devices ready after 3060 ms
-01:48:55.497 dwc2d: network address b8:27:eb:08:e0:aa
+01:48:55.497 dwc2d: network address <pi-mac>
 01:48:55.497 kernel::scheme::irq:DEBUG -- open_phandle_irq  virq=50
 01:48:55.497 dwc2d: interrupt /scheme/irq/phandle-1/1,9
 01:48:55.507 kernel::scheme::user:DEBUG -- call_fdread: payload: 8 metadata: 2
@@ -20361,7 +20361,7 @@
 01:50:40.189 irq/3 10796
 01:50:40.189 irq/98 23
 01:50:40.189 netcfg/eth0/addr/list Not configured
-01:50:40.189 netcfg/eth0/mac b8-27-eb-08-e0-aa
+01:50:40.189 netcfg/eth0/mac <pi-mac>
 01:50:40.200 netcfg/route 127.0.0.0/8  dev loopback src 127.0.0.1
 01:50:40.200 network.usb/adapters 0
 01:50:40.210 network.usb/irqs 0
@@ -20465,7 +20465,7 @@
 01:50:52.934 irq/3 12070
 01:50:52.934 irq/98 72
 01:50:52.934 netcfg/eth0/addr/list Not configured
-01:50:52.934 netcfg/eth0/mac b8-27-eb-08-e0-aa
+01:50:52.934 netcfg/eth0/mac <pi-mac>
 01:50:52.944 netcfg/route 127.0.0.0/8  dev loopback src 127.0.0.1
 01:50:52.944 network.usb/adapters 0
 01:50:52.944 network.usb/irqs 0
@@ -20951,7 +20951,7 @@
 01:51:28.292 dwc2d: link up on the LAN7800 at address 3
 01:51:28.303 dwc2d: devices ready after 4254 ms
 01:51:28.303 dwc2d: network on the adapter at address 3
-01:51:28.303 dwc2d: network address b8:27:eb:08:e0:aa
+01:51:28.303 dwc2d: network address <pi-mac>
 01:51:28.313 kernel::scheme::irq:DEBUG -- open_phandle_irq  virq=50
 01:51:28.313 dwc2d: interrupt /scheme/irq/phandle-1/1,9
 01:51:28.324 kernel::scheme::user:DEBUG -- call_fdread: payload: 8 metadata: 2
@@ -21455,7 +21455,7 @@
 01:52:06.812 dwc2d: link up on the LAN7800 at address 3
 01:52:06.813 dwc2d: devices ready after 4254 ms
 01:52:06.813 dwc2d: network on the adapter at address 3
-01:52:06.823 dwc2d: network address b8:27:eb:08:e0:aa
+01:52:06.823 dwc2d: network address <pi-mac>
 01:52:06.823 kernel::scheme::irq:DEBUG -- open_phandle_irq  virq=50
 01:52:06.833 dwc2d: interrupt /scheme/irq/phandle-1/1,9
 01:52:06.833 kernel::scheme::user:DEBUG -- call_fdread: payload: 8 metadata: 2
@@ -21935,7 +21935,7 @@
 01:52:44.081 dwc2d: host mode, 8 channels
 01:52:46.089 dwc2d: nothing on the root port
 01:52:47.083 dwc2d: devices ready after 3060 ms
-01:52:47.094 dwc2d: network address b8:27:eb:08:e0:aa
+01:52:47.094 dwc2d: network address <pi-mac>
 01:52:47.105 kernel::scheme::irq:DEBUG -- open_phandle_irq  virq=50
 01:52:47.105 dwc2d: interrupt /scheme/irq/phandle-1/1,9
 01:52:47.105 kernel::scheme::user:DEBUG -- call_fdread: payload: 8 metadata: 2

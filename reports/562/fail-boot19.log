@@ -421,7 +421,7 @@ dwc2d: controller at 0x3f980000, core id 0x4f54280a
 dwc2d: host mode, 8 channels
 dwc2d: nothing on the root port
 dwc2d: devices ready after 3060 ms
-dwc2d: network address b8:27:eb:08:e0:aa
+dwc2d: network address <pi-mac>
 kernel::scheme::irq:DEBUG -- open_phandle_irq  virq=50
 dwc2d: interrupt /scheme/irq/phandle-1/1,9
 kernel::scheme::user:DEBUG -- call_fdread: payload: 8 metadata: 2
@@ -514,7 +514,7 @@ cpu/zerod 0
 irq/3 12993
 irq/98 23
 netcfg/eth0/addr/list Not configured
-netcfg/eth0/mac b8-27-eb-08-e0-aa
+netcfg/eth0/mac <pi-mac>
 netcfg/route 127.0.0.0/8  dev loopback src 127.0.0.1
 network.usb/adapters 0
 network.usb/irqs 0
@@ -569,7 +569,7 @@ cpu/zerod 0
 irq/3 14267
 irq/98 72
 netcfg/eth0/addr/list Not configured
-netcfg/eth0/mac b8-27-eb-08-e0-aa
+netcfg/eth0/mac <pi-mac>
 netcfg/route 127.0.0.0/8  dev loopback src 127.0.0.1
 network.usb/adapters 0
 network.usb/irqs 0

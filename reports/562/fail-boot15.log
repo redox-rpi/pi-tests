@@ -429,7 +429,7 @@ dwc2d: device on root port, Full speed
 dwc2d: request [80, 06, 00, 01, 00, 00, 08, 00] to address 0 (max packet 8, Full speed) failed: Transfer(130)
 dwc2d: enumeration failed: Transfer(130)
 dwc2d: devices ready after 1851 ms
-dwc2d: network address b8:27:eb:08:e0:aa
+dwc2d: network address <pi-mac>
 kernel::scheme::irq:DEBUG -- open_phandle_irq  virq=50
 dwc2d: interrupt /scheme/irq/phandle-1/1,9
 kernel::scheme::user:DEBUG -- call_fdread: payload: 8 metadata: 2
@@ -521,7 +521,7 @@ cpu/zerod 0
 irq/3 10907
 irq/98 23
 netcfg/eth0/addr/list Not configured
-netcfg/eth0/mac b8-27-eb-08-e0-aa
+netcfg/eth0/mac <pi-mac>
 netcfg/route 127.0.0.0/8  dev loopback src 127.0.0.1
 network.usb/adapters 0
 network.usb/irqs 0
@@ -577,7 +577,7 @@ cpu/zerod 0
 irq/3 12181
 irq/98 72
 netcfg/eth0/addr/list Not configured
-netcfg/eth0/mac b8-27-eb-08-e0-aa
+netcfg/eth0/mac <pi-mac>
 netcfg/route 127.0.0.0/8  dev loopback src 127.0.0.1
 network.usb/adapters 0
 network.usb/irqs 0

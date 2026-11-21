@@ -10,5 +10,5 @@ dwc2d: device on root port, Full speed
 dwc2d: request [80, 06, 00, 01, 00, 00, 08, 00] to address 0 (max packet 8, Full speed) failed: Transfer(130)
 dwc2d: enumeration failed: Transfer(130)
 dwc2d: devices ready after 1851 ms
-dwc2d: network address b8:27:eb:08:e0:aa
+dwc2d: network address <pi-mac>
 dwc2d: interrupt /scheme/irq/phandle-1/1,9

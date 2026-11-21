@@ -230,7 +230,7 @@ sdhost in high speed mode, to compare the two drivers.
 
 ## 2026-10-28: `v0.1.0-alpha-28-gb5c59b2+ldso-diagnostics+sdhost-driver`, network boot without SD card
 
-Real Pi 3B+ (`b8:27:eb:08:e0:aa`) without SD card, test #10 of the
+Real Pi 3B+ (`<pi-mac>`) without SD card, test #10 of the
 [test plan](../queue.md). Branch `firmware-netboot` (`7fbb950`): the TFTP
 root holds the Pi firmware and U-Boot built with
 `scripts/build-uboot.sh rpi-net <host>`
@@ -241,7 +241,7 @@ the card and switched the Pi on. Not a `pi-test.py` run.
 
 | Check | Result | Detail |
 |---|---|---|
-| boot ROM PXE request reaches the proxy | pass | `PXEClient:Arch:00000:UNDI:002001` from `b8:27:eb:08:e0:aa`, answered with "Raspberry Pi Boot"; the address came from the FritzBox |
+| boot ROM PXE request reaches the proxy | pass | `PXEClient:Arch:00000:UNDI:002001` from `<pi-mac>`, answered with "Raspberry Pi Boot"; the address came from the FritzBox |
 | firmware and U-Boot over TFTP | pass | from the TFTP root; no `<serial>/` directory and no card with `bootcode.bin` needed |
 | U-Boot without card | pass | `Bad device specification mmc 0` (no environment), then its built-in boot command loads `redox/netboot.scr` |
 | image over HTTP, boot to login | pass | "image loaded over HTTP", `redox login:` |
@@ -260,7 +260,7 @@ the serial console and the dnsmasq log.
 
 | Check | Result | Detail |
 |---|---|---|
-| boot ROM skips the card and network-boots | pass | PXE request from `b8:27:eb:08:e0:aa` at 06:52 |
+| boot ROM skips the card and network-boots | pass | PXE request from `<pi-mac>` at 06:52 |
 | boot to login | pass | `redox login:` |
 | data partition | – | `redoxfs` cannot mount `/scheme/disk.mmc/0p1`, expected: partition 2 of that card is a Linux filesystem, not RedoxFS |
 
@@ -1052,7 +1052,7 @@ Test 47 ([#27](https://github.com/redox-rpi/redox-rpi/issues/27),
 `ping`, so the pings used an unprivileged ICMP socket from Python:
 
 - `/scheme/netcfg/ifaces/eth0/addr/list`: `<Pi 3B+>/24`,
-  `fe80::ba27:ebff:fe08:e0aa/64`, `fdeb:d4ef:a7ac:0:ba27:ebff:fe08:e0aa/64`
+  `fe80::<pi-iid>/64`, `fdeb:d4ef:a7ac:0:<pi-iid>/64`
   (SLAAC from the Fritz!Box's ULA prefix). **No global `2a02:…` address**,
   also after 9.5 minutes, and no IPv6 default route in
   `/scheme/netcfg/route/list`. The Fritz!Box does send router
@@ -1061,8 +1061,8 @@ Test 47 ([#27](https://github.com/redox-rpi/redox-rpi/issues/27),
   with the default route via `fe80::b6fc:7dff:fe53:b289`. So the Pi takes
   the ULA prefix from the same advertisements and leaves out the global
   one and the default router.
-- Ping from <build host>: `fe80::ba27:ebff:fe08:e0aa%wlp13s0` 3 of 3
-  (2–4 ms), `fdeb:d4ef:a7ac:0:ba27:ebff:fe08:e0aa` 3 of 3; no global
+- Ping from <build host>: `fe80::<pi-iid>%wlp13s0` 3 of 3
+  (2–4 ms), `fdeb:d4ef:a7ac:0:<pi-iid>` 3 of 3; no global
   address to ping.
 - `mdns-query.py redox-rpi.local`: `A <Pi 3B+>` from the Pi (ttl
   120), also from the Fritz!Box's cache. `mdns-query.py _devsh._tcp.local
@@ -1091,8 +1091,8 @@ Test 55 ([#27](https://github.com/redox-rpi/redox-rpi/issues/27),
 [#37](https://github.com/redox-rpi/redox-rpi/issues/37)), branch `mdns6`,
 scripts `udp-echo.py` and `mdns-query.py` from `mdns6`:
 
-- Addresses: `fe80::ba27:ebff:fe08:e0aa/64` and the ULA
-  `fdeb:d4ef:a7ac:0:ba27:ebff:fe08:e0aa/64`; **no global `2a02:…` address
+- Addresses: `fe80::<pi-iid>/64` and the ULA
+  `fdeb:d4ef:a7ac:0:<pi-iid>/64`; **no global `2a02:…` address
   and no IPv6 default route**, as in test 47.
 - `/scheme/netcfg/resolv/nameserver6`: `fdeb:d4ef:a7ac:0:b6fc:7dff:fe53:b289`
   (the Fritz!Box, from RDNSS): **pass**.
@@ -1260,7 +1260,7 @@ over devsh; timelines in `~/dwc2boot-work/tl-pi-{1,2}.txt` on the build host.
   still has the 5 s bootloader wait, so reset to login is 30.5 s.)
 - Devices: `hub at address 1` (4 ports, per port), `2` (3 ports, per port),
   `3` (4 ports, ganged), `keyboard at address 4`, `LAN7800 at address 5`,
-  `network address b8:27:eb:08:e0:aa` (as before). The plan row expected
+  `network address <pi-mac>` (as before). The plan row expected
   the Anker hub at address 4; here the third hub is at address 3. No
   `no link yet`, `reset timed out` or `request … failed`: **pass**.
 - `scripts/pi-test.py` standard checks: pass, 0 of 300 starts failed.
@@ -2454,11 +2454,11 @@ Real Pi 3B+ over netboot. Experiments: `multicast`, `ipv6`, `lan78xx-multicast`,
 The Fritz!Box's global prefix today is `2a02:590:1504:9901::/64` (<build host>:
 `2a02:590:1504:9901:4a45:e6ff:fea0:b063`).
 
-- About a minute after boot, `eth0` addresses: `fe80::ba27:ebff:fe08:e0aa/64`,
-  **`2a02:590:1504:9901:ba27:ebff:fe08:e0aa/64`**,
-  `fdeb:d4ef:a7ac:0:ba27:ebff:fe08:e0aa/64`, `<Pi 3B+>/24`: **pass**.
+- About a minute after boot, `eth0` addresses: `fe80::<pi-iid>/64`,
+  **`2a02:590:1504:9901:<pi-iid>/64`**,
+  `fdeb:d4ef:a7ac:0:<pi-iid>/64`, `<Pi 3B+>/24`: **pass**.
 - Routes: **`default via fe80::b6fc:7dff:fe53:b289 dev eth0 src
-  2a02:590:1504:9901:ba27:ebff:fe08:e0aa`**, plus `2a02:590:1504:9901::/64`,
+  2a02:590:1504:9901:<pi-iid>`**, plus `2a02:590:1504:9901::/64`,
   `fdeb:d4ef:a7ac::/64` and `fe80::/64` on eth0: **pass**.
 - The serial log has no `router advertisement from …` lines (this image
   doesn't print them). The only router seen is the Fritz!Box,
@@ -2466,7 +2466,7 @@ The Fritz!Box's global prefix today is `2a02:590:1504:9901::/64` (<build host>:
 - `ping -6` to the Pi's global address from <build host>: 3/3 (0.9–4.3 ms):
   **pass**.
 - `net6 udp [2a02:…:b063]:7777 hello`: reply `hello`, and `udp-echo.py` saw
-  the Pi's `2a02:590:1504:9901:ba27:ebff:fe08:e0aa` (it timed out in test 55):
+  the Pi's `2a02:590:1504:9901:<pi-iid>` (it timed out in test 55):
   **pass**. To the ULA `fdeb:…:b063`: reply, echo saw the Pi's ULA: **pass**.
 - `net6 resolve example.com`: `2606:4700:10::6814:179a`,
   `2606:4700:10::ac42:93f3` (and two IPv4 addresses). `net6 tcp
@@ -2693,8 +2693,8 @@ Real Pi 3B+ over netboot. Experiments: `multicast`, `ipv6`, `lan78xx-multicast`,
 - `mdnsd:` lines: `redox-rpi.local on 224.0.0.251 and ff02::fb port 5353, 2
   services configured`, `redox-rpi._devsh._tcp.local port 2323 announced`,
   `redox-rpi._ssh._tcp.local port 22 announced`, `redox-rpi.local is
-  <Pi 3B+>, fe80::ba27:ebff:fe08:e0aa, 2a02:590:1504:9901:ba27:ebff:fe08:e0aa,
-  fdeb:d4ef:a7ac:0:ba27:ebff:fe08:e0aa`.
+  <Pi 3B+>, fe80::<pi-iid>, 2a02:590:1504:9901:<pi-iid>,
+  fdeb:d4ef:a7ac:0:<pi-iid>`.
 - `mdns-query.py redox-rpi.local`: A `<Pi 3B+>` (ttl 120) and the three
   AAAA: **pass**.
 - `mdns-query.py _ssh._tcp.local PTR`: PTR `redox-rpi._ssh._tcp.local` (ttl
@@ -3692,7 +3692,7 @@ Query tool from `origin/mdns:patches/experiments/mdns/mdns-query.py`.
 ```
 mdnsd: redox-rpi.local on 224.0.0.251 and ff02::fb port 5353, 2 services configured
 mdnsd: redox-rpi._devsh._tcp.local port 2323 announced
-mdnsd: redox-rpi.local is <Pi 3B+>, fe80::ba27:ebff:fe08:e0aa, 2a02:590:1504:9901:ba27:ebff:fe08:e0aa, fdeb:d4ef:a7ac:0:ba27:ebff:fe08:e0aa
+mdnsd: redox-rpi.local is <Pi 3B+>, fe80::<pi-iid>, 2a02:590:1504:9901:<pi-iid>, fdeb:d4ef:a7ac:0:<pi-iid>
 ```
 
 - (1) `python3 /tmp/mdns-query.py _devsh._tcp.local PTR`: one answer with PTR,
@@ -3703,9 +3703,9 @@ mdnsd: redox-rpi.local is <Pi 3B+>, fe80::ba27:ebff:fe08:e0aa, 2a02:590:1504:990
 <Pi 3B+>: redox-rpi._devsh._tcp.local SRV port 2323 target redox-rpi.local (ttl 120)
 <Pi 3B+>: redox-rpi._devsh._tcp.local TXT 00 (ttl 4500)
 <Pi 3B+>: redox-rpi.local A <Pi 3B+> (ttl 120)
-<Pi 3B+>: redox-rpi.local AAAA fe80::ba27:ebff:fe08:e0aa (ttl 120)
-<Pi 3B+>: redox-rpi.local AAAA 2a02:590:1504:9901:ba27:ebff:fe08:e0aa (ttl 120)
-<Pi 3B+>: redox-rpi.local AAAA fdeb:d4ef:a7ac:0:ba27:ebff:fe08:e0aa (ttl 120)
+<Pi 3B+>: redox-rpi.local AAAA fe80::<pi-iid> (ttl 120)
+<Pi 3B+>: redox-rpi.local AAAA 2a02:590:1504:9901:<pi-iid> (ttl 120)
+<Pi 3B+>: redox-rpi.local AAAA fdeb:d4ef:a7ac:0:<pi-iid> (ttl 120)
 ```
 
 - (2) `python3 /tmp/mdns-query.py redox-rpi.local`: A `<Pi 3B+>`, plus the
@@ -3713,9 +3713,9 @@ mdnsd: redox-rpi.local is <Pi 3B+>, fe80::ba27:ebff:fe08:e0aa, 2a02:590:1504:990
 
 ```
 <Pi 3B+>: redox-rpi.local A <Pi 3B+> (ttl 120)
-<Pi 3B+>: redox-rpi.local AAAA fe80::ba27:ebff:fe08:e0aa (ttl 120)
-<Pi 3B+>: redox-rpi.local AAAA 2a02:590:1504:9901:ba27:ebff:fe08:e0aa (ttl 120)
-<Pi 3B+>: redox-rpi.local AAAA fdeb:d4ef:a7ac:0:ba27:ebff:fe08:e0aa (ttl 120)
+<Pi 3B+>: redox-rpi.local AAAA fe80::<pi-iid> (ttl 120)
+<Pi 3B+>: redox-rpi.local AAAA 2a02:590:1504:9901:<pi-iid> (ttl 120)
+<Pi 3B+>: redox-rpi.local AAAA fdeb:d4ef:a7ac:0:<pi-iid> (ttl 120)
 <router>: redox-rpi.local A <Pi 3B+> (ttl 10)
 ```
 
@@ -3723,10 +3723,10 @@ mdnsd: redox-rpi.local is <Pi 3B+>, fe80::ba27:ebff:fe08:e0aa, 2a02:590:1504:990
   the Pi's link-local address with link-local, `2a02:…` and `fdeb:…`, plus the A:
 
 ```
-fe80::ba27:ebff:fe08:e0aa: redox-rpi.local AAAA fe80::ba27:ebff:fe08:e0aa (ttl 120)
-fe80::ba27:ebff:fe08:e0aa: redox-rpi.local AAAA 2a02:590:1504:9901:ba27:ebff:fe08:e0aa (ttl 120)
-fe80::ba27:ebff:fe08:e0aa: redox-rpi.local AAAA fdeb:d4ef:a7ac:0:ba27:ebff:fe08:e0aa (ttl 120)
-fe80::ba27:ebff:fe08:e0aa: redox-rpi.local A <Pi 3B+> (ttl 120)
+fe80::<pi-iid>: redox-rpi.local AAAA fe80::<pi-iid> (ttl 120)
+fe80::<pi-iid>: redox-rpi.local AAAA 2a02:590:1504:9901:<pi-iid> (ttl 120)
+fe80::<pi-iid>: redox-rpi.local AAAA fdeb:d4ef:a7ac:0:<pi-iid> (ttl 120)
+fe80::<pi-iid>: redox-rpi.local A <Pi 3B+> (ttl 120)
 ```
 
 - (4) `python3 /tmp/mdns-query.py _services._dns-sd._udp.local PTR`: the Pi's lines
@@ -3736,9 +3736,9 @@ fe80::ba27:ebff:fe08:e0aa: redox-rpi.local A <Pi 3B+> (ttl 120)
 ```
 <Pi 3B+>: _services._dns-sd._udp.local PTR _devsh._tcp.local (ttl 4500)
 <Pi 3B+>: redox-rpi.local A <Pi 3B+> (ttl 120)
-<Pi 3B+>: redox-rpi.local AAAA fe80::ba27:ebff:fe08:e0aa (ttl 120)
-<Pi 3B+>: redox-rpi.local AAAA 2a02:590:1504:9901:ba27:ebff:fe08:e0aa (ttl 120)
-<Pi 3B+>: redox-rpi.local AAAA fdeb:d4ef:a7ac:0:ba27:ebff:fe08:e0aa (ttl 120)
+<Pi 3B+>: redox-rpi.local AAAA fe80::<pi-iid> (ttl 120)
+<Pi 3B+>: redox-rpi.local AAAA 2a02:590:1504:9901:<pi-iid> (ttl 120)
+<Pi 3B+>: redox-rpi.local AAAA fdeb:d4ef:a7ac:0:<pi-iid> (ttl 120)
 ```
 
 - mdnsd CPU when idle: `top -n 1` printed no mdnsd line, so I used `ps`. ACTTIME
@@ -6903,11 +6903,11 @@ Real Pi 3B+ over netboot. Test 194 ([#171](https://github.com/redox-rpi/redox-rp
 - `ifconfig` over devsh, rc 0:
   ```
   eth0:
-  MAC Address: b8:27:eb:08:e0:aa
+  MAC Address: <pi-mac>
   IP Address: <Pi 3B+>
   Netmask: 255.255.255.0
   ```
-- `cat /scheme/netcfg/ifaces/eth0/mac` gives `b8-27-eb-08-e0-aa`, the same address. It is not `00:00:00:00:00:00`.
+- `cat /scheme/netcfg/ifaces/eth0/mac` gives `<pi-mac>`, the same address. It is not `00:00:00:00:00:00`.
 - Standard checks: version, manifest present, `ps` (45), `ps-tty`, SD card all pass; 0 of 300 starts failed.
 - No panic or `FATAL` line.
 

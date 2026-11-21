@@ -445,7 +445,7 @@ dwc2d: LAN78xx chip 7800 rev 0002
 dwc2d: link up on the LAN7800 at address 3
 dwc2d: devices ready after 4254 ms
 dwc2d: network on the adapter at address 3
-dwc2d: network address b8:27:eb:08:e0:aa
+dwc2d: network address <pi-mac>
 kernel::scheme::irq:DEBUG -- open_phandle_irq  virq=50
 dwc2d: interrupt /scheme/irq/phandle-1/1,9
 kernel::scheme::user:DEBUG -- call_fdread: payload: 8 metadata: 2

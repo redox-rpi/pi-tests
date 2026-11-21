@@ -38,7 +38,7 @@ cpu/zerod 0
 irq/3 10907
 irq/98 23
 netcfg/eth0/addr/list Not configured
-netcfg/eth0/mac b8-27-eb-08-e0-aa
+netcfg/eth0/mac <pi-mac>
 netcfg/route 127.0.0.0/8  dev loopback src 127.0.0.1
 network.usb/adapters 0
 network.usb/irqs 0
