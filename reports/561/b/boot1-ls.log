@@ -1,0 +1,13 @@
+]0;root: /home/rootroot:~# 
+⏎                                                                                ]0;root: /home/rootroot:~# ]0;root: /home/rootroot:~# ]0;root: /home/rootroot:~# l]0;root: /home/rootroot:~# ls]0;root: /home/rootroot:~# ls ]0;root: /home/rootroot:~# ls /]0;root: /home/rootroot:~# ls /s]0;root: /home/rootroot:~# ls /sc]0;root: /home/rootroot:~# ls /sch]0;root: /home/rootroot:~# ls /sche]0;root: /home/rootroot:~# ls /schem]0;root: /home/rootroot:~# ls /scheme]0;root: /home/rootroot:~# ls /scheme/]0;root: /home/rootroot:~# ls /scheme/
+2026-11-21T00-15-18.257Z [@inputd:275 ERROR] invalid path ''
+removing handle: id: 4, Some(List([48, 10]))
+chan	   icmp		logging	 rand	       time
+debug	   initfs	memory	 rpi-firmware  udp
+disk.live  input	netcfg	 serio	       uds_dgram
+event	   ip		null	 shm	       uds_stream
+fbcon.2	   irq		pci	 spi	       usb.pci-0000-01-00.0_xhci
+file	   kernel.acpi	pipe	 sudo	       zero
+gpio	   kernel.dtb	proc	 sys
+i2c	   log		pty	 tcp
+⏎                                                                                ]0;root: /home/rootroot:~# ]0;root: /home/rootroot:~# 
