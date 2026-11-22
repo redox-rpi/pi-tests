@@ -1,0 +1,23 @@
+### cat /scheme/netcfg/ifaces/eth0/link  (0.3 s)
+1
+### cat /scheme/network.usb_lan78xx/link  (0.3 s)
+1
+### cat /scheme/netcfg/route/list  (0.3 s)
+default via <lan-ip> dev eth0 src <lan-ip>
+224.0.0.0/4  dev eth0 src <lan-ip>
+127.0.0.0/8  dev loopback src 127.0.0.1
+<lan-ip>/24  dev eth0 src <lan-ip>
+### cat /scheme/netcfg/ifaces/eth0/addr/list  (0.3 s)
+<lan-ip>/24
+### date -u  (0.3 s)
+Thu Jan  1 00:01:14 UTC 1970
+### cat /etc/redox-rpi-release  (0.3 s)
+NAME="redox-rpi, for the Redox OS operating system"
+VERSION="v0.6.0-dev-134-gc00603a8"
+BUILD_ID="v0.6.0-dev-134-gc00603a8+x42c6"
+IMAGE="netboot"
+BUILD="2026-11-22T14:28:31Z"
+COMMIT="c00603a8"
+EXPERIMENTS="netstack-watch"
+URL="https://github.com/redox-rpi/redox-rpi"
+host Sun Nov 22 14:50:11 UTC 2026

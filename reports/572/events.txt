@@ -1,0 +1,8 @@
+start 14:45:50
+staged build_id = "v0.6.0-dev-134-gc00603a8+x42c6" 14:45:50
+found after 24 s
+no devsh, serial reset 1 14:48:41
+up 14:49:28
+A: dhcp-got=1 route=1 timesync-set=0 relibc=0 exc=0 empty=1 14:50:11
+found after 26 s
+stable up build_id = "v0.6.0-dev-126-g1b6b4cd9+x2d42" 14:50:50
