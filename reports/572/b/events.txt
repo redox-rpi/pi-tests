@@ -1,0 +1,12 @@
+start 17:43:12
+staged build_id = "v0.6.0-dev-136-g95827937+x81b7" 17:43:13
+reboot sent; pull the cable after 'Booting /redox/bootloader-live.efi' 17:43:24
+reboot sent (planned 17:50:00) 17:50:00
+devsh failed, serial reboot 17:50:06
+power off 17:53:06
+power on (planned 17:53:38) 17:53:38.994
+timeout waiting for: redox login:
+no devsh, serial reset 1 18:03:37
+power cycle 18:04:04
+found after 38 s
+stable up build_id = "v0.6.0-dev-126-g1b6b4cd9+x2d42" 18:04:48
