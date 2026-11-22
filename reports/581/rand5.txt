@@ -1,0 +1,8 @@
+### dd if=/scheme/rand bs=32 count=1 ^> /scheme/null | od -x  (0.5 s)
+0000000 bad2 11c9 191e 5f39 1e42 c41d aa05 e658
+0000020 8d20 09b3 7164 f16a cabd e4af 4542 8540
+0000040
+### dd if=/scheme/rand bs=32 count=1 ^> /scheme/null | od -x  (0.5 s)
+0000000 eacb 331f 870c b069 ae77 85d6 62a9 40a9
+0000020 6916 0a5e d293 3e01 80e0 d133 10ab 822b
+0000040
