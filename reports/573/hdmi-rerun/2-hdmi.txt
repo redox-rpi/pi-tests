@@ -1,0 +1,86 @@
+### cat /scheme/audiohw/stats  (0.3 s)
+mode hdmi-dma
+hdmi 0x3f902000
+dma_channel 0
+dreq 17
+mai_ctl 0x00003229
+mai_smp 0x0187761a
+crp_cfg 0x0100160c
+cts 0x000243fe
+ram_packet_config 0x00010015
+ram_packet_status 0x00000015
+infoframe_active yes
+hotplug_now no
+hotplug no
+hdmi_mode yes
+forced_hdmi_mode no
+scheduler 0x000cb02b
+pixel_hz 148500000 pllh
+pllh ctrl=0x0002104d frac=0x00058000 ana1=0x0000000c pix=0x00000001
+hsm_hz 163682864 cprman
+cm_hsm ctl=0x000002d6 div=0x000030e0
+infoframe_sent yes
+sample_rate 44100
+slots 8x512
+uptime_s 40.6
+played_slots 3500
+measured_rate_hz 44098
+rate_window_hz 44114 over 28.6 s
+rate_last_measured_hz 44030
+rate_settled yes
+long_gaps 0
+chunks 2978
+loud_chunks 144
+peak 4208
+tones 0
+sound_slots 2974
+underruns 1
+queued 6
+dma_faults 0
+mai_underflow_polls 0
+mai_overflow_polls 0
+reprogrammed 0
+### tone -s 3 > /scheme/audio; echo TONE $?  (3.2 s)
+TONE 0
+### cat /scheme/audiohw/stats  (0.4 s)
+mode hdmi-dma
+hdmi 0x3f902000
+dma_channel 0
+dreq 17
+mai_ctl 0x00003229
+mai_smp 0x0187761a
+crp_cfg 0x0100160c
+cts 0x000243fe
+ram_packet_config 0x00010015
+ram_packet_status 0x00000015
+infoframe_active yes
+hotplug_now no
+hotplug no
+hdmi_mode yes
+forced_hdmi_mode no
+scheduler 0x000cb02b
+pixel_hz 148500000 pllh
+pllh ctrl=0x0002104d frac=0x00058000 ana1=0x0000000c pix=0x00000001
+hsm_hz 163682864 cprman
+cm_hsm ctl=0x000002d6 div=0x000030e0
+infoframe_sent yes
+sample_rate 44100
+slots 8x512
+uptime_s 44.3
+played_slots 3812
+measured_rate_hz 44097
+rate_window_hz 45959 over 0.1 s
+rate_last_measured_hz 44030
+rate_settled yes
+long_gaps 1
+chunks 3289
+loud_chunks 403
+peak 4208
+tones 0
+sound_slots 3286
+underruns 2
+queued 7
+dma_faults 0
+mai_underflow_polls 0
+mai_overflow_polls 0
+reprogrammed 0

@@ -1,0 +1,39 @@
+start 16:15:00
+staged build_id = "v0.6.0-dev-135-g0897391f+x6a9f" 16:15:06
+power cycle 16:15:21
+found after 40 s
+up 16:16:02
+boot: redox-rpi v0.6.0-rc3 (v0.6.0-dev-135-g0897391f+x6a9f) (netboot, 2026-11-22T14:46:12Z) 16:16:32
+WARN - Failed to get EFI EDID from handle Handle(1039318624): Status(0x8000000000000003) "unsupported"
+bcm2835-hdmiaudiod: no pixel clock from rpi-firmwared (no pixel line in the clocks file), using PLLH_PIX
+bcm2835-hdmiaudiod: HDMI at 0x3f902000, hotplug no, HDMI mode, pixel clock 148.500 MHz (pllh), HSM 163.683 MHz (cprman), N 5644 CTS 148478, info frame sent, DMA channel 0 (DREQ 17), 8 x 512 frames
+rpi-fbd: EDID 256 bytes, monitor NanoKVM
+rpi-fbd: boot framebuffer 1824x984 stride 1824 at 0x3e914000
+rpi-fbd: blits with the CPU (DMA only with RPI_FB_DMA=on)
+startup-sound: played
+bcm2835-hdmiaudiod: measured 44030 frames/s
+step 2-hdmi rc=0 16:16:37
+found after 20 s
+reboot 1 login 16:17:18
+reboot 1 devsh 16:17:19
+reboot 1 played=1 hdmi-at=1 hdmi-mode=1 16:17:27
+found after 22 s
+reboot 2 login 16:18:11
+reboot 2 devsh 16:18:12
+reboot 2 played=1 hdmi-at=1 hdmi-mode=1 16:18:20
+found after 20 s
+reboot 3 login 16:19:01
+reboot 3 devsh 16:19:02
+reboot 3 played=1 hdmi-at=1 hdmi-mode=1 16:19:10
+found after 20 s
+reboot 4 login 16:19:51
+reboot 4 devsh 16:19:53
+reboot 4 played=1 hdmi-at=1 hdmi-mode=1 16:20:01
+found after 20 s
+reboot 5 login 16:20:42
+reboot 5 devsh 16:20:43
+reboot 5 played=1 hdmi-at=1 hdmi-mode=1 16:20:51
+step 4-hdmi rc=0 16:21:16
+serial: panic=0 relibc=0 exc=0 stuck=0 16:21:16
+found after 28 s
+stable up build_id = "v0.6.0-dev-126-g1b6b4cd9+x2d42" 16:21:57
