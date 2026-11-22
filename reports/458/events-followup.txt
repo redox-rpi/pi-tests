@@ -1,0 +1,15 @@
+staged rc1 00:19:24
+found after 28 s
+up 00:20:04
+found after 26 s
+stable up build_id = "v0.6.0-dev-115-gb972ccfd+x2d42" 00:22:04
+staged rc1 (c) 00:22:44
+found after 26 s
+no devsh, serial reset 1 00:25:38
+no devsh, serial reset 2 00:29:08
+power cycle 00:32:56
+up 00:33:57
+c1 PASS tcc: 44.4 s; all 5 steps and TCC-TEST done; bench total 1365.8 ms; tcc.c built in 834 ms 00:35:03
+c2 PASS tcc: 44.6 s; all 5 steps and TCC-TEST done; bench total 1365.0 ms; tcc.c built in 815 ms 00:35:50
+found after 26 s
+stable up build_id = "v0.6.0-dev-115-gb972ccfd+x2d42" 00:36:28

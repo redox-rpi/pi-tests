@@ -1,0 +1,55 @@
+### cd /usr/share/tcc-tests && ion run.ion  (44.6 s)
+== tcc -v
+tcc version 0.9.28rc 2026-11-07 HEAD@70adbb12* (AArch64 Linux)
+== hello (dynamic)
+[timeit] 107.3 ms, status 0: tcc
+Hello from tcc on Redox (./hello)
+[timeit] 29.0 ms, status 0: ./hello
+== hello (static)
+[timeit] 39207.5 ms, status 1: tcc
+tcc: error: Unknown relocation type for got: 562
+tcc: error: Unknown relocation type for got: 563
+tcc: error: Unknown relocation type for got: 564
+tcc: error: Unknown relocation type for got: 569
+4945 /tmp/tcc-static.err
+== tcc -run
+Hello from tcc on Redox (/usr/share/tcc-tests/hello.c)
+[timeit] 125.1 ms, status 0: tcc
+== shebang: ./hallo.c run as a script (#!/usr/bin/tcc -run)
+argv[0]=./hallo.c
+argv[1]=a
+argv[2]=b
+Hallo, stdin 6 bytes
+[timeit] 120.8 ms, status 42: ./hallo.c
+rc=42
+== bench, compiled by tcc
+In file included from /usr/share/tcc-tests/bench.c:7:
+In file included from /usr/include/time.h:5:
+/usr/include/bits/null.h:14: warning: NULL redefined
+# 1793 idents, 4616 lines, 113641 bytes
+# 0.095 s, 48589 lines/s, 1.2 MB/s
+# text 1412, data.rw 0, data.ro 189, bss 0 bytes
+[timeit] 169.8 ms, status 0: tcc
+fib(32)    = 2178309     118.3 ms
+sieve 5x2M = 148933    1141.5 ms
+mandel 200 = 9800     115.3 ms
+total               1375.4 ms
+[timeit] 1405.6 ms, status 0: ./bench
+== bench, compiled by gcc -O2 (cross)
+fib(32)    = 2178309      36.0 ms
+sieve 5x2M = 148933     850.2 ms
+mandel 200 = 9800      35.3 ms
+total                921.8 ms
+[timeit] 956.0 ms, status 0: /usr/share/tcc-tests/bench-gcc
+== self-hosting: tcc compiles tcc.c
+In file included from /usr/src/tinycc/tcc.c:25:
+In file included from /usr/src/tinycc/tcc.h:40:
+In file included from /usr/include/time.h:5:
+/usr/include/bits/null.h:14: warning: NULL redefined
+# 9676 idents, 77171 lines, 2423609 bytes
+# 0.727 s, 106149 lines/s, 3.3 MB/s
+# text 411076, data.rw 8, data.ro 38556, bss 166176 bytes
+[timeit] 843.1 ms, status 0: tcc
+[timeit] 100.8 ms, status 0: ./tcc2
+Hello from tcc on Redox (./hello2)
+TCC-TEST done

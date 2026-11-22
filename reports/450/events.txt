@@ -1,0 +1,164 @@
+start 18:59:39
+staged build_id = "v0.6.0-dev-125-g5acacd83+xc80e" 18:59:45
+found after 28 s
+up 19:00:26
+banner redox-rpi v0.6.0-rc1 (v0.6.0-dev-125-g5acacd83+xc80e) (netboot, 2026-11-21T16:33:43Z) 19:00:46
+458 rc=1 FAIL tcc: 44.4 s; failed: dynamic; bench total 1378.1 ms; tcc.c built in 839 ms 19:01:32
+C measure rest1 19:01:34
+C measure rest2 19:02:07
+C 500 done, fails 0 19:25:12
+C measure 500 19:25:21
+C 1000 done, fails 0 19:45:01
+C measure 1000 19:45:14
+C conn 1001 ok 19:45:16
+found after 24 s
+B fresh boot up 19:45:56
+B idle 60 min start 19:45:56
+B addr after: <lan-ip>/24  20:45:58
+B new devsh connection accepted 20:46:04
+B stuck=0 notimer=0 20:46:04
+A 1 FAIL: empty=1 full=0 linkup=0 20:47:09
+no devsh, serial reset 1 20:49:20
+A 2 ok 41 s 20:50:49
+A 3 ok 41 s 20:51:32
+A 4 ok 41 s 20:52:14
+A 5 FAIL: empty=1 full=0 linkup=0 20:53:19
+no devsh, serial reset 1 20:55:28
+no devsh, serial reset 2 20:59:01
+power cycle 21:02:38
+A 6 FAIL: empty=0 full=0 linkup=0 21:07:54
+no devsh, serial reset 1 21:09:57
+A 7 ok 41 s 21:11:26
+A 8 ok 41 s 21:12:09
+A 9 ok 41 s 21:12:51
+A 10 ok 41 s 21:13:34
+A 11 ok 41 s 21:14:16
+A 12 ok 41 s 21:14:59
+A 13 FAIL: empty=0 full=6 linkup=0 21:16:04
+no devsh, serial reset 1 21:18:11
+A 14 FAIL: empty=0 full=6 linkup=0 21:20:01
+no devsh, serial reset 1 21:22:11
+no devsh, serial reset 2 21:25:45
+A 15 ok 41 s 21:27:14
+A 16 FAIL: empty=1 full=0 linkup=0 21:28:18
+no devsh, serial reset 1 21:30:21
+A 17 ok 41 s 21:31:51
+A 18 ok 42 s 21:32:34
+A 19 FAIL: empty=1 full=0 linkup=0 21:33:39
+no devsh, serial reset 1 21:35:42
+A 20 ok 41 s 21:37:10
+A 21 ok 41 s 21:37:52
+A 22 ok 41 s 21:38:34
+A 23 FAIL: empty=1 full=0 linkup=0 21:39:39
+no devsh, serial reset 1 21:41:42
+no devsh, serial reset 2 21:45:07
+A 24 FAIL: empty=1 full=0 linkup=0 21:46:57
+no devsh, serial reset 1 21:49:00
+A 25 ok 41 s 21:50:30
+A 26 ok 41 s 21:51:12
+A 27 ok 41 s 21:51:55
+A 28 FAIL: empty=1 full=0 linkup=0 21:52:59
+no devsh, serial reset 1 21:55:12
+A 29 FAIL: empty=1 full=0 linkup=0 21:57:09
+no devsh, serial reset 1 21:59:12
+A 30 ok 42 s 22:00:42
+A 31 ok 41 s 22:01:24
+A 32 ok 41 s 22:02:07
+A 33 FAIL: empty=1 full=0 linkup=0 22:03:11
+no devsh, serial reset 1 22:05:16
+no devsh, serial reset 2 22:08:49
+A 34 ok 41 s 22:10:17
+A 35 ok 41 s 22:11:00
+A 36 FAIL: empty=1 full=0 linkup=0 22:12:05
+no devsh, serial reset 1 22:14:13
+A 37 ok 39 s 22:15:40
+A 38 ok 39 s 22:16:21
+A 39 FAIL: empty=1 full=0 linkup=0 22:17:25
+no devsh, serial reset 1 22:19:28
+A 40 ok 41 s 22:20:58
+A 41 FAIL: empty=1 full=0 linkup=0 22:22:04
+no devsh, serial reset 1 22:24:07
+A 42 ok 41 s 22:25:36
+A 43 FAIL: empty=1 full=0 linkup=0 22:26:40
+no devsh, serial reset 1 22:28:46
+A 44 FAIL: empty=1 full=0 linkup=0 22:30:38
+no devsh, serial reset 1 22:32:42
+A 45 FAIL: empty=1 full=0 linkup=0 22:34:44
+no devsh, serial reset 1 22:36:48
+A 46 ok 41 s 22:38:54
+A 47 ok 41 s 22:39:37
+A 48 ok 41 s 22:40:19
+A 49 FAIL: empty=1 full=0 linkup=0 22:41:23
+no devsh, serial reset 1 22:43:31
+A 50 FAIL: empty=1 full=0 linkup=0 22:45:23
+no devsh, serial reset 1 22:47:30
+no devsh, serial reset 2 22:51:05
+A 51 ok 41 s 22:52:41
+A 52 ok 41 s 22:53:23
+A 53 ok 41 s 22:54:06
+A 54 ok 41 s 22:54:49
+A 55 ok 41 s 22:55:31
+A 56 ok 41 s 22:56:14
+A 57 FAIL: empty=1 full=0 linkup=0 22:57:18
+no devsh, serial reset 1 22:59:31
+A 58 FAIL: empty=1 full=0 linkup=0 23:01:22
+no devsh, serial reset 1 23:03:31
+A 59 ok 41 s 23:05:01
+A 60 ok 41 s 23:05:43
+A 61 ok 41 s 23:06:26
+A 62 FAIL: empty=1 full=0 linkup=0 23:07:31
+no devsh, serial reset 1 23:09:38
+A 63 ok 41 s 23:11:08
+A 64 ok 41 s 23:11:51
+A 65 ok 41 s 23:12:33
+A 66 ok 41 s 23:13:16
+A 67 ok 41 s 23:13:58
+A 68 ok 41 s 23:14:41
+A 69 FAIL: empty=1 full=0 linkup=0 23:15:45
+no devsh, serial reset 1 23:17:48
+no devsh, serial reset 2 23:21:19
+A 70 FAIL: empty=1 full=0 linkup=0 23:23:21
+no devsh, serial reset 1 23:25:28
+A 71 ok 41 s 23:26:56
+A 72 FAIL: empty=1 full=0 linkup=0 23:28:00
+no devsh, serial reset 1 23:30:08
+A 73 FAIL: empty=1 full=0 linkup=0 23:32:05
+no devsh, serial reset 1 23:34:08
+A 74 ok 41 s 23:35:44
+A 75 ok 41 s 23:36:27
+A 76 ok 41 s 23:37:09
+A 77 ok 41 s 23:37:52
+A 78 ok 41 s 23:38:35
+A 79 ok 41 s 23:39:17
+A 80 ok 41 s 23:40:00
+A 81 ok 41 s 23:40:42
+A 82 ok 41 s 23:41:25
+A 83 ok 41 s 23:42:07
+A 84 ok 41 s 23:42:50
+A 85 ok 41 s 23:43:32
+A 86 FAIL: empty=1 full=0 linkup=0 23:44:37
+no devsh, serial reset 1 23:46:44
+A 87 FAIL: empty=1 full=0 linkup=0 23:48:42
+no devsh, serial reset 1 23:50:50
+A 88 FAIL: empty=1 full=0 linkup=0 23:52:41
+no devsh, serial reset 1 23:54:49
+A 89 ok 41 s 23:56:37
+A 90 ok 41 s 23:57:20
+A 91 ok 41 s 23:58:02
+A 92 ok 42 s 23:58:46
+A 93 FAIL: empty=1 full=0 linkup=0 23:59:51
+no devsh, serial reset 1 00:01:54
+A 94 ok 41 s 00:03:22
+A 95 ok 41 s 00:04:05
+A 96 ok 41 s 00:04:47
+A 97 FAIL: empty=1 full=0 linkup=0 00:05:52
+no devsh, serial reset 1 00:08:00
+A 98 ok 41 s 00:09:29
+A 99 FAIL: empty=1 full=0 linkup=0 00:10:33
+no devsh, serial reset 1 00:12:36
+A 100 FAIL: empty=1 full=0 linkup=0 00:14:27
+no devsh, serial reset 1 00:16:32
+A 66/100 within 60 s 00:17:48
+panic=0 exc=0 stuck=0 00:17:48
+found after 26 s
+stable up build_id = "v0.6.0-dev-115-gb972ccfd+x2d42" 00:18:31

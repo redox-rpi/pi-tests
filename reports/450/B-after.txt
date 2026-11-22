@@ -1,0 +1,2 @@
+### cat /scheme/netcfg/ifaces/eth0/addr/list  (0.4 s)
+<lan-ip>/24

@@ -1,0 +1,1058 @@
+### ps  (0.3 s)
+PID   EUID  EGID  STAT  CPU   AFFINITY   ACTTIME     SCHTIME     PRIVATE SHARED  NAME
+0     0     0     RR+   #0    1          00:00:00.00 00:00:00.00 65.0 KB 0 B     [kmain]
+0     0     0     RR+   #1    2          00:00:00.00 00:00:00.00 65.0 KB 0 B     [kmain]
+0     0     0     RR    #2    4          00:00:00.00 00:00:00.00 65.0 KB 0 B     [kmain]
+0     0     0     RR+   #3    8          00:00:00.00 00:00:00.00 65.0 KB 0 B     [kmain]
+0     0     0     UB    #0    F          00:00:00.02 00:00:00.00 28.1 MB 4.00 KB initfs
+0     0     0     UB    #2    F          00:00:00.23 00:00:00.01 1.37 MB 344 KB  procmgr
+0     0     0     UB    #2    F          00:00:00.22 00:00:00.00 1.37 MB 8.00 KB initnsmgr
+1     0     0     UB    #2    F          00:00:00.17 00:00:00.31 1.86 MB 0 B     /scheme/initfs/bin/init
+2     0     0     UB    #1    F          00:00:00.00 00:00:00.00 3.64 MB 12.0 KB /scheme/initfs/bin/logd
+2     0     0     UB    #0    F          00:00:00.34 00:00:00.00 3.64 MB 12.0 KB /scheme/initfs/bin/logd
+3     0     0     UB    #2    F          00:00:00.00 00:00:00.01 1.62 MB 120 KB  /scheme/initfs/bin/randd
+4     0     0     UB    #0    F          00:00:00.00 00:00:00.02 1.74 MB 0 B     /scheme/initfs/bin/ipcd
+5     0     0     UB    #0    F          00:00:00.00 00:00:00.00 1.55 MB 0 B     /scheme/initfs/bin/zerod
+6     0     0     UB    #2    F          00:00:00.00 00:00:00.00 1.55 MB 40.0 KB /scheme/initfs/bin/zerod
+7     0     0     UB    #1    F          00:00:00.00 00:00:00.00 2.77 MB 0 B     /scheme/initfs/bin/ramfs
+8     0     0     UB    #2    F          00:00:00.34 00:00:00.01 5.70 MB 0 B     /scheme/initfs/bin/rpi-firmwared
+8     0     0     US    #1    F          00:00:00.16 00:00:00.16 5.70 MB 0 B     /scheme/initfs/bin/rpi-firmwared
+8     0     0     US    #0    F          00:00:00.00 00:00:00.00 5.70 MB 0 B     /scheme/initfs/bin/rpi-firmwared
+9     0     0     UB    #3    F          00:00:00.01 00:00:00.00 1.67 MB 0 B     /scheme/initfs/bin/inputd
+10    0     0     UB    #2    F          00:00:00.14 00:00:00.02 3.36 MB 4.00 KB /scheme/initfs/bin/lived
+11    0     0     UB    #0    F          00:00:00.00 00:00:00.00 1.62 MB 0 B     /scheme/initfs/bin/bcm2835-gpiod
+12    0     0     UB    #0    F          00:00:00.00 00:00:00.00 1.62 MB 0 B     /scheme/initfs/bin/bcm2835-spid
+13    0     0     UB    #0    F          00:00:00.00 00:00:00.00 1.62 MB 0 B     /scheme/initfs/bin/bcm2835-i2cd
+14    0     0     UB    #1    F          00:00:00.03 00:00:00.01 2.74 MB 0 B     /scheme/initfs/bin/vesad
+15    0     0     UB    #3    F          00:00:00.38 00:00:00.24 1.71 MB 8.00 KB /scheme/initfs/bin/bcm2835-pwmau
+16    0     0     UB    #2    F          00:00:00.11 00:00:00.21 7.73 MB 1.04 MB /scheme/initfs/bin/fbbootlogd
+18    0     0     UB    #3    F          00:00:04.23 00:00:04.31 3.77 MB 4.00 KB /scheme/initfs/bin/dwc2d
+18    0     0     US    #0    F          00:00:00.01 00:00:00.06 3.77 MB 4.00 KB /scheme/initfs/bin/dwc2d
+19    0     0     UB    #0    F          00:00:00.28 00:00:00.05 1.67 MB 4.00 KB /scheme/initfs/bin/bcm2835-sdhos
+20    0     0     UB    #2    F          00:00:00.06 00:00:00.29 3.92 MB 0 B     /scheme/initfs/bin/rpi-fbd
+22    0     0     UB    #2    F          00:00:13.82 00:00:01.26 35.1 MB 20.0 KB /scheme/initfs/bin/redoxfs
+23    0     0     UB    #2    F          00:00:00.06 00:00:00.03 1.62 MB 32.0 KB /usr/bin/ptyd
+26    0     0     UB    #3    F          00:00:00.00 00:00:00.03 5.20 MB 0 B     /usr/bin/sudo
+27    0     0     UB    #3    F          00:00:00.13 00:00:00.19 5.23 MB 32.0 KB /usr/bin/netstack
+27    0     0     US    #3    F          00:00:00.00 00:00:00.00 5.23 MB 32.0 KB /usr/bin/netstack
+28    0     0     UB    #2    F          00:00:00.01 00:00:00.03 6.15 MB 1.04 MB /usr/bin/fbcond
+29    0     0     UB    #1    F          00:00:00.48 00:00:00.13 1.86 MB 0 B     /usr/bin/getty
+31    0     0     US    #3    F          00:00:00.01 00:00:00.02 1.68 MB 0 B     /usr/bin/dhcpd
+32    0     0     UB    #3    F          00:00:00.00 00:00:00.00 11.2 MB 0 B     /usr/bin/devshd
+32    0     0     UB    #3    F          00:00:00.00 00:00:00.00 11.2 MB 0 B     /usr/bin/devshd
+32    0     0     UB    #3    F          00:00:00.00 00:00:00.00 11.2 MB 0 B     /usr/bin/devshd
+32    0     0     UB    #3    F          00:00:00.00 00:00:00.03 11.2 MB 0 B     /usr/bin/devshd
+34    0     0     UB    #0    F          00:00:00.07 00:00:00.08 3.62 MB 4.00 KB /usr/bin/audiod
+34    0     0     UB    #3    F          00:00:00.33 00:00:00.62 3.62 MB 4.00 KB /usr/bin/audiod
+36    0     0     UB    #0    F          00:00:00.08 00:00:00.22 34.3 MB 20.0 KB /usr/bin/redoxfs
+37    0     0     UB    #2    F          00:00:00.00 00:00:00.13 1.86 MB 0 B     /usr/bin/getty
+38    0     0     US    #2    F          00:00:00.01 00:00:00.05 5.34 MB 0 B     /usr/bin/timesync
+41    0     0     UB    #1    F          00:00:00.01 00:00:00.02 5.88 MB 0 B     /usr/bin/login
+42    0     0     UB    #3    F          00:00:00.01 00:00:00.03 5.88 MB 0 B     /usr/bin/login
+87    0     0     UB    #2    F          00:00:00.25 00:00:00.28 5.82 MB 0 B     /usr/bin/login
+88    0     0     UB    #2    F          00:00:00.02 00:00:00.06 7.65 MB 0 B     /usr/bin/ion
+90    0     0     UR+   #2    F          00:00:00.00 00:00:00.03 5.14 MB 0 B     /usr/bin/ps
+### free  (0.3 s)
+total      used      free
+Mem:        734884    140372    594512
+### ls /scheme/sys  (0.3 s)
+block  context	cpu  env  exe  iostat  irq  kstop  log	stat  syscall  uname  update_time_offset
+### cat /scheme/sys/iostat  (0.4 s)
+0: [kmain]
+0: [kmain]
+0: [kmain]
+0: [kmain]
+0: initfs
+0:        1        2 00010000: debug:
+1:        1        3 00020000: debug:
+2:        1        4 00020000: debug:
+3:       16       17 00A30000: /scheme
+U    0:        9        5 02030000: /scheme/kernel.proc/
+U    1:        1        1 02030000: Invalid argument
+U    2:        2 18446744073709551615 02030000: /scheme/event/
+U    3:        3 18446744073709551615 02030000: /scheme/memory/
+U    4:        4        0 02030000: /scheme/pipe/
+U    5:        5        1 02030000: Bad file number
+U    6:        6        1 02030000: Bad file number
+U    7:        7        1 02030000: Bad file number
+U    8:        8        1 02030000: Bad file number
+U    9:        9        1 02030000: /scheme/kernel.proc/
+U   10:       10        3 02030000: Operation not supported on transport endpoint
+U   11:       11        1 02030000: /scheme/kernel.dtb/
+U   13:        9       16 02030000: /scheme/kernel.proc/
+0: procmgr
+0:        1        2 00010000: debug:
+1:        1        3 00020000: debug:
+2:        1        4 00020000: debug:
+3:       16       18 00A70000: /scheme
+4:        9        2 02030000: /scheme/kernel.proc/
+5:        2        0 02000000: /scheme/event/
+6:        9       44 02030000: /scheme/kernel.proc/
+7:        9       57 02030000: /scheme/kernel.proc/
+8:        9       58 02030000: /scheme/kernel.proc/
+9:        9       85 02030000: /scheme/kernel.proc/
+10:        9      106 02030000: /scheme/kernel.proc/
+11:        9       87 02030000: /scheme/kernel.proc/
+12:        9      107 02030000: /scheme/kernel.proc/
+13:        9      134 02030000: /scheme/kernel.proc/
+14:        9      135 02030000: /scheme/kernel.proc/
+15:        9      162 02030000: /scheme/kernel.proc/
+16:        9      163 02030000: /scheme/kernel.proc/
+17:        9      190 02030000: /scheme/kernel.proc/
+18:        9      191 02030000: /scheme/kernel.proc/
+19:        9      218 02030000: /scheme/kernel.proc/
+20:        9      219 02030000: /scheme/kernel.proc/
+21:        9      246 02030000: /scheme/kernel.proc/
+22:        9      247 02030000: /scheme/kernel.proc/
+23:        9      274 02030000: /scheme/kernel.proc/
+24:        9      284 02030000: /scheme/kernel.proc/
+25:        9      276 02030000: /scheme/kernel.proc/
+26:        9      294 02030000: /scheme/kernel.proc/
+27:        9      286 02030000: /scheme/kernel.proc/
+28:        9      295 02030000: /scheme/kernel.proc/
+29:        9      322 02030000: /scheme/kernel.proc/
+30:        9      323 02030000: /scheme/kernel.proc/
+31:        9      350 02030000: /scheme/kernel.proc/
+32:        9      351 02030000: /scheme/kernel.proc/
+33:        9      378 02030000: /scheme/kernel.proc/
+34:        9      379 02030000: /scheme/kernel.proc/
+35:        9      406 02030000: /scheme/kernel.proc/
+36:        9      407 02030000: /scheme/kernel.proc/
+37:        9      434 02030000: /scheme/kernel.proc/
+38:        9      435 02030000: /scheme/kernel.proc/
+39:        9      462 02030000: /scheme/kernel.proc/
+40:        9      463 02030000: /scheme/kernel.proc/
+41:        9      490 02030000: /scheme/kernel.proc/
+42:        9      491 02030000: /scheme/kernel.proc/
+43:        9      546 02030000: /scheme/kernel.proc/
+44:        9      547 02030000: /scheme/kernel.proc/
+45:        9      574 02030000: /scheme/kernel.proc/
+46:        9      584 02030000: /scheme/kernel.proc/
+47:        9      576 02030000: /scheme/kernel.proc/
+48:        9      585 02030000: /scheme/kernel.proc/
+49:        9      612 02030000: /scheme/kernel.proc/
+50:        9      613 02030000: /scheme/kernel.proc/
+51:        9      685 02030000: /scheme/kernel.proc/
+52:        9      686 02030000: /scheme/kernel.proc/
+53:        9      669 02030000: /scheme/kernel.proc/
+54:        9      670 02030000: /scheme/kernel.proc/
+55:        9      777 02030000: /scheme/kernel.proc/
+56:        9      778 02030000: /scheme/kernel.proc/
+57:        9      807 02030000: /scheme/kernel.proc/
+58:        9      808 02030000: /scheme/kernel.proc/
+59:        9      837 02030000: /scheme/kernel.proc/
+60:        9      845 02030000: /scheme/kernel.proc/
+61:        9      839 02030000: /scheme/kernel.proc/
+62:        9      846 02030000: /scheme/kernel.proc/
+63:        9      875 02030000: /scheme/kernel.proc/
+64:        9      876 02030000: /scheme/kernel.proc/
+65:        9      931 02030000: /scheme/kernel.proc/
+66:        9      932 02030000: /scheme/kernel.proc/
+67:        9      955 02030000: /scheme/kernel.proc/
+68:        9      956 02030000: /scheme/kernel.proc/
+69:        9     1023 02030000: /scheme/kernel.proc/
+70:        9     1024 02030000: /scheme/kernel.proc/
+71:        9     1052 02030000: /scheme/kernel.proc/
+72:        9     1107 02030000: /scheme/kernel.proc/
+73:        9     1054 02030000: /scheme/kernel.proc/
+74:        9     1108 02030000: /scheme/kernel.proc/
+75:        9     1091 02030000: /scheme/kernel.proc/
+76:        9     1092 02030000: /scheme/kernel.proc/
+77:        9     1131 02030000: /scheme/kernel.proc/
+78:        9     1132 02030000: /scheme/kernel.proc/
+79:        9     2655 02030000: /scheme/kernel.proc/
+80:        9     2665 02030000: /scheme/kernel.proc/
+81:        9     2657 02030000: /scheme/kernel.proc/
+82:        9     2666 02030000: /scheme/kernel.proc/
+83:        9     1260 02030000: /scheme/kernel.proc/
+84:        9     1226 02030000: /scheme/kernel.proc/
+85:        9     1261 02030000: /scheme/kernel.proc/
+86:        9     1227 02030000: /scheme/kernel.proc/
+87:        9     2912 02030000: /scheme/kernel.proc/
+88:        9     2691 02030000: /scheme/kernel.proc/
+89:        9     2913 02030000: /scheme/kernel.proc/
+90:        9     2701 02030000: /scheme/kernel.proc/
+91:        9     2693 02030000: /scheme/kernel.proc/
+92:        9     2717 02030000: /scheme/kernel.proc/
+93:        9     2703 02030000: /scheme/kernel.proc/
+94:        9     2718 02030000: /scheme/kernel.proc/
+U    0:       17        1 00000000: Bad file number
+U    9:        9        1 02030000: /scheme/kernel.proc/
+U   12:        9       18 02030000: /scheme/kernel.proc/
+U   14:        9       29 02030000: /scheme/kernel.proc/
+0: initnsmgr
+0:        1        2 00010000: debug:
+1:        1        3 00020000: debug:
+2:        1        4 00020000: debug:
+4:       16       19 00A30000: /scheme
+U    0:       17        1 00000000: Bad file number
+U    1:        1        1 02030000: Invalid argument
+U    2:        2 18446744073709551615 02030000: /scheme/event/
+U    3:        3 18446744073709551615 02030000: /scheme/memory/
+U    4:        4        0 02030000: /scheme/pipe/
+U    5:        5        1 02030000: Bad file number
+U    6:        6        1 02030000: Bad file number
+U    7:        7        1 02030000: Bad file number
+U    8:        8        1 02030000: Bad file number
+U    9:        9        1 02030000: /scheme/kernel.proc/
+U   10:       10        3 02030000: Operation not supported on transport endpoint
+U   11:       11        1 02030000: /scheme/kernel.dtb/
+U   12:       18        0 00000000: /scheme/proc/
+U   13:        9       31 02030000: /scheme/kernel.proc/
+U   14:       20        1 00000000: Operation not supported on transport endpoint
+U   15:        9       42 02030000: /scheme/kernel.proc/
+U   16:       16        0 02030000: /scheme
+U   17:       21        1 00000000: /scheme/rand/
+U   18:       22        0 00000000: /scheme/chan/
+U   22:       23        1 00000000: Bad file number
+U   23:       24        0 00000000: /scheme/uds_stream/
+U   24:       25        0 00000000: /scheme/uds_dgram/
+U   25:       26        1 00000000: /scheme/zero/
+U   26:       27        1 00000000: /scheme/zero/
+U   27:       28        1 00000000: /scheme/logging/
+U   28:       29        1 00000000: /scheme/rpi-firmware/
+U   29:       30        1 00000000: Invalid argument
+U   30:       31        1 00000000: Bad file number
+U   31:       32        1 00000000: /scheme/gpio/
+U   32:       33        1 00000000: /scheme/spi/
+U   33:       34        1 00000000: /scheme/i2c/
+U   34:       35        1 00000000: Operation not supported on transport endpoint
+U   35:       36        1 00000000: /scheme/audiohw/
+U   36:       37        1 00000000: /scheme/network.usb_lan78xx/
+U   37:       38        1 00000000: Bad file number
+U   38:       39        1 00000000: Operation not supported on transport endpoint
+U   39:       40        1 00000000: Bad file number
+U   40:       41        0 00000000: Bad file number
+U   41:       42        1 00000000: Operation not supported on transport endpoint
+U   42:       43        1 00000000: Bad file number
+U   43:       44        1 00000000: Bad file number
+U   44:       45        1 00000000: Bad file number
+U   45:       46        1 00000000: Bad file number
+U   46:       47        1 00000000: Operation not supported on transport endpoint
+U   47:       48        1 00000000: Operation not supported on transport endpoint
+U   48:       49        1 00000000: Operation not supported on transport endpoint
+U   49:       50        1 00000000: Bad file number
+1: /scheme/initfs/bin/init
+0:       20        2 00010000: /scheme/log/
+1:       20        3 00020000: /scheme/log/
+2:       20        4 00020000: /scheme/log/
+U    2:       19      117 00000000: Operation not supported on transport endpoint
+U    7:        9       53 02030000: /scheme/kernel.proc/
+U    8:       17        2 20000000: /scheme/initfs
+U   10:       18        2 00000000: /scheme/proc/
+U   11:       18        1 00000000: /scheme/proc/
+U   12:       18        0 00000000: /scheme/proc/
+U   17:       17        1 00000000: Bad file number
+2: /scheme/initfs/bin/logd
+0:        1        2 00010000: debug:
+1:        1        3 00020000: debug:
+2:        1        4 00020000: debug:
+3:        1        5 01020000: debug:
+4:        4       71 01010000: /scheme/pipe/
+5:       16       20 00A30000: /scheme
+U    0:       18        3 00000000: /scheme/proc/
+U    1:       18        4 00000000: /scheme/proc/
+U    2:       18        5 00000000: /scheme/proc/
+U    3:       18        6 00000000: /scheme/proc/
+U    4:        9      105 02030000: /scheme/kernel.proc/
+U    5:       19        3 00000000: Operation not supported on transport endpoint
+U    8:       17        2 20000000: /scheme/initfs
+U   11:        9       81 02030000: /scheme/kernel.proc/
+U   12:       18        0 00000000: /scheme/proc/
+U   17:       17        1 00000000: Bad file number
+2: /scheme/initfs/bin/logd
+0:        1        2 00010000: debug:
+1:        1        3 00020000: debug:
+2:        1        4 00020000: debug:
+3:        1        5 01020000: debug:
+4:        4       71 01010000: /scheme/pipe/
+5:       16       20 00A30000: /scheme
+U    0:       18        3 00000000: /scheme/proc/
+U    1:       18        4 00000000: /scheme/proc/
+U    2:       18        5 00000000: /scheme/proc/
+U    3:       18        6 00000000: /scheme/proc/
+U    4:        9      105 02030000: /scheme/kernel.proc/
+U    5:       19        3 00000000: Operation not supported on transport endpoint
+U    8:       17        2 20000000: /scheme/initfs
+U   11:        9       81 02030000: /scheme/kernel.proc/
+U   12:       18        0 00000000: /scheme/proc/
+U   17:       17        1 00000000: Bad file number
+3: /scheme/initfs/bin/randd
+0:       20        2 00010000: /scheme/log/
+1:       20        3 00020000: /scheme/log/
+2:       20        4 00020000: /scheme/log/
+5:       16       21 00A30000: /scheme
+U    0:       18        7 00000000: /scheme/proc/
+U    1:       18        8 00000000: /scheme/proc/
+U    2:       19        7 00000000: Operation not supported on transport endpoint
+U    8:       17        2 20000000: /scheme/initfs
+U   11:        9      130 02030000: /scheme/kernel.proc/
+U   12:       18        0 00000000: /scheme/proc/
+U   17:       17        1 00000000: Bad file number
+4: /scheme/initfs/bin/ipcd
+0:       20        2 00010000: /scheme/log/
+1:       20        3 00020000: /scheme/log/
+2:       20        4 00020000: /scheme/log/
+3:       21        2 01010000: /scheme/rand/
+4:        2        1 030301C0: /scheme/event/
+5:       16       22 00A70000: /scheme
+6:       18       11 00010000: /scheme/proc/
+7:       16       23 00A70000: /scheme
+8:       16       24 00A70000: /scheme
+9:       18       12 00010000: /scheme/proc/
+10:       16       25 00A70000: /scheme
+U    0:       18        9 00000000: /scheme/proc/
+U    1:       18       10 00000000: /scheme/proc/
+U    2:       19       21 00000000: Operation not supported on transport endpoint
+U    8:       17        2 20000000: /scheme/initfs
+U   11:        9      158 02030000: /scheme/kernel.proc/
+U   12:       18        0 00000000: /scheme/proc/
+U   17:       17        1 00000000: Bad file number
+5: /scheme/initfs/bin/zerod
+0:       20        2 00010000: /scheme/log/
+1:       20        3 00020000: /scheme/log/
+2:       20        4 00020000: /scheme/log/
+5:       16       26 00A30000: /scheme
+U    0:       18       14 00000000: /scheme/proc/
+U    1:       19       24 00000000: Operation not supported on transport endpoint
+U    2:       18       13 00000000: /scheme/proc/
+U    8:       17        2 20000000: /scheme/initfs
+U   11:        9      186 02030000: /scheme/kernel.proc/
+U   12:       18        0 00000000: /scheme/proc/
+U   17:       17        1 00000000: Bad file number
+6: /scheme/initfs/bin/zerod
+0:       20        2 00010000: /scheme/log/
+1:       20        3 00020000: /scheme/log/
+2:       20        4 00020000: /scheme/log/
+5:       16       27 00A30000: /scheme
+U    0:       18       15 00000000: /scheme/proc/
+U    1:       18       16 00000000: /scheme/proc/
+U    2:       19       28 00000000: Operation not supported on transport endpoint
+U    8:       17        2 20000000: /scheme/initfs
+U   11:        9      214 02030000: /scheme/kernel.proc/
+U   12:       18        0 00000000: /scheme/proc/
+U   17:       17        1 00000000: Bad file number
+7: /scheme/initfs/bin/ramfs
+0:       20        2 00010000: /scheme/log/
+1:       20        3 00020000: /scheme/log/
+2:       20        4 00020000: /scheme/log/
+3:        2        2 030301C0: /scheme/event/
+5:       16       28 00A70000: /scheme
+6:       21        5 01010000: /scheme/rand/
+7:        3        0 01010000: /scheme/memory/
+8:       18       19 00010000: /scheme/proc/
+9:       23        2 11000000: Bad file number
+10:        4       32 01000000: /scheme/pipe/
+U    0:       18       17 00000000: /scheme/proc/
+U    1:       18       18 00000000: /scheme/proc/
+U    2:       19       32 00000000: Operation not supported on transport endpoint
+U    8:       17        2 20000000: /scheme/initfs
+U   11:        9      242 02030000: /scheme/kernel.proc/
+U   12:       18        0 00000000: /scheme/proc/
+U   17:       17        1 00000000: Bad file number
+8: /scheme/initfs/bin/rpi-firmwared
+0:       20        2 00010000: /scheme/log/
+1:       20        3 00020000: /scheme/log/
+2:       20        4 00020000: /scheme/log/
+3:        3 18446744073709551615 00000000: /scheme/memory/
+5:        3        2 01000000: /scheme/memory/
+6:        8        5 10010000: /scheme/sys/
+8:       16       29 00A30000: /scheme
+U    0:       18       20 00000000: /scheme/proc/
+U    1:       18       21 00000000: /scheme/proc/
+U    2:       18       22 00000000: /scheme/proc/
+U    3:       18       23 00000000: /scheme/proc/
+U    4:       19       36 00000000: Operation not supported on transport endpoint
+U    8:       17        2 20000000: /scheme/initfs
+U   11:        9      270 02030000: /scheme/kernel.proc/
+U   12:       18        0 00000000: /scheme/proc/
+U   17:       17        1 00000000: Bad file number
+8: /scheme/initfs/bin/rpi-firmwared
+0:       20        2 00010000: /scheme/log/
+1:       20        3 00020000: /scheme/log/
+2:       20        4 00020000: /scheme/log/
+3:        3 18446744073709551615 00000000: /scheme/memory/
+5:        3        2 01000000: /scheme/memory/
+6:        8        5 10010000: /scheme/sys/
+8:       16       29 00A30000: /scheme
+U    0:       18       20 00000000: /scheme/proc/
+U    1:       18       21 00000000: /scheme/proc/
+U    2:       18       22 00000000: /scheme/proc/
+U    3:       18       23 00000000: /scheme/proc/
+U    4:       19       36 00000000: Operation not supported on transport endpoint
+U    8:       17        2 20000000: /scheme/initfs
+U   11:        9      270 02030000: /scheme/kernel.proc/
+U   12:       18        0 00000000: /scheme/proc/
+U   17:       17        1 00000000: Bad file number
+8: /scheme/initfs/bin/rpi-firmwared
+0:       20        2 00010000: /scheme/log/
+1:       20        3 00020000: /scheme/log/
+2:       20        4 00020000: /scheme/log/
+3:        3 18446744073709551615 00000000: /scheme/memory/
+5:        3        2 01000000: /scheme/memory/
+6:        8        5 10010000: /scheme/sys/
+8:       16       29 00A30000: /scheme
+U    0:       18       20 00000000: /scheme/proc/
+U    1:       18       21 00000000: /scheme/proc/
+U    2:       18       22 00000000: /scheme/proc/
+U    3:       18       23 00000000: /scheme/proc/
+U    4:       19       36 00000000: Operation not supported on transport endpoint
+U    8:       17        2 20000000: /scheme/initfs
+U   11:        9      270 02030000: /scheme/kernel.proc/
+U   12:       18        0 00000000: /scheme/proc/
+U   17:       17        1 00000000: Bad file number
+9: /scheme/initfs/bin/inputd
+0:       20        2 00010000: /scheme/log/
+1:       20        3 00020000: /scheme/log/
+2:       20        4 00020000: /scheme/log/
+3:       28        4 070201A4: /scheme/logging/input/inputd/inputd.log
+5:       28        6 070201A4: /scheme/logging/input/inputd/inputd.ansi.log
+6:       21        6 01010000: /scheme/rand/
+7:       16       30 00A30000: /scheme
+U    0:       18       24 00000000: /scheme/proc/
+U    1:       18       25 00000000: /scheme/proc/
+U    2:       35        2 00000000: Operation not supported on transport endpoint
+U    3:       39        2 00000000: Operation not supported on transport endpoint
+U    8:       17        2 20000000: /scheme/initfs
+U   11:        9      318 02030000: /scheme/kernel.proc/
+U   12:       18        0 00000000: /scheme/proc/
+U   13:       19        0 00000000: Operation not supported on transport endpoint
+U   17:       17        1 00000000: Bad file number
+10: /scheme/initfs/bin/lived
+0:       20        2 00010000: /scheme/log/
+1:       20        3 00020000: /scheme/log/
+2:       20        4 00020000: /scheme/log/
+3:        2        3 030301C0: /scheme/event/
+5:       21        7 01010000: /scheme/rand/
+7:       16       31 00A70000: /scheme
+U    0:       18       26 00000000: /scheme/proc/
+U    1:       18       27 00000000: /scheme/proc/
+U    2:       19       44 00000000: Operation not supported on transport endpoint
+U    8:       17        2 20000000: /scheme/initfs
+U   11:        9      346 02030000: /scheme/kernel.proc/
+U   12:       18        0 00000000: /scheme/proc/
+U   17:       17        1 00000000: Bad file number
+11: /scheme/initfs/bin/bcm2835-gpiod
+0:       20        2 00010000: /scheme/log/
+1:       20        3 00020000: /scheme/log/
+2:       20        4 00020000: /scheme/log/
+3:        3 18446744073709551615 00000000: /scheme/memory/
+6:       16       32 00A30000: /scheme
+U    0:       18       29 00000000: /scheme/proc/
+U    1:       19       47 00000000: Operation not supported on transport endpoint
+U    2:       18       28 00000000: /scheme/proc/
+U    8:       17        2 20000000: /scheme/initfs
+U   11:        9      374 02030000: /scheme/kernel.proc/
+U   12:       18        0 00000000: /scheme/proc/
+U   17:       17        1 00000000: Bad file number
+12: /scheme/initfs/bin/bcm2835-spid
+0:       20        2 00010000: /scheme/log/
+1:       20        3 00020000: /scheme/log/
+2:       20        4 00020000: /scheme/log/
+3:        3 18446744073709551615 00000000: /scheme/memory/
+6:       16       33 00A30000: /scheme
+U    0:       18       30 00000000: /scheme/proc/
+U    1:       18       31 00000000: /scheme/proc/
+U    2:       19       51 00000000: Operation not supported on transport endpoint
+U    8:       17        2 20000000: /scheme/initfs
+U   11:        9      402 02030000: /scheme/kernel.proc/
+U   12:       18        0 00000000: /scheme/proc/
+U   17:       17        1 00000000: Bad file number
+13: /scheme/initfs/bin/bcm2835-i2cd
+0:       20        2 00010000: /scheme/log/
+1:       20        3 00020000: /scheme/log/
+2:       20        4 00020000: /scheme/log/
+3:        3 18446744073709551615 00000000: /scheme/memory/
+6:       16       34 00A30000: /scheme
+U    0:       18       32 00000000: /scheme/proc/
+U    1:       18       33 00000000: /scheme/proc/
+U    2:       19       55 00000000: Operation not supported on transport endpoint
+U    8:       17        2 20000000: /scheme/initfs
+U   11:        9      430 02030000: /scheme/kernel.proc/
+U   12:       18        0 00000000: /scheme/proc/
+U   17:       17        1 00000000: Bad file number
+14: /scheme/initfs/bin/vesad
+0:       20        2 00010000: /scheme/log/
+1:       20        3 00020000: /scheme/log/
+2:       20        4 00020000: /scheme/log/
+3:        3 18446744073709551615 00000000: /scheme/memory/
+5:       21        8 01010000: /scheme/rand/
+7:       16       35 00A70000: /scheme
+8:        2        4 030301C0: /scheme/event/
+9:       30        2 01010000: Invalid argument
+U    0:       18       34 00000000: /scheme/proc/
+U    1:       18       35 00000000: /scheme/proc/
+U    2:       19       60 00000000: Operation not supported on transport endpoint
+U    8:       17        2 20000000: /scheme/initfs
+U   11:        9      458 02030000: /scheme/kernel.proc/
+U   12:       18        0 00000000: /scheme/proc/
+U   17:       17        1 00000000: Bad file number
+15: /scheme/initfs/bin/bcm2835-pwmau
+0:       20        2 00010000: /scheme/log/
+1:       20        3 00020000: /scheme/log/
+2:       20        4 00020000: /scheme/log/
+3:        3 18446744073709551615 00000000: /scheme/memory/
+5:        3        2 01000000: /scheme/memory/
+6:        7        2 01070000: /scheme/time/4/
+7:       21        9 01010000: /scheme/rand/
+8:       16       36 00A70000: /scheme
+9:        2        5 030301C0: /scheme/event/
+U    0:       18       37 00000000: /scheme/proc/
+U    1:       19       63 00000000: Operation not supported on transport endpoint
+U    2:       18       36 00000000: /scheme/proc/
+U    8:       17        2 20000000: /scheme/initfs
+U   11:        9      486 02030000: /scheme/kernel.proc/
+U   12:       18        0 00000000: /scheme/proc/
+U   17:       17        1 00000000: Bad file number
+16: /scheme/initfs/bin/fbbootlogd
+0:       39        3 01010000: /scheme/display.rpi/1
+1:       20        3 00020000: /scheme/log/
+2:       20        4 00020000: /scheme/log/
+3:        2        6 030301C0: /scheme/event/
+5:        4       70 00050000: /scheme/pipe/
+7:       30        3 01050000: /scheme/display.rpi/1
+U    0:       18       38 00000000: /scheme/proc/
+U    1:       18       39 00000000: /scheme/proc/
+U    2:       20        2 00010000: /scheme/log/
+U    8:       17        2 20000000: /scheme/initfs
+U   11:        9      514 02030000: /scheme/kernel.proc/
+U   12:       18        0 00000000: /scheme/proc/
+U   13:       19        0 00000000: Operation not supported on transport endpoint
+U   17:       17        1 00000000: Bad file number
+18: /scheme/initfs/bin/dwc2d
+0:       20        2 00010000: /scheme/log/
+1:       20        3 00020000: /scheme/log/
+2:       20        4 00020000: /scheme/log/
+3:        3 18446744073709551615 00000000: /scheme/memory/
+5:        3        2 01000000: /scheme/memory/
+6:       21       10 01010000: /scheme/rand/
+7:        2        7 030301C0: /scheme/event/
+8:        6        2 070201A4: irq:50
+9:        7        3 01070000: /scheme/time/4/
+10:        7        4 01070000: /scheme/time/4/
+12:       16       37 00A70000: /scheme
+U    0:       18       42 00000000: /scheme/proc/
+U    1:       18       40 00000000: /scheme/proc/
+U    2:       18       41 00000000: /scheme/proc/
+U    8:       17        2 20000000: /scheme/initfs
+U   11:        9      570 02030000: /scheme/kernel.proc/
+U   12:       18        0 00000000: /scheme/proc/
+U   13:       19        0 00000000: Operation not supported on transport endpoint
+U   17:       17        1 00000000: Bad file number
+18: /scheme/initfs/bin/dwc2d
+0:       20        2 00010000: /scheme/log/
+1:       20        3 00020000: /scheme/log/
+2:       20        4 00020000: /scheme/log/
+3:        3 18446744073709551615 00000000: /scheme/memory/
+5:        3        2 01000000: /scheme/memory/
+6:       21       10 01010000: /scheme/rand/
+7:        2        7 030301C0: /scheme/event/
+8:        6        2 070201A4: irq:50
+9:        7        3 01070000: /scheme/time/4/
+10:        7        4 01070000: /scheme/time/4/
+12:       16       37 00A70000: /scheme
+U    0:       18       42 00000000: /scheme/proc/
+U    1:       18       40 00000000: /scheme/proc/
+U    2:       18       41 00000000: /scheme/proc/
+U    8:       17        2 20000000: /scheme/initfs
+U   11:        9      570 02030000: /scheme/kernel.proc/
+U   12:       18        0 00000000: /scheme/proc/
+U   13:       19        0 00000000: Operation not supported on transport endpoint
+U   17:       17        1 00000000: Bad file number
+19: /scheme/initfs/bin/bcm2835-sdhos
+0:       20        2 00010000: /scheme/log/
+1:       20        3 00020000: /scheme/log/
+2:       20        4 00020000: /scheme/log/
+3:        3 18446744073709551615 00000000: /scheme/memory/
+4:        2        8 030301C0: /scheme/event/
+6:       16       38 00A70000: /scheme
+U    0:       18       43 00000000: /scheme/proc/
+U    1:       18       44 00000000: /scheme/proc/
+U    2:       19       71 00000000: Operation not supported on transport endpoint
+U    8:       17        2 20000000: /scheme/initfs
+U   11:        9      608 02030000: /scheme/kernel.proc/
+U   12:       18        0 00000000: /scheme/proc/
+U   17:       17        1 00000000: Bad file number
+20: /scheme/initfs/bin/rpi-fbd
+0:       20        2 00010000: /scheme/log/
+1:       20        3 00020000: /scheme/log/
+2:       20        4 00020000: /scheme/log/
+3:        3 18446744073709551615 00000000: /scheme/memory/
+5:       29        6 01030000: /scheme/rpi-firmware/
+7:       16       39 00A70000: /scheme
+8:       21       11 01010000: /scheme/rand/
+9:        2        9 030301C0: /scheme/event/
+10:       30        4 01010000: Invalid argument
+11:        7        5 01070000: /scheme/time/4/
+U    0:       18       46 00000000: /scheme/proc/
+U    2:       18       45 00000000: /scheme/proc/
+U    8:       17        2 20000000: /scheme/initfs
+U   11:        9      636 02030000: /scheme/kernel.proc/
+U   12:       18        0 00000000: /scheme/proc/
+U   13:       19        0 00000000: Operation not supported on transport endpoint
+U   17:       17        1 00000000: Bad file number
+22: /scheme/initfs/bin/redoxfs
+0:       20        2 00010000: /scheme/log/
+1:       20        3 00020000: /scheme/log/
+2:       20        4 00020000: /scheme/log/
+3:        2       10 030301A4: /scheme/event/
+4:        4       89 01010000: /scheme/pipe/
+5:        4       93 00010000: /scheme/pipe/
+6:        7        6 01030000: /scheme/time/4/
+7:       31        3 01030000: /scheme/disk.live/0
+8:       21       12 01010000: /scheme/rand/
+9:       18       51 00010000: /scheme/proc/
+10:       16       40 00A30000: /scheme
+U    0:       18       49 00000000: /scheme/proc/
+U    2:       19       80 00000000: Operation not supported on transport endpoint
+U    3:       18       50 00000000: /scheme/proc/
+U    5:        9      683 02030000: /scheme/kernel.proc/
+U    8:       17        2 20000000: /scheme/initfs
+U   12:       18        0 00000000: /scheme/proc/
+U   17:       17        1 00000000: Bad file number
+23: /usr/bin/ptyd
+0:       20        2 00010000: /scheme/log/
+1:       20        3 00020000: /scheme/log/
+2:       20        4 00020000: /scheme/log/
+3:        2       11 030301C0: /scheme/event/
+5:        7        7 00040000: /scheme/time/4/
+6:       21       13 01010000: /scheme/rand/
+7:       16       41 00A70000: /scheme
+U    0:       18       48 00000000: /scheme/proc/
+U    1:       18       47 00000000: /scheme/proc/
+U    2:       19       84 00000000: Operation not supported on transport endpoint
+U    8:       17        2 20000000: /scheme/initfs
+U   11:        9      709 02030000: /scheme/kernel.proc/
+U   12:       18        0 00000000: /scheme/proc/
+U   17:       17        1 00000000: Bad file number
+26: /usr/bin/sudo
+0:       20        2 00010000: /scheme/log/
+1:       20        3 00020000: /scheme/log/
+2:       20        4 00020000: /scheme/log/
+3:       21       14 01010000: /scheme/rand/
+4:        4      103 01010000: /scheme/pipe/
+5:       16       42 00A30000: /scheme
+U    0:       18       53 00000000: /scheme/proc/
+U    1:       18       52 00000000: /scheme/proc/
+U    8:       17        2 20000000: /scheme/initfs
+U   10:        9      803 02030000: /scheme/kernel.proc/
+U   12:       18        0 00000000: /scheme/proc/
+U   13:       19        0 00000000: Operation not supported on transport endpoint
+U   17:       17        1 00000000: Bad file number
+27: /usr/bin/netstack
+0:       20        2 00010000: /scheme/log/
+1:       20        3 00020000: /scheme/log/
+2:       20        4 00020000: /scheme/log/
+3:       19       89 10010000: Operation not supported on transport endpoint
+5:       19        0 00000000: Operation not supported on transport endpoint
+6:        7        8 00030000: /scheme/time/4/
+7:       37        2 00070000: /scheme/network.usb_lan78xx/
+8:       16       43 00A70000: /scheme
+9:       37        4 00020000: /scheme/network.usb_lan78xx/multicast
+10:       16       44 00A70000: /scheme
+11:       16       45 00A70000: /scheme
+12:       16       46 00A70000: /scheme
+13:       16       47 00A70000: /scheme
+14:        2       12 030301C0: /scheme/event/
+U    0:       18       55 00000000: /scheme/proc/
+U    1:       19      105 00000000: Operation not supported on transport endpoint
+U    2:       18       54 00000000: /scheme/proc/
+U    8:       17        2 20000000: /scheme/initfs
+U   11:        9      833 02030000: /scheme/kernel.proc/
+U   12:       18        0 00000000: /scheme/proc/
+U   13:       18       56 00000000: /scheme/proc/
+U   17:       17        1 00000000: Bad file number
+27: /usr/bin/netstack
+0:       20        2 00010000: /scheme/log/
+1:       20        3 00020000: /scheme/log/
+2:       20        4 00020000: /scheme/log/
+3:       19       89 10010000: Operation not supported on transport endpoint
+5:       19        0 00000000: Operation not supported on transport endpoint
+6:        7        8 00030000: /scheme/time/4/
+7:       37        2 00070000: /scheme/network.usb_lan78xx/
+8:       16       43 00A70000: /scheme
+9:       37        4 00020000: /scheme/network.usb_lan78xx/multicast
+10:       16       44 00A70000: /scheme
+11:       16       45 00A70000: /scheme
+12:       16       46 00A70000: /scheme
+13:       16       47 00A70000: /scheme
+14:        2       12 030301C0: /scheme/event/
+U    0:       18       55 00000000: /scheme/proc/
+U    1:       19      105 00000000: Operation not supported on transport endpoint
+U    2:       18       54 00000000: /scheme/proc/
+U    8:       17        2 20000000: /scheme/initfs
+U   11:        9      833 02030000: /scheme/kernel.proc/
+U   12:       18        0 00000000: /scheme/proc/
+U   13:       18       56 00000000: /scheme/proc/
+U   17:       17        1 00000000: Bad file number
+28: /usr/bin/fbcond
+1:       20        3 00020000: /scheme/log/
+2:       20        4 00020000: /scheme/log/
+3:       28       14 070201A4: /scheme/logging/graphics/fbcond/fbcond.log
+5:       28       16 070201A4: /scheme/logging/graphics/fbcond/fbcond.ansi.log
+6:        2       13 030301C0: /scheme/event/
+7:       30        5 01050000: /scheme/display.rpi/2
+8:       16       48 00A70000: /scheme
+9:       39        4 01010000: /scheme/display.rpi/2
+10:       21       15 01010000: /scheme/rand/
+U    0:       20        2 00010000: /scheme/log/
+U    1:       18       57 00000000: /scheme/proc/
+U    2:       18       58 00000000: /scheme/proc/
+U    8:       17        2 20000000: /scheme/initfs
+U   11:        9      871 02030000: /scheme/kernel.proc/
+U   12:       18        0 00000000: /scheme/proc/
+U   13:       19        0 00000000: Operation not supported on transport endpoint
+U   17:       17        1 00000000: Bad file number
+29: /usr/bin/getty
+0:       20        2 00010000: /scheme/log/
+1:       20        3 00020000: /scheme/log/
+2:       20        4 00020000: /scheme/log/
+3:        1        8 01070000: debug:
+4:        4      115 01010000: /scheme/pipe/
+5:       41        1 030701A4: /scheme/pty/ptmx
+6:        2       15 01030000: /scheme/event/
+7:       41        2 01010000: /scheme/pty/1
+8:       41        3 01020000: /scheme/pty/1
+9:       41        4 01020000: /scheme/pty/1
+10:       41        2 01010000: /scheme/pty/1
+U    0:       18       59 00000000: /scheme/proc/
+U    1:       18       60 00000000: /scheme/proc/
+U    8:       17        2 20000000: /scheme/initfs
+U   11:        9      902 02030000: /scheme/kernel.proc/
+U   12:       18        0 00000000: /scheme/proc/
+U   13:       19        0 00000000: Operation not supported on transport endpoint
+U   17:       17        1 00000000: Bad file number
+31: /usr/bin/dhcpd
+0:       20        2 00010000: /scheme/log/
+1:       20        3 00020000: /scheme/log/
+2:       20        4 00020000: /scheme/log/
+4:        4      121 01010000: /scheme/pipe/
+U    1:       18       61 00000000: /scheme/proc/
+U    2:       18       62 00000000: /scheme/proc/
+U    8:       17        2 20000000: /scheme/initfs
+U   11:        9     1001 02030000: /scheme/kernel.proc/
+U   12:       18        0 00000000: /scheme/proc/
+U   13:       19        0 00000000: Operation not supported on transport endpoint
+U   17:       17        1 00000000: Bad file number
+32: /usr/bin/devshd
+0:       20        2 00010000: /scheme/log/
+1:       20        3 00020000: /scheme/log/
+2:       20        4 00020000: /scheme/log/
+3:       45        3 00030000: /scheme/tcp/0.0.0.0:0/0.0.0.0:2323
+4:        4      125 01010000: /scheme/pipe/
+5:       41      431 01030000: /scheme/pty/ptmx
+6:       45        6 00030000: /scheme/tcp/<lan-ip>:58752/<lan-ip>:2323
+10:       45        6 00030000: /scheme/tcp/<lan-ip>:58752/<lan-ip>:2323
+11:       41      431 01030000: /scheme/pty/ptmx
+12:       45        6 00030000: /scheme/tcp/<lan-ip>:58752/<lan-ip>:2323
+U    0:       18       63 00000000: /scheme/proc/
+U    1:       18       64 00000000: /scheme/proc/
+U    2:       18       84 00000000: /scheme/proc/
+U    3:       18       88 00000000: /scheme/proc/
+U    4:        9     1498 02030000: /scheme/kernel.proc/
+U    5:       18       87 00000000: /scheme/proc/
+U    6:       18       86 00000000: /scheme/proc/
+U    7:        9     1500 02030000: /scheme/kernel.proc/
+U    8:       17        2 20000000: /scheme/initfs
+U    9:        9     1499 02030000: /scheme/kernel.proc/
+U   10:        9      981 02030000: /scheme/kernel.proc/
+U   11:       18       78 00000000: /scheme/proc/
+U   12:       18        0 00000000: /scheme/proc/
+U   13:       19        0 00000000: Operation not supported on transport endpoint
+U   14:        9     2653 02030000: /scheme/kernel.proc/
+U   15:       18       76 00000000: /scheme/proc/
+U   16:       18       91 00000000: /scheme/proc/
+U   17:       17        1 00000000: Bad file number
+U   18:       18       75 00000000: /scheme/proc/
+U   19:        9     2654 02030000: /scheme/kernel.proc/
+U   20:        9     2767 02030000: /scheme/kernel.proc/
+U   21:       18       77 00000000: /scheme/proc/
+32: /usr/bin/devshd
+0:       20        2 00010000: /scheme/log/
+1:       20        3 00020000: /scheme/log/
+2:       20        4 00020000: /scheme/log/
+3:       45        3 00030000: /scheme/tcp/0.0.0.0:0/0.0.0.0:2323
+4:        4      125 01010000: /scheme/pipe/
+5:       41      431 01030000: /scheme/pty/ptmx
+6:       45        6 00030000: /scheme/tcp/<lan-ip>:58752/<lan-ip>:2323
+10:       45        6 00030000: /scheme/tcp/<lan-ip>:58752/<lan-ip>:2323
+11:       41      431 01030000: /scheme/pty/ptmx
+12:       45        6 00030000: /scheme/tcp/<lan-ip>:58752/<lan-ip>:2323
+U    0:       18       63 00000000: /scheme/proc/
+U    1:       18       64 00000000: /scheme/proc/
+U    2:       18       84 00000000: /scheme/proc/
+U    3:       18       88 00000000: /scheme/proc/
+U    4:        9     1498 02030000: /scheme/kernel.proc/
+U    5:       18       87 00000000: /scheme/proc/
+U    6:       18       86 00000000: /scheme/proc/
+U    7:        9     1500 02030000: /scheme/kernel.proc/
+U    8:       17        2 20000000: /scheme/initfs
+U    9:        9     1499 02030000: /scheme/kernel.proc/
+U   10:        9      981 02030000: /scheme/kernel.proc/
+U   11:       18       78 00000000: /scheme/proc/
+U   12:       18        0 00000000: /scheme/proc/
+U   13:       19        0 00000000: Operation not supported on transport endpoint
+U   14:        9     2653 02030000: /scheme/kernel.proc/
+U   15:       18       76 00000000: /scheme/proc/
+U   16:       18       91 00000000: /scheme/proc/
+U   17:       17        1 00000000: Bad file number
+U   18:       18       75 00000000: /scheme/proc/
+U   19:        9     2654 02030000: /scheme/kernel.proc/
+U   20:        9     2767 02030000: /scheme/kernel.proc/
+U   21:       18       77 00000000: /scheme/proc/
+32: /usr/bin/devshd
+0:       20        2 00010000: /scheme/log/
+1:       20        3 00020000: /scheme/log/
+2:       20        4 00020000: /scheme/log/
+3:       45        3 00030000: /scheme/tcp/0.0.0.0:0/0.0.0.0:2323
+4:        4      125 01010000: /scheme/pipe/
+5:       41      431 01030000: /scheme/pty/ptmx
+6:       45        6 00030000: /scheme/tcp/<lan-ip>:58752/<lan-ip>:2323
+10:       45        6 00030000: /scheme/tcp/<lan-ip>:58752/<lan-ip>:2323
+11:       41      431 01030000: /scheme/pty/ptmx
+12:       45        6 00030000: /scheme/tcp/<lan-ip>:58752/<lan-ip>:2323
+U    0:       18       63 00000000: /scheme/proc/
+U    1:       18       64 00000000: /scheme/proc/
+U    2:       18       84 00000000: /scheme/proc/
+U    3:       18       88 00000000: /scheme/proc/
+U    4:        9     1498 02030000: /scheme/kernel.proc/
+U    5:       18       87 00000000: /scheme/proc/
+U    6:       18       86 00000000: /scheme/proc/
+U    7:        9     1500 02030000: /scheme/kernel.proc/
+U    8:       17        2 20000000: /scheme/initfs
+U    9:        9     1499 02030000: /scheme/kernel.proc/
+U   10:        9      981 02030000: /scheme/kernel.proc/
+U   11:       18       78 00000000: /scheme/proc/
+U   12:       18        0 00000000: /scheme/proc/
+U   13:       19        0 00000000: Operation not supported on transport endpoint
+U   14:        9     2653 02030000: /scheme/kernel.proc/
+U   15:       18       76 00000000: /scheme/proc/
+U   16:       18       91 00000000: /scheme/proc/
+U   17:       17        1 00000000: Bad file number
+U   18:       18       75 00000000: /scheme/proc/
+U   19:        9     2654 02030000: /scheme/kernel.proc/
+U   20:        9     2767 02030000: /scheme/kernel.proc/
+U   21:       18       77 00000000: /scheme/proc/
+32: /usr/bin/devshd
+0:       20        2 00010000: /scheme/log/
+1:       20        3 00020000: /scheme/log/
+2:       20        4 00020000: /scheme/log/
+3:       45        3 00030000: /scheme/tcp/0.0.0.0:0/0.0.0.0:2323
+4:        4      125 01010000: /scheme/pipe/
+5:       41      431 01030000: /scheme/pty/ptmx
+6:       45        6 00030000: /scheme/tcp/<lan-ip>:58752/<lan-ip>:2323
+10:       45        6 00030000: /scheme/tcp/<lan-ip>:58752/<lan-ip>:2323
+11:       41      431 01030000: /scheme/pty/ptmx
+12:       45        6 00030000: /scheme/tcp/<lan-ip>:58752/<lan-ip>:2323
+U    0:       18       63 00000000: /scheme/proc/
+U    1:       18       64 00000000: /scheme/proc/
+U    2:       18       84 00000000: /scheme/proc/
+U    3:       18       88 00000000: /scheme/proc/
+U    4:        9     1498 02030000: /scheme/kernel.proc/
+U    5:       18       87 00000000: /scheme/proc/
+U    6:       18       86 00000000: /scheme/proc/
+U    7:        9     1500 02030000: /scheme/kernel.proc/
+U    8:       17        2 20000000: /scheme/initfs
+U    9:        9     1499 02030000: /scheme/kernel.proc/
+U   10:        9      981 02030000: /scheme/kernel.proc/
+U   11:       18       78 00000000: /scheme/proc/
+U   12:       18        0 00000000: /scheme/proc/
+U   13:       19        0 00000000: Operation not supported on transport endpoint
+U   14:        9     2653 02030000: /scheme/kernel.proc/
+U   15:       18       76 00000000: /scheme/proc/
+U   16:       18       91 00000000: /scheme/proc/
+U   17:       17        1 00000000: Bad file number
+U   18:       18       75 00000000: /scheme/proc/
+U   19:        9     2654 02030000: /scheme/kernel.proc/
+U   20:        9     2767 02030000: /scheme/kernel.proc/
+U   21:       18       77 00000000: /scheme/proc/
+34: /usr/bin/audiod
+0:       20        2 00010000: /scheme/log/
+1:       20        3 00020000: /scheme/log/
+2:       20        4 00020000: /scheme/log/
+3:       36        2 01020000: /scheme/audiohw/
+4:       21       17 01010000: /scheme/rand/
+6:       16       49 00A30000: /scheme
+U    0:       19      111 00000000: Operation not supported on transport endpoint
+U    1:       18       65 00000000: /scheme/proc/
+U    2:       18       66 00000000: /scheme/proc/
+U    3:       18       67 00000000: /scheme/proc/
+U    8:       17        2 20000000: /scheme/initfs
+U   11:        9     1048 02030000: /scheme/kernel.proc/
+U   12:       18        0 00000000: /scheme/proc/
+U   13:       19        0 00000000: Operation not supported on transport endpoint
+U   17:       17        1 00000000: Bad file number
+34: /usr/bin/audiod
+0:       20        2 00010000: /scheme/log/
+1:       20        3 00020000: /scheme/log/
+2:       20        4 00020000: /scheme/log/
+3:       36        2 01020000: /scheme/audiohw/
+4:       21       17 01010000: /scheme/rand/
+6:       16       49 00A30000: /scheme
+U    0:       19      111 00000000: Operation not supported on transport endpoint
+U    1:       18       65 00000000: /scheme/proc/
+U    2:       18       66 00000000: /scheme/proc/
+U    3:       18       67 00000000: /scheme/proc/
+U    8:       17        2 20000000: /scheme/initfs
+U   11:        9     1048 02030000: /scheme/kernel.proc/
+U   12:       18        0 00000000: /scheme/proc/
+U   13:       19        0 00000000: Operation not supported on transport endpoint
+U   17:       17        1 00000000: Bad file number
+36: /usr/bin/redoxfs
+0:       20        2 00010000: /scheme/log/
+1:       20        3 00020000: /scheme/log/
+2:       20        4 00020000: /scheme/log/
+3:       38        6 01030000: /scheme/disk.mmc/0p1
+4:        4      137 01010000: /scheme/pipe/
+5:        4      141 00010000: /scheme/pipe/
+6:       21       18 01010000: /scheme/rand/
+7:        2       14 030301A4: /scheme/event/
+8:        7        9 01030000: /scheme/time/4/
+9:       18       72 00010000: /scheme/proc/
+10:       16       50 00A30000: /scheme
+U    1:       19      116 00000000: Operation not supported on transport endpoint
+U    2:       18       70 00000000: /scheme/proc/
+U    3:       18       71 00000000: /scheme/proc/
+U    5:        9     1105 02030000: /scheme/kernel.proc/
+U    8:       17        2 20000000: /scheme/initfs
+U   12:       18        0 00000000: /scheme/proc/
+U   17:       17        1 00000000: Bad file number
+37: /usr/bin/getty
+0:       20        2 00010000: /scheme/log/
+1:       20        3 00020000: /scheme/log/
+2:       20        4 00020000: /scheme/log/
+3:       48        2 01070000: /scheme/fbcon.2/
+4:        4      143 01010000: /scheme/pipe/
+5:       41        5 030701A4: /scheme/pty/ptmx
+6:        2       16 01030000: /scheme/event/
+7:       41        6 01010000: /scheme/pty/5
+8:       41        7 01020000: /scheme/pty/5
+9:       41        8 01020000: /scheme/pty/5
+10:       41        6 01010000: /scheme/pty/5
+U    0:       18       68 00000000: /scheme/proc/
+U    2:       18       69 00000000: /scheme/proc/
+U    8:       17        2 20000000: /scheme/initfs
+U   11:        9     1161 02030000: /scheme/kernel.proc/
+U   12:       18        0 00000000: /scheme/proc/
+U   13:       19        0 00000000: Operation not supported on transport endpoint
+U   17:       17        1 00000000: Bad file number
+38: /usr/bin/timesync
+0:       20        2 00010000: /scheme/log/
+1:       20        3 00020000: /scheme/log/
+2:       20        4 00020000: /scheme/log/
+4:        4      147 01010000: /scheme/pipe/
+U    0:       18       79 00000000: /scheme/proc/
+U    1:       18       73 00000000: /scheme/proc/
+U    2:       18       74 00000000: /scheme/proc/
+U    3:        9     1245 02030000: /scheme/kernel.proc/
+U    8:       17        2 20000000: /scheme/initfs
+U   10:        9     1157 02030000: /scheme/kernel.proc/
+U   12:       18        0 00000000: /scheme/proc/
+U   13:       19        0 00000000: Operation not supported on transport endpoint
+U   17:       17        1 00000000: Bad file number
+41: /usr/bin/login
+0:       41        2 01010000: /scheme/pty/1
+1:       41        3 01020000: /scheme/pty/1
+2:       41        4 01020000: /scheme/pty/1
+3:       21       20 01010000: /scheme/rand/
+4:        4      115 01010000: /scheme/pipe/
+U    1:        9     1282 02030000: /scheme/kernel.proc/
+U    2:       18       80 00000000: /scheme/proc/
+U    3:       18       81 00000000: /scheme/proc/
+U    8:       17        2 20000000: /scheme/initfs
+U   12:       18        0 00000000: /scheme/proc/
+U   13:       19        0 00000000: Operation not supported on transport endpoint
+U   17:       17        1 00000000: Bad file number
+42: /usr/bin/login
+0:       41        6 01010000: /scheme/pty/5
+1:       41        7 01020000: /scheme/pty/5
+2:       41        8 01020000: /scheme/pty/5
+3:       21       21 01010000: /scheme/rand/
+4:        4      143 01010000: /scheme/pipe/
+U    0:        9     1316 02030000: /scheme/kernel.proc/
+U    1:       18       82 00000000: /scheme/proc/
+U    3:       18       83 00000000: /scheme/proc/
+U    8:       17        2 20000000: /scheme/initfs
+U   12:       18        0 00000000: /scheme/proc/
+U   13:       19        0 00000000: Operation not supported on transport endpoint
+U   17:       17        1 00000000: Bad file number
+87: /usr/bin/login
+0:       41      432 00030000: /scheme/pty/431
+1:       41      433 00030000: /scheme/pty/431
+2:       41      434 00030000: /scheme/pty/431
+3:       45        3 00030000: /scheme/tcp/0.0.0.0:0/0.0.0.0:2323
+4:        4      125 01010000: /scheme/pipe/
+5:       21       29 01010000: /scheme/rand/
+6:       40      733 01110000: /scheme/file/etc/shadow
+7:       40      734 01110000: /scheme/file/etc/passwd
+U    1:       18       64 00000000: /scheme/proc/
+U    2:       18       84 00000000: /scheme/proc/
+U    3:       18       88 00000000: /scheme/proc/
+U    4:        9     1498 02030000: /scheme/kernel.proc/
+U    5:       18       87 00000000: /scheme/proc/
+U    6:       18       86 00000000: /scheme/proc/
+U    7:        9     1500 02030000: /scheme/kernel.proc/
+U    8:       17        2 20000000: /scheme/initfs
+U    9:        9     1499 02030000: /scheme/kernel.proc/
+U   11:       18       78 00000000: /scheme/proc/
+U   12:       18        0 00000000: /scheme/proc/
+U   13:       19        0 00000000: Operation not supported on transport endpoint
+U   14:        9     2653 02030000: /scheme/kernel.proc/
+U   15:       18       76 00000000: /scheme/proc/
+U   16:       18       85 00000000: /scheme/proc/
+U   17:       17        1 00000000: Bad file number
+U   18:        9     2711 02030000: /scheme/kernel.proc/
+U   19:        9     2654 02030000: /scheme/kernel.proc/
+U   20:       18       89 00000000: /scheme/proc/
+88: /usr/bin/ion
+0:       41      432 00030000: /scheme/pty/431
+1:       41      433 00030000: /scheme/pty/431
+2:       41      434 00030000: /scheme/pty/431
+3:       45        3 00030000: /scheme/tcp/0.0.0.0:0/0.0.0.0:2323
+4:        4      125 01010000: /scheme/pipe/
+5:       21       30 01010000: /scheme/rand/
+U    0:       18       90 00000000: /scheme/proc/
+U    1:       18       64 00000000: /scheme/proc/
+U    2:       18       84 00000000: /scheme/proc/
+U    3:       18       88 00000000: /scheme/proc/
+U    4:        9     1498 02030000: /scheme/kernel.proc/
+U    5:       18       87 00000000: /scheme/proc/
+U    6:       18       86 00000000: /scheme/proc/
+U    7:        9     1500 02030000: /scheme/kernel.proc/
+U    8:        9     2745 02030000: /scheme/kernel.proc/
+U    9:        9     1499 02030000: /scheme/kernel.proc/
+U   10:       18       94 00000000: /scheme/proc/
+U   11:       18       78 00000000: /scheme/proc/
+U   12:       18        0 00000000: /scheme/proc/
+U   13:       19        0 00000000: Operation not supported on transport endpoint
+U   14:        9     2653 02030000: /scheme/kernel.proc/
+U   15:       18       76 00000000: /scheme/proc/
+U   16:       40      736 20000000: /scheme/file/home/root
+U   17:       17        1 00000000: Bad file number
+U   19:        9     2654 02030000: /scheme/kernel.proc/
+96: /usr/bin/cat
+0:       41      432 00030000: /scheme/pty/431
+1:       41      433 00030000: /scheme/pty/431
+2:       41      434 00030000: /scheme/pty/431
+3:       45        3 00030000: /scheme/tcp/0.0.0.0:0/0.0.0.0:2323
+4:        4      125 01010000: /scheme/pipe/
+5:        8      745 01010000: /scheme/sys/iostat
+U    1:       18       64 00000000: /scheme/proc/
+U    2:       18       84 00000000: /scheme/proc/
+U    3:       18       88 00000000: /scheme/proc/
+U    4:        9     1498 02030000: /scheme/kernel.proc/
+U    5:       18       87 00000000: /scheme/proc/
+U    6:       18       86 00000000: /scheme/proc/
+U    7:        9     1500 02030000: /scheme/kernel.proc/
+U    9:        9     1499 02030000: /scheme/kernel.proc/
+U   10:        9     2938 02030000: /scheme/kernel.proc/
+U   11:       18       78 00000000: /scheme/proc/
+U   12:       18        0 00000000: /scheme/proc/
+U   13:       19        0 00000000: Operation not supported on transport endpoint
+U   14:        9     2653 02030000: /scheme/kernel.proc/
+U   15:       18       76 00000000: /scheme/proc/
+U   16:       40      736 20000000: /scheme/file/home/root
+U   17:       17        1 00000000: Bad file number
+U   18:       18       95 00000000: /scheme/proc/
+U   19:        9     2654 02030000: /scheme/kernel.proc/
+U   21:       18       92 00000000: /scheme/proc/

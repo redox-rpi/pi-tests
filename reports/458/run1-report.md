@@ -1,0 +1,6 @@
+## Regression set (0 pass, 1 fail, 0 skip in 46 s)
+
+| Check | Result | Detail |
+|---|---|---|
+| tcc | FAIL | 44.4 s; failed: dynamic; bench total 1378.1 ms; tcc.c built in 839 ms |
+
