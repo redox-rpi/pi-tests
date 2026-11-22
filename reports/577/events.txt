@@ -1,0 +1,28 @@
+start 17:30:51
+setup: power cycle into U-Boot 17:30:51.746
+power on 17:31:03.860
+at U-Boot prompt
+write crcs: 17a03c01 17a03c01 9ccb45a0 9ccb45a0 8e601924 8e601924 f3dace3e f3dace3e 94fcc6fd 94fcc6fd  17:34:43.455
+power on 17:34:56.609
+A1 rbc-load: ok chain 48412 bytes, start 0x80000200, SDRAM running 17:35:06.477
+found after 14 s
+A1: banner redox-rpi bootcode v0.1.0-rc3-d391b09-chain (release, boots from the SD card, boot screen on HDMI); steps 5; login 1; panic 0 17:35:25.556
+power on 17:35:38.682
+A2 rbc-load: ok chain 48412 bytes, start 0x80000200, SDRAM running 17:35:48.750
+found after 14 s
+A2: banner redox-rpi bootcode v0.1.0-rc3-d391b09-chain (release, boots from the SD card, boot screen on HDMI); steps 5; login 1; panic 0 17:36:07.827
+power on 17:36:21.124
+A3 rbc-load: ok chain 48412 bytes, start 0x80000200, SDRAM running 17:36:31.516
+found after 14 s
+A3: banner redox-rpi bootcode v0.1.0-rc3-d391b09-chain (release, boots from the SD card, boot screen on HDMI); steps 5; login 1; panic 0 17:36:50.128
+power on 17:37:03.250
+ub R rbc-load: ok chain 43064 bytes, start 0x80000200, SDRAM running 17:37:12.371
+no autoboot prompt
+no U-Boot for restore 17:38:12.421
+restore: power cycle into U-Boot 17:38:53.546
+power on 17:39:05.678
+at U-Boot prompt
+restore crcs: 17a03c01 17a03c01  17:40:19.132
+power on 17:40:31.265
+found after 36 s
+stable up: redox-rpi v0.6.0-dev-126-g1b6b4cd9+x2d42 (netboot, 2026-11-22T03:30:56Z) 17:41:08.713
