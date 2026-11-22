@@ -1,0 +1,12 @@
+staged rc2 (dbg) 10:33:04
+found after 28 s
+up 10:33:50
+c1 PASS tcc: 39.5 s; all 5 steps and TCC-TEST done; bench total 1367.8 ms; tcc.c built in 840 ms 10:35:01
+c2 PASS tcc: 44.5 s; all 5 steps and TCC-TEST done; bench total 1363.0 ms; tcc.c built in 820 ms 10:35:52
+c3 PASS tcc: 44.7 s; all 5 steps and TCC-TEST done; bench total 1366.0 ms; tcc.c built in 836 ms 10:36:44
+c4 PASS tcc: 44.5 s; all 5 steps and TCC-TEST done; bench total 1365.4 ms; tcc.c built in 810 ms 10:37:30
+c5 PASS tcc: 44.4 s; all 5 steps and TCC-TEST done; bench total 1363.0 ms; tcc.c built in 812 ms 10:38:16
+c6 PASS tcc: 44.4 s; all 5 steps and TCC-TEST done; bench total 1364.0 ms; tcc.c built in 821 ms 10:39:08
+found after 24 s
+no devsh, serial reset 1 10:42:00
+stable up build_id = "v0.6.0-dev-126-g1b6b4cd9+x2d42" 10:42:50

@@ -1,0 +1,23 @@
+PASS: GPIO 5 output 1 reads back: 1
+PASS: GPIO 5 output 0 reads back: 0
+PASS: GPIO 6 input with pull up reads 1: 1
+PASS: GPIO 6 input with pull down reads 0: 0
+PASS: GPIO 6 input with pull up reads 1: 1
+PASS: activity LED (GPIO 29) takes writes
+PASS: power_led takes off and on
+PASS: pins table has 54 rows: 54 lines
+PASS: I2C pins 2 and 3 in alt0: alt0 alt0
+PASS: i2c detect finishes: answering: none
+PASS: missing address 50 gives an error: i2c: read: No such device or address (os error 6)
+PASS: SPI pins 7-11 in alt0: alt0 alt0 alt0 alt0 alt0
+SPI: jumper pin 19 to 21 not found (['00 00 00'])
+PASS: MISO pull up, 1000000 Hz, cs0: reads ff: ff ff ff ff
+PASS: MISO pull up, 1000000 Hz, cs1: reads ff: ff ff ff ff
+PASS: MISO pull up, 10000000 Hz, cs0: reads ff: ff ff ff ff
+PASS: MISO pull up, 10000000 Hz, cs1: reads ff: ff ff ff ff
+PASS: MISO pull down, 1000000 Hz, cs0: reads 00: 00 00 00 00
+PASS: MISO pull down, 1000000 Hz, cs1: reads 00: 00 00 00 00
+PASS: MISO pull down, 10000000 Hz, cs0: reads 00: 00 00 00 00
+PASS: MISO pull down, 10000000 Hz, cs1: reads 00: 00 00 00 00
+PASS: 4096-byte transfer finishes (wrong bytes expected without jumper): loopback: 4096 bytes at 1000000 Hz, 4082 wrong spi: loopback failed (MOSI pin 19 to MISO pin 21?)
+21 of 21 checks passed

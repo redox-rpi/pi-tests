@@ -1,0 +1,50 @@
+### cat /scheme/audiohw/stats  (0.4 s)
+mode pwm-dma
+pwm 0x3f20c000
+dma_channel 2
+clock_hz 250000000
+range 2834
+sample_rate 44107
+slots 8x512
+uptime_s 193.1
+played_slots 16624
+measured_rate_hz 44088
+chunks 16144
+loud_chunks 144
+peak 4208
+sound_slots 16144
+underruns 1
+queued 5
+dma_faults 0
+pwm_errors 0 bits=0x000
+pwm_gap_polls 13309
+### time tone -s 3 > /scheme/audio  (3.2 s)
+real    2.962664843s
+### echo rc=$?  (0.2 s)
+rc=0
+### cat /scheme/audiohw/stats  (0.4 s)
+mode pwm-dma
+pwm 0x3f20c000
+dma_channel 2
+clock_hz 250000000
+range 2834
+sample_rate 44107
+slots 8x512
+uptime_s 196.9
+played_slots 16956
+measured_rate_hz 44087
+chunks 16478
+loud_chunks 403
+peak 4208
+sound_slots 16476
+underruns 1
+queued 7
+dma_faults 0
+pwm_errors 0 bits=0x000
+pwm_gap_polls 13488
+### volume 70  (0.3 s)
+70
+### volume  (0.3 s)
+70
+### cat /scheme/data/audio-volume  (0.3 s)
+70

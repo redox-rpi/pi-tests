@@ -1,0 +1,59 @@
+### ls /usr/bin  (0.4 s)
+'['	        curl		  groupmod   more	    pwdx	     sleep      useradd
+audiod	        curl-config	  gunzip     mtxt	    readlink	     snice      userdel
+b2sum	        cut		  gzip	     mv		    realpath	     socdump    usermod
+b3sum	        date		  hashsum    nbdd	    reboot	     sopwith    vdir
+background     dd		  head	     nc		    redoxerd	     sort       viewer
+base32	        desktop		  hugetop    netstack	    redoxfs	     spi        vmstat
+base64	        desktop-session	  i2c	     nice	    redoxfs-ar	     split      volume
+basename       desktop-welcome	  id	     nl		    redoxfs-clone    stat       watch
+basenc	        devshd		  ifconfig   nproc	    redoxfs-mkfs     su	        wc
+bunzip2        df		  info	     numfmt	    redoxfs-resize   sudo       wcurl
+bzcat	        dhcpd		  inputd     od		    rem		     sum        which
+bzcmp	        diff		  install    openssl	    reset	     sysctl     whoami
+bzdiff	        diff3		  ion	     orbital	    resize	     tac        xkbcli
+bzegrep        dir		  join	     orblogin	    rm		     tail       xml2-config
+bzfgrep        dircolors	  keymap     orbterm	    rmdir	     tar        xmlcatalog
+bzgrep	        dirname		  kibi	     passwd	    screenfetch	     tcc        xmllint
+bzip2	        dmesg		  kill	     paste	    sdiff	     tee        xzcmp
+bzip2recover   dns		  launcher   pcid	    sdl2-config	     test       xzdiff
+bzless	        drawbench	  less	     pcid-spawner   seq		     time       xzegrep
+bzmore	        du		  link	     pgrep	    sha1sum	     timeit     xzfgrep
+c_rehash       echo		  ln	     pidof	    sha224sum	     timesync   xzgrep
+calc	        env		  login	     pidwait	    sha256sum	     tload      xzless
+cat	        expand		  ls	     ping	    sha3-224sum	     tone       xzmore
+chmod	        expr		  lzcmp	     pkg	    sha3-256sum	     touch      yes
+chown	        factor		  lzdiff     pkill	    sha3-384sum	     tr	        zstd
+cksum	        false		  lzegrep    pmap	    sha3-512sum	     true       zstdcat
+clear	        fbcond		  lzfgrep    poweroff	    sha384sum	     truncate   zstdgrep
+cmp	        fbshot		  lzgrep     pr		    sha3sum	     tsort      zstdless
+comm	        fmt		  lzless     printenv	    sha512sum	     uname      zstdmt
+coreutils      fold		  lzmore     printf	    shake128sum	     unexpand
+cosmic-files   free		  man	     procps	    shake256sum	     uniq
+cosmic-term    getty		  md5sum     ps		    shred	     unlink
+cp	        grep		  mdless     ptx	    shuf	     unzip
+csplit	        groupadd	  mkdir	     ptyd	    shutdown	     unzstd
+cur	        groupdel	  mktemp     pwd	    skill	     uptime
+### time curl -sS -o /scheme/null -w 'code %{http_code}\n' http://<router>/  (0.7 s)
+[INFO curl@src/platform/redox/socket.rs:1029] TODO: setsockopt(9, 6, 1, [1, 0, 0, 0]) - unknown option
+[INFO curl@src/platform/redox/socket.rs:1029] TODO: setsockopt(9, 6, 4, [60, 0, 0, 0]) - unknown option
+[INFO curl@src/platform/redox/socket.rs:1029] TODO: setsockopt(9, 6, 5, [60, 0, 0, 0]) - unknown option
+[INFO curl@src/platform/redox/socket.rs:1029] TODO: setsockopt(9, 6, 6, [9, 0, 0, 0]) - unknown option
+code 200
+real    0.504363835s
+### echo rc=$?  (0.2 s)
+rc=0
+### time curl -sS -o /scheme/null -w 'code %{http_code}\n' http://<build host>:8080/  (0.4 s)
+[INFO curl@src/platform/redox/socket.rs:1029] TODO: setsockopt(9, 6, 1, [1, 0, 0, 0]) - unknown option
+[INFO curl@src/platform/redox/socket.rs:1029] TODO: setsockopt(9, 6, 4, [60, 0, 0, 0]) - unknown option
+[INFO curl@src/platform/redox/socket.rs:1029] TODO: setsockopt(9, 6, 5, [60, 0, 0, 0]) - unknown option
+[INFO curl@src/platform/redox/socket.rs:1029] TODO: setsockopt(9, 6, 6, [9, 0, 0, 0]) - unknown option
+code 200
+real    0.214340091s
+### echo rc=$?  (0.2 s)
+rc=0
+### time curl -sS -o /scheme/null http://no-such-host-474.invalid/  (0.4 s)
+curl: (6) Could not resolve host: no-such-host-474.invalid
+real    0.209106609s
+### echo rc=$?  (0.2 s)
+rc=0

@@ -1,0 +1,6 @@
+PASS version: v0.6.0-rc2 (v0.6.0-dev-129-g988c8354+xcbcb)
+PASS manifest: build ID and libc.so hash match v0.6.0-rc2-netboot.manifest.toml
+PASS ps: 63 processes (piped)
+PASS ps-tty: 63 lines straight to the terminal, rc=0
+PASS sdcard: write, read back, delete on /scheme/data
+PASS starts: 0 of 1000 failed

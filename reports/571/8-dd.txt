@@ -1,0 +1,12 @@
+### time dd if=/dev/zero of=/scheme/data/w bs=4096 count=256  (0.4 s)
+256+0 records in
+256+0 records out
+1048576 bytes (1.0 MB, 1.0 MiB) copied, 0.0388823 s, 28 MB/s
+real    0.175900102s
+### ls -l /scheme/data/w  (0.3 s)
+-rw-r--r-- 1 root root 1048576 Nov 22 10:16 /scheme/data/w
+### rm /scheme/data/w  (0.4 s)
+
+### df /scheme/data  (0.3 s)
+Path            Size      Used      Free Use%
+/scheme/data    983040      5116    977924   0%

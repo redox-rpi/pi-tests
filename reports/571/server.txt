@@ -1,0 +1,1 @@
+10:19:25 sent 104857600 bytes to <lan-ip> in 19.0 s

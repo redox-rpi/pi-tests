@@ -1,0 +1,12 @@
+### serial login done
+### poweroff  (typing 1.2 s, total 4.2 s, NO PROMPT)
+root:~# proot:~# poroot:~# powroot:~# poweroot:~# powerroot:~# poweroroot:~# powerofroot:~# poweroffroot:~# poweroff
+bcm2835-pwmaudiod: stopped, outputs at 0 V
+kstop
+kstop: halting through the BCM2835 watchdog
+
+
+redox-rpi bootcode 56354b8 (M1, monitor, test build, boot selector)
+VPU cpuid 0x4000140
+from the Boot ROM: CM_VPUCTL 0x241 CM_VPUDIV 0x1000 PLLC_CTRL 0x10000 PLLC_FRAC 0x0 SD_CS 0x794200 timer 214211 us
+halt: the OS halted the Pi (PM_RSTS 00000575, partition 63); staying off, GPIO3 (pin 5) to ground wakes it

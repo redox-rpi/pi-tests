@@ -1,0 +1,9 @@
+### time dd if=/dev/zero bs=65536 count=256 | cat > /scheme/data/p  (0.8 s)
+256+0 records in
+256+0 records out
+16777216 bytes (17 MB, 16 MiB) copied, 0.36735 s, 46 MB/s
+real    0.577285290s
+### ls -l /scheme/data/p  (0.3 s)
+-rw-r--r-- 1 root root 16777216 Nov 22 10:18 /scheme/data/p
+### rm /scheme/data/p  (0.3 s)
+

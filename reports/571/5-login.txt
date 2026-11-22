@@ -1,0 +1,5 @@
+### serial login done
+### date  (typing 0.6 s, total 0.9 s)
+root:~# droot:~# daroot:~# datroot:~# dateroot:~# date
+Sun Nov 22 10:14:09 UTC 2026
+⏎                                                                                root:~# root:~# 

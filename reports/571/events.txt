@@ -1,0 +1,118 @@
+start 10:06:24
+staged v0.6.0-rc2-netboot: build_id = "v0.6.0-dev-129-g988c8354+xcbcb" 10:06:29
+reboot from stable sent 10:06:40
+found after 28 s
+A up 10:07:10
+1 banner: redox-rpi v0.6.0-rc2 (v0.6.0-dev-129-g988c8354+xcbcb) (netboot, 2026-11-22T08:37:54Z) 10:07:30
+startup-sound: ⏎                                                                                redox login: redox login: startup-sound: played  10:07:30
+step 1-boot 10:07:30
+step 1-boot rc=0 10:07:33
+pitest rc=0 10:09:48
+PASS version: v0.6.0-rc2 (v0.6.0-dev-129-g988c8354+xcbcb)
+PASS manifest: build ID and libc.so hash match v0.6.0-rc2-netboot.manifest.toml
+PASS ps: 63 processes (piped)
+PASS ps-tty: 63 lines straight to the terminal, rc=0
+PASS sdcard: write, read back, delete on /scheme/data
+PASS starts: 0 of 1000 failed
+step 2-idle 10:09:54
+step 2-idle rc=0 10:10:12
+step 3-ntp 10:10:12
+step 3-ntp rc=0 10:10:13
+step 7-audio 10:10:13
+step 7-audio rc=0 10:10:19
+reboot 1 sent 10:10:30
+found after 14 s
+reboot 1 login 10:10:59
+reboot 1 devsh back 10:11:00
+reboot 1: played=1 volume-line: volume: 70 from /scheme/data/audio-volume 10:11:00
+reboot 2 sent 10:11:12
+found after 12 s
+reboot 2 login 10:11:39
+reboot 2 devsh back 10:11:45
+reboot 2: played=1 volume-line: volume: 70 from /scheme/data/audio-volume 10:11:45
+reboot 3 sent 10:11:56
+found after 12 s
+reboot 3 login 10:12:23
+reboot 3 devsh back 10:12:24
+reboot 3: played=0 volume-line: volume: 70 from /scheme/data/audio-volume 10:12:24
+reboot 4 sent 10:12:35
+found after 14 s
+reboot 4 login 10:13:04
+reboot 4 devsh back 10:13:05
+reboot 4: played=2 volume-line: volume: 70 from /scheme/data/audio-volume 10:13:05
+reboot 5 sent 10:13:16
+found after 16 s
+reboot 5 login 10:13:48
+reboot 5 devsh back 10:13:49
+reboot 5: played=1 volume-line: volume: 70 from /scheme/data/audio-volume 10:13:49
+step 7-volume-after 10:14:04
+step 7-volume-after rc=0 10:14:05
+serial login rc=0 10:14:09
+serial input rc=0 10:16:28
+step 6-ls 10:16:28
+step 6-ls rc=0 10:16:31
+nowire rc=0 10:16:42
+step 8-dd 10:16:42
+step 8-dd rc=0 10:16:45
+sd-stress rc=0 10:18:29
+step 9-pipe 10:18:29
+step 9-pipe rc=0 10:18:32
+step 9-curl 10:18:32
+step 9-curl rc=0 10:19:05
+step 9-nc 10:19:05
+step 9-nc rc=0 10:19:35
+step 9-nc-closed 10:19:35
+step 9-nc-closed rc=0 10:19:36
+step 10-dns 10:19:36
+step 10-dns rc=0 10:19:40
+step 11-ifconfig 10:19:40
+step 11-ifconfig rc=0 10:19:41
+step 12-tcc 10:19:41
+step 12-tcc rc=0 10:19:44
+step 13-desktop 10:19:44
+step 13-desktop rc=0 10:19:46
+step 13-ps1 10:20:06
+step 13-ps1 rc=0 10:20:08
+step 13-sop 10:20:08
+step 13-sop rc=0 10:20:09
+step 13-ps2 10:20:39
+step 13-ps2 rc=0 10:20:41
+step 9-openssl 10:20:41
+step 9-openssl rc=0 10:20:48
+458 run 1 rc=0 PASS tcc: 47.5 s; all 5 steps and TCC-TEST done; bench total 1465.0 ms; tcc.c built in 902 ms 10:21:37
+458 run 2 rc=0 PASS tcc: 47.6 s; all 5 steps and TCC-TEST done; bench total 1473.5 ms; tcc.c built in 881 ms 10:22:27
+458 run 3 rc=1 FAIL tcc: 42.9 s; failed: self-hosting; bench total 1455.7 ms; tcc.c built in 890 ms 10:23:26
+A serial: panic=0 exc=0 stuck=0 pcid=0 rtcd=0 throttl=0 audiod-err=0 10:23:26
+staged v0.6.0-rc2-release-netboot: build_id = "v0.6.0-dev-129-g988c8354+xcbcb" 10:23:31
+reboot from A sent 10:23:42
+found after 28 s
+B1 banner: redox-rpi v0.6.0-rc2 (v0.6.0-dev-129-g988c8354+xcbcb) (release-netboot, 2026-11-22T08:40:29Z) 10:24:40
+B2 nc 2323 rc=1 nc: connect to <lan-ip> port 2323 (tcp) failed: Connection refused  10:24:40
+B2 open TCP ports: [] (python connect scan 1-65535) 10:24:46
+B3 serial rc=0 10:24:57
+B3: login ok=1 devshd-ls: ls: cannot access '/usr/bin/devshd': No such file or directory  ps-devshd=0 10:24:57
+B serial: panic=0 exc=0 stuck=0 10:24:57
+staged v0.6.0-rc2-netboot: build_id = "v0.6.0-dev-129-g988c8354+xcbcb" 10:25:02
+found after 36 s
+C up 10:25:44
+step C1-file 10:25:44
+step C1-file rc=0 10:25:52
+C file sha 4007e2d87389d670914c24374c89dba906991e1ae915b9676c786d69a6d57a37 10:25:52
+C running power "apower":3.2 10:25:52
+C poweroff sent 10:25:59
+C power after poweroff: "apower":0.0 "apower":0.0 "apower":0.0 "apower":0.0 "apower":0.0 "apower":0.0 "apower":0.0 "apower":0.0 "apower":0.0 "apower":0.0 "apower":0.0 "apower":0.0  10:28:00
+C serial bytes in 120 s after: 0; poweroff log: ⏎                                                                                ]0;root: /home/rootroot:~# ]0;root: /home/rootroot:~# ]0;root: /home/rootroot:~# p]0;root: /home/rootroot:~# po 10:30:00
+power cycle (fallback) 10:30:12
+found after 40 s
+C up after power cycle 10:30:53
+step C4-file 10:30:53
+step C4-file rc=0 10:30:55
+C file sha after: 4007e2d87389d670914c24374c89dba906991e1ae915b9676c786d69a6d57a37 same=yes 10:30:55
+found after 28 s
+C reboot after wake: login 10:31:34
+step C5-clean 10:31:40
+step C5-clean rc=0 10:31:41
+C serial: panic=0 exc=0 10:31:41
+found after 0 s
+stable up 10:32:23
+staged now: build_id = "v0.6.0-dev-126-g1b6b4cd9+x2d42" 10:32:23

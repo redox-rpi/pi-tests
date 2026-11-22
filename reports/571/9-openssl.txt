@@ -1,0 +1,4 @@
+### openssl version  (0.4 s)
+OpenSSL 3.5.9 29 Sep 2026 (Library: OpenSSL 3.5.9 29 Sep 2026)
+### echo rc=$?  (5.0 s)
+rc=0

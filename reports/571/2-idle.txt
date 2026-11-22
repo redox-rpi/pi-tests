@@ -1,0 +1,15 @@
+### sleep 15  (15.4 s)
+
+### cat /scheme/rpi-firmware/arm_clock  (0.4 s)
+1400000000
+### cat /scheme/rpi-firmware/governor  (0.3 s)
+mode ondemand
+target max
+load 41
+switches 8
+min 600000000
+max 1400000000
+time_min_ms 37930
+time_max_ms 152173
+### cat /scheme/rpi-firmware/throttled  (0.3 s)
+0x00000000

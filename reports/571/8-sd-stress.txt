@@ -1,0 +1,21 @@
+build v0.6.0-dev-129-g988c8354+xcbcb, driver sdhost
+write: 32 MiB at 6.4 MB/s
+write: 100 small files, 25 deleted, 25 new, 22 s
+reference: 101 hashes (0 files not written, start failures)
+verify: 101 files, 0 missing, 0 changed
+cycle 1: restart
+back after 33 s
+/scheme/data there after 0 s more
+verify: 101 files, 0 missing, 0 changed
+cycle 1: wrote 32 MiB at 8.5 MB/s
+
+## 2026-11-22: `v0.6.0-dev-129-g988c8354+xcbcb`, SD card stress test (sdhost)
+
+`scripts/sd-stress.py`: 32 MiB file (6.4 MB/s), 100 files of 4 KiB with 25 replaced, then 1 restarts, each followed by a check of every file and 32 MiB more; 102 files at the end, 2 minutes.
+
+| Check | Missing | Changed |
+|---|---|---|
+| after writing | 0 | 0 |
+| restart 1 | 0 | 0 |
+
+Result: **pass**.
