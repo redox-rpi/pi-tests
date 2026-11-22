@@ -1,0 +1,790 @@
+redox-rpi bootcode v0.1.0-rc3-d391b09 (release, boots from the SD card, boot screen on HDMI)
+VPU cpuid 0x4000140
+from the Boot ROM: CM_VPUCTL 0x241 CM_VPUDIV 0x1000 PLLC_CTRL 0x10000 PLLC_FRAC 0x0 SD_CS 0x794200 timer 239177 us
+[sdram] SD_CS 0x794200 at start
+[sdram] controller up, SD_CS 0x218E42
+[sdram] cpuid 0x4000140, DQ slew 2
+[sdram] Elpida 1 GB LPDDR2 (MR5 0x3, MR8 0x58)
+[sdram] DDR PLL locked, 398400 kHz
+[sdram] addressing: bank 3 row 3 col 3, SB 0xFF
+[sdram] self test passed, 1024 MB, 32 regions, 28088 us
+[sdram] memory split: ARM 0-3E000000, VideoCore 3E000000-40000000
+SDRAM ready after 58242 us
+sd: SC32G, 30436 MB, SDHC, 4-bit bus, 50000 kHz
+fat: partition type 0C at sector 2048, FAT32, 2 sectors per cluster
+boot64: config.txt: kernel kernel8.img, initramfs initramfs, armstub built-in, device_tree default, 2 overlays
+boot64: boot screen title from config.txt
+boot64: built-in armstub8, 3076 bytes at ARM 00000000
+boot64: kernel8.img 1957888 bytes at ARM 00080000, crc32 F3DACE3E
+boot64: board revision A020D3
+boot64: redox-3bp.dtb has its overlays already, config.txt's dtoverlay lines not applied
+boot64: redox-3bp.dtb 36443 bytes at ARM 02000000
+boot64: bootargs from cmdline.txt, 21 bytes
+boot64: initramfs 0%, 1 of 48 MB
+boot64: initramfs 20%, 10 of 48 MB
+boot64: initramfs 40%, 20 of 48 MB
+boot64: initramfs 60%, 30 of 48 MB
+boot64: initramfs 80%, 40 of 48 MB
+boot64: initramfs 100%, 48 of 48 MB
+boot64: initramfs 51363840 bytes at ARM 02100000 in 2309 ms (22245 KB/s)
+boot64: the armstub answers PSCI, /psci added (method smc)
+boot64: devicetree 35528 bytes at ARM 02000000, memory 0-3E000000
+ok boot64, the serial line is the ARM's now
+power: USB on, PM_IMAGE 0003107F PM_USB 00000001
+power: ETH_CLK GPIO 42 on, CM_GP1CTL 00000295 DIV 00014D55, PLLC PER 499999 kHz, core 249999 kHz
+expander: FXL6408 id A0, LAN_RUN on, dir 0C out 08 hiz F3
+power: LAN reset on GPIO 30 pulsed, GPLEV0 4000C1FF (GPIO 31 0)
+mbox: serving, revision 00A020D3 serial <serial>, ARM 469599000 Hz, core 249999000 Hz, EMMC 199999000 Hz, UART 3000000 Hz, PM_USB 00000001 PM_IMAGE 0003107F
+ok arm aarch64, ARM_ID 364D5241, C0 0000F253, PM_PROC 0000107F, entry ARM 0 = bus C0000000
+rpi-boot-stub: devicetree at 0x2000000
+rpi-boot-stub: devicetree 35528 bytes, copied from 0x2000000 to 0x238000 (35528 bytes for the kernel)
+rpi-boot-stub: initramfs 0x2100000..0x51fc000, 50160 KiB
+rpi-boot-stub: USB power on (was Some(1))
+bootscreen: handed over to the ARM's framebuffer 3447 ms after it came up; HDMI start 1298 us, drawing 51826 us, copy 84300 us, clear by VPU, DMA left samples (800)
+rpi-boot-stub: framebuffer 1280x720 stride 1280 at 0x3e400000
+rpi-boot-stub: from the command line: quiet, QUIET=1
+rpi-boot-stub: from the command line: RPI_FB=1280x720
+rpi-boot-stub: area 0x25e000..0x2000000 free
+rpi-boot-stub: area 0x2009000..0x2100000 free
+rpi-boot-stub: area 0x51fc000..0x3e000000 free
+rpi-boot-stub: area 0x31fc000..0x51fc000 reserved
+rpi-boot-stub: live disk 0x31fc000, 32 MiB
+rpi-boot-stub: starting the kernel at 0xffffff00000ae698
+kernel::dtb::serial:INFO -- UART Compatible { string: "arm,pl011-axi\0arm,pl011\0arm,primecell" } at 0xFFFF80003F201000 size 0x200
+kernel::arch::aarch64::start:INFO -- Redox OS starting...
+kernel::startup:DEBUG -- Kernel: 87000:1F8A20
+kernel::startup:DEBUG -- Env: 207000:20718C
+kernel::startup:DEBUG -- HWDESC: 238000:240AC8
+kernel::startup:DEBUG -- Areas: 217060:2170C0
+kernel::startup:DEBUG -- Bootstrap: 2100000:31FC000
+kernel::startup::memory:DEBUG -- Registering Free memory 25E000 size 1DA2000
+kernel::startup::memory:DEBUG -- Registering Free memory 2009000 size F7000
+kernel::startup::memory:DEBUG -- Registering Free memory 51FC000 size 38E04000
+kernel::startup::memory:DEBUG -- Registering Reserved memory 31FC000 size 2000000
+kernel::startup::memory:DEBUG -- Registering Reserved memory 0 size 1000
+kernel::dtb:DEBUG -- dynamic reserved-memory node linux,cma; ignoring it until allocation is supported
+kernel::dtb:DEBUG -- dev mem 0x7e000000 0x3f000000 0x01000000
+kernel::dtb:DEBUG -- dev mem 0x40000000 0x40000000 0x00001000
+kernel::dtb:DEBUG -- soc device timer@7e003000 0x7e003000 -> 0x3f003000 len 0x00001000
+kernel::startup::memory:DEBUG -- Registering Device memory 3F003000 size 1000
+kernel::dtb:DEBUG -- soc device txp@7e004000 0x7e004000 -> 0x3f004000 len 0x00000020
+kernel::startup::memory:DEBUG -- Registering Device memory 3F004000 size 20
+kernel::dtb:DEBUG -- soc device cprman@7e101000 0x7e101000 -> 0x3f101000 len 0x00002000
+kernel::startup::memory:DEBUG -- Registering Device memory 3F101000 size 2000
+kernel::dtb:DEBUG -- soc device mailbox@7e00b880 0x7e00b880 -> 0x3f00b880 len 0x00000040
+kernel::startup::memory:DEBUG -- Registering Device memory 3F00B880 size 40
+kernel::dtb:DEBUG -- soc device gpio@7e200000 0x7e200000 -> 0x3f200000 len 0x000000b4
+kernel::startup::memory:DEBUG -- Registering Device memory 3F200000 size B4
+kernel::dtb:DEBUG -- soc device serial@7e201000 0x7e201000 -> 0x3f201000 len 0x00000200
+kernel::startup::memory:DEBUG -- Registering Device memory 3F201000 size 200
+kernel::dtb:DEBUG -- soc device mmc@7e202000 0x7e202000 -> 0x3f202000 len 0x00000100
+kernel::startup::memory:DEBUG -- Registering Device memory 3F202000 size 100
+kernel::dtb:DEBUG -- soc device i2s@7e203000 0x7e203000 -> 0x3f203000 len 0x00000024
+kernel::startup::memory:DEBUG -- Registering Device memory 3F203000 size 24
+kernel::dtb:DEBUG -- soc device spi@7e204000 0x7e204000 -> 0x3f204000 len 0x00000200
+kernel::startup::memory:DEBUG -- Registering Device memory 3F204000 size 200
+kernel::dtb:DEBUG -- soc device i2c@7e205000 0x7e205000 -> 0x3f205000 len 0x00000200
+kernel::startup::memory:DEBUG -- Registering Device memory 3F205000 size 200
+kernel::dtb:DEBUG -- soc device dpi@7e208000 0x7e208000 -> 0x3f208000 len 0x0000008c
+kernel::startup::memory:DEBUG -- Registering Device memory 3F208000 size 8C
+kernel::dtb:DEBUG -- soc device dsi@7e209000 0x7e209000 -> 0x3f209000 len 0x00000078
+kernel::startup::memory:DEBUG -- Registering Device memory 3F209000 size 78
+kernel::dtb:DEBUG -- soc device aux@7e215000 0x7e215000 -> 0x3f215000 len 0x00000008
+kernel::startup::memory:DEBUG -- Registering Device memory 3F215000 size 8
+kernel::dtb:DEBUG -- soc device serial@7e215040 0x7e215040 -> 0x3f215040 len 0x00000040
+kernel::startup::memory:DEBUG -- Registering Device memory 3F215040 size 40
+kernel::dtb:DEBUG -- soc device spi@7e215080 0x7e215080 -> 0x3f215080 len 0x00000040
+kernel::startup::memory:DEBUG -- Registering Device memory 3F215080 size 40
+kernel::dtb:DEBUG -- soc device spi@7e2150c0 0x7e2150c0 -> 0x3f2150c0 len 0x00000040
+kernel::startup::memory:DEBUG -- Registering Device memory 3F2150C0 size 40
+kernel::dtb:DEBUG -- soc device pwm@7e20c000 0x7e20c000 -> 0x3f20c000 len 0x00000028
+kernel::startup::memory:DEBUG -- Registering Device memory 3F20C000 size 28
+kernel::dtb:DEBUG -- soc device mmc@7e300000 0x7e300000 -> 0x3f300000 len 0x00000100
+kernel::startup::memory:DEBUG -- Registering Device memory 3F300000 size 100
+kernel::dtb:DEBUG -- soc device hvs@7e400000 0x7e400000 -> 0x3f400000 len 0x00006000
+kernel::startup::memory:DEBUG -- Registering Device memory 3F400000 size 6000
+kernel::dtb:DEBUG -- soc device dsi@7e700000 0x7e700000 -> 0x3f700000 len 0x0000008c
+kernel::startup::memory:DEBUG -- Registering Device memory 3F700000 size 8C
+kernel::dtb:DEBUG -- soc device csi@7e800000 0x7e800000 -> 0x3f800000 len 0x00000800
+kernel::startup::memory:DEBUG -- Registering Device memory 3F800000 size 800
+kernel::dtb:DEBUG -- soc device csi@7e800000 0x7e802000 -> 0x3f802000 len 0x00000004
+kernel::startup::memory:DEBUG -- Registering Device memory 3F802000 size 4
+kernel::dtb:DEBUG -- soc device csi@7e801000 0x7e801000 -> 0x3f801000 len 0x00000800
+kernel::startup::memory:DEBUG -- Registering Device memory 3F801000 size 800
+kernel::dtb:DEBUG -- soc device csi@7e801000 0x7e802004 -> 0x3f802004 len 0x00000004
+kernel::startup::memory:DEBUG -- Registering Device memory 3F802004 size 4
+kernel::dtb:DEBUG -- soc device i2c@7e804000 0x7e804000 -> 0x3f804000 len 0x00001000
+kernel::startup::memory:DEBUG -- Registering Device memory 3F804000 size 1000
+kernel::dtb:DEBUG -- soc device usb@7e980000 0x7e980000 -> 0x3f980000 len 0x00010000
+kernel::startup::memory:DEBUG -- Registering Device memory 3F980000 size 10000
+kernel::dtb:DEBUG -- soc device usb@7e980000 0x7e006000 -> 0x3f006000 len 0x00001000
+kernel::startup::memory:DEBUG -- Registering Device memory 3F006000 size 1000
+kernel::dtb:DEBUG -- soc device dma-controller@7e007000 0x7e007000 -> 0x3f007000 len 0x00000f00
+kernel::startup::memory:DEBUG -- Registering Device memory 3F007000 size F00
+kernel::dtb:DEBUG -- soc device interrupt-controller@7e00b200 0x7e00b200 -> 0x3f00b200 len 0x00000200
+kernel::startup::memory:DEBUG -- Registering Device memory 3F00B200 size 200
+kernel::dtb:DEBUG -- soc device watchdog@7e100000 0x7e100000 -> 0x3f100000 len 0x00000114
+kernel::startup::memory:DEBUG -- Registering Device memory 3F100000 size 114
+kernel::dtb:DEBUG -- soc device watchdog@7e100000 0x7e00a000 -> 0x3f00a000 len 0x00000024
+kernel::startup::memory:DEBUG -- Registering Device memory 3F00A000 size 24
+kernel::dtb:DEBUG -- soc device rng@7e104000 0x7e104000 -> 0x3f104000 len 0x00000010
+kernel::startup::memory:DEBUG -- Registering Device memory 3F104000 size 10
+kernel::dtb:DEBUG -- soc device pixelvalve@7e206000 0x7e206000 -> 0x3f206000 len 0x00000100
+kernel::startup::memory:DEBUG -- Registering Device memory 3F206000 size 100
+kernel::dtb:DEBUG -- soc device pixelvalve@7e207000 0x7e207000 -> 0x3f207000 len 0x00000100
+kernel::startup::memory:DEBUG -- Registering Device memory 3F207000 size 100
+kernel::dtb:DEBUG -- soc device thermal@7e212000 0x7e212000 -> 0x3f212000 len 0x00000008
+kernel::startup::memory:DEBUG -- Registering Device memory 3F212000 size 8
+kernel::dtb:DEBUG -- soc device i2c@7e805000 0x7e805000 -> 0x3f805000 len 0x00001000
+kernel::startup::memory:DEBUG -- Registering Device memory 3F805000 size 1000
+kernel::dtb:DEBUG -- soc device vec@7e806000 0x7e806000 -> 0x3f806000 len 0x00001000
+kernel::startup::memory:DEBUG -- Registering Device memory 3F806000 size 1000
+kernel::dtb:DEBUG -- soc device pixelvalve@7e807000 0x7e807000 -> 0x3f807000 len 0x00000100
+kernel::startup::memory:DEBUG -- Registering Device memory 3F807000 size 100
+kernel::dtb:DEBUG -- soc device hdmi@7e902000 0x7e902000 -> 0x3f902000 len 0x00000600
+kernel::startup::memory:DEBUG -- Registering Device memory 3F902000 size 600
+kernel::dtb:DEBUG -- soc device hdmi@7e902000 0x7e808000 -> 0x3f808000 len 0x00000100
+kernel::startup::memory:DEBUG -- Registering Device memory 3F808000 size 100
+kernel::dtb:DEBUG -- soc device v3d@7ec00000 0x7ec00000 -> 0x3fc00000 len 0x00001000
+kernel::startup::memory:DEBUG -- Registering Device memory 3FC00000 size 1000
+kernel::dtb:DEBUG -- soc device interrupt-controller@40000000 0x40000000 -> 0x40000000 len 0x00000100
+kernel::startup::memory:DEBUG -- Registering Device memory 40000000 size 100
+kernel::dtb:DEBUG -- soc device mmcnr@7e300000 0x7e300000 -> 0x3f300000 len 0x00000100
+kernel::startup::memory:DEBUG -- Registering Device memory 3F300000 size 100
+kernel::dtb:DEBUG -- soc device firmwarekms@7e600000 0x7e600000 -> 0x3f600000 len 0x00000100
+kernel::startup::memory:DEBUG -- Registering Device memory 3F600000 size 100
+kernel::dtb:DEBUG -- soc device smi@7e600000 0x7e600000 -> 0x3f600000 len 0x00000100
+kernel::startup::memory:DEBUG -- Registering Device memory 3F600000 size 100
+kernel::dtb:DEBUG -- soc device axiperf 0x7e009800 -> 0x3f009800 len 0x00000100
+kernel::startup::memory:DEBUG -- Registering Device memory 3F009800 size 100
+kernel::dtb:DEBUG -- soc device axiperf 0x7ee08000 -> 0x3fe08000 len 0x00000100
+kernel::startup::memory:DEBUG -- Registering Device memory 3FE08000 size 100
+kernel::dtb:DEBUG -- soc device mailbox@7e00b840 0x7e00b840 -> 0x3f00b840 len 0x0000003c
+kernel::startup::memory:DEBUG -- Registering Device memory 3F00B840 size 3C
+kernel::dtb:DEBUG -- soc device gpiomem 0x7e200000 -> 0x3f200000 len 0x00001000
+kernel::startup::memory:DEBUG -- Registering Device memory 3F200000 size 1000
+kernel::dtb:DEBUG -- diagnostic UART 0x3f201000 size 0x00000200
+kernel::startup::memory:DEBUG -- Registering Device memory 3F201000 size 200
+kernel::startup::memory:DEBUG -- Registering Kernel memory 87000 size 171A20
+kernel::startup::memory:DEBUG -- Registering IdentityMap memory 207000 size 18C
+kernel::startup::memory:DEBUG -- Registering IdentityMap memory 238000 size 8AC8
+kernel::startup::memory:DEBUG -- Registering IdentityMap memory 2100000 size 10FC000
+kernel::startup::memory:DEBUG -- Registering IdentityMap memory 218000 size 20000
+kernel::startup::memory:DEBUG -- 25E000:2000000
+kernel::startup::memory:DEBUG -- 2009000:2100000
+kernel::startup::memory:DEBUG -- 51FC000:3E000000
+kernel::startup::memory:DEBUG -- MemoryArea { base: [phys 0x25e000], size: 1DA2000 }
+kernel::startup::memory:DEBUG -- MemoryArea { base: [phys 0x2009000], size: F7000 }
+kernel::startup::memory:DEBUG -- MemoryArea { base: [phys 0x51fc000], size: 38E04000 }
+kernel::startup::memory:INFO -- Memory: 941 MB
+kernel::startup::memory:INFO -- Highest huge page level: 0
+kernel::startup::memory:DEBUG -- Contiguously mapping 0x25e000 => 0xffff80000025e000, 7586 pages, level 0
+kernel::startup::memory:DEBUG -- head+middle lvl 0 next 0 pages_per_iter 1 base 0x25e000 remaining 7586
+kernel::startup::memory:DEBUG -- Contiguously mapping 0x2009000 => 0xffff800002009000, 247 pages, level 0
+kernel::startup::memory:DEBUG -- head+middle lvl 0 next 0 pages_per_iter 1 base 0x2009000 remaining 247
+kernel::startup::memory:DEBUG -- Contiguously mapping 0x51fc000 => 0xffff8000051fc000, 232964 pages, level 0
+kernel::startup::memory:DEBUG -- head+middle lvl 0 next 0 pages_per_iter 1 base 0x51fc000 remaining 232964
+kernel::startup::memory:DEBUG -- MAPPING STACK, BASE 218000 SIZE 20000
+kernel::startup::memory:DEBUG -- Contiguously mapping 0x218000 => 0xffff800000218000, 32 pages, level 0
+kernel::startup::memory:DEBUG -- head+middle lvl 0 next 0 pages_per_iter 1 base 0x218000 remaining 32
+kernel::startup::memory:DEBUG -- Table: 25E000
+kernel::startup::memory:DEBUG -- 256: 25F403
+kernel::startup::memory:DEBUG -- 510: 439403
+kernel::startup::memory:INFO -- Permanently used: 1988 KB
+kernel::acpi:ERROR -- NO RSDP FOUND
+kernel::memory:DEBUG -- Initial freelist consistent
+kernel::arch::aarch64::device:INFO -- PSCI INIT
+kernel::arch::aarch64::device::psci:INFO -- PSCI 1.0 using smc conduit from device tree
+kernel::arch::aarch64::device::bcm2835_wdt:INFO -- BCM2835 watchdog at 0x3f100000
+kernel::arch::aarch64::device:INFO -- CPU TOPOLOGY INIT
+kernel::arch::aarch64::device::cpu::topology:INFO -- DT CPU topology: 4 enabled, 0 disabled, BSP MPIDR=0x0, 3 startable secondaries
+kernel::arch::aarch64::device::cpu::topology:DEBUG -- CPU topology logical #0: MPIDR=0x0 boot=true enable-method=spin-table
+kernel::arch::aarch64::device::cpu::topology:DEBUG -- CPU topology logical #1: MPIDR=0x1 boot=false enable-method=spin-table
+kernel::arch::aarch64::device::cpu::topology:DEBUG -- CPU topology logical #2: MPIDR=0x2 boot=false enable-method=spin-table
+kernel::arch::aarch64::device::cpu::topology:DEBUG -- CPU topology logical #3: MPIDR=0x3 boot=false enable-method=spin-table
+kernel::arch::aarch64::device::cpu::boot:INFO -- BSP translation-table walks are inner-shareable: TCR_EL1=0x12b5103510
+kernel::arch::aarch64::device::cpu::boot:INFO -- CPU boot resources: 3 slots ready, trampoline=0x530a000, idmap=0x530b000
+kernel::arch::aarch64::device::cpu::boot:DEBUG -- CPU boot slot logical #1: MPIDR=0x1 stack_phys=0x5310000..0x5320000 percpu_phys=0x530f000 args_phys=0x5320000
+kernel::arch::aarch64::device::cpu::boot:DEBUG -- CPU boot slot logical #2: MPIDR=0x2 stack_phys=0x5330000..0x5340000 percpu_phys=0x5321000 args_phys=0x5322000
+kernel::arch::aarch64::device::cpu::boot:DEBUG -- CPU boot slot logical #3: MPIDR=0x3 stack_phys=0x5340000..0x5350000 percpu_phys=0x5323000 args_phys=0x5324000
+kernel::arch::aarch64::device:INFO -- IRQCHIP INIT
+kernel::dtb:DEBUG -- root parent = 0x00000001
+kernel::dtb:DEBUG -- gpio@7e200000, compatible = brcm,bcm2835-gpio, #interrupt-cells = 0x00000002, phandle = 0x00000007
+kernel::dtb:DEBUG -- interrupt-parent = 0x00000001
+kernel::dtb:DEBUG -- interrupts begin:
+kernel::dtb:DEBUG -- 0x00000002, 
+kernel::dtb:DEBUG -- 0x00000011, 
+kernel::dtb:DEBUG -- 0x00000002, 
+kernel::dtb:DEBUG -- 0x00000012, 
+kernel::dtb:DEBUG -- interrupts end
+kernel::dtb:DEBUG -- interrupt-controller@7e00b200, compatible = brcm,bcm2836-armctrl-ic, #interrupt-cells = 0x00000002, phandle = 0x00000001
+kernel::dtb:DEBUG -- interrupt-parent = 0x00000019
+kernel::dtb:DEBUG -- interrupts begin:
+kernel::dtb:DEBUG -- 0x00000008, 
+kernel::dtb:DEBUG -- 0x00000004, 
+kernel::dtb:DEBUG -- interrupts end
+kernel::dtb:DEBUG -- interrupt-controller@40000000, compatible = brcm,bcm2836-l1-intc, #interrupt-cells = 0x00000002, phandle = 0x00000019
+kernel::dtb:DEBUG -- interrupts end
+kernel::dtb::irqchip:DEBUG -- gpio@7e200000, compatible = brcm,bcm2835-gpio, #interrupt-cells = 0x00000002, phandle = 0x00000007
+kernel::arch::aarch64::device::irqchip:WARN -- no driver for interrupt controller "brcm,bcm2835-gpio"
+kernel::dtb::irqchip:DEBUG -- interrupt-parent = 0x00000001
+kernel::dtb::irqchip:DEBUG -- interrupts begin:
+kernel::dtb::irqchip:DEBUG -- L2(2, 17), 
+kernel::dtb::irqchip:DEBUG -- L2(2, 18), 
+kernel::dtb::irqchip:DEBUG -- interrupts end
+kernel::dtb::irqchip:DEBUG -- interrupt-controller@7e00b200, compatible = brcm,bcm2836-armctrl-ic, #interrupt-cells = 0x00000002, phandle = 0x00000001
+kernel::dtb::irqchip:DEBUG -- interrupt-parent = 0x00000019
+kernel::dtb::irqchip:DEBUG -- interrupts begin:
+kernel::dtb::irqchip:DEBUG -- L2(8, 4), 
+kernel::dtb::irqchip:DEBUG -- interrupts end
+kernel::dtb::irqchip:DEBUG -- interrupt-controller@40000000, compatible = brcm,bcm2836-l1-intc, #interrupt-cells = 0x00000002, phandle = 0x00000019
+kernel::arch::aarch64::device::irqchip::irq_bcm2836:DEBUG -- IRQ BCM2836 INIT
+kernel::arch::aarch64::device::irqchip::irq_bcm2836:DEBUG -- routing all irq to core 0
+kernel::arch::aarch64::device::irqchip::irq_bcm2836:DEBUG -- IRQ BCM2836 END
+kernel::arch::aarch64::device::irqchip::irq_bcm2836:INFO -- bcm2836 irq_range = (0, 9)
+kernel::arch::aarch64::device::irqchip::irq_bcm2835:INFO -- register bcm2835arm_ctrl as ic_idx 2's child  virq = 8
+kernel::arch::aarch64::device::irqchip::irq_bcm2835:DEBUG -- IRQ BCM2835 INIT
+kernel::arch::aarch64::device::irqchip::irq_bcm2835:DEBUG -- IRQ BCM2835 END
+kernel::arch::aarch64::device::irqchip::irq_bcm2835:INFO -- bcm2835 irq_range = (9, 105)
+kernel::arch::aarch64::device:INFO -- Already selected 2 as root ic
+kernel::arch::aarch64::device:INFO -- GIT INIT
+kernel::arch::aarch64::device::generic_timer:DEBUG -- generic_timer use_virtual_timer = true
+kernel::arch::aarch64::device::generic_timer:DEBUG -- architected timer irq = L2(3, 4)
+kernel::arch::aarch64::device::generic_timer:INFO -- architected timer virq = 3 (virtual)
+kernel::arch::aarch64::device::irqchip::irq_bcm2836:DEBUG -- bcm2836 enable 3
+kernel::arch::aarch64::device:INFO -- SERIAL INIT
+kernel::arch::aarch64::device::serial:INFO -- serial_port virq = 98
+kernel::arch::aarch64::device:INFO -- RTC INIT
+kernel::arch::aarch64::device::rtc:WARN -- No PL031 RTC found
+kernel::startup:INFO -- SECONDARY CPU INIT
+kernel::arch::aarch64::device::cpu::boot:INFO -- CPU logical #1: spin-table release MPIDR=0x1 at 0xe0
+kernel::arch::aarch64::device::cpu::boot:INFO -- CPU logical #1: local SGI/timer self-test passed
+kernel::arch::aarch64::device::cpu::boot:INFO -- CPU logical #1: online
+kernel::startup:DEBUG -- AP #1
+kernel::arch::aarch64::device::cpu::boot:INFO -- CPU logical #2: spin-table release MPIDR=0x2 at 0xe8
+kernel::arch::aarch64::device::cpu::boot:INFO -- CPU logical #2: local SGI/timer self-test passed
+kernel::arch::aarch64::device::cpu::boot:INFO -- CPU logical #2: online
+kernel::startup:DEBUG -- AP #2
+kernel::arch::aarch64::device::cpu::boot:INFO -- CPU logical #3: spin-table release MPIDR=0x3 at 0xf0
+kernel::arch::aarch64::device::cpu::boot:INFO -- CPU logical #3: local SGI/timer self-test passed
+kernel::arch::aarch64::device::cpu::boot:INFO -- CPU logical #3: online
+kernel::startup:DEBUG -- AP #3
+kernel::arch::aarch64::device::cpu::boot:INFO -- CPU activation complete: 4 CPUs online
+kernel::scheme::acpi:WARN -- expected RXSDT_ENUM to be initialized before AcpiScheme, is ACPI available?
+kernel::startup:DEBUG -- BSP: 4 CPUs
+kernel::startup:DEBUG -- Env: Ok("DTB_ADDR=0000000000238000\nDTB_SIZE=0000000000008ac8\nDISK_LIVE_ADDR=00000000031fc000\nDISK_LIVE_SIZE=0000000002000000\nREDOXFS_BLOCK=0000000000000000\nREDOXFS_UUID=630d00e7-b0dd-4a11-aa37-60d1bc378609\nFRAMEBUFFER_ADDR=000000003e400000\nFRAMEBUFFER_VIRT=ffff80003e400000\nFRAMEBUFFER_WIDTH=0000000000000500\nFRAMEBUFFER_HEIGHT=00000000000002d0\nFRAMEBUFFER_STRIDE=0000000000000500\nQUIET=1\nRPI_FB=1280x720\n")
+kernel::syscall::process:DEBUG -- Bootstrap entry point: 3000
+kernel::scheme::user:DEBUG -- call_fdread: payload: 8 metadata: 2
+init: switchroot to /scheme/initfs /scheme/initfs/etc
+kernel::scheme::user:DEBUG -- call_fdread: payload: 8 metadata: 2
+randd: Seeding failed, no entropy source.  Random numbers on this platform are NOT SECURE
+kernel::scheme::user:DEBUG -- call_fdread: payload: 8 metadata: 2
+kernel::scheme::user:DEBUG -- call_fdread: payload: 8 metadata: 2
+kernel::scheme::user:DEBUG -- call_fdread: payload: 8 metadata: 2
+kernel::scheme::user:DEBUG -- call_fdread: payload: 8 metadata: 2
+kernel::scheme::user:DEBUG -- call_fdread: payload: 8 metadata: 2
+kernel::scheme::user:DEBUG -- call_fdread: payload: 8 metadata: 2
+kernel::scheme::user:DEBUG -- call_fdread: payload: 8 metadata: 2
+kernel::scheme::user:DEBUG -- call_fdread: payload: 8 metadata: 2
+rpi-firmwared: mailbox at 0x3f00b880, revision 0x00a020d3, model Raspberry Pi 3 Model B+
+arm: clock 1200 MHz set (ndiv 62 frac 80000 div 1), CM_LOCK 00001616 -> 00001614, CTRL 0002103E FRAC 00080000 ARM 00000001, now 1200000 kHz
+rpi-firmwared: ARM clock 469 -> 1200 MHz
+kernel::scheme::user:DEBUG -- call_fdread: payload: 8 metadata: 2
+kernel::scheme::user:DEBUG -- call_fdread: payload: 8 metadata: 2
+kernel::scheme::user:DEBUG -- call_fdread: payload: 8 metadata: 2
+bcm2835-gpiod: 54 pins at 0x3f200000
+kernel::scheme::user:DEBUG -- call_fdread: payload: 8 metadata: 2
+bcm2835-spid: bus 0 at 0x3f204000, 999 kHz (core 249 MHz)
+kernel::scheme::user:DEBUG -- call_fdread: payload: 8 metadata: 2
+bcm2835-i2cd: bus 1 at 0x3f804000, 99 kHz (core 249 MHz)
+kernel::scheme::user:DEBUG -- call_fdread: payload: 8 metadata: 2
+vesad: 1280x720 stride 1280 at 0x3E400000
+kernel::scheme::user:DEBUG -- call_fdread: payload: 8 metadata: 2
+kernel::scheme::user:DEBUG -- call_fdread: payload: 8 metadata: 2
+bcm2835-pwmaudiod: PWM clock does not start (CM_PWMCTL 0x00000016) (QEMU?), playing to the clock
+kernel::scheme::user:DEBUG -- call_fdread: payload: 8 metadata: 2
+fbbootlogd: mapped display
+kernel::scheme::user:DEBUG -- call_fdread: payload: 8 metadata: 2
+dwc2d: controller at 0x3f980000, core id 0x4f54280a
+dwc2d: host mode, 8 channels
+dwc2d: device on root port, High speed
+dwc2d: address 1: 0424:2514, USB 2.00, class 0x09, High speed
+dwc2d:   interface 0 alt 0: class 0x09 subclass 0x00 protocol 0x01
+dwc2d:     endpoint 0x81: interrupt max packet 1
+dwc2d:   interface 0 alt 1: class 0x09 subclass 0x00 protocol 0x02
+dwc2d:     endpoint 0x81: interrupt max packet 1
+dwc2d: hub at address 1: 4 ports, power switching per port
+dwc2d: hub 1 port 1: device connected
+dwc2d:   address 2: 0424:2514, USB 2.00, class 0x09, High speed
+dwc2d:     interface 0 alt 0: class 0x09 subclass 0x00 protocol 0x01
+dwc2d:       endpoint 0x81: interrupt max packet 1
+dwc2d:     interface 0 alt 1: class 0x09 subclass 0x00 protocol 0x02
+dwc2d:       endpoint 0x81: interrupt max packet 1
+dwc2d:   hub at address 2: 3 ports, power switching per port
+dwc2d: hub 1 port 2: device connected
+dwc2d:   address 3: 05e3:0610, USB 2.00, class 0x09, High speed
+dwc2d:     interface 0 alt 0: class 0x09 subclass 0x00 protocol 0x01
+dwc2d:       endpoint 0x81: interrupt max packet 1
+dwc2d:     interface 0 alt 1: class 0x09 subclass 0x00 protocol 0x02
+dwc2d:       endpoint 0x81: interrupt max packet 1
+dwc2d:   hub at address 3: 4 ports, power switching ganged
+dwc2d:   hub 3 port 1: device connected
+dwc2d:     address 4: 04d9:0006, USB 2.00, class 0x00, Low speed
+dwc2d:       interface 0 alt 0: class 0x03 subclass 0x01 protocol 0x01
+dwc2d:         endpoint 0x81: interrupt max packet 8
+dwc2d:       interface 1 alt 0: class 0x03 subclass 0x00 protocol 0x00
+dwc2d:         endpoint 0x82: interrupt max packet 5
+dwc2d: 4 device(s) enumerated
+dwc2d: keyboard at address 4
+dwc2d:   hub 2 port 1: device connected
+dwc2d:     address 5: 0424:7800, USB 2.10, class 0xff, High speed
+dwc2d:       interface 0 alt 0: class 0xff subclass 0x00 protocol 0xff
+dwc2d:         endpoint 0x81: bulk max packet 512
+dwc2d:         endpoint 0x02: bulk max packet 512
+dwc2d:         endpoint 0x83: interrupt max packet 16
+dwc2d: LAN7800 at address 5
+dwc2d: LAN78xx chip 7800 rev 0002
+arm: clock 600 MHz set (ndiv 62 frac 80000 div 2), CM_LOCK 00001616 -> 00001616, CTRL 0002103E FRAC 00080000 ARM 00000002, now 600000 kHz
+dwc2d: link up on the LAN7800 at address 5
+dwc2d: devices ready after 4335 ms
+dwc2d: network on the adapter at address 5
+dwc2d: network address 02:52:65:64:6f:78
+kernel::scheme::irq:DEBUG -- open_phandle_irq  virq=50
+dwc2d: interrupt /scheme/irq/phandle-1/1,9
+kernel::scheme::user:DEBUG -- call_fdread: payload: 8 metadata: 2
+bcm2835-sdhostd: controller at 0x3f202000
+bcm2835-sdhostd: GPFSEL2 0x00000000 GPFSEL4 0x24000900 GPFSEL5 0x00000924
+bcm2835-sdhostd: core clock 249 MHz, up to 249 MHz
+arm: clock 1200 MHz set (ndiv 62 frac 80000 div 1), CM_LOCK 00001616 -> 00001616, CTRL 0002103E FRAC 00080000 ARM 00000001, now 1200000 kHz
+bcm2835-sdhostd: SDHC/SDXC card, 30436 MiB, 4-bit bus, high speed, up to 49 MHz
+bcm2835-sdhostd: serving /scheme/disk.mmc
+kernel::scheme::user:DEBUG -- call_fdread: payload: 8 metadata: 2
+1970-01-01T00-00-06.995Z [@hwd:18 INFO] using devicetree backend
+bootscreen: Redox step 1, bar 55 %, "drivers", 85978 us
+[ERROR redoxfs] failed to open filesystem /scheme/disk.mmc/0: No such file or directory
+removing handle: id: 3, Some(Disk(0))
+[ERROR redoxfs] failed to open filesystem /scheme/disk.mmc/0p0: No such file or directory
+removing handle: id: 4, Some(Partition(0, 0))
+kernel::scheme::user:DEBUG -- call_fdread: payload: 8 metadata: 2
+removing handle: id: 2, Some(List([48, 10]))
+removing handle: id: 2, Some(List([48, 10, 48, 112, 48, 10]))
+bootscreen: Redox step 2, bar 70 %, "file system", 15662 us
+init: switchroot to /usr /etc
+init: unit 10_net.target not found
+kernel::scheme::user:DEBUG -- call_fdread: payload: 8 metadata: 2
+kernel::scheme::user:DEBUG -- call_fdread: payload: 8 metadata: 2
+bootscreen: Redox step 3, bar 85 %, "services", 13489 us
+bootscreen: Redox step 4, bar 94 %, "network", 13443 us
+bootscreen: Redox step 5, last, bar 100 %, "login", 13712 us
+bootscreen: Redox's last step, 5 steps, drawing 142284 us
+Finished graphical debug
+1970-01-01T00-00-08.007Z [@fbcond::text:40 INFO] fbcond: Performing handoff
+kernel::scheme::user:DEBUG -- call_fdread: payload: 8 metadata: 2
+Super+F1: boot messages
+⏎                                                                                redox login: redox login: arm: clock 600 MHz set (ndiv 62 frac 80000 div 2), CM_LOCK 00001616 -> 00001616, CTRL 0002103E FRAC 00080000 ARM 00000002, now 600000 kHz
+arm: clock 1200 MHz set (ndiv 62 frac 80000 div 1), CM_LOCK 00001616 -> 00001616, CTRL 0002103E FRAC 00080000 ARM 00000001, now 1200000 kHz
+bcm2835-pwmaudiod: stopped, outputs at 0 V
+kreset
+
+
+redox-rpi bootcode v0.1.0-rc3-d391b09 (release, boots from the SD card, boot screen on HDMI)
+VPU cpuid 0x4000140
+from the Boot ROM: CM_VPUCTL 0x241 CM_VPUDIV 0x1000 PLLC_CTRL 0x10000 PLLC_FRAC 0x0 SD_CS 0x794200 timer 239177 us
+[sdram] SD_CS 0x794200 at start
+[sdram] controller up, SD_CS 0x218E42
+[sdram] cpuid 0x4000140, DQ slew 2
+[sdram] Elpida 1 GB LPDDR2 (MR5 0x3, MR8 0x58)
+[sdram] DDR PLL locked, 398400 kHz
+[sdram] addressing: bank 3 row 3 col 3, SB 0xFF
+[sdram] self test passed, 1024 MB, 32 regions, 28090 us
+[sdram] memory split: ARM 0-3E000000, VideoCore 3E000000-40000000
+SDRAM ready after 58243 us
+sd: SC32G, 30436 MB, SDHC, 4-bit bus, 50000 kHz
+fat: partition type 0C at sector 2048, FAT32, 2 sectors per cluster
+boot64: config.txt: kernel kernel8.img, initramfs initramfs, armstub built-in, device_tree default, 2 overlays
+boot64: boot screen title from config.txt
+boot64: built-in armstub8, 3076 bytes at ARM 00000000
+boot64: kernel8.img 1957888 bytes at ARM 00080000, crc32 F3DACE3E
+boot64: board revision A020D3
+boot64: redox-3bp.dtb has its overlays already, config.txt's dtoverlay lines not applied
+boot64: redox-3bp.dtb 36443 bytes at ARM 02000000
+boot64: bootargs from cmdline.txt, 21 bytes
+boot64: initramfs 0%, 1 of 48 MB
+boot64: initramfs 20%, 10 of 48 MB
+boot64: initramfs 40%, 20 of 48 MB
+boot64: initramfs 60%, 30 of 48 MB
+boot64: initramfs 80%, 40 of 48 MB
+boot64: initramfs 100%, 48 of 48 MB
+boot64: initramfs 51363840 bytes at ARM 02100000 in 2309 ms (22245 KB/s)
+boot64: the armstub answers PSCI, /psci added (method smc)
+boot64: devicetree 35528 bytes at ARM 02000000, memory 0-3E000000
+ok boot64, the serial line is the ARM's now
+power: USB on, PM_IMAGE 0003107F PM_USB 00000001
+power: ETH_CLK GPIO 42 on, CM_GP1CTL 00000295 DIV 00014D55, PLLC PER 499999 kHz, core 249999 kHz
+expander: FXL6408 id A0, LAN_RUN on, dir 0C out 08 hiz F3
+power: LAN reset on GPIO 30 pulsed, GPLEV0 4000C1FF (GPIO 31 0)
+mbox: serving, revision 00A020D3 serial <serial>, ARM 469599000 Hz, core 249999000 Hz, EMMC 199999000 Hz, UART 3000000 Hz, PM_USB 00000001 PM_IMAGE 0003107F
+ok arm aarch64, ARM_ID 364D5241, C0 0000F253, PM_PROC 0000107F, entry ARM 0 = bus C0000000
+rpi-boot-stub: devicetree at 0x2000000
+rpi-boot-stub: devicetree 35528 bytes, copied from 0x2000000 to 0x238000 (35528 bytes for the kernel)
+rpi-boot-stub: initramfs 0x2100000..0x51fc000, 50160 KiB
+rpi-boot-stub: USB power on (was Some(1))
+bootscreen: handed over to the ARM's framebuffer 3447 ms after it came up; HDMI start 1296 us, drawing 51824 us, copy 84300 us, clear by VPU, DMA left samples (800)
+rpi-boot-stub: framebuffer 1280x720 stride 1280 at 0x3e400000
+rpi-boot-stub: from the command line: quiet, QUIET=1
+rpi-boot-stub: from the command line: RPI_FB=1280x720
+rpi-boot-stub: area 0x25e000..0x2000000 free
+rpi-boot-stub: area 0x2009000..0x2100000 free
+rpi-boot-stub: area 0x51fc000..0x3e000000 free
+rpi-boot-stub: area 0x31fc000..0x51fc000 reserved
+rpi-boot-stub: live disk 0x31fc000, 32 MiB
+rpi-boot-stub: starting the kernel at 0xffffff00000ae698
+kernel::dtb::serial:INFO -- UART Compatible { string: "arm,pl011-axi\0arm,pl011\0arm,primecell" } at 0xFFFF80003F201000 size 0x200
+kernel::arch::aarch64::start:INFO -- Redox OS starting...
+kernel::startup:DEBUG -- Kernel: 87000:1F8A20
+kernel::startup:DEBUG -- Env: 207000:20718C
+kernel::startup:DEBUG -- HWDESC: 238000:240AC8
+kernel::startup:DEBUG -- Areas: 217060:2170C0
+kernel::startup:DEBUG -- Bootstrap: 2100000:31FC000
+kernel::startup::memory:DEBUG -- Registering Free memory 25E000 size 1DA2000
+kernel::startup::memory:DEBUG -- Registering Free memory 2009000 size F7000
+kernel::startup::memory:DEBUG -- Registering Free memory 51FC000 size 38E04000
+kernel::startup::memory:DEBUG -- Registering Reserved memory 31FC000 size 2000000
+kernel::startup::memory:DEBUG -- Registering Reserved memory 0 size 1000
+kernel::dtb:DEBUG -- dynamic reserved-memory node linux,cma; ignoring it until allocation is supported
+kernel::dtb:DEBUG -- dev mem 0x7e000000 0x3f000000 0x01000000
+kernel::dtb:DEBUG -- dev mem 0x40000000 0x40000000 0x00001000
+kernel::dtb:DEBUG -- soc device timer@7e003000 0x7e003000 -> 0x3f003000 len 0x00001000
+kernel::startup::memory:DEBUG -- Registering Device memory 3F003000 size 1000
+kernel::dtb:DEBUG -- soc device txp@7e004000 0x7e004000 -> 0x3f004000 len 0x00000020
+kernel::startup::memory:DEBUG -- Registering Device memory 3F004000 size 20
+kernel::dtb:DEBUG -- soc device cprman@7e101000 0x7e101000 -> 0x3f101000 len 0x00002000
+kernel::startup::memory:DEBUG -- Registering Device memory 3F101000 size 2000
+kernel::dtb:DEBUG -- soc device mailbox@7e00b880 0x7e00b880 -> 0x3f00b880 len 0x00000040
+kernel::startup::memory:DEBUG -- Registering Device memory 3F00B880 size 40
+kernel::dtb:DEBUG -- soc device gpio@7e200000 0x7e200000 -> 0x3f200000 len 0x000000b4
+kernel::startup::memory:DEBUG -- Registering Device memory 3F200000 size B4
+kernel::dtb:DEBUG -- soc device serial@7e201000 0x7e201000 -> 0x3f201000 len 0x00000200
+kernel::startup::memory:DEBUG -- Registering Device memory 3F201000 size 200
+kernel::dtb:DEBUG -- soc device mmc@7e202000 0x7e202000 -> 0x3f202000 len 0x00000100
+kernel::startup::memory:DEBUG -- Registering Device memory 3F202000 size 100
+kernel::dtb:DEBUG -- soc device i2s@7e203000 0x7e203000 -> 0x3f203000 len 0x00000024
+kernel::startup::memory:DEBUG -- Registering Device memory 3F203000 size 24
+kernel::dtb:DEBUG -- soc device spi@7e204000 0x7e204000 -> 0x3f204000 len 0x00000200
+kernel::startup::memory:DEBUG -- Registering Device memory 3F204000 size 200
+kernel::dtb:DEBUG -- soc device i2c@7e205000 0x7e205000 -> 0x3f205000 len 0x00000200
+kernel::startup::memory:DEBUG -- Registering Device memory 3F205000 size 200
+kernel::dtb:DEBUG -- soc device dpi@7e208000 0x7e208000 -> 0x3f208000 len 0x0000008c
+kernel::startup::memory:DEBUG -- Registering Device memory 3F208000 size 8C
+kernel::dtb:DEBUG -- soc device dsi@7e209000 0x7e209000 -> 0x3f209000 len 0x00000078
+kernel::startup::memory:DEBUG -- Registering Device memory 3F209000 size 78
+kernel::dtb:DEBUG -- soc device aux@7e215000 0x7e215000 -> 0x3f215000 len 0x00000008
+kernel::startup::memory:DEBUG -- Registering Device memory 3F215000 size 8
+kernel::dtb:DEBUG -- soc device serial@7e215040 0x7e215040 -> 0x3f215040 len 0x00000040
+kernel::startup::memory:DEBUG -- Registering Device memory 3F215040 size 40
+kernel::dtb:DEBUG -- soc device spi@7e215080 0x7e215080 -> 0x3f215080 len 0x00000040
+kernel::startup::memory:DEBUG -- Registering Device memory 3F215080 size 40
+kernel::dtb:DEBUG -- soc device spi@7e2150c0 0x7e2150c0 -> 0x3f2150c0 len 0x00000040
+kernel::startup::memory:DEBUG -- Registering Device memory 3F2150C0 size 40
+kernel::dtb:DEBUG -- soc device pwm@7e20c000 0x7e20c000 -> 0x3f20c000 len 0x00000028
+kernel::startup::memory:DEBUG -- Registering Device memory 3F20C000 size 28
+kernel::dtb:DEBUG -- soc device mmc@7e300000 0x7e300000 -> 0x3f300000 len 0x00000100
+kernel::startup::memory:DEBUG -- Registering Device memory 3F300000 size 100
+kernel::dtb:DEBUG -- soc device hvs@7e400000 0x7e400000 -> 0x3f400000 len 0x00006000
+kernel::startup::memory:DEBUG -- Registering Device memory 3F400000 size 6000
+kernel::dtb:DEBUG -- soc device dsi@7e700000 0x7e700000 -> 0x3f700000 len 0x0000008c
+kernel::startup::memory:DEBUG -- Registering Device memory 3F700000 size 8C
+kernel::dtb:DEBUG -- soc device csi@7e800000 0x7e800000 -> 0x3f800000 len 0x00000800
+kernel::startup::memory:DEBUG -- Registering Device memory 3F800000 size 800
+kernel::dtb:DEBUG -- soc device csi@7e800000 0x7e802000 -> 0x3f802000 len 0x00000004
+kernel::startup::memory:DEBUG -- Registering Device memory 3F802000 size 4
+kernel::dtb:DEBUG -- soc device csi@7e801000 0x7e801000 -> 0x3f801000 len 0x00000800
+kernel::startup::memory:DEBUG -- Registering Device memory 3F801000 size 800
+kernel::dtb:DEBUG -- soc device csi@7e801000 0x7e802004 -> 0x3f802004 len 0x00000004
+kernel::startup::memory:DEBUG -- Registering Device memory 3F802004 size 4
+kernel::dtb:DEBUG -- soc device i2c@7e804000 0x7e804000 -> 0x3f804000 len 0x00001000
+kernel::startup::memory:DEBUG -- Registering Device memory 3F804000 size 1000
+kernel::dtb:DEBUG -- soc device usb@7e980000 0x7e980000 -> 0x3f980000 len 0x00010000
+kernel::startup::memory:DEBUG -- Registering Device memory 3F980000 size 10000
+kernel::dtb:DEBUG -- soc device usb@7e980000 0x7e006000 -> 0x3f006000 len 0x00001000
+kernel::startup::memory:DEBUG -- Registering Device memory 3F006000 size 1000
+kernel::dtb:DEBUG -- soc device dma-controller@7e007000 0x7e007000 -> 0x3f007000 len 0x00000f00
+kernel::startup::memory:DEBUG -- Registering Device memory 3F007000 size F00
+kernel::dtb:DEBUG -- soc device interrupt-controller@7e00b200 0x7e00b200 -> 0x3f00b200 len 0x00000200
+kernel::startup::memory:DEBUG -- Registering Device memory 3F00B200 size 200
+kernel::dtb:DEBUG -- soc device watchdog@7e100000 0x7e100000 -> 0x3f100000 len 0x00000114
+kernel::startup::memory:DEBUG -- Registering Device memory 3F100000 size 114
+kernel::dtb:DEBUG -- soc device watchdog@7e100000 0x7e00a000 -> 0x3f00a000 len 0x00000024
+kernel::startup::memory:DEBUG -- Registering Device memory 3F00A000 size 24
+kernel::dtb:DEBUG -- soc device rng@7e104000 0x7e104000 -> 0x3f104000 len 0x00000010
+kernel::startup::memory:DEBUG -- Registering Device memory 3F104000 size 10
+kernel::dtb:DEBUG -- soc device pixelvalve@7e206000 0x7e206000 -> 0x3f206000 len 0x00000100
+kernel::startup::memory:DEBUG -- Registering Device memory 3F206000 size 100
+kernel::dtb:DEBUG -- soc device pixelvalve@7e207000 0x7e207000 -> 0x3f207000 len 0x00000100
+kernel::startup::memory:DEBUG -- Registering Device memory 3F207000 size 100
+kernel::dtb:DEBUG -- soc device thermal@7e212000 0x7e212000 -> 0x3f212000 len 0x00000008
+kernel::startup::memory:DEBUG -- Registering Device memory 3F212000 size 8
+kernel::dtb:DEBUG -- soc device i2c@7e805000 0x7e805000 -> 0x3f805000 len 0x00001000
+kernel::startup::memory:DEBUG -- Registering Device memory 3F805000 size 1000
+kernel::dtb:DEBUG -- soc device vec@7e806000 0x7e806000 -> 0x3f806000 len 0x00001000
+kernel::startup::memory:DEBUG -- Registering Device memory 3F806000 size 1000
+kernel::dtb:DEBUG -- soc device pixelvalve@7e807000 0x7e807000 -> 0x3f807000 len 0x00000100
+kernel::startup::memory:DEBUG -- Registering Device memory 3F807000 size 100
+kernel::dtb:DEBUG -- soc device hdmi@7e902000 0x7e902000 -> 0x3f902000 len 0x00000600
+kernel::startup::memory:DEBUG -- Registering Device memory 3F902000 size 600
+kernel::dtb:DEBUG -- soc device hdmi@7e902000 0x7e808000 -> 0x3f808000 len 0x00000100
+kernel::startup::memory:DEBUG -- Registering Device memory 3F808000 size 100
+kernel::dtb:DEBUG -- soc device v3d@7ec00000 0x7ec00000 -> 0x3fc00000 len 0x00001000
+kernel::startup::memory:DEBUG -- Registering Device memory 3FC00000 size 1000
+kernel::dtb:DEBUG -- soc device interrupt-controller@40000000 0x40000000 -> 0x40000000 len 0x00000100
+kernel::startup::memory:DEBUG -- Registering Device memory 40000000 size 100
+kernel::dtb:DEBUG -- soc device mmcnr@7e300000 0x7e300000 -> 0x3f300000 len 0x00000100
+kernel::startup::memory:DEBUG -- Registering Device memory 3F300000 size 100
+kernel::dtb:DEBUG -- soc device firmwarekms@7e600000 0x7e600000 -> 0x3f600000 len 0x00000100
+kernel::startup::memory:DEBUG -- Registering Device memory 3F600000 size 100
+kernel::dtb:DEBUG -- soc device smi@7e600000 0x7e600000 -> 0x3f600000 len 0x00000100
+kernel::startup::memory:DEBUG -- Registering Device memory 3F600000 size 100
+kernel::dtb:DEBUG -- soc device axiperf 0x7e009800 -> 0x3f009800 len 0x00000100
+kernel::startup::memory:DEBUG -- Registering Device memory 3F009800 size 100
+kernel::dtb:DEBUG -- soc device axiperf 0x7ee08000 -> 0x3fe08000 len 0x00000100
+kernel::startup::memory:DEBUG -- Registering Device memory 3FE08000 size 100
+kernel::dtb:DEBUG -- soc device mailbox@7e00b840 0x7e00b840 -> 0x3f00b840 len 0x0000003c
+kernel::startup::memory:DEBUG -- Registering Device memory 3F00B840 size 3C
+kernel::dtb:DEBUG -- soc device gpiomem 0x7e200000 -> 0x3f200000 len 0x00001000
+kernel::startup::memory:DEBUG -- Registering Device memory 3F200000 size 1000
+kernel::dtb:DEBUG -- diagnostic UART 0x3f201000 size 0x00000200
+kernel::startup::memory:DEBUG -- Registering Device memory 3F201000 size 200
+kernel::startup::memory:DEBUG -- Registering Kernel memory 87000 size 171A20
+kernel::startup::memory:DEBUG -- Registering IdentityMap memory 207000 size 18C
+kernel::startup::memory:DEBUG -- Registering IdentityMap memory 238000 size 8AC8
+kernel::startup::memory:DEBUG -- Registering IdentityMap memory 2100000 size 10FC000
+kernel::startup::memory:DEBUG -- Registering IdentityMap memory 218000 size 20000
+kernel::startup::memory:DEBUG -- 25E000:2000000
+kernel::startup::memory:DEBUG -- 2009000:2100000
+kernel::startup::memory:DEBUG -- 51FC000:3E000000
+kernel::startup::memory:DEBUG -- MemoryArea { base: [phys 0x25e000], size: 1DA2000 }
+kernel::startup::memory:DEBUG -- MemoryArea { base: [phys 0x2009000], size: F7000 }
+kernel::startup::memory:DEBUG -- MemoryArea { base: [phys 0x51fc000], size: 38E04000 }
+kernel::startup::memory:INFO -- Memory: 941 MB
+kernel::startup::memory:INFO -- Highest huge page level: 0
+kernel::startup::memory:DEBUG -- Contiguously mapping 0x25e000 => 0xffff80000025e000, 7586 pages, level 0
+kernel::startup::memory:DEBUG -- head+middle lvl 0 next 0 pages_per_iter 1 base 0x25e000 remaining 7586
+kernel::startup::memory:DEBUG -- Contiguously mapping 0x2009000 => 0xffff800002009000, 247 pages, level 0
+kernel::startup::memory:DEBUG -- head+middle lvl 0 next 0 pages_per_iter 1 base 0x2009000 remaining 247
+kernel::startup::memory:DEBUG -- Contiguously mapping 0x51fc000 => 0xffff8000051fc000, 232964 pages, level 0
+kernel::startup::memory:DEBUG -- head+middle lvl 0 next 0 pages_per_iter 1 base 0x51fc000 remaining 232964
+kernel::startup::memory:DEBUG -- MAPPING STACK, BASE 218000 SIZE 20000
+kernel::startup::memory:DEBUG -- Contiguously mapping 0x218000 => 0xffff800000218000, 32 pages, level 0
+kernel::startup::memory:DEBUG -- head+middle lvl 0 next 0 pages_per_iter 1 base 0x218000 remaining 32
+kernel::startup::memory:DEBUG -- Table: 25E000
+kernel::startup::memory:DEBUG -- 256: 25F403
+kernel::startup::memory:DEBUG -- 510: 439403
+kernel::startup::memory:INFO -- Permanently used: 1988 KB
+kernel::acpi:ERROR -- NO RSDP FOUND
+kernel::memory:DEBUG -- Initial freelist consistent
+kernel::arch::aarch64::device:INFO -- PSCI INIT
+kernel::arch::aarch64::device::psci:INFO -- PSCI 1.0 using smc conduit from device tree
+kernel::arch::aarch64::device::bcm2835_wdt:INFO -- BCM2835 watchdog at 0x3f100000
+kernel::arch::aarch64::device:INFO -- CPU TOPOLOGY INIT
+kernel::arch::aarch64::device::cpu::topology:INFO -- DT CPU topology: 4 enabled, 0 disabled, BSP MPIDR=0x0, 3 startable secondaries
+kernel::arch::aarch64::device::cpu::topology:DEBUG -- CPU topology logical #0: MPIDR=0x0 boot=true enable-method=spin-table
+kernel::arch::aarch64::device::cpu::topology:DEBUG -- CPU topology logical #1: MPIDR=0x1 boot=false enable-method=spin-table
+kernel::arch::aarch64::device::cpu::topology:DEBUG -- CPU topology logical #2: MPIDR=0x2 boot=false enable-method=spin-table
+kernel::arch::aarch64::device::cpu::topology:DEBUG -- CPU topology logical #3: MPIDR=0x3 boot=false enable-method=spin-table
+kernel::arch::aarch64::device::cpu::boot:INFO -- BSP translation-table walks are inner-shareable: TCR_EL1=0x12b5103510
+kernel::arch::aarch64::device::cpu::boot:INFO -- CPU boot resources: 3 slots ready, trampoline=0x530a000, idmap=0x530b000
+kernel::arch::aarch64::device::cpu::boot:DEBUG -- CPU boot slot logical #1: MPIDR=0x1 stack_phys=0x5310000..0x5320000 percpu_phys=0x530f000 args_phys=0x5320000
+kernel::arch::aarch64::device::cpu::boot:DEBUG -- CPU boot slot logical #2: MPIDR=0x2 stack_phys=0x5330000..0x5340000 percpu_phys=0x5321000 args_phys=0x5322000
+kernel::arch::aarch64::device::cpu::boot:DEBUG -- CPU boot slot logical #3: MPIDR=0x3 stack_phys=0x5340000..0x5350000 percpu_phys=0x5323000 args_phys=0x5324000
+kernel::arch::aarch64::device:INFO -- IRQCHIP INIT
+kernel::dtb:DEBUG -- root parent = 0x00000001
+kernel::dtb:DEBUG -- gpio@7e200000, compatible = brcm,bcm2835-gpio, #interrupt-cells = 0x00000002, phandle = 0x00000007
+kernel::dtb:DEBUG -- interrupt-parent = 0x00000001
+kernel::dtb:DEBUG -- interrupts begin:
+kernel::dtb:DEBUG -- 0x00000002, 
+kernel::dtb:DEBUG -- 0x00000011, 
+kernel::dtb:DEBUG -- 0x00000002, 
+kernel::dtb:DEBUG -- 0x00000012, 
+kernel::dtb:DEBUG -- interrupts end
+kernel::dtb:DEBUG -- interrupt-controller@7e00b200, compatible = brcm,bcm2836-armctrl-ic, #interrupt-cells = 0x00000002, phandle = 0x00000001
+kernel::dtb:DEBUG -- interrupt-parent = 0x00000019
+kernel::dtb:DEBUG -- interrupts begin:
+kernel::dtb:DEBUG -- 0x00000008, 
+kernel::dtb:DEBUG -- 0x00000004, 
+kernel::dtb:DEBUG -- interrupts end
+kernel::dtb:DEBUG -- interrupt-controller@40000000, compatible = brcm,bcm2836-l1-intc, #interrupt-cells = 0x00000002, phandle = 0x00000019
+kernel::dtb:DEBUG -- interrupts end
+kernel::dtb::irqchip:DEBUG -- gpio@7e200000, compatible = brcm,bcm2835-gpio, #interrupt-cells = 0x00000002, phandle = 0x00000007
+kernel::arch::aarch64::device::irqchip:WARN -- no driver for interrupt controller "brcm,bcm2835-gpio"
+kernel::dtb::irqchip:DEBUG -- interrupt-parent = 0x00000001
+kernel::dtb::irqchip:DEBUG -- interrupts begin:
+kernel::dtb::irqchip:DEBUG -- L2(2, 17), 
+kernel::dtb::irqchip:DEBUG -- L2(2, 18), 
+kernel::dtb::irqchip:DEBUG -- interrupts end
+kernel::dtb::irqchip:DEBUG -- interrupt-controller@7e00b200, compatible = brcm,bcm2836-armctrl-ic, #interrupt-cells = 0x00000002, phandle = 0x00000001
+kernel::dtb::irqchip:DEBUG -- interrupt-parent = 0x00000019
+kernel::dtb::irqchip:DEBUG -- interrupts begin:
+kernel::dtb::irqchip:DEBUG -- L2(8, 4), 
+kernel::dtb::irqchip:DEBUG -- interrupts end
+kernel::dtb::irqchip:DEBUG -- interrupt-controller@40000000, compatible = brcm,bcm2836-l1-intc, #interrupt-cells = 0x00000002, phandle = 0x00000019
+kernel::arch::aarch64::device::irqchip::irq_bcm2836:DEBUG -- IRQ BCM2836 INIT
+kernel::arch::aarch64::device::irqchip::irq_bcm2836:DEBUG -- routing all irq to core 0
+kernel::arch::aarch64::device::irqchip::irq_bcm2836:DEBUG -- IRQ BCM2836 END
+kernel::arch::aarch64::device::irqchip::irq_bcm2836:INFO -- bcm2836 irq_range = (0, 9)
+kernel::arch::aarch64::device::irqchip::irq_bcm2835:INFO -- register bcm2835arm_ctrl as ic_idx 2's child  virq = 8
+kernel::arch::aarch64::device::irqchip::irq_bcm2835:DEBUG -- IRQ BCM2835 INIT
+kernel::arch::aarch64::device::irqchip::irq_bcm2835:DEBUG -- IRQ BCM2835 END
+kernel::arch::aarch64::device::irqchip::irq_bcm2835:INFO -- bcm2835 irq_range = (9, 105)
+kernel::arch::aarch64::device:INFO -- Already selected 2 as root ic
+kernel::arch::aarch64::device:INFO -- GIT INIT
+kernel::arch::aarch64::device::generic_timer:DEBUG -- generic_timer use_virtual_timer = true
+kernel::arch::aarch64::device::generic_timer:DEBUG -- architected timer irq = L2(3, 4)
+kernel::arch::aarch64::device::generic_timer:INFO -- architected timer virq = 3 (virtual)
+kernel::arch::aarch64::device::irqchip::irq_bcm2836:DEBUG -- bcm2836 enable 3
+kernel::arch::aarch64::device:INFO -- SERIAL INIT
+kernel::arch::aarch64::device::serial:INFO -- serial_port virq = 98
+kernel::arch::aarch64::device:INFO -- RTC INIT
+kernel::arch::aarch64::device::rtc:WARN -- No PL031 RTC found
+kernel::startup:INFO -- SECONDARY CPU INIT
+kernel::arch::aarch64::device::cpu::boot:INFO -- CPU logical #1: spin-table release MPIDR=0x1 at 0xe0
+kernel::arch::aarch64::device::cpu::boot:INFO -- CPU logical #1: local SGI/timer self-test passed
+kernel::arch::aarch64::device::cpu::boot:INFO -- CPU logical #1: online
+kernel::startup:DEBUG -- AP #1
+kernel::arch::aarch64::device::cpu::boot:INFO -- CPU logical #2: spin-table release MPIDR=0x2 at 0xe8
+kernel::arch::aarch64::device::cpu::boot:INFO -- CPU logical #2: local SGI/timer self-test passed
+kernel::arch::aarch64::device::cpu::boot:INFO -- CPU logical #2: online
+kernel::startup:DEBUG -- AP #2
+kernel::arch::aarch64::device::cpu::boot:INFO -- CPU logical #3: spin-table release MPIDR=0x3 at 0xf0
+kernel::arch::aarch64::device::cpu::boot:INFO -- CPU logical #3: local SGI/timer self-test passed
+kernel::arch::aarch64::device::cpu::boot:INFO -- CPU logical #3: online
+kernel::startup:DEBUG -- AP #3
+kernel::arch::aarch64::device::cpu::boot:INFO -- CPU activation complete: 4 CPUs online
+kernel::scheme::acpi:WARN -- expected RXSDT_ENUM to be initialized before AcpiScheme, is ACPI available?
+kernel::startup:DEBUG -- BSP: 4 CPUs
+kernel::startup:DEBUG -- Env: Ok("DTB_ADDR=0000000000238000\nDTB_SIZE=0000000000008ac8\nDISK_LIVE_ADDR=00000000031fc000\nDISK_LIVE_SIZE=0000000002000000\nREDOXFS_BLOCK=0000000000000000\nREDOXFS_UUID=630d00e7-b0dd-4a11-aa37-60d1bc378609\nFRAMEBUFFER_ADDR=000000003e400000\nFRAMEBUFFER_VIRT=ffff80003e400000\nFRAMEBUFFER_WIDTH=0000000000000500\nFRAMEBUFFER_HEIGHT=00000000000002d0\nFRAMEBUFFER_STRIDE=0000000000000500\nQUIET=1\nRPI_FB=1280x720\n")
+kernel::syscall::process:DEBUG -- Bootstrap entry point: 3000
+kernel::scheme::user:DEBUG -- call_fdread: payload: 8 metadata: 2
+init: switchroot to /scheme/initfs /scheme/initfs/etc
+kernel::scheme::user:DEBUG -- call_fdread: payload: 8 metadata: 2
+randd: Seeding failed, no entropy source.  Random numbers on this platform are NOT SECURE
+kernel::scheme::user:DEBUG -- call_fdread: payload: 8 metadata: 2
+kernel::scheme::user:DEBUG -- call_fdread: payload: 8 metadata: 2
+kernel::scheme::user:DEBUG -- call_fdread: payload: 8 metadata: 2
+kernel::scheme::user:DEBUG -- call_fdread: payload: 8 metadata: 2
+kernel::scheme::user:DEBUG -- call_fdread: payload: 8 metadata: 2
+kernel::scheme::user:DEBUG -- call_fdread: payload: 8 metadata: 2
+kernel::scheme::user:DEBUG -- call_fdread: payload: 8 metadata: 2
+kernel::scheme::user:DEBUG -- call_fdread: payload: 8 metadata: 2
+rpi-firmwared: mailbox at 0x3f00b880, revision 0x00a020d3, model Raspberry Pi 3 Model B+
+arm: clock 1200 MHz set (ndiv 62 frac 80000 div 1), CM_LOCK 00001616 -> 00001614, CTRL 0002103E FRAC 00080000 ARM 00000001, now 1200000 kHz
+rpi-firmwared: ARM clock 469 -> 1200 MHz
+kernel::scheme::user:DEBUG -- call_fdread: payload: 8 metadata: 2
+kernel::scheme::user:DEBUG -- call_fdread: payload: 8 metadata: 2
+kernel::scheme::user:DEBUG -- call_fdread: payload: 8 metadata: 2
+bcm2835-gpiod: 54 pins at 0x3f200000
+kernel::scheme::user:DEBUG -- call_fdread: payload: 8 metadata: 2
+bcm2835-spid: bus 0 at 0x3f204000, 999 kHz (core 249 MHz)
+kernel::scheme::user:DEBUG -- call_fdread: payload: 8 metadata: 2
+bcm2835-i2cd: bus 1 at 0x3f804000, 99 kHz (core 249 MHz)
+kernel::scheme::user:DEBUG -- call_fdread: payload: 8 metadata: 2
+vesad: 1280x720 stride 1280 at 0x3E400000
+kernel::scheme::user:DEBUG -- call_fdread: payload: 8 metadata: 2
+kernel::scheme::user:DEBUG -- call_fdread: payload: 8 metadata: 2
+bcm2835-pwmaudiod: PWM clock does not start (CM_PWMCTL 0x00000016) (QEMU?), playing to the clock
+kernel::scheme::user:DEBUG -- call_fdread: payload: 8 metadata: 2
+fbbootlogd: mapped display
+kernel::scheme::user:DEBUG -- call_fdread: payload: 8 metadata: 2
+dwc2d: controller at 0x3f980000, core id 0x4f54280a
+dwc2d: host mode, 8 channels
+dwc2d: device on root port, High speed
+dwc2d: address 1: 0424:2514, USB 2.00, class 0x09, High speed
+dwc2d:   interface 0 alt 0: class 0x09 subclass 0x00 protocol 0x01
+dwc2d:     endpoint 0x81: interrupt max packet 1
+dwc2d:   interface 0 alt 1: class 0x09 subclass 0x00 protocol 0x02
+dwc2d:     endpoint 0x81: interrupt max packet 1
+dwc2d: hub at address 1: 4 ports, power switching per port
+dwc2d: hub 1 port 1: device connected
+dwc2d:   address 2: 0424:2514, USB 2.00, class 0x09, High speed
+dwc2d:     interface 0 alt 0: class 0x09 subclass 0x00 protocol 0x01
+dwc2d:       endpoint 0x81: interrupt max packet 1
+dwc2d:     interface 0 alt 1: class 0x09 subclass 0x00 protocol 0x02
+dwc2d:       endpoint 0x81: interrupt max packet 1
+dwc2d:   hub at address 2: 3 ports, power switching per port
+dwc2d: hub 1 port 2: device connected
+dwc2d:   address 3: 05e3:0610, USB 2.00, class 0x09, High speed
+dwc2d:     interface 0 alt 0: class 0x09 subclass 0x00 protocol 0x01
+dwc2d:       endpoint 0x81: interrupt max packet 1
+dwc2d:     interface 0 alt 1: class 0x09 subclass 0x00 protocol 0x02
+dwc2d:       endpoint 0x81: interrupt max packet 1
+dwc2d:   hub at address 3: 4 ports, power switching ganged
+dwc2d:   hub 3 port 1: device connected
+dwc2d:     address 4: 04d9:0006, USB 2.00, class 0x00, Low speed
+dwc2d:       interface 0 alt 0: class 0x03 subclass 0x01 protocol 0x01
+dwc2d:         endpoint 0x81: interrupt max packet 8
+dwc2d:       interface 1 alt 0: class 0x03 subclass 0x00 protocol 0x00
+dwc2d:         endpoint 0x82: interrupt max packet 5
+dwc2d: 4 device(s) enumerated
+dwc2d: keyboard at address 4
+dwc2d:   hub 2 port 1: device connected
+dwc2d:     address 5: 0424:7800, USB 2.10, class 0xff, High speed
+dwc2d:       interface 0 alt 0: class 0xff subclass 0x00 protocol 0xff
+dwc2d:         endpoint 0x81: bulk max packet 512
+dwc2d:         endpoint 0x02: bulk max packet 512
+dwc2d:         endpoint 0x83: interrupt max packet 16
+dwc2d: LAN7800 at address 5
+dwc2d: LAN78xx chip 7800 rev 0002
+arm: clock 600 MHz set (ndiv 62 frac 80000 div 2), CM_LOCK 00001616 -> 00001616, CTRL 0002103E FRAC 00080000 ARM 00000002, now 600000 kHz
+dwc2d: link up on the LAN7800 at address 5
+dwc2d: devices ready after 4337 ms
+dwc2d: network on the adapter at address 5
+dwc2d: network address 02:52:65:64:6f:78
+kernel::scheme::irq:DEBUG -- open_phandle_irq  virq=50
+dwc2d: interrupt /scheme/irq/phandle-1/1,9
+kernel::scheme::user:DEBUG -- call_fdread: payload: 8 metadata: 2
+bcm2835-sdhostd: controller at 0x3f202000
+bcm2835-sdhostd: GPFSEL2 0x00000000 GPFSEL4 0x24000900 GPFSEL5 0x00000924
+bcm2835-sdhostd: core clock 249 MHz, up to 249 MHz
+arm: clock 1200 MHz set (ndiv 62 frac 80000 div 1), CM_LOCK 00001616 -> 00001616, CTRL 0002103E FRAC 00080000 ARM 00000001, now 1200000 kHz
+bcm2835-sdhostd: SDHC/SDXC card, 30436 MiB, 4-bit bus, high speed, up to 49 MHz
+bcm2835-sdhostd: serving /scheme/disk.mmc
+kernel::scheme::user:DEBUG -- call_fdread: payload: 8 metadata: 2
+1970-01-01T00-00-06.998Z [@hwd:18 INFO] using devicetree backend
+bootscreen: Redox step 1, bar 55 %, "drivers", 86123 us
+[ERROR redoxfs] failed to open filesystem /scheme/disk.mmc/0: No such file or directory
+removing handle: id: 3, Some(Disk(0))
+[ERROR redoxfs] failed to open filesystem /scheme/disk.mmc/0p0: No such file or directory
+removing handle: id: 4, Some(Partition(0, 0))
+kernel::scheme::user:DEBUG -- call_fdread: payload: 8 metadata: 2
+removing handle: id: 2, Some(List([48, 10]))
+removing handle: id: 2, Some(List([48, 10, 48, 112, 48, 10]))
+bootscreen: Redox step 2, bar 70 %, "file system", 14802 us
+init: switchroot to /usr /etc
+init: unit 10_net.target not found
+kernel::scheme::user:DEBUG -- call_fdread: payload: 8 metadata: 2
+kernel::scheme::user:DEBUG -- call_fdread: payload: 8 metadata: 2
+bootscreen: Redox step 3, bar 85 %, "services", 13803 us
+bootscreen: Redox step 4, bar 94 %, "network", 13594 us
+bootscreen: Redox step 5, last, bar 100 %, "login", 13496 us
+bootscreen: Redox's last step, 5 steps, drawing 141818 us
+Finished graphical debug
+1970-01-01T00-00-07.976Z [@fbcond::text:40 INFO] fbcond: Performing handoff
+kernel::scheme::user:DEBUG -- call_fdread: payload: 8 metadata: 2
+Super+F1: boot messages
+⏎                                                                                redox login: redox login: arm: clock 600 MHz set (ndiv 62 frac 80000 div 2), CM_LOCK 00001616 -> 00001616, CTRL 0002103E FRAC 00080000 ARM 00000002, now 600000 kHz
+arm: clock 1200 MHz set (ndiv 62 frac 80000 div 1), CM_LOCK 00001616 -> 00001616, CTRL 0002103E FRAC 00080000 ARM 00000001, now 1200000 kHz
+arm: clock 600 MHz set (ndiv 62 frac 80000 div 2), CM_LOCK 00001616 -> 00001616, CTRL 0002103E FRAC 00080000 ARM 00000002, now 600000 kHz
+kstop
+
+
+redox-rpi bootcode v0.1.0-rc3-d391b09 (release, boots from the SD card, boot screen on HDMI)
+VPU cpuid 0x4000140
+from the Boot ROM: CM_VPUCTL 0x241 CM_VPUDIV 0x1000 PLLC_CTRL 0x10000 PLLC_FRAC 0x0 SD_CS 0x794200 timer 239218 us
+halt: the OS halted the Pi (PM_RSTS 00001575, partition 63); staying off, GPIO3 (pin 5) to ground wakes it
+ 
+
+redox-rpi bootcode 56354b8 (M1, monitor, test build, boot selector)
+VPU cpuid 0x4000140
+from the Boot ROM: CM_VPUCTL 0x241 CM_VPUDIV 0x1000 PLLC_CTRL 0x10000 PLLC_FRAC 0x0 SD_CS 0x794200 timer 317626 us
+rbc> monitor: press Enter within 5 s
+rbc> no input, normal boot
+rbc> chain built-in bootcode.bin, 52624 bytes, crc32 53C9B136
