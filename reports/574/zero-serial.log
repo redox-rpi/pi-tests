@@ -1,0 +1,34 @@
+redox-rpi v0.6.0-rc3 (v0.6.0-dev-135-g0897391f+x6a9f) (direct, 2026-11-22T14:49:39Z)
+experiments: cosmic-apps-source desktop hdmi-audio orbital orbital-apps rpi-fb tcc timesync usb-port-power
+
+⏎                                                                                redox login: redox login: startup-sound: played
+dhcpd: eth0: attempt 1: no offer: timed out
+bcm2835-hdmiaudiod: measured 44030 frames/s
+dhcpd: eth0: attempt 2: no offer: timed out
+dhcpd: eth0: attempt 3: no offer: timed out
+kernel::scheme::user:DEBUG -- call_fdread: payload: 8 metadata: 2
+dhcpd: eth0: attempt 1: no offer: timed out
+dhcpd: eth0: attempt 2: no offer: timed out
+timesync: no time server answered within a minute (last: no default route (DHCP not done))
+timesync: trying again every 30 s
+dhcpd: eth0: attempt 3: no offer: timed out
+dhcpd: eth0: attempt 1: no offer: timed out
+dhcpd: eth0: attempt 2: no offer: timed out
+dhcpd: eth0: attempt 3: no offer: timed out
+bcm2835-hdmiaudiod: tone 1000 Hz for 3 s
+dhcpd: eth0: attempt 1: no offer: timed out
+dhcpd: eth0: attempt 2: no offer: timed out
+dhcpd: eth0: attempt 3: no offer: timed out
+dhcpd: eth0: attempt 1: no offer: timed out
+dhcpd: eth0: attempt 2: no offer: timed out
+dhcpd: eth0: attempt 3: no offer: timed out
+dhcpd: eth0: attempt 1: no offer: timed out
+dhcpd: eth0: attempt 2: no offer: timed out
+dhcpd: eth0: attempt 3: no offer: timed out
+kernel::syscall::fs:WARN -- funmap passed length 0x232800 instead of 0x233000
+dhcpd: eth0: attempt 1: no offer: timed out
+dhcpd: eth0: attempt 2: no offer: timed out
+dhcpd: eth0: attempt 3: no offer: timed out
+dhcpd: eth0: attempt 1: no offer: timed out
+dhcpd: eth0: attempt 2: no offer: timed out
+dhcpd: eth0: attempt 3: no offer: timed out
