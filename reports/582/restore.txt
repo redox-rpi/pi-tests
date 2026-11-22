@@ -1,0 +1,74 @@
+### mmc dev 2
+mmc dev 2
+switch to partitions #0, OK
+mmc2 is current device
+U-Boot>
+### fatrm mmc 2:1 config-m.txt
+fatrm mmc 2:1 config-m.txt
+U-Boot>
+### fatrm mmc 2:1 cmdline-m.txt
+fatrm mmc 2:1 cmdline-m.txt
+U-Boot>
+### fatrm mmc 2:1 kernel8-m.img
+fatrm mmc 2:1 kernel8-m.img
+U-Boot>
+### fatrm mmc 2:1 initramfs-m
+fatrm mmc 2:1 initramfs-m
+U-Boot>
+### fatload mmc 2:1 0x10000000 armstub8-redox.bin.t582
+fatload mmc 2:1 0x10000000 armstub8-redox.bin.t582
+256 bytes read in 22 ms (10.7 KiB/s)
+U-Boot>
+### crc32 0x10000000 ${filesize}
+crc32 0x10000000 ${filesize}
+crc32 for 10000000 ... 100000ff ==> 17a03c01
+U-Boot>
+### fatwrite mmc 2:1 0x10000000 armstub8-redox.bin ${filesize}
+fatwrite mmc 2:1 0x10000000 armstub8-redox.bin ${filesize}
+256 bytes written in 41 ms (5.9 KiB/s)
+U-Boot>
+### fatload mmc 2:1 0x10000000 armstub8-redox.bin
+fatload mmc 2:1 0x10000000 armstub8-redox.bin
+256 bytes read in 12 ms (20.5 KiB/s)
+U-Boot>
+### crc32 0x10000000 ${filesize}
+crc32 0x10000000 ${filesize}
+crc32 for 10000000 ... 100000ff ==> 17a03c01
+U-Boot>
+### fatrm mmc 2:1 armstub8-redox.bin.t582
+fatrm mmc 2:1 armstub8-redox.bin.t582
+U-Boot>
+### fatls mmc 2:1
+fatls mmc 2:1
+    61376   bootcode.bin
+  3023104   start.elf
+     7381   fixup.dat
+   844380   start_cd.elf
+     3280   fixup_cd.dat
+     1594   LICENCE.broadcom
+    34731   bcm2710-rpi-3-b.dtb
+    35252   bcm2710-rpi-3-b-plus.dtb
+    33708   bcm2710-rpi-zero-2-w.dtb
+            overlays/
+      605   config.txt
+      675   .uuid
+   956952   u-boot.bin
+      278   boot.scr
+     4096   ._config.txt
+      256   armstub8-redox.bin
+            .fseventsd/
+     4096   ._.uuid
+     4096   ._bootcode.bin
+    60686   bootcode-selector.bin
+            .TemporaryItems/
+     4096   ._bootcode-selector.bin
+    52624   bootcode-broadcom.bin
+    61040   bootcode-selector-233c8c5.bin
+    61040   redox-rpi-bootselect-3bp-20261110c-bootcode.bin
+     4096   ._redox-rpi-bootselect-3bp-20261110c-bootcode.bin
+    60812   redox-rpi-bootselect-3bp-20261110b-bootcode.bin
+     4096   ._redox-rpi-bootselect-3bp-20261110b-bootcode.bin
+
+25 file(s), 3 dir(s)
+
+U-Boot>
