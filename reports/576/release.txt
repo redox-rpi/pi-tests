@@ -1,0 +1,10 @@
+### cat /etc/redox-rpi-release  (0.3 s)
+NAME="redox-rpi, for the Redox OS operating system"
+VERSION="v0.6.0-dev-135-g0897391f"
+BUILD_ID="v0.6.0-dev-135-g0897391f+x6a9f"
+RELEASE="v0.6.0"
+IMAGE="netboot"
+BUILD="2026-11-22T16:24:28Z"
+COMMIT="0897391f"
+EXPERIMENTS="cosmic-apps-source desktop hdmi-audio orbital orbital-apps rpi-fb tcc timesync usb-port-power"
+URL="https://github.com/redox-rpi/redox-rpi"

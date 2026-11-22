@@ -1,0 +1,16 @@
+start 16:37:14
+staged build_id = "v0.6.0-dev-135-g0897391f+x6a9f" 16:37:18
+found after 30 s
+up 16:38:01
+banner: redox-rpi v0.6.0 (v0.6.0-dev-135-g0897391f+x6a9f) (netboot, 2026-11-22T16:24:28Z) 16:38:31
+played=1 hdmiaudiod=3 hdmi-at: bcm2835-hdmiaudiod: HDMI at 0x3f902000, hotplug no, HDMI mode, pixel clock 148.500 MHz (pllh), HSM 163.683 MHz (cprman), N 5644 CTS 148478, info frame sent, DMA 16:38:31
+pitest rc=0 16:39:20
+PASS version: v0.6.0 (v0.6.0-dev-135-g0897391f+x6a9f)
+PASS manifest: build ID and libc.so hash match v0.6.0-netboot.manifest.toml
+PASS ps: 60 processes (piped)
+PASS ps-tty: 60 lines straight to the terminal, rc=0
+PASS sdcard: write, read back, delete on /scheme/data
+PASS starts: 0 of 300 failed
+serial: panic=0 relibc=0 exc=0 stuck=0 16:39:20
+found after 28 s
+stable up build_id = "v0.6.0-dev-126-g1b6b4cd9+x2d42" 16:40:00
