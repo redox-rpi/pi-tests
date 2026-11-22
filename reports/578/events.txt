@@ -1,0 +1,13 @@
+start A build_id = "v0.6.0-dev-126-g1b6b4cd9+x2d42" 17:03:47
+A1 kernel= ready=[17:04:22.726 dwc2d: devices ready after 3081 ms] login=17:04:24.560 linkup= dhcp= ntp= dhcpd-lines=9 empty=1 17:06:17
+A1 no devsh 17:08:21
+no devsh, serial reset 1 17:10:24
+no devsh, serial reset 2 17:13:49
+A2 kernel= ready=[17:15:17.175 dwc2d: devices ready after 4862 ms] login=17:15:19.020 linkup=17:15:17.175 dhcp=17:15:18.301 ntp=17:15:18.830 dhcpd-lines=0 empty=0 17:17:10
+A3 kernel= ready=[17:17:53.331 dwc2d: devices ready after 4703 ms] login=17:17:55.175 linkup=17:17:53.331 dhcp=17:17:54.468 ntp=17:17:55.071 dhcpd-lines=0 empty=0 17:19:46
+staged B build_id = "v0.6.0-dev-136-g95827937+x81b7" 17:19:52
+B1 kernel= ready=[17:20:26.821 dwc2d: devices ready after 1785 ms] login=17:20:28.614 linkup=17:20:29.870 dhcp=17:20:29.984 ntp=17:20:30.484 dhcpd-lines=0 empty=0 17:22:22
+B2 kernel= ready=[17:23:03.070 dwc2d: devices ready after 1515 ms] login=17:23:04.806 linkup=17:23:06.119 dhcp=17:23:06.181 ntp=17:23:06.680 dhcpd-lines=0 empty=0 17:24:59
+B3 kernel= ready=[17:25:38.860 dwc2d: devices ready after 1514 ms] login=17:25:40.609 linkup=17:25:41.905 dhcp=17:25:42.008 ntp=17:25:42.517 dhcpd-lines=0 empty=0 17:27:35
+found after 28 s
+stable up build_id = "v0.6.0-dev-126-g1b6b4cd9+x2d42" 17:28:22
