@@ -1,0 +1,61 @@
+start 15:16:16
+staged build_id = "v0.6.0-dev-135-g0897391f+x6a9f" 15:16:20
+found after 30 s
+up 15:17:03
+1 banner: redox-rpi v0.6.0-rc3 (v0.6.0-dev-135-g0897391f+x6a9f) (netboot, 2026-11-22T14:46:12Z) 15:17:33
+1 hdmiaudiod=0 pwmaudiod=0 quiet=0 played=1 15:17:33
+bcm2835-hdmiaudiod: stopped
+bcm2835-hdmiaudiod: output was in DVI mode; HDMI mode did not come up
+bcm2835-hdmiaudiod: no pixel clock from rpi-firmwared (no pixel line in the clocks file) nor PLLH (ctrl=0x0002102d frac=0x00000000 ana1=0x0000000c pix=0x00000100), assuming 148.5 MHz
+bcm2835-hdmiaudiod: HDMI at 0x3f902000, hotplug no, DVI mode, pixel clock 148.500 MHz (default), HSM 163.683 MHz (cprman), N 5644 CTS 148478, info frame sent, DMA channel 0 (DREQ 17), 8 x 512 frames
+⏎                                                                                redox login: redox login: bcm2835-hdmiaudiod: measured 44087 frames/s
+startup-sound: played
+pitest rc=0 15:18:13
+PASS version: v0.6.0-rc3 (v0.6.0-dev-135-g0897391f+x6a9f)
+PASS manifest: build ID and libc.so hash match v0.6.0-rc3-netboot.manifest.toml
+PASS ps: 53 processes (piped)
+PASS ps-tty: 53 lines straight to the terminal, rc=0
+PASS sdcard: write, read back, delete on /scheme/data
+PASS starts: 0 of 300 failed
+step 2-hdmi rc=0 15:18:18
+regression rc=0 15:20:10
+PASS basics: 6 of 6 pass in 41 s
+PASS signals-stop: inputd 9, logd 2; after STOP/CONT: {'logd': '2', 'inputd': '9'}; /scheme/log line on the serial console
+PASS waitpid: WAITPID-OK status=7
+SKIP sig-pipe: no /usr/share/sig-pipe/check.ion or no tcc (experiments sig-pipe, tcc)
+SKIP scanf-pipe: no /usr/share/scanf-pipe/check.ion or no tcc (experiments scanf-pipe, tcc)
+PASS tcc: 44.5 s; all 5 steps and TCC-TEST done; bench total 1365.7 ms; tcc.c built in 808 ms
+PASS dns: name server <lan-ip>; unknown names: nosuch-bc038c.invalid 0.06 s; nosuch-bc038c 0.05 s (limit 1 s)
+PASS launcher-sopwith: name=Sopwith, binary=/usr/bin/sopwith, icon=/usr/share/icons/hicolor/128x128/apps/sopwith.png; both exist
+PASS ifconfig-mac: ifconfig shows b8:27:eb:<rest>, as netstack has it
+SKIP gamepad-console: no gamepad-test (experiment gamepad-test)
+PASS tcp: 4 MiB from the build host in 2.4 s, 1.7 MiB/s, SHA-256 matches
+PASS serial: 0 bad lines; no pcid, no rtcd
+found after 20 s
+reboot 1 login 15:20:51
+reboot 1 devsh 15:20:52
+reboot 1 played=1 hdmiaudiod=0 15:21:00
+found after 20 s
+reboot 2 login 15:21:41
+reboot 2 devsh 15:21:43
+reboot 2 played=1 hdmiaudiod=0 15:21:51
+found after 20 s
+reboot 3 login 15:22:32
+reboot 3 devsh 15:22:33
+reboot 3 played=1 hdmiaudiod=0 15:22:41
+found after 18 s
+reboot 4 login 15:23:20
+reboot 4 devsh 15:23:21
+reboot 4 played=1 hdmiaudiod=0 15:23:29
+found after 20 s
+reboot 5 login 15:24:10
+reboot 5 devsh 15:24:12
+reboot 5 played=1 hdmiaudiod=0 15:24:20
+step 4-hdmi rc=0 15:24:45
+step 5-stats0 rc=0 15:24:46
+step 5-desktop rc=0 15:24:48
+step 5-sop rc=0 15:25:09
+step 5-after rc=0 15:25:41
+serial: panic=0 relibc=0 exc=0 stuck=0 empty=0 15:25:41
+found after 26 s
+stable up build_id = "v0.6.0-dev-126-g1b6b4cd9+x2d42" 15:26:19

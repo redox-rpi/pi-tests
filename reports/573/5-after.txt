@@ -1,0 +1,115 @@
+### ps  (0.3 s)
+PID   EUID  EGID  STAT  CPU   AFFINITY   ACTTIME     SCHTIME     PRIVATE SHARED  NAME
+0     0     0     RR+   #0    1          00:00:00.00 00:00:00.00 65.0 KB 0 B     [kmain]
+0     0     0     RR+   #1    2          00:00:00.00 00:00:00.00 65.0 KB 0 B     [kmain]
+0     0     0     RR    #2    4          00:00:00.00 00:00:00.00 65.0 KB 0 B     [kmain]
+0     0     0     RR    #3    8          00:00:00.00 00:00:00.00 65.0 KB 0 B     [kmain]
+0     0     0     UB    #0    F          00:00:00.02 00:00:00.00 28.8 MB 4.00 KB initfs
+0     0     0     UB    #3    F          00:00:00.26 00:00:00.00 1.37 MB 432 KB  procmgr
+0     0     0     UB    #3    F          00:00:00.22 00:00:00.00 1.37 MB 8.00 KB initnsmgr
+1     0     0     UB    #0    F          00:00:00.17 00:00:00.31 1.86 MB 0 B     /scheme/initfs/bin/init
+2     0     0     UB    #1    F          00:00:00.00 00:00:00.00 3.64 MB 12.0 KB /scheme/initfs/bin/logd
+2     0     0     UB    #2    F          00:00:00.38 00:00:00.00 3.64 MB 12.0 KB /scheme/initfs/bin/logd
+3     0     0     UB    #3    F          00:00:00.00 00:00:00.01 1.62 MB 152 KB  /scheme/initfs/bin/randd
+4     0     0     UB    #0    F          00:00:00.00 00:00:00.02 1.74 MB 0 B     /scheme/initfs/bin/ipcd
+5     0     0     UB    #0    F          00:00:00.00 00:00:00.00 1.55 MB 0 B     /scheme/initfs/bin/zerod
+6     0     0     UB    #0    F          00:00:00.00 00:00:00.00 1.55 MB 80.0 KB /scheme/initfs/bin/zerod
+7     0     0     UB    #2    F          00:00:00.00 00:00:00.00 2.77 MB 0 B     /scheme/initfs/bin/ramfs
+8     0     0     UB    #2    F          00:00:00.56 00:00:00.01 5.70 MB 0 B     /scheme/initfs/bin/rpi-firmwared
+8     0     0     US    #1    F          00:00:00.27 00:00:00.27 5.70 MB 0 B     /scheme/initfs/bin/rpi-firmwared
+8     0     0     US    #0    F          00:00:00.00 00:00:00.00 5.70 MB 0 B     /scheme/initfs/bin/rpi-firmwared
+9     0     0     UB    #3    F          00:00:00.01 00:00:00.00 1.67 MB 0 B     /scheme/initfs/bin/inputd
+10    0     0     UB    #2    F          00:00:00.07 00:00:00.02 1.86 MB 4.00 KB /scheme/initfs/bin/lived
+11    0     0     UB    #2    F          00:00:01.89 00:00:00.61 1.71 MB 8.00 KB /scheme/initfs/bin/bcm2835-hdmia
+12    0     0     UB    #0    F          00:00:00.00 00:00:00.00 1.62 MB 0 B     /scheme/initfs/bin/bcm2835-gpiod
+13    0     0     UB    #0    F          00:00:00.00 00:00:00.00 1.62 MB 0 B     /scheme/initfs/bin/bcm2835-i2cd
+14    0     0     UB    #2    F          00:00:00.09 00:00:00.01 2.74 MB 0 B     /scheme/initfs/bin/vesad
+15    0     0     UB    #0    F          00:00:00.00 00:00:00.00 1.62 MB 0 B     /scheme/initfs/bin/bcm2835-spid
+16    0     0     UB    #1    F          00:00:00.16 00:00:00.33 7.73 MB 1.04 MB /scheme/initfs/bin/fbbootlogd
+18    0     0     UB    #2    F          00:00:04.50 00:00:01.78 3.77 MB 4.00 KB /scheme/initfs/bin/dwc2d
+18    0     0     US    #1    F          00:00:00.02 00:00:00.11 3.77 MB 4.00 KB /scheme/initfs/bin/dwc2d
+19    0     0     UB    #3    F          00:00:00.28 00:00:00.06 1.67 MB 4.00 KB /scheme/initfs/bin/bcm2835-sdhos
+20    0     0     UB    #2    F          00:00:00.70 00:00:00.49 4.98 MB 0 B     /scheme/initfs/bin/rpi-fbd
+22    0     0     UB    #3    F          00:00:02.12 00:00:00.81 34.6 MB 12.0 KB /scheme/initfs/bin/redoxfs
+23    0     0     UB    #3    F          00:00:00.10 00:00:00.05 1.62 MB 40.0 KB /usr/bin/ptyd
+26    0     0     UB    #2    F          00:00:00.00 00:00:00.03 5.20 MB 0 B     /usr/bin/sudo
+27    0     0     UR+   #2    F          00:00:00.18 00:00:00.23 5.30 MB 36.0 KB /usr/bin/netstack
+27    0     0     US    #3    F          00:00:00.01 00:00:00.01 5.30 MB 36.0 KB /usr/bin/netstack
+28    0     0     UB    #2    F          00:00:00.01 00:00:00.03 6.15 MB 1.04 MB /usr/bin/fbcond
+29    0     0     UB    #3    F          00:00:00.54 00:00:00.55 1.86 MB 0 B     /usr/bin/getty
+31    0     0     UB    #1    F          00:00:00.01 00:00:00.02 5.88 MB 0 B     /usr/bin/login
+32    0     0     US    #0    F          00:00:00.01 00:00:00.03 1.68 MB 0 B     /usr/bin/dhcpd
+33    0     0     UB    #3    F          00:00:00.00 00:00:00.00 19.3 MB 0 B     /usr/bin/devshd
+33    0     0     UB    #3    F          00:00:00.00 00:00:00.00 19.3 MB 0 B     /usr/bin/devshd
+33    0     0     UB    #3    F          00:00:00.01 00:00:00.05 19.3 MB 0 B     /usr/bin/devshd
+33    0     0     UB    #3    F          00:00:00.00 00:00:00.01 19.3 MB 0 B     /usr/bin/devshd
+33    0     0     UB    #0    F          00:00:00.00 00:00:00.00 19.3 MB 0 B     /usr/bin/devshd
+33    0     0     UR    #3    F          00:00:00.00 00:00:00.00 19.3 MB 0 B     /usr/bin/devshd
+33    0     0     UB    #3    F          00:00:00.00 00:00:00.00 19.3 MB 0 B     /usr/bin/devshd
+33    0     0     UB    #0    F          00:00:00.00 00:00:00.00 19.3 MB 0 B     /usr/bin/devshd
+35    0     0     UB    #2    F          00:00:00.24 00:00:00.20 3.69 MB 20.0 KB /usr/bin/audiod
+35    0     0     UB    #2    F          00:00:00.57 00:00:01.09 3.69 MB 20.0 KB /usr/bin/audiod
+37    0     0     UB    #3    F          00:00:00.08 00:00:00.21 34.3 MB 20.0 KB /usr/bin/redoxfs
+38    0     0     UB    #2    F          00:00:00.00 00:00:00.13 1.86 MB 0 B     /usr/bin/getty
+39    0     0     US    #0    F          00:00:00.00 00:00:00.05 5.34 MB 0 B     /usr/bin/timesync
+42    0     0     UB    #2    F          00:00:00.01 00:00:00.03 5.88 MB 0 B     /usr/bin/login
+69    0     0     UB    #0    F          00:00:00.00 00:00:00.00 7.53 MB 0 B     /usr/bin/desktop
+71    0     0     UB    #2    F          00:00:01.56 00:00:00.09 10.7 MB 1.04 MB /usr/bin/orbital
+75    0     0     UB    #2    F          00:00:00.11 00:00:00.18 14.4 MB 0 B     /usr/bin/orblogin
+81    0     0     UB    #3    F          00:00:00.00 00:00:00.00 7.65 MB 0 B     /usr/bin/ion
+82    0     0     UB    #2    F          00:00:00.00 00:00:00.00 12.6 MB 920 KB  /usr/bin/sopwith
+82    0     0     US    #2    F          00:00:02.90 00:00:05.12 12.6 MB 920 KB  /usr/bin/sopwith
+82    0     0     UB    #2    F          00:00:03.99 00:00:04.03 12.6 MB 920 KB  /usr/bin/sopwith
+84    0     0     UB    #3    F          00:00:00.27 00:00:00.21 5.82 MB 0 B     /usr/bin/login
+85    0     0     UB    #1    F          00:00:00.02 00:00:00.07 7.65 MB 0 B     /usr/bin/ion
+87    0     0     UR+   #3    F          00:00:00.00 00:00:00.03 5.14 MB 0 B     /usr/bin/ps
+### cat /tmp/sop.log  (0.4 s)
+SDL orbital device created successfully
+WARNING: You are using the SDL orbital video driver!
+SDL orbital keymap initialized
+Video display initialized successfully
+Setting window resizable
+Initializing orbital window at 8,8 with size 640x400 with flags 9
+WARNING: You are using the SDL redox audio driver!
+### cat /scheme/audiohw/stats  (0.3 s)
+mode hdmi-dma
+hdmi 0x3f902000
+dma_channel 0
+dreq 17
+mai_ctl 0x00003229
+mai_smp 0x0187761a
+crp_cfg 0x0100160c
+cts 0x000243fe
+ram_packet_config 0x00010010
+ram_packet_status 0x00000010
+infoframe_active yes
+hotplug_now no
+hotplug no
+hdmi_mode no
+forced_hdmi_mode no
+scheduler 0x000cb008
+pixel_hz 148500000 default
+pllh ctrl=0x0002102d frac=0x00000000 ana1=0x0000000c pix=0x00000100
+hsm_hz 163682864 cprman
+cm_hsm ctl=0x000002d6 div=0x000030e0
+infoframe_sent yes
+sample_rate 44100
+slots 8x512
+uptime_s 98.4
+played_slots 8479
+measured_rate_hz 44099
+rate_window_hz 44104 over 83.4 s
+rate_last_measured_hz 44054
+rate_settled yes
+long_gaps 0
+chunks 7943
+loud_chunks 3103
+peak 4208
+tones 0
+sound_slots 7939
+underruns 1
+queued 6
+dma_faults 0
+mai_underflow_polls 0
+mai_overflow_polls 0
+reprogrammed 0
