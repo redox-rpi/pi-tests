@@ -144,6 +144,7 @@ itself.
 
 | Date | Test | Build ID | Result |
 |---|---|---|---|
+| 2026-11-22 | 575 rc3 card on the Pi 3B+ (person test, user) | v0.6.0-dev-135-g0897391f+x6a9f | **pass**: boot from card, HDMI login, DHCP, NTP, chime and Sopwith audible over HDMI (HDMI mode, 148.5 MHz); finding: black border at 1920x1080 (overscan, #347/#348). [Report](reports/575.md) |
 | 2026-11-22 | 574 rc3 on the Zero 2 W (person test, user): HDMI sound + 449 steps 2/3 | v0.6.0-dev-135-g0897391f+x6a9f | **pass**: HDMI mode, chime, tone and Sopwith audible, rate 44100, no faults; DHCP address and NTP time on a second Zero with a USB Ethernet HAT (not timed, no serial log). [Report](reports/574.md) |
 | 2026-11-22 | 449 Zero 2 W on the rc2 card (person test, user) | v0.6.0-dev-129-g988c8354+xcbcb | **pass for steps 1, 4, 5, 6**; 2 and 3 (LAN, NTP) move to the rc3 delta test (no hub with the serial setup). Step 5 text corrected (F1 boot log, F2 login). free with desktop: 18.9 MB left. [Report](reports/449.md) |
 | 2026-11-22 | 571 rc2 automated (474 again + 458), Pi 3B+ | v0.6.0-dev-129-g988c8354+xcbcb | **pass**: curl 100 MiB SHA ok and openssl run (rc1 fault fixed); A, B, C all pass; 5/5 reboots without serial help. tcc: 8 of 9 runs pass (run 3 failed self-hosting once, cause unknown); bench 1364–1474 ms, tcc.c 810–902 ms. [Report](reports/571.md) |
