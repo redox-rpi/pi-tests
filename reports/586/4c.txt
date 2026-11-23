@@ -1,0 +1,9 @@
+### cat /tmp/tuxtype.log  (0.3 s)
+cat: /tmp/tuxtype.log: No such file or directory
+### ps | grep tuxtype  (0.3 s)
+
+### free  (0.3 s)
+total      used      free
+Mem:        734832    266736    468096
+### cat /home/root/.config/tuxtype/settings.txt  (0.3 s)
+cat: /home/root/.config/tuxtype/settings.txt: No such file or directory

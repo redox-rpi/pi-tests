@@ -1,0 +1,26 @@
+start 19:25:26
+sha: bd631e17 0037539b  19:25:26
+staged build_id = "v0.7.0-dev-31-gbaf813ee+x2ff5" 19:25:26
+boot: found after 21 s; banner redox-rpi v0.7.0-dev-31-gbaf813ee+x2ff5 (netboot, 2026-11-23T18:36:37Z) 19:26:03
+devsh up 19:26:05
+NOTE: /scheme/data/pkg exists before the test 19:26:26
+step1: Mon Nov 23 19:26:27 UTC 2026 total      used      free Mem:        734832    161040    573792  19:26:28
+step2 rc=0: Transaction aborted successfully. error: Download error: IO error: No space left on device (os error 28) pkg-persist: No space left on device (os error 28) real    2m14.315093994s  19:28:43
+step3: ls: cannot access '/usr/bin/tuxtype': No such file or directory ls: cannot access '/usr/bin/tuxtype-de': No such file or directory ls: cannot access '/usr/share/ui/apps/72_tuxtype': No such file or directory  19:28:45
+step4 desktop rc=0 19:28:52
+step4: cat: /tmp/tuxtype.log: No such file or directory  total      used      free Mem:        734832    265880    468952 cat: /home/root/.config/tuxtype/settings.txt: No such file or directory  19:29:50
+boot: found after 22 s; banner redox-rpi v0.7.0-dev-31-gbaf813ee+x2ff5 (netboot, 2026-11-23T18:36:37Z) 19:30:29
+no devsh (try 1, USB fault #576?), serial reboot 19:33:49
+found after 0 s
+no devsh (try 2, USB fault #576?), serial reboot 19:37:11
+found after 0 s
+devsh up 19:37:54
+step5 copy line: experiments: cosmic-apps-source desktop keyboard-de netstack-watch orbital orbital-apps pkg-hold pkg-persist pkg-repo rpi-fb timesync;⏎                                                                                redox login: redox login: pkg-persi 19:37:54
+step5: ls: cannot access '/usr/bin/tuxtype': No such file or directory ls: cannot access '/usr/bin/tuxtype-de': No such file or directory ls: cannot access '/usr/share/ui/apps/72_tuxtype': No such file or directory  19:38:05
+step6 clean:  README.txt  audio-volume  etc  timesync.last  19:38:12
+relibc=0 unhandled=0 panic=0 19:38:12
+staged build_id = "v0.7.0-dev-9-g368175ee+x2d42" 19:38:12
+boot: found after 16 s; banner redox-rpi v0.7.0-dev-9-g368175ee+x2d42 (netboot, 2026-11-23T03:30:57Z) 19:38:46
+devsh up 19:38:49
+stable data: README.txt  audio-volume  etc  timesync.last  19:38:51
+pitest rc=1:     sock.connect(sa)     ~~~~~~~~~~~~^^^^ ConnectionRefusedError: [Errno 111] Connection refused  19:38:51

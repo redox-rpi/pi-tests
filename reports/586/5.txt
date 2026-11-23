@@ -1,0 +1,4 @@
+### ls -l /usr/bin/tuxtype /usr/bin/tuxtype-de /usr/share/ui/apps/72_tuxtype  (0.4 s)
+ls: cannot access '/usr/bin/tuxtype': No such file or directory
+ls: cannot access '/usr/bin/tuxtype-de': No such file or directory
+ls: cannot access '/usr/share/ui/apps/72_tuxtype': No such file or directory

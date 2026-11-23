@@ -1,0 +1,5 @@
+### df -h  (0.3 s)
+Path            Size      Used      Free Use%
+/             222.0M    222.0M     28.0K  99%
+### ls /scheme/data  (0.4 s)
+README.txt  audio-volume  etc  pkg  timesync.last

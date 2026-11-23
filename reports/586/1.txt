@@ -1,0 +1,14 @@
+### date  (0.4 s)
+Mon Nov 23 19:40:36 UTC 2026
+### free  (0.3 s)
+total      used      free
+Mem:        734832    160932    573900
+### df -h  (0.3 s)
+Path            Size      Used      Free Use%
+/             222.0M    176.0M     46.0M  79%
+### ls -l /scheme/data  (0.4 s)
+total 20
+-rw-r--r-- 1 root root  157 Oct 26 14:19 README.txt
+-rw-r--r-- 1 root root    3 Nov 22 10:10 audio-volume
+drwxr-xr-x 1 root root 4096 Nov 21 02:02 etc
+-rw-r--r-- 1 root root   11 Nov 23 19:40 timesync.last
