@@ -1,0 +1,8 @@
+### nano --version  (6.0 s)
+ion: command not found: nano
+### df -h /  (0.3 s)
+Path            Size      Used      Free Use%
+/             222.0M    176.1M     45.9M  79%
+### ls /tmp/pkg_download /scheme/data/pkg/tmp  (0.4 s)
+ls: cannot access '/tmp/pkg_download': No such file or directory
+/scheme/data/pkg/tmp:

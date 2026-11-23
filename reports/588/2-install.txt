@@ -1,0 +1,27 @@
+### time pkg-persist install nano  (2.0 s)
+Fetching  [  0%] [00:00:00] [                                                         ] 0/1 (0s)
+Fetching metadata [  0%] [00:00:00] [                                                 ] 0/1 (0s)
+Fetching nano [  0%] [00:00:00] [                                                     ] 0/1 (0s)[INFO pkg@src/platform/redox/socket.rs:1029] TODO: setsockopt(6, 6, 1, [1, 0, 0, 0]) - unknown option
+[INFO pkg@src/platform/redox/socket.rs:1029] TODO: setsockopt(6, 6, 1, [1, 0, 0, 0]) - unknown option
+Fetching nano [100%] [00:00:00] [=====================================================] 1/1 (0s)
+Fetching nano [ 25%] [00:00:00] [=============>                                       ] 1/4 (1s)
+Fetching terminfo [ 25%] [00:00:00] [============>                                    ] 1/4 (1s)[INFO pkg@src/platform/redox/socket.rs:1029] TODO: setsockopt(8, 6, 1, [1, 0, 0, 0]) - unknown option
+Fetching terminfo [ 50%] [00:00:00] [========================>                        ] 2/4 (1s)
+Fetching ncursesw [ 50%] [00:00:00] [========================>                        ] 2/4 (1s)[INFO pkg@src/platform/redox/socket.rs:1029] TODO: setsockopt(8, 6, 1, [1, 0, 0, 0]) - unknown option
+Fetching ncursesw [ 75%] [00:00:00] [====================================>            ] 3/4 (0s)
+Fetching ncursesw [100%] [00:00:00] [=================================================] 4/4 (0s)
+Fetch complete.
+Packages to install:
++ nano
++ ncursesw
++ terminfo
+Download size:  762 KB
+Install size:   2.14 MB
+[INFO pkg@src/platform/redox/socket.rs:1029] TODO: setsockopt(9, 6, 1, [1, 0, 0, 0]) - unknown option
+[INFO pkg@src/platform/redox/socket.rs:1029] TODO: setsockopt(9, 6, 1, [1, 0, 0, 0]) - unknown option
+Downloading  [  0%] [00:00:00] [                                       ] 0 B/283.33 KiB (0 B/s, 0s)
+Downloading nano.pkgar [  0%] [00:00:00] [                             ] 0 B/283.33 KiB (0 B/s, 0s)
+Aborting  [100%] [00:00:00] [=========================================================] 0/0 (0s)
+error: IO error: Cross-device link (os error 18), Renaming "/scheme/data/pkg/tmp/pkg_download/static.redox-os.org_nano.pkgar"
+pkg-persist: 0 files copied into /, 0 kept from the image (23 ms)
+real    1.828631401s
