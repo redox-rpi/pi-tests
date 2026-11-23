@@ -102,3 +102,5 @@
 {"date": "2026-11-21", "build": "v0.6.0-dev-121-gf50a50c4+x2d42", "source": "nightly", "kind": "soak", "minutes": 15, "pings": 90, "pings_lost": 0, "logins": 15, "logins_failed": 0, "losses": [], "ping": "tcp"}
 {"date": "2026-11-22", "build": "v0.6.0-dev-126-g1b6b4cd9+x2d42", "source": "nightly", "kind": "boot", "devsh_s": 0.5, "login_s": 6.0}
 {"date": "2026-11-22", "build": "v0.6.0-dev-126-g1b6b4cd9+x2d42", "source": "nightly", "kind": "soak", "minutes": 15, "pings": 90, "pings_lost": 0, "logins": 15, "logins_failed": 0, "losses": [], "ping": "tcp"}
+{"date": "2026-11-23", "build": "v0.7.0-dev-9-g368175ee+x2d42", "source": "nightly", "kind": "boot", "devsh_s": 4.6, "login_s": 3.5}
+{"date": "2026-11-23", "build": "v0.7.0-dev-9-g368175ee+x2d42", "source": "nightly", "kind": "soak", "minutes": 15, "pings": 90, "pings_lost": 0, "logins": 15, "logins_failed": 0, "losses": [], "ping": "tcp"}
