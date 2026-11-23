@@ -497,7 +497,7 @@ kernel::scheme::user:DEBUG -- call_fdread: payload: 8 metadata: 2
 kernel::scheme::user:DEBUG -- call_fdread: payload: 8 metadata: 2
 kernel::scheme::user:DEBUG -- call_fdread: payload: 8 metadata: 2
 bcmgenetd: GENET at 0xfd580000, revision 0x06000000
-bcmgenetd: MAC d8:3a:dd:10:4f:23 from the devicetree
+bcmgenetd: MAC <mac> from the devicetree
 bcmgenetd: link up, Mbit1000
 kernel::scheme::irq:DEBUG -- open_phandle_irq  virq=189
 kernel::scheme::user:DEBUG -- call_fdread: payload: 8 metadata: 2
