@@ -1,0 +1,7 @@
+### ls /scheme/data  (0.3 s)
+README.txt  audio-volume  etc  timesync.last
+### date  (0.3 s)
+Mon Nov 23 20:42:48 UTC 2026
+### df -h /  (0.3 s)
+Path            Size      Used      Free Use%
+/             222.0M    176.0M     46.0M  79%

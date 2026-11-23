@@ -1,0 +1,4 @@
+### rm -r /scheme/data/pkg  (66.1 s)
+
+### ls /scheme/data  (0.3 s)
+README.txt  audio-volume  etc  timesync.last

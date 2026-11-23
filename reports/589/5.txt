@@ -1,0 +1,5 @@
+### df -h /  (0.3 s)
+Path            Size      Used      Free Use%
+/             222.0M    176.0M     46.0M  79%
+### ls /usr/bin/nano  (0.3 s)
+ls: cannot access '/usr/bin/nano': No such file or directory

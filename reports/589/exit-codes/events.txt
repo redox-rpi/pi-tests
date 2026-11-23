@@ -1,0 +1,16 @@
+start 20:55:11
+staged build_id = "v0.7.0-dev-23-gd4021dd8+x7c97" 20:55:11
+boot: found after 20 s; banner redox-rpi v0.7.0-dev-23-gd4021dd8+x7c97 (netboot, 2026-11-23T20:26:09Z) 20:55:47
+devsh up 20:55:52
+data: README.txt  audio-volume  etc  timesync.last  20:56:14
+doesnotexist: ### pkg-persist install doesnotexist; echo rc=$?  (1.0 s) pkg-persist: pkg install doesnotexist failed (exit status: 1) rc=1 ### pkg-persist install doesnotexist || echo NONZERO  (0.9 s) pkg-persist: pkg install doesnotexist failed (exit status: 1) NONZERO ### pkg-persist install doesnotexist && echo ZERO  (0.9 s) pkg-persist: pkg install doesnotexist failed (exit status: 1)  20:56:17
+tuxtype: ### pkg-persist install tuxtype || echo NONZERO  (170.7 s) Commit complete. pkg-persist: the packages in /scheme/data/pkg need 50.3 MB in /, but it has only 48.2 MB free (and 4.2 MB stay free for the system), so nothing was copied. They stay on the data partition: remove some with `pkg-persist remove`, or use an image with a larger root NONZERO  20:59:09
+nano again: ### pkg-persist install nano && echo ZERO  (47.7 s) pkg-persist: the packages in /scheme/data/pkg need 52.4 MB in /, but it has only 48.2 MB free (and 4.2 MB stay free for the system), so nothing was copied. They stay on the data partition: remove some with `pkg-persist remove`, or use an image with 20:59:58
+clean:  README.txt  audio-volume  etc  timesync.last  21:01:09
+panic=0 21:01:09
+staged build_id = "v0.7.0-dev-9-g368175ee+x2d42" 21:01:09
+boot: found after 20 s; banner redox-rpi v0.7.0-dev-9-g368175ee+x2d42 (netboot, 2026-11-23T03:30:57Z) 21:01:45
+no devsh (try 1, USB fault #576?), serial reboot 21:05:09
+found after 0 s
+devsh up 21:05:51
+stable data: README.txt  audio-volume  etc  timesync.last  21:05:52

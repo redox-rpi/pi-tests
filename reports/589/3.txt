@@ -1,0 +1,9 @@
+### pkg-persist install doesnotexist  (0.9 s)
+Fetching  [  0%] [00:00:00] [                                                         ] 0/1 (0s)
+Fetching metadata [  0%] [00:00:00] [                                                 ] 0/1 (0s)
+Fetching doesnotexist [  0%] [00:00:00] [                                             ] 0/1 (0s)[INFO pkg@src/platform/redox/socket.rs:1029] TODO: setsockopt(6, 6, 1, [1, 0, 0, 0]) - unknown option
+[INFO pkg@src/platform/redox/socket.rs:1029] TODO: setsockopt(6, 6, 1, [1, 0, 0, 0]) - unknown option
+error: Package PackageName("doesnotexist") not found
+pkg-persist: pkg install doesnotexist failed (exit status: 1)
+### echo $?  (0.2 s)
+0

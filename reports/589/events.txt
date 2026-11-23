@@ -1,0 +1,24 @@
+start 20:37:44
+sha: 1708c79d f02a226d  20:37:44
+staged build_id = "v0.7.0-dev-23-gd4021dd8+x7c97" 20:37:45
+boot: found after 22 s; banner redox-rpi v0.7.0-dev-23-gd4021dd8+x7c97 (netboot, 2026-11-23T20:26:09Z) 20:38:23
+no devsh (try 1, USB fault #576?), serial reboot 20:41:44
+found after 0 s
+devsh up 20:42:26
+step1: README.txt  audio-volume  etc  timesync.last Mon Nov 23 20:42:48 UTC 2026 Path            Size      Used      Free Use% /             222.0M    176.0M     46.0M  79%  20:42:48
+step2 rc=0: Committing changes [ 97%] [00:00:02] [============================================> ] 203/209 (0s) Committing changes [ 99%] [00:00:02] [=============================================>] 207/209 (0s) Commit complete. pkg-persist: 207 files copied into /, 2 kept from the image (2596 ms) ### echo $?  (0.2 s) 0 ### nano --version  (0.3 s) GNU nano, version 9.2 (C) 2026 the Free Software Foundation and various contributors Compiled options: --disable-libmagic --disable-nls --enable-utf8 ### ls /scheme 20:43:27
+step3 rc=0: ### pkg-persist install doesnotexist  (0.9 s) error: Package PackageName("doesnotexist") not found pkg-persist: pkg install doesnotexist failed (exit status: 1) ### echo $?  (0.2 s) 0  20:43:29
+step4 rc=0: ### pkg-persist list  (5.1 s) freetype2 gettext libiconv libjpeg libmodplug1 libogg liborbital libpng libvorbis libxml2 nano ncursesw sdl1 terminfo tuxtype xz zlib ### ls -l /scheme/data/pkg/usr/bin/tuxtype  (0.4 s) -rwxr-xr-x 1 root root 592048 Nov 23 20:44 /scheme/data/pkg/usr/bin/tuxtype ### ls /scheme/data/pkg/tmp  (0.3 s)   20:46:34
+boot: found after 22 s; banner redox-rpi v0.7.0-dev-23-gd4021dd8+x7c97 (netboot, 2026-11-23T20:26:09Z) 20:47:12
+no devsh (try 1, USB fault #576?), serial reboot 20:50:31
+found after 0 s
+devsh up 20:51:14
+step5 boot line: pkg-persist: the packages in /scheme/data/pkg need 52.4 MB in /, but it has only 48.3 MB free (and 4.2 MB stay free for the system), so nothing was copied. They stay on the data partition: remove some with `pkg-persist remove`, or use an image with a larger root;init: env -i INIT_NOTIFY="4" LD_LIBRARY_PATH="/usr/lib" PATH="/usr/bin" RUST_BACKTRACE="1" "pkg-persist" "restore" failed with exit statu 20:51:14
+step5: Path            Size      Used      Free Use% /             222.0M    176.0M     46.0M  79% ls: cannot access '/usr/bin/nano': No such file or directory  20:51:26
+step6 clean:  README.txt  audio-volume  etc  timesync.last  20:52:33
+relibc=0 unhandled=0 panic=0 20:52:33
+staged build_id = "v0.7.0-dev-9-g368175ee+x2d42" 20:52:33
+boot: found after 18 s; banner redox-rpi v0.7.0-dev-9-g368175ee+x2d42 (netboot, 2026-11-23T03:30:57Z) 20:53:07
+devsh up 20:53:24
+stable data: README.txt  audio-volume  etc  timesync.last  20:53:26
+pitest rc=0: PASS ps-tty: 53 lines straight to the terminal, rc=0 PASS sdcard: write, read back, delete on /scheme/data PASS starts: 0 of 300 failed  20:54:39
