@@ -1,0 +1,4 @@
+### v3dprobe --via-v3dd --loops 1000 | tail -3  (0.6 s)
+v3dprobe: v3dd: BOs: code 0x100000, uniforms 0x101000, result 0x102000
+v3dprobe: v3dd: stats: bos 126 frees 126 jobs 1200 failed 0 job_us_max 7713 va_next 0x103000 va_free_ranges 3
+v3dprobe: v3dd: PASS: 1000 of 1000 jobs through /scheme/v3d right, 12 us average, 7713 us max (daemon side)

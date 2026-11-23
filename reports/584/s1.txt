@@ -1,0 +1,5 @@
+### ls /scheme/v3d; v3dprobe --via-v3dd --loops 100  (0.3 s)
+ls: cannot access '/scheme/v3d': Operation not supported on transport endpoint
+v3dprobe: v3dd: BOs: code 0x100000, uniforms 0x101000, result 0x102000
+v3dprobe: v3dd: stats: bos 12 frees 12 jobs 100 failed 0 job_us_max 10 va_next 0x103000 va_free_ranges 3
+v3dprobe: v3dd: PASS: 100 of 100 jobs through /scheme/v3d right, 5 us average, 10 us max (daemon side)

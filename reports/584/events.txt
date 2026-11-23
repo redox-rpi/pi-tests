@@ -1,0 +1,19 @@
+start 14:13:54
+config: 20d19 < total_mem=1024 24a24,25 > hdmi_force_hotplug=1 > hdmi_drive=2  14:13:54
+staged /home/zehrer/redox-rpi-graphics/keep/gfx-v3dd1-netboot (build_id = "v0.7.0-dev-70-gb1943cf9+xf47a") 14:13:54
+boot: login, U-Boot retries 0, banner: redox-rpi v0.7.0-dev-70-gb1943cf9+xf47a (netboot, 2026-11-23T14:01:11Z) 14:15:08
+boot v3dd lines: 3; ready: 1 14:15:23
+devsh up 14:15:24
+s1 rc=0 took 1.177720544 s: v3dprobe: v3dd: PASS: 100 of 100 jobs through /scheme/v3d right, 5 us average, 10 us max (daemon side)  14:15:25
+resets after s1: 0 14:15:26
+s2 rc=0 took 1.102858732 s: v3dprobe: v3dd: PASS: 100 of 100 jobs through /scheme/v3d right, 5 us average, 11 us max (daemon side)  14:15:27
+resets after s2: 0 14:15:28
+s3 rc=0 took 1.431434535 s: v3dprobe: v3dd: PASS: 1000 of 1000 jobs through /scheme/v3d right, 12 us average, 7713 us max (daemon side)  14:15:30
+resets after s3: 0 14:15:31
+still answers 14:15:32
+reboots seen after login: 2 14:15:32
+panic/UNHANDLED: 0 14:15:32
+config restored: same 14:15:32
+staged /home/zehrer/redox-rpi-graphics/keep/pi400-fbshot-stage (build_id = "v0.6.0-dev-105-gbef6d90a+xcf2a") 14:15:32
+boot: login, U-Boot retries 0, banner: redox-rpi v0.6.0-dev-105-gbef6d90a+xcf2a (netboot, 2026-11-18T04:35:59Z) 14:16:34
+restore: login 14:16:34
