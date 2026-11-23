@@ -1,0 +1,18 @@
+start 14:20:44
+staged /home/zehrer/zrtl-q/net622-stage/harddrive.img.gz (build_id = "v0.7.0-dev-13-g0bdaf77b+x81b7") 14:20:44
+found after 24 s
+default: banner redox-rpi v0.7.0-dev-13-g0bdaf77b+x81b7 (netboot, 2026-11-23T14:09:45Z); linkup=1 DHCP=2 dhcpd=0 ntp=1 login=1 rootport=0 panic=0 14:21:43
+config: # How the network starts (docs/network-config.md in redox-rpi). # No section for an interface: nothing is started on it. [interface.eth0] ipv4 = "dhcp" ipv6 = "off"  14:21:44
+staged /home/zehrer/zrtl-q/net622-stage/harddrive-off.img.gz (build_id = "v0.7.0-dev-13-g0bdaf77b+x81b7") 14:21:44
+found after 24 s
+off: banner redox-rpi v0.7.0-dev-13-g0bdaf77b+x81b7 (netboot, 2026-11-23T14:09:45Z); linkup=1 DHCP=0 dhcpd=0 ntp=0 login=1 rootport=0 panic=0 14:24:49
+off devsh: 0 14:24:59
+staged /home/zehrer/zrtl-q/net622-stage/harddrive-empty.img.gz (build_id = "v0.7.0-dev-13-g0bdaf77b+x81b7") 14:24:59
+found after 0 s
+empty: banner redox-rpi v0.7.0-dev-13-g0bdaf77b+x81b7 (netboot, 2026-11-23T14:09:45Z); linkup=1 DHCP=0 dhcpd=0 ntp=0 login=3 rootport=0 panic=0 14:27:38
+empty devsh: 0 14:27:48
+stable staged build_id = "v0.7.0-dev-9-g368175ee+x2d42" 14:27:49
+found after 0 s
+no devsh, serial reset 1 14:30:10
+stable up 14:30:56
+stable: banner redox-rpi v0.7.0-dev-9-g368175ee+x2d42 (netboot, 2026-11-23T03:30:57Z); linkup=1 DHCP=2 dhcpd=0 ntp=1 login=6 rootport=1 panic=0 14:31:11
