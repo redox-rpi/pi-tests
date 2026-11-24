@@ -1,0 +1,24 @@
+start 21:03:49
+config: 20d19 < total_mem=1024 24a24,25 > hdmi_force_hotplug=1 > hdmi_drive=2  21:03:49
+staged /home/zehrer/redox-rpi-graphics/keep/gfx-g2b-netboot (build_id = "v0.7.0-dev-58-g1cbedb8c+x2bc6") 21:03:49
+boot: login, U-Boot retries 0, banner: redox-rpi v0.7.0-dev-58-g1cbedb8c+x2bc6 (netboot, 2026-11-24T21:02:11Z) 21:04:57
+boot v3dd lines: 4; ready: 1 21:05:12
+devsh up 21:05:14
+s1 rc=0 took 1.198272543 s: v3dprobe: v3dd: PASS: 100 of 100 jobs through /scheme/v3d right, 16 us average, 42 us max (daemon side)  21:05:15
+resets after s1: 0 21:05:16
+s2 rc=0 took 6.953007405 s: v3dprobe: render: PASS: a red triangle on 0xffff8020, drawn by the QPUs through bin and render control lists v3dprobe: render: PASS: 100 of 100 CopyShaders frames through /scheme/v3d right, 97 us average, 198 us max (bin + render, daemon side)  21:05:23
+resets after s2: 0 21:05:24
+s3 rc=0 took 2.209391070 s: v3dprobe: faults: render after the reset: PASS v3dprobe: faults: PASS: the MMU fault came back, the endless job was reset, the next jobs ran right  21:05:26
+resets after s3: 0 21:05:27
+s4 rc=0 took 2.183769241 s: v3dprobe: queue: no BOs left: PASS (bos 175 frees 174 jobs 303 cl_jobs 112 failed 3 mmu_faults 1 resets 2 job_us_max 9296 outomem 0 overflow_chunks 1 va_next 0x180000 va_free_ranges 0 irq /scheme/irq/phandle-1/0,74,4 irqs 408 irq_wakeups 407 timer_wakeups 314 maps 11 unmaps 11 live_bos 0 submitted 303 done_through 303 queued 0 running - zombies 0) v3dprobe: queue: PASS  21:05:29
+resets after s4: 0 21:05:30
+s5 rc=0 took 2.417602851 s: v3dprobe: queue: no BOs left: PASS (bos 1216 frees 1215 jobs 822 cl_jobs 113 failed 4 mmu_faults 1 resets 3 job_us_max 9296 outomem 0 overflow_chunks 1 va_next 0x180000 va_free_ranges 0 irq /scheme/irq/phandle-1/0,74,4 irqs 924 irq_wakeups 918 timer_wakeups 423 maps 11 unmaps 11 live_bos 0 submitted 822 done_through 822 queued 0 running - zombies 0) v3dprobe: queue: PASS  21:05:33
+resets after s5: 0 21:05:34
+still answers 21:05:40
+v3dd client lines: 2 21:05:40
+reboots seen after login: 2 21:05:40
+panic/UNHANDLED: 0 21:05:40
+config restored: same 21:05:40
+staged /home/zehrer/redox-rpi-graphics/keep/pi400-fbshot-stage (build_id = "v0.6.0-dev-105-gbef6d90a+xcf2a") 21:05:40
+boot: login, U-Boot retries 0, banner: redox-rpi v0.6.0-dev-105-gbef6d90a+xcf2a (netboot, 2026-11-18T04:35:59Z) 21:06:30
+restore: login 21:06:30
