@@ -1,0 +1,32 @@
+start 22:07:37
+config: 20d19 < total_mem=1024 24a24,25 > hdmi_force_hotplug=1 > hdmi_drive=2  22:07:37
+staged /home/zehrer/redox-rpi-graphics/keep/gfx-g3b-netboot (build_id = "v0.7.0-dev-64-g7996d959+x2eac") 22:07:37
+boot: login, U-Boot retries 0, banner: redox-rpi v0.7.0-dev-64-g7996d959+x2eac (netboot, 2026-11-24T22:02:08Z) 22:08:33
+boot v3dd lines: 4; ready: 1 22:08:48
+devsh up 22:08:49
+s1 rc=0 took 1.174914281 s: v3dprobe: v3dd: PASS: 100 of 100 jobs through /scheme/v3d right, 11 us average, 21 us max (daemon side)  22:08:50
+resets after s1: 0 22:08:51
+s2 rc=0 took 6.735446141 s: v3dprobe: render: PASS: a red triangle on 0xffff8020, drawn by the QPUs through bin and render control lists v3dprobe: render: PASS: 100 of 100 CopyShaders frames through /scheme/v3d right, 94 us average, 390 us max (bin + render, daemon side)  22:08:58
+resets after s2: 0 22:08:59
+s3 rc=0 took 2.271849994 s: v3dprobe: faults: render after the reset: PASS v3dprobe: faults: PASS: the MMU fault came back, the endless job was reset, the next jobs ran right  22:09:01
+resets after s3: 0 22:09:02
+s4 rc=0 took 2.426677230 s: v3dprobe: queue: no BOs left: PASS (bos 1080 frees 1079 jobs 752 cl_jobs 112 failed 4 mmu_faults 2 resets 2 job_us_max 8697 outomem 0 overflow_chunks 1 spaces 0 spaces_made 19 space_loaded 0 irq /scheme/irq/phandle-1/0,74,4 irqs 842 irq_wakeups 840 timer_wakeups 330 maps 11 unmaps 11 live_bos 0 submitted 752 done_through 752 queued 0 running - zombies 0) v3dprobe: queue: PASS  22:09:05
+resets after s4: 0 22:09:06
+s5 rc=0 took 2.196123130 s: v3dprobe: ioctl: PASS: HUB_IDENT1 0xe1124; 64 of 64 jobs right, 835 us per job round trip; wrong arguments refused; syncobjs signalled, reset and waited on; endless job: ETIME, then signalled after 1050 ms and EIO; no BOs left (bos 1084 frees 1083 jobs 818 cl_jobs 113 failed 5 mmu_faults 2 resets 3 job_us_max 8697 outomem 0 overflow_chunks 1 spaces 0 spaces_made 20 space_loaded 0 irq /scheme/irq/phandle-1/0,74,4 irqs 907 irq_wakeups 907 timer_wakeups 436 maps 14 unmaps 14 live_bos 0 submitted 818 done_through 818 queued 0 running - zombies 0)  22:09:08
+resets after s5: 0 22:09:09
+s6 rc=0 took 2.147993925 s: v3dprobe: ioctl: PASS: HUB_IDENT1 0xe1124; 64 of 64 jobs right, 108 us per job round trip; wrong arguments refused; syncobjs signalled, reset and waited on; endless job: ETIME, then signalled after 1047 ms and EIO; no BOs left (bos 1088 frees 1087 jobs 884 cl_jobs 114 failed 6 mmu_faults 2 resets 4 job_us_max 8697 outomem 0 overflow_chunks 1 spaces 0 spaces_made 21 space_loaded 0 irq /scheme/irq/phandle-1/0,74,4 irqs 972 irq_wakeups 972 timer_wakeups 537 maps 17 unmaps 17 live_bos 0 submitted 884 done_through 884 queued 0 running - zombies 0)  22:09:11
+resets after s6: 0 22:09:13
+s7a rc=0 took 2.192690951 s: v3dprobe: ioctl: PASS: HUB_IDENT1 0xe1124; 64 of 64 jobs right, 656 us per job round trip; wrong arguments refused; syncobjs signalled, reset and waited on; endless job: ETIME, then signalled after 1054 ms and EIO; no BOs left (bos 1092 frees 1091 jobs 950 cl_jobs 115 failed 7 mmu_faults 2 resets 5 job_us_max 8783 outomem 0 overflow_chunks 1 spaces 0 spaces_made 22 space_loaded 0 irq /scheme/irq/phandle-1/0,74,4 irqs 1035 irq_wakeups 1035 timer_wakeups 641 maps 20 unmaps 20 live_bos 0 submitted 950 done_through 950 queued 0 running - zombies 0)  22:09:15
+resets after s7a: 0 22:09:21
+s7b rc=0 took 2.253891335 s: v3dprobe: ioctl: PASS: HUB_IDENT1 0xe1124; 64 of 64 jobs right, 1001 us per job round trip; wrong arguments refused; syncobjs signalled, reset and waited on; endless job: ETIME, then signalled after 1050 ms and EIO; no BOs left (bos 1096 frees 1095 jobs 1016 cl_jobs 116 failed 8 mmu_faults 2 resets 6 job_us_max 8783 outomem 0 overflow_chunks 1 spaces 0 spaces_made 23 space_loaded 0 irq /scheme/irq/phandle-1/0,74,4 irqs 1099 irq_wakeups 1099 timer_wakeups 748 maps 23 unmaps 23 live_bos 0 submitted 1016 done_through 1016 queued 0 running - zombies 0)  22:09:23
+resets after s7b: 0 22:09:24
+s7c rc=0 took 2.458818590 s: v3dprobe: queue: no BOs left: PASS (bos 2142 frees 2141 jobs 1536 cl_jobs 117 failed 10 mmu_faults 3 resets 7 job_us_max 21555 outomem 0 overflow_chunks 1 spaces 0 spaces_made 35 space_loaded 0 irq /scheme/irq/phandle-1/0,74,4 irqs 1602 irq_wakeups 1600 timer_wakeups 861 maps 23 unmaps 23 live_bos 0 submitted 1536 done_through 1536 queued 0 running - zombies 0) v3dprobe: queue: PASS  22:09:26
+resets after s7c: 0 22:09:27
+still answers 22:09:29
+v3dd client lines: 0 22:09:29
+reboots seen after login: 2 22:09:29
+panic/UNHANDLED: 0 22:09:29
+config restored: same 22:09:29
+staged /home/zehrer/redox-rpi-graphics/keep/pi400-fbshot-stage (build_id = "v0.6.0-dev-105-gbef6d90a+xcf2a") 22:09:29
+boot: login, U-Boot retries 0, banner: redox-rpi v0.6.0-dev-105-gbef6d90a+xcf2a (netboot, 2026-11-18T04:35:59Z) 22:10:13
+restore: login 22:10:13
