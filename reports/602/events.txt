@@ -1,0 +1,11 @@
+start 10:29:57
+staged build_id = "v0.7.0-dev-29-g23440483+xa91e" 10:29:57
+found after 24 s
+P boot: redox-rpi v0.7.0-dev-29-g23440483+xa91e (netboot, 2026-11-24T10:26:38Z, rootport 0 10:30:53
+P flow/rx lines: ⏎                                                                                redox login: redox login: dwc2d: link up on the LAN7800 at address 3, flow control on  10:30:53
+P1: result: 1902247936 bytes in 150.0 s (12.68 MB/s), max gap 0.239 s, 0 send stalls > 0.5 s, retransmits 231 |  10:33:26
+P2: result: 1841364992 bytes in 150.0 s (12.27 MB/s), max gap 0.037 s, 0 send stalls > 0.5 s, retransmits 84 |  10:36:08
+found after 24 s
+stable boot: redox-rpi v0.7.0-dev-9-g368175ee+x2d42 (netboot, 2026-11-23T03:30:57Z), rootport 0 10:37:16
+S1: result: 1764687872 bytes in 150.0 s (11.76 MB/s), max gap 0.026 s, 0 send stalls > 0.5 s, retransmits 17079 |  10:39:48
+stable up build_id = "v0.7.0-dev-9-g368175ee+x2d42" 10:39:58
