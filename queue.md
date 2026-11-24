@@ -16,10 +16,14 @@ tests on it. Results go to [reports/](reports/), one file per row.
 
 1. **Add your test to the queue** before you build for it: name, owner
    (person or session), the experiments, and what the test checks.
-   **Number:** fetch origin/main right before you commit and take the highest
-   number used anywhere in this file, done rows included, plus one; if your
-   push is rejected, fetch again and check the number is still free (rows got
-   the same number three times, once after a done row left the queue).
+   **Number:** take the number from the **Next number** line right above
+   the queue table and raise that line by one in the same commit. Fetch
+   origin/main right before; if your push is rejected, fetch again and take
+   the new number. Never pick a number by looking at the open rows: done
+   rows and `reports/` use numbers too. A rerun or a further step of a test
+   keeps its number and says so in the Done line (`598 rerun …`,
+   `109 step 7 …`). `scripts/check-numbers.py` (run in CI) fails on a
+   number used twice.
 2. **Take the Pi** only when your test is next (see the order below) and
    the previous one is marked done. Set it to **on the Pi** and commit.
    Automated rows are taken by the Pi test agent, not by their owner (see
@@ -89,6 +93,8 @@ built and its checks are written; a row that is not ready is skipped, not
 waited for.
 
 ## Queue
+
+**Next number: 2027**
 
 | # | Test | Owner | Image | Needs | Status |
 |---|---|---|---|---|---|
