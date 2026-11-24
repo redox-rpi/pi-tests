@@ -1,0 +1,19 @@
+### v3dprobe --via-v3dd --faults  (1.9 s)
+v3dprobe: faults: bad address: PASS (v3dd: csd: error mmu-fault no-pte,write-violation va 0x3f000000 unit L2T)
+v3dprobe: v3dd: BOs: code 0x180000, uniforms 0x181000, result 0x182000
+v3dprobe: v3dd: stats: bos 28 frees 27 jobs 211 cl_jobs 100 failed 1 mmu_faults 1 resets 0 job_us_max 532 outomem 0 overflow_chunks 1 va_next 0x180000 va_free_ranges 0 irq /scheme/irq/phandle-1/0,74,4 irqs 310 irq_wakeups 309 timer_wakeups 104
+v3dprobe: v3dd: PASS: 10 of 10 jobs through /scheme/v3d right, 5 us average, 13 us max (daemon side)
+v3dprobe: faults: CSD after the fault: PASS
+v3dprobe: faults: endless job: PASS (v3dd: cl: error timeout: bin job not done after 1007029 us; V3D reset)
+v3dprobe: v3dd: BOs: code 0x180000, uniforms 0x181000, result 0x182000
+v3dprobe: v3dd: stats: bos 32 frees 31 jobs 222 cl_jobs 101 failed 2 mmu_faults 1 resets 1 job_us_max 532 outomem 0 overflow_chunks 1 va_next 0x180000 va_free_ranges 0 irq /scheme/irq/phandle-1/0,74,4 irqs 320 irq_wakeups 320 timer_wakeups 205
+v3dprobe: v3dd: PASS: 10 of 10 jobs through /scheme/v3d right, 14 us average, 20 us max (daemon side)
+v3dprobe: faults: CSD after the reset: PASS
+v3dprobe: render: draw Clear through v3dd, 10 frames
+v3dprobe: render: arena BO at 0x180000, BCL 17 bytes, RCL 151 bytes
+v3dprobe: render: frame 0: 65536 of 65536 pixels have 0xffff8020
+v3dprobe: render: v3dd stats: bos 33 frees 32 jobs 232 cl_jobs 111 failed 2 mmu_faults 1 resets 1 job_us_max 532 outomem 0 overflow_chunks 1 va_next 0x180000 va_free_ranges 0 irq /scheme/irq/phandle-1/0,74,4 irqs 340 irq_wakeups 340 timer_wakeups 214
+v3dprobe: render: PASS: 10 of 10 Clear frames through /scheme/v3d right, 177 us average, 365 us max (bin + render, daemon side)
+v3dprobe: faults: render after the reset: PASS
+v3dprobe: faults: v3dd stats: bos 33 frees 32 jobs 232 cl_jobs 111 failed 2 mmu_faults 1 resets 1 job_us_max 532 outomem 0 overflow_chunks 1 va_next 0x180000 va_free_ranges 0 irq /scheme/irq/phandle-1/0,74,4 irqs 340 irq_wakeups 340 timer_wakeups 214
+v3dprobe: faults: PASS: the MMU fault came back, the endless job was reset, the next jobs ran right
