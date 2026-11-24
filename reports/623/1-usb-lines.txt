@@ -1,0 +1,49 @@
+1970-01-01T00-00-33.289Z [@pcid_spawner:93 INFO] pcid-spawner: spawn "/usr/lib/drivers/xhcid"
+xhcid: mapping BAR0 Memory64 { addr: 25769803776, size: 4096 }
+xhcid: reading the capability registers at 0x15000
+xhcid: capability registers read, 64-byte contexts: false
+1970-01-01T00-00-33.352Z [@xhcid:98 INFO] XHCI pci-0000-01-00.0 on: 0=0000000600000000 IRQ: (phandle 1, [0, 143, 4])
+1970-01-01T00-00-33.606Z [@xhcid::xhci:1381 INFO] Loading subdriver "USB HUB" for port 1 iface 0 alternate 0 class 9.0 proto 0
+1970-01-01T00-00-33.663Z [@xhcid::xhci::device_enumerator:115 INFO] Device on port 1 was attached
+1970-01-01T00-00-33.784Z [@usbhubd:244 INFO] power on port 1
+1970-01-01T00-00-33.841Z [@usbhubd:244 INFO] power on port 2
+1970-01-01T00-00-33.916Z [@usbhubd:244 INFO] power on port 3
+1970-01-01T00-00-33.982Z [@usbhubd:244 INFO] power on port 4
+⏎                                                                                redox login: redox login: 1970-01-01T00-00-35.021Z [@usbhubd:239 INFO] port 1 status V2(HubPortStatusV2(CONNECTION | POWER | LOW_SPEED | CONNECTION_CHANGED))
+1970-01-01T00-00-35.042Z [@usbhubd:287 INFO] reset port 1
+1970-01-01T00-00-35.074Z [@usbhubd:239 INFO] port 2 status V2(HubPortStatusV2(POWER))
+1970-01-01T00-00-35.101Z [@usbhubd:239 INFO] port 3 status V2(HubPortStatusV2(POWER))
+1970-01-01T00-00-35.128Z [@usbhubd:239 INFO] port 4 status V2(HubPortStatusV2(CONNECTION | POWER | LOW_SPEED | CONNECTION_CHANGED))
+1970-01-01T00-00-36.151Z [@usbhubd:239 INFO] port 1 status V2(HubPortStatusV2(CONNECTION | ENABLE | POWER | LOW_SPEED | CONNECTION_CHANGED | RESET_CHANGED))
+1970-01-01T00-00-36.195Z [@usbhubd:150 INFO] attach port 1.1 at xHCI speed 2
+1970-01-01T00-00-36.211Z [@xhcid::xhci:858 INFO] port 1.1: speed 2 from its hub (root port speed 3)
+1970-01-01T00-00-36.247Z [@xhcid::xhci:1496 INFO] port 1.1: speed ID 2 not among the port's own IDs [3], default ID used: true
+1970-01-01T00-00-36.268Z [@xhcid::xhci:1163 INFO] port 1.1 parent_hub_slot_id 1 parent_port_num 1
+1970-01-01T00-00-36.411Z [@xhcid::xhci:1381 INFO] Loading subdriver "USB HID" for port 1.1 iface 0 alternate 0 class 3.1 proto 2
+1970-01-01T00-00-36.452Z [@usbhidd:229 INFO] USB HID driver spawned with scheme `usb.pci-0000-01-00.0_xhci`, port 1.1, interface 0
+1970-01-01T00-00-36.473Z [@usbhidd:241 INFO] USB HID driver: "USB Optical Mouse" serial ""
+1970-01-01T00-00-36.491Z [@usbhidd:264 WARN] using endpoint 0x81 Interrupt In
+1970-01-01T00-00-36.511Z [@usbhubd:287 INFO] reset port 4
+1970-01-01T00-00-37.581Z [@usbhubd:239 INFO] port 4 status V2(HubPortStatusV2(CONNECTION | ENABLE | POWER | LOW_SPEED | CONNECTION_CHANGED | RESET_CHANGED))
+1970-01-01T00-00-37.634Z [@usbhubd:150 INFO] attach port 1.4 at xHCI speed 2
+1970-01-01T00-00-37.650Z [@xhcid::xhci:858 INFO] port 1.4: speed 2 from its hub (root port speed 3)
+1970-01-01T00-00-37.671Z [@xhcid::xhci:1496 INFO] port 1.4: speed ID 2 not among the port's own IDs [3], default ID used: true
+1970-01-01T00-00-37.692Z [@xhcid::xhci:1163 INFO] port 1.4 parent_hub_slot_id 1 parent_port_num 4
+1970-01-01T00-00-37.831Z [@xhcid::xhci:1381 INFO] Loading subdriver "USB HID" for port 1.4 iface 0 alternate 0 class 3.1 proto 1
+1970-01-01T00-00-37.864Z [@xhcid::xhci:1381 INFO] Loading subdriver "USB HID" for port 1.4 iface 1 alternate 0 class 3.0 proto 0
+1970-01-01T00-00-37.899Z [@usbhidd:229 INFO] USB HID driver spawned with scheme `usb.pci-0000-01-00.0_xhci`, port 1.4, interface 0
+1970-01-01T00-00-37.920Z [@usbhidd:241 INFO] USB HID driver: "Raspberry Pi Internal Keyboard" serial ""
+1970-01-01T00-00-37.938Z [@usbhidd:264 WARN] using endpoint 0x81 Interrupt In
+1970-01-01T00-00-37.957Z [@usbhidd:229 INFO] USB HID driver spawned with scheme `usb.pci-0000-01-00.0_xhci`, port 1.4, interface 1
+1970-01-01T00-00-38.018Z [@xhcid::xhci::scheme:3038 ERROR] CONTROL_TRANSFER transfer Trb { data: 0000000000000000, status: 00000000, control: 00011020 } failed with event Trb { data: 00000000074CD060, status: 06000000, control: 03018001 }
+1970-01-01T00-00-38.048Z [@xhcid::xhci::scheme:1319 WARN] port 1.4: SET_INTERFACE 0 refused (I/O error); it has one alternate setting, going on
+1970-01-01T00-00-38.078Z [@usbhidd:241 INFO] USB HID driver: "Raspberry Pi Internal Keyboard" serial ""
+1970-01-01T00-00-38.097Z [@usbhidd:264 WARN] using endpoint 0x82 Interrupt In
+1970-01-01T00-00-38.143Z [@xhcid::xhci::scheme:3038 ERROR] CONTROL_TRANSFER transfer Trb { data: 0000000000000000, status: 00000000, control: 00011020 } failed with event Trb { data: 00000000074CD0D0, status: 06000000, control: 03018001 }
+1970-01-01T00-00-38.174Z [@xhcid::xhci::scheme:1319 WARN] port 1.4: SET_INTERFACE 1 refused (I/O error); it has one alternate setting, going on
+1970-01-01T00-00-38.235Z [@usbhidd:137 WARN] unknown usage_page 0x7 usage 0x0
+1970-01-01T00-00-44.949Z [@xhcid::xhci::scheme:699 WARN] port 1: CUSTOM_DEVICE_REQ timed out after 5 s, stopping endpoint 0
+1970-01-01T00-00-45.980Z [@xhcid::xhci::scheme:713 WARN] port 1: no event for the stopped CUSTOM_DEVICE_REQ
+thread 'main' (1) panicked at drivers/usb/usbhubd/src/main.rs:234:22:
+[ERROR usbhubd@src/header/stdlib/mod.rs:121] Abort
+kernel::context::signal:INFO -- UNHANDLED EXCEPTION, CPU #0, PID 33, NAME /usr/lib/drivers/usbhubd, CONTEXT 0xfffffe8000168790

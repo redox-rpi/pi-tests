@@ -1,0 +1,11 @@
+1970-01-01T00-00-36.491Z [@usbhidd:264 WARN] using endpoint 0x81 Interrupt In
+1970-01-01T00-00-37.938Z [@usbhidd:264 WARN] using endpoint 0x81 Interrupt In
+1970-01-01T00-00-38.018Z [@xhcid::xhci::scheme:3038 ERROR] CONTROL_TRANSFER transfer Trb { data: 0000000000000000, status: 00000000, control: 00011020 } failed with event Trb { data: 00000000074CD060, status: 06000000, control: 03018001 }
+1970-01-01T00-00-38.048Z [@xhcid::xhci::scheme:1319 WARN] port 1.4: SET_INTERFACE 0 refused (I/O error); it has one alternate setting, going on
+1970-01-01T00-00-38.097Z [@usbhidd:264 WARN] using endpoint 0x82 Interrupt In
+1970-01-01T00-00-38.143Z [@xhcid::xhci::scheme:3038 ERROR] CONTROL_TRANSFER transfer Trb { data: 0000000000000000, status: 00000000, control: 00011020 } failed with event Trb { data: 00000000074CD0D0, status: 06000000, control: 03018001 }
+1970-01-01T00-00-38.174Z [@xhcid::xhci::scheme:1319 WARN] port 1.4: SET_INTERFACE 1 refused (I/O error); it has one alternate setting, going on
+1970-01-01T00-00-38.235Z [@usbhidd:137 WARN] unknown usage_page 0x7 usage 0x0
+1970-01-01T00-00-44.949Z [@xhcid::xhci::scheme:699 WARN] port 1: CUSTOM_DEVICE_REQ timed out after 5 s, stopping endpoint 0
+1970-01-01T00-00-45.980Z [@xhcid::xhci::scheme:713 WARN] port 1: no event for the stopped CUSTOM_DEVICE_REQ
+[ERROR usbhubd@src/header/stdlib/mod.rs:121] Abort
