@@ -1,0 +1,2 @@
+### pointer-bench 20 --hz 60  (20.3 s)
+pointer-bench: 1200 moves in 20.0 s (60.0/s)

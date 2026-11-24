@@ -1,0 +1,5 @@
+PASS vc4d: vc4d runs (its check: in the serial log)
+PASS console: 921615 bytes, 640x480, top colour 98%, 2 colours
+PASS desktop: Orbital runs; 921615 bytes, 640x480, top colour 75%, 318 colours
+PASS cursor: cursor plane in the HVS list at [('186', '131'), ('391', '294')]
+4 pass, 0 fail; output in keep/gfx-g1b-netboot/out
