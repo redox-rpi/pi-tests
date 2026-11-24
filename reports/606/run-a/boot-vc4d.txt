@@ -1,0 +1,7 @@
+vc4d: BCM2711, HVS5: the firmware's mode, no EDID and no mode registers (HDMI is not the BCM2835's)
+vc4d: HVS at 0xfe400000, id 0x64647276, enabled
+vc4d: dispctrl 0x9a0dddff dispstat 0x00000000
+vc4d: channel 0: ctrl 0x00000000 bkgnd 0x01000000 list 0 active 1 stat 0x100241e0 (mode 0, frame 35)
+vc4d: channel 1: ctrl 0x00000000 bkgnd 0x01000000 list 0 active 65 stat 0x138d81e0 (mode 0, frame 24)
+vc4d: channel 2: ctrl 0x00000000 bkgnd 0x00000000 list 0 active 0 stat 0x10300000 (mode 0, frame 0)
+vc4d: no HVS channel enabled, display left as it is

@@ -1,0 +1,14 @@
+start 12:05:07
+config: 20d19 < total_mem=1024 24a24,25 > hdmi_force_hotplug=1 > hdmi_drive=2  12:05:07
+staged /home/zehrer/redox-rpi-graphics/keep/gfx-g1a-netboot (build_id = "v0.7.0-dev-48-g00bea2a7+x5b9c") 12:05:07
+boot: login, U-Boot retries 0, banner: redox-rpi v0.7.0-dev-48-g00bea2a7+x5b9c (netboot, 2026-11-24T11:49:40Z) 12:06:55
+boot vc4d lines 35; check: vc4d: check: after 10 s: PASS frames advance, errors [], ctrl 0x828001e0 bkgnd 0x81000000 list 2304 active 2304 stat 0xa3940171 (mode 2, frame 0); irq probe lines 2 12:07:15
+devsh up 12:07:17
+desktop-check rc=0: PASS vc4d: vc4d runs (its check: in the serial log) PASS console: 921615 bytes, 640x480, top colour 98%, 2 colours PASS desktop: Orbital runs; 921615 bytes, 640x480, top colour 75%, 318 colours PASS cursor: cursor plane in the HVS list at [('186', '131'), ('391', '294')] 4 pass, 0 fail; output in keep/gfx-g1a-netboot/out-b  12:09:03
+pointer-bench: pointer-bench: 1200 moves in 20.0 s (60.0/s) 12:09:24
+still answers 12:09:25
+panic/UNHANDLED: 0 12:09:25
+config restored: same 12:09:25
+staged /home/zehrer/redox-rpi-graphics/keep/pi400-fbshot-stage (build_id = "v0.6.0-dev-105-gbef6d90a+xcf2a") 12:09:25
+boot: login, U-Boot retries 0, banner: redox-rpi v0.6.0-dev-105-gbef6d90a+xcf2a (netboot, 2026-11-18T04:35:59Z) 12:10:42
+restore: login 12:10:42

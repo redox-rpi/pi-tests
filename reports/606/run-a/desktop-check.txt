@@ -1,0 +1,5 @@
+FAIL vc4d: vc4d not in ps (its check: in the serial log)
+FAIL console: 0 bytes
+FAIL desktop: Orbital not in ps; 0 bytes
+FAIL cursor: cursor plane in the HVS list at []
+0 pass, 4 fail; output in keep/gfx-g1a-netboot/out

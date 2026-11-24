@@ -1,0 +1,12 @@
+start 11:54:27
+staged /home/zehrer/redox-rpi-graphics/keep/gfx-g1a-netboot (build_id = "v0.7.0-dev-48-g00bea2a7+x5b9c") 11:54:27
+U-Boot prompt (load failed), typing boot (1) 11:55:39
+boot: login, U-Boot retries 1, banner: redox-rpi v0.7.0-dev-48-g00bea2a7+x5b9c (netboot, 2026-11-24T11:49:40Z) 11:56:12
+boot vc4d lines 7; check: ; irq probe lines 0 11:56:32
+devsh up 11:56:33
+desktop-check rc=1: FAIL vc4d: vc4d not in ps (its check: in the serial log) FAIL console: 0 bytes FAIL desktop: Orbital not in ps; 0 bytes FAIL cursor: cursor plane in the HVS list at [] 0 pass, 4 fail; output in keep/gfx-g1a-netboot/out  12:02:16
+pointer-bench: pointer-bench: 1200 moves in 20.0 s (60.0/s) 12:02:38
+still answers 12:02:39
+panic/UNHANDLED: 0 12:02:39
+staged /home/zehrer/redox-rpi-graphics/keep/pi400-fbshot-stage (build_id = "v0.6.0-dev-105-gbef6d90a+xcf2a") 12:02:39
+U-Boot prompt (load failed), typing boot (1) 12:03:52
