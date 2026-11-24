@@ -1,0 +1,4 @@
+v3dd: V3D 42 powered up
+v3dd: interrupt: /scheme/irq/phandle-1/0,74,4
+v3dd: MMU on: page table at 0x23a0000, scratch page at 0x27a0000
+v3dd: ready: /scheme/v3d
