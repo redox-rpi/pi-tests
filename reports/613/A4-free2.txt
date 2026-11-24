@@ -1,0 +1,5 @@
+### free  (typing 0.6 s, total 0.9 s)
+root:~# freeroot:~# freeroot:~# freeroot:~# freeroot:~# free
+             total      used      free
+Mem:        728560    163992    564568
+⏎                                                                                root:~# root:~# 

@@ -1,0 +1,54 @@
+start 13:49:58
+staged build_id = "v0.7.0-dev-54-g5c5d7734+xa3ca" 13:49:58
+found after 26 s
+A up 13:50:40
+A1 banner: redox-rpi v0.7.0-dev-54-g5c5d7734+xa3ca (netboot, 2026-11-24T11:49:35Z) | sound 1 | hdmiaudiod  13:51:00
+A2 pitest rc=0: PASS version: v0.7.0-dev-54-g5c5d7734+xa3ca PASS manifest: build ID and libc.so hash match manifest.toml PASS ps: 55 processes (piped) PASS ps-tty: 55 lines straight to the terminal, rc=0 PASS sdcard: write, read back, delete on /scheme/data PASS starts: 0 of 300 failed  13:51:43
+A3 regression rc=0: PASS basics: 6 of 6 pass in 43 s PASS signals-stop: inputd 10, logd 2; after STOP/CONT: {'log PASS waitpid: WAITPID-OK status=7 SKIP sig-pipe: no /usr/share/sig-pipe/check.ion or no tcc (e SKIP scanf-pipe: no /usr/share/scanf-pipe/check.ion or no tc PASS tcc: 48.9 s; all 5 steps and TCC-TEST done; bench total PASS dns: name server <router>; unknown names: nosuch-3 PASS launcher-sopwith: name=Sopwith, binary=/usr/bin/sopwith PASS ifconfig-mac: ifconfig shows <mac>, as nets SKIP gamepad-console: no gamepad-test (experiment gamepad-te PASS tcp: 4 MiB from the build host in 2.3 s, 13:53:37
+A4-free1: Mem:        728560    164344    564216  13:53:45
+A4-oom1: kernel::memory:ERROR -- OUT OF MEMORY: killing PID 786 NAME /usr/bin/oomtest on CPU ##2 ion: pipeline execution error: process (786) ended by signal SIGKILL  13:53:51
+A4-oom4: kernel::memory:ERROR -- OUT OF MEMORY: killing PID 789 NAME /usr/bin/oomtest on CPU ##2 ion: pipeline execution error: process (789) ended by signal SIGKILL  13:53:57
+A4-oompipe: kernel::memory:ERROR -- OUT OF MEMORY: killing PID 792 NAME /usr/bin/oomtest on CPU ##1 ion: pipeline execution error: process (792) ended by signal SIGKILL  13:54:07
+A4-free2: Mem:        728560    163992    564568  13:54:11
+A4-ctx: 0  13:54:20
+A5 1 ok 46 s 13:55:11
+A5 2 ok 49 s 13:56:03
+A5 3 ok 48 s 13:56:56
+A5 4 ok 68 s 13:58:08
+A5 5 ok 48 s 13:59:00
+A5 6 ok 48 s 13:59:51
+A5 7 ok 48 s 14:00:43
+A5 8 ok 48 s 14:01:36
+A5 9 ok 68 s 14:02:48
+A5 10 ok 48 s 14:03:39
+A5 11 ok 48 s 14:04:30
+A5 12 ok 48 s 14:05:22
+A5 13 ok 48 s 14:06:14
+A5 14 ok 48 s 14:07:06
+A5 15 ok 58 s 14:08:08
+A5 16 ok 48 s 14:09:00
+A5 17 ok 49 s 14:09:54
+A5 18 ok 48 s 14:10:46
+A5 19 ok 49 s 14:11:39
+A5 20 ok 48 s 14:12:31
+A5 21 ok 48 s 14:13:22
+A5 22 ok 48 s 14:14:13
+A5 23 ok 48 s 14:15:05
+A5 24 ok 48 s 14:15:58
+A5 25 ok 48 s 14:16:50
+A5 26 ok 48 s 14:17:42
+A5 27 ok 64 s 14:18:49
+A5 28 ok 48 s 14:19:42
+A5 29 ok 48 s 14:20:34
+A5 30 ok 48 s 14:21:25
+A5 30/30 on the first reset, 0 needed more 14:21:25
+A serial: panic=0 relibc=0 exc=0 stuck=0 oom=3 14:21:25
+staged build_id = "v0.7.0-dev-54-g5c5d7734+x2f32" 14:21:26
+found after 26 s
+B1 banner: redox-rpi v0.7.0-dev-54-g5c5d7734+x2f32 (release-netboot, 2026-11-24T13:27:51Z) 14:22:33
+B2 nc 2323 rc=1 nc: connect to <lan-ip> port 2323 (tcp) failed: Connection refused  14:22:33
+B2 open TCP ports: [] 14:22:40
+B3: login ok=1 ps-devshd=0 14:22:48
+B serial: panic=0 relibc=0 exc=0 stuck=0 14:22:48
+found after 32 s
+stable up build_id = "v0.7.0-dev-9-g368175ee+x2d42" 14:23:26
