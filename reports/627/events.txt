@@ -1,0 +1,30 @@
+start 21:41:33
+config: 20d19 < total_mem=1024 24a24,25 > hdmi_force_hotplug=1 > hdmi_drive=2  21:41:33
+staged /home/zehrer/redox-rpi-graphics/keep/gfx-g2d-netboot (build_id = "v0.7.0-dev-60-ge50a7377+x2bc6") 21:41:33
+boot: login, U-Boot retries 0, banner: redox-rpi v0.7.0-dev-60-ge50a7377+x2bc6 (netboot, 2026-11-24T21:30:45Z) 21:42:30
+boot v3dd lines: 4; ready: 1 21:42:45
+devsh up 21:42:46
+s1 rc=0 took 1.203800583 s: v3dprobe: v3dd: PASS: 100 of 100 jobs through /scheme/v3d right, 28 us average, 49 us max (daemon side)  21:42:47
+resets after s1: 0 21:42:48
+s2 rc=0 took 6.845153505 s: v3dprobe: render: PASS: a red triangle on 0xffff8020, drawn by the QPUs through bin and render control lists v3dprobe: render: PASS: 100 of 100 CopyShaders frames through /scheme/v3d right, 103 us average, 391 us max (bin + render, daemon side)  21:42:55
+resets after s2: 0 21:42:56
+s3 rc=0 took 2.210166869 s: v3dprobe: faults: render after the reset: PASS v3dprobe: faults: PASS: the MMU fault came back, the endless job was reset, the next jobs ran right  21:42:58
+resets after s3: 0 21:42:59
+s4 rc=0 took 2.444388656 s: v3dprobe: queue: no BOs left: PASS (bos 1080 frees 1079 jobs 748 cl_jobs 112 failed 4 mmu_faults 2 resets 2 job_us_max 13185 outomem 0 overflow_chunks 1 spaces 0 spaces_made 19 space_loaded 0 irq /scheme/irq/phandle-1/0,74,4 irqs 843 irq_wakeups 841 timer_wakeups 318 maps 11 unmaps 11 live_bos 0 submitted 752 done_through 752 queued 0 running - zombies 0) v3dprobe: queue: PASS  21:43:02
+resets after s4: 0 21:43:03
+s5 rc=0 took 2.189242970 s: v3dprobe: ioctl: PASS: HUB_IDENT1 0xe1124; 64 of 64 jobs right, 570 us per job round trip; wrong arguments refused; endless job: ETIME, then EIO after 1060 ms; no BOs left (bos 1084 frees 1083 jobs 813 cl_jobs 113 failed 5 mmu_faults 2 resets 3 job_us_max 13185 outomem 0 overflow_chunks 1 spaces 0 spaces_made 20 space_loaded 0 irq /scheme/irq/phandle-1/0,74,4 irqs 907 irq_wakeups 907 timer_wakeups 423 maps 14 unmaps 14 live_bos 0 submitted 817 done_through 817 queued 0 running - zombies 0)  21:43:05
+resets after s5: 0 21:43:06
+s6a rc=0 took 2.184461028 s: v3dprobe: ioctl: PASS: HUB_IDENT1 0xe1124; 64 of 64 jobs right, 748 us per job round trip; wrong arguments refused; endless job: ETIME, then EIO after 1049 ms; no BOs left (bos 1088 frees 1087 jobs 878 cl_jobs 114 failed 6 mmu_faults 2 resets 4 job_us_max 13185 outomem 0 overflow_chunks 1 spaces 0 spaces_made 21 space_loaded 0 irq /scheme/irq/phandle-1/0,74,4 irqs 970 irq_wakeups 970 timer_wakeups 526 maps 17 unmaps 17 live_bos 0 submitted 882 done_through 882 queued 0 running - zombies 0)  21:43:08
+resets after s6a: 0 21:43:14
+s6b rc=0 took 2.395699218 s: v3dprobe: ioctl: PASS: HUB_IDENT1 0xe1124; 64 of 64 jobs right, 78 us per job round trip; wrong arguments refused; endless job: ETIME, then EIO after 1050 ms; no BOs left (bos 1092 frees 1091 jobs 943 cl_jobs 115 failed 7 mmu_faults 2 resets 5 job_us_max 13185 outomem 0 overflow_chunks 1 spaces 0 spaces_made 22 space_loaded 0 irq /scheme/irq/phandle-1/0,74,4 irqs 1034 irq_wakeups 1034 timer_wakeups 627 maps 20 unmaps 20 live_bos 0 submitted 947 done_through 947 queued 0 running - zombies 0)  21:43:16
+resets after s6b: 0 21:43:18
+s6c rc=0 took 2.427544489 s: v3dprobe: queue: no BOs left: PASS (bos 2138 frees 2137 jobs 1463 cl_jobs 116 failed 9 mmu_faults 3 resets 6 job_us_max 13185 outomem 0 overflow_chunks 1 spaces 0 spaces_made 34 space_loaded 0 irq /scheme/irq/phandle-1/0,74,4 irqs 1535 irq_wakeups 1535 timer_wakeups 747 maps 20 unmaps 20 live_bos 0 submitted 1467 done_through 1467 queued 0 running - zombies 0) v3dprobe: queue: PASS  21:43:20
+resets after s6c: 0 21:43:21
+still answers 21:43:22
+v3dd client lines: 1 21:43:22
+reboots seen after login: 2 21:43:22
+panic/UNHANDLED: 0 21:43:22
+config restored: same 21:43:22
+staged /home/zehrer/redox-rpi-graphics/keep/pi400-fbshot-stage (build_id = "v0.6.0-dev-105-gbef6d90a+xcf2a") 21:43:22
+boot: fault, U-Boot retries 0, banner: redox-rpi v0.6.0-dev-105-gbef6d90a+xcf2a (netboot, 2026-11-18T04:35:59Z) 21:44:31
+restore: fault 21:44:31
