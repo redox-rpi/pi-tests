@@ -1,0 +1,17 @@
+name: Test numbers
+
+# Fails when a test number in queue.md is used twice or the
+# "Next number" line is not above every used number (queue.md rule 1).
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  numbers:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - run: python3 scripts/check-numbers.py
