@@ -3,8 +3,9 @@
 
 Fails when a test number is used twice (queue table and Done table
 together), or when the "Next number" line is not higher than every number
-used in queue.md and reports/. A Done line may repeat a number when it is
-a step, part or rerun of that test (the word follows the number). Clashes
+used in queue.md and reports/. A Done line or a queue row may repeat a
+number when it is a step, part or rerun of that test (the word follows
+the number in a Done line, or starts the Test cell of a queue row). Clashes
 below BASELINE are older than this check and only warned about. Warns
 when an open queue row already has a report file.
 """
@@ -22,7 +23,8 @@ for line in text.splitlines():
     if section == "Queue":
         m = re.match(r"\|\s*(\d+)\s*\|", line)
         if m:
-            rows.append(("queue", int(m.group(1))))
+            again = re.match(r"\|\s*\d+\s*\|\W*(step|part|rerun)\b", line, re.I)
+            rows.append(("queue-again" if again else "queue", int(m.group(1))))
     elif section == "Done":
         m = re.match(r"\|[^|]*\|\s*(\d+)\b", line)
         if m:
@@ -32,7 +34,7 @@ for line in text.splitlines():
 errors, warnings = [], []
 seen = {}
 for where, n in rows:
-    if where == "done-again":
+    if where in ("done-again", "queue-again"):
         continue
     if n in seen and not (seen[n] == "queue" and where == "done"):
         (errors if n >= BASELINE else warnings).append(
