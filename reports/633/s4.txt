@@ -1,0 +1,7 @@
+### gles-probe 1  (0.5 s)
+libEGL warning: MESA-LOADER: failed to retrieve device information
+MESA-LOADER: failed to retrieve device information
+MESA-LOADER: failed to retrieve device information
+gles-probe: EGL 1.4, Mesa Project
+gles-probe: GL_RENDERER V3D 4.2.14, GL_VERSION OpenGL ES 3.0 Mesa 24.0.8 (git-9850ea1ad7)
+gles-probe: PASS: V3D 4.2.14, 1 of 1 frames right, 2080 red pixels, hash 57aafac5, 2.94 ms per frame
