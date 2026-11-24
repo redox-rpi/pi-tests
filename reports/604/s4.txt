@@ -1,0 +1,21 @@
+### v3dprobe --via-v3dd --mapped --faults  (1.3 s)
+v3dprobe: mapped: PASS: both ways, and after a free while mapped (bos 37 frees 36 jobs 300 cl_jobs 200 failed 0 mmu_faults 0 resets 0 job_us_max 23532 outomem 0 overflow_chunks 1 va_next 0x180000 va_free_ranges 0 irq /scheme/irq/phandle-1/0,74,4 irqs 500 irq_wakeups 500 timer_wakeups 57 maps 36 unmaps 35)
+v3dprobe: faults: bad address: PASS (v3dd: csd: error mmu-fault no-pte,write-violation va 0x3f000000 unit L2T)
+v3dprobe: v3dd: BOs: code 0x180000, uniforms 0x181000, result 0x182000
+v3dprobe: v3dd: stats: bos 42 frees 41 jobs 311 cl_jobs 200 failed 1 mmu_faults 1 resets 0 job_us_max 23532 outomem 0 overflow_chunks 1 va_next 0x180000 va_free_ranges 0 irq /scheme/irq/phandle-1/0,74,4 irqs 511 irq_wakeups 510 timer_wakeups 58 maps 41 unmaps 41
+v3dprobe: v3dd: PASS: 10 of 10 jobs through /scheme/v3d right, 3 us average, 10 us max (daemon side)
+v3dprobe: faults: CSD after the fault: PASS
+v3dprobe: faults: endless job: PASS (v3dd: cl: error timeout: bin job not done after 1012074 us; V3D reset)
+v3dprobe: v3dd: BOs: code 0x180000, uniforms 0x181000, result 0x182000
+v3dprobe: v3dd: stats: bos 46 frees 45 jobs 322 cl_jobs 201 failed 2 mmu_faults 1 resets 1 job_us_max 23532 outomem 0 overflow_chunks 1 va_next 0x180000 va_free_ranges 0 irq /scheme/irq/phandle-1/0,74,4 irqs 521 irq_wakeups 521 timer_wakeups 159 maps 45 unmaps 45
+v3dprobe: v3dd: PASS: 10 of 10 jobs through /scheme/v3d right, 20 us average, 100 us max (daemon side)
+v3dprobe: faults: CSD after the reset: PASS
+v3dprobe: render: draw Clear through v3dd, 10 frames
+v3dprobe: render: arena BO at 0x180000, BCL 17 bytes, RCL 151 bytes
+v3dprobe: render: frame 0: 65536 of 65536 pixels have 0xffff8020
+v3dprobe: render: v3dd stats: bos 47 frees 46 jobs 332 cl_jobs 211 failed 2 mmu_faults 1 resets 1 job_us_max 23532 outomem 0 overflow_chunks 1 va_next 0x180000 va_free_ranges 0 irq /scheme/irq/phandle-1/0,74,4 irqs 541 irq_wakeups 541 timer_wakeups 161 maps 46 unmaps 46
+v3dprobe: render: PASS: 10 of 10 Clear frames through /scheme/v3d right, 89 us average, 115 us max (bin + render, daemon side)
+v3dprobe: faults: render after the reset: PASS
+v3dprobe: faults: v3dd stats: bos 47 frees 46 jobs 332 cl_jobs 211 failed 2 mmu_faults 1 resets 1 job_us_max 23532 outomem 0 overflow_chunks 1 va_next 0x180000 va_free_ranges 0 irq /scheme/irq/phandle-1/0,74,4 irqs 541 irq_wakeups 541 timer_wakeups 161 maps 46 unmaps 46
+v3dprobe: faults: PASS: the MMU fault came back, the endless job was reset, the next jobs ran right
+v3dprobe: mapped: no BOs leaked (bos 47 frees 46 jobs 332 cl_jobs 211 failed 2 mmu_faults 1 resets 1 job_us_max 23532 outomem 0 overflow_chunks 1 va_next 0x180000 va_free_ranges 0 irq /scheme/irq/phandle-1/0,74,4 irqs 541 irq_wakeups 541 timer_wakeups 161 maps 46 unmaps 46)

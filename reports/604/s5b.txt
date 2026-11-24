@@ -1,0 +1,4 @@
+### v3dprobe --via-v3dd --render --triangle --loops 100 | tail -3  (5.7 s)
+v3dprobe: render: PASS: a red triangle on 0xffff8020, drawn by the QPUs through bin and render control lists
+v3dprobe: render: v3dd stats: bos 69 frees 68 jobs 532 cl_jobs 311 failed 2 mmu_faults 1 resets 1 job_us_max 23532 outomem 0 overflow_chunks 1 va_next 0x180000 va_free_ranges 0 irq /scheme/irq/phandle-1/0,74,4 irqs 841 irq_wakeups 841 timer_wakeups 264 maps 46 unmaps 46
+v3dprobe: render: PASS: 100 of 100 CopyShaders frames through /scheme/v3d right, 178 us average, 1589 us max (bin + render, daemon side)

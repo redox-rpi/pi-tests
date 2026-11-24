@@ -1,0 +1,4 @@
+### v3dprobe --via-v3dd --mapped --loops 100 | grep -e mapped: -e PASS  (0.3 s)
+v3dprobe: mapped: PASS: both ways, and after a free while mapped (bos 2 frees 1 jobs 0 cl_jobs 0 failed 0 mmu_faults 0 resets 0 job_us_max 0 outomem 0 overflow_chunks 1 va_next 0x180000 va_free_ranges 0 irq /scheme/irq/phandle-1/0,74,4 irqs 0 irq_wakeups 0 timer_wakeups 0 maps 1 unmaps 0)
+v3dprobe: v3dd: PASS: 100 of 100 jobs through /scheme/v3d right, 11 us average, 168 us max (daemon side)
+v3dprobe: mapped: no BOs leaked (bos 14 frees 13 jobs 100 cl_jobs 0 failed 0 mmu_faults 0 resets 0 job_us_max 168 outomem 0 overflow_chunks 1 va_next 0x180000 va_free_ranges 0 irq /scheme/irq/phandle-1/0,74,4 irqs 100 irq_wakeups 99 timer_wakeups 1 maps 13 unmaps 13)

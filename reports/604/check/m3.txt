@@ -1,0 +1,5 @@
+### v3dprobe --via-v3dd --mapped --render --triangle-math --loops 100 | grep -e mapped: -e PASS  (0.5 s)
+v3dprobe: mapped: PASS: both ways, and after a free while mapped (bos 26 frees 25 jobs 200 cl_jobs 100 failed 0 mmu_faults 0 resets 0 job_us_max 400 outomem 0 overflow_chunks 1 va_next 0x180000 va_free_ranges 0 irq /scheme/irq/phandle-1/0,74,4 irqs 300 irq_wakeups 300 timer_wakeups 28 maps 25 unmaps 24)
+v3dprobe: render: PASS: a red triangle on 0xffff8020, drawn by the QPUs through bin and render control lists
+v3dprobe: render: PASS: 100 of 100 MathShaders frames through /scheme/v3d right, 142 us average, 553 us max (bin + render, daemon side)
+v3dprobe: mapped: no BOs leaked (bos 36 frees 35 jobs 300 cl_jobs 200 failed 0 mmu_faults 0 resets 0 job_us_max 553 outomem 0 overflow_chunks 1 va_next 0x180000 va_free_ranges 0 irq /scheme/irq/phandle-1/0,74,4 irqs 500 irq_wakeups 500 timer_wakeups 55 maps 35 unmaps 35)
