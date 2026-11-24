@@ -1,0 +1,44 @@
+1970-01-01T00-02-55.198Z [@usbhidd:241 INFO] USB HID driver: "Raspberry Pi Internal Keyboard" serial ""
+1970-01-01T00-02-55.232Z [@usbhidd:264 WARN] using endpoint 0x82 Interrupt In
+DHCP: eth0 got <lan-ip>/24
+DHCP: default route via <lan-ip> (eth0)
+devshd: listening on port 2323
+1970-01-01T00-02-55.273Z [@xhcid::xhci::scheme:2978 ERROR] CONTROL_TRANSFER transfer Trb { data: 0000000000000000, status: 00000000, control: 00011020 } failed with event Trb { data: 0000000002936060, status: 06000000, control: 02018001 }
+audiod: No such device
+init: env -i INIT_NOTIFY="4" LD_LIBRARY_PATH="/usr/lib" PATH="/usr/bin" RUST_BACKTRACE="1" "audiod" exited without notifying readiness
+1970-01-01T00-02-55.308Z [@xhcid::xhci::scheme:1285 WARN] port 1.4: SET_INTERFACE 0 refused (I/O error); it has one alternate setting, going on
+RedoxFS: IO ERROR: No such device (os error 19)
+[ERROR redoxfs] failed to open image /scheme/disk.mmc/0p1: I/O error
+[ERROR redoxfs] not able to mount path /scheme/disk.mmc/0p1
+1970-01-01T00-02-55.357Z [@xhcid::xhci::scheme:2978 ERROR] CONTROL_TRANSFER transfer Trb { data: 0000000000000000, status: 00000000, control: 00011020 } failed with event Trb { data: 0000000002936080, status: 06000000, control: 02018001 }
+init: env -i INIT_NOTIFY="4" LD_LIBRARY_PATH="/usr/lib" PATH="/usr/bin" RUST_BACKTRACE="1" "redoxfs" "/scheme/disk.mmc/0p1" "data" failed with exit status: 1
+1970-01-01T00-02-55.388Z [@xhcid::xhci::scheme:1285 WARN] port 1.4: SET_INTERFACE 1 refused (I/O error); it has one alternate setting, going on
+vc4d: list 4 at 2048: [Plane { bus: 3256123392, pitch: 7680, x: 0, y: 0, width: 1920, height: 1080, alpha: false, scale: None }] [4800d807, 00000000, 4000fff0, 04380780, c0c0c0c0, c2148000, c0c0c0c0, 00001e00, 80000000]
+1970-01-01T00-02-55.515Z [@usbhidd:137 WARN] unknown usage_page 0x7 usage 0x0
+1970-01-01T00-02-55.519Z [@usbhidd:652 INFO] unsupported usage 0xC:0xB5 value 0
+1970-01-01T00-02-55.548Z [@usbhidd:652 INFO] unsupported usage 0xC:0xB6 value 0
+1970-01-01T00-02-55.565Z [@usbhidd:652 INFO] unsupported usage 0xC:0xEA value 0
+1970-01-01T00-02-55.582Z [@usbhidd:652 INFO] unsupported usage 0xC:0xE9 value 0
+1970-01-01T00-02-55.599Z [@usbhidd:652 INFO] unsupported usage 0xC:0x223 value 0
+1970-01-01T00-02-55.616Z [@usbhidd:652 INFO] unsupported usage 0xC:0x192 value 0
+########## Redox OS ##########
+# Login with the following:  #
+# `user`                     #
+# `root`:`password`          #
+##############################
+redox-rpi v0.7.0-dev-55-gaa7a18e1+x5b9c (netboot, 2026-11-24T12:55:32Z)
+experiments: cosmic-apps-source desktop netstack-watch orbital orbital-apps pi400 pi400-mem pointer-bench vc4d
+
+⏎                                                                                redox login: redox login: vc4d: check: after 2 s: PASS frames advance, errors [], ctrl 0x87800438 bkgnd 0x81000000 list 2048 active 2048 stat 0xa007c428 (mode 2, frame 60)
+vc4d: check: after 5 s: PASS frames advance, errors [], ctrl 0x87800438 bkgnd 0x81000000 list 2048 active 2048 stat 0xa00500a0 (mode 2, frame 16)
+startup-sound: no data partition, using /etc/startup-sound
+ion: pipeline execution error: failed to redirect stdout to file '/scheme/audio': No such device (os error 19)
+[src/initnsmgr.rs:47 WARN] Scheme audio not found in namespace
+[src/initnsmgr.rs:47 WARN] Scheme orbital not found in namespace
+vc4d: check: after 10 s: PASS frames advance, errors [], ctrl 0x87800438 bkgnd 0x81000000 list 2048 active 2048 stat 0xa00fc323 (mode 2, frame 60)
+kernel::scheme::user:DEBUG -- call_fdread: payload: 8 metadata: 2
+kernel::scheme::user:DEBUG -- call_fdread: payload: 8 metadata: 2
+[src/initnsmgr.rs:47 WARN] Scheme audio not found in namespace
+vc4d: check: after 30 s: PASS frames advance, errors [], ctrl 0x87800438 bkgnd 0x81000000 list 2176 active 2176 stat 0xa00c00a9 (mode 2, frame 0)
+vc4d: check: after 60 s: PASS frames advance, errors [], ctrl 0x87800438 bkgnd 0x81000000 list 2304 active 2304 stat 0xa00e010c (mode 2, frame 32)
+vc4d: check: after 120 s: PASS frames advance, errors [], ctrl 0x87800438 bkgnd 0x81000000 list 2304 active 2304 stat 0xa001c3fe (mode 2, frame 28)
