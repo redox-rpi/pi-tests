@@ -1,0 +1,10 @@
+### ping -c 5 <router>  (4.3 s)
+PING <router> (<router>) 40(68) bytes of data.
+From <router> icmp_seq=0 time=1.545ms
+From <router> icmp_seq=1 time=0.925ms
+From <router> icmp_seq=2 time=0.873ms
+From <router> icmp_seq=3 time=1.32ms
+From <router> icmp_seq=4 time=1.324ms
+--- <router> ping statistics ---
+5 packets transmitted, 5 packets received, 0.00% packet loss
+rtt min/avg/max = 0.873/1.197/1.545 ms

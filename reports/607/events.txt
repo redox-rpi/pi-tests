@@ -1,0 +1,10 @@
+start 12:12:08
+staged build_id = "v0.7.0-dev-40-g97c0de46+x42c6" 12:12:08
+found after 24 s
+P boot: redox-rpi v0.7.0-dev-40-g97c0de46+x42c6 (netboot, 2026-11-24T11:59:43Z) 12:12:46
+ping: 5 packets transmitted, 5 packets received, 0.00% packet loss  12:15:21
+P heartbeats: 60 120 180 240 300  12:18:41
+devsh answers 12:18:43
+found after 24 s
+stable boot: redox-rpi v0.7.0-dev-9-g368175ee+x2d42 (netboot, 2026-11-23T03:30:57Z) 12:19:24
+stable up build_id = "v0.7.0-dev-9-g368175ee+x2d42" 12:19:54
