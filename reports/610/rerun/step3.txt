@@ -1,0 +1,12 @@
+### type user: ['pointer-bench: typed 4 keys']
+### enter 1: ['pointer-bench: enter']
+### enter 2: ['pointer-bench: enter']
+### enter 3: ['pointer-bench: enter']
+### vc4shot a: ['vc4shot: channel 1 640x480, list at 2048, 2 planes, ctrl 0x828001e0 bkgnd 0x81000000 list 2048 active 2048 stat 0xa39881b3 (mode 2, frame 8)', 'vc4shot: plane 0: ListPlane { unity: true, format: 7, x: 0, y: 0, width: 640, height: 480, bus: 3256123392, pitch: 2560, alpha: false }', 'vc4shot: plane 1: ListPlane { unity: true, format: 7, x: 391, y: 294, width: 64, height: 64, bus: 3258605568, pitch: 256, alpha: true }', 'vc4shot: wrote /tmp/a.ppm (921615 bytes)']
+### a: 921615 bytes, stats (640, 480, 0.600555985963633, 667)
+### enter: ['pointer-bench: enter']
+### vc4shot b: ['vc4shot: channel 1 640x480, list at 2048, 2 planes, ctrl 0x828001e0 bkgnd 0x81000000 list 2048 active 2048 stat 0xa39400da (mode 2, frame 0)', 'vc4shot: plane 0: ListPlane { unity: true, format: 7, x: 0, y: 0, width: 640, height: 480, bus: 3257376768, pitch: 2560, alpha: false }', 'vc4shot: plane 1: ListPlane { unity: true, format: 7, x: 391, y: 294, width: 64, height: 64, bus: 3258605568, pitch: 256, alpha: true }', 'vc4shot: wrote /tmp/b.ppm (921615 bytes)']
+### b: 921615 bytes, stats (640, 480, 0.899421227726382, 494)
+### super+t: ['pointer-bench: super+t']
+### vc4shot c: ['vc4shot: channel 1 640x480, list at 2304, 2 planes, ctrl 0x828001e0 bkgnd 0x81000000 list 2304 active 2304 stat 0xc39ec1e0 (mode 3, frame 44)', 'vc4shot: plane 0: ListPlane { unity: true, format: 7, x: 0, y: 0, width: 640, height: 480, bus: 3257376768, pitch: 2560, alpha: false }', 'vc4shot: plane 1: ListPlane { unity: true, format: 7, x: 391, y: 294, width: 64, height: 64, bus: 3258605568, pitch: 256, alpha: true }', 'vc4shot: wrote /tmp/c.ppm (921615 bytes)']
+### c: 921615 bytes, stats (640, 480, 0.6264868067265187, 708)

@@ -1,0 +1,19 @@
+start 13:01:01
+config: 20d19 < total_mem=1024 24a24,25 > hdmi_force_hotplug=1 > hdmi_drive=2  13:01:01
+staged /home/zehrer/redox-rpi-graphics/keep/gfx-g1d-netboot (build_id = "v0.7.0-dev-55-gaa7a18e1+x5b9c") 13:01:01
+U-Boot prompt (load failed), typing boot (1) 13:02:05
+U-Boot prompt (load failed), typing boot (2) 13:03:03
+boot: login, U-Boot retries 2, banner: redox-rpi v0.7.0-dev-55-gaa7a18e1+x5b9c (netboot, 2026-11-24T12:55:32Z) 13:03:42
+boot vc4d lines 35; check: vc4d: check: after 10 s: PASS frames advance, errors [], ctrl 0x828001e0 bkgnd 0x81000000 list 2304 active 2304 stat 0xa39b8130 (mode 2, frame 56); irq probe lines 2 13:04:02
+devsh up 13:04:03
+desktop-check rc=0: PASS vc4d: vc4d runs (its check: in the serial log) PASS console: 921615 bytes, 640x480, top colour 98%, 2 colours PASS desktop: Orbital runs; 921615 bytes, 640x480, top colour 75%, 318 colours PASS cursor: cursor plane in the HVS list at [('186', '131'), ('391', '294')] 4 pass, 0 fail; output in keep/gfx-g1d-netboot/out  13:05:53
+step3 rc=0: ### a: 921615 bytes, stats (640, 480, 0.600555985963633, 667) ### b: 921615 bytes, stats (640, 480, 0.899421227726382, 494) ### c: 921615 bytes, stats (640, 480, 0.6264868067265187, 708)  13:07:51
+pointer-bench: pointer-bench: 1200 moves in 20.0 s (60.0/s) 13:08:12
+vblank lines in step 4: vc4d: vblank: 600 interrupts; flips shown on the interrupt 346, on the timer 0  13:08:12
+still answers 13:08:14
+panic/UNHANDLED: 0 13:08:14
+config restored: same 13:08:14
+staged /home/zehrer/redox-rpi-graphics/keep/pi400-fbshot-stage (build_id = "v0.6.0-dev-105-gbef6d90a+xcf2a") 13:08:14
+U-Boot prompt (load failed), typing boot (1) 13:09:59
+boot: login, U-Boot retries 1, banner: redox-rpi v0.6.0-dev-105-gbef6d90a+xcf2a (netboot, 2026-11-18T04:35:59Z) 13:10:23
+restore: login 13:10:23
