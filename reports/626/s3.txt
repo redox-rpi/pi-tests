@@ -1,0 +1,11 @@
+### v3dprobe --via-v3dd --mapped --faults | grep -e mapped: -e faults:  (1.4 s)
+v3dprobe: csd: read interrupted, reading again
+v3dprobe: mapped: PASS: both ways, and after a free while mapped (bos 24 frees 23 jobs 200 cl_jobs 100 failed 0 mmu_faults 0 resets 0 job_us_max 255 outomem 0 overflow_chunks 1 spaces 1 spaces_made 3 space_loaded 0 irq /scheme/irq/phandle-1/0,74,4 irqs 298 irq_wakeups 298 timer_wakeups 104 maps 1 unmaps 0 live_bos 0 submitted 200 done_through 200 queued 0 running - zombies 0)
+v3dprobe: faults: bad address: PASS (v3dd: csd: error mmu-fault no-pte,write-violation va 0x3f000000 unit L2T)
+v3dprobe: faults: CSD after the fault: PASS
+v3dprobe: faults: endless job: PASS (v3dd: cl: error timeout: bin job not done after 1009015 us; V3D reset)
+v3dprobe: faults: CSD after the reset: PASS
+v3dprobe: faults: render after the reset: PASS
+v3dprobe: faults: v3dd stats: bos 34 frees 33 jobs 232 cl_jobs 111 failed 2 mmu_faults 1 resets 1 job_us_max 255 outomem 0 overflow_chunks 1 spaces 1 spaces_made 7 space_loaded 0 irq /scheme/irq/phandle-1/0,74,4 irqs 338 irq_wakeups 338 timer_wakeups 210 maps 11 unmaps 11 live_bos 0 submitted 232 done_through 232 queued 0 running - zombies 0
+v3dprobe: faults: PASS: the MMU fault came back, the endless job was reset, the next jobs ran right
+v3dprobe: mapped: no BOs leaked (bos 34 frees 33 jobs 232 cl_jobs 111 failed 2 mmu_faults 1 resets 1 job_us_max 255 outomem 0 overflow_chunks 1 spaces 0 spaces_made 7 space_loaded 0 irq /scheme/irq/phandle-1/0,74,4 irqs 338 irq_wakeups 338 timer_wakeups 210 maps 11 unmaps 11 live_bos 0 submitted 232 done_through 232 queued 0 running - zombies 0)
