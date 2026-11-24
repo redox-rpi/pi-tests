@@ -21,7 +21,8 @@ tests on it. Results go to [reports/](reports/), one file per row.
    origin/main right before; if your push is rejected, fetch again and take
    the new number. Never pick a number by looking at the open rows: done
    rows and `reports/` use numbers too. A rerun or a further step of a test
-   keeps its number and says so in the Done line (`598 rerun …`,
+   keeps its number and says so at the start of its queue row's Test cell
+   (`Rerun: …`, `Step 7: …`) and in the Done line (`598 rerun …`,
    `109 step 7 …`). `scripts/check-numbers.py` (run in CI) fails on a
    number used twice.
 2. **Take the Pi** only when your test is next (see the order below) and
