@@ -1,0 +1,7 @@
+### v3dprobe --via-v3dd --queue --clients 8 --loops 64  (1.6 s)
+v3dprobe: queue: 8 clients with 64 jobs in flight each: PASS (512 jobs right in 1382 ms)
+v3dprobe: queue: an endless job in the middle of a queue: PASS (v3dd: wait: error timeout: bin job not done after 1009427 us; V3D reset)
+v3dprobe: queue: a client closed with jobs in flight: PASS
+v3dprobe: queue: another client's BO is out of reach: PASS (both start at 0x100000; v3dd: csd: error mmu-fault no-pte,write-violation va 0x102000 unit L2T)
+v3dprobe: queue: no BOs left: PASS (bos 2142 frees 2141 jobs 1532 cl_jobs 117 failed 10 mmu_faults 3 resets 7 job_us_max 15209 outomem 0 overflow_chunks 1 spaces 0 spaces_made 35 space_loaded 0 irq /scheme/irq/phandle-1/0,74,4 irqs 1598 irq_wakeups 1594 timer_wakeups 875 maps 23 unmaps 23 live_bos 0 submitted 1532 done_through 1532 queued 0 running - zombies 0)
+v3dprobe: queue: PASS

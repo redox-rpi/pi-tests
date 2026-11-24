@@ -1,0 +1,2 @@
+### v3dprobe --via-v3dd --ioctl --libc --loops 64  (1.4 s)
+v3dprobe: ioctl: PASS: HUB_IDENT1 0xe1124; 64 of 64 jobs right, 2130 us per job round trip; wrong arguments refused; endless job: ETIME, then EIO after 1056 ms; no BOs left (bos 1096 frees 1095 jobs 1012 cl_jobs 116 failed 8 mmu_faults 2 resets 6 job_us_max 15209 outomem 0 overflow_chunks 1 spaces 0 spaces_made 23 space_loaded 0 irq /scheme/irq/phandle-1/0,74,4 irqs 1092 irq_wakeups 1092 timer_wakeups 757 maps 23 unmaps 23 live_bos 0 submitted 1012 done_through 1012 queued 0 running - zombies 0)
