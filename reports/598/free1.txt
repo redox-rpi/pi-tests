@@ -1,0 +1,6 @@
+### serial login done
+### free  (typing 0.6 s, total 0.9 s)
+root:~# froot:~# frroot:~# freroot:~# freeroot:~# free
+             total      used      free
+Mem:        736792    137388    599404
+⏎                                                                                root:~# root:~# 
