@@ -1,0 +1,5 @@
+### oomtest fork-shared 64; echo RC $?  (0.3 s)
+oomtest: mode fork-shared, 0 idle threads, pid 416
+oomtest: 64 MiB shared, forking
+oomtest: child status 0x0, last byte 0x5a (0x5a expected)
+RC 0
