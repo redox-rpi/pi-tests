@@ -1,0 +1,12 @@
+### ion /usr/share/sigcont-restart/check.ion  (22.0 s)
+In file included from /usr/share/sigcont-restart/sigcont.c:11:
+In file included from /usr/include/time.h:5:
+/usr/include/bits/null.h:14: warning: NULL redefined
+waitpid SIGCONT, default action:  0 of 5 EINTR (want 0)
+waitpid SIGUSR1, SA_RESTART:      0 of 5 EINTR (want 0), 564 caught
+waitpid SIGUSR1, no SA_RESTART:   5 of 5 EINTR (want > 0, the control, not counted), 555 caught
+read    SIGCONT, default action:  0 of 5 EINTR (want 0)
+read    SIGUSR1, SA_RESTART:      0 of 5 EINTR (want 0), 552 caught
+read    SIGUSR1, no SA_RESTART:   5 of 5 EINTR (want > 0, the control), 546 caught
+SIGCONT-REPRO: pass, 0 of 6 lines wrong
+SIGCONT-REPRO done

@@ -1,0 +1,12 @@
+### free  (0.3 s)
+total      used      free
+Mem:        771296    125868    645428
+### ls /scheme  (0.4 s)
+audio	   disk.mmc	 i2c	 kernel.acpi  network.usb_lan78xx  rpi-firmware	 tcp
+audiohw	   display.vesa	 icmp	 kernel.dtb   null		   serio	 time
+chan	   event	 initfs	 log	      pipe		   shm		 udp
+data	   fbcon.2	 input	 logging      proc		   spi		 uds_dgram
+debug	   file		 ip	 memory	      pty		   sudo		 uds_stream
+disk.live  gpio		 irq	 netcfg	      rand		   sys		 zero
+### ps | wc -l  (0.4 s)
+53

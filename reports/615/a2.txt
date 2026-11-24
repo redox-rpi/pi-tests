@@ -1,0 +1,2 @@
+### ping -c 1 no.such.name  (0.3 s)
+Error: failed to lookup address information: Name does not resolve

@@ -1,0 +1,8 @@
+kernel::scheme::user:DEBUG -- call_fdread: payload: 8 metadata: 2
+[src/procmgr.rs:292 WARN] State Id(345) was placeholder!
+removing handle: id: 7, Some(Partition(0, 0))
+kernel::scheme::user:DEBUG -- call_fdread: payload: 8 metadata: 2
+[src/initnsmgr.rs:92 WARN] nsmgr: scheme t117 ended, registering it again
+[src/procmgr.rs:292 WARN] State Id(360) was placeholder!
+removing handle: id: 8, Some(Partition(0, 0))
+[src/procmgr.rs:292 WARN] State Id(368) was placeholder!

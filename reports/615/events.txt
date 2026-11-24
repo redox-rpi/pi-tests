@@ -1,0 +1,18 @@
+start 14:54:55
+staged build_id = "v0.7.0-dev-42-gf7f6aff2+x3b6d" 14:54:55
+found after 24 s
+b1 boot: redox-rpi v0.7.0-dev-42-gf7f6aff2+x3b6d (netboot, 2026-11-24T13:12:17Z loader 14:55:18.041 login 14:55:30.253 rootport 0 14:55:47
+pitest rc=0: PASS version: v0.7.0-dev-42-gf7f6aff2+x3b6d PASS manifest: present in the image PASS ps: 52 processes (piped) PASS ps-tty: 52 lines straight to the terminal, rc=0 PASS sdcard: write, read back, delete on /scheme/data PASS starts: 0 of 300 failed  14:56:29
+615 #291: count 0 ; plain: Error: failed to lookup address information: Name does not resolve ; bt: 1; boot log bt: 0 14:56:34
+615 b1: ion: bg [0] 389  14:57:03
+615 b2: LICENCE.broadcom	       config.txt armstub8-redox.bin	       fixup.dat bcm2710-rpi-3-b-plus.dtb       fixup_cd.dat bcm2710-rpi-3-b.dtb	       overlays bcm2710-rpi-zero-2-w.dtb       redox-rpi-bootsele 14:57:03
+615 b3:   14:57:03
+615 b4: ls: cannot access '/scheme/t117': No such device  14:57:03
+615 b5: ion: bg [0] 410  14:57:03
+615 b6: LICENCE.broadcom	       config.txt armstub8-redox.bin	       fixup.dat bcm2710-rpi-3-b-plus.dtb       fixup_cd.dat bcm2710-rpi-3-b.dtb	       overlays bcm2710-rpi-zero-2-w.dtb       redox-rpi-bootsele 14:57:03
+615 b7:   14:57:03
+615 nsmgr: [src/initnsmgr.rs:92 WARN] nsmgr: scheme t117 ended, registering it again  14:57:03
+615 panic 0 14:57:03
+found after 24 s
+stable boot: redox-rpi v0.7.0-dev-9-g368175ee+x2d42 (netboot, 2026-11-23T03:30:57Z) loader 14:57:25.943 login 14:57:38.174 rootport 0 14:57:55
+stable up 14:57:55

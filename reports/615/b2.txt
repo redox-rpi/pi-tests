@@ -1,0 +1,11 @@
+### ls /scheme/t117  (0.4 s)
+LICENCE.broadcom	       config.txt
+armstub8-redox.bin	       fixup.dat
+bcm2710-rpi-3-b-plus.dtb       fixup_cd.dat
+bcm2710-rpi-3-b.dtb	       overlays
+bcm2710-rpi-zero-2-w.dtb       redox-rpi-bootselect-3bp-20261110b-bootcode.bin
+boot.scr		       redox-rpi-bootselect-3bp-20261110c-bootcode.bin
+bootcode-broadcom.bin	       start.elf
+bootcode-selector-233c8c5.bin  start_cd.elf
+bootcode-selector.bin	       u-boot.bin
+bootcode.bin

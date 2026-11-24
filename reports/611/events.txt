@@ -1,0 +1,11 @@
+start 14:51:51
+staged build_id = "v0.7.0-dev-43-g9365a560+x0407" 14:51:51
+found after 24 s
+b1 boot: redox-rpi v0.7.0-dev-43-g9365a560+x0407 (netboot, 2026-11-24T12:56:33Z loader 14:52:13.363 login 14:52:25.568 rootport 0 14:52:43
+pitest rc=0: PASS version: v0.7.0-dev-43-g9365a560+x0407 PASS manifest: present in the image PASS ps: 52 processes (piped) PASS ps-tty: 52 lines straight to the terminal, rc=0 PASS sdcard: write, read back, delete on /scheme/data PASS starts: 0 of 300 failed  14:53:25
+611 s1: pipe: 41175 signals, 186479 rounds pipe: 14224 signals, 154426 rounds SIGREPRO: pass, 0 of 8 receivers got no signal  14:54:53
+611 s2: SIGCONT-REPRO: pass, 0 of 6 lines wrong  14:54:53
+611 s3: In file included from /usr/share/waitpid-signal/wpsig.c:10: WPSIG: pass, 0 of 4 cases wrong  14:54:53
+611 s4: chaos:   signals: 1 senders for 2385 ms, 161610 signals, 594424 pipe rounds, 0 EINTR (no SA_RESTART) chaos: round 1 ok (2472 ms) chaos: done: 1 rounds, 0 failed, 2 s, free-mem=579MiB  14:54:53
+611 s5: chaos:   signals: 3 senders for 560 ms, 71534 signals, 88452 pipe rounds, 0 EINTR (no SA_RESTART) chaos: round 20 ok (730 ms) chaos: done: 20 rounds, 0 failed, 37 s, free-mem=572MiB  14:54:53
+611 panic 0 14:54:53

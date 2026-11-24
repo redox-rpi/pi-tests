@@ -1,0 +1,123 @@
+### chaos --kind signals --rounds 20 --seed 1  (37.4 s)
+chaos: start seed=0x1 rounds=20 timeout=60s mem-reserve=48MiB free-mem=568MiB
+chaos: round 1/20 kind=signals seed=0xe6199b04d5aa600
+chaos:   signals: getpid() 507, getppid() 504, round runner 504
+chaos:   signals: sender 0 sent 133657 to 507
+chaos:   signals: 1 senders for 1963 ms, 131872 signals, 489831 pipe rounds, 0 EINTR (SA_RESTART)
+chaos: round 1 ok (2038 ms)
+chaos: round 2/20 kind=signals seed=0xc8674bcb42e3aad9
+chaos:   signals: getpid() 511, getppid() 504, round runner 504
+chaos:   signals: sender 0 sent 76251 to 511
+chaos:   signals: 1 senders for 1119 ms, 74381 signals, 278724 pipe rounds, 0 EINTR (SA_RESTART)
+chaos: round 2 ok (1200 ms)
+chaos: round 3/20 kind=signals seed=0xd052b2d8d46e7181
+chaos:   signals: getpid() 515, getppid() 504, round runner 504
+chaos:   signals: 1 senders for 2385 ms, 161863 signals, 597632 pipe rounds, 0 EINTR (no SA_RESTART)
+chaos:   signals: sender 0: kill(515) after 162949: No such process
+chaos: round 3 ok (2440 ms)
+chaos: round 4/20 kind=signals seed=0xac718cf8ce31398d
+chaos:   signals: getpid() 519, getppid() 504, round runner 504
+chaos:   signals: sender 1 sent 84461 to 519
+chaos:   signals: sender 0 sent 83143 to 519
+chaos:   signals: sender 2 sent 83104 to 519
+chaos:   signals: 3 senders for 1916 ms, 245351 signals, 350951 pipe rounds, 0 EINTR (no SA_RESTART)
+chaos: round 4 ok (2071 ms)
+chaos: round 5/20 kind=signals seed=0x56b2b122e9483038
+chaos:   signals: getpid() 525, getppid() 504, round runner 504
+chaos:   signals: 2 senders for 1281 ms, 102019 signals, 267868 pipe rounds, 0 EINTR (no SA_RESTART)
+chaos:   signals: sender 1: kill(525) after 57300: No such process
+chaos:   signals: sender 0: kill(525) after 61401: No such process
+chaos: round 5 ok (1344 ms)
+chaos: round 6/20 kind=signals seed=0xbffab238424d3a95
+chaos:   signals: getpid() 530, getppid() 504, round runner 504
+chaos:   signals: 1 senders for 850 ms, 56739 signals, 212843 pipe rounds, 0 EINTR (no SA_RESTART)
+chaos:   signals: sender 0: kill(530) after 57836: No such process
+chaos: round 6 ok (907 ms)
+chaos: round 7/20 kind=signals seed=0x7fb338715ebc2cde
+chaos:   signals: getpid() 534, getppid() 504, round runner 504
+chaos:   signals: 3 senders for 2363 ms, 271859 signals, 479548 pipe rounds, 0 EINTR (no SA_RESTART)
+chaos:   signals: sender 0: kill(534) after 96577: No such process
+chaos:   signals: sender 1: kill(534) after 80261: No such process
+chaos:   signals: sender 2: kill(534) after 96342: No such process
+chaos: round 7 ok (2419 ms)
+chaos: round 8/20 kind=signals seed=0x2d53666f8cdbba9c
+chaos:   signals: getpid() 540, getppid() 504, round runner 504
+chaos:   signals: sender 0 sent 113793 to 540
+chaos:   signals: sender 1 sent 97525 to 540
+chaos:   signals: sender 2 sent 96350 to 540
+chaos:   signals: 3 senders for 2376 ms, 285549 signals, 395106 pipe rounds, 0 EINTR (SA_RESTART)
+chaos: round 8 ok (2614 ms)
+chaos: round 9/20 kind=signals seed=0x27a6c0f14fd15210
+chaos:   signals: getpid() 546, getppid() 504, round runner 504
+chaos:   signals: sender 0 sent 94597 to 546
+chaos:   signals: sender 1 sent 90767 to 546
+chaos:   signals: 2 senders for 1881 ms, 181957 signals, 371549 pipe rounds, 0 EINTR (SA_RESTART)
+chaos: round 9 ok (1955 ms)
+chaos: round 10/20 kind=signals seed=0xbc752df0c2a59aff
+chaos:   signals: getpid() 551, getppid() 504, round runner 504
+chaos:   signals: sender 0 sent 129368 to 551
+chaos:   signals: sender 1 sent 130783 to 551
+chaos:   signals: 2 senders for 2955 ms, 256903 signals, 608108 pipe rounds, 0 EINTR (SA_RESTART)
+chaos: round 10 ok (3032 ms)
+chaos: round 11/20 kind=signals seed=0xdff1c948ec621e61
+chaos:   signals: getpid() 556, getppid() 504, round runner 504
+chaos:   signals: sender 0 sent 187923 to 556
+chaos:   signals: 1 senders for 2813 ms, 185926 signals, 674637 pipe rounds, 0 EINTR (SA_RESTART)
+chaos: round 11 ok (2889 ms)
+chaos: round 12/20 kind=signals seed=0xa1e939fb928e0e31
+chaos:   signals: getpid() 560, getppid() 504, round runner 504
+chaos:   signals: sender 0 sent 74359 to 560
+chaos:   signals: sender 2 sent 89444 to 560
+chaos:   signals: sender 1 sent 79425 to 560
+chaos:   signals: 3 senders for 1856 ms, 239480 signals, 276793 pipe rounds, 0 EINTR (SA_RESTART)
+chaos: round 12 ok (2111 ms)
+chaos: round 13/20 kind=signals seed=0x2f1da604b23b0062
+chaos:   signals: getpid() 566, getppid() 504, round runner 504
+chaos:   signals: sender 0 sent 56140 to 566
+chaos:   signals: sender 1 sent 43827 to 566
+chaos:   signals: sender 2 sent 58162 to 566
+chaos:   signals: 3 senders for 1564 ms, 152070 signals, 286188 pipe rounds, 0 EINTR (no SA_RESTART)
+chaos: round 13 ok (1649 ms)
+chaos: round 14/20 kind=signals seed=0x16045f76308306b2
+chaos:   signals: getpid() 572, getppid() 504, round runner 504
+chaos:   signals: sender 0 sent 46745 to 572
+chaos:   signals: 1 senders for 760 ms, 45048 signals, 171100 pipe rounds, 0 EINTR (no SA_RESTART)
+chaos: round 14 ok (840 ms)
+chaos: round 15/20 kind=signals seed=0x80ee2426898e51a8
+chaos:   signals: getpid() 576, getppid() 504, round runner 504
+chaos:   signals: sender 0 sent 151740 to 576
+chaos:   signals: 1 senders for 2279 ms, 149485 signals, 552025 pipe rounds, 0 EINTR (no SA_RESTART)
+chaos: round 15 ok (2359 ms)
+chaos: round 16/20 kind=signals seed=0xe314c18d96212ac1
+chaos:   signals: getpid() 580, getppid() 504, round runner 504
+chaos:   signals: sender 1 sent 41012 to 580
+chaos:   signals: sender 2 sent 39968 to 580
+chaos:   signals: sender 0 sent 39727 to 580
+chaos:   signals: 3 senders for 1054 ms, 113043 signals, 193455 pipe rounds, 0 EINTR (SA_RESTART)
+chaos: round 16 ok (1130 ms)
+chaos: round 17/20 kind=signals seed=0x79ffbfe25b8cfd97
+chaos:   signals: getpid() 586, getppid() 504, round runner 504
+chaos:   signals: sender 0 sent 114949 to 586
+chaos:   signals: sender 1 sent 107635 to 586
+chaos:   signals: 2 senders for 2676 ms, 215722 signals, 526873 pipe rounds, 0 EINTR (SA_RESTART)
+chaos: round 17 ok (2755 ms)
+chaos: round 18/20 kind=signals seed=0x4ede306da9af2451
+chaos:   signals: getpid() 591, getppid() 504, round runner 504
+chaos:   signals: sender 0 sent 40511 to 591
+chaos:   signals: 1 senders for 637 ms, 38738 signals, 148074 pipe rounds, 0 EINTR (SA_RESTART)
+chaos: round 18 ok (715 ms)
+chaos: round 19/20 kind=signals seed=0xaaff6e4383622b9a
+chaos:   signals: getpid() 595, getppid() 504, round runner 504
+chaos:   signals: sender 1 sent 79797 to 595
+chaos:   signals: sender 0 sent 66656 to 595
+chaos:   signals: sender 2 sent 69912 to 595
+chaos:   signals: 3 senders for 1640 ms, 212842 signals, 241088 pipe rounds, 0 EINTR (SA_RESTART)
+chaos: round 19 ok (1890 ms)
+chaos: round 20/20 kind=signals seed=0x1947ef5c1f736468
+chaos:   signals: getpid() 601, getppid() 504, round runner 504
+chaos:   signals: sender 0 sent 25680 to 601
+chaos:   signals: sender 1 sent 26501 to 601
+chaos:   signals: sender 2 sent 25851 to 601
+chaos:   signals: 3 senders for 560 ms, 71534 signals, 88452 pipe rounds, 0 EINTR (no SA_RESTART)
+chaos: round 20 ok (730 ms)
+chaos: done: 20 rounds, 0 failed, 37 s, free-mem=572MiB

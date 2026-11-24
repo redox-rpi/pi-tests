@@ -1,0 +1,8 @@
+### chaos --kind signals --round-seed 0xd052b2d8d46e7181  (2.8 s)
+chaos: start seed=0x1ed00000083 rounds=1 timeout=60s mem-reserve=48MiB free-mem=568MiB
+chaos: round 1/1 kind=signals seed=0xd052b2d8d46e7181
+chaos:   signals: getpid() 496, getppid() 493, round runner 493
+chaos:   signals: sender 0 sent 163856 to 496
+chaos:   signals: 1 senders for 2385 ms, 161610 signals, 594424 pipe rounds, 0 EINTR (no SA_RESTART)
+chaos: round 1 ok (2472 ms)
+chaos: done: 1 rounds, 0 failed, 2 s, free-mem=579MiB

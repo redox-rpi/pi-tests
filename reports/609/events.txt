@@ -1,0 +1,15 @@
+start 14:35:22
+staged build_id = "v0.7.0-dev-24-g21c6b1d2+x9cc2" 14:35:22
+found after 26 s
+no devsh, serial reset 1 14:38:23
+ref598 boot: redox-rpi v0.7.0-dev-24-g21c6b1d2+x9cc2 (netboot, 2026-11-24T09:00:11Z loader 14:35:44.556 login 14:35:58.425 rootport 1 14:39:27
+staged build_id = "v0.7.0-dev-43-g4214edf0+x42c6" 14:39:28
+found after 24 s
+no devsh, serial reset 1 14:42:25
+no devsh, serial reset 2 14:45:53
+b1 boot: redox-rpi v0.7.0-dev-43-g4214edf0+x42c6 (netboot, 2026-11-24T12:17:51Z loader 14:39:49.773 login 14:40:03.040 rootport 2 14:46:47
+found after 24 s
+no devsh, serial reset 1 14:49:46
+b2 boot: redox-rpi v0.7.0-dev-43-g4214edf0+x42c6 (netboot, 2026-11-24T12:17:51Z loader 14:47:09.709 login 14:47:23.076 rootport 1 14:50:44
+609 checks: total      used      free Mem:        771296    125868    645428 audio	   disk.mmc	 i2c	 kernel.acpi  network.usb_lan78xx  rpi-firmware	 tcp audiohw	   display.vesa	 icmp	 kernel.dtb   null		   serio	 time chan	   event	 initfs	 log	      pipe		   shm		 udp data	   fbcon.2	 input	 logging      proc		   spi		 uds_dgram debug	   file		 ip	 memory	      pty		   sudo		 uds_stream disk.live  gpio		 irq	 netcfg	      rand		   sys		 zero 53  14:51:06
+pitest rc=0: PASS version: v0.7.0-dev-43-g4214edf0+x42c6 PASS manifest: present in the image PASS ps: 57 processes (piped) PASS ps-tty: 57 lines straight to the terminal, rc=0 PASS sdcard: write, read back, delete on /scheme/data PASS starts: 0 of 300 failed  14:51:49

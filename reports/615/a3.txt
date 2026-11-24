@@ -1,0 +1,10 @@
+### env RUST_BACKTRACE=1 ping -c 1 no.such.name  (0.4 s)
+Error: failed to lookup address information: Name does not resolve
+Stack backtrace:
+0: <unknown>
+1: <unknown>
+2: <unknown>
+3: <unknown>
+4: <unknown>
+5: <unknown>
+6: <unknown>

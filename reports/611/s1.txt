@@ -1,0 +1,22 @@
+### ion /usr/share/sig-pipe/check.ion  (7.3 s)
+In file included from /usr/share/sig-pipe/sigrepro.c:8:
+In file included from /usr/include/time.h:5:
+/usr/include/bits/null.h:14: warning: NULL redefined
+[direct]   sender sent 28250
+user: 20 signals, 426 rounds
+[exec]   sender sent 25926
+user: 19 signals, 423 rounds
+[direct]   sender sent 42181
+getpid: 25 signals, 1183826 rounds
+[exec]   sender sent 57418
+getpid: 30 signals, 1432991 rounds
+[direct]   sender sent 61900
+sleep: 53 signals, 50 rounds
+[exec]   sender sent 61407
+sleep: 58 signals, 53 rounds
+[direct]   sender sent 49602
+pipe: 41175 signals, 186479 rounds
+[exec]   sender sent 37099
+pipe: 14224 signals, 154426 rounds
+SIGREPRO: pass, 0 of 8 receivers got no signal
+SIGREPRO done
