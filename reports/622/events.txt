@@ -1,0 +1,45 @@
+start 19:48:39
+old 0aafc622e6b21b9f, new 35d7c32d6a8d02ce 19:48:39
+installed 35d7c32d6a8d02ce 19:48:39
+boot: login, U-Boot retries 0, banner: redox-rpi v0.6.0-dev-105-gbef6d90a+xcf2a (netboot, 2026-11-18T04:35:59Z) 19:49:32
+boot 1: 1 login 0 0 0 0 1413 1 1 1 19:49:32
+boot: fault, U-Boot retries 0, banner: redox-rpi v0.6.0-dev-105-gbef6d90a+xcf2a (netboot, 2026-11-18T04:35:59Z) 19:50:59
+boot 2: 2 fault 0 0 0 0 1412 1 1 1 19:50:59
+boot: login, U-Boot retries 0, banner: redox-rpi v0.6.0-dev-105-gbef6d90a+xcf2a (netboot, 2026-11-18T04:35:59Z) 19:51:53
+boot 3: 3 login 0 0 0 0 1416 1 1 1 19:51:53
+boot: login, U-Boot retries 0, banner: redox-rpi v0.6.0-dev-105-gbef6d90a+xcf2a (netboot, 2026-11-18T04:35:59Z) 19:52:46
+boot 4: 4 login 0 0 0 0 1416 1 1 1 19:52:46
+boot: login, U-Boot retries 0, banner: redox-rpi v0.6.0-dev-105-gbef6d90a+xcf2a (netboot, 2026-11-18T04:35:59Z) 19:53:39
+boot 5: 5 login 0 0 0 0 1416 1 1 1 19:53:39
+boot: fault, U-Boot retries 0, banner: redox-rpi v0.6.0-dev-105-gbef6d90a+xcf2a (netboot, 2026-11-18T04:35:59Z) 19:55:06
+boot 6: 6 fault 0 0 0 0 1439 1 1 1 19:55:06
+boot: fault, U-Boot retries 0, banner: redox-rpi v0.6.0-dev-105-gbef6d90a+xcf2a (netboot, 2026-11-18T04:35:59Z) 19:56:27
+boot 7: 7 fault 0 0 0 0 1448 1 1 1 19:56:27
+boot: login, U-Boot retries 0, banner: redox-rpi v0.6.0-dev-105-gbef6d90a+xcf2a (netboot, 2026-11-18T04:35:59Z) 19:57:20
+boot 8: 8 login 0 0 0 0 1452 1 1 1 19:57:20
+boot: login, U-Boot retries 0, banner: redox-rpi v0.6.0-dev-105-gbef6d90a+xcf2a (netboot, 2026-11-18T04:35:59Z) 19:58:13
+boot 9: 9 login 0 0 0 0 1452 1 1 1 19:58:13
+boot: fault, U-Boot retries 0, banner: redox-rpi v0.6.0-dev-105-gbef6d90a+xcf2a (netboot, 2026-11-18T04:35:59Z) 19:59:40
+boot 10: 10 fault 0 0 0 0 1440 1 1 1 19:59:40
+boot: login, U-Boot retries 0, banner: redox-rpi v0.6.0-dev-105-gbef6d90a+xcf2a (netboot, 2026-11-18T04:35:59Z) 20:00:33
+boot 11: 11 login 0 0 0 0 1456 1 1 1 20:00:33
+boot: login, U-Boot retries 0, banner: redox-rpi v0.6.0-dev-105-gbef6d90a+xcf2a (netboot, 2026-11-18T04:35:59Z) 20:01:26
+boot 12: 12 login 0 0 0 0 1455 1 1 1 20:01:26
+boot: login, U-Boot retries 0, banner: redox-rpi v0.6.0-dev-105-gbef6d90a+xcf2a (netboot, 2026-11-18T04:35:59Z) 20:02:19
+boot 13: 13 login 0 0 0 0 1454 1 1 1 20:02:19
+boot: fault, U-Boot retries 0, banner: redox-rpi v0.6.0-dev-105-gbef6d90a+xcf2a (netboot, 2026-11-18T04:35:59Z) 20:03:44
+boot 14: 14 fault 0 0 0 0 1423 1 1 1 20:03:44
+boot: login, U-Boot retries 0, banner: redox-rpi v0.6.0-dev-105-gbef6d90a+xcf2a (netboot, 2026-11-18T04:35:59Z) 20:04:37
+boot 15: 15 login 0 0 0 0 1455 1 1 1 20:04:37
+boot: login, U-Boot retries 0, banner: redox-rpi v0.6.0-dev-105-gbef6d90a+xcf2a (netboot, 2026-11-18T04:35:59Z) 20:05:30
+boot 16: 16 login 0 0 0 0 1443 1 1 1 20:05:30
+boot: login, U-Boot retries 0, banner: redox-rpi v0.6.0-dev-105-gbef6d90a+xcf2a (netboot, 2026-11-18T04:35:59Z) 20:06:23
+boot 17: 17 login 0 0 0 0 1440 1 1 1 20:06:23
+boot: fault, U-Boot retries 0, banner: redox-rpi v0.6.0-dev-105-gbef6d90a+xcf2a (netboot, 2026-11-18T04:35:59Z) 20:07:50
+boot 18: 18 fault 0 0 0 0 1459 1 1 1 20:07:50
+boot: login, U-Boot retries 0, banner: redox-rpi v0.6.0-dev-105-gbef6d90a+xcf2a (netboot, 2026-11-18T04:35:59Z) 20:08:43
+boot 19: 19 login 0 0 0 0 1441 1 1 1 20:08:43
+boot: login, U-Boot retries 0, banner: redox-rpi v0.6.0-dev-105-gbef6d90a+xcf2a (netboot, 2026-11-18T04:35:59Z) 20:09:36
+boot 20: 20 login 0 0 0 0 1442 1 1 1 20:09:36
+boots without a U-Boot stop: 20 of 20; with an HTTP error or TFTP timeout: 0 20:09:36
+PASS: keep new u-boot.bin 20:09:36

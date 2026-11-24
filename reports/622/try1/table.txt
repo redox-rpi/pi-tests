@@ -1,0 +1,4 @@
+boot res retries httperr tftptimeout dhcpfail load_ms
+1 login 0 0 0 0 1446
+2 login 0 0 0 0 1416
+3 fault 0 0 0 0 1443
