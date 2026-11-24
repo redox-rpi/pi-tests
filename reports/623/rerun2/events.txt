@@ -1,0 +1,13 @@
+start 20:39:33
+staged /home/zehrer/redox-rpi-graphics/keep/um4-netboot (build_id = "v0.7.0-dev-57-gbf62e961+xc085") 20:39:33
+boot: login, U-Boot retries 0, banner: redox-rpi v0.7.0-dev-57-gbf62e961+xc085 (netboot, 2026-11-24T20:35:38Z) 20:40:14
+boot: login; redox-rpi v0.7.0-dev-57-gbf62e961+xc085 (netboot, 2026-11-24T20:35:38Z); mouse 1; kbd 2; set-idle 0; timed-out 0; panic/UNHANDLED 0 20:40:24
+devsh up 20:40:25
+(2) 27 UB /usr/lib/drivers/xhcid;27 US /usr/lib/drivers/xhcid;27 UB /usr/lib/drivers/xhcid;27 US /usr/lib/drivers/xhcid;27 UB /usr/lib/drivers/xhcid;27 UB /usr/lib/drivers/xhcid;27 UB /usr/lib/drivers/xhcid;31 US /usr/lib/drivers/usbhubd;49 UB /usr/lib/drivers/usbhidd;52 UR+ /usr/lib/drivers/usbhidd;53 UB /usr/lib/drivers/usbhidd; 20:43:27
+(3) skipped: no EDID (rpi-fbd: no EDID (no monitor, or the firmware does not read it)) 20:43:27
+(5) usbhubd at the end: 1; usbhidd 3; xhcid threads 7 (at 3 min 7) 20:43:28
+devsh answers at the end 20:43:29
+(4) problem lines 8; timed out 0; killing 0; panic/UNHANDLED 0 20:43:29
+staged /home/zehrer/redox-rpi-graphics/keep/pi400-fbshot-stage (build_id = "v0.6.0-dev-105-gbef6d90a+xcf2a") 20:43:29
+boot: login, U-Boot retries 0, banner: redox-rpi v0.6.0-dev-105-gbef6d90a+xcf2a (netboot, 2026-11-18T04:35:59Z) 20:44:19
+restore: login 20:44:19
