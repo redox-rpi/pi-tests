@@ -1,0 +1,15 @@
+start 13:27:24
+staged build_id = "v0.7.0-dev-42-ge3da28e7+xa91e" 13:27:24
+found after 24 s
+P boot: redox-rpi v0.7.0-dev-42-ge3da28e7+xa91e (netboot, 2026-11-24T13:22:52Z), rootport 0 13:28:17
+1 ping:  13:28:17
+2 wakeups: seconds 320 irq 2032 6.3/s busy 72 ms scheme 5729 17.9/s busy 95 ms time 0 0.0/s busy 0 ms hotplug 317 1.0/s busy 175 ms hotplug cycle-request busy 3 ms hotplug scan busy 125 ms hotplug links busy 35 ms hotplug select-tick busy 3 ms  13:33:19
+3 cycle: devsh back after 9.880252547 s (0 = not back in loop); serial: dwc2d: cycle: hub 2 port 1 power off dwc2d: cycle: hub 2 port 1 disconnected after 100 ms dwc2d: hub 2 port 1: device at address 3 removed dwc2d: cycle: hub 2 port 1 power on dwc2d:   hub 2 port 1: device connected dwc2d:     address 3: 0424:7800, USB 2.10, class 0xff, High speed dwc2d:       interface 0 alt 0: class 0xff subclass 0x00 protocol 0xff dwc2d:         endpoint 0x81: bulk max packet 51 13:33:31
+devsh answers after cycle 13:33:37
+found after 24 s
+stable boot: redox-rpi v0.7.0-dev-9-g368175ee+x2d42 (netboot, 2026-11-23T03:30:57Z), rootport 0 13:34:29
+stable ping:  13:34:29
+staged P again for step 1 13:35:04
+P boot 2: redox-rpi v0.7.0-dev-42-ge3da28e7+xa91e (netboot, 2026-11-24 13:35:53
+1 ping P: 20 packets transmitted, 20 received, 0% packet loss 13:36:13
+stable up again build_id = "v0.7.0-dev-9-g368175ee+x2d42" 13:36:51

@@ -1,0 +1,18 @@
+dwc2d: cycle: hub 2 port 1 power off
+dwc2d: cycle: hub 2 port 1 disconnected after 100 ms
+dwc2d: hub 2 port 1: device at address 3 removed
+[src/procmgr.rs:292 WARN] State Id(15) was placeholder!
+dwc2d: cycle: hub 2 port 1 power on
+[src/procmgr.rs:292 WARN] State Id(21) was placeholder!
+dwc2d:   hub 2 port 1: device connected
+dwc2d:     address 3: 0424:7800, USB 2.10, class 0xff, High speed
+dwc2d:       interface 0 alt 0: class 0xff subclass 0x00 protocol 0xff
+dwc2d:         endpoint 0x81: bulk max packet 512
+dwc2d:         endpoint 0x02: bulk max packet 512
+dwc2d:         endpoint 0x83: interrupt max packet 16
+dwc2d: LAN7800 at address 3
+dwc2d: LAN78xx chip 7800 rev 0002
+dwc2d: network on the adapter at address 3
+dwc2d: LAN7800 multicast filter: 1 groups
+dwc2d: link up on the LAN7800 at address 3, flow control on
+DHCP: eth0 got <lan-ip>/24

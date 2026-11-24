@@ -1,0 +1,10 @@
+### cat /tmp/dwc2d-wakeups  (0.4 s)
+seconds 320
+irq 2032 6.3/s busy 72 ms
+scheme 5729 17.9/s busy 95 ms
+time 0 0.0/s busy 0 ms
+hotplug 317 1.0/s busy 175 ms
+hotplug cycle-request busy 3 ms
+hotplug scan busy 125 ms
+hotplug links busy 35 ms
+hotplug select-tick busy 3 ms
