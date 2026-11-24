@@ -20,8 +20,10 @@ tests on it. Results go to [reports/](reports/), one file per row.
    number used anywhere in this file, done rows included, plus one; if your
    push is rejected, fetch again and check the number is still free (rows got
    the same number three times, once after a done row left the queue).
-2. **Take the Pi** only when your test is first in the queue and the
-   previous one is marked done. Set it to **on the Pi** and commit.
+2. **Take the Pi** only when your test is next (see the order below) and
+   the previous one is marked done. Set it to **on the Pi** and commit.
+   Automated rows are taken by the Pi test agent, not by their owner (see
+   below); only tests that need a person are taken by their owner.
 3. **Build** (in your own redox-rpi clone): `scripts/build-image.sh` waits for any other build on the
    same host to finish (lock file `build/.build-image.lock`). Run other jobs
    that use the build output, such as a QEMU test, under
@@ -46,18 +48,20 @@ Tests that need a person at the Pi (keyboard, screen, power) say so; the
 owner then asks that person before taking the Pi.
 
 Automated tests (network, serial console, `pi-test.py`; no person, no
-card swap, no power switching) need no extra OK from the maintainer: when
-the coordinator names the owner, staging the image, rebooting the Pi over
+card swap, no power switching) need no extra OK from the maintainer: for the
+Pi test agent (or the owner of a person test), staging the image, rebooting the Pi over
 the serial console and restoring the stable image are part of the test
 (maintainer, 2026-10-29). Switching the Shelly plug still needs the
 maintainer's OK.
 
-Since 2026-10-29 a **Pi test agent** session on the build host runs the
-automated tests in the order the coordinator sets. Owners queue their test
-with the image built and the checks written in the row, then go on with
-other work; they don't take the Pi themselves for automated tests. The
-agent reports each result to the coordinator and the owner. Tests that need
-a person stay with their owner.
+Since 2026-10-29 a **Pi test agent** session on the build host (V&V, see
+the [PMP](https://github.com/redox-rpi/redox-rpi/blob/main/docs/process/pmp.md#workflow))
+runs the automated tests. Owners queue their test with the image built and
+the checks written in the row, then go on with other work; they don't take
+the Pi themselves for automated tests. The agent does not wait to be
+named: whenever the Pi is free it takes the next ready automated row by
+the order below. It reports each result to the project lead and the owner.
+Tests that need a person stay with their owner.
 
 Experiment patches are numbered by what they apply after; see
 [patches/README.md](https://github.com/redox-rpi/redox-rpi/blob/main/patches/README.md) for the numbers and the
@@ -76,12 +80,13 @@ and:
   images built and their build IDs in the queue, so the person never waits
   for a build; the steps for one visit are bundled into as few boots as
   possible;
-- decides the order when the Pi becomes free: tests for the current
-  milestone ([v0.3.0](https://github.com/redox-rpi/redox-rpi/milestone/1))
-  first, then by queue number; it names the next owner.
+- may change the order for a reason (for example a release candidate)
+  by saying so in the row.
 
-The rules above stay as they are: each owner takes and returns the Pi
-itself.
+**Order** when the Pi becomes free: rows for the current sprint's
+milestone first, then by queue number. A row is ready when its image is
+built and its checks are written; a row that is not ready is skipped, not
+waited for.
 
 ## Queue
 
