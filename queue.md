@@ -95,10 +95,11 @@ waited for.
 
 ## Queue
 
-**Next number: 622**
+**Next number: 623**
 
 | # | Test | Owner | Image | Needs | Status |
 |---|---|---|---|---|---|
+| 622 | No release, [#394](https://github.com/redox-rpi/redox-rpi/issues/394) **fixed U-Boot on the lab Pi 400: 20 network boots, automated, no person, no card write, no plug switching.** Lead decision 2026-11-24. The Pi 400 still boots the U-Boot of 2026-11-10 (before PR #465). Back up `pi400-fw/u-boot.bin` (as `u-boot.bin.pre622`), install `scripts/build-uboot.sh rpi-net <host> pi400` built from main 61536688 (patches/u-boot 0001–0003), then 20 serial reboots with row 501's image; count HTTP errors, TFTP timeouts and U-Boot prompt stops. Pass (20 of 20 to the login with no U-Boot stop): keep it and note it in lab.md. Fail: restore the backup. | Pi test agent | row 501's image, U-Boot from main 61536688 | Pi 400, serial console | on the Pi |
 | 16 | First run of the nightly stable image by hand: `scripts/update-stable.sh --force --taken 16 --ref origin/nightly-stable` builds, stages, resets the Pi, runs `scripts/pi-test.py` and promotes or restores ([branch](https://github.com/redox-rpi/redox-rpi/tree/nightly-stable)) | build agent | branch `nightly-stable`, `config/stable-image.conf` | network, serial console | waiting: the first run failed, [#34](https://github.com/redox-rpi/redox-rpi/issues/34) (devsh hang, fixed on main); next run with the fixes on `nightly-stable` |
 | 4 | RTL8152/RTL8153 Ethernet on the Pi 3B+, with the Anker 565 hub (RTL8153B, works in QEMU with the real chip) or an RTL8152 adapter ([steps](https://github.com/redox-rpi/redox-rpi/tree/rtl8152/patches/experiments/rtl8152#a-pi-3b-with-a-usb-rtl8152-or-rtl8153-adapter)) | rtl8152 session | branch `rtl8152`, `--experiment ldso-diagnostics --experiment rtl8152` | person to plug the hub into the Pi (USB-C to USB-A adapter) and a LAN cable | waiting |
 | 23 | sdhost as the default SD driver ([#6](https://github.com/redox-rpi/redox-rpi/issues/6)), network boot: boot log shows `rpi-firmwared` before `bcm2835-sdhostd: core clock … MHz, up to … MHz`, `high speed`, `serving /scheme/disk.mmc`, and no `bcm2835-sdhcid`; `/scheme/data` mounted; `scripts/pi-test.py` standard checks; `scripts/sd-stress.py --cycles 2` | sdhost session | `v0.3.0-dev-76-g13092c5+x9f76` (branch `sdhost-default`, `--experiment timesync --experiment rtl8152`), built in `~/redox-rpi-sd`, staged by the owner | network, serial console | **failed**, Pi halted (kernel `oom` panic during `sd-stress.py`), needs a power cycle; stable image staged again |
