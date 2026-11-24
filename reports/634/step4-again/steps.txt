@@ -1,0 +1,48 @@
+### 3a: desktop --yes  (1.6 s)
+Redox desktop (beta)
+Super+F2   back to the text console
+Super+F3   back to the desktop
+(or type desktop on the console)
+Super+T    a terminal
+Known limits:
+- Slow: everything draws in software; dragging a
+window costs much of a core.
+- Once started, the desktop cannot be stopped; its
+memory (40 to 80 MB) comes back only with a reboot.
+- No browser, one screen resolution, no HDMI hotplug.
+desktop: starting Orbital, its log goes to /tmp/desktop.log
+desktop: Super+F2 goes back to the console, Super+F3 to the desktop
+### 3b: pointer-bench --type user  (0.7 s)
+pointer-bench: typed 4 keys
+### 3e0: pointer-bench --keys enter  (0.4 s)
+pointer-bench: enter
+### 3e1: pointer-bench --keys enter  (0.4 s)
+pointer-bench: enter
+### 3e2: pointer-bench --keys enter  (0.4 s)
+pointer-bench: enter
+### 3shot: vc4shot /tmp/desk.ppm  (1.2 s)
+vc4shot: channel 1 640x480, list at 2176, 2 planes, ctrl 0x828001e0 bkgnd 0x81000000 list 2176 active 2176 stat 0xa3564176 (mode 2, frame 36)
+vc4shot: plane 0: ListPlane { unity: true, format: 7, x: 0, y: 0, width: 640, height: 480, bus: 3256127488, pitch: 2560, alpha: false }
+vc4shot: plane 1: ListPlane { unity: true, format: 7, x: 0, y: 0, width: 64, height: 64, bus: 3263344640, pitch: 256, alpha: true }
+vc4shot: wrote /tmp/desk.ppm (921615 bytes)
+### fetched /tmp/desk.ppm: 921615 bytes, stats (640, 480, 0.6009889258533473, 671)
+### 4start: gles-demo --window --frames 3000 &> /tmp/demo4.txt &  (0.2 s)
+ion: bg [0] 105
+### 4shot1: vc4shot /tmp/s2.ppm  (3.4 s)
+vc4shot: channel 1 640x480, list at 2304, 2 planes, ctrl 0x828001e0 bkgnd 0x81000000 list 2304 active 2176 stat 0xa350008a (mode 2, frame 0)
+vc4shot: plane 0: ListPlane { unity: true, format: 7, x: 0, y: 0, width: 640, height: 480, bus: 3256127488, pitch: 2560, alpha: false }
+vc4shot: plane 1: ListPlane { unity: true, format: 7, x: 0, y: 0, width: 64, height: 64, bus: 3263344640, pitch: 256, alpha: true }
+vc4shot: wrote /tmp/s2.ppm (921615 bytes)
+### fetched /tmp/s2.ppm: 921615 bytes, stats (640, 480, 0.3887116620334503, 670)
+### 4shot2: vc4shot /tmp/s6.ppm  (1.6 s)
+vc4shot: channel 1 640x480, list at 2048, 2 planes, ctrl 0x828001e0 bkgnd 0x81000000 list 2048 active 2048 stat 0xa35941b2 (mode 2, frame 20)
+vc4shot: plane 0: ListPlane { unity: true, format: 7, x: 0, y: 0, width: 640, height: 480, bus: 3257376768, pitch: 2560, alpha: false }
+vc4shot: plane 1: ListPlane { unity: true, format: 7, x: 0, y: 0, width: 64, height: 64, bus: 3263344640, pitch: 256, alpha: true }
+vc4shot: wrote /tmp/s6.ppm (921615 bytes)
+### fetched /tmp/s6.ppm: 921615 bytes, stats (640, 480, 0.6009889258533473, 668)
+### 4 result:
+libEGL warning: MESA-LOADER: failed to retrieve device information
+MESA-LOADER: failed to retrieve device information
+MESA-LOADER: failed to retrieve device information
+gles-demo: GL_RENDERER V3D 4.2.14
+gles-demo: PASS: V3D 4.2.14, 3000 frames right, window yes, first frame hash 0748855e, last 0455986f, 2.65 ms per frame (GL 1.14, window 1.51)

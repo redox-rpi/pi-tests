@@ -1,0 +1,88 @@
+### 1: gles-probe 1  (0.5 s)
+libEGL warning: MESA-LOADER: failed to retrieve device information
+MESA-LOADER: failed to retrieve device information
+MESA-LOADER: failed to retrieve device information
+gles-probe: EGL 1.4, Mesa Project
+gles-probe: GL_RENDERER V3D 4.2.14, GL_VERSION OpenGL ES 3.0 Mesa 24.0.8 (git-9850ea1ad7)
+gles-probe: PASS: V3D 4.2.14, 1 of 1 frames right, 2080 red pixels, hash 57aafac5, 2.88 ms per frame
+### 2a: gles-demo --frames 100 --dump /tmp/v3d  (0.8 s)
+libEGL warning: MESA-LOADER: failed to retrieve device information
+MESA-LOADER: failed to retrieve device information
+MESA-LOADER: failed to retrieve device information
+gles-demo: GL_RENDERER V3D 4.2.14
+gles-demo: PASS: V3D 4.2.14, 100 frames right, window no, first frame hash 0748855e, last 4a33cef1, 2.52 ms per frame (GL 1.00, window 0.00)
+### 2b: LIBGL_ALWAYS_SOFTWARE=1 gles-demo --frames 100 --dump /tmp/sw  (1.4 s)
+gles-demo: GL_RENDERER softpipe
+gles-demo: PASS: softpipe, 100 frames right, window no, first frame hash ab8011d9, last 73022683, 5.83 ms per frame (GL 4.31, window 0.00)
+### 2c: gles-demo --compare /tmp/sw-first.ppm /tmp/v3d-first.ppm  (0.4 s)
+gles-demo: PASS: compare /tmp/sw-first.ppm /tmp/v3d-first.ppm: 99 of 65536 pixels differ by more than 8 (0.15 %), largest difference 172
+### 2d: gles-demo --compare /tmp/sw-last.ppm /tmp/v3d-last.ppm  (0.4 s)
+gles-demo: PASS: compare /tmp/sw-last.ppm /tmp/v3d-last.ppm: 52 of 65536 pixels differ by more than 8 (0.08 %), largest difference 149
+### 2ls: ls -l /tmp  (0.3 s)
+total 48
+-rw-r--r-- 1 root root 196623 Jan  1 00:01 sw-first.ppm
+-rw-r--r-- 1 root root 196623 Jan  1 00:01 sw-last.ppm
+-rw-r--r-- 1 root root 196623 Jan  1 00:01 v3d-first.ppm
+-rw-r--r-- 1 root root 196623 Jan  1 00:01 v3d-last.ppm
+### fetched /tmp/v3d-first.ppm: 196623 bytes, stats (256, 256, 0.7344868097831891, 5)
+### fetched /tmp/v3d-last.ppm: 196623 bytes, stats (256, 256, 0.7396133717825484, 3)
+### fetched /tmp/sw-first.ppm: 196623 bytes, stats (256, 256, 0.7343800064082024, 6)
+### fetched /tmp/sw-last.ppm: 196623 bytes, stats (256, 256, 0.7396133717825484, 5)
+### 3a: desktop --yes  (0.5 s)
+Redox desktop (beta)
+Super+F2   back to the text console
+Super+F3   back to the desktop
+(or type desktop on the console)
+Super+T    a terminal
+Known limits:
+- Slow: everything draws in software; dragging a
+window costs much of a core.
+- Once started, the desktop cannot be stopped; its
+memory (40 to 80 MB) comes back only with a reboot.
+- No browser, one screen resolution, no HDMI hotplug.
+desktop: starting Orbital, its log goes to /tmp/desktop.log
+desktop: Super+F2 goes back to the console, Super+F3 to the desktop
+### 3b: pointer-bench --type user  (0.7 s)
+pointer-bench: typed 4 keys
+### 3e0: pointer-bench --keys enter  (0.4 s)
+pointer-bench: enter
+### 3e1: pointer-bench --keys enter  (0.4 s)
+pointer-bench: enter
+### 3e2: pointer-bench --keys enter  (0.4 s)
+pointer-bench: enter
+### 3shot: vc4shot /tmp/desk.ppm  (2.5 s)
+vc4shot: channel 1 640x480, list at 2304, 2 planes, ctrl 0x828001e0 bkgnd 0x81000000 list 2304 active 2304 stat 0xc39f01e0 (mode 3, frame 48)
+vc4shot: plane 0: ListPlane { unity: true, format: 7, x: 0, y: 0, width: 640, height: 480, bus: 3257376768, pitch: 2560, alpha: false }
+vc4shot: plane 1: ListPlane { unity: true, format: 7, x: 0, y: 0, width: 64, height: 64, bus: 3263344640, pitch: 256, alpha: true }
+vc4shot: wrote /tmp/desk.ppm (921615 bytes)
+### fetched /tmp/desk.ppm: 921615 bytes, stats (640, 480, 0.6009889258533473, 666)
+### 4start: gles-demo --window --frames 3000 &> /tmp/demo4.txt &  (0.2 s)
+ion: bg [0] 135
+### 4shot1: vc4shot /tmp/s5.ppm  (2.2 s)
+vc4shot: channel 1 640x480, list at 2304, 2 planes, ctrl 0x828001e0 bkgnd 0x81000000 list 2304 active 2176 stat 0xa39b41b0 (mode 2, frame 52)
+vc4shot: plane 0: ListPlane { unity: true, format: 7, x: 0, y: 0, width: 640, height: 480, bus: 3257376768, pitch: 2560, alpha: false }
+vc4shot: plane 1: ListPlane { unity: true, format: 7, x: 0, y: 0, width: 64, height: 64, bus: 3263344640, pitch: 256, alpha: true }
+vc4shot: wrote /tmp/s5.ppm (921615 bytes)
+### fetched /tmp/s5.ppm: 921615 bytes, stats (640, 480, 0.3887116620334503, 676)
+### 4shot2: vc4shot /tmp/s15.ppm  (2.7 s)
+vc4shot: channel 1 640x480, list at 2304, 2 planes, ctrl 0x828001e0 bkgnd 0x81000000 list 2304 active 2304 stat 0xa39b4196 (mode 2, frame 52)
+vc4shot: plane 0: ListPlane { unity: true, format: 7, x: 0, y: 0, width: 640, height: 480, bus: 3256127488, pitch: 2560, alpha: false }
+vc4shot: plane 1: ListPlane { unity: true, format: 7, x: 0, y: 0, width: 64, height: 64, bus: 3263344640, pitch: 256, alpha: true }
+vc4shot: wrote /tmp/s15.ppm (921615 bytes)
+### fetched /tmp/s15.ppm: 921615 bytes, stats (640, 480, 0.6009889258533473, 670)
+### 4 result:
+libEGL warning: MESA-LOADER: failed to retrieve device information
+MESA-LOADER: failed to retrieve device information
+MESA-LOADER: failed to retrieve device information
+gles-demo: GL_RENDERER V3D 4.2.14
+gles-demo: PASS: V3D 4.2.14, 3000 frames right, window yes, first frame hash 0748855e, last 0455986f, 2.73 ms per frame (GL 1.23, window 1.50)
+### 5a: gles-demo --window --frames 1000  (3.2 s)
+libEGL warning: MESA-LOADER: failed to retrieve device information
+MESA-LOADER: failed to retrieve device information
+MESA-LOADER: failed to retrieve device information
+gles-demo: GL_RENDERER V3D 4.2.14
+gles-demo: PASS: V3D 4.2.14, 1000 frames right, window yes, first frame hash 0748855e, last adf70129, 2.65 ms per frame (GL 1.16, window 1.49)
+### 5b: v3dprobe --via-v3dd --loops 100 | tail -2  (0.3 s)
+v3dprobe: csd: read interrupted, reading again
+v3dprobe: v3dd: stats: bos 50 frees 49 jobs 4201 cl_jobs 4101 failed 0 mmu_faults 0 resets 0 job_us_max 9289 outomem 0 overflow_chunks 1 spaces 1 spaces_made 5 space_loaded 5 irq /scheme/irq/phandle-1/0,74,4 irqs 8299 irq_wakeups 8298 timer_wakeups 1097 maps 29 unmaps 29 live_bos 0 submitted 4201 done_through 4201 queued 0 running - zombies 0
+v3dprobe: v3dd: PASS: 100 of 100 jobs through /scheme/v3d right, 92 us average, 5290 us max (daemon side)

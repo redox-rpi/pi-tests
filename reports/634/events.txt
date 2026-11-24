@@ -1,0 +1,13 @@
+start 23:32:05
+config: 20d19 < total_mem=1024 24a24,25 > hdmi_force_hotplug=1 > hdmi_drive=2  23:32:06
+staged /home/zehrer/redox-rpi-graphics/keep/gfx-g3i-netboot (build_id = "v0.7.0-dev-72-g0d4e8edd+x6519") 23:32:06
+boot: login, U-Boot retries 0, banner: redox-rpi v0.7.0-dev-72-g0d4e8edd+x6519 (netboot, 2026-11-24T23:29:29Z) 23:33:02
+boot v3dd lines 4; vc4d: taking over channel 1 at 640x480 23:33:17
+devsh up 23:33:18
+steps rc=0: gles-probe: PASS: V3D 4.2.14, 1 of 1 frames right, 2080 red pixels, hash 57aafac5, 2.88 ms per frame gles-demo: PASS: V3D 4.2.14, 100 frames right, window no, first frame hash 0748855e, last 4a33cef1, 2.52 ms per frame (GL 1.00, window 0.00) gles-demo: PASS: softpipe, 100 frames right, window no, first frame hash ab8011d9, last 73022683, 5.83 ms per frame (GL 4.31, window 0.00) gles-demo: PASS: compare /tmp/sw-first.ppm /tmp/v3d-first.ppm: 99 of 65536 pixels differ by more than 8 (0.15 %), largest difference 172 gles-demo: PASS: compare /tmp/sw-last.ppm /tmp/v3d-last.ppm: 52 of 65536 pixels di 23:37:57
+still answers 23:37:59
+reboots after login: 0; panic/UNHANDLED: 0; Lacks grant 0 23:37:59
+config restored: same 23:37:59
+staged /home/zehrer/redox-rpi-graphics/keep/pi400-fbshot-stage (build_id = "v0.6.0-dev-105-gbef6d90a+xcf2a") 23:37:59
+boot: login, U-Boot retries 0, banner: redox-rpi v0.6.0-dev-105-gbef6d90a+xcf2a (netboot, 2026-11-18T04:35:59Z) 23:38:40
+restore: login 23:38:40
