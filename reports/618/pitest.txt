@@ -1,0 +1,6 @@
+PASS version: v0.7.0-dev-52-ge256a5fc+x9cc2
+PASS manifest: present in the image
+PASS ps: 52 processes (piped)
+PASS ps-tty: 52 lines straight to the terminal, rc=0
+PASS sdcard: write, read back, delete on /scheme/data
+PASS starts: 0 of 300 failed

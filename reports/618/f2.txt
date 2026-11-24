@@ -1,0 +1,5 @@
+### oomtest fork-shared; echo RC $?  (1.3 s)
+oomtest: mode fork-shared, 0 idle threads, pid 400
+oomtest: 2048 MiB shared, forking
+oomtest: fork failed: Out of memory (os error 12)
+RC 4

@@ -1,0 +1,18 @@
+start 17:13:50
+staged build_id = "v0.7.0-dev-52-ge256a5fc+x9cc2" 17:13:50
+found after 26 s
+no devsh, serial reset 1 17:16:39
+boot: redox-rpi v0.7.0-dev-52-ge256a5fc+x9cc2 (netboot, 2026-11-24T17:04:56Z) rootport 1 17:17:43
+pitest rc=0: PASS version: v0.7.0-dev-52-ge256a5fc+x9cc2 PASS manifest: present in the image PASS ps: 52 processes (piped) PASS ps-tty: 52 lines straight to the terminal, rc=0 PASS sdcard: write, read back, delete on /scheme/data PASS starts: 0 of 300 failed  17:18:31
+ps start: 53  17:18:33
+fork 2G #1: oomtest: mode fork-shared, 0 idle threads, pid 384 oomtest: 2048 MiB shared, forking oomtest: fork failed: Out of memory (os error 12) RC 4  17:18:36
+oomtest count #1: 0  17:18:43
+fork 2G #2: oomtest: mode fork-shared, 0 idle threads, pid 400 oomtest: 2048 MiB shared, forking oomtest: fork failed: Out of memory (os error 12) RC 4  17:18:45
+oomtest count #1: 0  17:18:53
+fork 64: oomtest: mode fork-shared, 0 idle threads, pid 416 oomtest: 64 MiB shared, forking oomtest: child status 0x0, last byte 0x5a (0x5a expected) RC 0  17:18:54
+oomtest count #3: 0  17:18:56
+ps end: 64  | Mem: 737756 168092 569664 17:19:00
+devsh answers at the end 17:19:01
+panic 0 UNHANDLED 2 OOMkills 0 17:19:01
+found after 24 s
+stable up 17:19:37
