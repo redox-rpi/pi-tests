@@ -1,0 +1,5 @@
+### free  (0.3 s)
+total      used      free
+Mem:        736792    145084    591708
+### ps | wc -l  (0.4 s)
+53

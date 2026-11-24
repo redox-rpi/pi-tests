@@ -1,0 +1,38 @@
+### oomtest || echo NONZERO  (7.0 s)
+oomtest: mode touch, 0 idle threads, pid 92
+oomtest: 16 MiB
+oomtest: 32 MiB
+oomtest: 48 MiB
+oomtest: 64 MiB
+oomtest: 80 MiB
+oomtest: 96 MiB
+oomtest: 112 MiB
+oomtest: 128 MiB
+oomtest: 144 MiB
+oomtest: 160 MiB
+oomtest: 176 MiB
+oomtest: 192 MiB
+oomtest: 208 MiB
+oomtest: 224 MiB
+oomtest: 240 MiB
+oomtest: 256 MiB
+oomtest: 272 MiB
+oomtest: 288 MiB
+oomtest: 304 MiB
+oomtest: 320 MiB
+oomtest: 336 MiB
+oomtest: 352 MiB
+oomtest: 368 MiB
+oomtest: 384 MiB
+oomtest: 400 MiB
+oomtest: 416 MiB
+oomtest: 432 MiB
+oomtest: 448 MiB
+oomtest: 464 MiB
+oomtest: 480 MiB
+oomtest: 496 MiB
+oomtest: 512 MiB
+oomtest: 528 MiB
+oomtest: 544 MiB
+oomtest: 560 MiB
+ion: pipeline execution error: process (92) ended by signal SIGKILL

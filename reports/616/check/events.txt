@@ -1,0 +1,11 @@
+start 15:08:03
+staged 15:08:03
+found after 26 s
+no devsh, serial reset 1 15:10:51
+f0: Mem: 736792 142328 594464 53  | f1: Mem: 736792 143992 592800 53  | f2: Mem: 736792 145084 591708 53  15:12:57
+oom: ### oomtest || echo NONZERO  (7.0 s) ion: pipeline execution error: process (92) ended by signal SIGKILL ### oomtest -t 4 || echo NONZERO  (7.0 s) ion: pipeline execution error: process (97) ended by signal SIGKILL ### oomtest pipe || echo NONZERO  (10.6 s) ion: pipeline execution error: process (10 15:12:57
+panic 0 15:12:57
+found after 22 s
+no devsh, serial reset 1 15:15:46
+no devsh, serial reset 2 15:19:12
+stable up 15:20:00

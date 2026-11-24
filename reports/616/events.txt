@@ -1,0 +1,18 @@
+start 15:01:05
+staged build_id = "v0.6.0-dev-204-gfaf6df83+x93f8" 15:01:05
+found after 26 s
+no devsh, serial reset 1 15:04:00
+boot: redox-rpi v0.6.0-dev-204-gfaf6df83+x93f8 (netboot, 2026-11-24T14:33:26Z) rootport 1 15:05:06
+pitest rc=0: PASS version: v0.6.0-dev-204-gfaf6df83+x93f8 PASS manifest: present in the image PASS ps: 52 processes (piped) PASS ps-tty: 52 lines straight to the terminal, rc=0 PASS sdcard: write, read back, delete on /scheme/data PASS starts: 0 of 300 failed  15:05:58
+mmapstop -s none: mmapstop: the write did not block (child status 0x0) RC 0  | serial panic 0 15:06:01
+mmapstop none: mmapstop: the write did not block (child status 0x0) RC 0  | serial panic 0 15:06:08
+mmapstop kill: mmapstop: the write did not block (child status 0x0) RC 0  | serial panic 0 15:06:11
+mmapstop stop: mmapstop: the write did not block (child status 0x0) RC 0  | serial panic 0 15:06:18
+oomtest: rc line  | kernel::memory:ERROR -- OUT OF MEMORY: killing PID 418 NAME /usr/bin/oomtest on CPU ##3 15:06:30
+oomtest -t 4: rc line  | kernel::memory:ERROR -- OUT OF MEMORY: killing PID 427 NAME /usr/bin/oomtest on CPU ##3 15:06:46
+oomtest pipe: rc line  | kernel::memory:ERROR -- OUT OF MEMORY: killing PID 436 NAME /usr/bin/oomtest on CPU ##2 15:07:01
+free: Mem: 736792 144520 592272 -> Mem: 736792 159932 576860 15:07:03
+devsh answers at the end 15:07:10
+panic 0 UNHANDLED 0 15:07:10
+found after 24 s
+stable up 15:07:47

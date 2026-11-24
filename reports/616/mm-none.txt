@@ -1,0 +1,6 @@
+### mmapstop none; echo RC $?  (0.3 s)
+mmapstop: private mapping of /tmp/mmapstop.dat, action none
+mmapstop: child: mapped, first byte 87, writing
+mmapstop: child: write done
+mmapstop: the write did not block (child status 0x0)
+RC 0
