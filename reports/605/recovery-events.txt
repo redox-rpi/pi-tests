@@ -1,0 +1,4 @@
+no devsh, serial reset 1 11:33:36
+no devsh, serial reset 2 11:37:06
+power cycle 11:40:55
+power cycle 30 s 11:49:37
