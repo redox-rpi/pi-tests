@@ -1,0 +1,3 @@
+### ls -l /dev/dri  (0.3 s)
+total 4
+lrwxrwxrwx 1 root root 11 Nov 24  2026 renderD128 -> /scheme/v3d
