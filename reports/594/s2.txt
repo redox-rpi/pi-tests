@@ -1,0 +1,5 @@
+### v3dprobe --via-v3dd --render --loops 100 | tail -4  (5.7 s)
+v3dprobe: render: arena BO at 0x183000, BCL 17 bytes, RCL 151 bytes
+v3dprobe: render: frame 0: 65536 of 65536 pixels have 0xffff8020
+v3dprobe: render: v3dd stats: bos 23 frees 22 jobs 200 cl_jobs 100 failed 0 job_us_max 1549 outomem 0 overflow_chunks 1 va_next 0x383000 va_free_ranges 4
+v3dprobe: render: PASS: 100 of 100 Clear frames through /scheme/v3d right, 115 us average, 1549 us max (bin + render, daemon side)

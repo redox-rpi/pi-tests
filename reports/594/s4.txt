@@ -1,0 +1,5 @@
+### v3dprobe --via-v3dd --render --triangle-math --loops 100 | tail -4  (5.8 s)
+v3dprobe: render: triangle: 8192 red, 57344 clear, 0 other pixels (area 8192 expected red); base at row 64; centre 0xff0000ff; 0 wrong away from the edges, first None
+v3dprobe: render: PASS: a red triangle on 0xffff8020, drawn by the QPUs through bin and render control lists
+v3dprobe: render: v3dd stats: bos 43 frees 42 jobs 400 cl_jobs 300 failed 0 job_us_max 1549 outomem 0 overflow_chunks 1 va_next 0x383000 va_free_ranges 4
+v3dprobe: render: PASS: 100 of 100 MathShaders frames through /scheme/v3d right, 128 us average, 597 us max (bin + render, daemon side)
