@@ -1,0 +1,56 @@
+### EGL_LOG_LEVEL=debug LIBGL_DEBUG=verbose gles-probe 1  (0.8 s)
+libEGL debug: EGL user error 0x3001 (EGL_NOT_INITIALIZED) in eglInitialize: DRI2: failed to load driver
+libEGL debug: EGL user error 0x3001 (EGL_NOT_INITIALIZED) in eglInitialize: DRI2: failed to load driver
+libEGL debug: Falling back to surfaceless swrast without DRM.
+libEGL debug: MESA-LOADER: dlopen(/usr/lib/dri/swrast_dri.so)
+libGL: Can't open configuration file /etc/drirc: No such file or directory.
+libGL: Can't open configuration file /home/root/.drirc: No such file or directory.
+libGL: Can't open configuration file /etc/drirc: No such file or directory.
+libGL: Can't open configuration file /home/root/.drirc: No such file or directory.
+libEGL debug: did not find extension DRI2_BufferDamage version 1
+libEGL debug: did not find extension DRI2_Interop version 1
+libEGL debug: did not find extension DRI2_Blob version 1
+libEGL debug: did not find extension DRI_MutableRenderBufferDriver version 1
+libEGL debug: did not find extension DRI_Kopper version 1
+gles-probe: EGL 1.4, Mesa Project
+libEGL debug: ---------------
+libEGL debug: Configurations:
+libEGL debug: cho       bf lv colourbuffer dp st  ms           vis  cav  bi     renderable           supported
+libEGL debug: sen    id sz  l  r  g  b  a  th cl ns b           id  eat  nd  gl es es2 es3 vg         surfaces
+libEGL debug: ---------------
+libEGL debug:     0x001 32  0 10 10 10  2   0  0  0 0 0x00000000--        a   y  y   y   y                 pb,
+libEGL debug:     0x002 32  0 10 10 10  2  16  0  0 0 0x00000000--        a   y  y   y   y                 pb,
+libEGL debug:     0x003 32  0 10 10 10  2  24  0  0 0 0x00000000--        a   y  y   y   y                 pb,
+libEGL debug:     0x004 32  0 10 10 10  2  24  8  0 0 0x00000000--        a   y  y   y   y                 pb,
+libEGL debug:     0x005 32  0 10 10 10  2  32  0  0 0 0x00000000--        a   y  y   y   y                 pb,
+libEGL debug:   0 0x006 30  0 10 10 10  0   0  0  0 0 0x00000000--        y   y  y   y   y                 pb,
+libEGL debug:     0x007 30  0 10 10 10  0  16  0  0 0 0x00000000--        y   y  y   y   y                 pb,
+libEGL debug:     0x008 30  0 10 10 10  0  24  0  0 0 0x00000000--        y   y  y   y   y                 pb,
+libEGL debug:     0x009 30  0 10 10 10  0  24  8  0 0 0x00000000--        y   y  y   y   y                 pb,
+libEGL debug:     0x00a 30  0 10 10 10  0  32  0  0 0 0x00000000--        y   y  y   y   y                 pb,
+libEGL debug:     0x00b 32  0  8  8  8  8   0  0  0 0 0x00000000--        a   y  y   y   y                 pb,
+libEGL debug:     0x00c 32  0  8  8  8  8  16  0  0 0 0x00000000--        a   y  y   y   y                 pb,
+libEGL debug:     0x00d 32  0  8  8  8  8  24  0  0 0 0x00000000--        a   y  y   y   y                 pb,
+libEGL debug:     0x00e 32  0  8  8  8  8  24  8  0 0 0x00000000--        a   y  y   y   y                 pb,
+libEGL debug:     0x00f 32  0  8  8  8  8  32  0  0 0 0x00000000--        a   y  y   y   y                 pb,
+libEGL debug:     0x010 24  0  8  8  8  0   0  0  0 0 0x00000000--        y   y  y   y   y                 pb,
+libEGL debug:     0x011 24  0  8  8  8  0  16  0  0 0 0x00000000--        y   y  y   y   y                 pb,
+libEGL debug:     0x012 24  0  8  8  8  0  24  0  0 0 0x00000000--        y   y  y   y   y                 pb,
+libEGL debug:     0x013 24  0  8  8  8  0  24  8  0 0 0x00000000--        y   y  y   y   y                 pb,
+libEGL debug:     0x014 24  0  8  8  8  0  32  0  0 0 0x00000000--        y   y  y   y   y                 pb,
+libEGL debug:     0x015 16  0  5  6  5  0   0  0  0 0 0x00000000--        y   y  y   y   y                 pb,
+libEGL debug:     0x016 16  0  5  6  5  0  16  0  0 0 0x00000000--        y   y  y   y   y                 pb,
+libEGL debug:     0x017 16  0  5  6  5  0  24  0  0 0 0x00000000--        y   y  y   y   y                 pb,
+libEGL debug:     0x018 16  0  5  6  5  0  24  8  0 0 0x00000000--        y   y  y   y   y                 pb,
+libEGL debug:     0x019 16  0  5  6  5  0  32  0  0 0 0x00000000--        y   y  y   y   y                 pb,
+libEGL debug:     0x01a 64  0 16 16 16 16   0  0  0 0 0x00000000--        a   y  y   y   y                 pb,
+libEGL debug:     0x01b 64  0 16 16 16 16  16  0  0 0 0x00000000--        a   y  y   y   y                 pb,
+libEGL debug:     0x01c 64  0 16 16 16 16  24  0  0 0 0x00000000--        a   y  y   y   y                 pb,
+libEGL debug:     0x01d 64  0 16 16 16 16  24  8  0 0 0x00000000--        a   y  y   y   y                 pb,
+libEGL debug:     0x01e 64  0 16 16 16 16  32  0  0 0 0x00000000--        a   y  y   y   y                 pb,
+libEGL debug:     0x01f 48  0 16 16 16  0   0  0  0 0 0x00000000--        y   y  y   y   y                 pb,
+libEGL debug:     0x020 48  0 16 16 16  0  16  0  0 0 0x00000000--        y   y  y   y   y                 pb,
+libEGL debug:     0x021 48  0 16 16 16  0  24  0  0 0 0x00000000--        y   y  y   y   y                 pb,
+libEGL debug:     0x022 48  0 16 16 16  0  24  8  0 0 0x00000000--        y   y  y   y   y                 pb,
+libEGL debug:     0x023 48  0 16 16 16  0  32  0  0 0 0x00000000--        y   y  y   y   y                 pb,
+gles-probe: GL_RENDERER (null), GL_VERSION (null)

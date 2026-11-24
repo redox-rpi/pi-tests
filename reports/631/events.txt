@@ -1,0 +1,28 @@
+start 22:37:10
+config: 20d19 < total_mem=1024 24a24,25 > hdmi_force_hotplug=1 > hdmi_drive=2  22:37:10
+staged /home/zehrer/redox-rpi-graphics/keep/gfx-g3f-netboot (build_id = "v0.7.0-dev-69-g1850e704+xc107") 22:37:10
+boot: login, U-Boot retries 0, banner: redox-rpi v0.7.0-dev-69-g1850e704+xc107 (netboot, 2026-11-24T22:34:08Z) 22:38:06
+boot v3dd lines: 4; ready: 1 22:38:21
+devsh up 22:38:22
+s1 rc=0 took 1.244955975 s: v3dprobe: v3dd: PASS: 100 of 100 jobs through /scheme/v3d right, 25 us average, 70 us max (daemon side)  22:38:23
+resets after s1: 0 22:38:24
+s2 rc=0 took 2.166258622 s: v3dprobe: ioctl: PASS: relibc ioctl() on /dev/dri/renderD128: driver "v3d", HUB_IDENT1 0xe1124; 16 of 16 jobs right, 1386 us per job round trip; wrong arguments refused; syncobjs signalled, reset and waited on; endless job: ETIME, then signalled after 1049 ms and EIO; no BOs left (bos 17 frees 16 jobs 118 cl_jobs 1 failed 1 mmu_faults 0 resets 1 job_us_max 70 outomem 0 overflow_chunks 1 spaces 0 spaces_made 2 space_loaded 0 irq /scheme/irq/phandle-1/0,74,4 irqs 115 irq_wakeups 115 timer_wakeups 109 maps 3 unmaps 3 live_bos 0 submitted 118 done_through 118 queued 0 running - zombies 0)  22:38:26
+resets after s2: 0 22:38:28
+s3 rc=0 took 1.667015491 s:  22:38:29
+resets after s3: 0 22:38:30
+s4 rc=0 took 1.654842172 s:  22:38:32
+resets after s4: 0 22:38:33
+step3 pass=0 step4 pass=0 22:38:33
+s6 rc=0 took 1.669993269 s: libEGL debug: EGL user error 0x3001 (EGL_NOT_INITIALIZED) in eglInitialize: DRI2: failed to load driver libEGL debug: EGL user error 0x3001 (EGL_NOT_INITIALIZED) in eglInitialize: DRI2: failed to load driver  22:38:35
+resets after s6: 0 22:38:36
+s6sw rc=0 took 1.684105141 s:  22:38:38
+resets after s6sw: 0 22:38:39
+ps rc=0 took 1.084946495 s:  22:38:40
+still answers 22:38:41
+v3dd serial lines: 11, timeout lines 2, reset lines 2 22:38:41
+reboots seen after login: 2 22:38:41
+panic/UNHANDLED: 4 22:38:41
+config restored: same 22:38:41
+staged /home/zehrer/redox-rpi-graphics/keep/pi400-fbshot-stage (build_id = "v0.6.0-dev-105-gbef6d90a+xcf2a") 22:38:41
+boot: login, U-Boot retries 0, banner: redox-rpi v0.6.0-dev-105-gbef6d90a+xcf2a (netboot, 2026-11-18T04:35:59Z) 22:39:22
+restore: login 22:39:22
