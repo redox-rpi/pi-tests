@@ -1,0 +1,8 @@
+1970-01-01T00-00-24.105Z [@usbhidd:264 WARN] using endpoint 0x81 Interrupt In
+1970-01-01T00-00-25.549Z [@usbhidd:264 WARN] using endpoint 0x81 Interrupt In
+1970-01-01T00-00-25.583Z [@usbhidd:264 WARN] using endpoint 0x82 Interrupt In
+1970-01-01T00-00-25.598Z [@xhcid::xhci::scheme:3038 ERROR] CONTROL_TRANSFER transfer Trb { data: 0000000000000000, status: 00000000, control: 00011020 } failed with event Trb { data: 000000000799F060, status: 06000000, control: 03018001 }
+1970-01-01T00-00-25.630Z [@xhcid::xhci::scheme:1319 WARN] port 1.4: SET_INTERFACE 0 refused (I/O error); it has one alternate setting, going on
+1970-01-01T00-00-25.679Z [@xhcid::xhci::scheme:3038 ERROR] CONTROL_TRANSFER transfer Trb { data: 0000000000000000, status: 00000000, control: 00011020 } failed with event Trb { data: 000000000799F080, status: 06000000, control: 03018001 }
+1970-01-01T00-00-25.710Z [@xhcid::xhci::scheme:1319 WARN] port 1.4: SET_INTERFACE 1 refused (I/O error); it has one alternate setting, going on
+1970-01-01T00-00-25.802Z [@usbhidd:137 WARN] unknown usage_page 0x7 usage 0x0
