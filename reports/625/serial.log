@@ -1,0 +1,694 @@
+
+
+U-Boot 2026.10 (Nov 24 2026 - 19:42:15 +0000)
+
+DRAM:  3.9 GiB
+RPI 400 (0xc03131)
+Core:  213 devices, 17 uclasses, devicetree: board
+MMC:   mmcnr@7e300000: 1, mmc@7e340000: 0
+Loading Environment from FAT...Card did not respond to voltage select! : -110
+** Bad device specification mmc 0 **
+In:    serial,usbkbd
+Out:   serial,vidconsole
+Err:   serial,vidconsole
+Net:   eth0: ethernet@7d580000
+
+PCIe BRCM: link up, 5.0 Gbps x1 (SSC)
+starting USB...
+USB XHCI 1.00
+Bus xhci_pci: 4 USB Device(s) found
+       scanning usb for storage devices... 0 Storage Device(s) found
+Hit any key to stop autoboot: 2Hit any key to stop autoboot: 1Hit any key to stop autoboot: 0
+ethernet@7d580000 Waiting for PHY auto negotiation to complete. done
+DHCP client bound to address <lan-ip> (3 ms)
+##################################################
+5146 bytes transferred in 2 ms (2.5 MiB/s)
+Bytes transferred = 5146 (141a hex)
+## Executing script at 05400000
+*** U-Boot Boot Menu ***Press UP/DOWN to move, ENTER to select, ESC to quit1. Network: pi400/2. Network: stable/0. ExitHit any key to stop autoboot: 3 Hit any key to stop autoboot: 2 Hit any key to stop autoboot: 1 redox-rpi: boot net pi400/
+redox-rpi: network boot from <lan-ip>
+##################################################
+82463251 bytes transferred in 1446 ms (54.4 MiB/s)
+Bytes transferred = 82463251 (4ea4a13 hex)
+redox-rpi: image loaded over HTTP
+Uncompressed size: 268435456 = 0x10000000
+Created "redox"
+Block 0x0+0x80000 mapped to 0x10000000
+
+Partition Map for blkmap device 0  --   Partition Type: EFI
+
+Part	Start LBA	End LBA		Name
+	Attributes
+	Type GUID
+	Partition GUID
+  1	0x00000022	0x000007ff	"BIOS"
+	attrs:	0x0000000000000000
+	type:	21686148-6449-6e6f-744e-656564454649
+	guid:	974e76a4-d612-415e-afd3-3475df1f9db1
+  2	0x00000800	0x000107ff	"EFI"
+	attrs:	0x0000000000000000
+	type:	c12a7328-f81f-11d2-ba4b-00a0c93ec93b
+	guid:	c1b7e2bb-a069-46f1-b8af-84f4396f6186
+  3	0x00010800	0x0007f7ff	"REDOX"
+	attrs:	0x0000000000000000
+	type:	0fc63daf-8483-4772-8e79-3d69d8477de4
+	guid:	d15266fa-de9c-47ef-bfd7-2141cef7200f
+##################################################
+166400 bytes transferred in 1 ms (158.7 MiB/s)
+Bytes transferred = 166400 (28a00 hex)
+78Timeout waiting for cmd & data inhibit
+Timeout waiting for cmd & data inhibit
+Timeout waiting for cmd & data inhibit
+mmc1 busy timeout increasing to: 200 ms
+mmc1 busy timeout increasing to: 400 ms
+mmc1 busy timeout increasing to: 800 ms
+mmc1 busy timeout increasing to: 1600 ms
+mmc1 busy timeout increasing to: 3200 ms
+mmc1 busy timeout
+Card did not respond to voltage select! : -110
+No EFI variables loaded
+Booting /\pi400\bootloader-live.efi
+WARN - Failed to get EFI EDID from handle Handle(986495168): Status(0x8000000000000003) "unsupported"
+INFO - Currently in EL2
+Redox OS Bootloader 1.0.0 on aarch64/UEFI
+Hardware descriptor: DeviceTree(39b56000, f000)
+Looking for RedoxFS:
+WARN - Failed to find SimpleFileSystem protocol: Status(0x8000000000000003) "unsupported"
+RedoxFS 48bf5133-0c41-4d1a-bdd7-3d6d68ba0a44: 222 MiB
+
+Output 0, best resolution: 640x480
+Arrow keys and enter select mode
+Press l to disable live mode
+Press e to edit boot environment
+Continuing with the selected mode in 5 seconds
+
+  640x480    4:3  
+live: 0/222 MiBlive: 0/222 MiBlive: 1/222 MiBlive: 2/222 MiBlive: 3/222 MiBlive: 4/222 MiBlive: 5/222 MiBlive: 6/222 MiBlive: 7/222 MiBlive: 8/222 MiBlive: 9/222 MiBlive: 10/222 MiBlive: 11/222 MiBlive: 12/222 MiBlive: 13/222 MiBlive: 14/222 MiBlive: 15/222 MiBlive: 16/222 MiBlive: 17/222 MiBlive: 18/222 MiBlive: 19/222 MiBlive: 20/222 MiBlive: 21/222 MiBlive: 22/222 MiBlive: 23/222 MiBlive: 24/222 MiBlive: 25/222 MiBlive: 26/222 MiBlive: 27/222 MiBlive: 28/222 MiBlive: 29/222 MiBlive: 30/222 MiBlive: 31/222 MiBlive: 32/222 MiBlive: 33/222 MiBlive: 34/222 MiBlive: 35/222 MiBlive: 36/222 MiBlive: 37/222 MiBlive: 38/222 MiBlive: 39/222 MiBlive: 40/222 MiBlive: 41/222 MiBlive: 42/222 MiBlive: 43/222 MiBlive: 44/222 MiBlive: 45/222 MiBlive: 46/222 MiBlive: 47/222 MiBlive: 48/222 MiBlive: 49/222 MiBlive: 50/222 MiBlive: 51/222 MiBlive: 52/222 MiBlive: 53/222 MiBlive: 54/222 MiBlive: 55/222 MiBlive: 56/222 MiBlive: 57/222 MiBlive: 58/222 MiBlive: 59/222 MiBlive: 60/222 MiBlive: 61/222 MiBlive: 62/222 MiBlive: 63/222 MiBlive: 64/222 MiBlive: 65/222 MiBlive: 66/222 MiBlive: 67/222 MiBlive: 68/222 MiBlive: 69/222 MiBlive: 70/222 MiBlive: 71/222 MiBlive: 72/222 MiBlive: 73/222 MiBlive: 74/222 MiBlive: 75/222 MiBlive: 76/222 MiBlive: 77/222 MiBlive: 78/222 MiBlive: 79/222 MiBlive: 80/222 MiBlive: 81/222 MiBlive: 82/222 MiBlive: 83/222 MiBlive: 84/222 MiBlive: 85/222 MiBlive: 86/222 MiBlive: 87/222 MiBlive: 88/222 MiBlive: 89/222 MiBlive: 90/222 MiBlive: 91/222 MiBlive: 92/222 MiBlive: 93/222 MiBlive: 94/222 MiBlive: 95/222 MiBlive: 96/222 MiBlive: 97/222 MiBlive: 98/222 MiBlive: 99/222 MiBlive: 100/222 MiBlive: 101/222 MiBlive: 102/222 MiBlive: 103/222 MiBlive: 104/222 MiBlive: 105/222 MiBlive: 106/222 MiBlive: 107/222 MiBlive: 108/222 MiBlive: 109/222 MiBlive: 110/222 MiBlive: 111/222 MiBlive: 112/222 MiBlive: 113/222 MiBlive: 114/222 MiBlive: 115/222 MiBlive: 116/222 MiBlive: 117/222 MiBlive: 118/222 MiBlive: 119/222 MiBlive: 120/222 MiBlive: 121/222 MiBlive: 122/222 MiBlive: 123/222 MiBlive: 124/222 MiBlive: 125/222 MiBlive: 126/222 MiBlive: 127/222 MiBlive: 128/222 MiBlive: 129/222 MiBlive: 130/222 MiBlive: 131/222 MiBlive: 132/222 MiBlive: 133/222 MiBlive: 134/222 MiBlive: 135/222 MiBlive: 136/222 MiBlive: 137/222 MiBlive: 138/222 MiBlive: 139/222 MiBlive: 140/222 MiBlive: 141/222 MiBlive: 142/222 MiBlive: 143/222 MiBlive: 144/222 MiBlive: 145/222 MiBlive: 146/222 MiBlive: 147/222 MiBlive: 148/222 MiBlive: 149/222 MiBlive: 150/222 MiBlive: 151/222 MiBlive: 152/222 MiBlive: 153/222 MiBlive: 154/222 MiBlive: 155/222 MiBlive: 156/222 MiBlive: 157/222 MiBlive: 158/222 MiBlive: 159/222 MiBlive: 160/222 MiBlive: 161/222 MiBlive: 162/222 MiBlive: 163/222 MiBlive: 164/222 MiBlive: 165/222 MiBlive: 166/222 MiBlive: 167/222 MiBlive: 168/222 MiBlive: 169/222 MiBlive: 170/222 MiBlive: 171/222 MiBlive: 172/222 MiBlive: 173/222 MiBlive: 174/222 MiBlive: 175/222 MiBlive: 176/222 MiBlive: 177/222 MiBlive: 178/222 MiBlive: 179/222 MiBlive: 180/222 MiBlive: 181/222 MiBlive: 182/222 MiBlive: 183/222 MiBlive: 184/222 MiBlive: 185/222 MiBlive: 186/222 MiBlive: 187/222 MiBlive: 188/222 MiBlive: 189/222 MiBlive: 190/222 MiBlive: 191/222 MiBlive: 192/222 MiBlive: 193/222 MiBlive: 194/222 MiBlive: 195/222 MiBlive: 196/222 MiBlive: 197/222 MiBlive: 198/222 MiBlive: 199/222 MiBlive: 200/222 MiBlive: 201/222 MiBlive: 202/222 MiBlive: 203/222 MiBlive: 204/222 MiBlive: 205/222 MiBlive: 206/222 MiBlive: 207/222 MiBlive: 208/222 MiBlive: 209/222 MiBlive: 210/222 MiBlive: 211/222 MiBlive: 212/222 MiBlive: 213/222 MiBlive: 214/222 MiBlive: 215/222 MiBlive: 216/222 MiBlive: 217/222 MiBlive: 218/222 MiBlive: 219/222 MiBlive: 220/222 MiBlive: 221/222 MiBlive: 222/222 MiB
+Switching to live disk
+usr/lib/boot/kernel: 0/1 MiBusr/lib/boot/kernel: 0/1 MiBusr/lib/boot/kernel: 1/1 MiBusr/lib/boot/kernel: 1/1 MiB
+usr/lib/boot/initfs: 0/26 MiBusr/lib/boot/initfs: 0/26 MiBusr/lib/boot/initfs: 1/26 MiBusr/lib/boot/initfs: 2/26 MiBusr/lib/boot/initfs: 3/26 MiBusr/lib/boot/initfs: 4/26 MiBusr/lib/boot/initfs: 5/26 MiBusr/lib/boot/initfs: 6/26 MiBusr/lib/boot/initfs: 7/26 MiBusr/lib/boot/initfs: 8/26 MiBusr/lib/boot/initfs: 9/26 MiBusr/lib/boot/initfs: 10/26 MiBusr/lib/boot/initfs: 11/26 MiBusr/lib/boot/initfs: 12/26 MiBusr/lib/boot/initfs: 13/26 MiBusr/lib/boot/initfs: 14/26 MiBusr/lib/boot/initfs: 15/26 MiBusr/lib/boot/initfs: 16/26 MiBusr/lib/boot/initfs: 17/26 MiBusr/lib/boot/initfs: 18/26 MiBusr/lib/boot/initfs: 19/26 MiBusr/lib/boot/initfs: 20/26 MiBusr/lib/boot/initfs: 21/26 MiBusr/lib/boot/initfs: 22/26 MiBusr/lib/boot/initfs: 23/26 MiBusr/lib/boot/initfs: 24/26 MiBusr/lib/boot/initfs: 25/26 MiBusr/lib/boot/initfs: 26/26 MiBusr/lib/boot/initfs: 26/26 MiB
+kernel_entry(0x39b72000, 0xffff800039ab2000, 0xffffff0000034528, 0x3abfbe20)
+KernelArgs {
+    kernel_base: 0x39914000,
+    kernel_size: 0x172770,
+    stack_base: 0x39a92000,
+    stack_size: 0x20000,
+    env_base: 0x39904000,
+    env_size: 0x174,
+    acpi_rsdp_base: 0x39b56000,
+    acpi_rsdp_size: 0xf000,
+    areas_base: 0x39ba4030,
+    areas_size: 0x6000,
+    bootstrap_base: 0x284ae000,
+    bootstrap_size: 0x1aa9000,
+}
+kernel::dtb::serial:INFO -- UART Compatible { string: "arm,pl011-axi\0arm,pl011\0arm,primecell" } at 0xFFFF8000FE201000 size 0x200
+kernel::arch::aarch64::start:INFO -- Redox OS starting...
+kernel::startup:DEBUG -- Kernel: 39914000:39A86770
+kernel::startup:DEBUG -- Env: 39904000:39904174
+kernel::startup:DEBUG -- HWDESC: 39B56000:39B65000
+kernel::startup:DEBUG -- Areas: 39BA4030:39BAA030
+kernel::startup:DEBUG -- Bootstrap: 284AE000:29F57000
+kernel::startup::memory:DEBUG -- Registering Reserved memory 2BA00000 size DE00000
+kernel::startup::memory:DEBUG -- Registering Reclaim memory 39B72000 size 1000
+kernel::startup::memory:DEBUG -- Registering Reclaim memory 39A87000 size B000
+kernel::startup::memory:DEBUG -- Registering Reclaim memory 39900000 size 4000
+kernel::startup::memory:DEBUG -- Registering Reserved memory 0 size 1000
+kernel::startup::memory:DEBUG -- Registering Free memory 1000 size 284AD000
+kernel::startup::memory:DEBUG -- Registering Reserved memory 284AE000 size 11353000
+kernel::startup::memory:DEBUG -- Registering Free memory 39801000 size FF000
+kernel::startup::memory:DEBUG -- Registering Reserved memory 39900000 size 1B2000
+kernel::startup::memory:DEBUG -- Registering Free memory 39AB2000 size 24000
+kernel::startup::memory:DEBUG -- Registering Reserved memory 39AD6000 size 8F000
+kernel::startup::memory:DEBUG -- Registering Free memory 39B65000 size D000
+kernel::startup::memory:DEBUG -- Registering Reserved memory 39B72000 size 1000
+kernel::startup::memory:DEBUG -- Registering Free memory 39B73000 size 3D000
+kernel::startup::memory:DEBUG -- Registering Reserved memory 39BB0000 size 12000
+kernel::startup::memory:DEBUG -- Registering Free memory 39BC2000 size 5000
+kernel::startup::memory:DEBUG -- Registering Reserved memory 39BC7000 size 1000
+kernel::startup::memory:DEBUG -- Registering Free memory 39BC8000 size 3000
+kernel::startup::memory:DEBUG -- Registering Reserved memory 39BCB000 size 21000
+kernel::startup::memory:DEBUG -- Registering Free memory 39BEC000 size 3000
+kernel::startup::memory:DEBUG -- Registering Reserved memory 39BEF000 size 1000
+kernel::startup::memory:DEBUG -- Registering Free memory 39BF0000 size 10AB000
+kernel::startup::memory:DEBUG -- Registering Reserved memory 3AC9B000 size 1000
+kernel::startup::memory:DEBUG -- Registering Free memory 3AC9C000 size 364000
+kernel::startup::memory:DEBUG -- Registering Reserved memory 3B000000 size 20000
+kernel::startup::memory:DEBUG -- Registering Free memory 3B020000 size 2E0000
+kernel::startup::memory:DEBUG -- Registering Reserved memory 3EE73000 size 1000
+kernel::startup::memory:DEBUG -- Registering Free memory 40000000 size BC000000
+kernel::startup::memory:DEBUG -- Registering Reserved memory FE100000 size 1000
+kernel::startup::memory:DEBUG -- Registering Reserved memory 0 size 1000
+kernel::dtb:DEBUG -- dynamic reserved-memory node linux,cma; ignoring it until allocation is supported
+kernel::startup::memory:DEBUG -- Registering Reserved memory 3EE73700 size 62
+kernel::startup::memory:DEBUG -- Registering Reserved memory 3EE737A0 size 200
+kernel::dtb:DEBUG -- dev mem 0x7e000000 0xfe000000 0x01800000
+kernel::dtb:DEBUG -- dev mem 0x7c000000 0xfc000000 0x02000000
+kernel::dtb:DEBUG -- dev mem 0x40000000 0xff800000 0x00800000
+kernel::dtb:DEBUG -- soc device timer@7e003000 0x7e003000 -> 0xfe003000 len 0x00001000
+kernel::startup::memory:DEBUG -- Registering Device memory FE003000 size 1000
+kernel::dtb:DEBUG -- soc device txp@7e004000 0x7e004000 -> 0xfe004000 len 0x00000020
+kernel::startup::memory:DEBUG -- Registering Device memory FE004000 size 20
+kernel::dtb:DEBUG -- soc device cprman@7e101000 0x7e101000 -> 0xfe101000 len 0x00002000
+kernel::startup::memory:DEBUG -- Registering Device memory FE101000 size 2000
+kernel::dtb:DEBUG -- soc device mailbox@7e00b880 0x7e00b880 -> 0xfe00b880 len 0x00000040
+kernel::startup::memory:DEBUG -- Registering Device memory FE00B880 size 40
+kernel::dtb:DEBUG -- soc device gpio@7e200000 0x7e200000 -> 0xfe200000 len 0x000000b4
+kernel::startup::memory:DEBUG -- Registering Device memory FE200000 size B4
+kernel::dtb:DEBUG -- soc device serial@7e201000 0x7e201000 -> 0xfe201000 len 0x00000200
+kernel::startup::memory:DEBUG -- Registering Device memory FE201000 size 200
+kernel::dtb:DEBUG -- soc device mmc@7e202000 0x7e202000 -> 0xfe202000 len 0x00000100
+kernel::startup::memory:DEBUG -- Registering Device memory FE202000 size 100
+kernel::dtb:DEBUG -- soc device i2s@7e203000 0x7e203000 -> 0xfe203000 len 0x00000024
+kernel::startup::memory:DEBUG -- Registering Device memory FE203000 size 24
+kernel::dtb:DEBUG -- soc device spi@7e204000 0x7e204000 -> 0xfe204000 len 0x00000200
+kernel::startup::memory:DEBUG -- Registering Device memory FE204000 size 200
+kernel::dtb:DEBUG -- soc device i2c@7e205000 0x7e205000 -> 0xfe205000 len 0x00000200
+kernel::startup::memory:DEBUG -- Registering Device memory FE205000 size 200
+kernel::dtb:DEBUG -- soc device dpi@7e208000 0x7e208000 -> 0xfe208000 len 0x0000008c
+kernel::startup::memory:DEBUG -- Registering Device memory FE208000 size 8C
+kernel::dtb:DEBUG -- soc device dsi@7e209000 0x7e209000 -> 0xfe209000 len 0x00000078
+kernel::startup::memory:DEBUG -- Registering Device memory FE209000 size 78
+kernel::dtb:DEBUG -- soc device aux@7e215000 0x7e215000 -> 0xfe215000 len 0x00000008
+kernel::startup::memory:DEBUG -- Registering Device memory FE215000 size 8
+kernel::dtb:DEBUG -- soc device serial@7e215040 0x7e215040 -> 0xfe215040 len 0x00000040
+kernel::startup::memory:DEBUG -- Registering Device memory FE215040 size 40
+kernel::dtb:DEBUG -- soc device spi@7e215080 0x7e215080 -> 0xfe215080 len 0x00000040
+kernel::startup::memory:DEBUG -- Registering Device memory FE215080 size 40
+kernel::dtb:DEBUG -- soc device spi@7e2150c0 0x7e2150c0 -> 0xfe2150c0 len 0x00000040
+kernel::startup::memory:DEBUG -- Registering Device memory FE2150C0 size 40
+kernel::dtb:DEBUG -- soc device pwm@7e20c000 0x7e20c000 -> 0xfe20c000 len 0x00000028
+kernel::startup::memory:DEBUG -- Registering Device memory FE20C000 size 28
+kernel::dtb:DEBUG -- soc device mmc@7e300000 0x7e300000 -> 0xfe300000 len 0x00000100
+kernel::startup::memory:DEBUG -- Registering Device memory FE300000 size 100
+kernel::dtb:DEBUG -- soc device hvs@7e400000 0x7e400000 -> 0xfe400000 len 0x00008000
+kernel::startup::memory:DEBUG -- Registering Device memory FE400000 size 8000
+kernel::dtb:DEBUG -- soc device dsi@7e700000 0x7e700000 -> 0xfe700000 len 0x0000008c
+kernel::startup::memory:DEBUG -- Registering Device memory FE700000 size 8C
+kernel::dtb:DEBUG -- soc device csi@7e800000 0x7e800000 -> 0xfe800000 len 0x00000800
+kernel::startup::memory:DEBUG -- Registering Device memory FE800000 size 800
+kernel::dtb:DEBUG -- soc device csi@7e800000 0x7e802000 -> 0xfe802000 len 0x00000004
+kernel::startup::memory:DEBUG -- Registering Device memory FE802000 size 4
+kernel::dtb:DEBUG -- soc device csi@7e801000 0x7e801000 -> 0xfe801000 len 0x00000800
+kernel::startup::memory:DEBUG -- Registering Device memory FE801000 size 800
+kernel::dtb:DEBUG -- soc device csi@7e801000 0x7e802004 -> 0xfe802004 len 0x00000004
+kernel::startup::memory:DEBUG -- Registering Device memory FE802004 size 4
+kernel::dtb:DEBUG -- soc device i2c@7e804000 0x7e804000 -> 0xfe804000 len 0x00001000
+kernel::startup::memory:DEBUG -- Registering Device memory FE804000 size 1000
+kernel::dtb:DEBUG -- soc device usb@7e980000 0x7e980000 -> 0xfe980000 len 0x00010000
+kernel::startup::memory:DEBUG -- Registering Device memory FE980000 size 10000
+kernel::dtb:DEBUG -- soc device usb@7e980000 0x7e00b200 -> 0xfe00b200 len 0x00000200
+kernel::startup::memory:DEBUG -- Registering Device memory FE00B200 size 200
+kernel::dtb:DEBUG -- soc device interrupt-controller@40000000 0x40000000 -> 0xff800000 len 0x00000100
+kernel::startup::memory:DEBUG -- Registering Device memory FF800000 size 100
+kernel::dtb:DEBUG -- soc device interrupt-controller@40041000 0x40041000 -> 0xff841000 len 0x00001000
+kernel::startup::memory:DEBUG -- Registering Device memory FF841000 size 1000
+kernel::dtb:DEBUG -- soc device interrupt-controller@40041000 0x40042000 -> 0xff842000 len 0x00002000
+kernel::startup::memory:DEBUG -- Registering Device memory FF842000 size 2000
+kernel::dtb:DEBUG -- soc device interrupt-controller@40041000 0x40044000 -> 0xff844000 len 0x00002000
+kernel::startup::memory:DEBUG -- Registering Device memory FF844000 size 2000
+kernel::dtb:DEBUG -- soc device interrupt-controller@40041000 0x40046000 -> 0xff846000 len 0x00002000
+kernel::startup::memory:DEBUG -- Registering Device memory FF846000 size 2000
+kernel::dtb:DEBUG -- soc device avs-monitor@7d5d2000 0x7d5d2000 -> 0xfd5d2000 len 0x00000f00
+kernel::startup::memory:DEBUG -- Registering Device memory FD5D2000 size F00
+kernel::dtb:DEBUG -- soc device dma-controller@7e007000 0x7e007000 -> 0xfe007000 len 0x00000b00
+kernel::startup::memory:DEBUG -- Registering Device memory FE007000 size B00
+kernel::dtb:DEBUG -- soc device watchdog@7e100000 0x7e100000 -> 0xfe100000 len 0x00000114
+kernel::startup::memory:DEBUG -- Registering Device memory FE100000 size 114
+kernel::dtb:DEBUG -- soc device watchdog@7e100000 0x7e00a000 -> 0xfe00a000 len 0x00000024
+kernel::startup::memory:DEBUG -- Registering Device memory FE00A000 size 24
+kernel::dtb:DEBUG -- soc device watchdog@7e100000 0x7ec11000 -> 0xfec11000 len 0x00000020
+kernel::startup::memory:DEBUG -- Registering Device memory FEC11000 size 20
+kernel::dtb:DEBUG -- soc device rng@7e104000 0x7e104000 -> 0xfe104000 len 0x00000028
+kernel::startup::memory:DEBUG -- Registering Device memory FE104000 size 28
+kernel::dtb:DEBUG -- soc device serial@7e201400 0x7e201400 -> 0xfe201400 len 0x00000200
+kernel::startup::memory:DEBUG -- Registering Device memory FE201400 size 200
+kernel::dtb:DEBUG -- soc device serial@7e201600 0x7e201600 -> 0xfe201600 len 0x00000200
+kernel::startup::memory:DEBUG -- Registering Device memory FE201600 size 200
+kernel::dtb:DEBUG -- soc device serial@7e201800 0x7e201800 -> 0xfe201800 len 0x00000200
+kernel::startup::memory:DEBUG -- Registering Device memory FE201800 size 200
+kernel::dtb:DEBUG -- soc device serial@7e201a00 0x7e201a00 -> 0xfe201a00 len 0x00000200
+kernel::startup::memory:DEBUG -- Registering Device memory FE201A00 size 200
+kernel::dtb:DEBUG -- soc device spi@7e204600 0x7e204600 -> 0xfe204600 len 0x00000200
+kernel::startup::memory:DEBUG -- Registering Device memory FE204600 size 200
+kernel::dtb:DEBUG -- soc device spi@7e204800 0x7e204800 -> 0xfe204800 len 0x00000200
+kernel::startup::memory:DEBUG -- Registering Device memory FE204800 size 200
+kernel::dtb:DEBUG -- soc device spi@7e204a00 0x7e204a00 -> 0xfe204a00 len 0x00000200
+kernel::startup::memory:DEBUG -- Registering Device memory FE204A00 size 200
+kernel::dtb:DEBUG -- soc device spi@7e204c00 0x7e204c00 -> 0xfe204c00 len 0x00000200
+kernel::startup::memory:DEBUG -- Registering Device memory FE204C00 size 200
+kernel::dtb:DEBUG -- soc device i2c@7e205600 0x7e205600 -> 0xfe205600 len 0x00000200
+kernel::startup::memory:DEBUG -- Registering Device memory FE205600 size 200
+kernel::dtb:DEBUG -- soc device i2c@7e205800 0x7e205800 -> 0xfe205800 len 0x00000200
+kernel::startup::memory:DEBUG -- Registering Device memory FE205800 size 200
+kernel::dtb:DEBUG -- soc device i2c@7e205a00 0x7e205a00 -> 0xfe205a00 len 0x00000200
+kernel::startup::memory:DEBUG -- Registering Device memory FE205A00 size 200
+kernel::dtb:DEBUG -- soc device i2c@7e205c00 0x7e205c00 -> 0xfe205c00 len 0x00000200
+kernel::startup::memory:DEBUG -- Registering Device memory FE205C00 size 200
+kernel::dtb:DEBUG -- soc device pixelvalve@7e206000 0x7e206000 -> 0xfe206000 len 0x00000100
+kernel::startup::memory:DEBUG -- Registering Device memory FE206000 size 100
+kernel::dtb:DEBUG -- soc device pixelvalve@7e207000 0x7e207000 -> 0xfe207000 len 0x00000100
+kernel::startup::memory:DEBUG -- Registering Device memory FE207000 size 100
+kernel::dtb:DEBUG -- soc device pixelvalve@7e20a000 0x7e20a000 -> 0xfe20a000 len 0x00000100
+kernel::startup::memory:DEBUG -- Registering Device memory FE20A000 size 100
+kernel::dtb:DEBUG -- soc device pwm@7e20c800 0x7e20c800 -> 0xfe20c800 len 0x00000028
+kernel::startup::memory:DEBUG -- Registering Device memory FE20C800 size 28
+kernel::dtb:DEBUG -- soc device pixelvalve@7e216000 0x7e216000 -> 0xfe216000 len 0x00000100
+kernel::startup::memory:DEBUG -- Registering Device memory FE216000 size 100
+kernel::dtb:DEBUG -- soc device pixelvalve@7ec12000 0x7ec12000 -> 0xfec12000 len 0x00000100
+kernel::startup::memory:DEBUG -- Registering Device memory FEC12000 size 100
+kernel::dtb:DEBUG -- soc device vec@7ec13000 0x7ec13000 -> 0xfec13000 len 0x00001000
+kernel::startup::memory:DEBUG -- Registering Device memory FEC13000 size 1000
+kernel::dtb:DEBUG -- soc device clock@7ef00000 0x7ef00000 -> 0xfef00000 len 0x00000010
+kernel::startup::memory:DEBUG -- Registering Device memory FEF00000 size 10
+kernel::dtb:DEBUG -- soc device interrupt-controller@7ef00100 0x7ef00100 -> 0xfef00100 len 0x00000030
+kernel::startup::memory:DEBUG -- Registering Device memory FEF00100 size 30
+kernel::dtb:DEBUG -- soc device hdmi@7ef00700 0x7ef00700 -> 0xfef00700 len 0x00000300
+kernel::startup::memory:DEBUG -- Registering Device memory FEF00700 size 300
+kernel::dtb:DEBUG -- soc device hdmi@7ef00700 0x7ef00300 -> 0xfef00300 len 0x00000200
+kernel::startup::memory:DEBUG -- Registering Device memory FEF00300 size 200
+kernel::dtb:DEBUG -- soc device hdmi@7ef00700 0x7ef00f00 -> 0xfef00f00 len 0x00000080
+kernel::startup::memory:DEBUG -- Registering Device memory FEF00F00 size 80
+kernel::dtb:DEBUG -- soc device hdmi@7ef00700 0x7ef00f80 -> 0xfef00f80 len 0x00000080
+kernel::startup::memory:DEBUG -- Registering Device memory FEF00F80 size 80
+kernel::dtb:DEBUG -- soc device hdmi@7ef00700 0x7ef01b00 -> 0xfef01b00 len 0x00000200
+kernel::startup::memory:DEBUG -- Registering Device memory FEF01B00 size 200
+kernel::dtb:DEBUG -- soc device hdmi@7ef00700 0x7ef01f00 -> 0xfef01f00 len 0x00000400
+kernel::startup::memory:DEBUG -- Registering Device memory FEF01F00 size 400
+kernel::dtb:DEBUG -- soc device hdmi@7ef00700 0x7ef00200 -> 0xfef00200 len 0x00000080
+kernel::startup::memory:DEBUG -- Registering Device memory FEF00200 size 80
+kernel::dtb:DEBUG -- soc device hdmi@7ef00700 0x7ef04300 -> 0xfef04300 len 0x00000100
+kernel::startup::memory:DEBUG -- Registering Device memory FEF04300 size 100
+kernel::dtb:DEBUG -- soc device hdmi@7ef00700 0x7ef20000 -> 0xfef20000 len 0x00000100
+kernel::startup::memory:DEBUG -- Registering Device memory FEF20000 size 100
+kernel::dtb:DEBUG -- soc device hdmi@7ef00700 0x7ef00100 -> 0xfef00100 len 0x00000030
+kernel::startup::memory:DEBUG -- Registering Device memory FEF00100 size 30
+kernel::dtb:DEBUG -- soc device i2c@7ef04500 0x7ef04500 -> 0xfef04500 len 0x00000100
+kernel::startup::memory:DEBUG -- Registering Device memory FEF04500 size 100
+kernel::dtb:DEBUG -- soc device i2c@7ef04500 0x7ef00b00 -> 0xfef00b00 len 0x00000300
+kernel::startup::memory:DEBUG -- Registering Device memory FEF00B00 size 300
+kernel::dtb:DEBUG -- soc device hdmi@7ef05700 0x7ef05700 -> 0xfef05700 len 0x00000300
+kernel::startup::memory:DEBUG -- Registering Device memory FEF05700 size 300
+kernel::dtb:DEBUG -- soc device hdmi@7ef05700 0x7ef05300 -> 0xfef05300 len 0x00000200
+kernel::startup::memory:DEBUG -- Registering Device memory FEF05300 size 200
+kernel::dtb:DEBUG -- soc device hdmi@7ef05700 0x7ef05f00 -> 0xfef05f00 len 0x00000080
+kernel::startup::memory:DEBUG -- Registering Device memory FEF05F00 size 80
+kernel::dtb:DEBUG -- soc device hdmi@7ef05700 0x7ef05f80 -> 0xfef05f80 len 0x00000080
+kernel::startup::memory:DEBUG -- Registering Device memory FEF05F80 size 80
+kernel::dtb:DEBUG -- soc device hdmi@7ef05700 0x7ef06b00 -> 0xfef06b00 len 0x00000200
+kernel::startup::memory:DEBUG -- Registering Device memory FEF06B00 size 200
+kernel::dtb:DEBUG -- soc device hdmi@7ef05700 0x7ef06f00 -> 0xfef06f00 len 0x00000400
+kernel::startup::memory:DEBUG -- Registering Device memory FEF06F00 size 400
+kernel::dtb:DEBUG -- soc device hdmi@7ef05700 0x7ef00280 -> 0xfef00280 len 0x00000080
+kernel::startup::memory:DEBUG -- Registering Device memory FEF00280 size 80
+kernel::dtb:DEBUG -- soc device hdmi@7ef05700 0x7ef09300 -> 0xfef09300 len 0x00000100
+kernel::startup::memory:DEBUG -- Registering Device memory FEF09300 size 100
+kernel::dtb:DEBUG -- soc device hdmi@7ef05700 0x7ef20000 -> 0xfef20000 len 0x00000100
+kernel::startup::memory:DEBUG -- Registering Device memory FEF20000 size 100
+kernel::dtb:DEBUG -- soc device hdmi@7ef05700 0x7ef00100 -> 0xfef00100 len 0x00000030
+kernel::startup::memory:DEBUG -- Registering Device memory FEF00100 size 30
+kernel::dtb:DEBUG -- soc device i2c@7ef09500 0x7ef09500 -> 0xfef09500 len 0x00000100
+kernel::startup::memory:DEBUG -- Registering Device memory FEF09500 size 100
+kernel::dtb:DEBUG -- soc device i2c@7ef09500 0x7ef05b00 -> 0xfef05b00 len 0x00000300
+kernel::startup::memory:DEBUG -- Registering Device memory FEF05B00 size 300
+kernel::dtb:DEBUG -- soc device mailbox@7e00b840 0x7e00b840 -> 0xfe00b840 len 0x0000003c
+kernel::startup::memory:DEBUG -- Registering Device memory FE00B840 size 3C
+kernel::dtb:DEBUG -- soc device mmcnr@7e300000 0x7e300000 -> 0xfe300000 len 0x00000100
+kernel::startup::memory:DEBUG -- Registering Device memory FE300000 size 100
+kernel::dtb:DEBUG -- soc device firmwarekms@7e600000 0x7e600000 -> 0xfe600000 len 0x00000100
+kernel::startup::memory:DEBUG -- Registering Device memory FE600000 size 100
+kernel::dtb:DEBUG -- soc device smi@7e600000 0x7e600000 -> 0xfe600000 len 0x00000100
+kernel::startup::memory:DEBUG -- Registering Device memory FE600000 size 100
+kernel::dtb:DEBUG -- soc device axiperf 0x7e009800 -> 0xfe009800 len 0x00000100
+kernel::startup::memory:DEBUG -- Registering Device memory FE009800 size 100
+kernel::dtb:DEBUG -- soc device axiperf 0x7ee08000 -> 0xfee08000 len 0x00000100
+kernel::startup::memory:DEBUG -- Registering Device memory FEE08000 size 100
+kernel::dtb:DEBUG -- soc device gpiomem 0x7e200000 -> 0xfe200000 len 0x00001000
+kernel::startup::memory:DEBUG -- Registering Device memory FE200000 size 1000
+kernel::dtb:DEBUG -- diagnostic UART 0xfe201000 size 0x00000200
+kernel::startup::memory:DEBUG -- Registering Device memory FE201000 size 200
+kernel::startup::memory:DEBUG -- Registering Kernel memory 39914000 size 172770
+kernel::startup::memory:DEBUG -- Registering IdentityMap memory 39904000 size 174
+kernel::startup::memory:DEBUG -- Registering IdentityMap memory 39B56000 size F000
+kernel::startup::memory:DEBUG -- Registering IdentityMap memory 284AE000 size 1AA9000
+kernel::startup::memory:DEBUG -- Registering IdentityMap memory 39A92000 size 20000
+kernel::startup::memory:DEBUG -- 1000:284AE000
+kernel::startup::memory:DEBUG -- 39801000:39900000
+kernel::startup::memory:DEBUG -- 39AB2000:39AD6000
+kernel::startup::memory:DEBUG -- 39B65000:39B72000
+kernel::startup::memory:DEBUG -- 39B73000:39BB0000
+kernel::startup::memory:DEBUG -- 39BC2000:39BC7000
+kernel::startup::memory:DEBUG -- 39BC8000:39BCB000
+kernel::startup::memory:DEBUG -- 39BEC000:39BEF000
+kernel::startup::memory:DEBUG -- 39BF0000:3AC9B000
+kernel::startup::memory:DEBUG -- 3AC9C000:3B000000
+kernel::startup::memory:DEBUG -- 3B020000:3B300000
+kernel::startup::memory:DEBUG -- 40000000:FC000000
+kernel::startup::memory:DEBUG -- MemoryArea { base: [phys 0x1000], size: 284AD000 }
+kernel::startup::memory:DEBUG -- MemoryArea { base: [phys 0x39801000], size: FF000 }
+kernel::startup::memory:DEBUG -- MemoryArea { base: [phys 0x39ab2000], size: 24000 }
+kernel::startup::memory:DEBUG -- MemoryArea { base: [phys 0x39b65000], size: D000 }
+kernel::startup::memory:DEBUG -- MemoryArea { base: [phys 0x39b73000], size: 3D000 }
+kernel::startup::memory:DEBUG -- MemoryArea { base: [phys 0x39bc2000], size: 5000 }
+kernel::startup::memory:DEBUG -- MemoryArea { base: [phys 0x39bc8000], size: 3000 }
+kernel::startup::memory:DEBUG -- MemoryArea { base: [phys 0x39bec000], size: 3000 }
+kernel::startup::memory:DEBUG -- MemoryArea { base: [phys 0x39bf0000], size: 10AB000 }
+kernel::startup::memory:DEBUG -- MemoryArea { base: [phys 0x3ac9c000], size: 364000 }
+kernel::startup::memory:DEBUG -- MemoryArea { base: [phys 0x3b020000], size: 2E0000 }
+kernel::startup::memory:DEBUG -- MemoryArea { base: [phys 0x40000000], size: BC000000 }
+kernel::startup::memory:INFO -- Memory: 3678 MB
+kernel::startup::memory:INFO -- Highest huge page level: 0
+kernel::startup::memory:DEBUG -- Contiguously mapping 0x1000 => 0xffff800000001000, 165037 pages, level 0
+kernel::startup::memory:DEBUG -- head+middle lvl 0 next 0 pages_per_iter 1 base 0x1000 remaining 165037
+kernel::startup::memory:DEBUG -- Contiguously mapping 0x39801000 => 0xffff800039801000, 255 pages, level 0
+kernel::startup::memory:DEBUG -- head+middle lvl 0 next 0 pages_per_iter 1 base 0x39801000 remaining 255
+kernel::startup::memory:DEBUG -- Contiguously mapping 0x39ab2000 => 0xffff800039ab2000, 36 pages, level 0
+kernel::startup::memory:DEBUG -- head+middle lvl 0 next 0 pages_per_iter 1 base 0x39ab2000 remaining 36
+kernel::startup::memory:DEBUG -- Contiguously mapping 0x39b65000 => 0xffff800039b65000, 13 pages, level 0
+kernel::startup::memory:DEBUG -- head+middle lvl 0 next 0 pages_per_iter 1 base 0x39b65000 remaining 13
+kernel::startup::memory:DEBUG -- Contiguously mapping 0x39b73000 => 0xffff800039b73000, 61 pages, level 0
+kernel::startup::memory:DEBUG -- head+middle lvl 0 next 0 pages_per_iter 1 base 0x39b73000 remaining 61
+kernel::startup::memory:DEBUG -- Contiguously mapping 0x39bc2000 => 0xffff800039bc2000, 5 pages, level 0
+kernel::startup::memory:DEBUG -- head+middle lvl 0 next 0 pages_per_iter 1 base 0x39bc2000 remaining 5
+kernel::startup::memory:DEBUG -- Contiguously mapping 0x39bc8000 => 0xffff800039bc8000, 3 pages, level 0
+kernel::startup::memory:DEBUG -- head+middle lvl 0 next 0 pages_per_iter 1 base 0x39bc8000 remaining 3
+kernel::startup::memory:DEBUG -- Contiguously mapping 0x39bec000 => 0xffff800039bec000, 3 pages, level 0
+kernel::startup::memory:DEBUG -- head+middle lvl 0 next 0 pages_per_iter 1 base 0x39bec000 remaining 3
+kernel::startup::memory:DEBUG -- Contiguously mapping 0x39bf0000 => 0xffff800039bf0000, 4267 pages, level 0
+kernel::startup::memory:DEBUG -- head+middle lvl 0 next 0 pages_per_iter 1 base 0x39bf0000 remaining 4267
+kernel::startup::memory:DEBUG -- Contiguously mapping 0x3ac9c000 => 0xffff80003ac9c000, 868 pages, level 0
+kernel::startup::memory:DEBUG -- head+middle lvl 0 next 0 pages_per_iter 1 base 0x3ac9c000 remaining 868
+kernel::startup::memory:DEBUG -- Contiguously mapping 0x3b020000 => 0xffff80003b020000, 736 pages, level 0
+kernel::startup::memory:DEBUG -- head+middle lvl 0 next 0 pages_per_iter 1 base 0x3b020000 remaining 736
+kernel::startup::memory:DEBUG -- Contiguously mapping 0x40000000 => 0xffff800040000000, 770048 pages, level 0
+kernel::startup::memory:DEBUG -- head+middle lvl 0 next 0 pages_per_iter 1 base 0x40000000 remaining 770048
+kernel::startup::memory:DEBUG -- MAPPING STACK, BASE 39a92000 SIZE 20000
+kernel::startup::memory:DEBUG -- Contiguously mapping 0x39a92000 => 0xffff800039a92000, 32 pages, level 0
+kernel::startup::memory:DEBUG -- head+middle lvl 0 next 0 pages_per_iter 1 base 0x39a92000 remaining 32
+kernel::startup::memory:DEBUG -- Table: 1000
+kernel::startup::memory:DEBUG -- 256: 2403
+kernel::startup::memory:DEBUG -- 510: 738403
+kernel::startup::memory:INFO -- Permanently used: 7496 KB
+kernel::acpi:ERROR -- NO RSDP FOUND
+kernel::memory:DEBUG -- Initial freelist consistent
+kernel::memory::dma_zone:INFO -- DMA zone: 262144 KiB below 0x40000000 for DMA buffers (RAM up to 0xfc000000)
+kernel::arch::aarch64::device:INFO -- PSCI INIT
+kernel::arch::aarch64::device::psci:WARN -- PSCI v0.2+ node not found; reset and power-off are unavailable
+kernel::arch::aarch64::device::bcm2835_wdt:INFO -- BCM2835 watchdog at 0xfe100000
+kernel::arch::aarch64::device:INFO -- CPU TOPOLOGY INIT
+kernel::arch::aarch64::device::cpu::topology:INFO -- DT CPU topology: 4 enabled, 0 disabled, BSP MPIDR=0x0, 3 startable secondaries
+kernel::arch::aarch64::device::cpu::topology:DEBUG -- CPU topology logical #0: MPIDR=0x0 boot=true enable-method=spin-table
+kernel::arch::aarch64::device::cpu::topology:DEBUG -- CPU topology logical #1: MPIDR=0x1 boot=false enable-method=spin-table
+kernel::arch::aarch64::device::cpu::topology:DEBUG -- CPU topology logical #2: MPIDR=0x2 boot=false enable-method=spin-table
+kernel::arch::aarch64::device::cpu::topology:DEBUG -- CPU topology logical #3: MPIDR=0x3 boot=false enable-method=spin-table
+kernel::arch::aarch64::device::cpu::boot:INFO -- BSP translation-table walks are inner-shareable: TCR_EL1=0x14b5103510
+kernel::arch::aarch64::device::cpu::boot:INFO -- CPU boot resources: 3 slots ready, trampoline=0x3b070000, idmap=0x3b071000
+kernel::arch::aarch64::device::cpu::boot:DEBUG -- CPU boot slot logical #1: MPIDR=0x1 stack_phys=0x28400000..0x28410000 percpu_phys=0x3b075000 args_phys=0x3b076000
+kernel::arch::aarch64::device::cpu::boot:DEBUG -- CPU boot slot logical #2: MPIDR=0x2 stack_phys=0x28410000..0x28420000 percpu_phys=0x3b077000 args_phys=0x3b078000
+kernel::arch::aarch64::device::cpu::boot:DEBUG -- CPU boot slot logical #3: MPIDR=0x3 stack_phys=0x28420000..0x28430000 percpu_phys=0x3b079000 args_phys=0x3b07a000
+kernel::arch::aarch64::device:INFO -- IRQCHIP INIT
+kernel::dtb:DEBUG -- root parent = 0x00000001
+kernel::dtb:DEBUG -- gpio@7e200000, compatible = brcm,bcm2711-gpio, #interrupt-cells = 0x00000002, phandle = 0x00000007
+kernel::dtb:DEBUG -- interrupt-parent = 0x00000001
+kernel::dtb:DEBUG -- interrupts begin:
+kernel::dtb:DEBUG -- 0x00000000, 
+kernel::dtb:DEBUG -- 0x00000071, 
+kernel::dtb:DEBUG -- 0x00000004, 
+kernel::dtb:DEBUG -- 0x00000000, 
+kernel::dtb:DEBUG -- 0x00000072, 
+kernel::dtb:DEBUG -- 0x00000004, 
+kernel::dtb:DEBUG -- interrupts end
+kernel::dtb:DEBUG -- interrupt-controller@40041000, compatible = arm,gic-400, #interrupt-cells = 0x00000003, phandle = 0x00000001
+kernel::dtb:DEBUG -- interrupt-parent = 0x00000001
+kernel::dtb:DEBUG -- interrupts begin:
+kernel::dtb:DEBUG -- 0x00000001, 
+kernel::dtb:DEBUG -- 0x00000009, 
+kernel::dtb:DEBUG -- 0x00000f04, 
+kernel::dtb:DEBUG -- interrupts end
+kernel::dtb:DEBUG -- interrupt-controller@7ef00100, compatible = brcm,bcm2711-l2-intc, #interrupt-cells = 0x00000001, phandle = 0x0000002c
+kernel::dtb:DEBUG -- interrupt-parent = 0x00000001
+kernel::dtb:DEBUG -- interrupts begin:
+kernel::dtb:DEBUG -- 0x00000000, 
+kernel::dtb:DEBUG -- 0x00000060, 
+kernel::dtb:DEBUG -- 0x00000001, 
+kernel::dtb:DEBUG -- interrupts end
+kernel::dtb::irqchip:DEBUG -- gpio@7e200000, compatible = brcm,bcm2711-gpio, #interrupt-cells = 0x00000002, phandle = 0x00000007
+kernel::arch::aarch64::device::irqchip:WARN -- no driver for interrupt controller "brcm,bcm2711-gpio"
+kernel::dtb::irqchip:DEBUG -- interrupt-parent = 0x00000001
+kernel::dtb::irqchip:DEBUG -- interrupts begin:
+kernel::dtb::irqchip:DEBUG -- L3(0, 113, 4), 
+kernel::dtb::irqchip:DEBUG -- L3(0, 114, 4), 
+kernel::dtb::irqchip:DEBUG -- interrupts end
+kernel::dtb::irqchip:DEBUG -- interrupt-controller@40041000, compatible = arm,gic-400, #interrupt-cells = 0x00000003, phandle = 0x00000001
+kernel::dtb::irqchip:DEBUG -- interrupt-parent = 0x00000001
+kernel::dtb::irqchip:DEBUG -- interrupts begin:
+kernel::dtb::irqchip:DEBUG -- L3(1, 9, 3844), 
+kernel::dtb::irqchip:DEBUG -- interrupts end
+kernel::dtb::irqchip:DEBUG -- interrupt-controller@7ef00100, compatible = brcm,bcm2711-l2-intc, #interrupt-cells = 0x00000001, phandle = 0x0000002c
+kernel::arch::aarch64::device::irqchip:WARN -- no driver for interrupt controller "brcm,bcm2711-l2-intc"
+kernel::dtb::irqchip:DEBUG -- interrupt-parent = 0x00000001
+kernel::dtb::irqchip:DEBUG -- interrupts begin:
+kernel::dtb::irqchip:DEBUG -- L3(0, 96, 1), 
+kernel::dtb::irqchip:DEBUG -- interrupts end
+kernel::arch::aarch64::device::irqchip::gic:INFO -- gic: Distributor supports 4 CPUs and 256 IRQs
+kernel::arch::aarch64::device::irqchip::gic:INFO -- gic irq_range = (0, 256)
+kernel::arch::aarch64::device:INFO -- select 1 as root ic
+kernel::arch::aarch64::device:INFO -- GIT INIT
+kernel::arch::aarch64::device::generic_timer:DEBUG -- generic_timer use_virtual_timer = true
+kernel::arch::aarch64::device::generic_timer:DEBUG -- architected timer irq = L3(1, 11, 3848)
+kernel::arch::aarch64::device::generic_timer:INFO -- architected timer virq = 27 (virtual)
+kernel::arch::aarch64::device:INFO -- SERIAL INIT
+kernel::arch::aarch64::device::serial:INFO -- serial_port virq = 153
+kernel::arch::aarch64::device:INFO -- RTC INIT
+kernel::arch::aarch64::device::rtc:WARN -- No PL031 RTC found
+kernel::startup:INFO -- SECONDARY CPU INIT
+kernel::arch::aarch64::device::cpu::boot:INFO -- CPU logical #1: spin-table release MPIDR=0x1 at 0xe0
+kernel::arch::aarch64::device::cpu::boot:INFO -- CPU logical #1: local SGI/timer self-test passed
+kernel::arch::aarch64::device::cpu::boot:INFO -- CPU logical #1: online
+kernel::startup:DEBUG -- AP #1
+kernel::arch::aarch64::device::cpu::boot:INFO -- CPU logical #2: spin-table release MPIDR=0x2 at 0xe8
+kernel::arch::aarch64::device::cpu::boot:INFO -- CPU logical #2: local SGI/timer self-test passed
+kernel::arch::aarch64::device::cpu::boot:INFO -- CPU logical #2: online
+kernel::startup:DEBUG -- AP #2
+kernel::arch::aarch64::device::cpu::boot:INFO -- CPU logical #3: spin-table release MPIDR=0x3 at 0xf0
+kernel::arch::aarch64::device::cpu::boot:INFO -- CPU logical #3: local SGI/timer self-test passed
+kernel::arch::aarch64::device::cpu::boot:INFO -- CPU logical #3: online
+kernel::startup:DEBUG -- AP #3
+kernel::arch::aarch64::device::cpu::boot:INFO -- CPU activation complete: 4 CPUs online
+kernel::scheme::acpi:WARN -- expected RXSDT_ENUM to be initialized before AcpiScheme, is ACPI available?
+kernel::startup:DEBUG -- BSP: 4 CPUs
+kernel::startup:DEBUG -- Env: Ok("DTB_ADDR=0000000039b56000\nDTB_SIZE=000000000000f000\nDISK_LIVE_ADDR=000000002ba00000\nDISK_LIVE_SIZE=000000000de00000\nREDOXFS_BLOCK=0000000000000000\nREDOXFS_UUID=48bf5133-0c41-4d1a-bdd7-3d6d68ba0a44\nFRAMEBUFFER_ADDR=000000003e983000\nFRAMEBUFFER_VIRT=ffff80003e983000\nFRAMEBUFFER_WIDTH=0000000000000280\nFRAMEBUFFER_HEIGHT=00000000000001e0\nFRAMEBUFFER_STRIDE=0000000000000280\n")
+kernel::syscall::process:DEBUG -- Bootstrap entry point: 3000
+kernel::scheme::user:DEBUG -- call_fdread: payload: 8 metadata: 2
+init: switchroot to /scheme/initfs /scheme/initfs/etc
+kernel::scheme::user:DEBUG -- call_fdread: payload: 8 metadata: 2
+randd: Seeding failed, no entropy source.  Random numbers on this platform are NOT SECURE
+kernel::scheme::user:DEBUG -- call_fdread: payload: 8 metadata: 2
+kernel::scheme::user:DEBUG -- call_fdread: payload: 8 metadata: 2
+kernel::scheme::user:DEBUG -- call_fdread: payload: 8 metadata: 2
+kernel::scheme::user:DEBUG -- call_fdread: payload: 8 metadata: 2
+kernel::scheme::user:DEBUG -- call_fdread: payload: 8 metadata: 2
+kernel::scheme::user:DEBUG -- call_fdread: payload: 8 metadata: 2
+kernel::scheme::user:DEBUG -- call_fdread: payload: 8 metadata: 2
+kernel::scheme::user:DEBUG -- call_fdread: payload: 8 metadata: 2
+rpi-firmwared: mailbox at 0xfe00b880, revision 0x00c03131, model unknown
+rpi-firmwared: ARM clock 600 -> 1800 MHz
+kernel::scheme::user:DEBUG -- call_fdread: payload: 8 metadata: 2
+kernel::scheme::user:DEBUG -- call_fdread: payload: 8 metadata: 2
+kernel::scheme::user:DEBUG -- call_fdread: payload: 8 metadata: 2
+bcmgenetd: GENET at 0xfd580000, revision 0x06000000
+bcmgenetd: MAC <mac> from the devicetree
+bcmgenetd: link up, Mbit1000
+kernel::scheme::irq:DEBUG -- open_phandle_irq  virq=189
+kernel::scheme::user:DEBUG -- call_fdread: payload: 8 metadata: 2
+bcm2835-gpiod: 54 pins at 0xfe200000
+kernel::scheme::user:DEBUG -- call_fdread: payload: 8 metadata: 2
+bcm2835-spid: bus 0 at 0xfe204000, 1000 kHz (core 200 MHz)
+kernel::scheme::user:DEBUG -- call_fdread: payload: 8 metadata: 2
+bcm2835-i2cd: bus 1 at 0xfe804000, 100 kHz (core 200 MHz)
+kernel::scheme::user:DEBUG -- call_fdread: payload: 8 metadata: 2
+vesad: 640x480 stride 640 at 0x3E983000
+kernel::scheme::user:DEBUG -- call_fdread: payload: 8 metadata: 2
+kernel::scheme::user:DEBUG -- call_fdread: payload: 8 metadata: 2
+bcm2835-pwmaudiod: BCM2711, no PWM audio support yet; not starting
+init: env -i INIT_NOTIFY="4" LD_LIBRARY_PATH="/scheme/initfs/lib" PATH="/scheme/initfs/bin" RUST_BACKTRACE="1" "bcm2835-pwmaudiod" exited without notifying readiness
+Finished graphical debug
+fbbootlogd: mapped display
+kernel::scheme::user:DEBUG -- call_fdread: payload: 8 metadata: 2
+dwc2d: BCM2711, the DWC2 port is the power input; not starting
+bcm2835-sdhostd: BCM2711, the card is on EMMC2; not starting
+1970-01-01T00-00-31.107Z [@hwd:18 INFO] using devicetree backend
+1970-01-01T00-00-31.130Z [@pcid::cfg_access::brcmstb:109 INFO] pcid: BCM2711 PCIe at 0xfd500000, outbound CPU 0x600000000 = PCI 0xc0000000 (1024 MB), inbound PCI 0x400000000 = CPU 0x0 (4096 MB)
+1970-01-01T00-00-31.156Z [@pcid::cfg_access::brcmstb:160 INFO] pcid: PCIe bridge reset 0x3 (bridge in reset)
+1970-01-01T00-00-31.189Z [@pcid::cfg_access::brcmstb:171 INFO] pcid: PCIe bridge out of reset, revision 0x304
+1970-01-01T00-00-31.208Z [@pcid::cfg_access::brcmstb:186 INFO] pcid: dma-ranges has an offset; inbound window PCI 0 = CPU 0 (4096 MB) instead
+1970-01-01T00-00-31.339Z [@pcid::cfg_access::brcmstb:232 INFO] pcid: PCIe link up (status 0xb0)
+rpi-firmwared: VL805 at PCI 0x00100000 reset, firmware loaded
+1970-01-01T00-00-31.456Z [@pcid::cfg_access::brcmstb:393 INFO] pcid: firmware loaded the VL805 firmware
+1970-01-01T00-00-31.494Z [@pcid::cfg_access::brcmstb:323 INFO] pcid: 01:00.0 BAR0 at PCI 0xc0000000 (4096 bytes)
+1970-01-01T00-00-31.513Z [@pcid::cfg_access::brcmstb:262 INFO] pcid: 01:00.0 reading BAR0 at CPU 0x600000000 (PCI 0xc0000000)
+1970-01-01T00-00-31.534Z [@pcid::cfg_access::brcmstb:267 INFO] pcid: 01:00.0 BAR0 reads 0x01000020 (xHCI: CAPLENGTH low byte, HCIVERSION high half)
+1970-01-01T00-00-31.562Z [@pcid:253 INFO] PCI SG-BS:DV.F VEND:DEVI CL.SC.IN.RV
+1970-01-01T00-00-31.578Z [@pcid:350 INFO] PCI 0000:00:00.0 14E4:2711 06.04.00.20 PciPciBridge
+1970-01-01T00-00-31.596Z [@pcid:350 INFO] PCI 0000:01:00.0 1106:3483 0C.03.30.01 UsbController Xhci
+kernel::scheme::user:DEBUG -- call_fdread: payload: 8 metadata: 2
+kernel::scheme::user:DEBUG -- call_fdread: payload: 8 metadata: 2
+removing handle: id: 2, Some(List([48, 10]))
+init: switchroot to /usr /etc
+1970-01-01T00-00-31.708Z [@pcid_spawner:93 INFO] pcid-spawner: spawn "/usr/lib/drivers/xhcid"
+xhcid: mapping BAR0 Memory64 { addr: 25769803776, size: 4096 }
+xhcid: reading the capability registers at 0x15000
+xhcid: capability registers read, 64-byte contexts: false
+1970-01-01T00-00-31.760Z [@xhcid:98 INFO] XHCI pci-0000-01-00.0 on: 0=0000000600000000 IRQ: (phandle 1, [0, 143, 4])
+kernel::scheme::user:DEBUG -- call_fdread: payload: 8 metadata: 2
+kernel::scheme::user:DEBUG -- call_fdread: payload: 8 metadata: 2
+1970-01-01T00-00-31.905Z [@xhcid::xhci:1381 INFO] Loading subdriver "USB HUB" for port 1 iface 0 alternate 0 class 9.0 proto 0
+1970-01-01T00-00-31.960Z [@xhcid::xhci::device_enumerator:115 INFO] Device on port 1 was attached
+kernel::scheme::user:DEBUG -- call_fdread: payload: 8 metadata: 2
+1970-01-01T00-00-32.018Z [@usbhubd:244 INFO] power on port 1
+kernel::scheme::user:DEBUG -- call_fdread: payload: 8 metadata: 2
+kernel::scheme::user:DEBUG -- call_fdread: payload: 8 metadata: 2
+kernel::scheme::user:DEBUG -- call_fdread: payload: 8 metadata: 2
+kernel::scheme::user:DEBUG -- call_fdread: payload: 8 metadata: 2
+kernel::scheme::user:DEBUG -- call_fdread: payload: 8 metadata: 2
+1970-01-01T00-00-32.068Z [@usbhubd:244 INFO] power on port 2
+vc4d: BCM2711, HVS5: the firmware's mode, no EDID and no mode registers (HDMI is not the BCM2835's)
+vc4d: HVS at 0xfe400000, id 0x64647276, enabled
+vc4d: dispctrl 0x9a0ddfff dispstat 0x00200000
+vc4d: channel 0: ctrl 0x00000000 bkgnd 0x01000000 list 0 active 1 stat 0x119b01e0 (mode 0, frame 29)
+vc4d: channel 1: ctrl 0x828001e0 bkgnd 0x81000000 list 1636 active 1636 stat 0xc37681e0 (mode 3, frame 40)
+vc4d: channel 1: 640x480, list [4800f807, 00000000, 4000fff0, 01e00280, 010f0000, fe983000, fea2c600, 00000a00, 80000000]
+vc4d: channel 2: ctrl 0x00000000 bkgnd 0x00000000 list 0 active 0 stat 0x10300000 (mode 0, frame 0)
+1970-01-01T00-00-32.103Z [@usbhubd:244 INFO] power on port 3
+1970-01-01T00-00-32.180Z [@usbhubd:244 INFO] power on port 4
+vc4d: taking over channel 1 at 640x480
+kernel::scheme::irq:DEBUG -- open_phandle_irq  virq=129
+vc4d: irq probe: hvs at 0xfe400000, DISPCTRL DISPSTAT DISPSTAT before [9a0ddfff, 00200000, 00200000] after [9a0ddfff, 00000000, 00000000], /scheme/irq/phandle-1/0,97,4: 141 interrupts in 1000 ms
+kernel::scheme::irq:DEBUG -- open_phandle_irq  virq=133
+1970-01-01T00-00-33.220Z [@usbhubd:239 INFO] port 1 status V2(HubPortStatusV2(CONNECTION | POWER | LOW_SPEED | CONNECTION_CHANGED))
+1970-01-01T00-00-33.258Z [@usbhubd:287 INFO] reset port 1
+1970-01-01T00-00-33.290Z [@usbhubd:239 INFO] port 2 status V2(HubPortStatusV2(POWER))
+1970-01-01T00-00-33.310Z [@usbhubd:239 INFO] port 3 status V2(HubPortStatusV2(POWER))
+1970-01-01T00-00-33.330Z [@usbhubd:239 INFO] port 4 status V2(HubPortStatusV2(CONNECTION | POWER | LOW_SPEED | CONNECTION_CHANGED))
+vc4d: irq probe: pv2 at 0xfe20a000, CONTROL INTEN INTSTAT before [07174001, 00000000, 00000000] after [07174001, 00000000, 00000000], /scheme/irq/phandle-1/0,101,4: 0 interrupts in 1000 ms
+vc4d: check: start on channel 1, ctrl 0x828001e0 bkgnd 0x81000000 list 1636 active 1636 stat 0xa37681d4 (mode 2, frame 40)
+vc4d: check: before: errors [], dispctrl 0x9a0ddfff dispstat 0x00000000
+vc4d: check: PASS channel 1 list start is 2176
+vc4d: check: PASS list at 2176 reads back as written, 4 context words filled in by the HVS: [4800d807, 00000000, 4000fff0, 01e00280, 01180000, c2148000, c21f7000, 00000a00, 4800d807, 00100010, 0000fff0, 00400040, 003f0000, c2274000, c2277f00, 00000100, 80000000]
+vc4d: check: PASS frame count advances (2 frames)
+vc4d: check: PASS active word 2176 is in the list 2176..=2193
+vc4d: check: PASS cursor at (16, 16) in the HVS, wanted (16, 16)
+1970-01-01T00-00-34.359Z [@usbhubd:239 INFO] port 1 status V2(HubPortStatusV2(CONNECTION | ENABLE | POWER | LOW_SPEED | CONNECTION_CHANGED | RESET_CHANGED))
+vc4d: check: PASS channel 1 list start is 2240
+vc4d: check: PASS list at 2240 reads back as written, 4 context words filled in by the HVS: [4800d807, 00000000, 4000fff0, 01e00280, 01010000, c2148000, c21e8a00, 00000a00, 4800d807, 00f00140, 0000fff0, 00400040, 00110000, c2274000, c2275100, 00000100, 80000000]
+vc4d: check: PASS frame count advances (2 frames)
+vc4d: check: PASS active word 2240 is in the list 2240..=2257
+vc4d: check: PASS cursor at (320, 240) in the HVS, wanted (320, 240)
+1970-01-01T00-00-34.403Z [@usbhubd:150 INFO] attach port 1.1 at xHCI speed 2
+1970-01-01T00-00-34.458Z [@xhcid::xhci:858 INFO] port 1.1: speed 2 from its hub (root port speed 3)
+1970-01-01T00-00-34.480Z [@xhcid::xhci:1496 INFO] port 1.1: speed ID 2 not among the port's own IDs [3], default ID used: true
+1970-01-01T00-00-34.501Z [@xhcid::xhci:1163 INFO] port 1.1 parent_hub_slot_id 1 parent_port_num 1
+vc4d: check: PASS no HVS errors on channel 1: []
+1970-01-01T00-00-34.610Z [@xhcid::xhci:1381 INFO] Loading subdriver "USB HID" for port 1.1 iface 0 alternate 0 class 3.1 proto 2
+vc4d: check: back on the firmware list 1636; 11 passed, 0 failed
+vc4d: check: PASSED
+1970-01-01T00-00-34.647Z [@usbhidd:229 INFO] USB HID driver spawned with scheme `usb.pci-0000-01-00.0_xhci`, port 1.1, interface 0
+vc4d: flip: two scanout buffers, damage copied
+kernel::scheme::user:DEBUG -- call_fdread: payload: 8 metadata: 2
+1970-01-01T00-00-34.677Z [@usbhidd:241 INFO] USB HID driver: "USB Optical Mouse" serial ""
+kernel::scheme::user:DEBUG -- call_fdread: payload: 8 metadata: 2
+1970-01-01T00-00-34.700Z [@usbhidd:264 WARN] using endpoint 0x81 Interrupt In
+kernel::scheme::irq:DEBUG -- open_phandle_irq  virq=133
+vc4d: vblank: pixel valve 2, /scheme/irq/phandle-1/0,101,4
+Finished graphical debug
+vc4d: no primary plane, firmware list again
+1970-01-01T00-00-34.737Z [@usbhubd:287 INFO] reset port 4
+fbbootlogd: handoff requested
+vc4d: no primary plane, firmware list again
+rpi-firmwared: V3D power on, firmware says Some(true)
+fbbootlogd: mapped display
+vc4d: list 1 at 2048: [Plane { bus: 3257376768, pitch: 2560, x: 0, y: 0, width: 640, height: 480, alpha: false, scale: None }] [4800d807, 00000000, 4000fff0, 01e00280, c0c0c0c0, c227a000, c0c0c0c0, 00000a00, 80000000]
+v3dd: V3D 42 powered up
+kernel::scheme::irq:DEBUG -- open_phandle_irq  virq=106
+vc4d: list 2 at 2176: [Plane { bus: 3256127488, pitch: 2560, x: 0, y: 0, width: 640, height: 480, alpha: false, scale: None }] [4800d807, 00000000, 4000fff0, 01e00280, c0c0c0c0, c2149000, c0c0c0c0, 00000a00, 80000000]
+v3dd: interrupt: /scheme/irq/phandle-1/0,74,4
+vc4d: list 3 at 2304: [Plane { bus: 3257376768, pitch: 2560, x: 0, y: 0, width: 640, height: 480, alpha: false, scale: None }] [4800d807, 00000000, 4000fff0, 01e00280, c0c0c0c0, c227a000, c0c0c0c0, 00000a00, 80000000]
+1970-01-01T00-00-34.771Z [@xhcid::xhci::scheme:2978 ERROR] CONTROL_TRANSFER transfer Trb { data: 0000000000000000, status: 00000000, control: 00011020 } failed with event Trb { data: 0000000002279080, status: 06000000, control: 02018001 }
+v3dd: MMU on: page table at 0x23a6000, scratch page at 0x2275000
+vc4d: list 4 at 2048: [Plane { bus: 3256127488, pitch: 2560, x: 0, y: 0, width: 640, height: 480, alpha: false, scale: None }] [4800d807, 00000000, 4000fff0, 01e00280, c0c0c0c0, c2149000, c0c0c0c0, 00000a00, 80000000]
+1970-01-01T00-00-34.898Z [@usbhidd:326 WARN] failed to set idle: i/o error: I/O error (os error 5)
+kernel::scheme::user:DEBUG -- call_fdread: payload: 8 metadata: 2
+v3dd: ready: /scheme/v3d
+1970-01-01T00-00-34.938Z [@fbcond::text:40 INFO] fbcond: Performing handoff
+kernel::scheme::user:DEBUG -- call_fdread: payload: 8 metadata: 2
+devshd: listening on port 2323
+DHCP: eth0 got <lan-ip>/24
+DHCP: default route via <lan-ip> (eth0)
+audiod: No such device
+init: env -i INIT_NOTIFY="4" LD_LIBRARY_PATH="/usr/lib" PATH="/usr/bin" RUST_BACKTRACE="1" "audiod" exited without notifying readiness
+RedoxFS: IO ERROR: No such device (os error 19)
+[ERROR redoxfs] failed to open image /scheme/disk.mmc/0p1: I/O error
+[ERROR redoxfs] not able to mount path /scheme/disk.mmc/0p1
+init: env -i INIT_NOTIFY="4" LD_LIBRARY_PATH="/usr/lib" PATH="/usr/bin" RUST_BACKTRACE="1" "redoxfs" "/scheme/disk.mmc/0p1" "data" failed with exit status: 1
+########## Redox OS ##########
+# Login with the following:  #
+# `user`                     #
+# `root`:`password`          #
+##############################
+redox-rpi v0.7.0-dev-57-g03424d72+x2bc6 (netboot, 2026-11-24T20:51:58Z)
+experiments: cosmic-apps-source desktop netstack-watch orbital orbital-apps pi400 pi400-mem pointer-bench v3d-power v3dd vc4d
+
+⏎                                                                                redox login: redox login: 1970-01-01T00-00-35.962Z [@usbhubd:239 INFO] port 4 status V2(HubPortStatusV2(CONNECTION | ENABLE | POWER | LOW_SPEED | CONNECTION_CHANGED | RESET_CHANGED))
+1970-01-01T00-00-36.015Z [@usbhubd:150 INFO] attach port 1.4 at xHCI speed 2
+1970-01-01T00-00-36.031Z [@xhcid::xhci:858 INFO] port 1.4: speed 2 from its hub (root port speed 3)
+1970-01-01T00-00-36.054Z [@xhcid::xhci:1496 INFO] port 1.4: speed ID 2 not among the port's own IDs [3], default ID used: true
+1970-01-01T00-00-36.074Z [@xhcid::xhci:1163 INFO] port 1.4 parent_hub_slot_id 1 parent_port_num 4
+1970-01-01T00-00-36.194Z [@xhcid::xhci:1381 INFO] Loading subdriver "USB HID" for port 1.4 iface 0 alternate 0 class 3.1 proto 1
+1970-01-01T00-00-36.223Z [@xhcid::xhci:1381 INFO] Loading subdriver "USB HID" for port 1.4 iface 1 alternate 0 class 3.0 proto 0
+1970-01-01T00-00-36.253Z [@usbhidd:229 INFO] USB HID driver spawned with scheme `usb.pci-0000-01-00.0_xhci`, port 1.4, interface 1
+1970-01-01T00-00-36.274Z [@usbhidd:241 INFO] USB HID driver: "Raspberry Pi Internal Keyboard" serial ""
+1970-01-01T00-00-36.292Z [@usbhidd:264 WARN] using endpoint 0x82 Interrupt In
+1970-01-01T00-00-36.310Z [@usbhidd:229 INFO] USB HID driver spawned with scheme `usb.pci-0000-01-00.0_xhci`, port 1.4, interface 0
+1970-01-01T00-00-36.332Z [@usbhidd:241 INFO] USB HID driver: "Raspberry Pi Internal Keyboard" serial ""
+1970-01-01T00-00-36.351Z [@usbhidd:264 WARN] using endpoint 0x81 Interrupt In
+1970-01-01T00-00-36.414Z [@xhcid::xhci::scheme:2978 ERROR] CONTROL_TRANSFER transfer Trb { data: 0000000000000000, status: 00000000, control: 00011020 } failed with event Trb { data: 0000000002826060, status: 06000000, control: 03018001 }
+1970-01-01T00-00-36.444Z [@xhcid::xhci::scheme:1285 WARN] port 1.4: SET_INTERFACE 1 refused (I/O error); it has one alternate setting, going on
+1970-01-01T00-00-36.484Z [@xhcid::xhci::scheme:2978 ERROR] CONTROL_TRANSFER transfer Trb { data: 0000000000000000, status: 00000000, control: 00011020 } failed with event Trb { data: 0000000002826080, status: 06000000, control: 03018001 }
+1970-01-01T00-00-36.514Z [@xhcid::xhci::scheme:1285 WARN] port 1.4: SET_INTERFACE 0 refused (I/O error); it has one alternate setting, going on
+1970-01-01T00-00-36.624Z [@usbhidd:137 WARN] unknown usage_page 0x7 usage 0x0
+1970-01-01T00-00-36.640Z [@usbhidd:652 INFO] unsupported usage 0xC:0xB5 value 0
+1970-01-01T00-00-36.657Z [@usbhidd:652 INFO] unsupported usage 0xC:0xB6 value 0
+1970-01-01T00-00-36.673Z [@usbhidd:652 INFO] unsupported usage 0xC:0xEA value 0
+1970-01-01T00-00-36.689Z [@usbhidd:652 INFO] unsupported usage 0xC:0xE9 value 0
+1970-01-01T00-00-36.706Z [@usbhidd:652 INFO] unsupported usage 0xC:0x223 value 0
+1970-01-01T00-00-36.722Z [@usbhidd:652 INFO] unsupported usage 0xC:0x192 value 0
+vc4d: check: after 2 s: PASS frames advance, errors [], ctrl 0x828001e0 bkgnd 0x81000000 list 2048 active 2048 stat 0xa37bc14b (mode 2, frame 60)
+vc4d: check: after 5 s: PASS frames advance, errors [], ctrl 0x828001e0 bkgnd 0x81000000 list 2048 active 2048 stat 0xa378c132 (mode 2, frame 12)
+startup-sound: no data partition, using /etc/startup-sound
+ion: pipeline execution error: failed to redirect stdout to file '/scheme/audio': No such device (os error 19)
+vc4d: check: after 10 s: PASS frames advance, errors [], ctrl 0x828001e0 bkgnd 0x81000000 list 2048 active 2048 stat 0xa373c153 (mode 2, frame 60)
+vc4d: check: after 30 s: PASS frames advance, errors [], ctrl 0x828001e0 bkgnd 0x81000000 list 2048 active 2048 stat 0xa3700134 (mode 2, frame 0)
+v3dd: job ended with an MMU fault: no-pte,write-violation va 0x3f000000 unit L2T
+v3dd: timeout: bin job (1000 ms)
+v3dd: state: CT0CS 0x20 CT0CA 0x180000, CT1CS 0x0 CT1CA 0x181097, BFC 0x64, RFC 0x64, CTL_INT_STS 0x8
+v3dd: csd: CSD_STATUS 0x6f0, CTL_INT_STS 0x8, HUB_INT_STS 0x0, GMP_STATUS 0x40030
+v3dd: csd: MMU_CTL 0x60d0c01, MMU_VIO_ADDR 0x0 (address 0x0), MMU_VIO_ID 0x0
+[src/procmgr.rs:292 WARN] State Id(38) was placeholder!
+v3dd: reset: V3D_ERR_STAT 0x1000
+v3dd: reset: done, MMU set up again (resets so far: 1)
+v3dd: job failed: timeout: bin job not done after 1005679 us; V3D reset
+v3dd: timeout: bin job (1000 ms)
+v3dd: state: CT0CS 0x20 CT0CA 0x209000, CT1CS 0x0 CT1CA 0x182097, BFC 0xa, RFC 0xa, CTL_INT_STS 0x8
+v3dd: csd: CSD_STATUS 0x4b0, CTL_INT_STS 0x8, HUB_INT_STS 0x0, GMP_STATUS 0x40030
+v3dd: csd: MMU_CTL 0x60d0c01, MMU_VIO_ADDR 0x0 (address 0x0), MMU_VIO_ID 0x0
+v3dd: reset: V3D_ERR_STAT 0x1000
+v3dd: reset: done, MMU set up again (resets so far: 2)
+v3dd: job failed: timeout: bin job not done after 1009391 us; V3D reset
+v3dd: timeout: bin job (1000 ms)
+v3dd: state: CT0CS 0x20 CT0CA 0x27e000, CT1CS 0x0 CT1CA 0x0, BFC 0x0, RFC 0x0, CTL_INT_STS 0x8
+v3dd: csd: CSD_STATUS 0x820, CTL_INT_STS 0x8, HUB_INT_STS 0x0, GMP_STATUS 0x40030
+v3dd: csd: MMU_CTL 0x60d0c01, MMU_VIO_ADDR 0x0 (address 0x0), MMU_VIO_ID 0x0
+v3dd: reset: V3D_ERR_STAT 0x1000
+v3dd: reset: done, MMU set up again (resets so far: 3)
+v3dd: job failed: timeout: bin job not done after 1006948 us; V3D reset
+[src/procmgr.rs:292 WARN] State Id(57) was placeholder!

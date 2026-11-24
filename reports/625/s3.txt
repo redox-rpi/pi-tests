@@ -1,0 +1,9 @@
+### v3dprobe --via-v3dd --mapped --faults | grep -e mapped: -e faults:  (1.4 s)
+v3dprobe: mapped: PASS: both ways, and after a free while mapped (bos 24 frees 23 jobs 200 cl_jobs 100 failed 0 mmu_faults 0 resets 0 job_us_max 258 outomem 0 overflow_chunks 1 va_next 0x180000 va_free_ranges 0 irq /scheme/irq/phandle-1/0,74,4 irqs 300 irq_wakeups 300 timer_wakeups 106 maps 1 unmaps 0 live_bos 0 submitted 200 done_through 200 queued 0 running - zombies 0)
+v3dprobe: faults: bad address: PASS (v3dd: csd: error mmu-fault no-pte,write-violation va 0x3f000000 unit L2T)
+v3dprobe: faults: CSD after the fault: PASS
+v3dprobe: faults: endless job: FAIL free: write: Device or resource busy (os error 16)
+v3dprobe: faults: CSD after the reset: PASS
+v3dprobe: faults: render after the reset: PASS
+v3dprobe: faults: v3dd stats: bos 34 frees 32 jobs 232 cl_jobs 111 failed 2 mmu_faults 1 resets 1 job_us_max 258 outomem 0 overflow_chunks 1 va_next 0x181000 va_free_ranges 0 irq /scheme/irq/phandle-1/0,74,4 irqs 340 irq_wakeups 340 timer_wakeups 212 maps 11 unmaps 11 live_bos 1 submitted 232 done_through 232 queued 0 running - zombies 0
+v3dprobe: faults: FAIL
