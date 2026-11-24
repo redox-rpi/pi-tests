@@ -1,0 +1,36 @@
+start 08:10:09 99aa9306721f48f3
+setup: power cycle into U-Boot 08:10:09
+power on 08:10:21
+at U-Boot prompt
+write crcs: 17a03c01 17a03c01 c227f2bc c227f2bc d20cefd8 d20cefd8 a8d13d40 a8d13d40 b03fff81 b03fff81 fdcffa2f fdcffa2f  08:14:37
+power on 08:14:50
+A rbc-load rc=0: ok chain 48376 bytes, start 0x80000200, SDRAM running 08:15:00
+found after 12 s
+A: redox-rpi bootcode t531-790d149-1200 (release, boots from the SD card, boot screen on HDMI) boot64: display sampler on, every 1000 us, ring at FE200000  08:15:17
+A serial login 08:15:23
+serial a1 08:15:28
+serial a2 08:15:30
+serial a3 08:16:03
+serial a4 08:16:09
+serial a4b 08:16:17
+serial a5 08:16:50
+serial c0 08:16:52
+serial c1 08:17:29
+serial c2 08:18:46
+serial c3 08:18:57
+power on 08:19:10
+B rbc-load rc=0: ok chain 48392 bytes, start 0x80000200, SDRAM running 08:19:20
+found after 12 s
+B: redox-rpi bootcode t531-790d149-600axi (release, boots from the SD card, boot screen on HDMI) boot64: arm_freq, ARM clock at most 600 MHz boot64: display sampler on, every 1000 us, AXI counters, ring at FE200000  08:19:37
+B serial login 08:19:43
+serial b1 08:19:45
+serial b2 08:19:48
+serial b3 08:20:20
+serial b4 08:20:26
+restore: power cycle into U-Boot 08:20:26
+power on 08:20:38
+at U-Boot prompt
+restore crcs: 17a03c01 17a03c01  08:21:58
+fatls: see fat-before.txt and fat-after.txt (the same; the script's own diff compared the wrong lines)
+found after 20 s
+stable up: redox-rpi v0.7.0-dev-9-g368175ee+x2d42 (netboot, 2026-11-23T03:30:57Z) 08:22:26

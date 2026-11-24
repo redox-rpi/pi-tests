@@ -1,0 +1,9 @@
+### diagread dump 5  (typing 2.3 s, total 2.6 s)
+root:~# diagread statusroot:~# diagread statusroot:~# diagread statusroot:~# diagread statusroot:~# diagread statusroot:~# diagread statusroot:~# diagread statusroot:~# diagread statusroot:~# diagread statusroot:~# diagread droot:~# diagread duroot:~# diagread dumroot:~# diagread dumproot:~# diagread dump root:~# diagread dump 5root:~# diagread dump 5
+       t s    hdmi  hv  dispstat   pv2stat     °C   MHz    marker
+    37.611    1669   5  00110000  00000642   40.1   600  00000000
+    37.612    1670   6  00110000  00000644   40.1   600  00000000
+    37.613    1670   6  00110000  00000644   40.1   600  00000000
+    37.614    1670   6  00110000  00000644   40.1   600  00000000
+    37.615    1670   6  00110000  00000644   40.1   600  00000000
+⏎                                                                                root:~# root:~# 

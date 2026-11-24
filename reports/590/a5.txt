@@ -1,0 +1,19 @@
+### diagread stalls 10  (typing 2.7 s, total 32.7 s, NO PROMPT)
+root:~# diagread dump 5root:~# diagread dump 5root:~# diagread dump 5root:~# diagread dump 5root:~# diagread dump 5root:~# diagread dump 5root:~# diagread dump 5root:~# diagread dump 5root:~# diagread dump 5root:~# diagread stallsroot:~# diagread stallsroot:~# diagread stallsroot:~# diagread stallsroot:~# diagread stallsarm: clock 600 MHz set (ndiv 62 frac 80000 div 2), CM_LOCK 00001616 -> 00001616, CTRL 0002103E FRAC 00080000 ARM 00000002, now 600000 kHz
+root:~# diagread stallsroot:~# diagread stalls root:~# diagread stalls 1root:~# diagread stalls 10root:~# diagread stalls 10
+32752 records, 56.647 s to 89.458 s, period 1000 us, dropped 497
+    76.063 s  gap    no sample for 10 ms (VPU busy)
+    76.074 s  clock  ARM 600 -> 1200 MHz
+    78.562 s  gap    no sample for 10 ms (VPU busy)
+    78.573 s  clock  ARM 1200 -> 600 MHz
+    78.892 s  gap    no sample for 11 ms (VPU busy)
+    78.903 s  clock  ARM 600 -> 1200 MHz
+    81.172 s  gap    no sample for 10 ms (VPU busy)
+    81.183 s  clock  ARM 1200 -> 600 MHz
+    86.494 s  gap    no sample for 11 ms (VPU busy)
+    86.505 s  clock  ARM 600 -> 1200 MHz
+    88.782 s  gap    no sample for 11 ms (VPU busy)
+    88.793 s  clock  ARM 1200 -> 600 MHz
+12 events (stalls of 10 ms or more)
+⏎                                                                                root:~# root:~# arm: clock 1200 MHz set (ndiv 62 frac 80000 div 1), CM_LOCK 00001616 -> 00001616, CTRL 0002103E FRAC 00080000 ARM 00000001, now 1200000 kHz
+arm: clock 600 MHz set (ndiv 62 frac 80000 div 2), CM_LOCK 00001616 -> 00001616, CTRL 0002103E FRAC 00080000 ARM 00000002, now 600000 kHz

@@ -1,0 +1,26 @@
+    61376   bootcode.bin
+  3023104   start.elf
+     7381   fixup.dat
+   844380   start_cd.elf
+     3280   fixup_cd.dat
+     1594   LICENCE.broadcom
+    34731   bcm2710-rpi-3-b.dtb
+    35252   bcm2710-rpi-3-b-plus.dtb
+    33708   bcm2710-rpi-zero-2-w.dtb
+      605   config.txt
+      675   .uuid
+   956952   u-boot.bin
+      278   boot.scr
+     4096   ._config.txt
+      256   armstub8-redox.bin
+     4096   ._.uuid
+     4096   ._bootcode.bin
+    60686   bootcode-selector.bin
+     4096   ._bootcode-selector.bin
+    52624   bootcode-broadcom.bin
+    61040   bootcode-selector-233c8c5.bin
+    61040   redox-rpi-bootselect-3bp-20261110c-bootcode.bin
+     4096   ._redox-rpi-bootselect-3bp-20261110c-bootcode.bin
+    60812   redox-rpi-bootselect-3bp-20261110b-bootcode.bin
+     4096   ._redox-rpi-bootselect-3bp-20261110b-bootcode.bin
+25 file(s), 3 dir(s)

@@ -1,0 +1,32 @@
+### diagread stalls  (typing 2.3 s, total 2.6 s)
+root:~# diagread dump 20root:~# diagread dump 20root:~# diagread dump 20root:~# diagread dump 20root:~# diagread dump 20root:~# diagread dump 20root:~# diagread dump 20root:~# diagread dump 20root:~# diagread dump 20root:~# diagread stallsroot:~# diagread stallsroot:~# diagread stallsroot:~# diagread stallsroot:~# diagread stallsroot:~# diagread stalls 10root:~# diagread stalls
+32764 records, 210.712 s to 243.496 s, period 1000 us, dropped 575
+   236.085 s  clock  ARM 600 -> 1200 MHz
+   238.375 s  clock  ARM 1200 -> 600 MHz
+2 events (stalls of 50 ms or more)
+⏎                                                                                root:~# root:~# 
+### diagread dump 20  (typing 2.4 s, total 2.7 s)
+root:~# diagread stallsroot:~# diagread stallsroot:~# diagread stallsroot:~# diagread stallsroot:~# diagread stallsroot:~# diagread stallsroot:~# diagread stallsroot:~# diagread stallsroot:~# diagread stallsroot:~# diagread dump 20root:~# diagread dump 20root:~# diagread dump 20root:~# diagread dump 20root:~# diagread dump 20root:~# diagread dump 20root:~# diagread dump 20root:~# diagread dump 20
+       t s    hdmi  hv  dispstat   pv2stat     °C   MHz    marker
+   246.182   14190  46  00110000  00000644   41.2   600  00000000
+   246.183   14190  46  00110000  00000644   42.2   600  00000000
+   246.184   14190  46  00110000  00000642   41.7   600  00000000
+   246.185   14190  46  00110000  00000644   41.2   600  00000000
+   246.186   14190  46  00110000  00000642   42.2   600  00000000
+   246.187   14191  47  00110000  00000620   42.2   600  00000000
+   246.188   14191  47  00110000  00000642   41.7   600  00000000
+   246.189   14191  47  00110000  00000644   42.2   600  00000000
+   246.190   14191  47  00110000  00000642   42.2   600  00000000
+   246.191   14191  47  00110000  00000644   42.2   600  00000000
+   246.192   14191  47  00110000  00000644   41.7   600  00000000
+   246.193   14191  47  00110000  00000644   42.2   600  00000000
+   246.194   14191  47  00110000  00000642   41.7   600  00000000
+   246.195   14191  47  00110000  00000644   42.2   600  00000000
+   246.196   14191  47  00110000  00000644   41.7   600  00000000
+   246.197   14191  47  00110000  00000644   41.7   600  00000000
+   246.198   14191  47  00110000  00000642   42.2   600  00000000
+   246.199   14191  47  00110000  00000644   41.2   600  00000000
+   246.200   14191  47  00110000  00000644   42.2   600  arm: clock 1200 MHz set (ndiv 62 frac 80000 div 1), CM_LOCK 00001616 -> 00001616, CTRL 0002103E FRAC 00080000 ARM 00000001, now 1200000 kHz
+00000000
+   246.201   14191  47  00110000  00000644   42.2   600  00000000
+⏎                                                                                root:~# root:~# 

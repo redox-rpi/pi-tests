@@ -1,0 +1,10 @@
+### diagread status  (typing 2.3 s, total 2.6 s)
+root:~# droot:~# diroot:~# diaroot:~# diagroot:~# diagrroot:~# diagreroot:~# diagrearoot:~# diagreadroot:~# diagread root:~# diagread sroot:~# diagread stroot:~# diagread staroot:~# diagread statroot:~# diagread staturoot:~# diagread statusroot:~# diagread status
+ring      0x3e200000
+period    1000 us
+written   21944 (8191 in the ring of 8191)
+dropped   403
+marker    0x00000000
+axi       system HVS CPU_L2 V3D | VPU SDRAM L2_IN DMA_UC
+last      t 35.042 s, hdmi frame 1515, ARM 600 MHz
+⏎                                                                                root:~# root:~# 

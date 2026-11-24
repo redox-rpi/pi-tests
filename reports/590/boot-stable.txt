@@ -1,0 +1,24 @@
+### boot
+boot
+78Cannot persist EFI variables without system partition
+Missing RNG device for EFI_RNG_PROTOCOL
+** Booting bootflow '<NULL>' with efi_mgr
+Loading Boot0000 'mmc 2' failed
+EFI boot manager: Cannot load any image
+Boot failed (err=-14)
+** Booting bootflow 'mmc@7e300000.bootdev.part_1' with script
+lan78xx_eth Waiting for PHY auto negotiation to complete........ done
+DHCP client bound to address <lan-ip> (4 ms)
+Using lan78xx_eth device
+TFTP from server <build-host>; our IP address is <lan-ip>
+Filename 'redox/netboot.scr'.
+Load address: 0x5400000
+Loading: ##################################################  7.2 KiB
+	 1.2 MiB/s
+done
+Bytes transferred = 7361 (1cc1 hex)
+## Executing script at 05400000
+Unknown command 'bootmenu' - try 'help'
+redox-rpi: boot net redox/
+redox-rpi: network boot from <build-host>
+############

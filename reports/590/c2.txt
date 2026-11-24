@@ -1,0 +1,40 @@
+### diagread status  (typing 2.3 s, total 2.6 s)
+root:~# diagread statusroot:~# diagread statusroot:~# diagread statusroot:~# diagread statusroot:~# diagread statusroot:~# diagread statusroot:~# diagread statusroot:~# diagread statusroot:~# diagread statusroot:~# diagread statusroot:~# diagread statusroot:~# diagread statusroot:~# diagread statusroot:~# diagread statusroot:~# diagread statusroot:~# diagread status
+ring      0x3e200000
+period    1000 us
+written   187817 (32766 in the ring of 32766)
+dropped   535
+marker    0x00000000
+last      t 200.934 s, hdmi frame 11475, ARM 600 MHz
+⏎                                                                                root:~# root:~# 
+### diagread stalls  (typing 2.3 s, total 32.3 s, NO PROMPT)
+root:~# diagread statusroot:~# diagread statusroot:~# diagread statusroot:~# diagread statusroot:~# diagread statusroot:~# diagread statusroot:~# diagread statusroot:~# diagread statusroot:~# diagread statusroot:~# diagread statusroot:~# diagread statusroot:~# diagread statusroot:~# diagread stalls 10root:~# diagread stalls 10root:~# diagread stalls 10root:~# diagread stalls
+32732 records, 170.756 s to 203.487 s, period 1000 us, dropped 535
+0 events (stalls of 50 ms or more)
+⏎                                                                                root:~# root:~# arm: clock 1200 MHz set (ndiv 62 frac 80000 div 1), CM_LOCK 00001616 -> 00001616, CTRL 0002103E FRAC 00080000 ARM 00000001, now 1200000 kHz
+arm: clock 600 MHz set (ndiv 62 frac 80000 div 2), CM_LOCK 00001616 -> 00001616, CTRL 0002103E FRAC 00080000 ARM 00000002, now 600000 kHz
+### diagread dump 20  (typing 2.4 s, total 2.7 s)
+root:~# diagread stallsroot:~# diagread stallsroot:~# diagread stallsroot:~# diagread stallsroot:~# diagread stallsroot:~# diagread stallsroot:~# diagread stallsroot:~# diagread stallsroot:~# diagread stallsroot:~# diagread dump 5root:~# diagread dump 5root:~# diagread dump 5root:~# diagread dump 5root:~# diagread dump 5root:~# diagread dump 20root:~# diagread dump 20root:~# diagread dump 20
+       t s    hdmi  hv  dispstat   pv2stat     °C   MHz    marker
+   235.890   13573   5  00110000  00000644   42.2   600  00000000
+   235.891   13573   5  00110000  00000644   42.2   600  00000000
+   235.892   13573   5  00110000  00000644   41.2   600  00000000
+   235.893   13573   5  00110000  00000644   42.2   600  00000000
+   235.894   13573   5  00110000  00000644   41.7   600  00000000
+   235.895   13573   5  00110000  00000644   42.2   600  00000000
+   235.896   13573   5  00110000  00000644   42.2   600  00000000
+   235.897   13573   5  00110000  00000644   42.2   600  00000000
+   235.898   13573   5  00110000  00000644   41.7   600  00000000
+   235.899   13573   5  00110000  00000644   42.2   600  00000000
+   235.900   13573   5  00110000  00000644   42.2   600  00000000
+   235.901   13573   5  00110000  00000644   41.2   600  00000000
+   235.902   13573   5  00110000  00000644   41.7   600  00000000
+   235.903   13573   6  00110000  00000680   42.2   600  00000000
+   235.904   13574   6  00110000  00000644   42.2   600  00000000
+   235.905   13574   6  00110000  00000644   42.2   600  00000000
+   235.906   13574   6  00110000  00000644   42.2   60arm: clock 1200 MHz set (ndiv 62 frac 80000 div 1), CM_LOCK 00001616 -> 00001616, CTRL 0002103E FRAC 00080000 ARM 00000001, now 1200000 kHz
+0  00000000
+   235.907   13574   6  00110000  00000644   41.2   600  00000000
+   235.908   13574   6  00110000  00000644   42.2   600  00000000
+   235.909   13574   6  00110000  00000644   41.7   600  00000000
+⏎                                                                                root:~# root:~# 

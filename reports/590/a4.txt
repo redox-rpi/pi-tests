@@ -1,0 +1,15 @@
+### ls -R / > /scheme/null  (typing 3.3 s, total 3.9 s)
+root:~# lroot:~# lsroot:~# ls root:~# ls -root:~# ls -Rroot:~# ls -R root:~# ls -R /root:~# ls -R / root:~# ls -R / >root:~# ls -R / > root:~# ls -R / > /root:~# ls -R / > /sroot:~# ls -R / > /scroot:~# ls -R / > /schroot:~# ls -R / > /scheroot:~# ls -R / > /schemroot:~# ls -R / > /schemeroot:~# ls -R / > /scheme/root:~# ls -R / > /scheme/nroot:~# ls -R / > /scheme/nuroot:~# ls -R / > /scheme/nulroot:~# ls -R / > /scheme/nullroot:~# ls -R / > /scheme/null
+arm: clock 1200 MHz set (ndiv 62 frac 80000 div 1), CM_LOCK 00001616 -> 00001616, CTRL 0002103E FRAC 00080000 ARM 00000001, now 1200000 kHz
+⏎                                                                                root:~# root:~# 
+### diagread dump 5  (typing 2.3 s, total 2.6 s)
+root:~# diagread stallsroot:~# diagread stallsroot:~# diagread stallsroot:~# diagread stallsroot:~# diagread stallsroot:~# diagread stallsroot:~# diagread stallsroot:~# diagread stallsroot:~# diagread stallsroot:~# diagread dump 20root:~# diagread dump 20root:~# diagread dump 20root:~# diagread dump 20root:~# diagread dump 20arm: clock 600 MHz set (ndiv 62 frac 80000 div 2), CM_LOCK 00001616 -> 00001616, CTRL 0002103E FRAC 00080000 ARM 00000002, now 600000 kHz
+root:~# diagread dump 5root:~# diagread dump 5
+arm: clock 1200 MHz set (ndiv 62 frac 80000 div 1), CM_LOCK 00001616 -> 00001616, CTRL 0002103E FRAC 00080000 ARM 00000001, now 1200000 kHz
+       t s    hdmi  hv  dispstat   pv2stat     °C   MHz    marker
+    78.840    4150  54  00110000  00000644   41.7   600  00000000
+    78.841    4150  54  00110000  00000644   41.7   600  00000000
+    78.842    4150  54  00110000  00000644   41.7   600  00000000
+    78.843    4150  54  00110000  00000644   41.7   600  00000000
+    78.844    4150  54  00110000  00000644   41.7   600  00000000
+⏎                                                                                root:~# root:~# 

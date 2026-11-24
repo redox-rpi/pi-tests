@@ -1,0 +1,10 @@
+### diagread axi 5  (typing 2.1 s, total 32.1 s, NO PROMPT)
+root:~# diagread dump 5root:~# diagread dump 5root:~# diagread dump 5root:~# diagread dump 5root:~# diagread dump 5root:~# diagread dump 5root:~# diagread dump 5root:~# diagread dump 5root:~# diagread dump 5root:~# diagread aroot:~# diagread axroot:~# diagread axiroot:~# diagread axi root:~# diagread axi 5root:~# diagread axi 5
+       t s          HVS r/w/wait k       CPU_L2 r/w/wait k          V3D r/w/wait k        SDRAM r/w/wait k        L2_IN r/w/wait k       DMA_UC r/w/wait k
+    35.044               13812/0/0                   0/0/0                   0/0/0           28521/20736/0           28520/20736/0            13951/117/27
+    36.044               13824/0/0                   0/0/0                   0/0/0           28531/20744/0           28530/20744/0              13847/49/4
+    37.044               13824/0/0                   0/0/0                   0/0/0           28522/20737/0           28521/20737/0           14538/451/196
+    38.044               13811/0/0                   0/0/0                   0/0/0           28527/20741/0           28526/20741/0              13850/48/4
+    39.044               13824/0/0                   0/0/0                   0/0/0           28534/20745/0           28533/20745/0            14008/170/64
+⏎                                                                                root:~# root:~# arm: clock 600 MHz set (ndiv 62 frac 80000 div 2), CM_LOCK 00001616 -> 00001616, CTRL 0002103E FRAC 00080000 ARM 00000002, now 600000 kHz
+arm: clock 600 MHz set (ndiv 62 frac 80000 div 2), CM_LOCK 00001616 -> 00001616, CTRL 0002103E FRAC 00080000 ARM 00000002, now 600000 kHz

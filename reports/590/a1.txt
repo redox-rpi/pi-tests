@@ -1,0 +1,18 @@
+### diagread status  (typing 2.3 s, total 2.6 s)
+root:~# droot:~# diroot:~# diaroot:~# diagroot:~# diagrroot:~# diagreroot:~# diagrearoot:~# diagreadroot:~# diagread root:~# diagread sroot:~# diagread stroot:~# diagread staroot:~# diagread statroot:~# diagread staturoot:~# diagread statusroot:~# diagread status
+ring      0x3e200000
+period    1000 us
+written   21753 (21753 in the ring of 32766)
+dropped   401
+marker    0x00000000
+last      t 34.729 s, hdmi frame 1503, ARM 600 MHz
+⏎                                                                                root:~# root:~# 
+### diagread status  (typing 2.3 s, total 2.6 s)
+root:~# diagread statusroot:~# diagread statusroot:~# diagread statusroot:~# diagread statusroot:~# diagread statusroot:~# diagread statusroot:~# diagread statusroot:~# diagread statusroot:~# diagread statusroot:~# diagread statusroot:~# diagread statusroot:~# diagread statusroot:~# diagread statusroot:~# diagread statusroot:~# diagread statusroot:~# diagread status
+ring      0x3e200000
+period    1000 us
+written   24295 (24295 in the ring of 32766)
+dropped   401
+marker    0x00000000
+last      t 37.271 s, hdmi frame 1656, ARM 600 MHz
+⏎                                                                                root:~# root:~# 

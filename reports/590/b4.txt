@@ -1,0 +1,16 @@
+### ls -R / > /scheme/null  (typing 3.3 s, total 3.9 s)
+root:~# lroot:~# lsroot:~# ls root:~# ls -root:~# ls -Rroot:~# ls -R root:~# ls -R /root:~# ls -R / root:~# ls -R / >root:~# ls -R / > root:~# ls -R / > /root:~# ls -R / > /sroot:~# ls -R / > /scroot:~# ls -R / > /schroot:~# ls -R / > /scheroot:~# ls -R / > /schemroot:~# ls -R / > /schemeroot:~# ls -R / > /scheme/root:~# ls -R / > /scheme/nroot:~# ls -R / > /scheme/nuroot:~# ls -R / > /scheme/nulroot:~# ls -R / > /scheme/nullroot:~# ls -R / > /scheme/null
+arm: clock 600 MHz set (ndiv 62 frac 80000 div 2), CM_LOCK 00001616 -> 00001616, CTRL 0002103E FRAC 00080000 ARM 00000002, now 600000 kHz
+⏎                                                                                root:~# root:~# 
+### diagread axi 8  (typing 2.1 s, total 2.4 s)
+root:~# diagread axi 5root:~# diagread axi 5root:~# diagread axi 5root:~# diagread axi 5root:~# diagread axi 5root:~# diagread axi 5root:~# diagread axi 5root:~# diagread axi 5root:~# diagread axi 5root:~# diagread axi 5root:~# diagread axi 5root:~# diagread axi 5root:~# diagread axi 5root:~# diagread axi 8root:~# diagread axi 8
+       t s          HVS r/w/wait k       CPU_L2 r/w/wait k          V3D r/w/wait k        SDRAM r/w/wait k        L2_IN r/w/wait k       DMA_UC r/w/wait k
+    68.080               13824/0/0                   0/0/0                   0/0/0           28553/20759/0           28552/20759/0              13831/39/0
+    69.080               13813/0/0                   0/0/0                   0/0/0           28547/20755/0           28546/20755/0              13841/44/1
+    70.080               13821/0/0                   0/0/0                   0/0/0           28536/20747/0           28535/20747/0              13840/48/3
+    71.080               13824/0/0                   0/0/0                   0/0/0           28535/20746/0           28534/20746/0              13851/47/4
+    72.080               13812/0/0                   0/0/0                   0/0/0           28530/20743/0           28529/20743/0              13852/48/3
+    73.080               13986/0/0                   0/0/0                   0/0/0           28525/20739/0           28524/20739/0         17878/4813/1530
+    74.090               13824/0/0                   0/0/0                   0/0/0           28531/20743/0           28530/20743/0              13851/50/5
+    75.090               13823/0/0                   0/0/0                   0/0/0           28530/20743/0           28529/20743/0            14020/168/63
+⏎                                                                                root:~# root:~# 

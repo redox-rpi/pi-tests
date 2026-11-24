@@ -1,0 +1,9 @@
+### diagread status  (typing 2.3 s, total 2.6 s)
+root:~# diagread stalls 10root:~# diagread stalls 10root:~# diagread stalls 10root:~# diagread stalls 10root:~# diagread stalls 10root:~# diagread stalls 10root:~# diagread stalls 10root:~# diagread stalls 10root:~# diagread stalls 10root:~# diagread stalls 10root:~# diagread stalls 10root:~# diagread stalls 10root:~# diagread statusroot:~# diagread statusroot:~# diagread statusroot:~# diagread status
+ring      0x3e200000
+period    1000 us
+written   108694 (32766 in the ring of 32766)
+dropped   516
+marker    0x00000000
+last      t 121.791 s, hdmi frame 6727, ARM 600 MHz
+⏎                                                                                root:~# root:~# 

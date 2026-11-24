@@ -1,0 +1,10 @@
+### diagread dump 5  (typing 2.3 s, total 2.6 s)
+root:~# diagread dump 5root:~# diagread dump 5root:~# diagread dump 5root:~# diagread dump 5root:~# diagread dump 5root:~# diagread dump 5root:~# diagread dump 5root:~# diagread dump 5root:~# diagread dump 5root:~# diagread dump 5root:~# diagread dump 5root:~# diagread dump 5root:~# diagread dump 5root:~# diagread dump 5root:~# diagread dump 5root:~# diagread dump 5
+       t s    hdmi  hv  dispstat   pv2stat     °C   MHz    markerarm: clock 1200 MHz set (ndiv 62 frac 80000 div 1), CM_LOCK 00001616 -> 00001616, CTRL 0002103E FRAC 00080000 ARM 00000001, now 1200000 kHz
+
+    86.426    4605  61  00110000  00000644   41.2   600  00000000
+    86.427    4605  61  00110000  00000644   41.7   600  00000000
+    86.428    4605  61  00110000  00000644   41.7   600  00000000
+    86.429    4605  61  00110000  00000644   41.7   600  00000000
+    86.430    4605  61  00110000  00000644   41.7   600  00000000
+⏎                                                                                root:~# root:~# 

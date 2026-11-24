@@ -1,0 +1,14 @@
+### ls -R / > /scheme/null  (typing 3.3 s, total 3.9 s)
+root:~# ls -R / > /scheme/nullroot:~# ls -R / > /scheme/nullroot:~# ls -R / > /scheme/nullroot:~# ls -R / > /scheme/nullroot:~# ls -R / > /scheme/nullroot:~# ls -R / > /scheme/nullroot:~# ls -R / > /scheme/nullroot:~# ls -R / > /scheme/nullroot:~# ls -R / > /scheme/nullroot:~# ls -R / > /scheme/nullroot:~# ls -R / > /scheme/nullroot:~# ls -R / > /scheme/nullroot:~# ls -R / > /scheme/nullroot:~# ls -R / > /scheme/nullroot:~# ls -R / > /scheme/nullroot:~# ls -R / > /scheme/nullroot:~# ls -R / > /scheme/nullroot:~# ls -R / > /scheme/nullroot:~# ls -R / > /scheme/nullroot:~# ls -R / > /scheme/nullroot:~# ls -R / > /scheme/nullroot:~# ls -R / > /scheme/nullroot:~# ls -R / > /scheme/null
+arm: clock 1200 MHz set (ndiv 62 frac 80000 div 1), CM_LOCK 00001616 -> 00001616, CTRL 0002103E FRAC 00080000 ARM 00000001, now 1200000 kHz
+⏎                                                                                root:~# root:~# 
+### diagread status  (typing 2.3 s, total 2.6 s)
+root:~# diagread statusroot:~# diagread statusroot:~# diagread statusroot:~# diagread statusroot:~# diagread statusroot:~# diagread statusroot:~# diagread statusroot:~# diagread statusroot:~# diagread statusroot:~# diagread statusroot:~# diagread statusroot:~# diagread statusroot:~# diagread statusarm: clock 600 MHz set (ndiv 62 frac 80000 div 2), CM_LOCK 00001616 -> 00001616, CTRL 0002103E FRAC 00080000 ARM 00000002, now 600000 kHz
+root:~# diagread statusroot:~# diagread statusroot:~# diagread status
+ring      0x3e200000
+period    1000 us
+written   145203 (32766 in the ring of 32766)
+dropped   535
+marker    0x00000000
+last      t 158.320 s, hdmi frame 8919, ARM 600 MHz
+⏎                                                                                root:~# root:~# 
