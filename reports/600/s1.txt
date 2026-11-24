@@ -1,0 +1,19 @@
+### v3dprobe --via-v3dd --faults  (1.8 s)
+v3dprobe: faults: bad address: PASS (v3dd: csd: error mmu-fault no-pte,write-violation va 0x3f000000 unit L2T)
+v3dprobe: v3dd: BOs: code 0x180000, uniforms 0x181000, result 0x182000
+v3dprobe: v3dd: stats: bos 6 frees 5 jobs 11 cl_jobs 0 failed 1 mmu_faults 1 resets 0 job_us_max 26 outomem 0 overflow_chunks 1 va_next 0x183000 va_free_ranges 3
+v3dprobe: v3dd: PASS: 10 of 10 jobs through /scheme/v3d right, 8 us average, 26 us max (daemon side)
+v3dprobe: faults: CSD after the fault: PASS
+v3dprobe: faults: endless job: PASS (v3dd: cl: error timeout: bin job not done after 1000000 us; V3D reset)
+v3dprobe: v3dd: BOs: code 0x181000, uniforms 0x182000, result 0x180000
+v3dprobe: v3dd: stats: bos 10 frees 9 jobs 22 cl_jobs 1 failed 2 mmu_faults 1 resets 1 job_us_max 30 outomem 0 overflow_chunks 1 va_next 0x183000 va_free_ranges 3
+v3dprobe: v3dd: PASS: 10 of 10 jobs through /scheme/v3d right, 8 us average, 30 us max (daemon side)
+v3dprobe: faults: CSD after the reset: PASS
+v3dprobe: render: draw Clear through v3dd, 10 frames
+v3dprobe: render: arena BO at 0x183000, BCL 17 bytes, RCL 151 bytes
+v3dprobe: render: frame 0: 65536 of 65536 pixels have 0xffff8020
+v3dprobe: render: v3dd stats: bos 11 frees 10 jobs 32 cl_jobs 11 failed 2 mmu_faults 1 resets 1 job_us_max 212 outomem 0 overflow_chunks 1 va_next 0x383000 va_free_ranges 4
+v3dprobe: render: PASS: 10 of 10 Clear frames through /scheme/v3d right, 138 us average, 212 us max (bin + render, daemon side)
+v3dprobe: faults: render after the reset: PASS
+v3dprobe: faults: v3dd stats: bos 11 frees 10 jobs 32 cl_jobs 11 failed 2 mmu_faults 1 resets 1 job_us_max 212 outomem 0 overflow_chunks 1 va_next 0x383000 va_free_ranges 4
+v3dprobe: faults: PASS: the MMU fault came back, the endless job was reset, the next jobs ran right

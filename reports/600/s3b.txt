@@ -1,0 +1,3 @@
+### v3dprobe --via-v3dd --loops 100 | tail -2  (0.3 s)
+v3dprobe: v3dd: stats: bos 43 frees 42 jobs 264 cl_jobs 122 failed 4 mmu_faults 2 resets 2 job_us_max 435 outomem 0 overflow_chunks 1 va_next 0x583000 va_free_ranges 23
+v3dprobe: v3dd: PASS: 100 of 100 jobs through /scheme/v3d right, 10 us average, 182 us max (daemon side)

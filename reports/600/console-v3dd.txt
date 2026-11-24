@@ -1,0 +1,14 @@
+v3dd: job ended with an MMU fault: no-pte,write-violation va 0x3f000000 unit L2T
+v3dd: state: CT0CS 0x20 CT0CA 0x180000, CT1CS 0x0 CT1CA 0x0, BFC 0x0, RFC 0x0, CTL_INT_STS 0x88
+v3dd: csd: CSD_STATUS 0xb0, CTL_INT_STS 0x88, HUB_INT_STS 0x0, GMP_STATUS 0x20030
+v3dd: csd: MMU_CTL 0x60d0c01, MMU_VIO_ADDR 0x0 (address 0x0), MMU_VIO_ID 0x0
+v3dd: reset: V3D_ERR_STAT 0x1000
+v3dd: reset: done, MMU set up again (resets so far: 1)
+v3dd: job failed: timeout: bin job not done after 1000000 us; V3D reset
+v3dd: job ended with an MMU fault: no-pte,write-violation va 0x3f000000 unit L2T
+v3dd: state: CT0CS 0x20 CT0CA 0x185000, CT1CS 0x0 CT1CA 0x184097, BFC 0xa, RFC 0xa, CTL_INT_STS 0x8b
+v3dd: csd: CSD_STATUS 0x150, CTL_INT_STS 0x8b, HUB_INT_STS 0x0, GMP_STATUS 0x30
+v3dd: csd: MMU_CTL 0x60d0c01, MMU_VIO_ADDR 0x0 (address 0x0), MMU_VIO_ID 0x0
+v3dd: reset: V3D_ERR_STAT 0x1000
+v3dd: reset: done, MMU set up again (resets so far: 2)
+v3dd: job failed: timeout: bin job not done after 1000000 us; V3D reset

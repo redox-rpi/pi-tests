@@ -1,0 +1,8 @@
+### v3dprobe --via-v3dd --faults | grep faults:  (1.9 s)
+v3dprobe: faults: bad address: PASS (v3dd: csd: error mmu-fault no-pte,write-violation va 0x3f000000 unit L2T)
+v3dprobe: faults: CSD after the fault: PASS
+v3dprobe: faults: endless job: PASS (v3dd: cl: error timeout: bin job not done after 1000000 us; V3D reset)
+v3dprobe: faults: CSD after the reset: PASS
+v3dprobe: faults: render after the reset: PASS
+v3dprobe: faults: v3dd stats: bos 21 frees 20 jobs 64 cl_jobs 22 failed 4 mmu_faults 2 resets 2 job_us_max 435 outomem 0 overflow_chunks 1 va_next 0x583000 va_free_ranges 11
+v3dprobe: faults: PASS: the MMU fault came back, the endless job was reset, the next jobs ran right
