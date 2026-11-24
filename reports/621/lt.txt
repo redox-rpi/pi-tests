@@ -1,0 +1,2 @@
+### ls -l /etc/localtime  (0.4 s)
+lrwxrwxrwx 1 root root 33 Nov 24 20:13 /etc/localtime -> /usr/share/zoneinfo/Europe/Berlin
