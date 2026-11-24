@@ -1,0 +1,17 @@
+start 08:24:38
+staged build_id = "v0.7.0-dev-25-g8d245cc4+xa91e" 08:24:38
+found after 24 s
+A boot: redox-rpi v0.7.0-dev-25-g8d245cc4+xa91e (netboot, 2026-11-24T08:08:02Z, rootport 0 08:25:36
+A1: result: 1721499648 bytes in 150.0 s (11.48 MB/s), max gap 0.025 s, 0 send stalls > 0.5 s, retransmits 16925 |  08:28:09
+A2: result: 1823277056 bytes in 150.0 s (12.15 MB/s), max gap 0.019 s, 0 send stalls > 0.5 s, retransmits 16971 |  08:30:51
+staged build_id = "v0.7.0-dev-27-g4ba4cc78+xa91e" 08:31:01
+found after 24 s
+B boot: redox-rpi v0.7.0-dev-27-g4ba4cc78+xa91e (netboot, 2026-11-24T08:06:06Z, rootport 0 08:31:59
+B1: result: 1746468864 bytes in 150.0 s (11.64 MB/s), max gap 0.021 s, 0 send stalls > 0.5 s, retransmits 16947 |  08:34:31
+B2: result: 1777336320 bytes in 150.0 s (11.85 MB/s), max gap 0.028 s, 0 send stalls > 0.5 s, retransmits 16845 |  08:37:14
+found after 26 s
+no devsh, serial reset 1 08:40:09
+no devsh, serial reset 2 08:43:33
+stable boot: redox-rpi v0.7.0-dev-9-g368175ee+x2d42 (netboot, 2026-11-23T03:30:57Z), rootport 2 08:44:39
+S1: result: 1722482688 bytes in 150.0 s (11.48 MB/s), max gap 0.118 s, 0 send stalls > 0.5 s, retransmits 17011 |  08:47:11
+stable up build_id = "v0.7.0-dev-9-g368175ee+x2d42" 08:47:21
