@@ -1,0 +1,3 @@
+### v3dprobe --via-v3dd --render --triangle --loops 100 | tail -2  (5.7 s)
+v3dprobe: render: v3dd stats: bos 21 frees 20 jobs 132 cl_jobs 111 failed 2 mmu_faults 1 resets 1 job_us_max 483 outomem 0 overflow_chunks 1 va_next 0x180000 va_free_ranges 0
+v3dprobe: render: PASS: 100 of 100 CopyShaders frames through /scheme/v3d right, 162 us average, 483 us max (bin + render, daemon side)

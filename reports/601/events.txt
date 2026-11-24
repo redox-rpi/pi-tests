@@ -1,0 +1,20 @@
+start 10:26:22
+config: 20d19 < total_mem=1024 24a24,25 > hdmi_force_hotplug=1 > hdmi_drive=2  10:26:22
+staged /home/zehrer/redox-rpi-graphics/keep/gfx-v3dd4-netboot (build_id = "v0.7.0-dev-73-gb291dba1+xf47a") 10:26:22
+boot: login, U-Boot retries 0, banner: redox-rpi v0.7.0-dev-73-gb291dba1+xf47a (netboot, 2026-11-24T10:24:06Z) 10:27:34
+boot v3dd lines: 3; ready: 1 10:27:49
+devsh up 10:27:50
+s1 rc=0 took 2.673077568 s: v3dprobe: faults: render after the reset: PASS v3dprobe: faults: PASS: the MMU fault came back, the endless job was reset, the next jobs ran right  10:27:53
+resets after s1: 0 10:27:54
+s2a rc=0 took 6.560703666 s: v3dprobe: render: PASS: 100 of 100 CopyShaders frames through /scheme/v3d right, 162 us average, 483 us max (bin + render, daemon side)  10:28:01
+resets after s2a: 0 10:28:02
+s2b rc=0 took 1.173561899 s: v3dprobe: v3dd: PASS: 100 of 100 jobs through /scheme/v3d right, 9 us average, 153 us max (daemon side)  10:28:03
+resets after s2b: 0 10:28:04
+still answers 10:28:05
+reboots seen after login: 2 10:28:05
+panic/UNHANDLED: 0 10:28:05
+config restored: same 10:28:05
+staged /home/zehrer/redox-rpi-graphics/keep/pi400-fbshot-stage (build_id = "v0.6.0-dev-105-gbef6d90a+xcf2a") 10:28:05
+U-Boot prompt (load failed), typing boot (1) 10:28:35
+boot: login, U-Boot retries 1, banner: redox-rpi v0.6.0-dev-105-gbef6d90a+xcf2a (netboot, 2026-11-18T04:35:59Z) 10:29:05
+restore: login 10:29:05
