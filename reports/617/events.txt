@@ -1,0 +1,15 @@
+start 16:26:13
+staged build_id = "v0.6.0-dev-207-g5535f302+x93f8" 16:26:14
+found after 24 s
+boot: redox-rpi v0.6.0-dev-207-g5535f302+x93f8 (netboot, 2026-11-24T16:05:29Z) rootport 0 16:27:11
+pitest rc=0: PASS version: v0.6.0-dev-207-g5535f302+x93f8 PASS manifest: present in the image PASS ps: 52 processes (piped) PASS ps-tty: 52 lines straight to the terminal, rc=0 PASS sdcard: write, read back, delete on /scheme/data PASS starts: 0 of 300 failed  16:27:54
+(1): oomtest: mode fork-shared, 0 idle threads, pid 384 oomtest: 64 MiB shared, forking oomtest: child status 0x0, last byte 0x5a (0x5a expected) RC 0  | serial panic 0 16:27:58
+(2): oomtest: mode fork-shared, 0 idle threads, pid 394 oomtest: 2048 MiB shared, forking oomtest: fork failed: Out of memory (os error 12) RC 4  | serial panic 0 oom 0 16:28:03
+free (2): Mem: 736788 156124 580664 -> Mem: 736788 157800 578988 16:28:06
+(3): oomtest: mode pipe, 0 idle threads, pid 409 oomtest: 16 MiB oomtest: 32 MiB oomtest: 48 MiB oomtest: 64 MiB oomtest: 80 MiB oomtest: 96 MiB oomtest: 112 MiB oomtest: 128 MiB oomtest: 144 MiB oomtest:  | kernel::memory:ERROR -- OUT OF MEMORY: killing PID 409 NAME /usr/bin/oomtest on CPU ##2  panic 0 16:28:19
+(4): mmapstop: private mapping of /tmp/mmapstop.dat, action kill mmapstop: child: mapped, first byte 46, writing mmapstop: child: write done mmapstop: the write did not block (child status 0x0) RC 0  | serial panic 0 16:28:22
+ps: 53 -> 63 ; free end Mem: 736788 170876 565912 16:28:32
+devsh answers at the end 16:28:33
+panic 0 UNHANDLED 0 OOMkills 1 16:28:33
+found after 25 s
+stable up 16:29:11
