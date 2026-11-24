@@ -1,0 +1,28 @@
+start 22:50:53
+config: 20d19 < total_mem=1024 24a24,25 > hdmi_force_hotplug=1 > hdmi_drive=2  22:50:53
+staged /home/zehrer/redox-rpi-graphics/keep/gfx-g3g-netboot (build_id = "v0.7.0-dev-70-g0fdb7e81+x6519") 22:50:53
+boot: login, U-Boot retries 0, banner: redox-rpi v0.7.0-dev-70-g0fdb7e81+x6519 (netboot, 2026-11-24T22:44:04Z) 22:51:50
+boot v3dd lines: 4; ready: 1 22:52:05
+devsh up 22:52:06
+s1 rc=0 took 1.201047066 s: v3dprobe: v3dd: PASS: 100 of 100 jobs through /scheme/v3d right, 19 us average, 231 us max (daemon side)  22:52:07
+resets after s1: 0 22:52:08
+s2 rc=0 took 2.148800253 s: v3dprobe: ioctl: PASS: relibc ioctl() on /dev/dri/renderD128: driver "v3d", HUB_IDENT1 0xe1124; 16 of 16 jobs right, 293 us per job round trip; wrong arguments refused; syncobjs signalled, reset and waited on; endless job: ETIME, then signalled after 1050 ms and EIO; no BOs left (bos 17 frees 16 jobs 118 cl_jobs 1 failed 1 mmu_faults 0 resets 1 job_us_max 231 outomem 0 overflow_chunks 1 spaces 0 spaces_made 2 space_loaded 0 irq /scheme/irq/phandle-1/0,74,4 irqs 117 irq_wakeups 117 timer_wakeups 105 maps 3 unmaps 3 live_bos 0 submitted 118 done_through 118 queued 0 running - zombies 0)  22:52:10
+resets after s2: 0 22:52:11
+s3 rc=0 took 1.692410615 s: gles-probe: PASS: softpipe, 10 of 10 frames right, 2080 red pixels, hash 57aafac5, 0.30 ms per frame  22:52:13
+resets after s3: 0 22:52:14
+s4 rc=0 took 1.456550913 s: gles-probe: PASS: V3D 4.2.14, 1 of 1 frames right, 2016 red pixels, hash f2159ec5, 3.02 ms per frame  22:52:15
+resets after s4: 0 22:52:17
+step3 pass=1 step4 pass=1 22:52:17
+s5a rc=0 took 1.487491750 s: gles-probe: PASS: V3D 4.2.14, 100 of 100 frames right, 2016 red pixels, hash f2159ec5, 0.37 ms per frame  22:52:18
+resets after s5a: 0 22:52:19
+s5b rc=0 took 2.500893289 s: v3dprobe: queue: PASS  22:52:22
+resets after s5b: 0 22:52:23
+ps rc=0 took 1.081474628 s:  22:52:24
+still answers 22:52:25
+v3dd serial lines: 19, timeout lines 4, reset lines 4 22:52:25
+reboots seen after login: 2 22:52:25
+panic/UNHANDLED: 3 22:52:25
+config restored: same 22:52:25
+staged /home/zehrer/redox-rpi-graphics/keep/pi400-fbshot-stage (build_id = "v0.6.0-dev-105-gbef6d90a+xcf2a") 22:52:25
+boot: login, U-Boot retries 0, banner: redox-rpi v0.6.0-dev-105-gbef6d90a+xcf2a (netboot, 2026-11-18T04:35:59Z) 22:53:09
+restore: login 22:53:09

@@ -1,0 +1,4 @@
+### LIBGL_ALWAYS_SOFTWARE=1 gles-probe 10  (0.9 s)
+gles-probe: EGL 1.4, Mesa Project
+gles-probe: GL_RENDERER softpipe, GL_VERSION OpenGL ES 3.1 Mesa 24.0.8 (git-9850ea1ad7)
+gles-probe: PASS: softpipe, 10 of 10 frames right, 2080 red pixels, hash 57aafac5, 0.30 ms per frame

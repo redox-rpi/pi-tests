@@ -1,0 +1,19 @@
+v3dd: V3D 42 powered up
+v3dd: interrupt: /scheme/irq/phandle-1/0,74,4
+v3dd: MMU on: v3dd's page table at 0x23a6000, scratch page at 0x2275000
+v3dd: ready: /scheme/v3d
+v3dd: timeout: bin job (1000 ms)
+v3dd: state: CT0CS 0x20 CT0CA 0x103000, CT1CS 0x0 CT1CA 0x0, BFC 0x0, RFC 0x0, CTL_INT_STS 0x8
+v3dd: csd: CSD_STATUS 0x750, CTL_INT_STS 0x8, HUB_INT_STS 0x0, GMP_STATUS 0x40030
+v3dd: csd: MMU_CTL 0x60d0c01, MMU_VIO_ADDR 0x0 (address 0x0), MMU_VIO_ID 0x0
+v3dd: reset: V3D_ERR_STAT 0x1000
+v3dd: reset: done, MMU set up again (resets so far: 1)
+v3dd: job failed: timeout: bin job not done after 1007089 us; V3D reset
+v3dd: timeout: bin job (1000 ms)
+v3dd: state: CT0CS 0x20 CT0CA 0x105000, CT1CS 0x0 CT1CA 0x18a06a, BFC 0x65, RFC 0x65, CTL_INT_STS 0x8
+v3dd: csd: CSD_STATUS 0x850, CTL_INT_STS 0x8, HUB_INT_STS 0x0, GMP_STATUS 0x40030
+v3dd: csd: MMU_CTL 0x60d0c01, MMU_VIO_ADDR 0x0 (address 0x0), MMU_VIO_ID 0x0
+v3dd: reset: V3D_ERR_STAT 0x1000
+v3dd: reset: done, MMU set up again (resets so far: 2)
+v3dd: job failed: timeout: bin job not done after 1008655 us; V3D reset
+v3dd: job ended with an MMU fault: no-pte,write-violation va 0x102000 unit L2T
