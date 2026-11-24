@@ -1,0 +1,29 @@
+start 09:49:16
+staged build_id = "v0.7.0-dev-28-g771add6e+xa91e" 09:49:16
+found after 24 s
+A boot: redox-rpi v0.7.0-dev-28-g771add6e+xa91e (netboot, 2026-11-24T09:39:44Z, rootport 0 09:50:14
+A flow/rx lines: ** Booting bootflow '<NULL>' with efi_mgr ** Booting bootflow 'mmc@7e300000.bootdev.part_1' with script lan78xx_eth Waiting for PHY auto negotiation to complete........ done Using lan78xx_eth device dwc2d: LAN7800 at address 3 dwc2d: LAN78xx chip 7800 rev 0002 dwc2d: LAN7800 multicast filter: 1 groups ⏎                                                                                redox login: red 09:50:14
+A1: result: 1779826688 bytes in 150.0 s (11.87 MB/s), max gap 0.019 s, 0 send stalls > 0.5 s, retransmits 17016 |  09:52:46
+A2: result: 1835073536 bytes in 150.0 s (12.23 MB/s), max gap 0.026 s, 0 send stalls > 0.5 s, retransmits 16961 |  09:55:29
+staged build_id = "v0.7.0-dev-28-g771add6e+xcdd5" 09:55:39
+found after 24 s
+B boot: redox-rpi v0.7.0-dev-28-g771add6e+xcdd5 (netboot, 2026-11-24T09:41:35Z, rootport 0 09:56:36
+B flow/rx lines: ** Booting bootflow '<NULL>' with efi_mgr ** Booting bootflow 'mmc@7e300000.bootdev.part_1' with script lan78xx_eth Waiting for PHY auto negotiation to complete........ done Using lan78xx_eth device dwc2d: LAN7800 at address 3 dwc2d: LAN78xx chip 7800 rev 0002 dwc2d: LAN7800 multicast filter: 1 groups experiments: lan78xx-rearm netstack-watch usb-port-power  09:56:36
+B1: result: 1857028096 bytes in 150.0 s (12.38 MB/s), max gap 0.020 s, 0 send stalls > 0.5 s, retransmits 15631 |  09:59:09
+B2: result: 1838350336 bytes in 150.0 s (12.25 MB/s), max gap 0.037 s, 0 send stalls > 0.5 s, retransmits 15330 |  10:01:51
+staged build_id = "v0.7.0-dev-28-g771add6e+x6212" 10:02:01
+found after 24 s
+C boot: redox-rpi v0.7.0-dev-28-g771add6e+x6212 (netboot, 2026-11-24T09:43:35Z, rootport 0 10:02:59
+C flow/rx lines: ** Booting bootflow '<NULL>' with efi_mgr ** Booting bootflow 'mmc@7e300000.bootdev.part_1' with script lan78xx_eth Waiting for PHY auto negotiation to complete........ done Using lan78xx_eth device dwc2d: LAN7800 at address 3 dwc2d: LAN78xx chip 7800 rev 0002 dwc2d: LAN7800 multicast filter: 1 groups experiments: lan78xx-flow lan78xx-rearm netstack-watch usb-port-power  10:02:59
+C1: result: 1829634048 bytes in 150.0 s (12.20 MB/s), max gap 0.038 s, 0 send stalls > 0.5 s, retransmits 152 |  10:05:31
+C2: result: 1786707968 bytes in 150.0 s (11.91 MB/s), max gap 0.045 s, 0 send stalls > 0.5 s, retransmits 139 |  10:08:13
+staged build_id = "v0.7.0-dev-28-g771add6e+xc4d4" 10:08:24
+found after 24 s
+D boot: redox-rpi v0.7.0-dev-28-g771add6e+xc4d4 (netboot, 2026-11-24T09:46:04Z, rootport 0 10:09:20
+D flow/rx lines: ** Booting bootflow '<NULL>' with efi_mgr ** Booting bootflow 'mmc@7e300000.bootdev.part_1' with script lan78xx_eth Waiting for PHY auto negotiation to complete...... done Using lan78xx_eth device dwc2d: LAN7800 at address 3 dwc2d: LAN78xx chip 7800 rev 0002 dwc2d: LAN7800 multicast filter: 1 groups experiments: lan78xx-flow netstack-watch usb-port-power  10:09:20
+D1: result: 1818296320 bytes in 150.0 s (12.12 MB/s), max gap 0.041 s, 0 send stalls > 0.5 s, retransmits 2806 |  10:11:52
+D2: result: 1837891584 bytes in 150.0 s (12.25 MB/s), max gap 0.046 s, 0 send stalls > 0.5 s, retransmits 2541 |  10:14:35
+found after 24 s
+stable boot: redox-rpi v0.7.0-dev-9-g368175ee+x2d42 (netboot, 2026-11-23T03:30:57Z), rootport 0 10:15:41
+S1: result: 1728970752 bytes in 150.0 s (11.53 MB/s), max gap 0.031 s, 0 send stalls > 0.5 s, retransmits 16943 |  10:18:14
+stable up build_id = "v0.7.0-dev-9-g368175ee+x2d42" 10:18:24
