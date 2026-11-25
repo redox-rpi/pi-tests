@@ -1,0 +1,49 @@
+### 1: gles-probe 1  (0.5 s)
+libEGL warning: MESA-LOADER: failed to retrieve device information
+MESA-LOADER: failed to retrieve device information
+MESA-LOADER: failed to retrieve device information
+gles-probe: EGL 1.4, Mesa Project
+gles-probe: GL_RENDERER V3D 4.2.14, GL_VERSION OpenGL ES 3.0 Mesa 24.0.8 (git-9850ea1ad7)
+gles-probe: PASS: V3D 4.2.14, 1 of 1 frames right, 2080 red pixels, hash 57aafac5, 2.86 ms per frame
+### 2: prime-probe --frames 300  (0.4 s)
+prime-probe: VT 3
+prime-probe: connector 27, CRTC 22, mode 640x480
+libEGL warning: MESA-LOADER: failed to retrieve device information
+MESA-LOADER: failed to retrieve device information
+MESA-LOADER: failed to retrieve device information
+prime-probe: EGL_EXT_image_dma_buf_import yes, _modifiers yes
+prime-probe: GL_RENDERER V3D 4.2.14
+Failed to get v3d handle for dmabuf 10
+prime-probe: FAIL: eglCreateImageKHR(EGL_LINUX_DMA_BUF_EXT) (errno 9, EGL error 0x3000, GL error 0x0)
+### s3start: prime-probe --frames 900 --show &> /tmp/s3.txt &  (0.2 s)
+ion: bg [0] 69
+### s3shot1: vc4shot /tmp/s3a.ppm  (1.2 s)
+vc4shot: channel 1 640x480, list at 2048, 1 planes, ctrl 0x828001e0 bkgnd 0x81000000 list 2048 active 2048 stat 0xa39d408f (mode 2, frame 20)
+vc4shot: plane 0: ListPlane { unity: true, format: 7, x: 0, y: 0, width: 640, height: 480, bus: 3257376768, pitch: 2560, alpha: false }
+vc4shot: wrote /tmp/s3a.ppm (921615 bytes)
+### s3 result:
+prime-probe: VT 4
+prime-probe: connector 27, CRTC 22, mode 640x480
+libEGL warning: MESA-LOADER: failed to retrieve device information
+MESA-LOADER: failed to retrieve device information
+MESA-LOADER: failed to retrieve device information
+prime-probe: EGL_EXT_image_dma_buf_import yes, _modifiers yes
+prime-probe: GL_RENDERER V3D 4.2.14
+Failed to get v3d handle for dmabuf 9
+prime-probe: FAIL: eglCreateImageKHR(EGL_LINUX_DMA_BUF_EXT) (errno 9, EGL error 0x3000, GL error 0x0)
+### s3shot2: vc4shot /tmp/s3b.ppm  (2.9 s)
+vc4shot: channel 1 640x480, list at 2048, 1 planes, ctrl 0x828001e0 bkgnd 0x81000000 list 2048 active 2048 stat 0xa391c1ba (mode 2, frame 28)
+vc4shot: plane 0: ListPlane { unity: true, format: 7, x: 0, y: 0, width: 640, height: 480, bus: 3257376768, pitch: 2560, alpha: false }
+vc4shot: wrote /tmp/s3b.ppm (921615 bytes)
+### 4: prime-probe --frames 10 --lifetime --foreign  (0.4 s)
+prime-probe: VT 5
+prime-probe: connector 27, CRTC 22, mode 640x480
+libEGL warning: MESA-LOADER: failed to retrieve device information
+MESA-LOADER: failed to retrieve device information
+MESA-LOADER: failed to retrieve device information
+prime-probe: EGL_EXT_image_dma_buf_import yes, _modifiers yes
+prime-probe: GL_RENDERER V3D 4.2.14
+Failed to get v3d handle for dmabuf 10
+prime-probe: FAIL: eglCreateImageKHR(EGL_LINUX_DMA_BUF_EXT) (errno 9, EGL error 0x3000, GL error 0x0)
+### fetched /tmp/s3a.ppm: 921615 bytes, stats (640, 480, 0.9775099120448435, 2)
+### fetched /tmp/s3b.ppm: 921615 bytes, stats (640, 480, 0.9775099120448435, 2)
