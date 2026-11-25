@@ -1,0 +1,3 @@
+### cd /usr/share/relibc-tests; ./bins_static/pthread/init; echo RC $?  (0.3 s)
+once
+RC 0

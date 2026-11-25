@@ -1,0 +1,2 @@
+### cd /usr/share/relibc-tests; ./bins_dynamic/pthread/mutex_recursive; echo RC $?  (0.4 s)
+RC 0

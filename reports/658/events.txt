@@ -1,0 +1,22 @@
+start 658 16:21:27
+staged build_id = "v0.7.0-dev-67-gdd4f3bdc+x9177" 16:21:27
+found after 24 s
+up 16:22:05
+banner: redox-rpi v0.7.0-dev-67-gdd4f3bdc+x9177 (netboot, 2026-11-25T15:35:22Z) 16:22:21
+1 pitest rc=0: PASS version: v0.7.0-dev-67-gdd4f3bdc+x9177 PASS manifest: build ID and libc.so hash match manifest.toml PASS ps: 52 processes (piped) PASS ps-tty: 52 lines straight to the terminal, rc=0 PASS sdcard: write, read back, delete on /scheme/data PASS starts: 0 of 100 failed  16:22:37
+3-date:  16:24:55
+3-tz: tzset: tzname CET CET daylight 0 timezone -3600 gmtime_r(0): 1970-01-01 00:00:00 isdst 0 gmtoff 0 zone UTC localtime_r(0): 1970-01-01 01:00:00 isdst 0 gmtoff 3600 zone CET localtime_r(summer): 2024-07-03 11:46:40 isdst 1 gmtoff 7200 zone CEST tz_iana: ok RC 0  16:24:56
+4-bins_dynamic_pthread_once: waited 1 leader=false waited 2 leader=false RC 0  (host 6.1 s) 16:25:03
+4-bins_dynamic_pthread_barrier: RC 0  (host 1.4 s) 16:25:04
+4-bins_dynamic_pthread_mutex_recursive: RC 0  (host 1.4 s) 16:25:05
+4-bins_dynamic_pthread_timeout: main waited thread waited RC 0  (host 2.3 s) 16:25:08
+4-bins_static_pthread_init: once RC 0  (host 1.3 s) 16:25:09
+2 serial: RELIBC PANIC 0; UNHANDLED 0 []; FAR_EL1: 0x8 0 16:25:10
+b: staged build_id = "v0.7.0-dev-67-gdd4f3bdc+x9177" 16:27:36
+found after 26 s
+b: up 16:28:15
+b: set clock: date: setting the date is not supported by Redox Wed Nov 25 16:28:25 UTC 2026 RC 0 Thu Jan  1 00:00:41 UTC 1970 Thu Jan  1 01:00:42 CET 1970 ls: cannot access '/scheme/time': No such file or directory  16:28:27
+b: tz: tzset: tzname CET CET daylight 0 timezone -3600 tzset: clock at 1970, no summer time check gmtime_r(0): 1970-01-01 00:00:00 isdst 0 gmtoff 0 zone UTC gmtime(summer): 2024-07-03 09:46:40 isdst 0 gmtoff 0 zone UTC localtime_r(0): 1970-01-01 01:00:00 isdst 0 gmtoff 3600 zone CET localtime_r(summer): 2024-07-03 11:46:40 isdst 1 gmtoff 7200 zone CEST tz_iana: ok RC 0  16:28:29
+b serial: RELIBC PANIC 0; UNHANDLED 0; FAR_EL1: 0x8 0 16:28:29
+found after 24 s
+b: stable up build_id = "v0.7.0-dev-9-g368175ee+x2d42" 16:29:06

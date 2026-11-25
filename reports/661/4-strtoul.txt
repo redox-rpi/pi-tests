@@ -1,0 +1,28 @@
+### cd /usr/share/relibc-tests; ./bins_dynamic/stdlib/strtoul; echo RC $?  (5.1 s)
+-42
+endptr ""
+555
+endptr ""
+1234567890
+endptr "    "
+-42
+endptr ""
+555
+endptr ""
+1234567890
+endptr "    "
+38acf
+endptr "g"
+abcdef12
+endptr ""
+21000004
+endptr ""
+731
+endptr "89"
+731
+endptr "89"
+0
+endptr "b"
+0
+endptr "b"
+RC 0

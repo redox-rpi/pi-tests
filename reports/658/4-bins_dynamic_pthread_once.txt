@@ -1,0 +1,15 @@
+### cd /usr/share/relibc-tests; ./bins_dynamic/pthread/once; echo RC $?  (5.1 s)
+Barrier at 0x7fffffffed00, onces at 0x7fffffffed18
+spawning 0
+spawned 0
+spawning 1
+spawned 1
+spawning 2
+spawned 2
+spawning 3
+main thread at 3
+waited 3 leader=true
+waited 0 leader=false
+waited 1 leader=false
+waited 2 leader=false
+RC 0

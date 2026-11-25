@@ -1,0 +1,4 @@
+### cd /usr/share/relibc-tests; ./bins_dynamic/pthread/timeout; echo RC $?  (1.3 s)
+main waited
+thread waited
+RC 0

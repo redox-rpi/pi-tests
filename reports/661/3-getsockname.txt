@@ -1,0 +1,4 @@
+### cd /usr/share/relibc-tests; ./bins_dynamic/sys_socket/getsockname_unbound; echo RC $?  (0.3 s)
+tcp: family 2, 0.0.0.0:0, len 16
+udp: family 2, 0.0.0.0:0, len 16
+RC 0

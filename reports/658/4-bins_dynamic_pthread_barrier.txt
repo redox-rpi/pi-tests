@@ -1,0 +1,2 @@
+### cd /usr/share/relibc-tests; ./bins_dynamic/pthread/barrier; echo RC $?  (0.3 s)
+RC 0

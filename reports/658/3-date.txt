@@ -1,0 +1,4 @@
+### date -u  (0.3 s)
+Thu Jan  1 00:03:19 UTC 1970
+### date  (0.3 s)
+Thu Jan  1 01:03:19 CET 1970

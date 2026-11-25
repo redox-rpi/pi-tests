@@ -1,0 +1,12 @@
+start 661 16:25:10
+staged build_id = "v0.7.0-dev-69-gb33e1dc0+x9177" 16:25:10
+found after 25 s
+up 16:25:49
+banner: redox-rpi v0.7.0-dev-69-gb33e1dc0+x9177 (netboot, 2026-11-25T16:13:22Z) 16:26:04
+1 pitest rc=0: PASS version: v0.7.0-dev-69-gb33e1dc0+x9177 PASS manifest: build ID and libc.so hash match manifest.toml PASS ps: 52 processes (piped) PASS ps-tty: 52 lines straight to the terminal, rc=0 PASS sdcard: write, read back, delete on /scheme/data PASS starts: 0 of 100 failed  16:26:21
+3-getsockname: tcp: family 2, 0.0.0.0:0, len 16 udp: family 2, 0.0.0.0:0, len 16 RC 0  16:26:22
+4-strtol: RC 0  16:26:24
+4-strtoul: RC 0  16:26:30
+2 serial: RELIBC PANIC 0; UNHANDLED 0 []; FAR_EL1: 0x8 0 16:26:31
+found after 24 s
+stable up build_id = "v0.7.0-dev-9-g368175ee+x2d42" 16:27:08

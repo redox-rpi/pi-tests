@@ -1,0 +1,11 @@
+### date -u -s '2026-11-25 16:28:25'  (0.3 s)
+date: setting the date is not supported by Redox
+Wed Nov 25 16:28:25 UTC 2026
+### echo RC $?  (0.2 s)
+RC 0
+### date -u  (0.3 s)
+Thu Jan  1 00:00:41 UTC 1970
+### date  (0.3 s)
+Thu Jan  1 01:00:42 CET 1970
+### ls /scheme/time  (0.3 s)
+ls: cannot access '/scheme/time': No such file or directory
