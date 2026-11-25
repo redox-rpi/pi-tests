@@ -1,0 +1,210 @@
+### 1: gles-probe 1  (0.5 s)
+libEGL warning: MESA-LOADER: failed to retrieve device information
+MESA-LOADER: failed to retrieve device information
+MESA-LOADER: failed to retrieve device information
+gles-probe: EGL 1.4, Mesa Project
+gles-probe: GL_RENDERER V3D 4.2.14, GL_VERSION OpenGL ES 3.0 Mesa 24.0.8 (git-9850ea1ad7)
+gles-probe: PASS: V3D 4.2.14, 1 of 1 frames right, 2080 red pixels, hash 57aafac5, 2.85 ms per frame
+### 2a: desktop --yes  (1.6 s)
+Redox desktop (beta)
+Super+F2   back to the text console
+Super+F3   back to the desktop
+(or type desktop on the console)
+Super+T    a terminal
+Known limits:
+- Slow: everything draws in software; dragging a
+window costs much of a core.
+- Once started, the desktop cannot be stopped; its
+memory (40 to 80 MB) comes back only with a reboot.
+- No browser, one screen resolution, no HDMI hotplug.
+desktop: starting Orbital, its log goes to /tmp/desktop.log
+desktop: Super+F2 goes back to the console, Super+F3 to the desktop
+### 2b: pointer-bench --type user  (0.7 s)
+pointer-bench: typed 4 keys
+### 2e0: pointer-bench --keys enter  (0.4 s)
+pointer-bench: enter
+### 2e1: pointer-bench --keys enter  (0.4 s)
+pointer-bench: enter
+### 2e2: pointer-bench --keys enter  (0.4 s)
+pointer-bench: enter
+### 2shot: vc4shot /tmp/desk.ppm  (3.5 s)
+vc4shot: channel 1 640x480, list at 2304, 2 planes, ctrl 0x828001e0 bkgnd 0x81000000 list 2304 active 2304 stat 0xa3adc081 (mode 2, frame 28)
+vc4shot: plane 0: ListPlane { unity: true, format: 7, x: 0, y: 0, width: 640, height: 480, bus: 3256127488, pitch: 2560, alpha: false }
+vc4shot: plane 1: ListPlane { unity: true, format: 7, x: 0, y: 0, width: 64, height: 64, bus: 3263344640, pitch: 256, alpha: true }
+vc4shot: wrote /tmp/desk.ppm (921615 bytes)
+### 3start: sdl-gles-probe 3000 &> /tmp/p3.txt &  (0.2 s)
+ion: bg [0] 102
+### 3shotA: vc4shot /tmp/sa.ppm  (1.6 s)
+vc4shot: channel 1 640x480, list at 2304, 2 planes, ctrl 0x828001e0 bkgnd 0x81000000 list 2304 active 2176 stat 0xa3a4c017 (mode 2, frame 12)
+vc4shot: plane 0: ListPlane { unity: true, format: 7, x: 0, y: 0, width: 640, height: 480, bus: 3256127488, pitch: 2560, alpha: false }
+vc4shot: plane 1: ListPlane { unity: true, format: 7, x: 0, y: 0, width: 64, height: 64, bus: 3263344640, pitch: 256, alpha: true }
+vc4shot: wrote /tmp/sa.ppm (921615 bytes)
+### 3shotB: vc4shot /tmp/sb.ppm  (3.0 s)
+vc4shot: channel 1 640x480, list at 2048, 2 planes, ctrl 0x828001e0 bkgnd 0x81000000 list 2048 active 2304 stat 0xa3ac8190 (mode 2, frame 8)
+vc4shot: plane 0: ListPlane { unity: true, format: 7, x: 0, y: 0, width: 640, height: 480, bus: 3256127488, pitch: 2560, alpha: false }
+vc4shot: plane 1: ListPlane { unity: true, format: 7, x: 0, y: 0, width: 64, height: 64, bus: 3263344640, pitch: 256, alpha: true }
+vc4shot: wrote /tmp/sb.ppm (921615 bytes)
+### 3 result:
+SDL orbital device created successfully
+WARNING: You are using the SDL orbital video driver!
+SDL orbital keymap initialized
+Video display initialized successfully
+libEGL warning: MESA-LOADER: failed to retrieve device information
+MESA-LOADER: failed to retrieve device information
+MESA-LOADER: failed to retrieve device information
+Initializing orbital window at 192,112 with size 256x256 with flags 1
+sdl-gles-probe: SDL video driver orbital, GL_RENDERER V3D 4.2.14, GL_VERSION OpenGL ES 3.0 Mesa 24.0.8 (git-9850ea1ad7)
+sdl-gles-probe: PASS: SDL_GL, V3D 4.2.14, 3000 frames right, 32896 triangle pixels, hash a08d71c5, 3.47 ms per frame
+orbital video driver quit
+SDL orbital device disposed
+### 3sw: LIBGL_ALWAYS_SOFTWARE=1 sdl-gles-probe 30  (0.9 s)
+SDL orbital device created successfully
+WARNING: You are using the SDL orbital video driver!
+SDL orbital keymap initialized
+Video display initialized successfully
+Initializing orbital window at 192,112 with size 256x256 with flags 1
+sdl-gles-probe: SDL video driver orbital, GL_RENDERER softpipe, GL_VERSION OpenGL ES 3.1 Mesa 24.0.8 (git-9850ea1ad7)
+sdl-gles-probe: PASS: SDL_GL, softpipe, 30 frames right, 32896 triangle pixels, hash a08d71c5, 5.72 ms per frame
+orbital video driver quit
+SDL orbital device disposed
+### 4a: sdl-gles-probe --renderer 300  (1.6 s)
+SDL orbital device created successfully
+WARNING: You are using the SDL orbital video driver!
+SDL orbital keymap initialized
+Video display initialized successfully
+Initializing orbital window at 192,112 with size 256x256 with flags 1
+libEGL warning: MESA-LOADER: failed to retrieve device information
+MESA-LOADER: failed to retrieve device information
+MESA-LOADER: failed to retrieve device information
+Initializing orbital window at 192,112 with size 256x256 with flags 1
+sdl-gles-probe: SDL video driver orbital, renderer opengles2
+sdl-gles-probe: PASS: renderer opengles2, 300 frames right, hash bfb89dc5, 3.60 ms per frame
+orbital video driver quit
+SDL orbital device disposed
+### 4b: SDL_RENDER_DRIVER=software sdl-gles-probe --renderer 30  (0.6 s)
+SDL orbital device created successfully
+WARNING: You are using the SDL orbital video driver!
+SDL orbital keymap initialized
+Video display initialized successfully
+Initializing orbital window at 192,112 with size 256x256 with flags 1
+libEGL warning: MESA-LOADER: failed to retrieve device information
+MESA-LOADER: failed to retrieve device information
+MESA-LOADER: failed to retrieve device information
+Initializing orbital window at 192,112 with size 256x256 with flags 1
+sdl-gles-probe: SDL video driver orbital, renderer software
+sdl-gles-probe: PASS: renderer software, 30 frames right, hash bfb89dc5, 3.68 ms per frame
+orbital video driver quit
+SDL orbital device disposed
+### 5start: sopwith &> /tmp/sop.txt &  (0.2 s)
+ion: bg [0] 119
+### 5shot: vc4shot /tmp/sop.ppm  (3.2 s)
+vc4shot: channel 1 640x480, list at 2176, 2 planes, ctrl 0x828001e0 bkgnd 0x81000000 list 2176 active 2176 stat 0xa3a8c156 (mode 2, frame 12)
+vc4shot: plane 0: ListPlane { unity: true, format: 7, x: 0, y: 0, width: 640, height: 480, bus: 3257376768, pitch: 2560, alpha: false }
+vc4shot: plane 1: ListPlane { unity: true, format: 7, x: 0, y: 0, width: 64, height: 64, bus: 3263344640, pitch: 256, alpha: true }
+vc4shot: wrote /tmp/sop.ppm (921615 bytes)
+### 5 sopwith pids: ['120', '120']
+### 5kill: kill -INT 120  (0.3 s)
+
+### 5out: cat /tmp/sop.txt  (0.4 s)
+SDL orbital device created successfully
+WARNING: You are using the SDL orbital video driver!
+SDL orbital keymap initialized
+Video display initialized successfully
+Setting window resizable
+Initializing orbital window at 160,140 with size 320x200 with flags 9
+libEGL warning: MESA-LOADER: failed to retrieve device information
+MESA-LOADER: failed to retrieve device information
+MESA-LOADER: failed to retrieve device information
+Setting window resizable
+Initializing orbital window at 160,140 with size 320x200 with flags 9
+WARNING: You are using the SDL redox audio driver!
+Redox audio failed to open audio
+Failed to initialize sound:
+orbital video driver quit
+SDL orbital device disposed
+### 5ps: ps  (0.2 s)
+PID   EUID  EGID  STAT  CPU   AFFINITY   ACTTIME     SCHTIME     PRIVATE SHARED  NAME
+0     0     0     RR+   #0    1          00:00:00.00 00:00:00.00 65.0 KB 0 B     [kmain]
+0     0     0     RR    #1    2          00:00:00.00 00:00:00.00 65.0 KB 0 B     [kmain]
+0     0     0     RR+   #2    4          00:00:00.00 00:00:00.00 65.0 KB 0 B     [kmain]
+0     0     0     RR+   #3    8          00:00:00.00 00:00:00.00 65.0 KB 0 B     [kmain]
+0     0     0     UB    #2    F          00:00:00.02 00:00:00.00 27.8 MB 4.00 KB initfs
+0     0     0     UB    #2    F          00:00:00.14 00:00:00.01 1.37 MB 488 KB  procmgr
+0     0     0     UB    #1    F          00:00:00.22 00:00:00.00 1.37 MB 8.00 KB initnsmgr
+1     0     0     UB    #2    F          00:00:00.11 00:00:00.26 1.86 MB 0 B     /scheme/initfs/bin/init
+2     0     0     UB    #3    F          00:00:00.00 00:00:00.00 3.70 MB 12.0 KB /scheme/initfs/bin/logd
+2     0     0     UB    #0    F          00:00:01.78 00:00:00.00 3.70 MB 12.0 KB /scheme/initfs/bin/logd
+3     0     0     UB    #1    F          00:00:00.00 00:00:00.01 1.62 MB 240 KB  /scheme/initfs/bin/randd
+4     0     0     UB    #0    F          00:00:00.00 00:00:00.02 1.68 MB 0 B     /scheme/initfs/bin/ipcd
+5     0     0     UB    #0    F          00:00:00.00 00:00:00.00 1.55 MB 0 B     /scheme/initfs/bin/zerod
+6     0     0     UB    #1    F          00:00:00.00 00:00:00.00 1.55 MB 156 KB  /scheme/initfs/bin/zerod
+7     0     0     UB    #3    F          00:00:00.00 00:00:00.00 2.77 MB 0 B     /scheme/initfs/bin/ramfs
+8     0     0     UB    #2    F          00:00:00.09 00:00:00.08 5.77 MB 0 B     /scheme/initfs/bin/rpi-firmwared
+8     0     0     US    #2    F          00:00:00.24 00:00:00.24 5.77 MB 0 B     /scheme/initfs/bin/rpi-firmwared
+8     0     0     US    #2    F          00:00:00.00 00:00:00.00 5.77 MB 0 B     /scheme/initfs/bin/rpi-firmwared
+9     0     0     UB    #2    F          00:00:00.03 00:00:00.00 1.67 MB 0 B     /scheme/initfs/bin/inputd
+10    0     0     UB    #1    F          00:00:00.18 00:00:00.01 2.54 MB 4.00 KB /scheme/initfs/bin/lived
+11    0     0     UB    #0    F          00:00:00.21 00:00:00.11 2.61 MB 4.00 KB /scheme/initfs/bin/bcmgenetd
+12    0     0     UB    #1    F          00:00:00.00 00:00:00.00 1.62 MB 0 B     /scheme/initfs/bin/bcm2835-gpiod
+13    0     0     UB    #2    F          00:00:00.00 00:00:00.00 1.68 MB 0 B     /scheme/initfs/bin/bcm2835-spid
+14    0     0     UB    #2    F          00:00:00.00 00:00:00.00 1.62 MB 0 B     /scheme/initfs/bin/bcm2835-i2cd
+15    0     0     UB    #3    F          00:00:00.08 00:00:00.01 2.86 MB 0 B     /scheme/initfs/bin/vesad
+17    0     0     UB    #2    F          00:00:00.24 00:00:00.40 7.67 MB 1.17 MB /scheme/initfs/bin/fbbootlogd
+21    0     0     UB    #1    F          00:00:00.01 00:00:00.26 1.79 MB 16.0 KB /scheme/initfs/bin/pcid
+24    0     0     UB    #1    F          00:00:02.95 00:00:01.29 66.8 MB 12.0 KB /scheme/initfs/bin/redoxfs
+26    0     0     UB    #3    F          00:00:01.15 00:00:00.41 15.1 MB 16.0 KB /usr/lib/drivers/xhcid
+26    0     0     US    #0    F          00:00:01.49 00:00:01.49 15.1 MB 16.0 KB /usr/lib/drivers/xhcid
+26    0     0     UB    #1    F          00:00:00.00 00:00:00.04 15.1 MB 16.0 KB /usr/lib/drivers/xhcid
+26    0     0     UB    #2    F          00:00:02.22 00:00:01.45 15.1 MB 16.0 KB /usr/lib/drivers/xhcid
+26    0     0     UB    #0    F          00:00:02.23 00:00:01.53 15.1 MB 16.0 KB /usr/lib/drivers/xhcid
+26    0     0     UB    #1    F          00:00:00.00 00:00:00.00 15.1 MB 16.0 KB /usr/lib/drivers/xhcid
+27    0     0     UB    #2    F          00:00:00.15 00:00:00.03 1.62 MB 100 KB  /usr/bin/ptyd
+30    0     0     US    #0    F          00:00:00.10 00:00:00.45 1.73 MB 0 B     /usr/lib/drivers/usbhubd
+31    0     0     UB    #3    F          00:00:00.00 00:00:00.02 5.20 MB 0 B     /usr/bin/sudo
+32    0     0     UB    #0    F          00:00:00.35 00:00:00.44 7.11 MB 24.0 KB /usr/bin/netstack
+32    0     0     US    #3    F          00:00:00.00 00:00:00.00 7.11 MB 24.0 KB /usr/bin/netstack
+32    0     0     US    #2    F          00:00:00.01 00:00:00.01 7.11 MB 24.0 KB /usr/bin/netstack
+33    0     0     UB    #2    F          00:00:00.62 00:00:00.44 14.3 MB 0 B     /usr/bin/vc4d
+33    0     0     US    #0    F          00:00:00.03 00:00:00.12 14.3 MB 0 B     /usr/bin/vc4d
+34    0     0     UB    #1    F          00:00:00.01 00:00:00.12 1.79 MB 0 B     /usr/lib/drivers/usbhidd
+35    0     0     UB    #3    F          00:00:00.60 00:00:00.31 11.9 MB 44.0 KB /usr/bin/v3dd
+35    0     0     UB    #3    F          00:00:01.04 00:00:00.11 11.9 MB 44.0 KB /usr/bin/v3dd
+36    0     0     UB    #2    F          00:00:00.01 00:00:00.05 6.15 MB 1.17 MB /usr/bin/fbcond
+37    0     0     UB    #2    F          00:00:00.55 00:00:00.55 1.86 MB 0 B     /usr/bin/getty
+39    0     0     UB    #0    F          00:00:00.00 00:00:00.02 5.88 MB 0 B     /usr/bin/login
+40    0     0     US    #1    F          00:00:00.02 00:00:00.04 1.86 MB 0 B     /usr/bin/dhcpd
+41    0     0     UB    #2    F          00:00:00.00 00:00:00.00 11.2 MB 0 B     /usr/bin/devshd
+41    0     0     UB    #1    F          00:00:00.09 00:00:00.19 11.2 MB 0 B     /usr/bin/devshd
+41    0     0     UB    #2    F          00:00:00.00 00:00:00.02 11.2 MB 0 B     /usr/bin/devshd
+41    0     0     UB    #2    F          00:00:00.00 00:00:00.00 11.2 MB 0 B     /usr/bin/devshd
+46    0     0     UB    #2    F          00:00:00.00 00:00:00.01 1.86 MB 0 B     /usr/bin/getty
+48    0     0     UB    #2    F          00:00:00.00 00:00:00.02 5.88 MB 0 B     /usr/bin/login
+50    0     0     UB    #3    F          00:00:08.79 00:00:07.87 1.79 MB 0 B     /usr/lib/drivers/usbhidd
+51    0     0     UB    #3    F          00:00:08.79 00:00:08.22 1.79 MB 0 B     /usr/lib/drivers/usbhidd
+62    0     0     UB    #0    F          00:00:00.13 00:00:00.15 5.82 MB 0 B     /usr/bin/login
+63    0     0     UB    #2    F          00:00:00.23 00:00:00.37 7.66 MB 0 B     /usr/bin/ion
+70    0     0     UB    #0    F          00:00:00.00 00:00:00.00 7.52 MB 0 B     /usr/bin/desktop
+72    0     0     UB    #2    F          00:00:02.14 00:00:00.13 9.47 MB 1.18 MB /usr/bin/orbital
+75    0     0     UB    #3    F          00:00:00.09 00:00:00.15 14.5 MB 0 B     /usr/bin/orblogin
+88    1000  1000  US    #3    F          00:00:00.03 00:00:00.05 9.54 MB 0 B     /usr/bin/desktop-session
+88    1000  1000  US    #3    F          00:00:00.02 00:00:00.04 9.54 MB 0 B     /usr/bin/desktop-session
+89    1000  1000  UB    #2    F          00:00:00.00 00:00:00.00 7.52 MB 0 B     /usr/bin/desktop-session
+90    1000  1000  UB    #2    F          00:00:00.04 00:00:00.11 9.56 MB 180 KB  /usr/bin/launcher
+94    1000  1000  UB    #3    F          00:00:00.00 00:00:00.00 9.54 MB 0 B     /usr/bin/desktop-session
+95    1000  1000  UB    #0    F          00:00:00.01 00:00:00.05 5.95 MB 768 KB  /usr/bin/orbterm
+96    1000  1000  UB    #3    F          00:00:00.01 00:00:00.04 7.52 MB 0 B     /usr/bin/desktop-welcome
+99    1000  1000  UB    #3    F          00:00:00.02 00:00:00.06 15.5 MB 0 B     /usr/bin/head
+130   0     0     UR+   #1    F          00:00:00.00 00:00:00.02 5.14 MB 0 B     /usr/bin/ps
+### 6a: gles-demo --window --frames 1000  (3.1 s)
+libEGL warning: MESA-LOADER: failed to retrieve device information
+MESA-LOADER: failed to retrieve device information
+MESA-LOADER: failed to retrieve device information
+gles-demo: GL_RENDERER V3D 4.2.14
+gles-demo: PASS: V3D 4.2.14, 1000 frames right, window yes, first frame hash 0748855e, last adf70129, 2.67 ms per frame (GL 1.18, window 1.49)
+### 6b: v3dprobe --via-v3dd --loops 100 | tail -2  (0.3 s)
+v3dprobe: v3dd: stats: bos 105 frees 104 jobs 8380 cl_jobs 8280 failed 0 mmu_faults 0 resets 0 job_us_max 10591 outomem 0 overflow_chunks 1 spaces 1 spaces_made 7 space_loaded 7 irq /scheme/irq/phandle-1/0,74,4 irqs 16648 irq_wakeups 16646 timer_wakeups 1660 maps 64 unmaps 64 live_bos 0 submitted 8380 done_through 8380 queued 0 running - zombies 0
+v3dprobe: v3dd: PASS: 100 of 100 jobs through /scheme/v3d right, 170 us average, 5575 us max (daemon side)
+### fetched /tmp/desk.ppm: 921615 bytes, stats (640, 480, 0.6009889258533473, 671)
+### fetched /tmp/sa.ppm: 921615 bytes, stats (640, 480, 0.38595451852527, 676)
+### fetched /tmp/sb.ppm: 921615 bytes, stats (640, 480, 0.38595451852527, 676)
+### fetched /tmp/sop.ppm: 921615 bytes, stats (640, 480, 0.564325753087545, 701)
