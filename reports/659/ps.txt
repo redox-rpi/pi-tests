@@ -1,0 +1,65 @@
+### 15:57:04 s1-ready
+27    0     0     UB    #1    F          00:00:00.02 00:00:00.05 17.2 MB 16.0 KB /usr/lib/drivers/xhcid
+27    0     0     UB    #2    F          00:00:00.45 00:00:00.37 17.2 MB 16.0 KB /usr/lib/drivers/xhcid
+27    0     0     US    #1    F          00:00:00.59 00:00:00.86 17.2 MB 16.0 KB /usr/lib/drivers/xhcid
+27    0     0     US    #1    F          00:00:00.01 00:00:00.01 17.2 MB 16.0 KB /usr/lib/drivers/xhcid
+27    0     0     UB    #1    F          00:00:00.00 00:00:00.00 17.2 MB 16.0 KB /usr/lib/drivers/xhcid
+27    0     0     UB    #1    F          00:00:01.38 00:00:00.91 17.2 MB 16.0 KB /usr/lib/drivers/xhcid
+27    0     0     UB    #1    F          00:00:00.00 00:00:00.00 17.2 MB 16.0 KB /usr/lib/drivers/xhcid
+33    0     0     US    #3    F          00:00:00.07 00:00:00.38 1.73 MB 0 B     /usr/lib/drivers/usbhubd
+49    0     0     UB    #1    F          00:00:00.00 00:00:00.06 1.79 MB 0 B     /usr/lib/drivers/usbhidd
+52    0     0     UB    #2    F          00:00:06.60 00:00:06.78 1.79 MB 0 B     /usr/lib/drivers/usbhidd
+53    0     0     UB    #1    F          00:00:00.00 00:00:00.06 1.79 MB 0 B     /usr/lib/drivers/usbhidd
+64    0     0     UB    #0    F          00:00:00.28 00:00:00.38 15.9 MB 6.84 MB /usr/bin/orbital
+### 15:59:52 s3-after
+27    0     0     UB    #1    F          00:00:00.02 00:00:00.05 17.2 MB 12.0 KB /usr/lib/drivers/xhcid
+27    0     0     UB    #2    F          00:00:01.73 00:00:00.54 17.2 MB 12.0 KB /usr/lib/drivers/xhcid
+27    0     0     US    #3    F          00:00:02.41 00:00:03.30 17.2 MB 12.0 KB /usr/lib/drivers/xhcid
+27    0     0     US    #2    F          00:00:00.05 00:00:00.05 17.2 MB 12.0 KB /usr/lib/drivers/xhcid
+27    0     0     UB    #1    F          00:00:02.01 00:00:01.15 17.2 MB 12.0 KB /usr/lib/drivers/xhcid
+27    0     0     UB    #3    F          00:00:03.71 00:00:02.34 17.2 MB 12.0 KB /usr/lib/drivers/xhcid
+27    0     0     UB    #1    F          00:00:00.00 00:00:00.00 17.2 MB 12.0 KB /usr/lib/drivers/xhcid
+33    0     0     US    #3    F          00:00:00.21 00:00:00.80 1.73 MB 0 B     /usr/lib/drivers/usbhubd
+52    0     0     UR+   #2    F          00:00:23.54 00:00:24.29 1.79 MB 0 B     /usr/lib/drivers/usbhidd
+53    0     0     UB    #1    F          00:00:00.00 00:00:00.06 1.79 MB 0 B     /usr/lib/drivers/usbhidd
+64    0     0     UB    #0    F          00:00:00.68 00:00:03.56 15.9 MB 6.84 MB /usr/bin/orbital
+93    0     0     UB    #2    F          00:00:00.00 00:00:00.06 1.79 MB 0 B     /usr/lib/drivers/usbhidd
+### 15:59:01 s3-unplug
+27    0     0     UB    #1    F          00:00:00.02 00:00:00.05 17.2 MB 12.0 KB /usr/lib/drivers/xhcid
+27    0     0     UB    #2    F          00:00:01.33 00:00:00.41 17.2 MB 12.0 KB /usr/lib/drivers/xhcid
+27    0     0     US    #3    F          00:00:01.87 00:00:02.55 17.2 MB 12.0 KB /usr/lib/drivers/xhcid
+27    0     0     US    #0    F          00:00:00.04 00:00:00.04 17.2 MB 12.0 KB /usr/lib/drivers/xhcid
+27    0     0     UB    #1    F          00:00:01.73 00:00:00.99 17.2 MB 12.0 KB /usr/lib/drivers/xhcid
+27    0     0     UB    #3    F          00:00:02.73 00:00:01.74 17.2 MB 12.0 KB /usr/lib/drivers/xhcid
+27    0     0     UB    #1    F          00:00:00.00 00:00:00.00 17.2 MB 16.0 KB /usr/lib/drivers/xhcid
+33    0     0     US    #2    F          00:00:00.17 00:00:00.60 1.73 MB 0 B     /usr/lib/drivers/usbhubd
+49    0     0     UB    #1    F          00:00:00.27 00:00:00.28 1.79 MB 0 B     /usr/lib/drivers/usbhidd
+52    0     0     UR+   #2    F          00:00:18.59 00:00:19.10 1.79 MB 0 B     /usr/lib/drivers/usbhidd
+53    0     0     UB    #1    F          00:00:00.00 00:00:00.06 1.79 MB 0 B     /usr/lib/drivers/usbhidd
+64    0     0     UB    #0    F          00:00:00.60 00:00:03.56 15.9 MB 6.84 MB /usr/bin/orbital
+### 16:01:09 s4-a
+27    0     0     UB    #1    F          00:00:00.02 00:00:00.05 17.2 MB 16.0 KB /usr/lib/drivers/xhcid
+27    0     0     UB    #0    F          00:00:02.33 00:00:00.56 17.2 MB 16.0 KB /usr/lib/drivers/xhcid
+27    0     0     US    #3    F          00:00:03.19 00:00:04.35 17.2 MB 16.0 KB /usr/lib/drivers/xhcid
+27    0     0     US    #2    F          00:00:00.07 00:00:00.07 17.2 MB 16.0 KB /usr/lib/drivers/xhcid
+27    0     0     UB    #2    F          00:00:02.07 00:00:01.20 17.2 MB 16.0 KB /usr/lib/drivers/xhcid
+27    0     0     UB    #0    F          00:00:05.61 00:00:03.60 17.2 MB 16.0 KB /usr/lib/drivers/xhcid
+27    0     0     UB    #1    F          00:00:00.00 00:00:00.00 17.2 MB 16.0 KB /usr/lib/drivers/xhcid
+33    0     0     US    #3    F          00:00:00.27 00:00:00.93 1.73 MB 0 B     /usr/lib/drivers/usbhubd
+52    0     0     UB    #0    F          00:00:31.33 00:00:32.22 1.79 MB 0 B     /usr/lib/drivers/usbhidd
+53    0     0     UB    #1    F          00:00:00.00 00:00:00.06 1.79 MB 0 B     /usr/lib/drivers/usbhidd
+64    0     0     UB    #1    F          00:00:01.08 00:00:06.54 15.9 MB 6.84 MB /usr/bin/orbital
+93    0     0     UB    #2    F          00:00:00.28 00:00:00.31 1.79 MB 0 B     /usr/lib/drivers/usbhidd
+### 16:01:52 s4-b
+27    0     0     UB    #1    F          00:00:00.02 00:00:00.05 17.2 MB 16.0 KB /usr/lib/drivers/xhcid
+27    0     0     UB    #0    F          00:00:02.69 00:00:00.58 17.2 MB 16.0 KB /usr/lib/drivers/xhcid
+27    0     0     US    #3    F          00:00:03.66 00:00:04.96 17.2 MB 16.0 KB /usr/lib/drivers/xhcid
+27    0     0     US    #3    F          00:00:00.08 00:00:00.08 17.2 MB 16.0 KB /usr/lib/drivers/xhcid
+27    0     0     UB    #2    F          00:00:02.07 00:00:01.20 17.2 MB 16.0 KB /usr/lib/drivers/xhcid
+27    0     0     UB    #3    F          00:00:06.77 00:00:04.30 17.2 MB 16.0 KB /usr/lib/drivers/xhcid
+27    0     0     UB    #1    F          00:00:00.00 00:00:00.00 17.2 MB 16.0 KB /usr/lib/drivers/xhcid
+33    0     0     US    #2    F          00:00:00.31 00:00:01.02 1.73 MB 0 B     /usr/lib/drivers/usbhubd
+52    0     0     UB    #0    F          00:00:35.71 00:00:36.76 1.79 MB 0 B     /usr/lib/drivers/usbhidd
+53    0     0     UB    #1    F          00:00:00.00 00:00:00.06 1.79 MB 0 B     /usr/lib/drivers/usbhidd
+64    0     0     UB    #0    F          00:00:01.21 00:00:06.56 15.9 MB 6.84 MB /usr/bin/orbital
+93    0     0     UB    #2    F          00:00:00.28 00:00:00.31 1.79 MB 0 B     /usr/lib/drivers/usbhidd

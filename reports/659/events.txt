@@ -1,0 +1,13 @@
+start 15:54:57
+staged /home/zehrer/redox-rpi-graphics/keep/ut1-netboot (build_id = "v0.7.0-dev-58-g1e761ebe+x0aa4") 15:54:57
+boot: login, U-Boot retries 0, banner: redox-rpi v0.7.0-dev-58-g1e761ebe+x0aa4 (netboot, 2026-11-25T15:45:41Z) 15:55:59
+boot: login; redox-rpi v0.7.0-dev-58-g1e761ebe+x0aa4 (netboot, 2026-11-25T15:45:41Z); EDID: rpi-fbd: EDID 256 bytes, monitor HP 27 FHD; usb-trace lines so far 0 15:55:59
+step1 bereit (user) 15:57:04
+step2 typed abcdefghij: all appeared (user) 15:58:22
+step3 Maus raus (user) 15:59:01
+step4 abcdefghij appeared, mouse moves (user) 16:01:09
+step4 klmnopqrst appeared (user) 16:01:52
+staged /home/zehrer/redox-rpi-graphics/keep/pi400-fbshot-stage (build_id = "v0.6.0-dev-105-gbef6d90a+xcf2a") 16:02:00
+boot: timeout, U-Boot retries 0, banner:  16:07:10
+boot: login, U-Boot retries 0, banner: redox-rpi v0.6.0-dev-105-gbef6d90a+xcf2a (netboot, 2026-11-18T04:35:59Z) 16:08:04
+restore: login 16:08:04
