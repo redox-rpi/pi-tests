@@ -1,0 +1,20 @@
+start 04:22:11
+config: 20d19 < total_mem=1024 24a24,25 > hdmi_force_hotplug=1 > hdmi_drive=2  04:22:11
+staged /home/zehrer/redox-rpi-graphics/keep/uh1-netboot (build_id = "v0.7.0-dev-58-g06435c62+xc085") 04:22:11
+boot: login, U-Boot retries 0, banner: redox-rpi v0.7.0-dev-58-g06435c62+xc085 (netboot, 2026-11-25T04:16:04Z) 04:23:04
+serial U1/login done 04:23:18
+run U1 boot: login; redox-rpi v0.7.0-dev-58-g06435c62+xc085 (netboot, 2026-11-25T04:16:04Z; USB: USB HID driver spawned with scheme `usb.pci-0000-01-00.0_xhci`, port 1.1, interface 0 USB HID driver: "USB Optical Mouse" USB HID driver spawned with scheme `usb.pci-0000-01-00.0_xhci`, port 1.4, interface 0 USB HID driver: "Raspberry Pi Internal Keyboard" USB HID driver spawned with scheme `usb.pci-0000-01-00.0_xhci`, port 1.4, interface 1 USB HID driver: "Raspberry Pi Internal Keyboard"  04:23:18
+run U1 steps rc=0: ### 1.1 idle: CPU over 10.3 s (% of one core): usbhidd 0.0 %; xhcid 0.3 %; usbhubd 0.1 % | top others: /scheme/initfs/bin/redoxfs 0.5 %; /usr/bin/netstack 0.4 %; /scheme/initfs/bin/rpi-firmwared 0.3 % ### 1.2 idle: CPU over 10.3 s (% of one core): usbhidd 0.0 %; xhcid 0.3 %; usbhubd 0.1 % | top others: /scheme/initfs/bin/redoxfs 0.5 %; /scheme/initfs/bin/rpi-firmwared 0.4 %; /usr/bin/netstack 0.3 % ### 1.3 idle: CPU over 10.3 s (% of one core): usbhidd 0.0 %; xhcid 0.5 %; usbhubd 0.1 % | top others: /scheme/initfs/bin/redoxfs 0.5 %; /scheme/initfs/bin/rpi-firmwared 0.5 %; /scheme/initfs/bin/bcmgenetd 0.3 %  04:25:27
+run U1 usbhidd/xhcid WARN/ERROR lines: 8 04:25:27
+run U1 reboots after login: 0; panic/UNHANDLED: 0 04:25:27
+staged /home/zehrer/redox-rpi-graphics/keep/uh2-netboot (build_id = "v0.7.0-dev-59-g2cff6175+xc085") 04:25:27
+boot: login, U-Boot retries 0, banner: redox-rpi v0.7.0-dev-59-g2cff6175+xc085 (netboot, 2026-11-25T04:19:41Z) 04:26:26
+serial U2/login done 04:26:40
+run U2 boot: login; redox-rpi v0.7.0-dev-59-g2cff6175+xc085 (netboot, 2026-11-25T04:19:41Z; USB: USB HID driver spawned with scheme `usb.pci-0000-01-00.0_xhci`, port 1.1, interface 0 USB HID driver: "USB Optical Mouse" USB HID driver spawned with scheme `usb.pci-0000-01-00.0_xhci`, port 1.4, interface 0 USB HID driver spawned with scheme `usb.pci-0000-01-00.0_xhci`, port 1.4, interface 1 USB HID driver: "Raspberry Pi Internal Keyboard" USB HID driver: "Raspberry Pi Internal Keyboard"  04:26:40
+run U2 steps rc=0: ### 1.1 idle: CPU over 10.3 s (% of one core): usbhidd 0.0 %; xhcid 0.3 %; usbhubd 0.0 % | top others: /scheme/initfs/bin/redoxfs 0.5 %; /scheme/initfs/bin/rpi-firmwared 0.4 %; /usr/bin/netstack 0.3 % ### 1.2 idle: CPU over 10.3 s (% of one core): usbhidd 0.0 %; xhcid 0.5 %; usbhubd 0.1 % | top others: /scheme/initfs/bin/redoxfs 0.5 %; /scheme/initfs/bin/rpi-firmwared 0.5 %; /usr/bin/netstack 0.3 % ### 1.3 idle: CPU over 10.3 s (% of one core): usbhidd 0.0 %; xhcid 0.3 %; usbhubd 0.0 % | top others: /scheme/initfs/bin/redoxfs 0.5 %; /usr/bin/netstack 0.4 %; /scheme/initfs/bin/rpi-firmwared 0.3 %  04:28:49
+run U2 usbhidd/xhcid WARN/ERROR lines: 8 04:28:49
+run U2 reboots after login: 0; panic/UNHANDLED: 0 04:28:49
+config restored: same 04:28:49
+staged /home/zehrer/redox-rpi-graphics/keep/pi400-fbshot-stage (build_id = "v0.6.0-dev-105-gbef6d90a+xcf2a") 04:28:49
+boot: login, U-Boot retries 0, banner: redox-rpi v0.6.0-dev-105-gbef6d90a+xcf2a (netboot, 2026-11-18T04:35:59Z) 04:29:28
+restore: login 04:29:28
