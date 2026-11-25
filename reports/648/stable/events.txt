@@ -1,0 +1,20 @@
+start 07:48:46
+boot: found after 21 s; banner redox-rpi v0.7.0-dev-9-g368175ee+x2d42 (netboot, 2026-11-23T03:30:57Z) 07:49:23
+devsh up 07:49:24
+S boot 1: devsh after 31+5 s; nocore=0 reset1=0 empty=0 rootempty=0 rootfail=0 pwr=0 full=0 enumfail=0 hub=2 linkup=1 noffer=0 relibc=0 unhandled=0 07:50:14
+S boot 2: devsh after 22+5 s; nocore=0 reset1=0 empty=0 rootempty=0 rootfail=0 pwr=0 full=0 enumfail=0 hub=2 linkup=1 noffer=0 relibc=0 unhandled=0 07:50:56
+S boot 3: devsh after 23+5 s; nocore=0 reset1=0 empty=0 rootempty=0 rootfail=0 pwr=0 full=0 enumfail=0 hub=2 linkup=1 noffer=0 relibc=0 unhandled=0 07:51:39
+S boot 4: devsh after 36+5 s; nocore=0 reset1=0 empty=0 rootempty=0 rootfail=0 pwr=0 full=0 enumfail=0 hub=2 linkup=1 noffer=0 relibc=0 unhandled=0 07:52:34
+S boot 5: NO devsh within 120 s; nocore=0 reset1=0 empty=1 rootempty=0 rootfail=0 pwr=0 full=0 enumfail=0 hub=0 linkup=0 noffer=0 relibc=0 unhandled=0 07:54:52
+found after 0 s
+recovered 07:55:32
+S boot 6: devsh after 24+5 s; nocore=0 reset1=0 empty=0 rootempty=0 rootfail=0 pwr=0 full=0 enumfail=0 hub=2 linkup=1 noffer=0 relibc=0 unhandled=0 07:56:15
+S boot 7: devsh after 21+5 s; nocore=0 reset1=0 empty=0 rootempty=0 rootfail=0 pwr=0 full=0 enumfail=0 hub=2 linkup=1 noffer=0 relibc=0 unhandled=0 07:56:55
+S boot 8: devsh after 23+5 s; nocore=0 reset1=0 empty=0 rootempty=0 rootfail=0 pwr=0 full=0 enumfail=0 hub=2 linkup=1 noffer=0 relibc=0 unhandled=0 07:57:37
+S boot 9: NO devsh within 120 s; nocore=0 reset1=0 empty=1 rootempty=0 rootfail=0 pwr=0 full=0 enumfail=0 hub=0 linkup=0 noffer=0 relibc=0 unhandled=0 07:59:55
+found after 0 s
+recovered 08:00:39
+S boot 10: NO devsh within 120 s; nocore=0 reset1=0 empty=1 rootempty=0 rootfail=0 pwr=0 full=0 enumfail=0 hub=0 linkup=0 noffer=0 relibc=0 unhandled=0 08:02:59
+found after 0 s
+recovered 08:03:44
+S devsh within 120 s: 7/10 08:03:44

@@ -1,0 +1,60 @@
+P boot 1: dwc2d: at start HPRT0 0x100d PCGCCTL 0x0
+P boot 1: dwc2d: root port working at start, no core reset
+P boot 2: dwc2d: at start HPRT0 0x100d PCGCCTL 0x0
+P boot 2: dwc2d: root port working at start, no core reset
+P boot 3: dwc2d: at start HPRT0 0x100d PCGCCTL 0x0
+P boot 3: dwc2d: root port working at start, no core reset
+P boot 4: dwc2d: at start HPRT0 0x100d PCGCCTL 0x0
+P boot 4: dwc2d: root port working at start, no core reset
+P boot 5: dwc2d: at start HPRT0 0x100d PCGCCTL 0x0
+P boot 5: dwc2d: root port working at start, no core reset
+P boot 6: dwc2d: at start HPRT0 0x100d PCGCCTL 0x0
+P boot 6: dwc2d: root port working at start, no core reset
+P boot 7: dwc2d: at start HPRT0 0x100d PCGCCTL 0x0
+P boot 7: dwc2d: root port working at start, no core reset
+P boot 8: dwc2d: at start HPRT0 0x100d PCGCCTL 0x0
+P boot 8: dwc2d: root port working at start, no core reset
+P boot 9: dwc2d: at start HPRT0 0x100d PCGCCTL 0x0
+P boot 9: dwc2d: root port working at start, no core reset
+P boot 10: dwc2d: at start HPRT0 0x100d PCGCCTL 0x0
+P boot 10: dwc2d: root port working at start, no core reset
+P boot 11: dwc2d: at start HPRT0 0x100d PCGCCTL 0x0
+P boot 11: dwc2d: root port working at start, no core reset
+P boot 12: dwc2d: at start HPRT0 0x100d PCGCCTL 0x0
+P boot 12: dwc2d: root port working at start, no core reset
+P boot 13: dwc2d: at start HPRT0 0x100d PCGCCTL 0x0
+P boot 13: dwc2d: root port working at start, no core reset
+P boot 14: dwc2d: at start HPRT0 0x100d PCGCCTL 0x0
+P boot 14: dwc2d: root port working at start, no core reset
+P boot 15: dwc2d: at start HPRT0 0x100d PCGCCTL 0x0
+P boot 15: dwc2d: root port working at start, no core reset
+P boot 16: dwc2d: at start HPRT0 0x100d PCGCCTL 0x0
+P boot 16: dwc2d: root port working at start, no core reset
+P boot 17: dwc2d: at start HPRT0 0x100d PCGCCTL 0x0
+P boot 17: dwc2d: root port working at start, no core reset
+P boot 18: dwc2d: at start HPRT0 0x100d PCGCCTL 0x0
+P boot 18: dwc2d: root port working at start, no core reset
+P boot 19: dwc2d: at start HPRT0 0x100d PCGCCTL 0x0
+P boot 19: dwc2d: root port working at start, no core reset
+P boot 20: dwc2d: at start HPRT0 0x100d PCGCCTL 0x0
+P boot 20: dwc2d: root port working at start, no core reset
+P boot 21: dwc2d: at start HPRT0 0x100d PCGCCTL 0x0
+P boot 21: dwc2d: root port working at start, no core reset
+P boot 22: dwc2d: at start HPRT0 0x100d PCGCCTL 0x0
+P boot 22: dwc2d: root port working at start, no core reset
+P boot 23: dwc2d: at start HPRT0 0x100d PCGCCTL 0x0
+P boot 23: dwc2d: root port working at start, no core reset
+P boot 24: dwc2d: at start HPRT0 0x100d PCGCCTL 0x0
+P boot 24: dwc2d: root port working at start, no core reset
+P boot 25: dwc2d: at start HPRT0 0x100d PCGCCTL 0x0
+P boot 25: dwc2d: root port working at start, no core reset
+P boot 26: dwc2d: at start HPRT0 0x100d PCGCCTL 0x0
+P boot 26: dwc2d: root port working at start, no core reset
+P boot 27: dwc2d: at start HPRT0 0x100d PCGCCTL 0x0
+P boot 27: dwc2d: root port working at start, no core reset
+P boot 28: dwc2d: at start HPRT0 0x100d PCGCCTL 0x0
+P boot 28: dwc2d: root port working at start, no core reset
+P boot 29: dwc2d: at start HPRT0 0x100d PCGCCTL 0x0
+P boot 29: dwc2d: root port working at start, no core reset
+P boot 30: dwc2d: at start HPRT0 0x100d PCGCCTL 0x0
+P boot 30: dwc2d: root port working at start, no core reset

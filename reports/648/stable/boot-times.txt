@@ -1,0 +1,19 @@
+0 v0.7.0-dev-9-g368175ee+x2d42 boot=20.92 login=33.22 link=34.40 dhcp=34.60  login-boot=12.30
+1 v0.7.0-dev-9-g368175ee+x2d42 boot=20.87 login=33.16 link=34.34 dhcp=34.54  login-boot=12.29
+2 v0.7.0-dev-9-g368175ee+x2d42 boot=20.02 login=32.31 link=33.48 dhcp=33.77  login-boot=12.29
+3 v0.7.0-dev-9-g368175ee+x2d42 boot=20.92 login=33.22 link=34.39 dhcp=34.55  login-boot=12.29
+4 v0.7.0-dev-9-g368175ee+x2d42 boot=23.61 login=35.97 link=38.09 dhcp=39.32  login-boot=12.35
+5 v0.7.0-dev-9-g368175ee+x2d42 boot=21.02 login=34.86  login-boot=13.84
+6 v0.7.0-dev-9-g368175ee+x2d42 boot=20.96 login=33.30 link=34.41 dhcp=34.67  login-boot=12.35
+7 v0.7.0-dev-9-g368175ee+x2d42 boot=20.91 login=33.28 link=34.33 dhcp=34.45  login-boot=12.37
+8 v0.7.0-dev-9-g368175ee+x2d42 boot=20.12 login=32.27 link=33.48 dhcp=33.66  login-boot=12.15
+9 v0.7.0-dev-9-g368175ee+x2d42 boot=20.86 login=33.18 link=35.37 dhcp=36.53  login-boot=12.32
+10 v0.7.0-dev-9-g368175ee+x2d42 boot=21.06 login=35.13  login-boot=14.07
+11 v0.7.0-dev-9-g368175ee+x2d42 boot=23.61 login=35.83 link=37.08 dhcp=37.19  login-boot=12.22
+12 v0.7.0-dev-9-g368175ee+x2d42 boot=20.06 login=34.09  login-boot=14.03
+13 v0.7.0-dev-9-g368175ee+x2d42 boot=22.76 login=35.06 link=37.23 dhcp=38.44  login-boot=12.31
+SUM v0.7.0-dev-9-g368175ee+x2d42 n=14 boot: median 20.92 min 20.02 max 23.61
+SUM v0.7.0-dev-9-g368175ee+x2d42 n=14 login: median 33.29 min 32.27 max 35.97
+SUM v0.7.0-dev-9-g368175ee+x2d42 n=14 link: median 34.40 min 33.48 max 38.09
+SUM v0.7.0-dev-9-g368175ee+x2d42 n=14 dhcp: median 34.60 min 33.66 max 39.32
+SUM v0.7.0-dev-9-g368175ee+x2d42 login-boot: median 12.31 min 12.15 max 14.07
