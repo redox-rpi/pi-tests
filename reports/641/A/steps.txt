@@ -1,0 +1,64 @@
+### 1: gles-probe 1  (0.5 s)
+libEGL warning: MESA-LOADER: failed to retrieve device information
+MESA-LOADER: failed to retrieve device information
+MESA-LOADER: failed to retrieve device information
+gles-probe: EGL 1.4, Mesa Project
+gles-probe: GL_RENDERER V3D 4.2.14, GL_VERSION OpenGL ES 3.0 Mesa 24.0.8 (git-9850ea1ad7)
+gles-probe: PASS: V3D 4.2.14, 1 of 1 frames right, 2080 red pixels, hash 57aafac5, 3.04 ms per frame
+### 2: prime-probe --frames 300  (0.5 s)
+prime-probe: VT 3
+prime-probe: connector 27, CRTC 22, mode 640x480
+libEGL warning: MESA-LOADER: failed to retrieve device information
+MESA-LOADER: failed to retrieve device information
+MESA-LOADER: failed to retrieve device information
+prime-probe: EGL_EXT_image_dma_buf_import yes, _modifiers yes
+prime-probe: GL_RENDERER V3D 4.2.14
+prime-probe: direct import: vc4d's buffer is BO 1 on the render node
+prime-probe: buffer 0: handle 1, pitch 2560, 1228800 bytes, fb 30, dma-buf fd 10, imported
+prime-probe: buffer 1: handle 2, pitch 2560, 1228800 bytes, fb 31, dma-buf fd 11, imported
+[INFO prime-probe@src/header/sys_ioctl/redox/drm.rs:205] TODO: unimplemented DRM ioctl(9, 0xc1, ReadWrite(0x7ffffffff828, 24))
+export failed
+prime-probe: frame 0: 2592 pattern pixels left, 1104 pixels differ from glReadPixels, cube 63271 of 307200 pixels, hash 838d3f9d
+prime-probe: FAIL: the display buffer does not hold what the GPU drew (errno 22, EGL error 0x3000, GL error 0x0)
+### s3start: prime-probe --frames 900 --show &> /tmp/s3.txt &  (0.2 s)
+ion: bg [0] 69
+### s3shot1: vc4shot /tmp/s3a.ppm  (2.2 s)
+vc4shot: channel 1 640x480, list at 2048, 1 planes, ctrl 0x828001e0 bkgnd 0x81000000 list 2048 active 2048 stat 0xa226c058 (mode 2, frame 44)
+vc4shot: plane 0: ListPlane { unity: true, format: 7, x: 0, y: 0, width: 640, height: 480, bus: 3257376768, pitch: 2560, alpha: false }
+vc4shot: wrote /tmp/s3a.ppm (921615 bytes)
+### s3 result:
+prime-probe: VT 4
+prime-probe: connector 27, CRTC 22, mode 640x480
+libEGL warning: MESA-LOADER: failed to retrieve device information
+MESA-LOADER: failed to retrieve device information
+MESA-LOADER: failed to retrieve device information
+prime-probe: EGL_EXT_image_dma_buf_import yes, _modifiers yes
+prime-probe: GL_RENDERER V3D 4.2.14
+prime-probe: direct import: vc4d's buffer is BO 1 on the render node
+prime-probe: buffer 0: handle 1, pitch 2560, 1228800 bytes, fb 32, dma-buf fd 9, imported
+prime-probe: buffer 1: handle 2, pitch 2560, 1228800 bytes, fb 33, dma-buf fd 10, imported
+[INFO prime-probe@src/header/sys_ioctl/redox/drm.rs:205] TODO: unimplemented DRM ioctl(8, 0xc1, ReadWrite(0x7ffffffff828, 24))
+export failed
+prime-probe: frame 0: 80 pattern pixels left, 80 pixels differ from glReadPixels, cube 61356 of 307200 pixels, hash 6582e16f
+prime-probe: FAIL: the display buffer does not hold what the GPU drew (errno 22, EGL error 0x3000, GL error 0x0)
+### s3shot2: vc4shot /tmp/s3b.ppm  (0.8 s)
+vc4shot: channel 1 640x480, list at 2048, 1 planes, ctrl 0x828001e0 bkgnd 0x81000000 list 2048 active 2048 stat 0xa22c0140 (mode 2, frame 0)
+vc4shot: plane 0: ListPlane { unity: true, format: 7, x: 0, y: 0, width: 640, height: 480, bus: 3257376768, pitch: 2560, alpha: false }
+vc4shot: wrote /tmp/s3b.ppm (921615 bytes)
+### 4: prime-probe --frames 10 --lifetime --foreign  (0.5 s)
+prime-probe: VT 5
+prime-probe: connector 27, CRTC 22, mode 640x480
+libEGL warning: MESA-LOADER: failed to retrieve device information
+MESA-LOADER: failed to retrieve device information
+MESA-LOADER: failed to retrieve device information
+prime-probe: EGL_EXT_image_dma_buf_import yes, _modifiers yes
+prime-probe: GL_RENDERER V3D 4.2.14
+prime-probe: direct import: vc4d's buffer is BO 1 on the render node
+prime-probe: buffer 0: handle 1, pitch 2560, 1228800 bytes, fb 34, dma-buf fd 10, imported
+prime-probe: buffer 1: handle 2, pitch 2560, 1228800 bytes, fb 35, dma-buf fd 11, imported
+[INFO prime-probe@src/header/sys_ioctl/redox/drm.rs:205] TODO: unimplemented DRM ioctl(9, 0xc1, ReadWrite(0x7ffffffff818, 24))
+export failed
+prime-probe: frame 0: 64 pattern pixels left, 32 pixels differ from glReadPixels, cube 61340 of 307200 pixels, hash 02bfd82f
+prime-probe: FAIL: the display buffer does not hold what the GPU drew (errno 22, EGL error 0x3000, GL error 0x0)
+### fetched /tmp/s3a.ppm: 921615 bytes, stats (640, 480, 0.9775099120448435, 2)
+### fetched /tmp/s3b.ppm: 921615 bytes, stats (640, 480, 0.9775099120448435, 2)

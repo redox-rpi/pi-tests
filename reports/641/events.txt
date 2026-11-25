@@ -1,0 +1,24 @@
+start 01:45:59
+staged /home/zehrer/redox-rpi-graphics/keep/gfx-g4e-netboot (build_id = "v0.7.0-dev-77-g0fdb5cc8+xa9ee") 01:45:59
+part A config A 01:45:59
+boot: login, U-Boot retries 0, banner: redox-rpi v0.7.0-dev-77-g0fdb5cc8+xa9ee (netboot, 2026-11-25T01:39:33Z) 01:47:04
+part A boot: login; taking over channel 1 at 640x480 01:47:19
+part A steps rc=0 01:48:33
+part A still answers 01:48:39
+part A reboots after login: 0; panic/UNHANDLED: 0 01:48:39
+part A2 config A 01:48:39
+boot: login, U-Boot retries 0, banner: redox-rpi v0.7.0-dev-77-g0fdb5cc8+xa9ee (netboot, 2026-11-25T01:39:33Z) 01:49:35
+part A2 boot: login; taking over channel 1 at 640x480 01:49:50
+part A2 steps rc=0 01:52:08
+part A2 still answers 01:52:09
+part A2 reboots after login: 0; panic/UNHANDLED: 0 01:52:09
+part B config B 01:52:09
+boot: login, U-Boot retries 0, banner: redox-rpi v0.7.0-dev-77-g0fdb5cc8+xa9ee (netboot, 2026-11-25T01:39:33Z) 01:53:08
+part B boot: login; taking over channel 1 at 1920x1080 01:53:23
+part B steps rc=0 01:54:41
+part B still answers 01:54:42
+part B reboots after login: 0; panic/UNHANDLED: 0 01:54:42
+config restored: same 01:54:42
+staged /home/zehrer/redox-rpi-graphics/keep/pi400-fbshot-stage (build_id = "v0.6.0-dev-105-gbef6d90a+xcf2a") 01:54:42
+boot: login, U-Boot retries 0, banner: redox-rpi v0.6.0-dev-105-gbef6d90a+xcf2a (netboot, 2026-11-18T04:35:59Z) 01:55:23
+restore: login 01:55:23
