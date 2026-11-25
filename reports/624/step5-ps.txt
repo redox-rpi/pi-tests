@@ -1,0 +1,13 @@
+CPU over 10.3 s: /scheme/initfs/bin/rpi-firmwared 1.2 %; /scheme/initfs/bin/redoxfs 0.5 %; /usr/bin/netstack 0.3 %; /usr/lib/drivers/xhcid 0.3 %; /usr/bin/ion 0.2 %; /scheme/initfs/bin/bcmgenetd 0.2 %; initnsmgr 0.1 %; /scheme/initfs/bin/rpi-fbd 0.1 %
+27    0     0     UB    #2    F          00:00:01.38 00:00:00.54 17.1 MB 16.0 KB /usr/lib/drivers/xhcid
+27    0     0     US    #2    F          00:00:01.74 00:00:01.74 17.1 MB 16.0 KB /usr/lib/drivers/xhcid
+27    0     0     UB    #1    F          00:00:00.01 00:00:00.04 17.1 MB 16.0 KB /usr/lib/drivers/xhcid
+27    0     0     US    #1    F          00:00:00.05 00:00:00.05 17.1 MB 16.0 KB /usr/lib/drivers/xhcid
+27    0     0     UB    #2    F          00:00:01.16 00:00:00.78 17.1 MB 16.0 KB /usr/lib/drivers/xhcid
+27    0     0     UB    #3    F          00:00:02.89 00:00:01.82 17.1 MB 16.0 KB /usr/lib/drivers/xhcid
+27    0     0     UB    #1    F          00:00:00.00 00:00:00.00 17.1 MB 16.0 KB /usr/lib/drivers/xhcid
+31    0     0     US    #2    F          00:00:00.19 00:00:00.77 1.73 MB 0 B     /usr/lib/drivers/usbhubd
+52    0     0     UB    #1    F          00:00:17.68 00:00:18.12 1.79 MB 0 B     /usr/lib/drivers/usbhidd
+53    0     0     UB    #1    F          00:00:00.00 00:00:00.06 1.79 MB 0 B     /usr/lib/drivers/usbhidd
+64    0     0     UB    #1    F          00:00:01.70 00:00:10.72 15.9 MB 6.84 MB /usr/bin/orbital
+86    0     0     UB    #3    F          00:00:00.33 00:00:00.38 1.79 MB 0 B     /usr/lib/drivers/usbhidd
