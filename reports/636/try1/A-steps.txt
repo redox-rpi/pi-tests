@@ -1,0 +1,55 @@
+### 1: cputop -n 1 -l 12 10  (1.0 s)
+ion: command not found: cputop
+### 2a: desktop --yes  (1.6 s)
+Redox desktop (beta)
+Super+F2   back to the text console
+Super+F3   back to the desktop
+(or type desktop on the console)
+Super+T    a terminal
+Known limits:
+- Slow: everything draws in software; dragging a
+window costs much of a core.
+- Once started, the desktop cannot be stopped; its
+memory (40 to 80 MB) comes back only with a reboot.
+- No browser, one screen resolution, no HDMI hotplug.
+desktop: starting Orbital, its log goes to /tmp/desktop.log
+desktop: Super+F2 goes back to the console, Super+F3 to the desktop
+### 2b: pointer-bench --type user  (0.7 s)
+pointer-bench: typed 4 keys
+### 2e0: pointer-bench --keys enter  (0.4 s)
+pointer-bench: enter
+### 2e1: pointer-bench --keys enter  (0.4 s)
+pointer-bench: enter
+### 2e2: pointer-bench --keys enter  (0.5 s)
+pointer-bench: enter
+### 2term: pointer-bench --super t  (0.5 s)
+pointer-bench: super+t
+### 2shot: vc4shot /tmp/term.ppm  (2.0 s)
+vc4shot: channel 1 640x480, list at 2176, 2 planes, ctrl 0x828001e0 bkgnd 0x81000000 list 2176 active 2176 stat 0xa35e8059 (mode 2, frame 40)
+vc4shot: plane 0: ListPlane { unity: true, format: 7, x: 0, y: 0, width: 640, height: 480, bus: 3256123392, pitch: 2560, alpha: false }
+vc4shot: plane 1: ListPlane { unity: true, format: 7, x: 0, y: 0, width: 64, height: 64, bus: 3263344640, pitch: 256, alpha: true }
+vc4shot: wrote /tmp/term.ppm (921615 bytes)
+### 3start: pointer-bench 30 --hz 60 --super-drag --drag 320 240 --screen 640 480 --center 320 240 --radius 150 &> /tmp/pb3.txt &  (0.2 s)
+ion: bg [0] 107
+### 3cpu: cputop -n 1 -l 12 15  (1.1 s)
+ion: command not found: cputop
+### 3res: cat /tmp/pb3.txt  (0.3 s)
+
+### 4gd: gles-demo --window --frames 100000 &> /tmp/gd.txt &  (0.2 s)
+ion: bg [1] 114
+### 4start: pointer-bench 30 --hz 60 --super-drag --drag 320 240 --screen 640 480 --center 320 240 --radius 150 &> /tmp/pb4.txt &  (0.3 s)
+ion: bg [2] 117
+ion: ([
+### 4cpu: cputop -n 1 -l 12 15  (65.6 s)
+ion: command not found: cputop
+### 4res: cat /tmp/pb4.txt  (0.3 s)
+pointer-bench: 1800 moves in 30.1 s (59.8/s), dragging
+### 4 gles-demo pids: ['115']
+### 4kill: kill -INT 115  (0.3 s)
+
+### 4gdout: cat /tmp/gd.txt  (0.3 s)
+libEGL warning: MESA-LOADER: failed to retrieve device information
+MESA-LOADER: failed to retrieve device information
+MESA-LOADER: failed to retrieve device information
+gles-demo: GL_RENDERER V3D 4.2.14
+### fetched /tmp/term.ppm: 921615 bytes, stats (640, 480, 0.6673654468395388, 659)

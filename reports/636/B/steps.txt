@@ -1,0 +1,52 @@
+### 1 idle: CPU over 10.3 s (ps ACTTIME deltas, % of one core): /usr/lib/drivers/usbhidd 19.0 %; /usr/lib/drivers/xhcid 9.1 %; /scheme/initfs/bin/redoxfs 0.4 %; /usr/bin/netstack 0.3 %; /scheme/initfs/bin/fbbootlogd 0.3 %; /scheme/initfs/bin/logd 0.2 %; /scheme/initfs/bin/rpi-firmwared 0.2 %; /scheme/initfs/bin/bcmgenetd 0.2 %
+### 2a: desktop --yes  (0.5 s)
+Redox desktop (beta)
+Super+F2   back to the text console
+Super+F3   back to the desktop
+(or type desktop on the console)
+Super+T    a terminal
+Known limits:
+- Slow: everything draws in software; dragging a
+window costs much of a core.
+- Once started, the desktop cannot be stopped; its
+memory (40 to 80 MB) comes back only with a reboot.
+- No browser, one screen resolution, no HDMI hotplug.
+desktop: starting Orbital, its log goes to /tmp/desktop.log
+desktop: Super+F2 goes back to the console, Super+F3 to the desktop
+### 2b: pointer-bench --type user  (0.7 s)
+pointer-bench: typed 4 keys
+### 2e0: pointer-bench --keys enter  (0.4 s)
+pointer-bench: enter
+### 2e1: pointer-bench --keys enter  (0.4 s)
+pointer-bench: enter
+### 2e2: pointer-bench --keys enter  (0.5 s)
+pointer-bench: enter
+### 2term: pointer-bench --super t  (0.4 s)
+pointer-bench: super+t
+### 2shot: vc4shot /tmp/term.ppm  (3.5 s)
+vc4shot: channel 1 1920x1080, list at 2304, 2 planes, ctrl 0x87800438 bkgnd 0x81000000 list 2304 active 2304 stat 0xa3ab818d (mode 2, frame 56)
+vc4shot: plane 0: ListPlane { unity: true, format: 7, x: 0, y: 0, width: 1920, height: 1080, bus: 3256127488, pitch: 7680, alpha: false }
+vc4shot: plane 1: ListPlane { unity: true, format: 7, x: 0, y: 0, width: 64, height: 64, bus: 3269181440, pitch: 256, alpha: true }
+vc4shot: wrote /tmp/term.ppm (6220817 bytes)
+### 3start: pointer-bench 30 --hz 60 --super-drag --drag 960 540 --screen 1920 1080 --center 960 540 --radius 150 &> /tmp/pb3.txt &  (0.2 s)
+ion: bg [0] 107
+### 3 drag: CPU over 10.3 s (ps ACTTIME deltas, % of one core): /usr/lib/drivers/usbhidd 21.4 %; /usr/lib/drivers/xhcid 11.3 %; /usr/bin/orbital 3.1 %; /usr/bin/vc4d 0.9 %; /usr/bin/cosmic-term 0.8 %; /scheme/initfs/bin/redoxfs 0.4 %; /scheme/initfs/bin/rpi-firmwared 0.4 %; /scheme/initfs/bin/inputd 0.4 %
+### 3res: cat /tmp/pb3.txt  (0.4 s)
+pointer-bench: 1800 moves in 30.1 s (59.8/s), dragging
+### 4gd: gles-demo --window --frames 100000 &> /tmp/gd.txt &  (0.2 s)
+ion: bg [0] 116
+### 4start: pointer-bench 30 --hz 60 --super-drag --drag 960 540 --screen 1920 1080 --center 960 540 --radius 150 &> /tmp/pb4.txt &  (0.3 s)
+ion: bg [1] 119
+ion: ([1] 119) exited with 0
+### 4 drag + gles-demo: CPU over 10.3 s (ps ACTTIME deltas, % of one core): /usr/bin/orbital 55.8 %; /usr/bin/gles-demo 36.4 %; /usr/lib/drivers/usbhidd 22.7 %; /usr/lib/drivers/xhcid 10.3 %; /usr/bin/v3dd 4.3 %; /usr/bin/vc4d 1.8 %; /usr/bin/pointer-bench 0.5 %; /scheme/initfs/bin/inputd 0.4 %
+### 4res: cat /tmp/pb4.txt  (0.3 s)
+pointer-bench: 1800 moves in 30.1 s (59.8/s), dragging
+### 4 gles-demo pids: ['117']
+### 4kill: kill -INT 117  (0.3 s)
+
+### 4gdout: cat /tmp/gd.txt  (0.3 s)
+libEGL warning: MESA-LOADER: failed to retrieve device information
+MESA-LOADER: failed to retrieve device information
+MESA-LOADER: failed to retrieve device information
+gles-demo: GL_RENDERER V3D 4.2.14
+### fetched /tmp/term.ppm: 6220817 bytes, stats (1920, 1080, 0.5347855881767146, 721)

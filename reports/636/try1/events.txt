@@ -1,0 +1,18 @@
+start 00:13:47
+staged /home/zehrer/redox-rpi-graphics/keep/gfx-g3j-netboot (build_id = "v0.7.0-dev-73-ge4dd3340+x719b") 00:13:47
+run A config: 20d19 < total_mem=1024 24a24,25 > hdmi_force_hotplug=1 > hdmi_drive=2  00:13:47
+boot: login, U-Boot retries 0, banner: redox-rpi v0.7.0-dev-73-ge4dd3340+x719b (netboot, 2026-11-25T00:01:26Z) 00:14:43
+run A boot: login; vc4d 640x480; WARN - Failed to get EFI EDID from handle Handle(986495152): Status(0x8000000000 00:14:58
+run A steps rc=0 00:18:02
+run A still answers 00:18:03
+run A reboots after login: 0; panic/UNHANDLED: 0 00:18:03
+run B config: 20d19 < total_mem=1024 24a24,27 > hdmi_force_hotplug=1 > hdmi_drive=2 > hdmi_group=1 > hdmi_mode=16  00:18:03
+boot: login, U-Boot retries 0, banner: redox-rpi v0.7.0-dev-73-ge4dd3340+x719b (netboot, 2026-11-25T00:01:26Z) 00:19:03
+run B boot: login; vc4d 1920x1080; WARN - Failed to get EFI EDID from handle Handle(986495168): Status(0x8000000000 00:19:18
+run B steps rc=0 00:22:22
+run B still answers 00:22:23
+run B reboots after login: 0; panic/UNHANDLED: 0 00:22:23
+config restored: same 00:22:23
+staged /home/zehrer/redox-rpi-graphics/keep/pi400-fbshot-stage (build_id = "v0.6.0-dev-105-gbef6d90a+xcf2a") 00:22:23
+boot: fault, U-Boot retries 0, banner: redox-rpi v0.6.0-dev-105-gbef6d90a+xcf2a (netboot, 2026-11-18T04:35:59Z) 00:23:41
+restore: fault 00:23:41
