@@ -1,0 +1,1 @@
+⏎                                                                                ]0;root: /home/rootroot:~# ]0;root: /home/rootroot:~# 1970-01-01T00-01-19.086Z [@xhcid::xhci:1614 INFO] usb-trace: sending 2000 no-op commands

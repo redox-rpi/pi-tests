@@ -1,0 +1,220 @@
+1970-01-01T00-00-31.628Z [@pcid_spawner:93 INFO] pcid-spawner: spawn "/usr/lib/drivers/xhcid"
+xhcid: mapping BAR0 Memory64 { addr: 25769803776, size: 4096 }
+xhcid: reading the capability registers at 0x15000
+xhcid: capability registers read, 64-byte contexts: false
+1970-01-01T00-00-31.688Z [@xhcid:98 INFO] XHCI pci-0000-01-00.0 on: 0=0000000600000000 IRQ: (phandle 1, [0, 143, 4])
+1970-01-01T00-00-31.857Z [@xhcid::xhci:1394 INFO] Loading subdriver "USB HUB" for port 1 iface 0 alternate 0 class 9.0 proto 0
+1970-01-01T00-00-31.910Z [@xhcid::xhci::device_enumerator:115 INFO] Device on port 1 was attached
+1970-01-01T00-00-31.960Z [@usbhubd:101 INFO] usb-trace: hub characteristics 0x00e0 (power switching ganged)
+1970-01-01T00-00-32.019Z [@usbhubd:296 INFO] power on port 1
+1970-01-01T00-00-32.066Z [@usbhubd:296 INFO] power on port 2
+1970-01-01T00-00-32.113Z [@usbhubd:296 INFO] power on port 3
+1970-01-01T00-00-32.147Z [@usbhubd:296 INFO] power on port 4
+experiments: desktop netstack-watch orbital orbital-apps pi400 pi400-mem rpi-fb usb-trace
+⏎                                                                                redox login: redox login: 1970-01-01T00-00-33.187Z [@usbhubd:258 INFO] port 1 status V2(HubPortStatusV2(CONNECTION | POWER | LOW_SPEED | CONNECTION_CHANGED))
+1970-01-01T00-00-33.208Z [@usbhubd:339 INFO] reset port 1
+1970-01-01T00-00-33.231Z [@usbhubd:258 INFO] port 2 status V2(HubPortStatusV2(POWER))
+1970-01-01T00-00-33.257Z [@usbhubd:258 INFO] port 3 status V2(HubPortStatusV2(POWER))
+1970-01-01T00-00-33.275Z [@usbhubd:258 INFO] port 4 status V2(HubPortStatusV2(CONNECTION | POWER | LOW_SPEED | CONNECTION_CHANGED))
+1970-01-01T00-00-34.307Z [@usbhubd:258 INFO] port 1 status V2(HubPortStatusV2(CONNECTION | ENABLE | POWER | LOW_SPEED | CONNECTION_CHANGED | RESET_CHANGED))
+1970-01-01T00-00-34.360Z [@usbhubd:161 INFO] attach port 1.1 at xHCI speed 2
+1970-01-01T00-00-34.376Z [@xhcid::xhci:871 INFO] port 1.1: speed 2 from its hub (root port speed 3)
+1970-01-01T00-00-34.397Z [@xhcid::xhci:1509 INFO] port 1.1: speed ID 2 not among the port's own IDs [3], default ID used: true
+1970-01-01T00-00-34.418Z [@xhcid::xhci:1176 INFO] port 1.1 parent_hub_slot_id 1 parent_port_num 1
+1970-01-01T00-00-34.507Z [@xhcid::xhci:1394 INFO] Loading subdriver "USB HID" for port 1.1 iface 0 alternate 0 class 3.1 proto 2
+1970-01-01T00-00-34.542Z [@usbhidd:229 INFO] USB HID driver spawned with scheme `usb.pci-0000-01-00.0_xhci`, port 1.1, interface 0
+1970-01-01T00-00-34.564Z [@usbhidd:241 INFO] USB HID driver: "USB Optical Mouse" serial ""
+1970-01-01T00-00-34.581Z [@usbhidd:264 WARN] using endpoint 0x81 Interrupt In
+1970-01-01T00-00-34.647Z [@usbhubd:339 INFO] reset port 4
+1970-01-01T00-00-35.702Z [@usbhubd:258 INFO] port 4 status V2(HubPortStatusV2(CONNECTION | ENABLE | POWER | LOW_SPEED | CONNECTION_CHANGED | RESET_CHANGED))
+1970-01-01T00-00-35.755Z [@usbhubd:161 INFO] attach port 1.4 at xHCI speed 2
+1970-01-01T00-00-35.772Z [@xhcid::xhci:871 INFO] port 1.4: speed 2 from its hub (root port speed 3)
+1970-01-01T00-00-35.795Z [@xhcid::xhci:1509 INFO] port 1.4: speed ID 2 not among the port's own IDs [3], default ID used: true
+1970-01-01T00-00-35.816Z [@xhcid::xhci:1176 INFO] port 1.4 parent_hub_slot_id 1 parent_port_num 4
+1970-01-01T00-00-35.954Z [@xhcid::xhci:1394 INFO] Loading subdriver "USB HID" for port 1.4 iface 0 alternate 0 class 3.1 proto 1
+1970-01-01T00-00-35.986Z [@xhcid::xhci:1394 INFO] Loading subdriver "USB HID" for port 1.4 iface 1 alternate 0 class 3.0 proto 0
+1970-01-01T00-00-36.019Z [@usbhidd:229 INFO] USB HID driver spawned with scheme `usb.pci-0000-01-00.0_xhci`, port 1.4, interface 0
+1970-01-01T00-00-36.040Z [@usbhidd:241 INFO] USB HID driver: "Raspberry Pi Internal Keyboard" serial ""
+1970-01-01T00-00-36.059Z [@usbhidd:264 WARN] using endpoint 0x81 Interrupt In
+1970-01-01T00-00-36.078Z [@usbhidd:229 INFO] USB HID driver spawned with scheme `usb.pci-0000-01-00.0_xhci`, port 1.4, interface 1
+1970-01-01T00-00-36.145Z [@xhcid::xhci::scheme:3134 ERROR] CONTROL_TRANSFER transfer Trb { data: 0000000000000000, status: 00000000, control: 00011020 } failed with event Trb { data: 0000000007C34060, status: 06000000, control: 03018001 }
+1970-01-01T00-00-36.176Z [@xhcid::xhci::scheme:1348 WARN] port 1.4: SET_INTERFACE 0 refused (I/O error); it has one alternate setting, going on
+1970-01-01T00-00-36.198Z [@usbhidd:241 INFO] USB HID driver: "Raspberry Pi Internal Keyboard" serial ""
+1970-01-01T00-00-36.217Z [@usbhidd:264 WARN] using endpoint 0x82 Interrupt In
+1970-01-01T00-00-36.263Z [@xhcid::xhci::scheme:3134 ERROR] CONTROL_TRANSFER transfer Trb { data: 0000000000000000, status: 00000000, control: 00011020 } failed with event Trb { data: 0000000007C340D0, status: 06000000, control: 03018001 }
+1970-01-01T00-00-36.293Z [@xhcid::xhci::scheme:1348 WARN] port 1.4: SET_INTERFACE 1 refused (I/O error); it has one alternate setting, going on
+⏎                                                                                redox login: redox login: 1970-01-01T00-00-41.382Z [@xhcid::xhci::scheme:702 WARN] port 1.4: CUSTOM_DEVICE_REQ timed out after 5 s, stopping endpoint 0
+1970-01-01T00-00-41.413Z [@xhcid::xhci::scheme:3088 ERROR] STOP_ENDPOINT command (TRB Trb { data: 0000000000000000, status: 00000000, control: 03013C01 }) failed with event trb Trb { data: 0000000003327110, status: 13000000, control: 03008401 }
+1970-01-01T00-00-41.445Z [@xhcid::xhci::scheme:714 WARN] port 1.4: endpoint 0 not stopped (I/O error), resetting it
+⏎                                                                                ]0;root: /home/rootroot:~# ]0;root: /home/rootroot:~# 1970-01-01T00-00-46.540Z [@xhcid::xhci::scheme:702 WARN] port 1: CUSTOM_DEVICE_REQ timed out after 5 s, stopping endpoint 0
+1970-01-01T00-00-46.563Z [@xhcid::xhci::irq_reactor:628 INFO] usb-trace: events [s1e1c1:30 s1e1c27:1 s2e1c1:9 s3e1c1:9 s3e1c6:2] registered {"1 epEndpNum(0)": 30, "1.1 epEndpNum(0)": 9, "1.1 epEndpNum(1)": 1, "1.4 epEndpNum(0)": 12} matched {"1 epEndpNum(0)": 29, "1.1 epEndpNum(0)": 9, "1.4 epEndpNum(0)": 12} dead {} unmatched 1 pending {"1 epEndpNum(0)": 1, "1.1 epEndpNum(1)": 1} early 1
+1970-01-01T00-00-46.608Z [@xhcid::xhci::irq_reactor:646 INFO] usb-trace: resources commands 21 cmd_ring 21/128 cycle 1 workers 1 handles 14 ports 3
+1970-01-01T00-00-47.634Z [@xhcid::xhci::scheme:725 WARN] port 1: no event for the stopped CUSTOM_DEVICE_REQ
+1970-01-01T00-00-47.661Z [@usbhubd:251 WARN] port 1: status not read: IoError(Os { code: 110, kind: TimedOut, message: "Connection timed out" }), trying again
+1970-01-01T00-00-47.691Z [@xhcid::xhci::irq_reactor:450 INFO] xhcid: transfer event before its waiter, matched late (#1)
+1970-01-01T00-00-47.711Z [@xhcid::xhci::scheme:3134 ERROR] CONTROL_TRANSFER transfer Trb { data: 00040002000000A3, status: 00000008, control: 00030840 } failed with event Trb { data: 000000000476E080, status: 1B000000, control: 01018001 }
+1970-01-01T00-00-47.742Z [@usbhubd:251 WARN] port 2: status not read: IoError(Os { code: 5, kind: Uncategorized, message: "I/O error" }), trying again
+1970-01-01T00-00-47.791Z [@usbhidd:137 WARN] unknown usage_page 0x7 usage 0x0
+1970-01-01T00-00-53.810Z [@xhcid::xhci::scheme:702 WARN] port 1: CUSTOM_DEVICE_REQ timed out after 5 s, stopping endpoint 0
+1970-01-01T00-00-54.870Z [@xhcid::xhci::scheme:725 WARN] port 1: no event for the stopped CUSTOM_DEVICE_REQ
+1970-01-01T00-00-54.898Z [@usbhubd:251 WARN] port 2: status not read: IoError(Os { code: 110, kind: TimedOut, message: "Connection timed out" }), trying again
+1970-01-01T00-00-54.930Z [@xhcid::xhci::irq_reactor:450 INFO] xhcid: transfer event before its waiter, matched late (#2)
+1970-01-01T00-00-54.950Z [@xhcid::xhci::scheme:3134 ERROR] CONTROL_TRANSFER transfer Trb { data: 00040003000000A3, status: 00000008, control: 00030841 } failed with event Trb { data: 000000000476E080, status: 1B000000, control: 01018001 }
+1970-01-01T00-00-54.981Z [@usbhubd:251 WARN] port 3: status not read: IoError(Os { code: 5, kind: Uncategorized, message: "I/O error" }), trying again
+1970-01-01T00-01-01.080Z [@xhcid::xhci::scheme:702 WARN] port 1: CUSTOM_DEVICE_REQ timed out after 5 s, stopping endpoint 0
+1970-01-01T00-01-01.110Z [@xhcid::xhci::irq_reactor:628 INFO] usb-trace: events [s1e1c1:10 s1e1c27:2 s3e3c1:1] registered {"1 epEndpNum(0)": 10, "1.4 epEndpNum(1)": 2} matched {"1 epEndpNum(0)": 10, "1.4 epEndpNum(1)": 1} dead {} unmatched 4 pending {"1 epEndpNum(0)": 1, "1.1 epEndpNum(1)": 1, "1.4 epEndpNum(1)": 1} early 1
+1970-01-01T00-01-01.151Z [@xhcid::xhci::irq_reactor:646 INFO] usb-trace: resources commands 25 cmd_ring 25/128 cycle 1 workers 2 handles 13 ports 3
+1970-01-01T00-01-02.255Z [@xhcid::xhci::scheme:725 WARN] port 1: no event for the stopped CUSTOM_DEVICE_REQ
+1970-01-01T00-01-02.282Z [@usbhubd:251 WARN] port 3: status not read: IoError(Os { code: 110, kind: TimedOut, message: "Connection timed out" }), trying again
+1970-01-01T00-01-02.314Z [@xhcid::xhci::irq_reactor:450 INFO] xhcid: transfer event before its waiter, matched late (#3)
+1970-01-01T00-01-02.334Z [@xhcid::xhci::scheme:3134 ERROR] CONTROL_TRANSFER transfer Trb { data: 00040004000000A3, status: 00000008, control: 00030840 } failed with event Trb { data: 000000000476E080, status: 1B000000, control: 01018001 }
+1970-01-01T00-01-02.365Z [@usbhubd:251 WARN] port 4: status not read: IoError(Os { code: 5, kind: Uncategorized, message: "I/O error" }), trying again
+1970-01-01T00-01-08.435Z [@xhcid::xhci::scheme:702 WARN] port 1: CUSTOM_DEVICE_REQ timed out after 5 s, stopping endpoint 0
+1970-01-01T00-01-09.495Z [@xhcid::xhci::scheme:725 WARN] port 1: no event for the stopped CUSTOM_DEVICE_REQ
+1970-01-01T00-01-09.525Z [@usbhubd:251 WARN] port 4: status not read: IoError(Os { code: 110, kind: TimedOut, message: "Connection timed out" }), trying again
+1970-01-01T00-01-10.565Z [@xhcid::xhci::irq_reactor:450 INFO] xhcid: transfer event before its waiter, matched late (#4)
+1970-01-01T00-01-10.586Z [@xhcid::xhci::scheme:3134 ERROR] CONTROL_TRANSFER transfer Trb { data: 00040001000000A3, status: 00000008, control: 00030841 } failed with event Trb { data: 000000000476E080, status: 1B000000, control: 01018001 }
+1970-01-01T00-01-10.619Z [@usbhubd:251 WARN] port 1: status not read: IoError(Os { code: 5, kind: Uncategorized, message: "I/O error" }), trying again
+1970-01-01T00-01-11.676Z [@xhcid::xhci::irq_reactor:628 INFO] usb-trace: events [s1e1c1:10 s1e1c27:1] registered {"1 epEndpNum(0)": 10} matched {"1 epEndpNum(0)": 10} dead {} unmatched 3 pending {"1 epEndpNum(0)": 1, "1.1 epEndpNum(1)": 1, "1.4 epEndpNum(1)": 1} early 1
+1970-01-01T00-01-11.712Z [@xhcid::xhci::irq_reactor:646 INFO] usb-trace: resources commands 28 cmd_ring 28/128 cycle 1 workers 2 handles 13 ports 3
+]0;root: /home/rootroot:~# e]0;root: /home/rootroot:~# ec]0;root: /home/rootroot:~# ech]0;root: /home/rootroot:~# echo]0;root: /home/rootroot:~# echo ]0;root: /home/rootroot:~# echo 2]0;root: /home/rootroot:~# echo 20]0;root: /home/rootroot:~# echo 200]0;root: /home/rootroot:~# echo 2000]0;root: /home/rootroot:~# echo 2000 ]0;root: /home/rootroot:~# echo 2000 >]0;root: /home/rootroot:~# echo 2000 > ]0;root: /home/rootroot:~# echo 2000 > /1970-01-01T00-01-16.731Z [@xhcid::xhci::scheme:702 WARN] port 1: CUSTOM_DEVICE_REQ timed out after 5 s, stopping endpoint 0
+]0;root: /home/rootroot:~# echo 2000 > /t]0;root: /home/rootroot:~# echo 2000 > /tm]0;root: /home/rootroot:~# echo 2000 > /tmp]0;root: /home/rootroot:~# echo 2000 > /tmp/]0;root: /home/rootroot:~# echo 2000 > /tmp/x]0;root: /home/rootroot:~# echo 2000 > /tmp/xh]0;root: /home/rootroot:~# echo 2000 > /tmp/xhc1970-01-01T00-01-17.855Z [@xhcid::xhci::scheme:725 WARN] port 1: no event for the stopped CUSTOM_DEVICE_REQ
+]0;root: /home/rootroot:~# echo 2000 > /tmp/xhci1970-01-01T00-01-17.886Z [@usbhubd:251 WARN] port 1: status not read: IoError(Os { code: 110, kind: TimedOut, message: "Connection timed out" }), trying again
+1970-01-01T00-01-17.926Z [@xhcid::xhci::irq_reactor:450 INFO] xhcid: transfer event before its waiter, matched late (#5)
+1970-01-01T00-01-17.947Z [@xhcid::xhci::scheme:3134 ERROR] CONTROL_TRANSFER transfer Trb { data: 00040002000000A3, status: 00000008, control: 00030840 } failed with event Trb { data: 000000000476E080, status: 1B000000, control: 01018001 }
+1970-01-01T00-01-17.981Z [@usbhubd:251 WARN] port 2: status not read: IoError(Os { code: 5, kind: Uncategorized, message: "I/O error" }), trying again
+]0;root: /home/rootroot:~# echo 2000 > /tmp/xhcid]0;root: /home/rootroot:~# echo 2000 > /tmp/xhcid-]0;root: /home/rootroot:~# echo 2000 > /tmp/xhcid-n]0;root: /home/rootroot:~# echo 2000 > /tmp/xhcid-no]0;root: /home/rootroot:~# echo 2000 > /tmp/xhcid-noo]0;root: /home/rootroot:~# echo 2000 > /tmp/xhcid-noop]0;root: /home/rootroot:~# echo 2000 > /tmp/xhcid-noop
+⏎                                                                                ]0;root: /home/rootroot:~# ]0;root: /home/rootroot:~# 1970-01-01T00-01-19.086Z [@xhcid::xhci:1614 INFO] usb-trace: sending 2000 no-op commands
+1970-01-01T00-01-19.904Z [@xhcid::xhci::irq_reactor:601 WARN] Lost event TRB type 33, completion code: 5: Trb { data: 0000000003327000, status: 05000000, control: 00008401 }
+1970-01-01T00-01-19.929Z [@xhcid::xhci::irq_reactor:601 WARN] Lost event TRB type 33, completion code: 5: Trb { data: 0000000003327010, status: 05000000, control: 00008401 }
+1970-01-01T00-01-19.953Z [@xhcid::xhci::irq_reactor:601 WARN] Lost event TRB type 33, completion code: 5: Trb { data: 0000000003327020, status: 05000000, control: 00008401 }
+1970-01-01T00-01-19.979Z [@xhcid::xhci::irq_reactor:601 WARN] Lost event TRB type 33, completion code: 5: Trb { data: 0000000003327030, status: 05000000, control: 00008401 }
+1970-01-01T00-01-20.004Z [@xhcid::xhci::irq_reactor:601 WARN] Lost event TRB type 33, completion code: 5: Trb { data: 0000000003327040, status: 05000000, control: 00008401 }
+1970-01-01T00-01-20.029Z [@xhcid::xhci::irq_reactor:601 WARN] Lost event TRB type 33, completion code: 5: Trb { data: 0000000003327050, status: 05000000, control: 00008401 }
+1970-01-01T00-01-20.054Z [@xhcid::xhci::irq_reactor:601 WARN] Lost event TRB type 33, completion code: 5: Trb { data: 0000000003327060, status: 05000000, control: 00008401 }
+1970-01-01T00-01-20.079Z [@xhcid::xhci::irq_reactor:601 WARN] Lost event TRB type 33, completion code: 5: Trb { data: 0000000003327070, status: 05000000, control: 00008401 }
+1970-01-01T00-01-20.104Z [@xhcid::xhci::irq_reactor:601 WARN] Lost event TRB type 33, completion code: 5: Trb { data: 0000000003327080, status: 05000000, control: 00008401 }
+1970-01-01T00-01-20.129Z [@xhcid::xhci::irq_reactor:601 WARN] Lost event TRB type 33, completion code: 5: Trb { data: 0000000003327090, status: 05000000, control: 00008401 }
+1970-01-01T00-01-20.155Z [@xhcid::xhci::irq_reactor:601 WARN] Lost event TRB type 33, completion code: 5: Trb { data: 00000000033270A0, status: 05000000, control: 00008401 }
+1970-01-01T00-01-20.179Z [@xhcid::xhci::irq_reactor:601 WARN] Lost event TRB type 33, completion code: 5: Trb { data: 00000000033270B0, status: 05000000, control: 00008401 }
+1970-01-01T00-01-20.205Z [@xhcid::xhci::irq_reactor:601 WARN] Lost event TRB type 33, completion code: 5: Trb { data: 00000000033270C0, status: 05000000, control: 00008401 }
+1970-01-01T00-01-20.230Z [@xhcid::xhci::irq_reactor:601 WARN] Lost event TRB type 33, completion code: 5: Trb { data: 00000000033270D0, status: 05000000, control: 00008401 }
+1970-01-01T00-01-20.255Z [@xhcid::xhci::irq_reactor:601 WARN] Lost event TRB type 33, completion code: 5: Trb { data: 00000000033270E0, status: 05000000, control: 00008401 }
+1970-01-01T00-01-20.280Z [@xhcid::xhci::irq_reactor:601 WARN] Lost event TRB type 33, completion code: 5: Trb { data: 00000000033270F0, status: 05000000, control: 00008401 }
+1970-01-01T00-01-20.305Z [@xhcid::xhci::irq_reactor:601 WARN] Lost event TRB type 33, completion code: 5: Trb { data: 0000000003327100, status: 05000000, control: 00008401 }
+1970-01-01T00-01-20.330Z [@xhcid::xhci::irq_reactor:601 WARN] Lost event TRB type 33, completion code: 5: Trb { data: 0000000003327110, status: 05000000, control: 00008401 }
+1970-01-01T00-01-20.355Z [@xhcid::xhci::irq_reactor:601 WARN] Lost event TRB type 33, completion code: 5: Trb { data: 0000000003327120, status: 05000000, control: 00008401 }
+1970-01-01T00-01-20.380Z [@xhcid::xhci::irq_reactor:601 WARN] Lost event TRB type 33, completion code: 5: Trb { data: 0000000003327130, status: 05000000, control: 00008401 }
+1970-01-01T00-01-20.405Z [@xhcid::xhci::irq_reactor:601 WARN] Lost event TRB type 33, completion code: 5: Trb { data: 0000000003327140, status: 05000000, control: 00008401 }
+1970-01-01T00-01-20.431Z [@xhcid::xhci::irq_reactor:601 WARN] Lost event TRB type 33, completion code: 5: Trb { data: 0000000003327150, status: 05000000, control: 00008401 }
+1970-01-01T00-01-20.456Z [@xhcid::xhci::irq_reactor:601 WARN] Lost event TRB type 33, completion code: 5: Trb { data: 0000000003327160, status: 05000000, control: 00008401 }
+1970-01-01T00-01-20.480Z [@xhcid::xhci::irq_reactor:601 WARN] Lost event TRB type 33, completion code: 5: Trb { data: 0000000003327170, status: 05000000, control: 00008401 }
+1970-01-01T00-01-20.506Z [@xhcid::xhci::irq_reactor:601 WARN] Lost event TRB type 33, completion code: 5: Trb { data: 0000000003327180, status: 05000000, control: 00008401 }
+1970-01-01T00-01-20.531Z [@xhcid::xhci::irq_reactor:601 WARN] Lost event TRB type 33, completion code: 5: Trb { data: 0000000003327190, status: 05000000, control: 00008401 }
+1970-01-01T00-01-20.556Z [@xhcid::xhci::irq_reactor:601 WARN] Lost event TRB type 33, completion code: 5: Trb { data: 00000000033271A0, status: 05000000, control: 00008401 }
+1970-01-01T00-01-20.581Z [@xhcid::xhci::irq_reactor:601 WARN] Lost event TRB type 33, completion code: 5: Trb { data: 00000000033271B0, status: 05000000, control: 00008401 }
+1970-01-01T00-01-20.606Z [@xhcid::xhci::irq_reactor:601 WARN] Lost event TRB type 33, completion code: 5: Trb { data: 00000000033271C0, status: 05000000, control: 00008401 }
+1970-01-01T00-01-20.631Z [@xhcid::xhci::irq_reactor:601 WARN] Lost event TRB type 33, completion code: 5: Trb { data: 00000000033271D0, status: 05000000, control: 00008401 }
+1970-01-01T00-01-20.656Z [@xhcid::xhci::irq_reactor:601 WARN] Lost event TRB type 33, completion code: 5: Trb { data: 00000000033271E0, status: 05000000, control: 00008401 }
+1970-01-01T00-01-20.681Z [@xhcid::xhci::irq_reactor:601 WARN] Lost event TRB type 33, completion code: 5: Trb { data: 00000000033271F0, status: 05000000, control: 00008401 }
+1970-01-01T00-01-20.706Z [@xhcid::xhci::irq_reactor:601 WARN] Lost event TRB type 33, completion code: 5: Trb { data: 0000000003327200, status: 05000000, control: 00008401 }
+1970-01-01T00-01-20.731Z [@xhcid::xhci::irq_reactor:601 WARN] Lost event TRB type 33, completion code: 5: Trb { data: 0000000003327210, status: 05000000, control: 00008401 }
+1970-01-01T00-01-20.756Z [@xhcid::xhci::irq_reactor:601 WARN] Lost event TRB type 33, completion code: 5: Trb { data: 0000000003327220, status: 05000000, control: 00008401 }
+1970-01-01T00-01-20.781Z [@xhcid::xhci::irq_reactor:601 WARN] Lost event TRB type 33, completion code: 5: Trb { data: 0000000003327230, status: 05000000, control: 00008401 }
+1970-01-01T00-01-20.806Z [@xhcid::xhci::irq_reactor:601 WARN] Lost event TRB type 33, completion code: 5: Trb { data: 0000000003327240, status: 05000000, control: 00008401 }
+1970-01-01T00-01-20.831Z [@xhcid::xhci::irq_reactor:601 WARN] Lost event TRB type 33, completion code: 5: Trb { data: 0000000003327250, status: 05000000, control: 00008401 }
+1970-01-01T00-01-20.856Z [@xhcid::xhci::irq_reactor:601 WARN] Lost event TRB type 33, completion code: 5: Trb { data: 0000000003327260, status: 05000000, control: 00008401 }
+1970-01-01T00-01-20.881Z [@xhcid::xhci::irq_reactor:601 WARN] Lost event TRB type 33, completion code: 5: Trb { data: 0000000003327270, status: 05000000, control: 00008401 }
+1970-01-01T00-01-20.906Z [@xhcid::xhci::irq_reactor:601 WARN] Lost event TRB type 33, completion code: 5: Trb { data: 0000000003327280, status: 05000000, control: 00008401 }
+1970-01-01T00-01-20.931Z [@xhcid::xhci::irq_reactor:601 WARN] Lost event TRB type 33, completion code: 5: Trb { data: 0000000003327290, status: 05000000, control: 00008401 }
+1970-01-01T00-01-20.956Z [@xhcid::xhci::irq_reactor:601 WARN] Lost event TRB type 33, completion code: 5: Trb { data: 00000000033272A0, status: 05000000, control: 00008400 }
+1970-01-01T00-01-20.981Z [@xhcid::xhci::irq_reactor:601 WARN] Lost event TRB type 33, completion code: 5: Trb { data: 00000000033272B0, status: 05000000, control: 00008400 }
+1970-01-01T00-01-21.006Z [@xhcid::xhci::irq_reactor:601 WARN] Lost event TRB type 33, completion code: 5: Trb { data: 00000000033272C0, status: 05000000, control: 00008400 }
+1970-01-01T00-01-21.031Z [@xhcid::xhci::irq_reactor:601 WARN] Lost event TRB type 33, completion code: 5: Trb { data: 00000000033272D0, status: 05000000, control: 00008400 }
+1970-01-01T00-01-21.056Z [@xhcid::xhci::irq_reactor:601 WARN] Lost event TRB type 33, completion code: 5: Trb { data: 00000000033272E0, status: 05000000, control: 00008400 }
+1970-01-01T00-01-21.081Z [@xhcid::xhci::irq_reactor:601 WARN] Lost event TRB type 33, completion code: 5: Trb { data: 00000000033272F0, status: 05000000, control: 00008400 }
+1970-01-01T00-01-21.106Z [@xhcid::xhci::irq_reactor:601 WARN] Lost event TRB type 33, completion code: 5: Trb { data: 0000000003327300, status: 05000000, control: 00008400 }
+1970-01-01T00-01-21.131Z [@xhcid::xhci::irq_reactor:601 WARN] Lost event TRB type 33, completion code: 5: Trb { data: 0000000003327310, status: 05000000, control: 00008400 }
+1970-01-01T00-01-21.156Z [@xhcid::xhci::irq_reactor:601 WARN] Lost event TRB type 33, completion code: 5: Trb { data: 0000000003327320, status: 05000000, control: 00008400 }
+1970-01-01T00-01-21.181Z [@xhcid::xhci::irq_reactor:601 WARN] Lost event TRB type 33, completion code: 5: Trb { data: 0000000003327330, status: 05000000, control: 00008400 }
+1970-01-01T00-01-21.206Z [@xhcid::xhci::irq_reactor:601 WARN] Lost event TRB type 33, completion code: 5: Trb { data: 0000000003327340, status: 05000000, control: 00008400 }
+1970-01-01T00-01-21.230Z [@xhcid::xhci::irq_reactor:601 WARN] Lost event TRB type 33, completion code: 5: Trb { data: 0000000003327350, status: 05000000, control: 00008400 }
+1970-01-01T00-01-21.256Z [@xhcid::xhci::irq_reactor:601 WARN] Lost event TRB type 33, completion code: 5: Trb { data: 0000000003327360, status: 05000000, control: 00008400 }
+1970-01-01T00-01-21.280Z [@xhcid::xhci::irq_reactor:601 WARN] Lost event TRB type 33, completion code: 5: Trb { data: 0000000003327370, status: 05000000, control: 00008400 }
+1970-01-01T00-01-21.306Z [@xhcid::xhci::irq_reactor:601 WARN] Lost event TRB type 33, completion code: 5: Trb { data: 0000000003327380, status: 05000000, control: 00008400 }
+1970-01-01T00-01-21.331Z [@xhcid::xhci::irq_reactor:601 WARN] Lost event TRB type 33, completion code: 5: Trb { data: 0000000003327390, status: 05000000, control: 00008400 }
+1970-01-01T00-01-21.356Z [@xhcid::xhci::irq_reactor:601 WARN] Lost event TRB type 33, completion code: 5: Trb { data: 00000000033273A0, status: 05000000, control: 00008400 }
+1970-01-01T00-01-21.381Z [@xhcid::xhci::irq_reactor:601 WARN] Lost event TRB type 33, completion code: 5: Trb { data: 00000000033273B0, status: 05000000, control: 00008400 }
+1970-01-01T00-01-21.406Z [@xhcid::xhci::irq_reactor:601 WARN] Lost event TRB type 33, completion code: 5: Trb { data: 00000000033273C0, status: 05000000, control: 00008400 }
+1970-01-01T00-01-21.430Z [@xhcid::xhci::irq_reactor:601 WARN] Lost event TRB type 33, completion code: 5: Trb { data: 00000000033273D0, status: 05000000, control: 00008400 }
+1970-01-01T00-01-21.456Z [@xhcid::xhci::irq_reactor:601 WARN] Lost event TRB type 33, completion code: 5: Trb { data: 00000000033273E0, status: 05000000, control: 00008400 }
+1970-01-01T00-01-21.481Z [@xhcid::xhci::irq_reactor:601 WARN] Lost event TRB type 33, completion code: 5: Trb { data: 00000000033273F0, status: 05000000, control: 00008400 }
+1970-01-01T00-01-21.506Z [@xhcid::xhci::irq_reactor:601 WARN] Lost event TRB type 33, completion code: 5: Trb { data: 0000000003327400, status: 05000000, control: 00008400 }
+1970-01-01T00-01-21.531Z [@xhcid::xhci::irq_reactor:601 WARN] Lost event TRB type 33, completion code: 5: Trb { data: 0000000003327410, status: 05000000, control: 00008400 }
+1970-01-01T00-01-21.556Z [@xhcid::xhci::irq_reactor:601 WARN] Lost event TRB type 33, completion code: 5: Trb { data: 0000000003327420, status: 05000000, control: 00008400 }
+1970-01-01T00-01-21.581Z [@xhcid::xhci::irq_reactor:601 WARN] Lost event TRB type 33, completion code: 5: Trb { data: 0000000003327430, status: 05000000, control: 00008400 }
+1970-01-01T00-01-21.605Z [@xhcid::xhci::irq_reactor:601 WARN] Lost event TRB type 33, completion code: 5: Trb { data: 0000000003327440, status: 05000000, control: 00008400 }
+1970-01-01T00-01-21.631Z [@xhcid::xhci::irq_reactor:601 WARN] Lost event TRB type 33, completion code: 5: Trb { data: 0000000003327450, status: 05000000, control: 00008400 }
+1970-01-01T00-01-21.655Z [@xhcid::xhci::irq_reactor:601 WARN] Lost event TRB type 33, completion code: 5: Trb { data: 0000000003327460, status: 05000000, control: 00008400 }
+1970-01-01T00-01-21.680Z [@xhcid::xhci::irq_reactor:601 WARN] Lost event TRB type 33, completion code: 5: Trb { data: 0000000003327470, status: 05000000, control: 00008400 }
+1970-01-01T00-01-21.705Z [@xhcid::xhci::irq_reactor:601 WARN] Lost event TRB type 33, completion code: 5: Trb { data: 0000000003327480, status: 05000000, control: 00008400 }
+1970-01-01T00-01-21.730Z [@xhcid::xhci::irq_reactor:601 WARN] Lost event TRB type 33, completion code: 5: Trb { data: 0000000003327490, status: 05000000, control: 00008400 }
+1970-01-01T00-01-21.755Z [@xhcid::xhci::irq_reactor:628 INFO] usb-trace: events [s1e1c1:5 s1e1c27:1] registered {"1 epEndpNum(0)": 5} matched {"1 epEndpNum(0)": 5} dead {} unmatched 2 pending {"1 epEndpNum(0)": 1, "1.1 epEndpNum(1)": 1, "1.4 epEndpNum(1)": 1} early 1
+1970-01-01T00-01-21.789Z [@xhcid::xhci::irq_reactor:646 INFO] usb-trace: resources commands 128 cmd_ring 1/128 cycle 0 workers 2 handles 13 ports 3
+1970-01-01T00-01-21.811Z [@xhcid::xhci::irq_reactor:601 WARN] Lost event TRB type 33, completion code: 5: Trb { data: 00000000033274A0, status: 05000000, control: 00008400 }
+1970-01-01T00-01-21.836Z [@xhcid::xhci::irq_reactor:601 WARN] Lost event TRB type 33, completion code: 5: Trb { data: 00000000033274B0, status: 05000000, control: 00008400 }
+1970-01-01T00-01-21.861Z [@xhcid::xhci::irq_reactor:601 WARN] Lost event TRB type 33, completion code: 5: Trb { data: 00000000033274C0, status: 05000000, control: 00008400 }
+1970-01-01T00-01-21.886Z [@xhcid::xhci::irq_reactor:601 WARN] Lost event TRB type 33, completion code: 5: Trb { data: 00000000033274D0, status: 05000000, control: 00008400 }
+1970-01-01T00-01-21.911Z [@xhcid::xhci::irq_reactor:601 WARN] Lost event TRB type 33, completion code: 5: Trb { data: 00000000033274E0, status: 05000000, control: 00008400 }
+1970-01-01T00-01-21.936Z [@xhcid::xhci::irq_reactor:601 WARN] Lost event TRB type 33, completion code: 5: Trb { data: 00000000033274F0, status: 05000000, control: 00008400 }
+1970-01-01T00-01-21.961Z [@xhcid::xhci::irq_reactor:601 WARN] Lost event TRB type 33, completion code: 5: Trb { data: 0000000003327500, status: 05000000, control: 00008400 }
+1970-01-01T00-01-21.986Z [@xhcid::xhci::irq_reactor:601 WARN] Lost event TRB type 33, completion code: 5: Trb { data: 0000000003327510, status: 05000000, control: 00008400 }
+1970-01-01T00-01-22.011Z [@xhcid::xhci::irq_reactor:601 WARN] Lost event TRB type 33, completion code: 5: Trb { data: 0000000003327520, status: 05000000, control: 00008400 }
+1970-01-01T00-01-22.036Z [@xhcid::xhci::irq_reactor:601 WARN] Lost event TRB type 33, completion code: 5: Trb { data: 0000000003327530, status: 05000000, control: 00008400 }
+1970-01-01T00-01-22.061Z [@xhcid::xhci::irq_reactor:601 WARN] Lost event TRB type 33, completion code: 5: Trb { data: 0000000003327540, status: 05000000, control: 00008400 }
+1970-01-01T00-01-22.086Z [@xhcid::xhci::irq_reactor:601 WARN] Lost event TRB type 33, completion code: 5: Trb { data: 0000000003327550, status: 05000000, control: 00008400 }
+1970-01-01T00-01-22.111Z [@xhcid::xhci::irq_reactor:601 WARN] Lost event TRB type 33, completion code: 5: Trb { data: 0000000003327560, status: 05000000, control: 00008400 }
+1970-01-01T00-01-22.136Z [@xhcid::xhci::irq_reactor:601 WARN] Lost event TRB type 33, completion code: 5: Trb { data: 0000000003327570, status: 05000000, control: 00008400 }
+1970-01-01T00-01-22.161Z [@xhcid::xhci::irq_reactor:601 WARN] Lost event TRB type 33, completion code: 5: Trb { data: 0000000003327580, status: 05000000, control: 00008400 }
+1970-01-01T00-01-22.186Z [@xhcid::xhci::irq_reactor:601 WARN] Lost event TRB type 33, completion code: 5: Trb { data: 0000000003327590, status: 05000000, control: 00008400 }
+1970-01-01T00-01-22.211Z [@xhcid::xhci::irq_reactor:601 WARN] Lost event TRB type 33, completion code: 5: Trb { data: 00000000033275A0, status: 05000000, control: 00008400 }
+1970-01-01T00-01-22.236Z [@xhcid::xhci::irq_reactor:601 WARN] Lost event TRB type 33, completion code: 5: Trb { data: 00000000033275B0, status: 05000000, control: 00008400 }
+1970-01-01T00-01-22.261Z [@xhcid::xhci::irq_reactor:601 WARN] Lost event TRB type 33, completion code: 5: Trb { data: 00000000033275C0, status: 05000000, control: 00008400 }
+1970-01-01T00-01-22.286Z [@xhcid::xhci::irq_reactor:601 WARN] Lost event TRB type 33, completion code: 5: Trb { data: 00000000033275D0, status: 05000000, control: 00008400 }
+1970-01-01T00-01-22.311Z [@xhcid::xhci::irq_reactor:601 WARN] Lost event TRB type 33, completion code: 5: Trb { data: 00000000033275E0, status: 05000000, control: 00008400 }
+1970-01-01T00-01-22.336Z [@xhcid::xhci::irq_reactor:601 WARN] Lost event TRB type 33, completion code: 5: Trb { data: 00000000033275F0, status: 05000000, control: 00008400 }
+1970-01-01T00-01-22.361Z [@xhcid::xhci::irq_reactor:601 WARN] Lost event TRB type 33, completion code: 5: Trb { data: 0000000003327600, status: 05000000, control: 00008400 }
+1970-01-01T00-01-22.386Z [@xhcid::xhci::irq_reactor:601 WARN] Lost event TRB type 33, completion code: 5: Trb { data: 0000000003327610, status: 05000000, control: 00008400 }
+1970-01-01T00-01-22.411Z [@xhcid::xhci::irq_reactor:601 WARN] Lost event TRB type 33, completion code: 5: Trb { data: 0000000003327620, status: 05000000, control: 00008400 }
+1970-01-01T00-01-22.436Z [@xhcid::xhci::irq_reactor:601 WARN] Lost event TRB type 33, completion code: 5: Trb { data: 0000000003327630, status: 05000000, control: 00008400 }
+1970-01-01T00-01-22.461Z [@xhcid::xhci::irq_reactor:601 WARN] Lost event TRB type 33, completion code: 5: Trb { data: 0000000003327640, status: 05000000, control: 00008400 }
+1970-01-01T00-01-22.486Z [@xhcid::xhci::irq_reactor:601 WARN] Lost event TRB type 33, completion code: 5: Trb { data: 0000000003327650, status: 05000000, control: 00008400 }
+1970-01-01T00-01-22.511Z [@xhcid::xhci::irq_reactor:601 WARN] Lost event TRB type 33, completion code: 5: Trb { data: 0000000003327660, status: 05000000, control: 00008400 }
+1970-01-01T00-01-22.536Z [@xhcid::xhci::irq_reactor:601 WARN] Lost event TRB type 33, completion code: 5: Trb { data: 0000000003327670, status: 05000000, control: 00008400 }
+1970-01-01T00-01-22.561Z [@xhcid::xhci::irq_reactor:601 WARN] Lost event TRB type 33, completion code: 5: Trb { data: 0000000003327680, status: 05000000, control: 00008400 }
+1970-01-01T00-01-22.586Z [@xhcid::xhci::irq_reactor:601 WARN] Lost event TRB type 33, completion code: 5: Trb { data: 0000000003327690, status: 05000000, control: 00008400 }
+1970-01-01T00-01-22.611Z [@xhcid::xhci::irq_reactor:601 WARN] Lost event TRB type 33, completion code: 5: Trb { data: 00000000033276A0, status: 05000000, control: 00008400 }
+1970-01-01T00-01-22.636Z [@xhcid::xhci::irq_reactor:601 WARN] Lost event TRB type 33, completion code: 5: Trb { data: 00000000033276B0, status: 05000000, control: 00008400 }
+1970-01-01T00-01-22.661Z [@xhcid::xhci::irq_reactor:601 WARN] Lost event TRB type 33, completion code: 5: Trb { data: 00000000033276C0, status: 05000000, control: 00008400 }
+1970-01-01T00-01-22.686Z [@xhcid::xhci::irq_reactor:601 WARN] Lost event TRB type 33, completion code: 5: Trb { data: 00000000033276D0, status: 05000000, control: 00008400 }
+1970-01-01T00-01-22.711Z [@xhcid::xhci::irq_reactor:601 WARN] Lost event TRB type 33, completion code: 5: Trb { data: 00000000033276E0, status: 05000000, control: 00008400 }
+1970-01-01T00-01-22.736Z [@xhcid::xhci::irq_reactor:601 WARN] Lost event TRB type 33, completion code: 5: Trb { data: 00000000033276F0, status: 05000000, control: 00008400 }
+1970-01-01T00-01-22.761Z [@xhcid::xhci::irq_reactor:601 WARN] Lost event TRB type 33, completion code: 5: Trb { data: 0000000003327700, status: 05000000, control: 00008400 }
+1970-01-01T00-01-22.786Z [@xhcid::xhci::irq_reactor:601 WARN] Lost event TRB type 33, completion code: 5: Trb { data: 0000000003327710, status: 05000000, control: 00008400 }
+1970-01-01T00-01-22.811Z [@xhcid::xhci::irq_reactor:601 WARN] Lost event TRB type 33, completion code: 5: Trb { data: 0000000003327720, status: 05000000, control: 00008400 }
+1970-01-01T00-01-22.836Z [@xhcid::xhci::irq_reactor:601 WARN] Lost event TRB type 33, completion code: 5: Trb { data: 0000000003327730, status: 05000000, control: 00008400 }
+1970-01-01T00-01-22.861Z [@xhcid::xhci::irq_reactor:601 WARN] Lost event TRB type 33, completion code: 5: Trb { data: 0000000003327740, status: 05000000, control: 00008400 }
+1970-01-01T00-01-22.886Z [@xhcid::xhci::irq_reactor:601 WARN] Lost event TRB type 33, completion code: 5: Trb { data: 0000000003327750, status: 05000000, control: 00008400 }
+1970-01-01T00-01-22.911Z [@xhcid::xhci::irq_reactor:601 WARN] Lost event TRB type 33, completion code: 5: Trb { data: 0000000003327760, status: 05000000, control: 00008400 }
+1970-01-01T00-01-22.936Z [@xhcid::xhci::irq_reactor:601 WARN] Lost event TRB type 33, completion code: 5: Trb { data: 0000000003327770, status: 05000000, control: 00008400 }
+1970-01-01T00-01-22.961Z [@xhcid::xhci::irq_reactor:601 WARN] Lost event TRB type 33, completion code: 5: Trb { data: 0000000003327780, status: 05000000, control: 00008400 }
+1970-01-01T00-01-22.985Z [@xhcid::xhci::irq_reactor:601 WARN] Lost event TRB type 33, completion code: 5: Trb { data: 0000000003327790, status: 05000000, control: 00008400 }
+1970-01-01T00-01-23.010Z [@xhcid::xhci::irq_reactor:601 WARN] Lost event TRB type 33, completion code: 5: Trb { data: 00000000033277A0, status: 05000000, control: 00008400 }
+1970-01-01T00-01-23.035Z [@xhcid::xhci::irq_reactor:601 WARN] Lost event TRB type 33, completion code: 5: Trb { data: 00000000033277B0, status: 05000000, control: 00008400 }
+1970-01-01T00-01-23.060Z [@xhcid::xhci::irq_reactor:601 WARN] Lost event TRB type 33, completion code: 5: Trb { data: 00000000033277C0, status: 05000000, control: 00008400 }
+1970-01-01T00-01-23.085Z [@xhcid::xhci::irq_reactor:601 WARN] Lost event TRB type 33, completion code: 5: Trb { data: 00000000033277D0, status: 05000000, control: 00008400 }
+1970-01-01T00-01-23.110Z [@xhcid::xhci::irq_reactor:601 WARN] Lost event TRB type 33, completion code: 5: Trb { data: 00000000033277E0, status: 05000000, control: 00008400 }
+1970-01-01T00-01-24.114Z [@xhcid::xhci::scheme:702 WARN] port 1: CUSTOM_DEVICE_REQ timed out after 5 s, stopping endpoint 0
+]0;root: /home/rootroot:~# echo 2000 > /tmp/xhcid-noop]0;root: /home/rootroot:~# echo 2000 > /tmp/xhcid-noop]0;root: /home/rootroot:~# echo 2000 > /tmp/xhcid-noop]0;root: /home/rootroot:~# echo 2000 > /tmp/xhcid-noop]0;root: /home/rootroot:~# echo 2000 > /tmp/xhcid-noop]0;root: /home/rootroot:~# echo "]0;root: /home/rootroot:~# echo "1]0;root: /home/rootroot:~# echo "1.]0;root: /home/rootroot:~# echo "1.1]0;root: /home/rootroot:~# echo "1.1 ]0;root: /home/rootroot:~# echo "1.1 p]0;root: /home/rootroot:~# echo "1.1 po]0;root: /home/rootroot:~# echo "1.1 pow]0;root: /home/rootroot:~# echo "1.1 powe]0;root: /home/rootroot:~# echo "1.1 power]0;root: /home/rootroot:~# echo "1.1 power"]0;root: /home/rootroot:~# echo "1.1 power" ]0;root: /home/rootroot:~# echo "1.1 power" >]0;root: /home/rootroot:~# echo "1.1 power" > ]0;root: /home/rootroot:~# echo "1.1 power" > /]0;root: /home/rootroot:~# echo "1.1 power" > /t]0;root: /home/rootroot:~# echo "1.1 power" > /tm]0;root: /home/rootroot:~# echo "1.1 power" > /tmp]0;root: /home/rootroot:~# echo "1.1 power" > /tmp/]0;root: /home/rootroot:~# echo "1.1 power" > /tmp/u]0;root: /home/rootroot:~# echo "1.1 power" > /tmp/us]0;root: /home/rootroot:~# echo "1.1 power" > /tmp/usb]0;root: /home/rootroot:~# echo "1.1 power" > /tmp/usbh]0;root: /home/rootroot:~# echo "1.1 power" > /tmp/usbhu]0;root: /home/rootroot:~# echo "1.1 power" > /tmp/usbhub]0;root: /home/rootroot:~# echo "1.1 power" > /tmp/usbhubd]0;root: /home/rootroot:~# echo "1.1 power" > /tmp/usbhubd-]0;root: /home/rootroot:~# echo "1.1 power" > /tmp/usbhubd-c]0;root: /home/rootroot:~# echo "1.1 power" > /tmp/usbhubd-cy]0;root: /home/rootroot:~# echo "1.1 power" > /tmp/usbhubd-cyc]0;root: /home/rootroot:~# echo "1.1 power" > /tmp/usbhubd-cycl]0;root: /home/rootroot:~# echo "1.1 power" > /tmp/usbhubd-cycle]0;root: /home/rootroot:~# echo "1.1 power" > /tmp/usbhubd-cycle
+⏎                                                                                ]0;root: /home/rootroot:~# ]0;root: /home/rootroot:~# ]0;root: /home/rootroot:~# echo "1.1 power" > /tmp/usbhubd-cycle]0;root: /home/rootroot:~# echo "1.1 power" > /tmp/usbhubd-cycle]0;root: /home/rootroot:~# echo "1.1 power" > /tmp/usbhubd-cycle]0;root: /home/rootroot:~# echo "1.1 power" > /tmp/usbhubd-cycle]0;root: /home/rootroot:~# echo "1.1 power" > /tmp/usbhubd-cycle]0;root: /home/rootroot:~# echo "1.1 power" > /tmp/usbhubd-cycle]0;root: /home/rootroot:~# echo "1.1 power" > /tmp/usbhubd-cycle]0;root: /home/rootroot:~# echo "1.1 power" > /tmp/usbhubd-cycle]0;root: /home/rootroot:~# echo "1.1 power" > /tmp/usbhubd-cycle]0;root: /home/rootroot:~# echo "1.1 power" > /tmp/usbhubd-cycle]0;root: /home/rootroot:~# echo "1.1 power" > /tmp/usbhubd-cycle]0;root: /home/rootroot:~# echo "1.1 power" > /tmp/usbhubd-cycle]0;root: /home/rootroot:~# echo "1.1 power" > /tmp/usbhubd-cycle]0;root: /home/rootroot:~# echo "1.1 power" > /tmp/usbhubd-cycle]0;root: /home/rootroot:~# echo "1.1 power" > /tmp/usbhubd-cycle]0;root: /home/rootroot:~# echo "1.1 power" > /tmp/usbhubd-cycle]0;root: /home/rootroot:~# echo "1.1 power" > /tmp/usbhubd-cycle]0;root: /home/rootroot:~# echo "1.1 power" > /tmp/usbhubd-cycle]0;root: /home/rootroot:~# echo "1.1 power" > /tmp/usbhubd-cycle]0;root: /home/rootroot:~# echo "1.1 power" > /tmp/usbhubd-cycle]0;root: /home/rootroot:~# echo "1.1 power" > /tmp/usbhubd-cycle]0;root: /home/rootroot:~# echo "1.1 power" > /tmp/usbhubd-cycle]0;root: /home/rootroot:~# echo "1.1 power" > /tmp/usbhubd-cycle]0;root: /home/rootroot:~# echo "1.1 power" > /tmp/usbhubd-cycle]0;root: /home/rootroot:~# echo "1.1 power" > /tmp/usbhubd-cycle]0;root: /home/rootroot:~# echo "1.1 power" > /tmp/usbhubd-cycle]0;root: /home/rootroot:~# echo "1.1 power" > /tmp/usbhubd-cycle]0;root: /home/rootroot:~# echo "1.1 power" > /tmp/usbhubd-cycle]0;root: /home/rootroot:~# echo "1.1 power" > /tmp/usbhubd-cycle]0;root: /home/rootroot:~# echo "1.1 power" > /tmp/usbhubd-cycle]0;root: /home/rootroot:~# echo "1.1 power" > /tmp/usbhubd-cycle]0;root: /home/rootroot:~# echo "1.1 power" > /tmp/usbhubd-cycle]0;root: /home/rootroot:~# echo "1.1 power" > /tmp/usbhubd-cycle]0;root: /home/rootroot:~# echo "1.1 power" > /tmp/usbhubd-cycle]0;root: /home/rootroot:~# echo "1.1 power" > /tmp/usbhubd-cycle]0;root: /home/rootroot:~# echo "1.1 power" > /tmp/usbhubd-cycle]0;root: /home/rootroot:~# echo "1.1 power" > /tmp/usbhubd-cycle]0;root: /home/rootroot:~# echo "1.1 power" > /tmp/usbhubd-cycle
+⏎                                                                                ]0;root: /home/rootroot:~# ]0;root: /home/rootroot:~# ]0;root: /home/rootroot:~# echo "1.1 power" > /tmp/usbhubd-cycle]0;root: /home/rootroot:~# echo "1.1 power" > /tmp/usbhubd-cycle]0;root: /home/rootroot:~# echo "1.1 power" > /tmp/usbhubd-cycle]0;root: /home/rootroot:~# echo "1.1 power" > /tmp/usbhubd-cycle]0;root: /home/rootroot:~# echo "1.1 power" > /tmp/usbhubd-cycle]0;root: /home/rootroot:~# echo "1.1 power" > /tmp/usbhubd-cycle]0;root: /home/rootroot:~# echo "1.1 power" > /tmp/usbhubd-cycle]0;root: /home/rootroot:~# echo "1.1 power" > /tmp/usbhubd-cycle]0;root: /home/rootroot:~# echo "1.1 power" > /tmp/usbhubd-cycle]0;root: /home/rootroot:~# echo "1.1 power" > /tmp/usbhubd-cycle]0;root: /home/rootroot:~# echo "1.1 power" > /tmp/usbhubd-cycle]0;root: /home/rootroot:~# echo "1.1 power" > /tmp/usbhubd-cycle]0;root: /home/rootroot:~# echo "1.1 power" > /tmp/usbhubd-cycle]0;root: /home/rootroot:~# echo "1.1 power" > /tmp/usbhubd-cycle]0;root: /home/rootroot:~# echo "1.1 power" > /tmp/usbhubd-cycle]0;root: /home/rootroot:~# echo "1.1 power" > /tmp/usbhubd-cycle]0;root: /home/rootroot:~# echo "1.1 power" > /tmp/usbhubd-cycle]0;root: /home/rootroot:~# echo "1.1 power" > /tmp/usbhubd-cycle]0;root: /home/rootroot:~# echo "1.1 power" > /tmp/usbhubd-cycle]0;root: /home/rootroot:~# echo "1.1 power" > /tmp/usbhubd-cycle]0;root: /home/rootroot:~# echo "1.1 power" > /tmp/usbhubd-cycle]0;root: /home/rootroot:~# echo "1.1 power" > /tmp/usbhubd-cycle]0;root: /home/rootroot:~# echo "1.1 power" > /tmp/usbhubd-cycle]0;root: /home/rootroot:~# echo "1.1 power" > /tmp/usbhubd-cycle]0;root: /home/rootroot:~# echo "1.1 power" > /tmp/usbhubd-cycle]0;root: /home/rootroot:~# echo "1.1 power" > /tmp/usbhubd-cycle]0;root: /home/rootroot:~# echo "1.1 power" > /tmp/usbhubd-cycle]0;root: /home/rootroot:~# echo "1.1 power" > /tmp/usbhubd-cycle]0;root: /home/rootroot:~# echo "1.1 power" > /tmp/usbhubd-cycle]0;root: /home/rootroot:~# echo "1.1 power" > /tmp/usbhubd-cycle]0;root: /home/rootroot:~# echo "1.1 power" > /tmp/usbhubd-cycle]0;root: /home/rootroot:~# echo "1.1 power" > /tmp/usbhubd-cycle]0;root: /home/rootroot:~# echo "1.1 power" > /tmp/usbhubd-cycle]0;root: /home/rootroot:~# echo "1.1 power" > /tmp/usbhubd-cycle]0;root: /home/rootroot:~# echo "1.1 power" > /tmp/usbhubd-cycle]0;root: /home/rootroot:~# echo "1.1 power" > /tmp/usbhubd-cycle]0;root: /home/rootroot:~# echo "1.1 power" > /tmp/usbhubd-cycle]0;root: /home/rootroot:~# echo "1.1 power" > /tmp/usbhubd-cycle

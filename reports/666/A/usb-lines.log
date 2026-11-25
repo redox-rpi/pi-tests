@@ -1,0 +1,316 @@
+1970-01-01T00-00-31.824Z [@pcid_spawner:93 INFO] pcid-spawner: spawn "/usr/lib/drivers/xhcid"
+xhcid: mapping BAR0 Memory64 { addr: 25769803776, size: 4096 }
+xhcid: reading the capability registers at 0x15000
+xhcid: capability registers read, 64-byte contexts: false
+1970-01-01T00-00-31.884Z [@xhcid:98 INFO] XHCI pci-0000-01-00.0 on: 0=0000000600000000 IRQ: (phandle 1, [0, 143, 4])
+1970-01-01T00-00-32.060Z [@xhcid::xhci:1387 INFO] Loading subdriver "USB HUB" for port 1 iface 0 alternate 0 class 9.0 proto 0
+1970-01-01T00-00-32.115Z [@xhcid::xhci::device_enumerator:115 INFO] Device on port 1 was attached
+1970-01-01T00-00-32.164Z [@usbhubd:101 INFO] usb-trace: hub characteristics 0x00e0 (power switching ganged)
+1970-01-01T00-00-32.225Z [@usbhubd:296 INFO] power on port 1
+1970-01-01T00-00-32.255Z [@usbhubd:296 INFO] power on port 2
+1970-01-01T00-00-32.314Z [@usbhubd:296 INFO] power on port 3
+1970-01-01T00-00-32.345Z [@usbhubd:296 INFO] power on port 4
+experiments: desktop netstack-watch orbital orbital-apps pi400 pi400-mem rpi-fb usb-trace
+⏎                                                                                redox login: redox login: 1970-01-01T00-00-33.382Z [@usbhubd:258 INFO] port 1 status V2(HubPortStatusV2(CONNECTION | POWER | LOW_SPEED | CONNECTION_CHANGED))
+1970-01-01T00-00-33.403Z [@usbhubd:339 INFO] reset port 1
+1970-01-01T00-00-33.437Z [@usbhubd:258 INFO] port 2 status V2(HubPortStatusV2(POWER))
+1970-01-01T00-00-33.464Z [@usbhubd:258 INFO] port 3 status V2(HubPortStatusV2(POWER))
+1970-01-01T00-00-33.490Z [@usbhubd:258 INFO] port 4 status V2(HubPortStatusV2(CONNECTION | POWER | LOW_SPEED | CONNECTION_CHANGED))
+1970-01-01T00-00-34.525Z [@usbhubd:258 INFO] port 1 status V2(HubPortStatusV2(CONNECTION | ENABLE | POWER | LOW_SPEED | CONNECTION_CHANGED | RESET_CHANGED))
+1970-01-01T00-00-34.578Z [@usbhubd:161 INFO] attach port 1.1 at xHCI speed 2
+1970-01-01T00-00-34.595Z [@xhcid::xhci:864 INFO] port 1.1: speed 2 from its hub (root port speed 3)
+1970-01-01T00-00-34.621Z [@xhcid::xhci:1502 INFO] port 1.1: speed ID 2 not among the port's own IDs [3], default ID used: true
+1970-01-01T00-00-34.642Z [@xhcid::xhci:1169 INFO] port 1.1 parent_hub_slot_id 1 parent_port_num 1
+1970-01-01T00-00-34.746Z [@xhcid::xhci:1387 INFO] Loading subdriver "USB HID" for port 1.1 iface 0 alternate 0 class 3.1 proto 2
+1970-01-01T00-00-34.786Z [@usbhidd:229 INFO] USB HID driver spawned with scheme `usb.pci-0000-01-00.0_xhci`, port 1.1, interface 0
+1970-01-01T00-00-34.807Z [@usbhidd:241 INFO] USB HID driver: "USB Optical Mouse" serial ""
+1970-01-01T00-00-34.825Z [@usbhidd:264 WARN] using endpoint 0x81 Interrupt In
+1970-01-01T00-00-34.876Z [@usbhubd:339 INFO] reset port 4
+1970-01-01T00-00-35.961Z [@usbhubd:258 INFO] port 4 status V2(HubPortStatusV2(CONNECTION | ENABLE | POWER | LOW_SPEED | CONNECTION_CHANGED | RESET_CHANGED))
+1970-01-01T00-00-36.014Z [@usbhubd:161 INFO] attach port 1.4 at xHCI speed 2
+1970-01-01T00-00-36.030Z [@xhcid::xhci:864 INFO] port 1.4: speed 2 from its hub (root port speed 3)
+1970-01-01T00-00-36.066Z [@xhcid::xhci:1502 INFO] port 1.4: speed ID 2 not among the port's own IDs [3], default ID used: true
+1970-01-01T00-00-36.087Z [@xhcid::xhci:1169 INFO] port 1.4 parent_hub_slot_id 1 parent_port_num 4
+1970-01-01T00-00-36.224Z [@xhcid::xhci:1387 INFO] Loading subdriver "USB HID" for port 1.4 iface 0 alternate 0 class 3.1 proto 1
+1970-01-01T00-00-36.263Z [@usbhidd:229 INFO] USB HID driver spawned with scheme `usb.pci-0000-01-00.0_xhci`, port 1.4, interface 0
+1970-01-01T00-00-36.283Z [@xhcid::xhci:1387 INFO] Loading subdriver "USB HID" for port 1.4 iface 1 alternate 0 class 3.0 proto 0
+1970-01-01T00-00-36.331Z [@usbhidd:229 INFO] USB HID driver spawned with scheme `usb.pci-0000-01-00.0_xhci`, port 1.4, interface 1
+1970-01-01T00-00-36.352Z [@usbhidd:241 INFO] USB HID driver: "Raspberry Pi Internal Keyboard" serial ""
+1970-01-01T00-00-36.370Z [@usbhidd:264 WARN] using endpoint 0x82 Interrupt In
+1970-01-01T00-00-36.389Z [@usbhidd:241 INFO] USB HID driver: "Raspberry Pi Internal Keyboard" serial ""
+1970-01-01T00-00-36.408Z [@usbhidd:264 WARN] using endpoint 0x81 Interrupt In
+1970-01-01T00-00-36.444Z [@xhcid::xhci::scheme:3104 ERROR] CONTROL_TRANSFER transfer Trb { data: 0000000000000000, status: 00000000, control: 00011020 } failed with event Trb { data: 0000000008C9C060, status: 06000000, control: 03018001 }
+1970-01-01T00-00-36.474Z [@xhcid::xhci::scheme:1348 WARN] port 1.4: SET_INTERFACE 1 refused (I/O error); it has one alternate setting, going on
+1970-01-01T00-00-36.521Z [@xhcid::xhci::scheme:3104 ERROR] CONTROL_TRANSFER transfer Trb { data: 0000000000000000, status: 00000000, control: 00011020 } failed with event Trb { data: 0000000008C9C080, status: 06000000, control: 03018001 }
+1970-01-01T00-00-36.552Z [@xhcid::xhci::scheme:1348 WARN] port 1.4: SET_INTERFACE 0 refused (I/O error); it has one alternate setting, going on
+1970-01-01T00-00-36.641Z [@usbhidd:137 WARN] unknown usage_page 0x7 usage 0x0
+password: 1970-01-01T00-00-42.591Z [@xhcid::xhci::irq_reactor:628 INFO] usb-trace: events [s1e1c1:50 s2e1c1:9 s3e1c1:10 s3e1c6:2 s3e3c1:1] registered {"1 epEndpNum(0)": 50, "1.1 epEndpNum(0)": 9, "1.1 epEndpNum(1)": 1, "1.4 epEndpNum(0)": 12, "1.4 epEndpNum(1)": 2, "1.4 epEndpNum(2)": 1} matched {"1 epEndpNum(0)": 50, "1.1 epEndpNum(0)": 9, "1.4 epEndpNum(0)": 12, "1.4 epEndpNum(1)": 1} dead {} unmatched 0 pending {"1.1 epEndpNum(1)": 1, "1.4 epEndpNum(1)": 1, "1.4 epEndpNum(2)": 1} early 0
+1970-01-01T00-00-42.644Z [@xhcid::xhci::irq_reactor:646 INFO] usb-trace: resources commands 19 cmd_ring 19/256 cycle 1 workers 3 handles 16 ports 3
+⏎                                                                                ]0;root: /home/rootroot:~# ]0;root: /home/rootroot:~# 1970-01-01T00-00-52.987Z [@xhcid::xhci::irq_reactor:628 INFO] usb-trace: events [s1e1c1:40] registered {"1 epEndpNum(0)": 40} matched {"1 epEndpNum(0)": 40} dead {} unmatched 0 pending {"1.1 epEndpNum(1)": 1, "1.4 epEndpNum(1)": 1, "1.4 epEndpNum(2)": 1} early 0
+1970-01-01T00-00-53.020Z [@xhcid::xhci::irq_reactor:646 INFO] usb-trace: resources commands 19 cmd_ring 19/256 cycle 1 workers 3 handles 16 ports 3
+1970-01-01T00-01-03.433Z [@xhcid::xhci::irq_reactor:628 INFO] usb-trace: events [s1e1c1:40] registered {"1 epEndpNum(0)": 40} matched {"1 epEndpNum(0)": 40} dead {} unmatched 0 pending {"1.1 epEndpNum(1)": 1, "1.4 epEndpNum(1)": 1, "1.4 epEndpNum(2)": 1} early 0
+1970-01-01T00-01-03.468Z [@xhcid::xhci::irq_reactor:646 INFO] usb-trace: resources commands 19 cmd_ring 19/256 cycle 1 workers 3 handles 16 ports 3
+1970-01-01T00-01-13.873Z [@xhcid::xhci::irq_reactor:628 INFO] usb-trace: events [s1e1c1:40] registered {"1 epEndpNum(0)": 40} matched {"1 epEndpNum(0)": 40} dead {} unmatched 0 pending {"1.1 epEndpNum(1)": 1, "1.4 epEndpNum(1)": 1, "1.4 epEndpNum(2)": 1} early 0
+1970-01-01T00-01-13.906Z [@xhcid::xhci::irq_reactor:646 INFO] usb-trace: resources commands 19 cmd_ring 19/256 cycle 1 workers 3 handles 16 ports 3
+]0;root: /home/rootroot:~# e]0;root: /home/rootroot:~# ec]0;root: /home/rootroot:~# ech]0;root: /home/rootroot:~# echo]0;root: /home/rootroot:~# echo ]0;root: /home/rootroot:~# echo 1]0;root: /home/rootroot:~# echo 10]0;root: /home/rootroot:~# echo 100]0;root: /home/rootroot:~# echo 1000]0;root: /home/rootroot:~# echo 1000 ]0;root: /home/rootroot:~# echo 1000 >]0;root: /home/rootroot:~# echo 1000 > ]0;root: /home/rootroot:~# echo 1000 > /]0;root: /home/rootroot:~# echo 1000 > /t]0;root: /home/rootroot:~# echo 1000 > /tm]0;root: /home/rootroot:~# echo 1000 > /tmp]0;root: /home/rootroot:~# echo 1000 > /tmp/]0;root: /home/rootroot:~# echo 1000 > /tmp/x]0;root: /home/rootroot:~# echo 1000 > /tmp/xh]0;root: /home/rootroot:~# echo 1000 > /tmp/xhc]0;root: /home/rootroot:~# echo 1000 > /tmp/xhci]0;root: /home/rootroot:~# echo 1000 > /tmp/xhcid]0;root: /home/rootroot:~# echo 1000 > /tmp/xhcid-]0;root: /home/rootroot:~# echo 1000 > /tmp/xhcid-n]0;root: /home/rootroot:~# echo 1000 > /tmp/xhcid-no]0;root: /home/rootroot:~# echo 1000 > /tmp/xhcid-noo]0;root: /home/rootroot:~# echo 1000 > /tmp/xhcid-noop]0;root: /home/rootroot:~# echo 1000 > /tmp/xhcid-noop
+⏎                                                                                ]0;root: /home/rootroot:~# ]0;root: /home/rootroot:~# 1970-01-01T00-01-19.322Z [@xhcid::xhci:1607 INFO] usb-trace: sending 1000 no-op commands
+1970-01-01T00-01-20.212Z [@xhcid::xhci:1624 INFO] usb-trace: no-op 100 done, cmd_ring 119 cycle 1
+1970-01-01T00-01-21.089Z [@xhcid::xhci:1624 INFO] usb-trace: no-op 200 done, cmd_ring 219 cycle 1
+1970-01-01T00-01-21.438Z [@xhcid::xhci::irq_reactor:601 WARN] Lost event TRB type 33, completion code: 5: Trb { data: 0000000001B27000, status: 05000000, control: 00008400 }
+1970-01-01T00-01-21.465Z [@xhcid::xhci::irq_reactor:601 WARN] Lost event TRB type 33, completion code: 5: Trb { data: 0000000001B27010, status: 05000000, control: 00008400 }
+1970-01-01T00-01-21.491Z [@xhcid::xhci::irq_reactor:601 WARN] Lost event TRB type 33, completion code: 5: Trb { data: 0000000001B27020, status: 05000000, control: 00008400 }
+1970-01-01T00-01-21.518Z [@xhcid::xhci::irq_reactor:601 WARN] Lost event TRB type 33, completion code: 5: Trb { data: 0000000001B27030, status: 05000000, control: 00008400 }
+1970-01-01T00-01-21.545Z [@xhcid::xhci::irq_reactor:601 WARN] Lost event TRB type 33, completion code: 5: Trb { data: 0000000001B27040, status: 05000000, control: 00008400 }
+1970-01-01T00-01-21.569Z [@xhcid::xhci::irq_reactor:601 WARN] Lost event TRB type 33, completion code: 5: Trb { data: 0000000001B27050, status: 05000000, control: 00008400 }
+1970-01-01T00-01-21.594Z [@xhcid::xhci::irq_reactor:601 WARN] Lost event TRB type 33, completion code: 5: Trb { data: 0000000001B27060, status: 05000000, control: 00008400 }
+1970-01-01T00-01-21.619Z [@xhcid::xhci::irq_reactor:601 WARN] Lost event TRB type 33, completion code: 5: Trb { data: 0000000001B27070, status: 05000000, control: 00008400 }
+1970-01-01T00-01-21.644Z [@xhcid::xhci::irq_reactor:601 WARN] Lost event TRB type 33, completion code: 5: Trb { data: 0000000001B27080, status: 05000000, control: 00008400 }
+1970-01-01T00-01-21.669Z [@xhcid::xhci::irq_reactor:601 WARN] Lost event TRB type 33, completion code: 5: Trb { data: 0000000001B27090, status: 05000000, control: 00008400 }
+1970-01-01T00-01-21.694Z [@xhcid::xhci::irq_reactor:601 WARN] Lost event TRB type 33, completion code: 5: Trb { data: 0000000001B270A0, status: 05000000, control: 00008400 }
+1970-01-01T00-01-21.718Z [@xhcid::xhci::irq_reactor:601 WARN] Lost event TRB type 33, completion code: 5: Trb { data: 0000000001B270B0, status: 05000000, control: 00008400 }
+1970-01-01T00-01-21.743Z [@xhcid::xhci::irq_reactor:601 WARN] Lost event TRB type 33, completion code: 5: Trb { data: 0000000001B270C0, status: 05000000, control: 00008400 }
+1970-01-01T00-01-21.768Z [@xhcid::xhci::irq_reactor:601 WARN] Lost event TRB type 33, completion code: 5: Trb { data: 0000000001B270D0, status: 05000000, control: 00008400 }
+1970-01-01T00-01-21.793Z [@xhcid::xhci::irq_reactor:601 WARN] Lost event TRB type 33, completion code: 5: Trb { data: 0000000001B270E0, status: 05000000, control: 00008400 }
+1970-01-01T00-01-21.818Z [@xhcid::xhci::irq_reactor:601 WARN] Lost event TRB type 33, completion code: 5: Trb { data: 0000000001B270F0, status: 05000000, control: 00008400 }
+1970-01-01T00-01-21.843Z [@xhcid::xhci::irq_reactor:601 WARN] Lost event TRB type 33, completion code: 5: Trb { data: 0000000001B27100, status: 05000000, control: 00008400 }
+1970-01-01T00-01-21.867Z [@xhcid::xhci::irq_reactor:601 WARN] Lost event TRB type 33, completion code: 5: Trb { data: 0000000001B27110, status: 05000000, control: 00008400 }
+1970-01-01T00-01-21.892Z [@xhcid::xhci::irq_reactor:601 WARN] Lost event TRB type 33, completion code: 5: Trb { data: 0000000001B27120, status: 05000000, control: 00008400 }
+1970-01-01T00-01-21.917Z [@xhcid::xhci::irq_reactor:601 WARN] Lost event TRB type 33, completion code: 5: Trb { data: 0000000001B27130, status: 05000000, control: 00008400 }
+1970-01-01T00-01-21.942Z [@xhcid::xhci::irq_reactor:601 WARN] Lost event TRB type 33, completion code: 5: Trb { data: 0000000001B27140, status: 05000000, control: 00008400 }
+1970-01-01T00-01-21.967Z [@xhcid::xhci::irq_reactor:601 WARN] Lost event TRB type 33, completion code: 5: Trb { data: 0000000001B27150, status: 05000000, control: 00008400 }
+1970-01-01T00-01-21.992Z [@xhcid::xhci::irq_reactor:601 WARN] Lost event TRB type 33, completion code: 5: Trb { data: 0000000001B27160, status: 05000000, control: 00008400 }
+1970-01-01T00-01-22.016Z [@xhcid::xhci::irq_reactor:601 WARN] Lost event TRB type 33, completion code: 5: Trb { data: 0000000001B27170, status: 05000000, control: 00008400 }
+1970-01-01T00-01-22.041Z [@xhcid::xhci::irq_reactor:601 WARN] Lost event TRB type 33, completion code: 5: Trb { data: 0000000001B27180, status: 05000000, control: 00008400 }
+1970-01-01T00-01-22.066Z [@xhcid::xhci::irq_reactor:601 WARN] Lost event TRB type 33, completion code: 5: Trb { data: 0000000001B27190, status: 05000000, control: 00008400 }
+1970-01-01T00-01-22.091Z [@xhcid::xhci::irq_reactor:601 WARN] Lost event TRB type 33, completion code: 5: Trb { data: 0000000001B271A0, status: 05000000, control: 00008400 }
+1970-01-01T00-01-22.116Z [@xhcid::xhci::irq_reactor:601 WARN] Lost event TRB type 33, completion code: 5: Trb { data: 0000000001B271B0, status: 05000000, control: 00008400 }
+1970-01-01T00-01-22.141Z [@xhcid::xhci::irq_reactor:601 WARN] Lost event TRB type 33, completion code: 5: Trb { data: 0000000001B271C0, status: 05000000, control: 00008401 }
+1970-01-01T00-01-22.165Z [@xhcid::xhci::irq_reactor:601 WARN] Lost event TRB type 33, completion code: 5: Trb { data: 0000000001B271D0, status: 05000000, control: 00008401 }
+1970-01-01T00-01-22.190Z [@xhcid::xhci::irq_reactor:601 WARN] Lost event TRB type 33, completion code: 5: Trb { data: 0000000001B271E0, status: 05000000, control: 00008401 }
+1970-01-01T00-01-22.215Z [@xhcid::xhci::irq_reactor:601 WARN] Lost event TRB type 33, completion code: 5: Trb { data: 0000000001B271F0, status: 05000000, control: 00008401 }
+1970-01-01T00-01-22.240Z [@xhcid::xhci::irq_reactor:601 WARN] Lost event TRB type 33, completion code: 5: Trb { data: 0000000001B27200, status: 05000000, control: 00008401 }
+1970-01-01T00-01-22.265Z [@xhcid::xhci::irq_reactor:601 WARN] Lost event TRB type 33, completion code: 5: Trb { data: 0000000001B27210, status: 05000000, control: 00008401 }
+1970-01-01T00-01-22.290Z [@xhcid::xhci::irq_reactor:601 WARN] Lost event TRB type 33, completion code: 5: Trb { data: 0000000001B27220, status: 05000000, control: 00008401 }
+1970-01-01T00-01-22.314Z [@xhcid::xhci::irq_reactor:601 WARN] Lost event TRB type 33, completion code: 5: Trb { data: 0000000001B27230, status: 05000000, control: 00008401 }
+1970-01-01T00-01-22.339Z [@xhcid::xhci::irq_reactor:601 WARN] Lost event TRB type 33, completion code: 5: Trb { data: 0000000001B27240, status: 05000000, control: 00008401 }
+1970-01-01T00-01-22.364Z [@xhcid::xhci::irq_reactor:601 WARN] Lost event TRB type 33, completion code: 5: Trb { data: 0000000001B27250, status: 05000000, control: 00008401 }
+1970-01-01T00-01-22.389Z [@xhcid::xhci::irq_reactor:601 WARN] Lost event TRB type 33, completion code: 5: Trb { data: 0000000001B27260, status: 05000000, control: 00008401 }
+1970-01-01T00-01-22.414Z [@xhcid::xhci::irq_reactor:601 WARN] Lost event TRB type 33, completion code: 5: Trb { data: 0000000001B27270, status: 05000000, control: 00008401 }
+1970-01-01T00-01-22.439Z [@xhcid::xhci::irq_reactor:601 WARN] Lost event TRB type 33, completion code: 5: Trb { data: 0000000001B27280, status: 05000000, control: 00008401 }
+1970-01-01T00-01-22.463Z [@xhcid::xhci::irq_reactor:601 WARN] Lost event TRB type 33, completion code: 5: Trb { data: 0000000001B27290, status: 05000000, control: 00008401 }
+1970-01-01T00-01-22.488Z [@xhcid::xhci::irq_reactor:601 WARN] Lost event TRB type 33, completion code: 5: Trb { data: 0000000001B272A0, status: 05000000, control: 00008401 }
+1970-01-01T00-01-22.513Z [@xhcid::xhci::irq_reactor:601 WARN] Lost event TRB type 33, completion code: 5: Trb { data: 0000000001B272B0, status: 05000000, control: 00008401 }
+1970-01-01T00-01-22.538Z [@xhcid::xhci::irq_reactor:601 WARN] Lost event TRB type 33, completion code: 5: Trb { data: 0000000001B272C0, status: 05000000, control: 00008401 }
+1970-01-01T00-01-22.563Z [@xhcid::xhci::irq_reactor:601 WARN] Lost event TRB type 33, completion code: 5: Trb { data: 0000000001B272D0, status: 05000000, control: 00008401 }
+1970-01-01T00-01-22.588Z [@xhcid::xhci::irq_reactor:601 WARN] Lost event TRB type 33, completion code: 5: Trb { data: 0000000001B272E0, status: 05000000, control: 00008401 }
+1970-01-01T00-01-22.612Z [@xhcid::xhci::irq_reactor:601 WARN] Lost event TRB type 33, completion code: 5: Trb { data: 0000000001B272F0, status: 05000000, control: 00008401 }
+1970-01-01T00-01-22.637Z [@xhcid::xhci::irq_reactor:601 WARN] Lost event TRB type 33, completion code: 5: Trb { data: 0000000001B27300, status: 05000000, control: 00008401 }
+1970-01-01T00-01-22.662Z [@xhcid::xhci::irq_reactor:601 WARN] Lost event TRB type 33, completion code: 5: Trb { data: 0000000001B27310, status: 05000000, control: 00008401 }
+1970-01-01T00-01-22.687Z [@xhcid::xhci::irq_reactor:601 WARN] Lost event TRB type 33, completion code: 5: Trb { data: 0000000001B27320, status: 05000000, control: 00008401 }
+1970-01-01T00-01-22.712Z [@xhcid::xhci::irq_reactor:601 WARN] Lost event TRB type 33, completion code: 5: Trb { data: 0000000001B27330, status: 05000000, control: 00008401 }
+1970-01-01T00-01-22.737Z [@xhcid::xhci::irq_reactor:601 WARN] Lost event TRB type 33, completion code: 5: Trb { data: 0000000001B27340, status: 05000000, control: 00008401 }
+1970-01-01T00-01-22.761Z [@xhcid::xhci::irq_reactor:601 WARN] Lost event TRB type 33, completion code: 5: Trb { data: 0000000001B27350, status: 05000000, control: 00008401 }
+1970-01-01T00-01-22.786Z [@xhcid::xhci::irq_reactor:601 WARN] Lost event TRB type 33, completion code: 5: Trb { data: 0000000001B27360, status: 05000000, control: 00008401 }
+1970-01-01T00-01-22.811Z [@xhcid::xhci::irq_reactor:601 WARN] Lost event TRB type 33, completion code: 5: Trb { data: 0000000001B27370, status: 05000000, control: 00008401 }
+1970-01-01T00-01-22.836Z [@xhcid::xhci::irq_reactor:601 WARN] Lost event TRB type 33, completion code: 5: Trb { data: 0000000001B27380, status: 05000000, control: 00008401 }
+1970-01-01T00-01-22.861Z [@xhcid::xhci::irq_reactor:601 WARN] Lost event TRB type 33, completion code: 5: Trb { data: 0000000001B27390, status: 05000000, control: 00008401 }
+1970-01-01T00-01-22.886Z [@xhcid::xhci::irq_reactor:601 WARN] Lost event TRB type 33, completion code: 5: Trb { data: 0000000001B273A0, status: 05000000, control: 00008401 }
+1970-01-01T00-01-22.910Z [@xhcid::xhci::irq_reactor:601 WARN] Lost event TRB type 33, completion code: 5: Trb { data: 0000000001B273B0, status: 05000000, control: 00008401 }
+1970-01-01T00-01-22.935Z [@xhcid::xhci::irq_reactor:601 WARN] Lost event TRB type 33, completion code: 5: Trb { data: 0000000001B273C0, status: 05000000, control: 00008401 }
+1970-01-01T00-01-22.960Z [@xhcid::xhci::irq_reactor:601 WARN] Lost event TRB type 33, completion code: 5: Trb { data: 0000000001B273D0, status: 05000000, control: 00008401 }
+1970-01-01T00-01-22.985Z [@xhcid::xhci::irq_reactor:601 WARN] Lost event TRB type 33, completion code: 5: Trb { data: 0000000001B273E0, status: 05000000, control: 00008401 }
+1970-01-01T00-01-23.010Z [@xhcid::xhci::irq_reactor:601 WARN] Lost event TRB type 33, completion code: 5: Trb { data: 0000000001B273F0, status: 05000000, control: 00008401 }
+1970-01-01T00-01-23.035Z [@xhcid::xhci::irq_reactor:601 WARN] Lost event TRB type 33, completion code: 5: Trb { data: 0000000001B27400, status: 05000000, control: 00008401 }
+1970-01-01T00-01-23.059Z [@xhcid::xhci::irq_reactor:601 WARN] Lost event TRB type 33, completion code: 5: Trb { data: 0000000001B27410, status: 05000000, control: 00008401 }
+1970-01-01T00-01-23.084Z [@xhcid::xhci::irq_reactor:601 WARN] Lost event TRB type 33, completion code: 5: Trb { data: 0000000001B27420, status: 05000000, control: 00008401 }
+1970-01-01T00-01-23.109Z [@xhcid::xhci::irq_reactor:601 WARN] Lost event TRB type 33, completion code: 5: Trb { data: 0000000001B27430, status: 05000000, control: 00008401 }
+1970-01-01T00-01-23.134Z [@xhcid::xhci::irq_reactor:601 WARN] Lost event TRB type 33, completion code: 5: Trb { data: 0000000001B27440, status: 05000000, control: 00008401 }
+1970-01-01T00-01-23.159Z [@xhcid::xhci::irq_reactor:601 WARN] Lost event TRB type 33, completion code: 5: Trb { data: 0000000001B27450, status: 05000000, control: 00008401 }
+1970-01-01T00-01-23.184Z [@xhcid::xhci::irq_reactor:601 WARN] Lost event TRB type 33, completion code: 5: Trb { data: 0000000001B27460, status: 05000000, control: 00008401 }
+1970-01-01T00-01-23.209Z [@xhcid::xhci::irq_reactor:601 WARN] Lost event TRB type 33, completion code: 5: Trb { data: 0000000001B27470, status: 05000000, control: 00008401 }
+1970-01-01T00-01-23.233Z [@xhcid::xhci::irq_reactor:601 WARN] Lost event TRB type 33, completion code: 5: Trb { data: 0000000001B27480, status: 05000000, control: 00008401 }
+1970-01-01T00-01-23.258Z [@xhcid::xhci::irq_reactor:601 WARN] Lost event TRB type 33, completion code: 5: Trb { data: 0000000001B27490, status: 05000000, control: 00008401 }
+1970-01-01T00-01-23.283Z [@xhcid::xhci::irq_reactor:601 WARN] Lost event TRB type 33, completion code: 5: Trb { data: 0000000001B274A0, status: 05000000, control: 00008401 }
+1970-01-01T00-01-23.308Z [@xhcid::xhci::irq_reactor:601 WARN] Lost event TRB type 33, completion code: 5: Trb { data: 0000000001B274B0, status: 05000000, control: 00008401 }
+1970-01-01T00-01-23.333Z [@xhcid::xhci::irq_reactor:601 WARN] Lost event TRB type 33, completion code: 5: Trb { data: 0000000001B274C0, status: 05000000, control: 00008401 }
+1970-01-01T00-01-23.357Z [@xhcid::xhci::irq_reactor:601 WARN] Lost event TRB type 33, completion code: 5: Trb { data: 0000000001B274D0, status: 05000000, control: 00008401 }
+1970-01-01T00-01-23.382Z [@xhcid::xhci::irq_reactor:601 WARN] Lost event TRB type 33, completion code: 5: Trb { data: 0000000001B274E0, status: 05000000, control: 00008401 }
+1970-01-01T00-01-23.407Z [@xhcid::xhci::irq_reactor:601 WARN] Lost event TRB type 33, completion code: 5: Trb { data: 0000000001B274F0, status: 05000000, control: 00008401 }
+1970-01-01T00-01-23.432Z [@xhcid::xhci::irq_reactor:601 WARN] Lost event TRB type 33, completion code: 5: Trb { data: 0000000001B27500, status: 05000000, control: 00008401 }
+1970-01-01T00-01-23.457Z [@xhcid::xhci::irq_reactor:601 WARN] Lost event TRB type 33, completion code: 5: Trb { data: 0000000001B27510, status: 05000000, control: 00008401 }
+1970-01-01T00-01-23.482Z [@xhcid::xhci::irq_reactor:601 WARN] Lost event TRB type 33, completion code: 5: Trb { data: 0000000001B27520, status: 05000000, control: 00008401 }
+1970-01-01T00-01-23.506Z [@xhcid::xhci::irq_reactor:601 WARN] Lost event TRB type 33, completion code: 5: Trb { data: 0000000001B27530, status: 05000000, control: 00008401 }
+1970-01-01T00-01-23.531Z [@xhcid::xhci::irq_reactor:601 WARN] Lost event TRB type 33, completion code: 5: Trb { data: 0000000001B27540, status: 05000000, control: 00008401 }
+1970-01-01T00-01-23.556Z [@xhcid::xhci::irq_reactor:601 WARN] Lost event TRB type 33, completion code: 5: Trb { data: 0000000001B27550, status: 05000000, control: 00008401 }
+1970-01-01T00-01-23.581Z [@xhcid::xhci::irq_reactor:601 WARN] Lost event TRB type 33, completion code: 5: Trb { data: 0000000001B27560, status: 05000000, control: 00008401 }
+1970-01-01T00-01-23.606Z [@xhcid::xhci::irq_reactor:601 WARN] Lost event TRB type 33, completion code: 5: Trb { data: 0000000001B27570, status: 05000000, control: 00008401 }
+1970-01-01T00-01-23.631Z [@xhcid::xhci::irq_reactor:601 WARN] Lost event TRB type 33, completion code: 5: Trb { data: 0000000001B27580, status: 05000000, control: 00008401 }
+1970-01-01T00-01-23.655Z [@xhcid::xhci::irq_reactor:601 WARN] Lost event TRB type 33, completion code: 5: Trb { data: 0000000001B27590, status: 05000000, control: 00008401 }
+1970-01-01T00-01-23.680Z [@xhcid::xhci::irq_reactor:601 WARN] Lost event TRB type 33, completion code: 5: Trb { data: 0000000001B275A0, status: 05000000, control: 00008401 }
+1970-01-01T00-01-23.705Z [@xhcid::xhci::irq_reactor:601 WARN] Lost event TRB type 33, completion code: 5: Trb { data: 0000000001B275B0, status: 05000000, control: 00008401 }
+1970-01-01T00-01-23.730Z [@xhcid::xhci::irq_reactor:601 WARN] Lost event TRB type 33, completion code: 5: Trb { data: 0000000001B275C0, status: 05000000, control: 00008401 }
+1970-01-01T00-01-23.755Z [@xhcid::xhci::irq_reactor:601 WARN] Lost event TRB type 33, completion code: 5: Trb { data: 0000000001B275D0, status: 05000000, control: 00008401 }
+1970-01-01T00-01-23.780Z [@xhcid::xhci::irq_reactor:601 WARN] Lost event TRB type 33, completion code: 5: Trb { data: 0000000001B275E0, status: 05000000, control: 00008401 }
+1970-01-01T00-01-23.804Z [@xhcid::xhci::irq_reactor:601 WARN] Lost event TRB type 33, completion code: 5: Trb { data: 0000000001B275F0, status: 05000000, control: 00008401 }
+1970-01-01T00-01-23.829Z [@xhcid::xhci::irq_reactor:601 WARN] Lost event TRB type 33, completion code: 5: Trb { data: 0000000001B27600, status: 05000000, control: 00008401 }
+1970-01-01T00-01-23.854Z [@xhcid::xhci::irq_reactor:601 WARN] Lost event TRB type 33, completion code: 5: Trb { data: 0000000001B27610, status: 05000000, control: 00008401 }
+1970-01-01T00-01-23.879Z [@xhcid::xhci::irq_reactor:601 WARN] Lost event TRB type 33, completion code: 5: Trb { data: 0000000001B27620, status: 05000000, control: 00008401 }
+1970-01-01T00-01-23.904Z [@xhcid::xhci::irq_reactor:601 WARN] Lost event TRB type 33, completion code: 5: Trb { data: 0000000001B27630, status: 05000000, control: 00008401 }
+1970-01-01T00-01-23.929Z [@xhcid::xhci::irq_reactor:628 INFO] usb-trace: events [s1e1c1:31] registered {"1 epEndpNum(0)": 32} matched {"1 epEndpNum(0)": 31} dead {} unmatched 0 pending {"1 epEndpNum(0)": 1, "1.1 epEndpNum(1)": 1, "1.4 epEndpNum(1)": 1, "1.4 epEndpNum(2)": 1} early 0
+1970-01-01T00-01-23.963Z [@xhcid::xhci::irq_reactor:646 INFO] usb-trace: resources commands 256 cmd_ring 1/256 cycle 0 workers 3 handles 16 ports 3
+1970-01-01T00-01-23.986Z [@xhcid::xhci::irq_reactor:601 WARN] Lost event TRB type 33, completion code: 5: Trb { data: 0000000001B27640, status: 05000000, control: 00008401 }
+1970-01-01T00-01-24.011Z [@xhcid::xhci::irq_reactor:601 WARN] Lost event TRB type 33, completion code: 5: Trb { data: 0000000001B27650, status: 05000000, control: 00008401 }
+1970-01-01T00-01-24.035Z [@xhcid::xhci::irq_reactor:601 WARN] Lost event TRB type 33, completion code: 5: Trb { data: 0000000001B27660, status: 05000000, control: 00008401 }
+1970-01-01T00-01-24.060Z [@xhcid::xhci::irq_reactor:601 WARN] Lost event TRB type 33, completion code: 5: Trb { data: 0000000001B27670, status: 05000000, control: 00008401 }
+1970-01-01T00-01-24.085Z [@xhcid::xhci::irq_reactor:601 WARN] Lost event TRB type 33, completion code: 5: Trb { data: 0000000001B27680, status: 05000000, control: 00008401 }
+1970-01-01T00-01-24.110Z [@xhcid::xhci::irq_reactor:601 WARN] Lost event TRB type 33, completion code: 5: Trb { data: 0000000001B27690, status: 05000000, control: 00008401 }
+1970-01-01T00-01-24.135Z [@xhcid::xhci::irq_reactor:601 WARN] Lost event TRB type 33, completion code: 5: Trb { data: 0000000001B276A0, status: 05000000, control: 00008401 }
+1970-01-01T00-01-24.160Z [@xhcid::xhci::irq_reactor:601 WARN] Lost event TRB type 33, completion code: 5: Trb { data: 0000000001B276B0, status: 05000000, control: 00008401 }
+1970-01-01T00-01-24.184Z [@xhcid::xhci::irq_reactor:601 WARN] Lost event TRB type 33, completion code: 5: Trb { data: 0000000001B276C0, status: 05000000, control: 00008401 }
+1970-01-01T00-01-24.209Z [@xhcid::xhci::irq_reactor:601 WARN] Lost event TRB type 33, completion code: 5: Trb { data: 0000000001B276D0, status: 05000000, control: 00008401 }
+1970-01-01T00-01-24.234Z [@xhcid::xhci::irq_reactor:601 WARN] Lost event TRB type 33, completion code: 5: Trb { data: 0000000001B276E0, status: 05000000, control: 00008401 }
+1970-01-01T00-01-24.259Z [@xhcid::xhci::irq_reactor:601 WARN] Lost event TRB type 33, completion code: 5: Trb { data: 0000000001B276F0, status: 05000000, control: 00008401 }
+1970-01-01T00-01-24.284Z [@xhcid::xhci::irq_reactor:601 WARN] Lost event TRB type 33, completion code: 5: Trb { data: 0000000001B27700, status: 05000000, control: 00008401 }
+1970-01-01T00-01-24.309Z [@xhcid::xhci::irq_reactor:601 WARN] Lost event TRB type 33, completion code: 5: Trb { data: 0000000001B27710, status: 05000000, control: 00008401 }
+1970-01-01T00-01-24.333Z [@xhcid::xhci::irq_reactor:601 WARN] Lost event TRB type 33, completion code: 5: Trb { data: 0000000001B27720, status: 05000000, control: 00008401 }
+1970-01-01T00-01-24.358Z [@xhcid::xhci::irq_reactor:601 WARN] Lost event TRB type 33, completion code: 5: Trb { data: 0000000001B27730, status: 05000000, control: 00008401 }
+1970-01-01T00-01-24.383Z [@xhcid::xhci::irq_reactor:601 WARN] Lost event TRB type 33, completion code: 5: Trb { data: 0000000001B27740, status: 05000000, control: 00008401 }
+1970-01-01T00-01-24.408Z [@xhcid::xhci::irq_reactor:601 WARN] Lost event TRB type 33, completion code: 5: Trb { data: 0000000001B27750, status: 05000000, control: 00008401 }
+1970-01-01T00-01-24.433Z [@xhcid::xhci::irq_reactor:601 WARN] Lost event TRB type 33, completion code: 5: Trb { data: 0000000001B27760, status: 05000000, control: 00008401 }
+1970-01-01T00-01-24.458Z [@xhcid::xhci::irq_reactor:601 WARN] Lost event TRB type 33, completion code: 5: Trb { data: 0000000001B27770, status: 05000000, control: 00008401 }
+1970-01-01T00-01-24.482Z [@xhcid::xhci::irq_reactor:601 WARN] Lost event TRB type 33, completion code: 5: Trb { data: 0000000001B27780, status: 05000000, control: 00008401 }
+1970-01-01T00-01-24.507Z [@xhcid::xhci::irq_reactor:601 WARN] Lost event TRB type 33, completion code: 5: Trb { data: 0000000001B27790, status: 05000000, control: 00008401 }
+1970-01-01T00-01-24.532Z [@xhcid::xhci::irq_reactor:601 WARN] Lost event TRB type 33, completion code: 5: Trb { data: 0000000001B277A0, status: 05000000, control: 00008401 }
+1970-01-01T00-01-24.557Z [@xhcid::xhci::irq_reactor:601 WARN] Lost event TRB type 33, completion code: 5: Trb { data: 0000000001B277B0, status: 05000000, control: 00008401 }
+1970-01-01T00-01-24.582Z [@xhcid::xhci::irq_reactor:601 WARN] Lost event TRB type 33, completion code: 5: Trb { data: 0000000001B277C0, status: 05000000, control: 00008401 }
+1970-01-01T00-01-24.607Z [@xhcid::xhci::irq_reactor:601 WARN] Lost event TRB type 33, completion code: 5: Trb { data: 0000000001B277D0, status: 05000000, control: 00008401 }
+1970-01-01T00-01-24.631Z [@xhcid::xhci::irq_reactor:601 WARN] Lost event TRB type 33, completion code: 5: Trb { data: 0000000001B277E0, status: 05000000, control: 00008401 }
+1970-01-01T00-01-24.656Z [@xhcid::xhci::irq_reactor:601 WARN] Lost event TRB type 33, completion code: 5: Trb { data: 0000000001B277F0, status: 05000000, control: 00008401 }
+1970-01-01T00-01-24.681Z [@xhcid::xhci::irq_reactor:601 WARN] Lost event TRB type 33, completion code: 5: Trb { data: 0000000001B27800, status: 05000000, control: 00008401 }
+1970-01-01T00-01-24.706Z [@xhcid::xhci::irq_reactor:601 WARN] Lost event TRB type 33, completion code: 5: Trb { data: 0000000001B27810, status: 05000000, control: 00008401 }
+1970-01-01T00-01-24.731Z [@xhcid::xhci::irq_reactor:601 WARN] Lost event TRB type 33, completion code: 5: Trb { data: 0000000001B27820, status: 05000000, control: 00008401 }
+1970-01-01T00-01-24.756Z [@xhcid::xhci::irq_reactor:601 WARN] Lost event TRB type 33, completion code: 5: Trb { data: 0000000001B27830, status: 05000000, control: 00008401 }
+1970-01-01T00-01-24.780Z [@xhcid::xhci::irq_reactor:601 WARN] Lost event TRB type 33, completion code: 5: Trb { data: 0000000001B27840, status: 05000000, control: 00008401 }
+1970-01-01T00-01-24.805Z [@xhcid::xhci::irq_reactor:601 WARN] Lost event TRB type 33, completion code: 5: Trb { data: 0000000001B27850, status: 05000000, control: 00008401 }
+1970-01-01T00-01-24.830Z [@xhcid::xhci::irq_reactor:601 WARN] Lost event TRB type 33, completion code: 5: Trb { data: 0000000001B27860, status: 05000000, control: 00008401 }
+1970-01-01T00-01-24.855Z [@xhcid::xhci::irq_reactor:601 WARN] Lost event TRB type 33, completion code: 5: Trb { data: 0000000001B27870, status: 05000000, control: 00008401 }
+1970-01-01T00-01-24.880Z [@xhcid::xhci::irq_reactor:601 WARN] Lost event TRB type 33, completion code: 5: Trb { data: 0000000001B27880, status: 05000000, control: 00008401 }
+1970-01-01T00-01-24.904Z [@xhcid::xhci::irq_reactor:601 WARN] Lost event TRB type 33, completion code: 5: Trb { data: 0000000001B27890, status: 05000000, control: 00008401 }
+1970-01-01T00-01-24.929Z [@xhcid::xhci::irq_reactor:601 WARN] Lost event TRB type 33, completion code: 5: Trb { data: 0000000001B278A0, status: 05000000, control: 00008401 }
+1970-01-01T00-01-24.954Z [@xhcid::xhci::irq_reactor:601 WARN] Lost event TRB type 33, completion code: 5: Trb { data: 0000000001B278B0, status: 05000000, control: 00008401 }
+1970-01-01T00-01-24.979Z [@xhcid::xhci::irq_reactor:601 WARN] Lost event TRB type 33, completion code: 5: Trb { data: 0000000001B278C0, status: 05000000, control: 00008401 }
+1970-01-01T00-01-25.004Z [@xhcid::xhci::irq_reactor:601 WARN] Lost event TRB type 33, completion code: 5: Trb { data: 0000000001B278D0, status: 05000000, control: 00008401 }
+1970-01-01T00-01-25.029Z [@xhcid::xhci::irq_reactor:601 WARN] Lost event TRB type 33, completion code: 5: Trb { data: 0000000001B278E0, status: 05000000, control: 00008401 }
+1970-01-01T00-01-25.053Z [@xhcid::xhci::irq_reactor:601 WARN] Lost event TRB type 33, completion code: 5: Trb { data: 0000000001B278F0, status: 05000000, control: 00008401 }
+1970-01-01T00-01-25.078Z [@xhcid::xhci::irq_reactor:601 WARN] Lost event TRB type 33, completion code: 5: Trb { data: 0000000001B27900, status: 05000000, control: 00008401 }
+1970-01-01T00-01-25.103Z [@xhcid::xhci::irq_reactor:601 WARN] Lost event TRB type 33, completion code: 5: Trb { data: 0000000001B27910, status: 05000000, control: 00008401 }
+1970-01-01T00-01-25.128Z [@xhcid::xhci::irq_reactor:601 WARN] Lost event TRB type 33, completion code: 5: Trb { data: 0000000001B27920, status: 05000000, control: 00008401 }
+1970-01-01T00-01-25.153Z [@xhcid::xhci::irq_reactor:601 WARN] Lost event TRB type 33, completion code: 5: Trb { data: 0000000001B27930, status: 05000000, control: 00008401 }
+1970-01-01T00-01-25.177Z [@xhcid::xhci::irq_reactor:601 WARN] Lost event TRB type 33, completion code: 5: Trb { data: 0000000001B27940, status: 05000000, control: 00008401 }
+1970-01-01T00-01-25.202Z [@xhcid::xhci::irq_reactor:601 WARN] Lost event TRB type 33, completion code: 5: Trb { data: 0000000001B27950, status: 05000000, control: 00008401 }
+1970-01-01T00-01-25.227Z [@xhcid::xhci::irq_reactor:601 WARN] Lost event TRB type 33, completion code: 5: Trb { data: 0000000001B27960, status: 05000000, control: 00008401 }
+1970-01-01T00-01-25.252Z [@xhcid::xhci::irq_reactor:601 WARN] Lost event TRB type 33, completion code: 5: Trb { data: 0000000001B27970, status: 05000000, control: 00008401 }
+1970-01-01T00-01-25.277Z [@xhcid::xhci::irq_reactor:601 WARN] Lost event TRB type 33, completion code: 5: Trb { data: 0000000001B27980, status: 05000000, control: 00008401 }
+1970-01-01T00-01-25.302Z [@xhcid::xhci::irq_reactor:601 WARN] Lost event TRB type 33, completion code: 5: Trb { data: 0000000001B27990, status: 05000000, control: 00008401 }
+1970-01-01T00-01-25.327Z [@xhcid::xhci::irq_reactor:601 WARN] Lost event TRB type 33, completion code: 5: Trb { data: 0000000001B279A0, status: 05000000, control: 00008401 }
+1970-01-01T00-01-25.352Z [@xhcid::xhci::irq_reactor:601 WARN] Lost event TRB type 33, completion code: 5: Trb { data: 0000000001B279B0, status: 05000000, control: 00008401 }
+1970-01-01T00-01-25.376Z [@xhcid::xhci::irq_reactor:601 WARN] Lost event TRB type 33, completion code: 5: Trb { data: 0000000001B279C0, status: 05000000, control: 00008401 }
+1970-01-01T00-01-25.401Z [@xhcid::xhci::irq_reactor:601 WARN] Lost event TRB type 33, completion code: 5: Trb { data: 0000000001B279D0, status: 05000000, control: 00008401 }
+1970-01-01T00-01-25.426Z [@xhcid::xhci::irq_reactor:601 WARN] Lost event TRB type 33, completion code: 5: Trb { data: 0000000001B279E0, status: 05000000, control: 00008401 }
+1970-01-01T00-01-25.451Z [@xhcid::xhci::irq_reactor:601 WARN] Lost event TRB type 33, completion code: 5: Trb { data: 0000000001B279F0, status: 05000000, control: 00008401 }
+1970-01-01T00-01-25.476Z [@xhcid::xhci::irq_reactor:601 WARN] Lost event TRB type 33, completion code: 5: Trb { data: 0000000001B27A00, status: 05000000, control: 00008401 }
+1970-01-01T00-01-25.501Z [@xhcid::xhci::irq_reactor:601 WARN] Lost event TRB type 33, completion code: 5: Trb { data: 0000000001B27A10, status: 05000000, control: 00008401 }
+1970-01-01T00-01-25.525Z [@xhcid::xhci::irq_reactor:601 WARN] Lost event TRB type 33, completion code: 5: Trb { data: 0000000001B27A20, status: 05000000, control: 00008401 }
+1970-01-01T00-01-25.550Z [@xhcid::xhci::irq_reactor:601 WARN] Lost event TRB type 33, completion code: 5: Trb { data: 0000000001B27A30, status: 05000000, control: 00008401 }
+1970-01-01T00-01-25.575Z [@xhcid::xhci::irq_reactor:601 WARN] Lost event TRB type 33, completion code: 5: Trb { data: 0000000001B27A40, status: 05000000, control: 00008401 }
+1970-01-01T00-01-25.600Z [@xhcid::xhci::irq_reactor:601 WARN] Lost event TRB type 33, completion code: 5: Trb { data: 0000000001B27A50, status: 05000000, control: 00008401 }
+1970-01-01T00-01-25.625Z [@xhcid::xhci::irq_reactor:601 WARN] Lost event TRB type 33, completion code: 5: Trb { data: 0000000001B27A60, status: 05000000, control: 00008401 }
+1970-01-01T00-01-25.649Z [@xhcid::xhci::irq_reactor:601 WARN] Lost event TRB type 33, completion code: 5: Trb { data: 0000000001B27A70, status: 05000000, control: 00008401 }
+1970-01-01T00-01-25.674Z [@xhcid::xhci::irq_reactor:601 WARN] Lost event TRB type 33, completion code: 5: Trb { data: 0000000001B27A80, status: 05000000, control: 00008401 }
+1970-01-01T00-01-25.699Z [@xhcid::xhci::irq_reactor:601 WARN] Lost event TRB type 33, completion code: 5: Trb { data: 0000000001B27A90, status: 05000000, control: 00008401 }
+1970-01-01T00-01-25.724Z [@xhcid::xhci::irq_reactor:601 WARN] Lost event TRB type 33, completion code: 5: Trb { data: 0000000001B27AA0, status: 05000000, control: 00008401 }
+1970-01-01T00-01-25.749Z [@xhcid::xhci::irq_reactor:601 WARN] Lost event TRB type 33, completion code: 5: Trb { data: 0000000001B27AB0, status: 05000000, control: 00008401 }
+1970-01-01T00-01-25.774Z [@xhcid::xhci::irq_reactor:601 WARN] Lost event TRB type 33, completion code: 5: Trb { data: 0000000001B27AC0, status: 05000000, control: 00008401 }
+1970-01-01T00-01-25.798Z [@xhcid::xhci::irq_reactor:601 WARN] Lost event TRB type 33, completion code: 5: Trb { data: 0000000001B27AD0, status: 05000000, control: 00008401 }
+1970-01-01T00-01-25.823Z [@xhcid::xhci::irq_reactor:601 WARN] Lost event TRB type 33, completion code: 5: Trb { data: 0000000001B27AE0, status: 05000000, control: 00008401 }
+1970-01-01T00-01-25.848Z [@xhcid::xhci::irq_reactor:601 WARN] Lost event TRB type 33, completion code: 5: Trb { data: 0000000001B27AF0, status: 05000000, control: 00008401 }
+1970-01-01T00-01-25.873Z [@xhcid::xhci::irq_reactor:601 WARN] Lost event TRB type 33, completion code: 5: Trb { data: 0000000001B27B00, status: 05000000, control: 00008401 }
+1970-01-01T00-01-25.898Z [@xhcid::xhci::irq_reactor:601 WARN] Lost event TRB type 33, completion code: 5: Trb { data: 0000000001B27B10, status: 05000000, control: 00008401 }
+1970-01-01T00-01-25.923Z [@xhcid::xhci::irq_reactor:601 WARN] Lost event TRB type 33, completion code: 5: Trb { data: 0000000001B27B20, status: 05000000, control: 00008401 }
+1970-01-01T00-01-25.947Z [@xhcid::xhci::irq_reactor:601 WARN] Lost event TRB type 33, completion code: 5: Trb { data: 0000000001B27B30, status: 05000000, control: 00008401 }
+1970-01-01T00-01-25.972Z [@xhcid::xhci::irq_reactor:601 WARN] Lost event TRB type 33, completion code: 5: Trb { data: 0000000001B27B40, status: 05000000, control: 00008401 }
+1970-01-01T00-01-25.997Z [@xhcid::xhci::irq_reactor:601 WARN] Lost event TRB type 33, completion code: 5: Trb { data: 0000000001B27B50, status: 05000000, control: 00008401 }
+1970-01-01T00-01-26.022Z [@xhcid::xhci::irq_reactor:601 WARN] Lost event TRB type 33, completion code: 5: Trb { data: 0000000001B27B60, status: 05000000, control: 00008401 }
+1970-01-01T00-01-26.047Z [@xhcid::xhci::irq_reactor:601 WARN] Lost event TRB type 33, completion code: 5: Trb { data: 0000000001B27B70, status: 05000000, control: 00008401 }
+1970-01-01T00-01-26.072Z [@xhcid::xhci::irq_reactor:601 WARN] Lost event TRB type 33, completion code: 5: Trb { data: 0000000001B27B80, status: 05000000, control: 00008401 }
+1970-01-01T00-01-26.097Z [@xhcid::xhci::irq_reactor:601 WARN] Lost event TRB type 33, completion code: 5: Trb { data: 0000000001B27B90, status: 05000000, control: 00008401 }
+1970-01-01T00-01-26.121Z [@xhcid::xhci::irq_reactor:601 WARN] Lost event TRB type 33, completion code: 5: Trb { data: 0000000001B27BA0, status: 05000000, control: 00008401 }
+1970-01-01T00-01-26.146Z [@xhcid::xhci::irq_reactor:601 WARN] Lost event TRB type 33, completion code: 5: Trb { data: 0000000001B27BB0, status: 05000000, control: 00008401 }
+1970-01-01T00-01-26.171Z [@xhcid::xhci::irq_reactor:601 WARN] Lost event TRB type 33, completion code: 5: Trb { data: 0000000001B27BC0, status: 05000000, control: 00008401 }
+1970-01-01T00-01-26.196Z [@xhcid::xhci::irq_reactor:601 WARN] Lost event TRB type 33, completion code: 5: Trb { data: 0000000001B27BD0, status: 05000000, control: 00008401 }
+1970-01-01T00-01-26.221Z [@xhcid::xhci::irq_reactor:601 WARN] Lost event TRB type 33, completion code: 5: Trb { data: 0000000001B27BE0, status: 05000000, control: 00008401 }
+1970-01-01T00-01-26.246Z [@xhcid::xhci::irq_reactor:601 WARN] Lost event TRB type 33, completion code: 5: Trb { data: 0000000001B27BF0, status: 05000000, control: 00008401 }
+1970-01-01T00-01-26.270Z [@xhcid::xhci::irq_reactor:601 WARN] Lost event TRB type 33, completion code: 5: Trb { data: 0000000001B27C00, status: 05000000, control: 00008401 }
+1970-01-01T00-01-26.295Z [@xhcid::xhci::irq_reactor:601 WARN] Lost event TRB type 33, completion code: 5: Trb { data: 0000000001B27C10, status: 05000000, control: 00008401 }
+1970-01-01T00-01-26.320Z [@xhcid::xhci::irq_reactor:601 WARN] Lost event TRB type 33, completion code: 5: Trb { data: 0000000001B27C20, status: 05000000, control: 00008401 }
+1970-01-01T00-01-26.345Z [@xhcid::xhci::irq_reactor:601 WARN] Lost event TRB type 33, completion code: 5: Trb { data: 0000000001B27C30, status: 05000000, control: 00008401 }
+1970-01-01T00-01-26.370Z [@xhcid::xhci::irq_reactor:601 WARN] Lost event TRB type 33, completion code: 5: Trb { data: 0000000001B27C40, status: 05000000, control: 00008401 }
+1970-01-01T00-01-26.395Z [@xhcid::xhci::irq_reactor:601 WARN] Lost event TRB type 33, completion code: 5: Trb { data: 0000000001B27C50, status: 05000000, control: 00008401 }
+1970-01-01T00-01-26.419Z [@xhcid::xhci::irq_reactor:601 WARN] Lost event TRB type 33, completion code: 5: Trb { data: 0000000001B27C60, status: 05000000, control: 00008401 }
+1970-01-01T00-01-26.444Z [@xhcid::xhci::irq_reactor:601 WARN] Lost event TRB type 33, completion code: 5: Trb { data: 0000000001B27C70, status: 05000000, control: 00008401 }
+1970-01-01T00-01-26.469Z [@xhcid::xhci::irq_reactor:601 WARN] Lost event TRB type 33, completion code: 5: Trb { data: 0000000001B27C80, status: 05000000, control: 00008401 }
+1970-01-01T00-01-26.494Z [@xhcid::xhci::irq_reactor:601 WARN] Lost event TRB type 33, completion code: 5: Trb { data: 0000000001B27C90, status: 05000000, control: 00008401 }
+1970-01-01T00-01-26.519Z [@xhcid::xhci::irq_reactor:601 WARN] Lost event TRB type 33, completion code: 5: Trb { data: 0000000001B27CA0, status: 05000000, control: 00008401 }
+1970-01-01T00-01-26.544Z [@xhcid::xhci::irq_reactor:601 WARN] Lost event TRB type 33, completion code: 5: Trb { data: 0000000001B27CB0, status: 05000000, control: 00008401 }
+1970-01-01T00-01-26.568Z [@xhcid::xhci::irq_reactor:601 WARN] Lost event TRB type 33, completion code: 5: Trb { data: 0000000001B27CC0, status: 05000000, control: 00008401 }
+1970-01-01T00-01-26.593Z [@xhcid::xhci::irq_reactor:601 WARN] Lost event TRB type 33, completion code: 5: Trb { data: 0000000001B27CD0, status: 05000000, control: 00008401 }
+1970-01-01T00-01-26.618Z [@xhcid::xhci::irq_reactor:601 WARN] Lost event TRB type 33, completion code: 5: Trb { data: 0000000001B27CE0, status: 05000000, control: 00008401 }
+1970-01-01T00-01-26.643Z [@xhcid::xhci::irq_reactor:601 WARN] Lost event TRB type 33, completion code: 5: Trb { data: 0000000001B27CF0, status: 05000000, control: 00008401 }
+1970-01-01T00-01-26.668Z [@xhcid::xhci::irq_reactor:601 WARN] Lost event TRB type 33, completion code: 5: Trb { data: 0000000001B27D00, status: 05000000, control: 00008401 }
+1970-01-01T00-01-26.693Z [@xhcid::xhci::irq_reactor:601 WARN] Lost event TRB type 33, completion code: 5: Trb { data: 0000000001B27D10, status: 05000000, control: 00008401 }
+1970-01-01T00-01-26.717Z [@xhcid::xhci::irq_reactor:601 WARN] Lost event TRB type 33, completion code: 5: Trb { data: 0000000001B27D20, status: 05000000, control: 00008401 }
+1970-01-01T00-01-26.742Z [@xhcid::xhci::irq_reactor:601 WARN] Lost event TRB type 33, completion code: 5: Trb { data: 0000000001B27D30, status: 05000000, control: 00008401 }
+1970-01-01T00-01-26.767Z [@xhcid::xhci::irq_reactor:601 WARN] Lost event TRB type 33, completion code: 5: Trb { data: 0000000001B27D40, status: 05000000, control: 00008401 }
+1970-01-01T00-01-26.792Z [@xhcid::xhci::irq_reactor:601 WARN] Lost event TRB type 33, completion code: 5: Trb { data: 0000000001B27D50, status: 05000000, control: 00008401 }
+1970-01-01T00-01-26.817Z [@xhcid::xhci::irq_reactor:601 WARN] Lost event TRB type 33, completion code: 5: Trb { data: 0000000001B27D60, status: 05000000, control: 00008401 }
+1970-01-01T00-01-26.842Z [@xhcid::xhci::irq_reactor:601 WARN] Lost event TRB type 33, completion code: 5: Trb { data: 0000000001B27D70, status: 05000000, control: 00008401 }
+1970-01-01T00-01-26.866Z [@xhcid::xhci::irq_reactor:601 WARN] Lost event TRB type 33, completion code: 5: Trb { data: 0000000001B27D80, status: 05000000, control: 00008401 }
+1970-01-01T00-01-26.891Z [@xhcid::xhci::irq_reactor:601 WARN] Lost event TRB type 33, completion code: 5: Trb { data: 0000000001B27D90, status: 05000000, control: 00008401 }
+1970-01-01T00-01-26.916Z [@xhcid::xhci::irq_reactor:601 WARN] Lost event TRB type 33, completion code: 5: Trb { data: 0000000001B27DA0, status: 05000000, control: 00008401 }
+1970-01-01T00-01-26.941Z [@xhcid::xhci::irq_reactor:601 WARN] Lost event TRB type 33, completion code: 5: Trb { data: 0000000001B27DB0, status: 05000000, control: 00008401 }
+1970-01-01T00-01-26.966Z [@xhcid::xhci::irq_reactor:601 WARN] Lost event TRB type 33, completion code: 5: Trb { data: 0000000001B27DC0, status: 05000000, control: 00008401 }
+1970-01-01T00-01-26.990Z [@xhcid::xhci::irq_reactor:601 WARN] Lost event TRB type 33, completion code: 5: Trb { data: 0000000001B27DD0, status: 05000000, control: 00008401 }
+1970-01-01T00-01-27.015Z [@xhcid::xhci::irq_reactor:601 WARN] Lost event TRB type 33, completion code: 5: Trb { data: 0000000001B27DE0, status: 05000000, control: 00008401 }
+1970-01-01T00-01-27.040Z [@xhcid::xhci::irq_reactor:601 WARN] Lost event TRB type 33, completion code: 5: Trb { data: 0000000001B27DF0, status: 05000000, control: 00008401 }
+1970-01-01T00-01-27.065Z [@xhcid::xhci::irq_reactor:601 WARN] Lost event TRB type 33, completion code: 5: Trb { data: 0000000001B27E00, status: 05000000, control: 00008401 }
+1970-01-01T00-01-27.090Z [@xhcid::xhci::irq_reactor:601 WARN] Lost event TRB type 33, completion code: 5: Trb { data: 0000000001B27E10, status: 05000000, control: 00008401 }
+1970-01-01T00-01-27.115Z [@xhcid::xhci::irq_reactor:601 WARN] Lost event TRB type 33, completion code: 5: Trb { data: 0000000001B27E20, status: 05000000, control: 00008401 }
+1970-01-01T00-01-27.140Z [@xhcid::xhci::irq_reactor:601 WARN] Lost event TRB type 33, completion code: 5: Trb { data: 0000000001B27E30, status: 05000000, control: 00008401 }
+1970-01-01T00-01-27.164Z [@xhcid::xhci::irq_reactor:601 WARN] Lost event TRB type 33, completion code: 5: Trb { data: 0000000001B27E40, status: 05000000, control: 00008401 }
+1970-01-01T00-01-27.189Z [@xhcid::xhci::irq_reactor:601 WARN] Lost event TRB type 33, completion code: 5: Trb { data: 0000000001B27E50, status: 05000000, control: 00008401 }
+1970-01-01T00-01-27.214Z [@xhcid::xhci::irq_reactor:601 WARN] Lost event TRB type 33, completion code: 5: Trb { data: 0000000001B27E60, status: 05000000, control: 00008401 }
+1970-01-01T00-01-27.239Z [@xhcid::xhci::irq_reactor:601 WARN] Lost event TRB type 33, completion code: 5: Trb { data: 0000000001B27E70, status: 05000000, control: 00008401 }
+1970-01-01T00-01-27.264Z [@xhcid::xhci::irq_reactor:601 WARN] Lost event TRB type 33, completion code: 5: Trb { data: 0000000001B27E80, status: 05000000, control: 00008401 }
+1970-01-01T00-01-27.288Z [@xhcid::xhci::irq_reactor:601 WARN] Lost event TRB type 33, completion code: 5: Trb { data: 0000000001B27E90, status: 05000000, control: 00008401 }
+1970-01-01T00-01-27.313Z [@xhcid::xhci::irq_reactor:601 WARN] Lost event TRB type 33, completion code: 5: Trb { data: 0000000001B27EA0, status: 05000000, control: 00008401 }
+1970-01-01T00-01-27.338Z [@xhcid::xhci::scheme:702 WARN] port 1: CUSTOM_DEVICE_REQ timed out after 5 s, stopping endpoint 0
+1970-01-01T00-01-27.358Z [@xhcid::xhci::irq_reactor:601 WARN] Lost event TRB type 33, completion code: 5: Trb { data: 0000000001B27EB0, status: 05000000, control: 00008401 }
+1970-01-01T00-01-27.383Z [@xhcid::xhci::irq_reactor:601 WARN] Lost event TRB type 33, completion code: 5: Trb { data: 0000000001B27EC0, status: 05000000, control: 00008401 }
+1970-01-01T00-01-27.408Z [@xhcid::xhci::irq_reactor:601 WARN] Lost event TRB type 33, completion code: 5: Trb { data: 0000000001B27ED0, status: 05000000, control: 00008401 }
+1970-01-01T00-01-27.433Z [@xhcid::xhci::irq_reactor:601 WARN] Lost event TRB type 33, completion code: 5: Trb { data: 0000000001B27EE0, status: 05000000, control: 00008401 }
+1970-01-01T00-01-27.458Z [@xhcid::xhci::irq_reactor:601 WARN] Lost event TRB type 33, completion code: 5: Trb { data: 0000000001B27EF0, status: 05000000, control: 00008401 }
+1970-01-01T00-01-27.482Z [@xhcid::xhci::irq_reactor:601 WARN] Lost event TRB type 33, completion code: 5: Trb { data: 0000000001B27F00, status: 05000000, control: 00008401 }
+1970-01-01T00-01-27.507Z [@xhcid::xhci::irq_reactor:601 WARN] Lost event TRB type 33, completion code: 5: Trb { data: 0000000001B27F10, status: 05000000, control: 00008401 }
+1970-01-01T00-01-27.532Z [@xhcid::xhci::irq_reactor:601 WARN] Lost event TRB type 33, completion code: 5: Trb { data: 0000000001B27F20, status: 05000000, control: 00008401 }
+1970-01-01T00-01-27.557Z [@xhcid::xhci::irq_reactor:601 WARN] Lost event TRB type 33, completion code: 5: Trb { data: 0000000001B27F30, status: 05000000, control: 00008401 }
+1970-01-01T00-01-27.582Z [@xhcid::xhci::irq_reactor:601 WARN] Lost event TRB type 33, completion code: 5: Trb { data: 0000000001B27F40, status: 05000000, control: 00008401 }
+1970-01-01T00-01-27.607Z [@xhcid::xhci::irq_reactor:601 WARN] Lost event TRB type 33, completion code: 5: Trb { data: 0000000001B27F50, status: 05000000, control: 00008401 }
+1970-01-01T00-01-27.631Z [@xhcid::xhci::irq_reactor:601 WARN] Lost event TRB type 33, completion code: 5: Trb { data: 0000000001B27F60, status: 05000000, control: 00008401 }
+1970-01-01T00-01-27.656Z [@xhcid::xhci::irq_reactor:601 WARN] Lost event TRB type 33, completion code: 5: Trb { data: 0000000001B27F70, status: 05000000, control: 00008401 }
+1970-01-01T00-01-27.681Z [@xhcid::xhci::irq_reactor:601 WARN] Lost event TRB type 33, completion code: 5: Trb { data: 0000000001B27F80, status: 05000000, control: 00008401 }
+1970-01-01T00-01-27.706Z [@xhcid::xhci::irq_reactor:601 WARN] Lost event TRB type 33, completion code: 5: Trb { data: 0000000001B27F90, status: 05000000, control: 00008401 }
+1970-01-01T00-01-27.731Z [@xhcid::xhci::irq_reactor:601 WARN] Lost event TRB type 33, completion code: 5: Trb { data: 0000000001B27FA0, status: 05000000, control: 00008401 }
+1970-01-01T00-01-27.756Z [@xhcid::xhci::irq_reactor:601 WARN] Lost event TRB type 33, completion code: 5: Trb { data: 0000000001B27FB0, status: 05000000, control: 00008401 }
+1970-01-01T00-01-27.780Z [@xhcid::xhci::irq_reactor:601 WARN] Lost event TRB type 33, completion code: 5: Trb { data: 0000000001B27FC0, status: 05000000, control: 00008401 }
+1970-01-01T00-01-27.805Z [@xhcid::xhci::irq_reactor:601 WARN] Lost event TRB type 33, completion code: 5: Trb { data: 0000000001B27FD0, status: 05000000, control: 00008401 }
+1970-01-01T00-01-27.830Z [@xhcid::xhci::irq_reactor:601 WARN] Lost event TRB type 33, completion code: 5: Trb { data: 0000000001B27FE0, status: 05000000, control: 00008401 }

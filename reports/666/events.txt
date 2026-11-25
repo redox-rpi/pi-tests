@@ -1,0 +1,19 @@
+start 17:42:28
+staged /home/zehrer/redox-rpi-graphics/keep/ut8n-netboot (build_id = "v0.7.0-dev-65-ge0bf8af5+x0aa4") 17:42:28
+boot: login, U-Boot retries 0, banner: redox-rpi v0.7.0-dev-65-ge0bf8af5+x0aa4 (netboot, 2026-11-25T17:39:38Z) 17:43:30
+A boot: login; redox-rpi v0.7.0-dev-65-ge0bf8af5+x0aa4 (netboot, 2026-11-25T17:39:38Z) 17:43:30
+A devsh up 17:43:31
+A no-op: lines 3; summary: sending 1000 no-op commands ; last progress: no-op 200 done, cmd_ring 219 cycle 1; Lost event 255; resources lines after: 1; last resources: resources commands 256 cmd_ring 1/256 cycle 0 workers 3 handles 16 ports 3 17:45:09
+A panic/UNHANDLED 0; reboots after login 0 17:45:09
+staged /home/zehrer/redox-rpi-graphics/keep/ut8-netboot (build_id = "v0.7.0-dev-66-gf8bc952d+x0aa4") 17:45:09
+boot: login, U-Boot retries 0, banner: redox-rpi v0.7.0-dev-66-gf8bc952d+x0aa4 (netboot, 2026-11-25T17:37:52Z) 17:46:09
+B boot: login; redox-rpi v0.7.0-dev-66-gf8bc952d+x0aa4 (netboot, 2026-11-25T17:37:52Z) 17:46:09
+B devsh up 17:46:10
+B no-op: lines 1; summary: sending 2000 no-op commands ; last progress: ; Lost event 127; resources lines after: 1; last resources: resources commands 128 cmd_ring 1/128 cycle 0 workers 2 handles 13 ports 3 17:48:03
+B power 1: kbd ep1 no; kill 1.1 0; attach 1.1 0; new mouse 0; CONTROL_TRANSFER failed 0; status not read 0; Lost event 0; timed out 5 s 0; last resources:  17:48:39
+B power 2: kbd ep1 no; kill 1.1 0; attach 1.1 0; new mouse 0; CONTROL_TRANSFER failed 0; status not read 0; Lost event 0; timed out 5 s 0; last resources:  17:49:15
+B power 3: kbd ep1 no; kill 1.1 0; attach 1.1 0; new mouse 0; CONTROL_TRANSFER failed 0; status not read 0; Lost event 0; timed out 5 s 0; last resources:  17:49:51
+B panic/UNHANDLED 0; reboots after login 0 17:49:51
+staged /home/zehrer/redox-rpi-graphics/keep/pi400-fbshot-stage (build_id = "v0.6.0-dev-105-gbef6d90a+xcf2a") 17:49:51
+boot: login, U-Boot retries 0, banner: redox-rpi v0.6.0-dev-105-gbef6d90a+xcf2a (netboot, 2026-11-18T04:35:59Z) 17:50:41
+restore: login 17:50:41
