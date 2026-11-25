@@ -1,0 +1,106 @@
+### serial login done
+
+### ls -l /dev/dri  (typing 2.1 s, total 2.4 s)
+total 4
+lrwxrwxrwx 1 root root 21 Nov 25  2026 card0 -> /scheme/display.vc4/7
+### drm_info; echo rc=$?  (typing 3.0 s, total 3.3 s)
+rc=0
+### modetest -D /dev/dri/card0; echo rc=$?  (typing 5.7 s, total 6.0 s)
+failed to open device '(null)' with busid '/dev/dri/card0': Invalid argument
+rc=255
+### modeprint; echo rc=$?  (typing 3.2 s, total 3.5 s)
+Please add modulename as first argument
+rc=1
+### drmdevice; echo rc=$?  (typing 3.2 s, total 3.5 s)
+--- Checking the number of DRM device available ---
+--- Devices reported 1 ---
+--- Retrieving devices information (PCI device revision is ignored) ---
+device[0]
++-> available_nodes 0x0001
++-> nodes
+|   +-> nodes[0] /dev/dri/card63
++-> bustype 0000
+|   +-> pci
+|       +-> domain 0000
+|       +-> bus    00
+|       +-> dev    00
+|       +-> func   0
++-> deviceinfo
+    +-> pci
+        +-> vendor_id     0000
+        +-> device_id     0000
+        +-> subvendor_id  0000
+        +-> subdevice_id  0000
+        +-> revision_id   IGNORED
+--- Opening device node /dev/dri/card63 ---
+--- Retrieving device info, for node /dev/dri/card63 ---
+rc=0
+### proptest -D /dev/dri/card0; echo rc=$?  (typing 5.7 s, total 6.0 s)
+failed to open device '(null)' with busid '/dev/dri/card0': Invalid argument
+rc=1
+### ls -l /dev/dri  (typing 2.1 s, total 2.7 s)
+total 256
+-rw-r----- 1 root root 0 Jan  1 00:00 card0
+-rw-r----- 1 root root 0 Jan  1 00:00 card1
+-rw-r----- 1 root root 0 Jan  1 00:00 card10
+-rw-r----- 1 root root 0 Jan  1 00:00 card11
+-rw-r----- 1 root root 0 Jan  1 00:00 card12
+-rw-r----- 1 root root 0 Jan  1 00:00 card13
+-rw-r----- 1 root root 0 Jan  1 00:00 card14
+-rw-r----- 1 root root 0 Jan  1 00:00 card15
+-rw-r----- 1 root root 0 Jan  1 00:00 card16
+-rw-r----- 1 root root 0 Jan  1 00:00 card17
+-rw-r----- 1 root root 0 Jan  1 00:00 card18
+-rw-r----- 1 root root 0 Jan  1 00:00 card19
+-rw-r----- 1 root root 0 Jan  1 00:00 card2
+-rw-r----- 1 root root 0 Jan  1 00:00 card20
+-rw-r----- 1 root root 0 Jan  1 00:00 card21
+-rw-r----- 1 root root 0 Jan  1 00:00 card22
+-rw-r----- 1 root root 0 Jan  1 00:00 card23
+-rw-r----- 1 root root 0 Jan  1 00:00 card24
+-rw-r----- 1 root root 0 Jan  1 00:00 card25
+-rw-r----- 1 root root 0 Jan  1 00:00 card26
+-rw-r----- 1 root root 0 Jan  1 00:00 card27
+-rw-r----- 1 root root 0 Jan  1 00:00 card28
+-rw-r----- 1 root root 0 Jan  1 00:00 card29
+-rw-r----- 1 root root 0 Jan  1 00:00 card3
+-rw-r----- 1 root root 0 Jan  1 00:00 card30
+-rw-r----- 1 root root 0 Jan  1 00:00 card31
+-rw-r----- 1 root root 0 Jan  1 00:00 card32
+-rw-r----- 1 root root 0 Jan  1 00:00 card33
+-rw-r----- 1 root root 0 Jan  1 00:00 card34
+-rw-r----- 1 root root 0 Jan  1 00:00 card35
+-rw-r----- 1 root root 0 Jan  1 00:00 card36
+-rw-r----- 1 root root 0 Jan  1 00:00 card37
+-rw-r----- 1 root root 0 Jan  1 00:00 card38
+-rw-r----- 1 root root 0 Jan  1 00:00 card39
+-rw-r----- 1 root root 0 Jan  1 00:00 card4
+-rw-r----- 1 root root 0 Jan  1 00:00 card40
+-rw-r----- 1 root root 0 Jan  1 00:00 card41
+-rw-r----- 1 root root 0 Jan  1 00:00 card42
+-rw-r----- 1 root root 0 Jan  1 00:00 card43
+-rw-r----- 1 root root 0 Jan  1 00:00 card44
+-rw-r----- 1 root root 0 Jan  1 00:00 card45
+-rw-r----- 1 root root 0 Jan  1 00:00 card46
+-rw-r----- 1 root root 0 Jan  1 00:00 card47
+-rw-r----- 1 root root 0 Jan  1 00:00 card48
+-rw-r----- 1 root root 0 Jan  1 00:00 card49
+-rw-r----- 1 root root 0 Jan  1 00:00 card5
+-rw-r----- 1 root root 0 Jan  1 00:00 card50
+-rw-r----- 1 root root 0 Jan  1 00:00 card51
+-rw-r----- 1 root root 0 Jan  1 00:00 card52
+-rw-r----- 1 root root 0 Jan  1 00:00 card53
+-rw-r----- 1 root root 0 Jan  1 00:00 card54
+-rw-r----- 1 root root 0 Jan  1 00:00 card55
+-rw-r----- 1 root root 0 Jan  1 00:00 card56
+-rw-r----- 1 root root 0 Jan  1 00:00 card57
+-rw-r----- 1 root root 0 Jan  1 00:00 card58
+-rw-r----- 1 root root 0 Jan  1 00:00 card59
+-rw-r----- 1 root root 0 Jan  1 00:00 card6
+-rw-r----- 1 root root 0 Jan  1 00:00 card60
+-rw-r----- 1 root root 0 Jan  1 00:00 card61
+-rw-r----- 1 root root 0 Jan  1 00:00 card62
+-rw-r----- 1 root root 0 Jan  1 00:00 card63
+-rw-r----- 1 root root 0 Jan  1 00:00 card7
+-rw-r----- 1 root root 0 Jan  1 00:00 card8
+-rw-r----- 1 root root 0 Jan  1 00:00 card9

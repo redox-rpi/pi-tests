@@ -1,0 +1,54 @@
+### 1ls: ls -l /dev/dri /dev/dri/; echo rc=$?  (0.3 s)
+/dev/dri:
+total 4
+lrwxrwxrwx 1 root root 21 Nov 25  2026 card0 -> /scheme/display.vc4/7
+/dev/dri/:
+total 4
+lrwxrwxrwx 1 root root 21 Nov 25  2026 card0 -> /scheme/display.vc4/7
+rc=0
+### 1drm_info: drm_info &> /tmp/1drm_info.txt; echo rc=$?; wc -l /tmp/1drm_info.txt  (0.3 s)
+rc=0
+0 /tmp/1drm_info.txt
+### 1drm_info-out: cat /tmp/1drm_info.txt  (0.3 s)
+
+### 2modetest: modetest -D /dev/dri/card0 &> /tmp/2modetest.txt; echo rc=$?; wc -l /tmp/2modetest.txt  (0.5 s)
+rc=255
+1 /tmp/2modetest.txt
+### 2modetest-out: cat /tmp/2modetest.txt  (0.3 s)
+failed to open device '(null)' with busid '/dev/dri/card0': Invalid argument
+### 2modeprint: modeprint &> /tmp/2modeprint.txt; echo rc=$?; wc -l /tmp/2modeprint.txt  (0.3 s)
+rc=1
+1 /tmp/2modeprint.txt
+### 2modeprint-out: cat /tmp/2modeprint.txt  (0.3 s)
+Please add modulename as first argument
+### 2drmdevice: drmdevice &> /tmp/2drmdevice.txt; echo rc=$?; wc -l /tmp/2drmdevice.txt  (0.4 s)
+rc=0
+23 /tmp/2drmdevice.txt
+### 2drmdevice-out: cat /tmp/2drmdevice.txt  (0.3 s)
+--- Checking the number of DRM device available ---
+--- Devices reported 1 ---
+--- Retrieving devices information (PCI device revision is ignored) ---
+device[0]
++-> available_nodes 0x0001
++-> nodes
+|   +-> nodes[0] /dev/dri/card63
++-> bustype 0000
+|   +-> pci
+|       +-> domain 0000
+|       +-> bus    00
+|       +-> dev    00
+|       +-> func   0
++-> deviceinfo
++-> pci
++-> vendor_id     0000
++-> device_id     0000
++-> subvendor_id  0000
++-> subdevice_id  0000
++-> revision_id   IGNORED
+--- Opening device node /dev/dri/card63 ---
+--- Retrieving device info, for node /dev/dri/card63 ---
+### 2proptest: proptest -D /dev/dri/card0 &> /tmp/2proptest.txt; echo rc=$?; wc -l /tmp/2proptest.txt  (0.4 s)
+rc=1
+1 /tmp/2proptest.txt
+### 2proptest-out: cat /tmp/2proptest.txt  (0.3 s)
+failed to open device '(null)' with busid '/dev/dri/card0': Invalid argument

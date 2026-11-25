@@ -1,0 +1,43 @@
+### v-drm_info-dev: drm_info /dev/dri/card0 &> /tmp/v-drm_info-dev.txt; echo rc=$?; wc -l /tmp/v-drm_info-dev.txt  (0.4 s)
+rc=0
+1 /tmp/v-drm_info-dev.txt
+### v-drm_info-dev-out: /usr/bin/head -n 200 /tmp/v-drm_info-dev.txt  (0.3 s)
+/dev/dri/card0: No such device
+### v-drm_info-json: drm_info -j &> /tmp/v-drm_info-json.txt; echo rc=$?; wc -l /tmp/v-drm_info-json.txt  (0.3 s)
+rc=0
+0 /tmp/v-drm_info-json.txt
+### v-drm_info-json-out: /usr/bin/head -n 200 /tmp/v-drm_info-json.txt  (0.3 s)
+{}
+### v-modetest-M: modetest -M vc4 &> /tmp/v-modetest-M.txt; echo rc=$?; wc -l /tmp/v-modetest-M.txt  (0.5 s)
+rc=255
+1 /tmp/v-modetest-M.txt
+### v-modetest-M-out: /usr/bin/head -n 200 /tmp/v-modetest-M.txt  (0.3 s)
+failed to open device 'vc4' with busid '(null)': Bad file number
+### v-modetest-M-c: modetest -M vc4 -c &> /tmp/v-modetest-M-c.txt; echo rc=$?; wc -l /tmp/v-modetest-M-c.txt  (0.4 s)
+rc=255
+1 /tmp/v-modetest-M-c.txt
+### v-modetest-M-c-out: /usr/bin/head -n 200 /tmp/v-modetest-M-c.txt  (0.3 s)
+failed to open device 'vc4' with busid '(null)': Bad file number
+### v-modeprint: modeprint vc4 &> /tmp/v-modeprint.txt; echo rc=$?; wc -l /tmp/v-modeprint.txt  (0.4 s)
+rc=1
+2 /tmp/v-modeprint.txt
+### v-modeprint-out: /usr/bin/head -n 200 /tmp/v-modeprint.txt  (0.3 s)
+Starting test
+Failed to open the card fd (-1)
+### v-proptest-M: proptest -M vc4 &> /tmp/v-proptest-M.txt; echo rc=$?; wc -l /tmp/v-proptest-M.txt  (0.4 s)
+rc=1
+1 /tmp/v-proptest-M.txt
+### v-proptest-M-out: /usr/bin/head -n 200 /tmp/v-proptest-M.txt  (0.3 s)
+failed to open device 'vc4' with busid '(null)': Bad file number
+### v-modetest-none: modetest -c &> /tmp/v-modetest-none.txt; echo rc=$?; wc -l /tmp/v-modetest-none.txt  (0.3 s)
+rc=255
+2 /tmp/v-modetest-none.txt
+### v-modetest-none-out: /usr/bin/head -n 200 /tmp/v-modetest-none.txt  (0.3 s)
+trying to open device '/dev/dri/card63'... is not a KMS device
+no device found
+### v-ls63: ls -l /dev/dri/card63 /scheme/display.vc4 &> /tmp/v-ls63.txt; echo rc=$?; wc -l /tmp/v-ls63.txt  (0.4 s)
+rc=2
+2 /tmp/v-ls63.txt
+### v-ls63-out: /usr/bin/head -n 200 /tmp/v-ls63.txt  (0.3 s)
+ls: cannot access '/scheme/display.vc4': No such device
+-rw-r----- 1 root root 0 Jan  1 00:00 /dev/dri/card63

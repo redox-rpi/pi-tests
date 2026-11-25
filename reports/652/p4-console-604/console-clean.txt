@@ -1,0 +1,381 @@
+### serial login done
+
+### ls -l /dev/dri  (typing 2.1 s, total 2.4 s)
+total 4
+lrwxrwxrwx 1 root root 21 Nov 25  2026 card0 -> /scheme/display.vc4/7
+### drm_info /dev/dri/card0; echo rc=$?  (typing 5.3 s, total 6.2 s)
+drmGetDevice: Invalid argument
+drmModeGetPropertyBlob: No such file or directory
+Node: /dev/dri/card0
+├───Driver: vc4d (VideoCore IV HVS) version 1.4.0
+│   ├───DRM_CLIENT_CAP_STEREO_3D not supported
+│   ├───DRM_CLIENT_CAP_UNIVERSAL_PLANES supported
+│   ├───DRM_CLIENT_CAP_ATOMIC not supported
+│   ├───DRM_CLIENT_CAP_ASPECT_RATIO not supported
+│   ├───DRM_CLIENT_CAP_WRITEBACK_CONNECTORS not supported
+│   ├───DRM_CLIENT_CAP_CURSOR_PLANE_HOTSPOT not supported
+│   ├───DRM_CAP_DUMB_BUFFER = 1
+│   ├───DRM_CAP_VBLANK_HIGH_CRTC not supported
+│   ├───DRM_CAP_DUMB_PREFERRED_DEPTH = 24
+│   ├───DRM_CAP_DUMB_PREFER_SHADOW = 0
+│   ├───DRM_CAP_PRIME not supported
+│   ├───DRM_CAP_TIMESTAMP_MONOTONIC = 1
+│   ├───DRM_CAP_ASYNC_PAGE_FLIP not supported
+│   ├───DRM_CAP_CURSOR_WIDTH = 64
+│   ├───DRM_CAP_CURSOR_HEIGHT = 64
+│   ├───DRM_CAP_ADDFB2_MODIFIERS not supported
+│   ├───DRM_CAP_PAGE_FLIP_TARGET not supported
+│   ├───DRM_CAP_CRTC_IN_VBLANK_EVENT not supported
+│   ├───DRM_CAP_SYNCOBJ not supported
+│   ├───DRM_CAP_SYNCOBJ_TIMELINE not supported
+│   └───DRM_CAP_ATOMIC_ASYNC_PAGE_FLIP not supported
+├───Framebuffer size
+│   ├───Width: [1, 4096]
+│   └───Height: [1, 4096]
+├───Connectors
+│   └───Connector 0
+│       ├───Object ID: 27
+│       ├───Type: unknown
+│       ├───Status: connected
+│       ├───Physical size: 0×0 mm
+│       ├───Subpixel: unknown
+│       ├───Encoders: {0}
+│       ├───Modes
+│       │   └───640×480@60.00 preferred driver 
+│       └───Properties
+│           ├───"EDID" (immutable): blob = 0
+│           ├───"DPMS": enum {On, Standby, Suspend, Off} = On
+│           ├───"TILE" (immutable): blob = 0
+│           └───"CRTC_ID" (atomic): object CRTC = 22
+├───Encoders
+│   └───Encoder 0
+│       ├───Object ID: 26
+│       ├───Type: none
+│       ├───CRTCS: {0}
+│       └───Clones: {0}
+├───CRTCs
+│   └───CRTC 0
+│       ├───Object ID: 22
+│       ├───Legacy info
+│       │   ├───Mode: 640×480@60.00 preferred driver 
+│       │   └───Gamma size: 256
+│       └───Properties
+│           ├───"ACTIVE" (atomic): range [0, 1] = 1
+│           └───"GAMMA_LUT_SIZE" (immutable): range [0, UINT32_MAX] = 1024
+└───Planes
+    ├───Plane 0
+    │   ├───Object ID: 20
+    │   ├───CRTCs: {0}
+    │   ├───Legacy info
+    │   │   ├───FB ID: 29
+    │   │   │   ├───Object ID: 29
+    │   │   │   ├───Size: 640×480
+    │   │   │   ├───Format: ARGB8888 (0x34325241)
+    │   │   │   └───Planes:
+    │   │   │       └───Plane 0: offset = 0, pitch = 2560 bytes
+    │   │   └───Formats:
+    │   │       └───ARGB8888 (0x34325241)
+    │   └───Properties
+    │       ├───"type" (immutable): enum {Overlay, Primary, Cursor} = Primary
+    │       ├───"FB_ID" (atomic): object framebuffer = 29
+    │       │   ├───Object ID: 29
+    │       │   ├───Size: 640×480
+    │       │   ├───Format: ARGB8888 (0x34325241)
+    │       │   └───Planes:
+    │       │       └───Plane 0: offset = 0, pitch = 2560 bytes
+    │       ├───"CRTC_ID" (atomic): object CRTC = 22
+    │       ├───"CRTC_X" (atomic): srange [INT32_MIN, INT32_MAX] = 0
+    │       ├───"CRTC_Y" (atomic): srange [INT32_MIN, INT32_MAX] = 0
+    │       ├───"CRTC_W" (atomic): range [0, UINT32_MAX] = 0
+    │       ├───"CRTC_H" (atomic): range [0, UINT32_MAX] = 0
+    │       ├───"SRC_X" (atomic): range [0, UINT32_MAX] = 0
+    │       ├───"SRC_Y" (atomic): range [0, UINT32_MAX] = 0
+    │       ├───"SRC_W" (atomic): range [0, UINT32_MAX] = 0
+    │       └───"SRC_H" (atomic): range [0, UINT32_MAX] = 0
+    ├───Plane 1
+    │   ├───Object ID: 21
+    │   ├───CRTCs: {0}
+    │   ├───Legacy info
+    │   │   ├───FB ID: 0
+    │   │   └───Formats:
+    │   │       └───ARGB8888 (0x34325241)
+    │   └───Properties
+    │       ├───"type" (immutable): enum {Overlay, Primary, Cursor} = Cursor
+    │       ├───"FB_ID" (atomic): object framebuffer = 0
+    │       ├───"CRTC_ID" (atomic): object CRTC = 0
+    │       ├───"CRTC_X" (atomic): srange [INT32_MIN, INT32_MAX] = 0
+    │       ├───"CRTC_Y" (atomic): srange [INT32_MIN, INT32_MAX] = 0
+    │       ├───"CRTC_W" (atomic): range [0, UINT32_MAX] = 0
+    │       ├───"CRTC_H" (atomic): range [0, UINT32_MAX] = 0
+    │       ├───"SRC_X" (atomic): range [0, UINT32_MAX] = 0
+    │       ├───"SRC_Y" (atomic): range [0, UINT32_MAX] = 0
+    │       ├───"SRC_W" (atomic): range [0, UINT32_MAX] = 0
+    │       └───"SRC_H" (atomic): range [0, UINT32_MAX] = 0
+    ├───Plane 2
+    │   ├───Object ID: 23
+    │   ├───CRTCs: {0}
+    │   ├───Legacy info
+    │   │   ├───FB ID: 0
+    │   │   └───Formats:
+    │   │       └───ARGB8888 (0x34325241)
+    │   └───Properties
+    │       ├───"type" (immutable): enum {Overlay, Primary, Cursor} = Overlay
+    │       ├───"FB_ID" (atomic): object framebuffer = 0
+    │       ├───"CRTC_ID" (atomic): object CRTC = 0
+    │       ├───"CRTC_X" (atomic): srange [INT32_MIN, INT32_MAX] = 0
+    │       ├───"CRTC_Y" (atomic): srange [INT32_MIN, INT32_MAX] = 0
+    │       ├───"CRTC_W" (atomic): range [0, UINT32_MAX] = 0
+    │       ├───"CRTC_H" (atomic): range [0, UINT32_MAX] = 0
+    │       ├───"SRC_X" (atomic): range [0, UINT32_MAX] = 0
+    │       ├───"SRC_Y" (atomic): range [0, UINT32_MAX] = 0
+    │       ├───"SRC_W" (atomic): range [0, UINT32_MAX] = 0
+    │       └───"SRC_H" (atomic): range [0, UINT32_MAX] = 0
+    ├───Plane 3
+    │   ├───Object ID: 24
+    │   ├───CRTCs: {0}
+    │   ├───Legacy info
+    │   │   ├───FB ID: 0
+    │   │   └───Formats:
+    │   │       └───ARGB8888 (0x34325241)
+    │   └───Properties
+    │       ├───"type" (immutable): enum {Overlay, Primary, Cursor} = Overlay
+    │       ├───"FB_ID" (atomic): object framebuffer = 0
+    │       ├───"CRTC_ID" (atomic): object CRTC = 0
+    │       ├───"CRTC_X" (atomic): srange [INT32_MIN, INT32_MAX] = 0
+    │       ├───"CRTC_Y" (atomic): srange [INT32_MIN, INT32_MAX] = 0
+    │       ├───"CRTC_W" (atomic): range [0, UINT32_MAX] = 0
+    │       ├───"CRTC_H" (atomic): range [0, UINT32_MAX] = 0
+    │       ├───"SRC_X" (atomic): range [0, UINT32_MAX] = 0
+    │       ├───"SRC_Y" (atomic): range [0, UINT32_MAX] = 0
+    │       ├───"SRC_W" (atomic): range [0, UINT32_MAX] = 0
+    │       └───"SRC_H" (atomic): range [0, UINT32_MAX] = 0
+    └───Plane 4
+        ├───Object ID: 25
+        ├───CRTCs: {0}
+        ├───Legacy info
+        │   ├───FB ID: 0
+        │   └───Formats:
+        │       └───ARGB8888 (0x34325241)
+        └───Properties
+            ├───"type" (immutable): enum {Overlay, Primary, Cursor} = Overlay
+            ├───"FB_ID" (atomic): object framebuffer = 0
+            ├───"CRTC_ID" (atomic): object CRTC = 0
+            ├───"CRTC_X" (atomic): srange [INT32_MIN, INT32_MAX] = 0
+            ├───"CRTC_Y" (atomic): srange [INT32_MIN, INT32_MAX] = 0
+            ├───"CRTC_W" (atomic): range [0, UINT32_MAX] = 0
+            ├───"CRTC_H" (atomic): range [0, UINT32_MAX] = 0
+            ├───"SRC_X" (atomic): range [0, UINT32_MAX] = 0
+            ├───"SRC_Y" (atomic): range [0, UINT32_MAX] = 0
+            ├───"SRC_W" (atomic): range [0, UINT32_MAX] = 0
+            └───"SRC_H" (atomic): range [0, UINT32_MAX] = 0
+rc=0
+### ls -l /dev/dri | wc -l  (typing 3.3 s, total 3.6 s)
+2
+### drm_info; echo rc=$?  (typing 3.0 s, total 3.9 s)
+drmGetDevice: Invalid argument
+drmModeGetPropertyBlob: No such file or directory
+Node: /dev/dri/card0
+├───Driver: vc4d (VideoCore IV HVS) version 1.4.0
+│   ├───DRM_CLIENT_CAP_STEREO_3D not supported
+│   ├───DRM_CLIENT_CAP_UNIVERSAL_PLANES supported
+│   ├───DRM_CLIENT_CAP_ATOMIC not supported
+│   ├───DRM_CLIENT_CAP_ASPECT_RATIO not supported
+│   ├───DRM_CLIENT_CAP_WRITEBACK_CONNECTORS not supported
+│   ├───DRM_CLIENT_CAP_CURSOR_PLANE_HOTSPOT not supported
+│   ├───DRM_CAP_DUMB_BUFFER = 1
+│   ├───DRM_CAP_VBLANK_HIGH_CRTC not supported
+│   ├───DRM_CAP_DUMB_PREFERRED_DEPTH = 24
+│   ├───DRM_CAP_DUMB_PREFER_SHADOW = 0
+│   ├───DRM_CAP_PRIME not supported
+│   ├───DRM_CAP_TIMESTAMP_MONOTONIC = 1
+│   ├───DRM_CAP_ASYNC_PAGE_FLIP not supported
+│   ├───DRM_CAP_CURSOR_WIDTH = 64
+│   ├───DRM_CAP_CURSOR_HEIGHT = 64
+│   ├───DRM_CAP_ADDFB2_MODIFIERS not supported
+│   ├───DRM_CAP_PAGE_FLIP_TARGET not supported
+│   ├───DRM_CAP_CRTC_IN_VBLANK_EVENT not supported
+│   ├───DRM_CAP_SYNCOBJ not supported
+│   ├───DRM_CAP_SYNCOBJ_TIMELINE not supported
+│   └───DRM_CAP_ATOMIC_ASYNC_PAGE_FLIP not supported
+├───Framebuffer size
+│   ├───Width: [1, 4096]
+│   └───Height: [1, 4096]
+├───Connectors
+│   └───Connector 0
+│       ├───Object ID: 27
+│       ├───Type: unknown
+│       ├───Status: connected
+│       ├───Physical size: 0×0 mm
+│       ├───Subpixel: unknown
+│       ├───Encoders: {0}
+│       ├───Modes
+│       │   └───640×480@60.00 preferred driver 
+│       └───Properties
+│           ├───"EDID" (immutable): blob = 0
+│           ├───"DPMS": enum {On, Standby, Suspend, Off} = On
+│           ├───"TILE" (immutable): blob = 0
+│           └───"CRTC_ID" (atomic): object CRTC = 22
+├───Encoders
+│   └───Encoder 0
+│       ├───Object ID: 26
+│       ├───Type: none
+│       ├───CRTCS: {0}
+│       └───Clones: {0}
+├───CRTCs
+│   └───CRTC 0
+│       ├───Object ID: 22
+│       ├───Legacy info
+│       │   ├───Mode: 640×480@60.00 preferred driver 
+│       │   └───Gamma size: 256
+│       └───Properties
+│           ├───"ACTIVE" (atomic): range [0, 1] = 1
+│           └───"GAMMA_LUT_SIZE" (immutable): range [0, UINT32_MAX] = 1024
+└───Planes
+    ├───Plane 0
+    │   ├───Object ID: 20
+    │   ├───CRTCs: {0}
+    │   ├───Legacy info
+    │   │   ├───FB ID: 29
+    │   │   │   ├───Object ID: 29
+    │   │   │   ├───Size: 640×480
+    │   │   │   ├───Format: ARGB8888 (0x34325241)
+    │   │   │   └───Planes:
+    │   │   │       └───Plane 0: offset = 0, pitch = 2560 bytes
+    │   │   └───Formats:
+    │   │       └───ARGB8888 (0x34325241)
+    │   └───Properties
+    │       ├───"type" (immutable): enum {Overlay, Primary, Cursor} = Primary
+    │       ├───"FB_ID" (atomic): object framebuffer = 29
+    │       │   ├───Object ID: 29
+    │       │   ├───Size: 640×480
+    │       │   ├───Format: ARGB8888 (0x34325241)
+    │       │   └───Planes:
+    │       │       └───Plane 0: offset = 0, pitch = 2560 bytes
+    │       ├───"CRTC_ID" (atomic): object CRTC = 22
+    │       ├───"CRTC_X" (atomic): srange [INT32_MIN, INT32_MAX] = 0
+    │       ├───"CRTC_Y" (atomic): srange [INT32_MIN, INT32_MAX] = 0
+    │       ├───"CRTC_W" (atomic): range [0, UINT32_MAX] = 0
+    │       ├───"CRTC_H" (atomic): range [0, UINT32_MAX] = 0
+    │       ├───"SRC_X" (atomic): range [0, UINT32_MAX] = 0
+    │       ├───"SRC_Y" (atomic): range [0, UINT32_MAX] = 0
+    │       ├───"SRC_W" (atomic): range [0, UINT32_MAX] = 0
+    │       └───"SRC_H" (atomic): range [0, UINT32_MAX] = 0
+    ├───Plane 1
+    │   ├───Object ID: 21
+    │   ├───CRTCs: {0}
+    │   ├───Legacy info
+    │   │   ├───FB ID: 0
+    │   │   └───Formats:
+    │   │       └───ARGB8888 (0x34325241)
+    │   └───Properties
+    │       ├───"type" (immutable): enum {Overlay, Primary, Cursor} = Cursor
+    │       ├───"FB_ID" (atomic): object framebuffer = 0
+    │       ├───"CRTC_ID" (atomic): object CRTC = 0
+    │       ├───"CRTC_X" (atomic): srange [INT32_MIN, INT32_MAX] = 0
+    │       ├───"CRTC_Y" (atomic): srange [INT32_MIN, INT32_MAX] = 0
+    │       ├───"CRTC_W" (atomic): range [0, UINT32_MAX] = 0
+    │       ├───"CRTC_H" (atomic): range [0, UINT32_MAX] = 0
+    │       ├───"SRC_X" (atomic): range [0, UINT32_MAX] = 0
+    │       ├───"SRC_Y" (atomic): range [0, UINT32_MAX] = 0
+    │       ├───"SRC_W" (atomic): range [0, UINT32_MAX] = 0
+    │       └───"SRC_H" (atomic): range [0, UINT32_MAX] = 0
+    ├───Plane 2
+    │   ├───Object ID: 23
+    │   ├───CRTCs: {0}
+    │   ├───Legacy info
+    │   │   ├───FB ID: 0
+    │   │   └───Formats:
+    │   │       └───ARGB8888 (0x34325241)
+    │   └───Properties
+    │       ├───"type" (immutable): enum {Overlay, Primary, Cursor} = Overlay
+    │       ├───"FB_ID" (atomic): object framebuffer = 0
+    │       ├───"CRTC_ID" (atomic): object CRTC = 0
+    │       ├───"CRTC_X" (atomic): srange [INT32_MIN, INT32_MAX] = 0
+    │       ├───"CRTC_Y" (atomic): srange [INT32_MIN, INT32_MAX] = 0
+    │       ├───"CRTC_W" (atomic): range [0, UINT32_MAX] = 0
+    │       ├───"CRTC_H" (atomic): range [0, UINT32_MAX] = 0
+    │       ├───"SRC_X" (atomic): range [0, UINT32_MAX] = 0
+    │       ├───"SRC_Y" (atomic): range [0, UINT32_MAX] = 0
+    │       ├───"SRC_W" (atomic): range [0, UINT32_MAX] = 0
+    │       └───"SRC_H" (atomic): range [0, UINT32_MAX] = 0
+    ├───Plane 3
+    │   ├───Object ID: 24
+    │   ├───CRTCs: {0}
+    │   ├───Legacy info
+    │   │   ├───FB ID: 0
+    │   │   └───Formats:
+    │   │       └───ARGB8888 (0x34325241)
+    │   └───Properties
+    │       ├───"type" (immutable): enum {Overlay, Primary, Cursor} = Overlay
+    │       ├───"FB_ID" (atomic): object framebuffer = 0
+    │       ├───"CRTC_ID" (atomic): object CRTC = 0
+    │       ├───"CRTC_X" (atomic): srange [INT32_MIN, INT32_MAX] = 0
+    │       ├───"CRTC_Y" (atomic): srange [INT32_MIN, INT32_MAX] = 0
+    │       ├───"CRTC_W" (atomic): range [0, UINT32_MAX] = 0
+    │       ├───"CRTC_H" (atomic): range [0, UINT32_MAX] = 0
+    │       ├───"SRC_X" (atomic): range [0, UINT32_MAX] = 0
+    │       ├───"SRC_Y" (atomic): range [0, UINT32_MAX] = 0
+    │       ├───"SRC_W" (atomic): range [0, UINT32_MAX] = 0
+    │       └───"SRC_H" (atomic): range [0, UINT32_MAX] = 0
+    └───Plane 4
+        ├───Object ID: 25
+        ├───CRTCs: {0}
+        ├───Legacy info
+        │   ├───FB ID: 0
+        │   └───Formats:
+        │       └───ARGB8888 (0x34325241)
+        └───Properties
+            ├───"type" (immutable): enum {Overlay, Primary, Cursor} = Overlay
+            ├───"FB_ID" (atomic): object framebuffer = 0
+            ├───"CRTC_ID" (atomic): object CRTC = 0
+            ├───"CRTC_X" (atomic): srange [INT32_MIN, INT32_MAX] = 0
+            ├───"CRTC_Y" (atomic): srange [INT32_MIN, INT32_MAX] = 0
+            ├───"CRTC_W" (atomic): range [0, UINT32_MAX] = 0
+            ├───"CRTC_H" (atomic): range [0, UINT32_MAX] = 0
+            ├───"SRC_X" (atomic): range [0, UINT32_MAX] = 0
+            ├───"SRC_Y" (atomic): range [0, UINT32_MAX] = 0
+            ├───"SRC_W" (atomic): range [0, UINT32_MAX] = 0
+            └───"SRC_H" (atomic): range [0, UINT32_MAX] = 0
+rc=0
+### ls -l /dev/dri | wc -l  (typing 3.3 s, total 3.6 s)
+2
+### modetest -D /dev/dri/card0 -c; echo rc=$?  (typing 6.2 s, total 6.5 s)
+failed to open device '(null)' with busid '/dev/dri/card0': Invalid argument
+rc=255
+### ls -l /dev/dri | /usr/bin/head -n 4  (typing 5.3 s, total 5.9 s)
+total 256
+lrwxrwxrwx 1 root root 21 Nov 25  2026 card0 -> /scheme/display.vc4/7
+-rw-r----- 1 root root  0 Jan  1 00:01 card1
+-rw-r----- 1 root root  0 Jan  1 00:01 card10
+### drmdevice; echo rc=$?  (typing 3.2 s, total 3.5 s)
+--- Checking the number of DRM device available ---
+--- Devices reported 1 ---
+--- Retrieving devices information (PCI device revision is ignored) ---
+vc4d: check: after 60 s: PASS frames advance, errors [], ctrl 0x828001e0 bkgnd 0x81000000 list 2304 active 2304 stat 0xa12b8103 (mode 2, frame 56)
+device[0]
++-> available_nodes 0x0001
++-> nodes
+|   +-> nodes[0] /dev/dri/card63
++-> bustype 0000
+|   +-> pci
+|       +-> domain 0000
+|       +-> bus    00
+|       +-> dev    00
+|       +-> func   0
++-> deviceinfo
+    +-> pci
+        +-> vendor_id     0000
+        +-> device_id     0000
+        +-> subvendor_id  0000
+        +-> subdevice_id  0000
+        +-> revision_id   IGNORED
+--- Opening device node /dev/dri/card63 ---
+--- Retrieving device info, for node /dev/dri/card63 ---
+rc=0
+### proptest -D /dev/dri/card0; echo rc=$?  (typing 5.7 s, total 6.0 s)
+failed to open device '(null)' with busid '/dev/dri/card0': Invalid argument
+rc=1
+### modeprint vc4; echo rc=$?  (typing 3.8 s, total 4.1 s)
+Starting test
+Failed to open the card fd (-1)
+rc=1

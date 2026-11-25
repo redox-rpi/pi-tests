@@ -1,0 +1,18 @@
+### inputd -A 7  (typing 1.7 s, total 2.0 s)
+
+### drm_info /dev/dri/card0; echo rc=$?  (typing 5.3 s, total 5.6 s)
+drmGetVersion: Bad file number
+drmGetDevice: Bad file number
+drmModeGetResources: Invalid argument
+rc=0
+### modetest -D /dev/dri/card0 -c; echo rc=$?  (typing 6.2 s, total 6.5 s)
+failed to open device '(null)' with busid '/dev/dri/card0': Invalid argument
+rc=255
+### modetest -M vc4 -c; echo rc=$?  (typing 4.5 s, total 4.8 s)
+failed to open device 'vc4' with busid '(null)': Bad file number
+rc=255
+### cat /dev/dri/card0 | wc -c; echo rc=$?  (typing 5.7 s, total 6.0 s)
+0
+rc=0
+### inputd -A 2  (typing 1.7 s, total 2.0 s)
+

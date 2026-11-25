@@ -1,0 +1,10 @@
+### inputd -A 7  (typing 1.7 s, total 2.0 s)
+
+### modetest -D /dev/dri/card0 -s 27:640x480 -v  (typing 6.5 s, total 6.8 s)
+failed to open device '(null)' with busid '/dev/dri/card0': Invalid argument
+###   (typing 0.0 s, total 0.3 s)
+
+### echo rc=$?  (typing 1.5 s, total 1.8 s)
+rc=255
+### inputd -A 2  (typing 1.7 s, total 2.0 s)
+

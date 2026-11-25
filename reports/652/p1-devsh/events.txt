@@ -1,0 +1,12 @@
+start 08:29:17
+staged /home/zehrer/redox-rpi-graphics/keep/kms1-netboot (build_id = "v0.7.0-dev-88-g3c78f93f+x072c") 08:29:17
+boot: login, U-Boot retries 0, banner: redox-rpi v0.7.0-dev-88-g3c78f93f+x072c (netboot, 2026-11-25T08:24:19Z) 08:29:58
+boot: login;  08:30:13
+serial login done 08:30:16
+steps 1-2 rc=0: rc=0 rc=0 rc=255 rc=1 rc=0 rc=1  08:30:22
+connector C= mode M= 08:30:22
+still answers 08:30:23
+reboots after login: 0; panic/UNHANDLED: 0 08:30:23
+staged /home/zehrer/redox-rpi-graphics/keep/pi400-fbshot-stage (build_id = "v0.6.0-dev-105-gbef6d90a+xcf2a") 08:30:23
+boot: login, U-Boot retries 0, banner: redox-rpi v0.6.0-dev-105-gbef6d90a+xcf2a (netboot, 2026-11-18T04:35:59Z) 08:31:11
+restore: login 08:31:11
