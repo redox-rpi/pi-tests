@@ -1,0 +1,24 @@
+start 17:00:01
+staged /home/zehrer/redox-rpi-graphics/keep/ut2-netboot (build_id = "v0.7.0-dev-59-g17990a66+x0aa4") 17:00:01
+boot: login, U-Boot retries 0, banner: redox-rpi v0.7.0-dev-59-g17990a66+x0aa4 (netboot, 2026-11-25T15:52:33Z) 17:00:54
+boot: login; redox-rpi v0.7.0-dev-59-g17990a66+x0aa4 (netboot, 2026-11-25T15:52:33Z) 17:00:54
+devsh up 17:00:55
+step 1 usbhidd: 49:00:00:00.00+00:00:00.06 52:00:00:03.80+00:00:03.82 53:00:00:00.04+00:00:00.10 ; last trace: registered {"1 epEndpNum(0)": 40, "1.4 epEndpNum(1)": 920} pending {"1.1 epEndpNum(1)": 1, "1.4 epEndpNum(2)": 1}  17:01:30
+round 1: kbd ep1 in trace: no; kill 1.1 1; attach 1.1 1; new mouse 1; EXECUTE_TRANSFER 1; 1.4 kill 0; port-status 2; not-recovered 0; trying-again 0; timed-out-5s 0; lost-event 0; errors 1; trace-lines 3; usbhidd 52:00:00:04.74+00:00:04.78 53:00:00:00.04+00:00:00.10 70:00:00:00.00+00:00:00.06  17:02:07
+round 2: kbd ep1 in trace: no; kill 1.1 1; attach 1.1 1; new mouse 1; EXECUTE_TRANSFER 1; 1.4 kill 0; port-status 2; not-recovered 0; trying-again 0; timed-out-5s 0; lost-event 0; errors 1; trace-lines 4; usbhidd 52:00:00:04.93+00:00:04.97 53:00:00:00.04+00:00:00.10 77:00:00:00.00+00:00:00.06  17:02:45
+round 3: kbd ep1 in trace: no; kill 1.1 1; attach 1.1 1; new mouse 1; EXECUTE_TRANSFER 0; 1.4 kill 0; port-status 2; not-recovered 0; trying-again 0; timed-out-5s 0; lost-event 0; errors 0; trace-lines 3; usbhidd 52:00:00:04.93+00:00:04.97 53:00:00:00.04+00:00:00.10 84:00:00:00.00+00:00:00.06  17:03:22
+round 4: kbd ep1 in trace: no; kill 1.1 1; attach 1.1 1; new mouse 1; EXECUTE_TRANSFER 0; 1.4 kill 0; port-status 2; not-recovered 0; trying-again 0; timed-out-5s 0; lost-event 0; errors 0; trace-lines 4; usbhidd 52:00:00:04.93+00:00:04.97 53:00:00:00.04+00:00:00.10 91:00:00:00.00+00:00:00.06  17:03:59
+round 5: kbd ep1 in trace: no; kill 1.1 1; attach 1.1 0; new mouse 0; EXECUTE_TRANSFER 0; 1.4 kill 0; port-status 1; not-recovered 0; trying-again 7; timed-out-5s 6; lost-event 0; errors 13; trace-lines 4; usbhidd 52:00:00:04.93+00:00:04.97 53:00:00:00.04+00:00:00.10  17:04:51
+round 6: kbd ep1 in trace: no; kill 1.1 0; attach 1.1 0; new mouse 0; EXECUTE_TRANSFER 0; 1.4 kill 0; port-status 0; not-recovered 0; trying-again 6; timed-out-5s 6; lost-event 0; errors 12; trace-lines 3; usbhidd 52:00:00:04.93+00:00:04.97 53:00:00:00.04+00:00:00.10  17:05:29
+round 7: kbd ep1 in trace: no; kill 1.1 0; attach 1.1 0; new mouse 0; EXECUTE_TRANSFER 0; 1.4 kill 0; port-status 0; not-recovered 0; trying-again 6; timed-out-5s 6; lost-event 0; errors 12; trace-lines 3; usbhidd 52:00:00:04.93+00:00:04.97 53:00:00:00.04+00:00:00.10  17:06:06
+round 8: kbd ep1 in trace: no; kill 1.1 0; attach 1.1 0; new mouse 0; EXECUTE_TRANSFER 0; 1.4 kill 0; port-status 0; not-recovered 0; trying-again 5; timed-out-5s 5; lost-event 0; errors 10; trace-lines 2; usbhidd 52:00:00:04.93+00:00:04.97 53:00:00:00.04+00:00:00.10  17:06:43
+round 9: kbd ep1 in trace: no; kill 1.1 0; attach 1.1 0; new mouse 0; EXECUTE_TRANSFER 0; 1.4 kill 0; port-status 0; not-recovered 0; trying-again 8; timed-out-5s 7; lost-event 0; errors 15; trace-lines 3; usbhidd 52:00:00:04.93+00:00:04.97 53:00:00:00.04+00:00:00.10  17:07:36
+round 10: kbd ep1 in trace: no; kill 1.1 0; attach 1.1 0; new mouse 0; EXECUTE_TRANSFER 0; 1.4 kill 0; port-status 0; not-recovered 0; trying-again 8; timed-out-5s 7; lost-event 0; errors 15; trace-lines 3; usbhidd 52:00:00:04.93+00:00:04.97 53:00:00:00.04+00:00:00.10  17:08:28
+round 11: kbd ep1 in trace: no; kill 1.1 0; attach 1.1 0; new mouse 0; EXECUTE_TRANSFER 0; 1.4 kill 0; port-status 0; not-recovered 0; trying-again 6; timed-out-5s 6; lost-event 0; errors 12; trace-lines 3; usbhidd 52:00:00:04.93+00:00:04.97 53:00:00:00.04+00:00:00.10  17:09:05
+round 12: kbd ep1 in trace: no; kill 1.1 0; attach 1.1 0; new mouse 0; EXECUTE_TRANSFER 0; 1.4 kill 0; port-status 0; not-recovered 0; trying-again 5; timed-out-5s 6; lost-event 0; errors 11; trace-lines 3; usbhidd 52:00:00:04.93+00:00:04.97 53:00:00:00.04+00:00:00.10  17:09:42
+power: kbd ep1 in trace: no; kill 1.1 0; attach 1.1 0; new mouse 0; EXECUTE_TRANSFER 0; 1.4 kill 0; port-status 0; not-recovered 0; trying-again 7; timed-out-5s 7; lost-event 0; errors 14; trace-lines 4; usbhidd 52:00:00:04.93+00:00:04.97 53:00:00:00.04+00:00:00.10  17:10:39
+result: rounds without kbd ep1: round 1 round 2 round 3 round 4 round 5 round 6 round 7 round 8 round 9 round 10 round 11 round 12 power 17:10:39
+panic/UNHANDLED 0; reboots after login 0 17:10:39
+staged /home/zehrer/redox-rpi-graphics/keep/pi400-fbshot-stage (build_id = "v0.6.0-dev-105-gbef6d90a+xcf2a") 17:10:39
+boot: login, U-Boot retries 0, banner: redox-rpi v0.6.0-dev-105-gbef6d90a+xcf2a (netboot, 2026-11-18T04:35:59Z) 17:11:30
+restore: login 17:11:30
