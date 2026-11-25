@@ -1,0 +1,35 @@
+### shot-s0-console: vc4shot /tmp/s0-console.ppm  (1.8 s)
+vc4shot: channel 1 640x480, list at 2176, 1 planes, ctrl 0x828001e0 bkgnd 0x81000000 list 2176 active 2176 stat 0xa1d28194 (mode 2, frame 40)
+vc4shot: plane 0: ListPlane { unity: true, format: 7, x: 0, y: 0, width: 640, height: 480, bus: 3256123392, pitch: 2560, alpha: false }
+vc4shot: wrote /tmp/s0-console.ppm (921615 bytes)
+### fetched /tmp/s0-console.ppm: 921615 bytes, stats (640, 480, 0.9831837032310987, 2)
+### shot-s3-pattern: vc4shot /tmp/s3-pattern.ppm  (0.8 s)
+vc4shot: channel 1 640x480, list at 2176, 1 planes, ctrl 0x828001e0 bkgnd 0x81000000 list 2176 active 2176 stat 0xa1da41d8 (mode 2, frame 36)
+vc4shot: plane 0: ListPlane { unity: true, format: 7, x: 0, y: 0, width: 640, height: 480, bus: 3256123392, pitch: 2560, alpha: false }
+vc4shot: wrote /tmp/s3-pattern.ppm (921615 bytes)
+### fetched /tmp/s3-pattern.ppm: 921615 bytes, stats (640, 480, 0.9831837032310987, 2)
+### shot-s3-console: vc4shot /tmp/s3-console.ppm  (3.7 s)
+vc4shot: channel 1 640x480, list at 2176, 1 planes, ctrl 0x828001e0 bkgnd 0x81000000 list 2176 active 2176 stat 0xa1d540aa (mode 2, frame 20)
+vc4shot: plane 0: ListPlane { unity: true, format: 7, x: 0, y: 0, width: 640, height: 480, bus: 3256123392, pitch: 2560, alpha: false }
+vc4shot: wrote /tmp/s3-console.ppm (921615 bytes)
+### fetched /tmp/s3-console.ppm: 921615 bytes, stats (640, 480, 0.9831837032310987, 2)
+### shot-s4-flip: vc4shot /tmp/s4-flip.ppm  (3.3 s)
+vc4shot: channel 1 640x480, list at 2176, 1 planes, ctrl 0x828001e0 bkgnd 0x81000000 list 2176 active 2176 stat 0xa1d681c9 (mode 2, frame 40)
+vc4shot: plane 0: ListPlane { unity: true, format: 7, x: 0, y: 0, width: 640, height: 480, bus: 3256123392, pitch: 2560, alpha: false }
+vc4shot: wrote /tmp/s4-flip.ppm (921615 bytes)
+### fetched /tmp/s4-flip.ppm: 921615 bytes, stats (640, 480, 0.9831837032310987, 2)
+### shot-s4-console: vc4shot /tmp/s4-console.ppm  (3.7 s)
+vc4shot: channel 1 640x480, list at 2176, 1 planes, ctrl 0x828001e0 bkgnd 0x81000000 list 2176 active 2176 stat 0xa1d7805a (mode 2, frame 56)
+vc4shot: plane 0: ListPlane { unity: true, format: 7, x: 0, y: 0, width: 640, height: 480, bus: 3256123392, pitch: 2560, alpha: false }
+vc4shot: wrote /tmp/s4-console.ppm (921615 bytes)
+### fetched /tmp/s4-console.ppm: 921615 bytes, stats (640, 480, 0.9831837032310987, 2)
+### shot-s5-plane: vc4shot /tmp/s5-plane.ppm  (0.8 s)
+vc4shot: channel 1 640x480, list at 2176, 1 planes, ctrl 0x828001e0 bkgnd 0x81000000 list 2176 active 2176 stat 0xa1d44104 (mode 2, frame 4)
+vc4shot: plane 0: ListPlane { unity: true, format: 7, x: 0, y: 0, width: 640, height: 480, bus: 3256123392, pitch: 2560, alpha: false }
+vc4shot: wrote /tmp/s5-plane.ppm (921615 bytes)
+### fetched /tmp/s5-plane.ppm: 921615 bytes, stats (640, 480, 0.9831837032310987, 2)
+### shot-s5-console: vc4shot /tmp/s5-console.ppm  (0.8 s)
+vc4shot: channel 1 640x480, list at 2176, 1 planes, ctrl 0x828001e0 bkgnd 0x81000000 list 2176 active 2176 stat 0xa1dec155 (mode 2, frame 44)
+vc4shot: plane 0: ListPlane { unity: true, format: 7, x: 0, y: 0, width: 640, height: 480, bus: 3256123392, pitch: 2560, alpha: false }
+vc4shot: wrote /tmp/s5-console.ppm (921615 bytes)
+### fetched /tmp/s5-console.ppm: 921615 bytes, stats (640, 480, 0.9831837032310987, 2)

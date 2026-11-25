@@ -1,0 +1,3 @@
+### ls -l /dev/dri  (typing 2.1 s, total 2.4 s)
+total 4
+lrwxrwxrwx 1 root root 21 Nov 25  2026 card0 -> /scheme/display.vc4/7

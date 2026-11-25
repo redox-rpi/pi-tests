@@ -1,0 +1,13 @@
+### modetest -D /dev/dri/card0 -s 27:640x480 -P '23@22:128x128'  (typing 8.9 s, total 17.0 s, NO PROMPT)
+opened device `VideoCore IV HVS` on driver `vc4d` (version 1.4.0 at 0)
+setting mode 640x480-60.00Hz on connectors 27, crtc 22
+no unused plane available for CRTC 22
+###   (typing 0.0 s, total 0.3 s)
+
+### echo rc=$?  (typing 1.5 s, total 1.8 s)
+rc=0
+### inputd -A 2  (typing 1.7 s, total 2.0 s)
+
+### ls -l /dev/dri  (typing 2.1 s, total 2.4 s)
+total 4
+lrwxrwxrwx 1 root root 21 Nov 25  2026 card0 -> /scheme/display.vc4/7

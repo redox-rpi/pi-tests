@@ -1,0 +1,10 @@
+### modetest -D /dev/dri/card0 -s 27:640x480 -v  (typing 6.5 s, total 12.5 s, NO PROMPT)
+opened device `VideoCore IV HVS` on driver `vc4d` (version 1.4.0 at 0)
+setting mode 640x480-60.00Hz on connectors 27, crtc 22
+failed to page flip: Invalid argument
+###   (typing 0.0 s, total 0.3 s)
+
+### echo rc=$?  (typing 1.5 s, total 1.8 s)
+rc=0
+### inputd -A 2  (typing 1.7 s, total 2.0 s)
+
