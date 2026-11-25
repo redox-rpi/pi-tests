@@ -1,0 +1,26 @@
+start 09:49:28
+staged build_id = "v0.7.0-dev-59-gf02f6677+x2f32" 09:49:28
+found after 26 s
+A up 09:50:07
+A1 banner: redox-rpi v0.7.0-dev-59-gf02f6677+x2f32 (netboot, 2026-11-25T09:33:24Z) | sound 1 | hdmiaudiod bcm2835-hdmiaudiod: HDMI vc4 at 0x3f902000, hotplug no, HDMI mode, pixel clock 148.500 MHz (pllh), sample clock from 163.683 MHz (cprman), N 5644 CTS 148478, info frame sent, DMA channel 0 (DREQ 17),  | usb dwc2d: root port working at start, no core reset 09:50:27
+A2 pitest rc=0: PASS version: v0.7.0-dev-59-gf02f6677+x2f32 PASS manifest: build ID and libc.so hash match manifest.toml PASS ps: 54 processes (piped) PASS ps-tty: 54 lines straight to the terminal, rc=0 PASS sdcard: write, read back, delete on /scheme/data PASS starts: 0 of 100 failed  09:50:43
+A3 date: Wed Nov 25 10:50:45 CET 2026 Wed Nov 25 09:50:45 UTC 2026 lrwxrwxrwx 1 root root 33 Nov 25 10:36 /etc/localtime -> /usr/share/zoneinfo/Europe/Berlin  | host 09:50:46 09:50:46
+A4-free1: Mem:        733004    146028    586976  09:50:54
+A4-oom1:  09:50:59
+A4-free2: Mem:        733004    146064    586940  09:51:03
+A5 1 ok 46 s; nocore=1 empty=0 link=1 09:51:54
+A5 2 ok 48 s; nocore=1 empty=0 link=1 09:52:46
+A5 3 ok 53 s; nocore=1 empty=0 link=1 09:53:43
+A5 4 needs a second reset: empty=0 09:55:04
+A5 5 ok 47 s; nocore=1 empty=0 link=1 09:55:56
+A5 4/5 on the first reset, 1 needed more 09:55:56
+A serial: panic=0 relibc=0 exc=0 stuck=0 oom=0 09:55:56
+staged build_id = "v0.7.0-dev-59-gf02f6677+x2f32" 09:55:56
+found after 24 s
+B1 banner: redox-rpi v0.7.0-dev-59-gf02f6677+x2f32 (release-netboot, 2026-11-25T09:42:39Z) 09:57:01
+B2 nc 2323 rc=1 nc: connect to <lan-ip> port 2323 (tcp) failed: Connection refused  09:57:01
+B2 open TCP ports: [] 09:57:08
+B3: login ok=1 ps-devshd=0 09:57:16
+B serial: panic=0 relibc=0 exc=0 stuck=0 09:57:16
+found after 30 s
+stable up build_id = "v0.7.0-dev-9-g368175ee+x2d42" 09:57:53

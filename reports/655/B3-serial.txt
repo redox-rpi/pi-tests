@@ -1,0 +1,63 @@
+### serial login done
+### cat /etc/redox-rpi-release  (typing 3.9 s, total 4.2 s)
+root:~# croot:~# caroot:~# catroot:~# cat root:~# cat /root:~# cat /eroot:~# cat /etroot:~# cat /etcroot:~# cat /etc/root:~# cat /etc/rroot:~# cat /etc/reroot:~# cat /etc/redroot:~# cat /etc/redoroot:~# cat /etc/redoxroot:~# cat /etc/redox-root:~# cat /etc/redox-rroot:~# cat /etc/redox-rproot:~# cat /etc/redox-rpiroot:~# cat /etc/redox-rpi-root:~# cat /etc/redox-rpi-rroot:~# cat /etc/redox-rpi-reroot:~# cat /etc/redox-rpi-relroot:~# cat /etc/redox-rpi-releroot:~# cat /etc/redox-rpi-relearoot:~# cat /etc/redox-rpi-releasroot:~# cat /etc/redox-rpi-releaseroot:~# cat /etc/redox-rpi-release
+NAME="redox-rpi, for the Redox OS operating system"
+VERSION="v0.7.0-dev-59-gf02f6677"
+BUILD_ID="v0.7.0-dev-59-gf02f6677+x2f32"
+IMAGE="release-netboot"
+BUILD="2026-11-25T09:42:39Z"
+COMMIT="f02f6677"
+EXPERIMENTS="cosmic-apps-source desktop hdmi-audio netstack-watch orbital orbital-apps rpi-fb tcc timesync usb-port-power"
+URL="https://github.com/redox-rpi/redox-rpi"
+⏎                                                                                root:~# root:~# 
+### ps  (typing 0.3 s, total 0.9 s)
+root:~# proot:~# psroot:~# ps
+PID   EUID  EGID  STAT  CPU   AFFINITY   ACTTIME     SCHTIME     PRIVATE SHARED  NAME
+0     0     0     RR+   #0    1          00:00:00.00 00:00:00.00 65.0 KB 0 B     [kmain]
+0     0     0     RR+   #1    2          00:00:00.00 00:00:00.00 65.0 KB 0 B     [kmain]
+0     0     0     RR    #2    4          00:00:00.00 00:00:00.00 65.0 KB 0 B     [kmain]
+0     0     0     RR+   #3    8          00:00:00.00 00:00:00.00 65.0 KB 0 B     [kmain]
+0     0     0     UB    #2    F          00:00:00.03 00:00:00.00 29.0 MB 4.00 KB initfs
+0     0     0     UB    #2    F          00:00:00.10 00:00:00.00 1.37 MB 304 KB  procmgr
+0     0     0     UB    #2    F          00:00:00.20 00:00:00.00 1.37 MB 8.00 KB initnsmgr
+1     0     0     UB    #1    F          00:00:00.18 00:00:00.32 1.86 MB 0 B     /scheme/initfs/bin/init
+2     0     0     UB    #1    F          00:00:00.00 00:00:00.00 3.64 MB 12.0 KB /scheme/initfs/bin/logd
+2     0     0     UB    #3    F          00:00:00.36 00:00:00.00 3.64 MB 12.0 KB /scheme/initfs/bin/logd
+3     0     0     UB    #2    F          00:00:00.00 00:00:00.00 1.62 MB 84.0 KB /scheme/initfs/bin/randd
+4     0     0     UB    #0    F          00:00:00.00 00:00:00.02 1.74 MB 0 B     /scheme/initfs/bin/ipcd
+5     0     0     UB    #0    F          00:00:00.00 00:00:00.00 1.55 MB 0 B     /scheme/initfs/bin/zerod
+6     0     0     UB    #2    F          00:00:00.00 00:00:00.00 1.55 MB 12.0 KB /scheme/initfs/bin/zerod
+7     0     0     UB    #2    F          00:00:00.00 00:00:00.00 2.77 MB 0 B     /scheme/initfs/bin/ramfs
+8     0     0     UB    #1    F          00:00:00.22 00:00:00.03 5.70 MB 0 B     /scheme/initfs/bin/rpi-firmwared
+8     0     0     US    #0    F          00:00:00.08 00:00:00.08 5.70 MB 0 B     /scheme/initfs/bin/rpi-firmwared
+8     0     0     US    #0    F          00:00:00.00 00:00:00.00 5.70 MB 0 B     /scheme/initfs/bin/rpi-firmwared
+9     0     0     UB    #2    F          00:00:00.01 00:00:00.00 1.67 MB 0 B     /scheme/initfs/bin/inputd
+10    0     0     UB    #2    F          00:00:00.07 00:00:00.01 1.86 MB 4.00 KB /scheme/initfs/bin/lived
+11    0     0     UB    #0    F          00:00:00.34 00:00:00.26 1.77 MB 8.00 KB /scheme/initfs/bin/bcm2835-hdmia
+12    0     0     UB    #0    F          00:00:00.00 00:00:00.00 1.62 MB 0 B     /scheme/initfs/bin/bcm2835-gpiod
+13    0     0     UB    #0    F          00:00:00.00 00:00:00.00 1.62 MB 0 B     /scheme/initfs/bin/bcm2835-i2cd
+14    0     0     UB    #3    F          00:00:00.23 00:00:00.05 1.74 MB 0 B     /scheme/initfs/bin/vesad
+15    0     0     UB    #0    F          00:00:00.00 00:00:00.00 1.62 MB 0 B     /scheme/initfs/bin/bcm2835-spid
+16    0     0     UB    #1    F          00:00:00.62 00:00:00.88 11.6 MB 6.84 MB /scheme/initfs/bin/fbbootlogd
+18    0     0     UB    #1    F          00:00:06.33 00:00:01.33 3.85 MB 4.00 KB /scheme/initfs/bin/dwc2d
+18    0     0     US    #1    F          00:00:00.01 00:00:00.04 3.85 MB 4.00 KB /scheme/initfs/bin/dwc2d
+19    0     0     UB    #2    F          00:00:00.15 00:00:00.05 1.67 MB 4.00 KB /scheme/initfs/bin/bcm2835-sdhos
+20    0     0     UB    #1    F          00:00:00.16 00:00:00.30 15.5 MB 0 B     /scheme/initfs/bin/rpi-fbd
+22    0     0     UB    #2    F          00:00:01.00 00:00:00.70 34.6 MB 12.0 KB /scheme/initfs/bin/redoxfs
+23    0     0     UB    #2    F          00:00:00.01 00:00:00.01 1.62 MB 12.0 KB /usr/bin/ptyd
+26    0     0     UB    #2    F          00:00:00.00 00:00:00.03 5.20 MB 0 B     /usr/bin/sudo
+27    0     0     UB    #1    F          00:00:08.53 00:00:13.66 6.99 MB 12.0 KB /usr/bin/netstack
+27    0     0     US    #0    F          00:00:00.00 00:00:00.00 6.99 MB 12.0 KB /usr/bin/netstack
+27    0     0     US    #1    F          00:00:00.00 00:00:00.00 6.99 MB 12.0 KB /usr/bin/netstack
+28    0     0     UB    #3    F          00:00:00.07 00:00:00.07 6.71 MB 6.85 MB /usr/bin/fbcond
+29    0     0     UB    #2    F          00:00:00.87 00:00:00.82 1.86 MB 0 B     /usr/bin/getty
+31    0     0     US    #1    F          00:00:00.00 00:00:00.02 1.86 MB 0 B     /usr/bin/dhcpd
+33    0     0     UB    #0    F          00:00:00.04 00:00:00.05 3.62 MB 4.00 KB /usr/bin/audiod
+33    0     0     UB    #0    F          00:00:00.14 00:00:00.31 3.62 MB 4.00 KB /usr/bin/audiod
+35    0     0     UB    #3    F          00:00:00.00 00:00:00.08 1.86 MB 0 B     /usr/bin/getty
+37    0     0     US    #1    F          00:00:00.01 00:00:00.04 5.34 MB 0 B     /usr/bin/timesync
+39    0     0     UB    #3    F          00:00:00.01 00:00:00.03 5.88 MB 0 B     /usr/bin/login
+40    0     0     UB    #2    F          00:00:00.28 00:00:00.21 5.82 MB 0 B     /usr/bin/login
+42    0     0     UB    #2    F          00:00:00.03 00:00:00.09 7.65 MB 0 B     /usr/bin/ion
+46    0     0     UR+   #2    F          00:00:00.00 00:00:00.03 5.14 MB 0 B     /usr/bin/ps
+⏎                                                                                root:~# root:~# 
