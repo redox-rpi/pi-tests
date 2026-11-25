@@ -1,0 +1,4 @@
+1970-01-01T00-00-32.048Z [@usbhubd:101 INFO] usb-trace: hub characteristics 0x00e0 (power switching ganged)
+1970-01-01T00-00-34.631Z [@usbhidd:229 INFO] USB HID driver spawned with scheme `usb.pci-0000-01-00.0_xhci`, port 1.1, interface 0
+1970-01-01T00-00-36.025Z [@usbhidd:229 INFO] USB HID driver spawned with scheme `usb.pci-0000-01-00.0_xhci`, port 1.4, interface 0
+1970-01-01T00-00-36.084Z [@usbhidd:229 INFO] USB HID driver spawned with scheme `usb.pci-0000-01-00.0_xhci`, port 1.4, interface 1

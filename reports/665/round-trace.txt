@@ -1,0 +1,52 @@
+round 1 RES resources commands 27 cmd_ring 27/256 cycle 1 workers 3 handles 16 ports 3
+round 1 events [s1e1c1:40] registered {"1 epEndpNum(0)": 40} pending {"1.1 epEndpNum(1)": 1, "1.4 epEndpNum(1)": 1, "1.4 epEndpNum(2)": 1} 
+round 2 RES resources commands 35 cmd_ring 35/256 cycle 1 workers 3 handles 16 ports 3
+round 2 events [s1e1c1:40] registered {"1 epEndpNum(0)": 40} pending {"1.1 epEndpNum(1)": 1, "1.4 epEndpNum(1)": 1, "1.4 epEndpNum(2)": 1} 
+round 3 RES resources commands 43 cmd_ring 43/256 cycle 1 workers 3 handles 16 ports 3
+round 3 events [s1e1c1:40] registered {"1 epEndpNum(0)": 40} pending {"1.1 epEndpNum(1)": 1, "1.4 epEndpNum(1)": 1, "1.4 epEndpNum(2)": 1} 
+round 4 RES resources commands 51 cmd_ring 51/256 cycle 1 workers 3 handles 16 ports 3
+round 4 events [s1e1c1:40] registered {"1 epEndpNum(0)": 40} pending {"1.1 epEndpNum(1)": 1, "1.4 epEndpNum(1)": 1, "1.4 epEndpNum(2)": 1} 
+round 5 RES resources commands 222 cmd_ring 222/256 cycle 1 workers 3 handles 10 ports 2
+round 5 events [s1e1c4:32] registered {"1 epEndpNum(0)": 32} pending {} 
+round 6 RES resources commands 256 cmd_ring 1/256 cycle 0 workers 3 handles 10 ports 2
+round 6 events [s1e1c4:16] registered {"1 epEndpNum(0)": 16} pending {} 
+round 7 RES 
+round 7 
+round 8 RES 
+round 8 
+round 9 RES 
+round 9 
+round 10 RES 
+round 10 
+round 11 RES 
+round 11 
+round 12 RES 
+round 12 
+round 13 RES 
+round 13 
+round 14 RES 
+round 14 
+round 15 RES 
+round 15 
+round 16 RES 
+round 16 
+round 17 RES 
+round 17 
+round 18 RES 
+round 18 
+round 19 RES 
+round 19 
+round 20 RES 
+round 20 
+round 21 RES 
+round 21 
+round 22 RES 
+round 22 
+round 23 RES 
+round 23 
+round 24 RES 
+round 24 
+round 25 RES 
+round 25 
+power RES 
+power 
