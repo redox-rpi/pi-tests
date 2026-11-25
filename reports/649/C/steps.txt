@@ -1,0 +1,123 @@
+### 1env: export ORBITAL_GL=0; echo ORBITAL_GL=$ORBITAL_GL  (0.2 s)
+ORBITAL_GL=0
+### 1a: export ORBITAL_GL=0; desktop --yes  (0.5 s)
+Redox desktop (beta)
+Super+F2   back to the text console
+Super+F3   back to the desktop
+(or type desktop on the console)
+Super+T    a terminal
+Known limits:
+- Slow: everything draws in software; dragging a
+window costs much of a core.
+- Once started, the desktop cannot be stopped; its
+memory (40 to 80 MB) comes back only with a reboot.
+- No browser, one screen resolution, no HDMI hotplug.
+desktop: starting Orbital, its log goes to /tmp/desktop.log
+desktop: Super+F2 goes back to the console, Super+F3 to the desktop
+### 1b: pointer-bench --type user  (0.7 s)
+pointer-bench: typed 4 keys
+### 1e0: pointer-bench --keys enter  (0.4 s)
+pointer-bench: enter
+### 1e1: pointer-bench --keys enter  (0.4 s)
+pointer-bench: enter
+### 1e2: pointer-bench --keys enter  (0.4 s)
+pointer-bench: enter
+### 1log: grep -E 'GL|ERROR' /tmp/desktop.log  (0.3 s)
+
+### 2term: pointer-bench --super t  (5.3 s)
+pointer-bench: super+t
+### 2shot: vc4shot /tmp/term.ppm  (3.0 s)
+vc4shot: channel 1 1920x1080, list at 2176, 2 planes, ctrl 0x87800438 bkgnd 0x81000000 list 2176 active 2176 stat 0xa39d0410 (mode 2, frame 16)
+vc4shot: plane 0: ListPlane { unity: true, format: 7, x: 0, y: 0, width: 1920, height: 1080, bus: 3256123392, pitch: 7680, alpha: false }
+vc4shot: plane 1: ListPlane { unity: true, format: 7, x: 0, y: 0, width: 64, height: 64, bus: 3269181440, pitch: 256, alpha: true }
+vc4shot: wrote /tmp/term.ppm (6220817 bytes)
+### 3start: pointer-bench 30 --hz 60 --super-drag --drag 960 540 --screen 1920 1080 --center 960 540 --radius 150 &> /tmp/pb3.txt &  (0.3 s)
+ion: bg [0] 106
+### 3 drag: CPU over 10.3 s (ps ACTTIME deltas, % of one core): /usr/bin/orbital 80.5 %; /usr/lib/drivers/usbhidd 21.3 %; /usr/lib/drivers/xhcid 13.5 %; /usr/bin/vc4d 2.6 %; /usr/bin/cosmic-term 0.6 %; /usr/bin/netstack 0.5 %; /scheme/initfs/bin/redoxfs 0.4 %; /scheme/initfs/bin/inputd 0.4 %
+### 3res: cat /tmp/pb3.txt  (0.4 s)
+pointer-bench: 1800 moves in 30.1 s (59.8/s), dragging
+### 3shot: vc4shot /tmp/after.ppm  (1.8 s)
+vc4shot: channel 1 1920x1080, list at 2048, 2 planes, ctrl 0x87800438 bkgnd 0x81000000 list 2048 active 2048 stat 0xa39b0270 (mode 2, frame 48)
+vc4shot: plane 0: ListPlane { unity: true, format: 7, x: 0, y: 0, width: 1920, height: 1080, bus: 3256123392, pitch: 7680, alpha: false }
+vc4shot: plane 1: ListPlane { unity: true, format: 7, x: 959, y: 532, width: 64, height: 64, bus: 3269181440, pitch: 256, alpha: true }
+vc4shot: wrote /tmp/after.ppm (6220817 bytes)
+### orb: ps  (0.2 s)
+PID   EUID  EGID  STAT  CPU   AFFINITY   ACTTIME     SCHTIME     PRIVATE SHARED  NAME
+0     0     0     RR    #0    1          00:00:00.00 00:00:00.00 65.0 KB 0 B     [kmain]
+0     0     0     RR+   #1    2          00:00:00.00 00:00:00.00 65.0 KB 0 B     [kmain]
+0     0     0     RR    #2    4          00:00:00.00 00:00:00.00 65.0 KB 0 B     [kmain]
+0     0     0     RR+   #3    8          00:00:00.00 00:00:00.00 65.0 KB 0 B     [kmain]
+0     0     0     UB    #1    F          00:00:00.02 00:00:00.00 27.6 MB 4.00 KB initfs
+0     0     0     UB    #0    F          00:00:00.19 00:00:00.00 1.37 MB 508 KB  procmgr
+0     0     0     UB    #0    F          00:00:00.24 00:00:00.00 1.37 MB 8.00 KB initnsmgr
+1     0     0     UB    #2    F          00:00:00.11 00:00:00.27 1.86 MB 0 B     /scheme/initfs/bin/init
+2     0     0     UB    #2    F          00:00:00.00 00:00:00.00 3.64 MB 12.0 KB /scheme/initfs/bin/logd
+2     0     0     UB    #3    F          00:00:01.78 00:00:00.03 3.64 MB 12.0 KB /scheme/initfs/bin/logd
+3     0     0     UB    #0    F          00:00:00.00 00:00:00.01 1.62 MB 164 KB  /scheme/initfs/bin/randd
+4     0     0     UB    #0    F          00:00:00.00 00:00:00.02 1.68 MB 0 B     /scheme/initfs/bin/ipcd
+5     0     0     UB    #0    F          00:00:00.00 00:00:00.00 1.55 MB 0 B     /scheme/initfs/bin/zerod
+6     0     0     UB    #0    F          00:00:00.00 00:00:00.00 1.55 MB 136 KB  /scheme/initfs/bin/zerod
+7     0     0     UB    #2    F          00:00:00.01 00:00:00.00 2.77 MB 0 B     /scheme/initfs/bin/ramfs
+8     0     0     UB    #1    F          00:00:00.09 00:00:00.08 5.77 MB 0 B     /scheme/initfs/bin/rpi-firmwared
+8     0     0     US    #1    F          00:00:00.25 00:00:00.25 5.77 MB 0 B     /scheme/initfs/bin/rpi-firmwared
+8     0     0     US    #0    F          00:00:00.00 00:00:00.00 5.77 MB 0 B     /scheme/initfs/bin/rpi-firmwared
+9     0     0     UB    #3    F          00:00:00.13 00:00:00.02 1.67 MB 0 B     /scheme/initfs/bin/inputd
+10    0     0     UB    #0    F          00:00:00.09 00:00:00.01 2.73 MB 4.00 KB /scheme/initfs/bin/lived
+11    0     0     UB    #1    F          00:00:00.25 00:00:00.14 2.61 MB 4.00 KB /scheme/initfs/bin/bcmgenetd
+12    0     0     UB    #0    F          00:00:00.00 00:00:00.00 1.62 MB 0 B     /scheme/initfs/bin/bcm2835-gpiod
+13    0     0     UB    #0    F          00:00:00.00 00:00:00.00 1.68 MB 0 B     /scheme/initfs/bin/bcm2835-spid
+14    0     0     UB    #0    F          00:00:00.00 00:00:00.00 1.62 MB 0 B     /scheme/initfs/bin/bcm2835-i2cd
+15    0     0     UB    #0    F          00:00:00.32 00:00:00.05 1.74 MB 0 B     /scheme/initfs/bin/vesad
+17    0     0     UB    #2    F          00:00:01.18 00:00:01.54 14.1 MB 7.91 MB /scheme/initfs/bin/fbbootlogd
+21    0     0     UB    #3    F          00:00:00.01 00:00:00.26 1.79 MB 16.0 KB /scheme/initfs/bin/pcid
+24    0     0     UB    #0    F          00:00:02.28 00:00:00.66 35.9 MB 12.0 KB /scheme/initfs/bin/redoxfs
+26    0     0     UB    #0    F          00:00:01.59 00:00:00.51 15.1 MB 12.0 KB /usr/lib/drivers/xhcid
+26    0     0     UB    #3    F          00:00:00.00 00:00:00.00 15.1 MB 12.0 KB /usr/lib/drivers/xhcid
+26    0     0     US    #0    F          00:00:01.88 00:00:01.88 15.1 MB 12.0 KB /usr/lib/drivers/xhcid
+26    0     0     UB    #3    F          00:00:00.01 00:00:00.04 15.1 MB 12.0 KB /usr/lib/drivers/xhcid
+26    0     0     UR+   #2    F          00:00:02.87 00:00:01.88 15.1 MB 16.0 KB /usr/lib/drivers/xhcid
+26    0     0     UB    #3    F          00:00:02.90 00:00:02.00 15.1 MB 16.0 KB /usr/lib/drivers/xhcid
+27    0     0     UB    #3    F          00:00:00.14 00:00:00.05 1.62 MB 112 KB  /usr/bin/ptyd
+30    0     0     US    #1    F          00:00:00.10 00:00:00.47 1.73 MB 0 B     /usr/lib/drivers/usbhubd
+31    0     0     UB    #1    F          00:00:00.00 00:00:00.02 5.20 MB 0 B     /usr/bin/sudo
+32    0     0     UB    #1    F          00:00:00.38 00:00:00.52 7.24 MB 24.0 KB /usr/bin/netstack
+32    0     0     US    #0    F          00:00:00.00 00:00:00.00 7.24 MB 24.0 KB /usr/bin/netstack
+32    0     0     US    #3    F          00:00:00.01 00:00:00.01 7.24 MB 24.0 KB /usr/bin/netstack
+33    0     0     US    #3    F          00:00:00.06 00:00:00.14 47.1 MB 0 B     /usr/bin/vc4d
+33    0     0     UB    #2    F          00:00:00.96 00:00:00.79 47.1 MB 0 B     /usr/bin/vc4d
+34    0     0     UB    #3    F          00:00:00.00 00:00:00.09 1.79 MB 0 B     /usr/lib/drivers/usbhidd
+35    0     0     UB    #0    F          00:00:00.00 00:00:00.00 11.9 MB 0 B     /usr/bin/v3dd
+35    0     0     UB    #1    F          00:00:00.03 00:00:00.07 11.9 MB 0 B     /usr/bin/v3dd
+36    0     0     UB    #1    F          00:00:00.06 00:00:00.11 6.78 MB 7.91 MB /usr/bin/fbcond
+37    0     0     UB    #3    F          00:00:00.54 00:00:00.45 1.86 MB 0 B     /usr/bin/getty
+39    0     0     US    #3    F          00:00:00.02 00:00:00.05 1.86 MB 0 B     /usr/bin/dhcpd
+40    0     0     UB    #0    F          00:00:00.00 00:00:00.00 11.2 MB 0 B     /usr/bin/devshd
+40    0     0     UB    #0    F          00:00:00.00 00:00:00.02 11.2 MB 0 B     /usr/bin/devshd
+40    0     0     UB    #1    F          00:00:00.00 00:00:00.00 11.2 MB 0 B     /usr/bin/devshd
+40    0     0     UB    #1    F          00:00:00.08 00:00:00.15 11.2 MB 0 B     /usr/bin/devshd
+45    0     0     UB    #1    F          00:00:00.00 00:00:00.05 1.86 MB 0 B     /usr/bin/getty
+47    0     0     UB    #2    F          00:00:00.00 00:00:00.02 5.88 MB 0 B     /usr/bin/login
+49    0     0     UB    #3    F          00:00:00.00 00:00:00.02 5.88 MB 0 B     /usr/bin/login
+50    0     0     UB    #0    F          00:00:09.76 00:00:08.24 1.79 MB 0 B     /usr/lib/drivers/usbhidd
+51    0     0     UB    #2    F          00:00:09.67 00:00:08.86 1.79 MB 0 B     /usr/lib/drivers/usbhidd
+62    0     0     UB    #0    F          00:00:00.13 00:00:00.15 5.82 MB 0 B     /usr/bin/login
+63    0     0     UB    #3    F          00:00:00.20 00:00:00.32 7.66 MB 0 B     /usr/bin/ion
+69    0     0     UB    #3    F          00:00:00.00 00:00:00.00 7.52 MB 0 B     /usr/bin/desktop
+71    0     0     UB    #2    F          00:00:24.48 00:00:23.89 24.7 MB 7.92 MB /usr/bin/orbital
+76    0     0     UB    #2    F          00:00:00.27 00:00:00.42 6.59 MB 0 B     /usr/bin/orblogin
+85    1000  1000  US    #1    F          00:00:00.03 00:00:00.06 9.54 MB 0 B     /usr/bin/desktop-session
+85    1000  1000  US    #3    F          00:00:00.04 00:00:00.06 9.54 MB 0 B     /usr/bin/desktop-session
+86    1000  1000  UB    #0    F          00:00:00.00 00:00:00.00 7.52 MB 0 B     /usr/bin/desktop-session
+87    1000  1000  UB    #2    F          00:00:00.07 00:00:00.18 9.56 MB 540 KB  /usr/bin/launcher
+91    1000  1000  UB    #0    F          00:00:00.00 00:00:00.00 9.54 MB 0 B     /usr/bin/desktop-session
+92    1000  1000  UB    #0    F          00:00:00.01 00:00:00.12 6.20 MB 3.00 MB /usr/bin/orbterm
+93    1000  1000  UB    #2    F          00:00:00.02 00:00:00.04 7.52 MB 0 B     /usr/bin/desktop-welcome
+96    1000  1000  UB    #3    F          00:00:00.02 00:00:00.06 15.5 MB 0 B     /usr/bin/head
+100   1000  1000  UB    #3    F          00:00:00.19 00:00:00.96 6.20 MB 3.00 MB /usr/bin/cosmic-term
+101   1000  1000  UB    #3    F          00:00:00.01 00:00:00.05 7.65 MB 0 B     /usr/bin/ion
+117   0     0     UR+   #0    F          00:00:00.00 00:00:00.02 5.14 MB 0 B     /usr/bin/ps
+### dlog: /usr/bin/tail -n 40 /tmp/desktop.log  (0.3 s)
+ion: bg [0] 86
+failed to load icon None
+### fetched /tmp/term.ppm: 6220817 bytes, stats (1920, 1080, 0.5347855881767146, 721)
+### fetched /tmp/after.ppm: 6220817 bytes, stats (1920, 1080, 0.5390728119124056, 709)
