@@ -1,0 +1,21 @@
+MMC:   mmcnr@7e300000: 1, mmc@7e340000: 0
+Loading Environment from FAT...Unable to read "uboot.env" from mmc0:1... 
+78Card did not respond to voltage select! : -110
+kernel::dtb:DEBUG -- soc device mmc@7e202000 0x7e202000 -> 0xfe202000 len 0x00000100
+kernel::dtb:DEBUG -- soc device mmc@7e300000 0x7e300000 -> 0xfe300000 len 0x00000100
+kernel::dtb:DEBUG -- soc device mmcnr@7e300000 0x7e300000 -> 0xfe300000 len 0x00000100
+rpi-firmwared: SD card slot power cycled, on at 3.3 V
+bcm2835-sdhcid: mmc@7e340000 at bus 0x7e340000, CPU 0xfe340000, size 0x100
+bcm2835-sdhcid: EMMC2 clock 100 MHz
+EMMC: reset OK
+EMMC: SDHCI version 3, capabilities 0x45ee6432 (base clock 100 MHz), dividing 100 MHz
+EMMC: control2 was 0x00000000, present state 0x1fff0000
+EMMC: CMD_SEND_OP_COND poll 1 returned 0x00f98000 = VOLTAGE 
+EMMC: CMD_SEND_OP_COND poll 50 returned 0x00f98000 = VOLTAGE 
+EMMC: CMD_SEND_OP_COND poll 100 returned 0x00f98000 = VOLTAGE 
+EMMC: CMD_SEND_OP_COND poll 139 returned 0xc0f98000 = COMPLETE VOLTAGE CCS 
+mmc size = 0x76e480000
+EMMC: supports SET_BLKCNT CCS 
+bcm2835-sdhostd: BCM2711, the card is on EMMC2; not starting
+[ERROR redoxfs] failed to open filesystem /scheme/disk.mmc/0: No such file or directory
+[ERROR redoxfs] failed to open filesystem /scheme/disk.mmc/0p0: No such file or directory

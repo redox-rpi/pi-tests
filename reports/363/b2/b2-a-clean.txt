@@ -1,0 +1,45 @@
+### serial login done
+
+### ls /scheme/disk.mmc  (typing 2.9 s, total 3.2 s)
+removing handle: id: 7, Some(List([48, 10, 48, 112, 48, 10, 48, 112, 49, 10]))
+removing handle: id: 9, Some(List([48, 10, 48, 112, 48, 10, 48, 112, 49, 10]))
+removing handle: id: 10, Some(Partition(0, 0))
+0  0p0	0p1
+removing handle: id: 8, Some(List([48, 10, 48, 112, 48, 10, 48, 112, 49, 10]))
+### cat /scheme/disk.mmc/0p0 | head -c 1048576 | wc -c  (typing 7.5 s, total 8.1 s)
+removing handle: id: 11, Some(Partition(0, 0))
+1048576
+cat: write error: Broken pipe
+removing handle: id: 12, Some(Partition(0, 0))
+### cat /scheme/disk.mmc/0p0 | head -c 512 | od -A d -t x1 | /usr/bin/tail -n 3  (typing 11.3 s, total 11.9 s)
+removing handle: id: 13, Some(Partition(0, 0))
+removing handle: id: 14, Some(Partition(0, 0))
+cat: write error: Broken pipe
+*
+0000496 00 00 00 00 00 00 00 00 00 00 00 00 00 00 55 aa
+0000512
+### ls -l /scheme/data  (typing 2.7 s, total 3.0 s)
+total 44
+-rw-r--r-- 1 root root     209 Nov 12  2026 README.txt
+-rw-rw-r-- 1 root root 1048576 Nov 12  2026 emmc2-pattern.bin
+-rw-rw-r-- 1 root root      65 Nov 12  2026 emmc2-pattern.sha256
+### cat /scheme/data/README.txt  (typing 4.1 s, total 4.4 s)
+This is the data partition of a redox-rpi test card (row 363 B, issue #307).
+Partition 1 starts U-Boot, which boots Redox over the network
+(pi400/ on <build-host>). Redox mounts this partition at /scheme/data.
+### sha256sum /scheme/data/emmc2-pattern.bin  (typing 6.0 s, total 6.3 s)
+172c15dc2e12b50e523d8e657cbe7fbb11c1053252bbf1e1431077d57d8128fd  /scheme/data/emmc2-pattern.bin
+### cat /scheme/data/emmc2-pattern.sha256  (typing 5.6 s, total 5.9 s)
+172c15dc2e12b50e523d8e657cbe7fbb11c1053252bbf1e1431077d57d8128fd
+### echo emmc2 > /scheme/data/emmc2-test.txt  (typing 6.0 s, total 6.3 s)
+
+### cat /scheme/data/emmc2-test.txt  (typing 4.7 s, total 5.0 s)
+emmc2
+### dd if=/dev/zero of=/scheme/data/emmc2-4m.bin bs=65536 count=64  (typing 9.3 s, total 9.6 s)
+64+0 records in
+64+0 records out
+4194304 bytes (4.2 MB, 4.0 MiB) copied, 0.0787383 s, 54 MB/s
+### sha256sum /scheme/data/emmc2-4m.bin  (typing 5.3 s, total 5.9 s)
+bb9f8df61474d25e71fa00722318cd387396ca1736605e1248821cc0de3d3af8  /scheme/data/emmc2-4m.bin
+### sync  (typing 0.6 s, total 0.9 s)
+ion: command not found: sync

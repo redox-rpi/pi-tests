@@ -1,0 +1,20 @@
+### serial login done
+
+### ls -l /scheme/data  (typing 2.7 s, total 3.0 s)
+total 52
+-rw-r--r-- 1 root root     209 Nov 12  2026 README.txt
+-rw-r--r-- 1 root root 4194304 Jan  1  1970 emmc2-4m.bin
+-rw-rw-r-- 1 root root 1048576 Nov 12  2026 emmc2-pattern.bin
+-rw-rw-r-- 1 root root      65 Nov 12  2026 emmc2-pattern.sha256
+-rw-r--r-- 1 root root       6 Jan  1  1970 emmc2-test.txt
+### cat /scheme/data/emmc2-test.txt  (typing 4.7 s, total 5.0 s)
+emmc2
+### sha256sum /scheme/data/emmc2-4m.bin  (typing 5.3 s, total 5.6 s)
+bb9f8df61474d25e71fa00722318cd387396ca1736605e1248821cc0de3d3af8  /scheme/data/emmc2-4m.bin
+### rm /scheme/data/emmc2-test.txt /scheme/data/emmc2-4m.bin  (typing 8.4 s, total 8.7 s)
+
+### ls -l /scheme/data  (typing 2.7 s, total 3.0 s)
+total 44
+-rw-r--r-- 1 root root     209 Nov 12  2026 README.txt
+-rw-rw-r-- 1 root root 1048576 Nov 12  2026 emmc2-pattern.bin
+-rw-rw-r-- 1 root root      65 Nov 12  2026 emmc2-pattern.sha256

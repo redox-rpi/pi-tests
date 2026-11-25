@@ -1,0 +1,3 @@
+MMC:   mmcnr@7e300000: 1, mmc@7e340000: 0
+Loading Environment from FAT...Card did not respond to voltage select! : -110
+Card did not respond to voltage select! : -110
