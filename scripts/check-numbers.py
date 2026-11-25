@@ -28,7 +28,7 @@ for line in text.splitlines():
     elif section == "Done":
         m = re.match(r"\|[^|]*\|\s*(\d+)\b", line)
         if m:
-            again = re.match(r"\|[^|]*\|\s*\d+\s*(\(\w+\)\s*)?(step|part|rerun)", line, re.I)
+            again = re.match(r"\|[^|]*\|\s*\d+\s*(\(\w+\)\s*)?((second|third|fourth|fifth|\d+(st|nd|rd|th))\s+)?(step|part|rerun)", line, re.I)
             rows.append(("done-again" if again else "done", int(m.group(1))))
 
 errors, warnings = [], []
