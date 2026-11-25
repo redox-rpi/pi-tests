@@ -1,0 +1,26 @@
+### 2: prime-probe --frames 300  (0.6 s)
+prime-probe: VT 3
+prime-probe: connector 27, CRTC 22, mode 1920x1080
+libEGL warning: MESA-LOADER: failed to retrieve device information
+MESA-LOADER: failed to retrieve device information
+MESA-LOADER: failed to retrieve device information
+prime-probe: EGL_EXT_image_dma_buf_import no, _modifiers no
+### s3start: prime-probe --frames 900 --show &> /tmp/s3.txt &  (0.2 s)
+ion: bg [0] 67
+### s3shot1: vc4shot /tmp/s3a.ppm  (2.5 s)
+vc4shot: channel 1 1920x1080, list at 2048, 1 planes, ctrl 0x87800438 bkgnd 0x81000000 list 2048 active 2048 stat 0xa3918423 (mode 2, frame 24)
+vc4shot: plane 0: ListPlane { unity: true, format: 7, x: 0, y: 0, width: 1920, height: 1080, bus: 3271557120, pitch: 7680, alpha: false }
+vc4shot: wrote /tmp/s3a.ppm (6220817 bytes)
+### s3 result:
+prime-probe: VT 4
+prime-probe: connector 27, CRTC 22, mode 1920x1080
+libEGL warning: MESA-LOADER: failed to retrieve device information
+MESA-LOADER: failed to retrieve device information
+MESA-LOADER: failed to retrieve device information
+prime-probe: EGL_EXT_image_dma_buf_import no, _modifiers no
+### s3shot2: vc4shot /tmp/s3b.ppm  (1.3 s)
+vc4shot: channel 1 1920x1080, list at 2048, 1 planes, ctrl 0x87800438 bkgnd 0x81000000 list 2048 active 2048 stat 0xa39a4012 (mode 2, frame 36)
+vc4shot: plane 0: ListPlane { unity: true, format: 7, x: 0, y: 0, width: 1920, height: 1080, bus: 3271557120, pitch: 7680, alpha: false }
+vc4shot: wrote /tmp/s3b.ppm (6220817 bytes)
+### fetched /tmp/s3a.ppm: 6220817 bytes, stats (1920, 1080, 0.9967086274470089, 2)
+### fetched /tmp/s3b.ppm: 6220817 bytes, stats (1920, 1080, 0.9967086274470089, 2)

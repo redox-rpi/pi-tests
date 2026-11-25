@@ -1,0 +1,91 @@
+### 1: gles-probe 1  (0.5 s)
+libEGL warning: MESA-LOADER: failed to retrieve device information
+MESA-LOADER: failed to retrieve device information
+MESA-LOADER: failed to retrieve device information
+gles-probe: EGL 1.4, Mesa Project
+gles-probe: GL_RENDERER V3D 4.2.14, GL_VERSION OpenGL ES 3.0 Mesa 24.0.8 (git-9850ea1ad7)
+gles-probe: PASS: V3D 4.2.14, 1 of 1 frames right, 2080 red pixels, hash 57aafac5, 2.85 ms per frame
+### 2: prime-probe --frames 300  (0.6 s)
+prime-probe: VT 3
+prime-probe: connector 27, CRTC 22, mode 640x480
+libEGL warning: MESA-LOADER: failed to retrieve device information
+MESA-LOADER: failed to retrieve device information
+MESA-LOADER: failed to retrieve device information
+prime-probe: EGL_EXT_image_dma_buf_import no, _modifiers no
+### s3start: prime-probe --frames 900 --show &> /tmp/s3.txt &  (0.2 s)
+ion: bg [0] 69
+### s3shot1: vc4shot /tmp/s3a.ppm  (1.0 s)
+vc4shot: channel 1 640x480, list at 2304, 1 planes, ctrl 0x828001e0 bkgnd 0x81000000 list 2304 active 2304 stat 0xa37f014a (mode 2, frame 48)
+vc4shot: plane 0: ListPlane { unity: true, format: 7, x: 0, y: 0, width: 640, height: 480, bus: 3256127488, pitch: 2560, alpha: false }
+vc4shot: wrote /tmp/s3a.ppm (921615 bytes)
+### s3 result:
+prime-probe: VT 4
+prime-probe: connector 27, CRTC 22, mode 640x480
+libEGL warning: MESA-LOADER: failed to retrieve device information
+MESA-LOADER: failed to retrieve device information
+MESA-LOADER: failed to retrieve device information
+prime-probe: EGL_EXT_image_dma_buf_import no, _modifiers no
+### s3shot2: vc4shot /tmp/s3b.ppm  (3.7 s)
+vc4shot: channel 1 640x480, list at 2304, 1 planes, ctrl 0x828001e0 bkgnd 0x81000000 list 2304 active 2304 stat 0xc37dc1e0 (mode 3, frame 28)
+vc4shot: plane 0: ListPlane { unity: true, format: 7, x: 0, y: 0, width: 640, height: 480, bus: 3256127488, pitch: 2560, alpha: false }
+vc4shot: wrote /tmp/s3b.ppm (921615 bytes)
+### 4: prime-probe --frames 10 --lifetime --foreign  (0.6 s)
+prime-probe: VT 5
+prime-probe: connector 27, CRTC 22, mode 640x480
+libEGL warning: MESA-LOADER: failed to retrieve device information
+MESA-LOADER: failed to retrieve device information
+MESA-LOADER: failed to retrieve device information
+prime-probe: EGL_EXT_image_dma_buf_import no, _modifiers no
+### 5a: desktop --yes  (1.6 s)
+Redox desktop (beta)
+Super+F2   back to the text console
+Super+F3   back to the desktop
+(or type desktop on the console)
+Super+T    a terminal
+Known limits:
+- Slow: everything draws in software; dragging a
+window costs much of a core.
+- Once started, the desktop cannot be stopped; its
+memory (40 to 80 MB) comes back only with a reboot.
+- No browser, one screen resolution, no HDMI hotplug.
+desktop: starting Orbital, its log goes to /tmp/desktop.log
+desktop: Super+F2 goes back to the console, Super+F3 to the desktop
+### 5b: pointer-bench --type user  (0.7 s)
+pointer-bench: typed 4 keys
+### 5e0: pointer-bench --keys enter  (0.4 s)
+pointer-bench: enter
+### 5e1: pointer-bench --keys enter  (0.4 s)
+pointer-bench: enter
+### 5e2: pointer-bench --keys enter  (0.4 s)
+pointer-bench: enter
+### s5start: prime-probe --frames 900 --show &> /tmp/s5.txt &  (0.3 s)
+ion: bg [0] 184
+### s5shot1: vc4shot /tmp/s5a.ppm  (2.7 s)
+vc4shot: channel 1 640x480, list at 2304, 1 planes, ctrl 0x828001e0 bkgnd 0x81000000 list 2304 active 2304 stat 0xa37c405e (mode 2, frame 4)
+vc4shot: plane 0: ListPlane { unity: true, format: 7, x: 0, y: 0, width: 640, height: 480, bus: 3256127488, pitch: 2560, alpha: false }
+vc4shot: wrote /tmp/s5a.ppm (921615 bytes)
+### s5 result:
+prime-probe: VT 7
+prime-probe: connector 27, CRTC 22, mode 640x480
+libEGL warning: MESA-LOADER: failed to retrieve device information
+MESA-LOADER: failed to retrieve device information
+MESA-LOADER: failed to retrieve device information
+prime-probe: EGL_EXT_image_dma_buf_import no, _modifiers no
+### s5shot2: vc4shot /tmp/s5b.ppm  (1.8 s)
+vc4shot: channel 1 640x480, list at 2304, 1 planes, ctrl 0x828001e0 bkgnd 0x81000000 list 2304 active 2304 stat 0xa3704150 (mode 2, frame 4)
+vc4shot: plane 0: ListPlane { unity: true, format: 7, x: 0, y: 0, width: 640, height: 480, bus: 3256127488, pitch: 2560, alpha: false }
+vc4shot: wrote /tmp/s5b.ppm (921615 bytes)
+### 6a: gles-demo --window --frames 300  (1.3 s)
+libEGL warning: MESA-LOADER: failed to retrieve device information
+MESA-LOADER: failed to retrieve device information
+MESA-LOADER: failed to retrieve device information
+gles-demo: GL_RENDERER V3D 4.2.14
+gles-demo: PASS: V3D 4.2.14, 300 frames right, window yes, first frame hash 0748855e, last 0455986f, 2.69 ms per frame (GL 1.24, window 1.46)
+### 6b: v3dprobe --via-v3dd --loops 100 | tail -2  (0.5 s)
+v3dprobe: csd: read interrupted, reading again
+v3dprobe: v3dd: stats: bos 30 frees 29 jobs 401 cl_jobs 301 failed 0 mmu_faults 0 resets 0 job_us_max 2188 outomem 0 overflow_chunks 1 spaces 1 spaces_made 3 space_loaded 3 irq /scheme/irq/phandle-1/0,74,4 irqs 700 irq_wakeups 693 timer_wakeups 89 maps 13 unmaps 13 live_bos 0 submitted 401 done_through 401 queued 0 running - zombies 0
+v3dprobe: v3dd: PASS: 100 of 100 jobs through /scheme/v3d right, 30 us average, 106 us max (daemon side)
+### fetched /tmp/s3a.ppm: 921615 bytes, stats (640, 480, 0.9773504078749488, 2)
+### fetched /tmp/s3b.ppm: 921615 bytes, stats (640, 480, 0.9773504078749488, 2)
+### fetched /tmp/s5a.ppm: 921615 bytes, stats (640, 480, 0.968418174360844, 4)
+### fetched /tmp/s5b.ppm: 921615 bytes, stats (640, 480, 0.968418174360844, 4)

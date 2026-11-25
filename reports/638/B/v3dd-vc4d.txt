@@ -1,0 +1,45 @@
+vc4d: BCM2711, HVS5: the firmware's mode, no EDID and no mode registers (HDMI is not the BCM2835's)
+vc4d: HVS at 0xfe400000, id 0x64647276, enabled
+vc4d: dispctrl 0x9a0ddfff dispstat 0x00200000
+vc4d: channel 0: ctrl 0x00000000 bkgnd 0x01000000 list 0 active 1 stat 0x119cc1e0 (mode 0, frame 36)
+vc4d: channel 1: ctrl 0x87800438 bkgnd 0x81000000 list 1636 active 1636 stat 0xa3910047 (mode 2, frame 16)
+vc4d: channel 1: 1920x1080, list [4f007807, 00160000, 4000fff0, 040b0780, 03d80720, 02860000, fe3c8000, fe846b00, 00001c80, 00008300, 40f33261, 40f36260, 800108ee, 00000ff4, 00000ff4, 80000000]
+vc4d: channel 2: ctrl 0x00000000 bkgnd 0x00000000 list 0 active 0 stat 0x10300000 (mode 0, frame 0)
+vc4d: taking over channel 1 at 1920x1080
+vc4d: irq probe: hvs at 0xfe400000, DISPCTRL DISPSTAT DISPSTAT before [9a0ddfff, 00000000, 00000000] after [9a0ddfff, 00200000, 00200000], /scheme/irq/phandle-1/0,97,4: 104 interrupts in 1000 ms
+vc4d: irq probe: pv2 at 0xfe20a000, CONTROL INTEN INTSTAT before [07174001, 00000000, 00000000] after [07174001, 00000000, 00000000], /scheme/irq/phandle-1/0,101,4: 0 interrupts in 1000 ms
+vc4d: check: start on channel 1, ctrl 0x87800438 bkgnd 0x81000000 list 1636 active 1636 stat 0xa3914029 (mode 2, frame 20)
+vc4d: check: before: errors [], dispctrl 0x9a0ddfff dispstat 0x00000000
+vc4d: check: PASS channel 1 list start is 2176
+vc4d: check: PASS list at 2176 reads back as written, 4 context words filled in by the HVS: [4800d807, 00000000, 4000fff0, 04380780, 021c0000, c2148000, c253c800, 00001e00, 4800d807, 00100010, 0000fff0, 00400040, 003f0000, c2931000, c2934f00, 00000100, 80000000]
+vc4d: check: PASS frame count advances (2 frames)
+vc4d: check: PASS active word 2176 is in the list 2176..=2193
+vc4d: check: PASS cursor at (16, 16) in the HVS, wanted (16, 16)
+vc4d: check: PASS channel 1 list start is 2240
+vc4d: check: PASS list at 2240 reads back as written, 4 context words filled in by the HVS: [4800d807, 00000000, 4000fff0, 04380780, 01810000, c2148000, c2419e00, 00001e00, 4800d807, 021c03c0, 0000fff0, 00400040, 00000000, c2931000, c2931000, 00000100, 80000000]
+vc4d: check: PASS frame count advances (2 frames)
+vc4d: check: PASS active word 2240 is in the list 2240..=2257
+vc4d: check: PASS cursor at (960, 540) in the HVS, wanted (960, 540)
+vc4d: check: PASS no HVS errors on channel 1: []
+vc4d: check: back on the firmware list 1636; 11 passed, 0 failed
+vc4d: check: PASSED
+vc4d: flip: two scanout buffers, damage copied
+vc4d: vblank: pixel valve 2, /scheme/irq/phandle-1/0,101,4
+vc4d: no primary plane, firmware list again
+vc4d: no primary plane, firmware list again
+vc4d: list 1 at 2048: [Plane { bus: 3271557120, pitch: 7680, x: 0, y: 0, width: 1920, height: 1080, alpha: false, scale: None }] [4800d807, 00000000, 4000fff0, 04380780, c0c0c0c0, c3000000, c0c0c0c0, 00001e00, 80000000]
+v3dd: V3D 42 powered up
+v3dd: interrupt: /scheme/irq/phandle-1/0,74,4
+v3dd: MMU on: v3dd's page table at 0x2938000, scratch page at 0x2932000
+vc4d: list 2 at 2176: [Plane { bus: 3256127488, pitch: 7680, x: 0, y: 0, width: 1920, height: 1080, alpha: false, scale: None }] [4800d807, 00000000, 4000fff0, 04380780, c0c0c0c0, c2149000, c0c0c0c0, 00001e00, 80000000]
+v3dd: ready: /scheme/v3d
+vc4d: list 3 at 2304: [Plane { bus: 3271557120, pitch: 7680, x: 0, y: 0, width: 1920, height: 1080, alpha: false, scale: None }] [4800d807, 00000000, 4000fff0, 04380780, c0c0c0c0, c3000000, c0c0c0c0, 00001e00, 80000000]
+vc4d: list 4 at 2048: [Plane { bus: 3256127488, pitch: 7680, x: 0, y: 0, width: 1920, height: 1080, alpha: false, scale: None }] [4800d807, 00000000, 4000fff0, 04380780, c0c0c0c0, c2149000, c0c0c0c0, 00001e00, 80000000]
+vc4d: check: after 2 s: PASS frames advance, errors [], ctrl 0x87800438 bkgnd 0x81000000 list 2048 active 2048 stat 0xa398412f (mode 2, frame 4)
+vc4d: check: after 5 s: PASS frames advance, errors [], ctrl 0x87800438 bkgnd 0x81000000 list 2048 active 2048 stat 0xa39503c5 (mode 2, frame 16)
+vc4d: check: after 10 s: PASS frames advance, errors [], ctrl 0x87800438 bkgnd 0x81000000 list 2048 active 2048 stat 0xa39003a3 (mode 2, frame 0)
+vc4d: check: after 30 s: PASS frames advance, errors [], ctrl 0x87800438 bkgnd 0x81000000 list 2048 active 2048 stat 0xa39c4007 (mode 2, frame 4)
+vc4d: shot: wrote /tmp/vc4shot.ppm (1920x1080, 1 planes)
+vc4d: check: after 60 s: PASS frames advance, errors [], ctrl 0x87800438 bkgnd 0x81000000 list 2048 active 2048 stat 0xa39e400a (mode 2, frame 36)
+vc4d: check: after 120 s: PASS frames advance, errors [], ctrl 0x87800438 bkgnd 0x81000000 list 2048 active 2048 stat 0xa3920417 (mode 2, frame 32)
+vc4d: shot: wrote /tmp/vc4shot.ppm (1920x1080, 1 planes)
