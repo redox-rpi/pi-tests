@@ -1,0 +1,30 @@
+### 2: prime-probe --frames 300  (0.4 s)
+prime-probe: VT 3
+prime-probe: connector 27, CRTC 22, mode 1920x1080
+libEGL warning: MESA-LOADER: failed to retrieve device information
+MESA-LOADER: failed to retrieve device information
+MESA-LOADER: failed to retrieve device information
+prime-probe: EGL_EXT_image_dma_buf_import yes, _modifiers yes
+prime-probe: GL_RENDERER V3D 4.2.14
+prime-probe: FAIL: PRIME_FD_TO_HANDLE of vc4d's buffer on the render node (errno 9, EGL error 0x3000, GL error 0x0)
+### s3start: prime-probe --frames 900 --show &> /tmp/s3.txt &  (0.2 s)
+ion: bg [0] 67
+### s3shot1: vc4shot /tmp/s3a.ppm  (2.1 s)
+vc4shot: channel 1 1920x1080, list at 2304, 1 planes, ctrl 0x87800438 bkgnd 0x81000000 list 2304 active 2304 stat 0xa39740da (mode 2, frame 52)
+vc4shot: plane 0: ListPlane { unity: true, format: 7, x: 0, y: 0, width: 1920, height: 1080, bus: 3256127488, pitch: 7680, alpha: false }
+vc4shot: wrote /tmp/s3a.ppm (6220817 bytes)
+### s3 result:
+prime-probe: VT 4
+prime-probe: connector 27, CRTC 22, mode 1920x1080
+libEGL warning: MESA-LOADER: failed to retrieve device information
+MESA-LOADER: failed to retrieve device information
+MESA-LOADER: failed to retrieve device information
+prime-probe: EGL_EXT_image_dma_buf_import yes, _modifiers yes
+prime-probe: GL_RENDERER V3D 4.2.14
+prime-probe: FAIL: PRIME_FD_TO_HANDLE of vc4d's buffer on the render node (errno 9, EGL error 0x3000, GL error 0x0)
+### s3shot2: vc4shot /tmp/s3b.ppm  (2.6 s)
+vc4shot: channel 1 1920x1080, list at 2304, 1 planes, ctrl 0x87800438 bkgnd 0x81000000 list 2304 active 2304 stat 0xa39a0007 (mode 2, frame 32)
+vc4shot: plane 0: ListPlane { unity: true, format: 7, x: 0, y: 0, width: 1920, height: 1080, bus: 3256127488, pitch: 7680, alpha: false }
+vc4shot: wrote /tmp/s3b.ppm (6220817 bytes)
+### fetched /tmp/s3a.ppm: 6220817 bytes, stats (1920, 1080, 0.9967153789804509, 2)
+### fetched /tmp/s3b.ppm: 6220817 bytes, stats (1920, 1080, 0.9967153789804509, 2)
