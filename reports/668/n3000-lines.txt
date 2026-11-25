@@ -1,0 +1,32 @@
+⏎                                                                                ]0;root: /home/rootroot:~# ]0;root: /home/rootroot:~# 1970-01-01T00-02-58.120Z [@xhcid::xhci:1607 INFO] usb-trace: sending 3000 no-op commands
+1970-01-01T00-02-59.080Z [@xhcid::xhci:1624 INFO] usb-trace: no-op 100 done, cmd_ring 116 cycle 1
+1970-01-01T00-03-00.139Z [@xhcid::xhci:1624 INFO] usb-trace: no-op 200 done, cmd_ring 216 cycle 1
+1970-01-01T00-03-01.139Z [@xhcid::xhci:1624 INFO] usb-trace: no-op 300 done, cmd_ring 61 cycle 0
+1970-01-01T00-03-02.139Z [@xhcid::xhci:1624 INFO] usb-trace: no-op 400 done, cmd_ring 161 cycle 0
+1970-01-01T00-03-03.137Z [@xhcid::xhci:1624 INFO] usb-trace: no-op 500 done, cmd_ring 7 cycle 1
+1970-01-01T00-03-04.100Z [@xhcid::xhci:1624 INFO] usb-trace: no-op 600 done, cmd_ring 108 cycle 1
+1970-01-01T00-03-05.080Z [@xhcid::xhci:1624 INFO] usb-trace: no-op 700 done, cmd_ring 208 cycle 1
+1970-01-01T00-03-06.060Z [@xhcid::xhci:1624 INFO] usb-trace: no-op 800 done, cmd_ring 53 cycle 0
+1970-01-01T00-03-07.040Z [@xhcid::xhci:1624 INFO] usb-trace: no-op 900 done, cmd_ring 153 cycle 0
+1970-01-01T00-03-07.980Z [@xhcid::xhci:1624 INFO] usb-trace: no-op 1000 done, cmd_ring 253 cycle 0
+1970-01-01T00-03-08.910Z [@xhcid::xhci:1624 INFO] usb-trace: no-op 1100 done, cmd_ring 98 cycle 1
+1970-01-01T00-03-09.900Z [@xhcid::xhci:1624 INFO] usb-trace: no-op 1200 done, cmd_ring 199 cycle 1
+1970-01-01T00-03-10.930Z [@xhcid::xhci:1624 INFO] usb-trace: no-op 1300 done, cmd_ring 45 cycle 0
+1970-01-01T00-03-11.910Z [@xhcid::xhci:1624 INFO] usb-trace: no-op 1400 done, cmd_ring 145 cycle 0
+1970-01-01T00-03-12.880Z [@xhcid::xhci:1624 INFO] usb-trace: no-op 1500 done, cmd_ring 245 cycle 0
+1970-01-01T00-03-13.878Z [@xhcid::xhci:1624 INFO] usb-trace: no-op 1600 done, cmd_ring 90 cycle 1
+1970-01-01T00-03-14.876Z [@xhcid::xhci:1624 INFO] usb-trace: no-op 1700 done, cmd_ring 190 cycle 1
+1970-01-01T00-03-15.851Z [@xhcid::xhci:1624 INFO] usb-trace: no-op 1800 done, cmd_ring 35 cycle 0
+1970-01-01T00-03-16.851Z [@xhcid::xhci:1624 INFO] usb-trace: no-op 1900 done, cmd_ring 135 cycle 0
+1970-01-01T00-03-17.831Z [@xhcid::xhci:1624 INFO] usb-trace: no-op 2000 done, cmd_ring 235 cycle 0
+1970-01-01T00-03-18.811Z [@xhcid::xhci:1624 INFO] usb-trace: no-op 2100 done, cmd_ring 81 cycle 1
+1970-01-01T00-03-19.781Z [@xhcid::xhci:1624 INFO] usb-trace: no-op 2200 done, cmd_ring 182 cycle 1
+1970-01-01T00-03-20.787Z [@xhcid::xhci:1624 INFO] usb-trace: no-op 2300 done, cmd_ring 27 cycle 0
+1970-01-01T00-03-21.757Z [@xhcid::xhci:1624 INFO] usb-trace: no-op 2400 done, cmd_ring 127 cycle 0
+1970-01-01T00-03-22.715Z [@xhcid::xhci:1624 INFO] usb-trace: no-op 2500 done, cmd_ring 227 cycle 0
+1970-01-01T00-03-23.647Z [@xhcid::xhci:1624 INFO] usb-trace: no-op 2600 done, cmd_ring 72 cycle 1
+1970-01-01T00-03-24.605Z [@xhcid::xhci:1624 INFO] usb-trace: no-op 2700 done, cmd_ring 172 cycle 1
+1970-01-01T00-03-25.545Z [@xhcid::xhci:1624 INFO] usb-trace: no-op 2800 done, cmd_ring 18 cycle 0
+1970-01-01T00-03-26.454Z [@xhcid::xhci:1624 INFO] usb-trace: no-op 2900 done, cmd_ring 119 cycle 0
+1970-01-01T00-03-27.382Z [@xhcid::xhci:1624 INFO] usb-trace: no-op 3000 done, cmd_ring 219 cycle 0
+1970-01-01T00-03-27.400Z [@xhcid::xhci:1627 INFO] usb-trace: 3000 no-op commands in 29262 ms, 0 failed

@@ -1,0 +1,13 @@
+1970-01-01T00-05-02.526Z [@xhcid::xhci::scheme:725 WARN] port 1: no event for the stopped CUSTOM_DEVICE_REQ
+
+thread 'main' (1) panicked at drivers/usb/usbhubd/src/main.rs:306:22:
+Failed to set port power: IoError(Os { code: 110, kind: TimedOut, message: "Connection timed out" })
+[ERROR usbhubd@src/header/stdlib/mod.rs:121] Abort
+kernel::arch::aarch64::interrupt::exception:ERROR -- FATAL: Not an SVC induced synchronous exception (ty=111100)
+FAR_EL1: 0xa780
+ELR_EL1: 0000000000448CD4
+SPSR_EL1: 0000000080000000
+--
+  FP ffff800003d9fee0: PC 00000000f2000001
+  00007ffffffff350: GUARD PAGE
+kernel::context::signal:INFO -- UNHANDLED EXCEPTION, CPU #2, PID 33, NAME /usr/lib/drivers/usbhubd, CONTEXT 0xfffffe8000164690

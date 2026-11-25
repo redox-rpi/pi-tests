@@ -1,0 +1,102 @@
+1970-01-01T00-00-32.021Z [@usbhubd:101 INFO] usb-trace: hub characteristics 0x00e0 (power switching ganged)
+1970-01-01T00-00-46.537Z [@xhcid::xhci::irq_reactor:635 INFO] usb-trace: events [s1e1c1:30 s1e1c27:1 s2e1c1:9 s3e1c1:9 s3e1c6:2 s3e3c1:1] registered {"1 epEndpNum(0)": 30, "1.1 epEndpNum(0)": 9, "1.1 epEndpNum(1)": 1, "1.4 epEndpNum(0)": 12, "1.4 epEndpNum(1)": 1} matched {"1 epEndpNum(0)": 29, "1.1 epEndpNum(0)": 9, "1.4 epEndpNum(0)": 12, "1.4 epEndpNum(1)": 1} dead {} unmatched 1 pending {"1 epEndpNum(0)": 1, "1.1 epEndpNum(1)": 1} early 1
+1970-01-01T00-00-46.587Z [@xhcid::xhci::irq_reactor:653 INFO] usb-trace: resources commands 21 cmd_ring 21/256 cycle 1 workers 2 handles 13 ports 3
+1970-01-01T00-01-01.158Z [@xhcid::xhci::irq_reactor:635 INFO] usb-trace: events [s1e1c1:10 s1e1c27:2] registered {"1 epEndpNum(0)": 10, "1.4 epEndpNum(1)": 1} matched {"1 epEndpNum(0)": 10} dead {} unmatched 4 pending {"1 epEndpNum(0)": 1, "1.1 epEndpNum(1)": 1, "1.4 epEndpNum(1)": 1} early 1
+1970-01-01T00-01-01.196Z [@xhcid::xhci::irq_reactor:653 INFO] usb-trace: resources commands 25 cmd_ring 25/256 cycle 1 workers 2 handles 13 ports 3
+1970-01-01T00-01-11.785Z [@xhcid::xhci::irq_reactor:635 INFO] usb-trace: events [s1e1c1:10 s1e1c27:1] registered {"1 epEndpNum(0)": 10} matched {"1 epEndpNum(0)": 10} dead {} unmatched 3 pending {"1 epEndpNum(0)": 1, "1.1 epEndpNum(1)": 1, "1.4 epEndpNum(1)": 1} early 1
+1970-01-01T00-01-11.821Z [@xhcid::xhci::irq_reactor:653 INFO] usb-trace: resources commands 28 cmd_ring 28/256 cycle 1 workers 2 handles 13 ports 3
+1970-01-01T00-01-24.197Z [@xhcid::xhci::irq_reactor:635 INFO] usb-trace: events [s1e1c1:5 s1e1c27:2] registered {"1 epEndpNum(0)": 5} matched {"1 epEndpNum(0)": 5} dead {} unmatched 3 pending {"1 epEndpNum(0)": 1, "1.1 epEndpNum(1)": 1, "1.4 epEndpNum(1)": 1} early 1
+1970-01-01T00-01-24.233Z [@xhcid::xhci::irq_reactor:653 INFO] usb-trace: resources commands 31 cmd_ring 31/256 cycle 1 workers 2 handles 13 ports 3
+⏎                                                                                ]0;root: /home/rootroot:~# ]0;root: /home/rootroot:~# 1970-01-01T00-01-38.181Z [@xhcid::xhci:1607 INFO] usb-trace: sending 2000 no-op commands
+1970-01-01T00-01-38.210Z [@xhcid::xhci::irq_reactor:635 INFO] usb-trace: events [s1e1c1:10 s1e1c27:1] registered {"1 epEndpNum(0)": 10} matched {"1 epEndpNum(0)": 10} dead {} unmatched 3 pending {"1 epEndpNum(0)": 1, "1.1 epEndpNum(1)": 1, "1.4 epEndpNum(1)": 1} early 1
+1970-01-01T00-01-38.246Z [@xhcid::xhci::irq_reactor:653 INFO] usb-trace: resources commands 36 cmd_ring 36/256 cycle 1 workers 2 handles 13 ports 3
+1970-01-01T00-01-39.250Z [@xhcid::xhci:1624 INFO] usb-trace: no-op 100 done, cmd_ring 135 cycle 1
+1970-01-01T00-01-40.200Z [@xhcid::xhci:1624 INFO] usb-trace: no-op 200 done, cmd_ring 236 cycle 1
+1970-01-01T00-01-41.210Z [@xhcid::xhci:1624 INFO] usb-trace: no-op 300 done, cmd_ring 81 cycle 0
+1970-01-01T00-01-42.180Z [@xhcid::xhci:1624 INFO] usb-trace: no-op 400 done, cmd_ring 181 cycle 0
+1970-01-01T00-01-43.150Z [@xhcid::xhci:1624 INFO] usb-trace: no-op 500 done, cmd_ring 26 cycle 1
+1970-01-01T00-01-44.110Z [@xhcid::xhci:1624 INFO] usb-trace: no-op 600 done, cmd_ring 126 cycle 1
+1970-01-01T00-01-45.038Z [@xhcid::xhci:1624 INFO] usb-trace: no-op 700 done, cmd_ring 226 cycle 1
+1970-01-01T00-01-46.010Z [@xhcid::xhci:1624 INFO] usb-trace: no-op 800 done, cmd_ring 71 cycle 0
+1970-01-01T00-01-46.999Z [@xhcid::xhci:1624 INFO] usb-trace: no-op 900 done, cmd_ring 171 cycle 0
+1970-01-01T00-01-47.991Z [@xhcid::xhci:1624 INFO] usb-trace: no-op 1000 done, cmd_ring 17 cycle 1
+1970-01-01T00-01-48.271Z [@xhcid::xhci::irq_reactor:635 INFO] usb-trace: events [s1e1c1:5 s1e1c27:2] registered {"1 epEndpNum(0)": 5} matched {"1 epEndpNum(0)": 5} dead {} unmatched 3 pending {"1 epEndpNum(0)": 1, "1.1 epEndpNum(1)": 1, "1.4 epEndpNum(1)": 1} early 1
+1970-01-01T00-01-48.307Z [@xhcid::xhci::irq_reactor:653 INFO] usb-trace: resources commands 1064 cmd_ring 44/256 cycle 1 workers 2 handles 13 ports 3
+1970-01-01T00-01-49.111Z [@xhcid::xhci:1624 INFO] usb-trace: no-op 1100 done, cmd_ring 118 cycle 1
+1970-01-01T00-01-50.032Z [@xhcid::xhci:1624 INFO] usb-trace: no-op 1200 done, cmd_ring 218 cycle 1
+1970-01-01T00-01-50.952Z [@xhcid::xhci:1624 INFO] usb-trace: no-op 1300 done, cmd_ring 63 cycle 0
+1970-01-01T00-01-51.892Z [@xhcid::xhci:1624 INFO] usb-trace: no-op 1400 done, cmd_ring 163 cycle 0
+1970-01-01T00-01-52.842Z [@xhcid::xhci:1624 INFO] usb-trace: no-op 1500 done, cmd_ring 8 cycle 1
+1970-01-01T00-01-53.812Z [@xhcid::xhci:1624 INFO] usb-trace: no-op 1600 done, cmd_ring 108 cycle 1
+1970-01-01T00-01-54.812Z [@xhcid::xhci:1624 INFO] usb-trace: no-op 1700 done, cmd_ring 209 cycle 1
+1970-01-01T00-01-55.762Z [@xhcid::xhci:1624 INFO] usb-trace: no-op 1800 done, cmd_ring 55 cycle 0
+1970-01-01T00-01-56.672Z [@xhcid::xhci:1624 INFO] usb-trace: no-op 1900 done, cmd_ring 155 cycle 0
+1970-01-01T00-01-57.612Z [@xhcid::xhci:1624 INFO] usb-trace: no-op 2000 done, cmd_ring 0 cycle 1
+1970-01-01T00-01-57.630Z [@xhcid::xhci:1627 INFO] usb-trace: 2000 no-op commands in 19430 ms, 0 failed
+1970-01-01T00-02-01.773Z [@xhcid::xhci::irq_reactor:635 INFO] usb-trace: events [s1e1c1:10 s1e1c27:2] registered {"1 epEndpNum(0)": 10} matched {"1 epEndpNum(0)": 10} dead {} unmatched 4 pending {"1 epEndpNum(0)": 1, "1.1 epEndpNum(1)": 1, "1.4 epEndpNum(1)": 1} early 1
+1970-01-01T00-02-01.809Z [@xhcid::xhci::irq_reactor:653 INFO] usb-trace: resources commands 2041 cmd_ring 1/256 cycle 1 workers 2 handles 13 ports 3
+1970-01-01T00-02-12.364Z [@xhcid::xhci::irq_reactor:635 INFO] usb-trace: events [s1e1c1:10 s1e1c27:1] registered {"1 epEndpNum(0)": 10} matched {"1 epEndpNum(0)": 10} dead {} unmatched 3 pending {"1 epEndpNum(0)": 1, "1.1 epEndpNum(1)": 1, "1.4 epEndpNum(1)": 1} early 1
+1970-01-01T00-02-12.397Z [@xhcid::xhci::irq_reactor:653 INFO] usb-trace: resources commands 2044 cmd_ring 4/256 cycle 1 workers 2 handles 13 ports 3
+1970-01-01T00-02-24.761Z [@xhcid::xhci::irq_reactor:635 INFO] usb-trace: events [s1e1c1:5 s1e1c27:2] registered {"1 epEndpNum(0)": 5} matched {"1 epEndpNum(0)": 5} dead {} unmatched 3 pending {"1 epEndpNum(0)": 1, "1.1 epEndpNum(1)": 1, "1.4 epEndpNum(1)": 1} early 1
+1970-01-01T00-02-24.797Z [@xhcid::xhci::irq_reactor:653 INFO] usb-trace: resources commands 2047 cmd_ring 7/256 cycle 1 workers 2 handles 13 ports 3
+1970-01-01T00-02-39.352Z [@xhcid::xhci::irq_reactor:635 INFO] usb-trace: events [s1e1c1:10 s1e1c27:2] registered {"1 epEndpNum(0)": 10} matched {"1 epEndpNum(0)": 10} dead {} unmatched 4 pending {"1 epEndpNum(0)": 1, "1.1 epEndpNum(1)": 1, "1.4 epEndpNum(1)": 1} early 1
+1970-01-01T00-02-39.388Z [@xhcid::xhci::irq_reactor:653 INFO] usb-trace: resources commands 2051 cmd_ring 11/256 cycle 1 workers 2 handles 13 ports 3
+1970-01-01T00-02-49.953Z [@xhcid::xhci::irq_reactor:635 INFO] usb-trace: events [s1e1c1:9 s1e1c27:1] registered {"1 epEndpNum(0)": 9} matched {"1 epEndpNum(0)": 9} dead {} unmatched 3 pending {"1 epEndpNum(0)": 1, "1.1 epEndpNum(1)": 1, "1.4 epEndpNum(1)": 1} early 1
+1970-01-01T00-02-49.986Z [@xhcid::xhci::irq_reactor:653 INFO] usb-trace: resources commands 2054 cmd_ring 14/256 cycle 1 workers 2 handles 13 ports 3
+⏎                                                                                ]0;root: /home/rootroot:~# ]0;root: /home/rootroot:~# 1970-01-01T00-02-58.120Z [@xhcid::xhci:1607 INFO] usb-trace: sending 3000 no-op commands
+1970-01-01T00-02-59.080Z [@xhcid::xhci:1624 INFO] usb-trace: no-op 100 done, cmd_ring 116 cycle 1
+1970-01-01T00-03-00.010Z [@xhcid::xhci::irq_reactor:635 INFO] usb-trace: events [s1e1c1:6 s1e1c27:1] registered {"1 epEndpNum(0)": 6} matched {"1 epEndpNum(0)": 6} dead {} unmatched 2 pending {"1 epEndpNum(0)": 1, "1.1 epEndpNum(1)": 1, "1.4 epEndpNum(1)": 1} early 1
+1970-01-01T00-03-00.046Z [@xhcid::xhci::irq_reactor:653 INFO] usb-trace: resources commands 2250 cmd_ring 210/256 cycle 1 workers 2 handles 13 ports 3
+1970-01-01T00-03-00.139Z [@xhcid::xhci:1624 INFO] usb-trace: no-op 200 done, cmd_ring 216 cycle 1
+1970-01-01T00-03-01.139Z [@xhcid::xhci:1624 INFO] usb-trace: no-op 300 done, cmd_ring 61 cycle 0
+1970-01-01T00-03-02.139Z [@xhcid::xhci:1624 INFO] usb-trace: no-op 400 done, cmd_ring 161 cycle 0
+1970-01-01T00-03-03.137Z [@xhcid::xhci:1624 INFO] usb-trace: no-op 500 done, cmd_ring 7 cycle 1
+1970-01-01T00-03-04.100Z [@xhcid::xhci:1624 INFO] usb-trace: no-op 600 done, cmd_ring 108 cycle 1
+1970-01-01T00-03-05.080Z [@xhcid::xhci:1624 INFO] usb-trace: no-op 700 done, cmd_ring 208 cycle 1
+1970-01-01T00-03-06.060Z [@xhcid::xhci:1624 INFO] usb-trace: no-op 800 done, cmd_ring 53 cycle 0
+1970-01-01T00-03-07.040Z [@xhcid::xhci:1624 INFO] usb-trace: no-op 900 done, cmd_ring 153 cycle 0
+1970-01-01T00-03-07.980Z [@xhcid::xhci:1624 INFO] usb-trace: no-op 1000 done, cmd_ring 253 cycle 0
+1970-01-01T00-03-08.910Z [@xhcid::xhci:1624 INFO] usb-trace: no-op 1100 done, cmd_ring 98 cycle 1
+1970-01-01T00-03-09.900Z [@xhcid::xhci:1624 INFO] usb-trace: no-op 1200 done, cmd_ring 199 cycle 1
+1970-01-01T00-03-10.070Z [@xhcid::xhci::irq_reactor:635 INFO] usb-trace: events [s1e1c1:5 s1e1c27:2] registered {"1 epEndpNum(0)": 5} matched {"1 epEndpNum(0)": 5} dead {} unmatched 3 pending {"1 epEndpNum(0)": 1, "1.1 epEndpNum(1)": 1, "1.4 epEndpNum(1)": 1} early 1
+1970-01-01T00-03-10.106Z [@xhcid::xhci::irq_reactor:653 INFO] usb-trace: resources commands 3275 cmd_ring 215/256 cycle 1 workers 2 handles 13 ports 3
+1970-01-01T00-03-10.930Z [@xhcid::xhci:1624 INFO] usb-trace: no-op 1300 done, cmd_ring 45 cycle 0
+1970-01-01T00-03-11.910Z [@xhcid::xhci:1624 INFO] usb-trace: no-op 1400 done, cmd_ring 145 cycle 0
+1970-01-01T00-03-12.880Z [@xhcid::xhci:1624 INFO] usb-trace: no-op 1500 done, cmd_ring 245 cycle 0
+1970-01-01T00-03-13.878Z [@xhcid::xhci:1624 INFO] usb-trace: no-op 1600 done, cmd_ring 90 cycle 1
+1970-01-01T00-03-14.876Z [@xhcid::xhci:1624 INFO] usb-trace: no-op 1700 done, cmd_ring 190 cycle 1
+1970-01-01T00-03-15.851Z [@xhcid::xhci:1624 INFO] usb-trace: no-op 1800 done, cmd_ring 35 cycle 0
+1970-01-01T00-03-16.851Z [@xhcid::xhci:1624 INFO] usb-trace: no-op 1900 done, cmd_ring 135 cycle 0
+1970-01-01T00-03-17.831Z [@xhcid::xhci:1624 INFO] usb-trace: no-op 2000 done, cmd_ring 235 cycle 0
+1970-01-01T00-03-18.811Z [@xhcid::xhci:1624 INFO] usb-trace: no-op 2100 done, cmd_ring 81 cycle 1
+1970-01-01T00-03-19.781Z [@xhcid::xhci:1624 INFO] usb-trace: no-op 2200 done, cmd_ring 182 cycle 1
+1970-01-01T00-03-20.131Z [@xhcid::xhci::irq_reactor:635 INFO] usb-trace: events [s1e1c1:8 s1e1c27:1] registered {"1 epEndpNum(0)": 8} matched {"1 epEndpNum(0)": 8} dead {} unmatched 3 pending {"1 epEndpNum(0)": 1, "1.1 epEndpNum(1)": 1, "1.4 epEndpNum(1)": 1} early 1
+1970-01-01T00-03-20.165Z [@xhcid::xhci::irq_reactor:653 INFO] usb-trace: resources commands 4299 cmd_ring 219/256 cycle 1 workers 2 handles 13 ports 3
+1970-01-01T00-03-20.787Z [@xhcid::xhci:1624 INFO] usb-trace: no-op 2300 done, cmd_ring 27 cycle 0
+1970-01-01T00-03-21.757Z [@xhcid::xhci:1624 INFO] usb-trace: no-op 2400 done, cmd_ring 127 cycle 0
+1970-01-01T00-03-22.715Z [@xhcid::xhci:1624 INFO] usb-trace: no-op 2500 done, cmd_ring 227 cycle 0
+1970-01-01T00-03-23.647Z [@xhcid::xhci:1624 INFO] usb-trace: no-op 2600 done, cmd_ring 72 cycle 1
+1970-01-01T00-03-24.605Z [@xhcid::xhci:1624 INFO] usb-trace: no-op 2700 done, cmd_ring 172 cycle 1
+1970-01-01T00-03-25.545Z [@xhcid::xhci:1624 INFO] usb-trace: no-op 2800 done, cmd_ring 18 cycle 0
+1970-01-01T00-03-26.454Z [@xhcid::xhci:1624 INFO] usb-trace: no-op 2900 done, cmd_ring 119 cycle 0
+1970-01-01T00-03-27.382Z [@xhcid::xhci:1624 INFO] usb-trace: no-op 3000 done, cmd_ring 219 cycle 0
+1970-01-01T00-03-27.400Z [@xhcid::xhci:1627 INFO] usb-trace: 3000 no-op commands in 29262 ms, 0 failed
+1970-01-01T00-03-32.578Z [@xhcid::xhci::irq_reactor:635 INFO] usb-trace: events [s1e1c1:7 s1e1c27:2] registered {"1 epEndpNum(0)": 7} matched {"1 epEndpNum(0)": 7} dead {} unmatched 3 pending {"1 epEndpNum(0)": 1, "1.1 epEndpNum(1)": 1, "1.4 epEndpNum(1)": 1} early 1
+1970-01-01T00-03-32.614Z [@xhcid::xhci::irq_reactor:653 INFO] usb-trace: resources commands 5065 cmd_ring 220/256 cycle 0 workers 2 handles 13 ports 3
+1970-01-01T00-03-43.140Z [@xhcid::xhci::irq_reactor:635 INFO] usb-trace: events [s1e1c1:10 s1e1c27:1] registered {"1 epEndpNum(0)": 10} matched {"1 epEndpNum(0)": 10} dead {} unmatched 3 pending {"1 epEndpNum(0)": 1, "1.1 epEndpNum(1)": 1, "1.4 epEndpNum(1)": 1} early 1
+1970-01-01T00-03-43.173Z [@xhcid::xhci::irq_reactor:653 INFO] usb-trace: resources commands 5068 cmd_ring 223/256 cycle 0 workers 2 handles 13 ports 3
+1970-01-01T00-03-55.397Z [@xhcid::xhci::irq_reactor:635 INFO] usb-trace: events [s1e1c1:5 s1e1c27:2] registered {"1 epEndpNum(0)": 5} matched {"1 epEndpNum(0)": 5} dead {} unmatched 3 pending {"1 epEndpNum(0)": 1, "1.1 epEndpNum(1)": 1, "1.4 epEndpNum(1)": 1} early 1
+1970-01-01T00-03-55.433Z [@xhcid::xhci::irq_reactor:653 INFO] usb-trace: resources commands 5071 cmd_ring 226/256 cycle 0 workers 2 handles 13 ports 3
+⏎                                                                                ]0;root: /home/rootroot:~# ]0;root: /home/rootroot:~# 1970-01-01T00-04-04.888Z [@usbhubd:276 INFO] usb-trace: port 1.1 power off (test)
+1970-01-01T00-04-07.918Z [@xhcid::xhci::irq_reactor:635 INFO] usb-trace: events [s1e1c1:9 s1e1c27:1 s2e3c36:1] registered {"1 epEndpNum(0)": 9} matched {"1 epEndpNum(0)": 9, "1.1 epEndpNum(1)": 1} dead {} unmatched 3 pending {"1 epEndpNum(0)": 1, "1.4 epEndpNum(1)": 1} early 1
+1970-01-01T00-04-07.954Z [@xhcid::xhci::irq_reactor:653 INFO] usb-trace: resources commands 5076 cmd_ring 231/256 cycle 0 workers 2 handles 10 ports 3
+1970-01-01T00-04-20.399Z [@xhcid::xhci::irq_reactor:635 INFO] usb-trace: events [s1e1c1:6 s1e1c27:2] registered {"1 epEndpNum(0)": 6} matched {"1 epEndpNum(0)": 6} dead {} unmatched 3 pending {"1 epEndpNum(0)": 1, "1.4 epEndpNum(1)": 1} early 1
+1970-01-01T00-04-20.433Z [@xhcid::xhci::irq_reactor:653 INFO] usb-trace: resources commands 5080 cmd_ring 235/256 cycle 0 workers 2 handles 10 ports 2
+1970-01-01T00-04-35.378Z [@xhcid::xhci::irq_reactor:635 INFO] usb-trace: events [s1e1c1:10 s1e1c27:2 s2e1c1:8] registered {"1 epEndpNum(0)": 10, "1.1 epEndpNum(0)": 8} matched {"1 epEndpNum(0)": 10, "1.1 epEndpNum(0)": 8} dead {} unmatched 4 pending {"1 epEndpNum(0)": 1, "1.4 epEndpNum(1)": 1} early 1
+1970-01-01T00-04-35.418Z [@xhcid::xhci::irq_reactor:653 INFO] usb-trace: resources commands 5089 cmd_ring 244/256 cycle 0 workers 2 handles 12 ports 3
+1970-01-01T00-04-46.033Z [@xhcid::xhci::irq_reactor:635 INFO] usb-trace: events [s1e1c1:9 s1e1c27:1 s2e1c1:1] registered {"1 epEndpNum(0)": 9, "1.1 epEndpNum(0)": 1, "1.1 epEndpNum(1)": 1} matched {"1 epEndpNum(0)": 9, "1.1 epEndpNum(0)": 1} dead {} unmatched 3 pending {"1 epEndpNum(0)": 1, "1.1 epEndpNum(1)": 1, "1.4 epEndpNum(1)": 1} early 1
+1970-01-01T00-04-46.034Z [@usbhubd:276 INFO] usb-trace: port 1.1 power off (test)
+1970-01-01T00-04-46.073Z [@xhcid::xhci::irq_reactor:653 INFO] usb-trace: resources commands 5092 cmd_ring 247/256 cycle 0 workers 2 handles 12 ports 3
+1970-01-01T00-04-52.263Z [@usbhubd:285 WARN] usb-trace: port 1.1: power off failed: IoError(Os { code: 110, kind: TimedOut, message: "Connection timed out" })
+1970-01-01T00-04-56.374Z [@xhcid::xhci::irq_reactor:635 INFO] usb-trace: events [s1e1c1:5 s1e1c27:1 s2e3c36:1] registered {"1 epEndpNum(0)": 5} matched {"1 epEndpNum(0)": 5, "1.1 epEndpNum(1)": 1} dead {} unmatched 2 pending {"1 epEndpNum(0)": 1, "1.4 epEndpNum(1)": 1} early 1
+1970-01-01T00-04-56.431Z [@xhcid::xhci::irq_reactor:653 INFO] usb-trace: resources commands 5096 cmd_ring 251/256 cycle 0 workers 2 handles 10 ports 3

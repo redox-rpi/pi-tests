@@ -1,0 +1,355 @@
+1970-01-01T00-00-31.581Z [@pcid_spawner:93 INFO] pcid-spawner: spawn "/usr/lib/drivers/xhcid"
+xhcid: mapping BAR0 Memory64 { addr: 25769803776, size: 4096 }
+xhcid: reading the capability registers at 0x15000
+xhcid: capability registers read, 64-byte contexts: false
+1970-01-01T00-00-31.642Z [@xhcid:98 INFO] XHCI pci-0000-01-00.0 on: 0=0000000600000000 IRQ: (phandle 1, [0, 143, 4])
+1970-01-01T00-00-31.931Z [@xhcid::xhci:1387 INFO] Loading subdriver "USB HUB" for port 1 iface 0 alternate 0 class 9.0 proto 0
+1970-01-01T00-00-31.984Z [@xhcid::xhci::device_enumerator:115 INFO] Device on port 1 was attached
+1970-01-01T00-00-32.021Z [@usbhubd:101 INFO] usb-trace: hub characteristics 0x00e0 (power switching ganged)
+1970-01-01T00-00-32.081Z [@usbhubd:296 INFO] power on port 1
+1970-01-01T00-00-32.116Z [@usbhubd:296 INFO] power on port 2
+1970-01-01T00-00-32.150Z [@usbhubd:296 INFO] power on port 3
+1970-01-01T00-00-32.180Z [@usbhubd:296 INFO] power on port 4
+experiments: desktop netstack-watch orbital orbital-apps pi400 pi400-mem rpi-fb usb-trace
+1970-01-01T00-00-33.215Z [@usbhubd:258 INFO] port 1 status V2(HubPortStatusV2(CONNECTION | POWER | LOW_SPEED | CONNECTION_CHANGED))
+1970-01-01T00-00-33.237Z [@usbhubd:339 INFO] reset port 1
+1970-01-01T00-00-33.265Z [@usbhubd:258 INFO] port 2 status V2(HubPortStatusV2(POWER))
+1970-01-01T00-00-33.286Z [@usbhubd:258 INFO] port 3 status V2(HubPortStatusV2(POWER))
+1970-01-01T00-00-33.306Z [@usbhubd:258 INFO] port 4 status V2(HubPortStatusV2(CONNECTION | POWER | LOW_SPEED | CONNECTION_CHANGED))
+1970-01-01T00-00-34.334Z [@usbhubd:258 INFO] port 1 status V2(HubPortStatusV2(CONNECTION | ENABLE | POWER | LOW_SPEED | CONNECTION_CHANGED | RESET_CHANGED))
+1970-01-01T00-00-34.387Z [@usbhubd:161 INFO] attach port 1.1 at xHCI speed 2
+1970-01-01T00-00-34.404Z [@xhcid::xhci:864 INFO] port 1.1: speed 2 from its hub (root port speed 3)
+1970-01-01T00-00-34.424Z [@xhcid::xhci:1502 INFO] port 1.1: speed ID 2 not among the port's own IDs [3], default ID used: true
+1970-01-01T00-00-34.445Z [@xhcid::xhci:1169 INFO] port 1.1 parent_hub_slot_id 1 parent_port_num 1
+1970-01-01T00-00-34.505Z [@xhcid::xhci:1387 INFO] Loading subdriver "USB HID" for port 1.1 iface 0 alternate 0 class 3.1 proto 2
+1970-01-01T00-00-34.541Z [@usbhidd:229 INFO] USB HID driver spawned with scheme `usb.pci-0000-01-00.0_xhci`, port 1.1, interface 0
+1970-01-01T00-00-34.562Z [@usbhidd:241 INFO] USB HID driver: "USB Optical Mouse" serial ""
+1970-01-01T00-00-34.580Z [@usbhidd:264 WARN] using endpoint 0x81 Interrupt In
+1970-01-01T00-00-34.646Z [@usbhubd:339 INFO] reset port 4
+1970-01-01T00-00-35.700Z [@usbhubd:258 INFO] port 4 status V2(HubPortStatusV2(CONNECTION | ENABLE | POWER | LOW_SPEED | CONNECTION_CHANGED | RESET_CHANGED))
+1970-01-01T00-00-35.753Z [@usbhubd:161 INFO] attach port 1.4 at xHCI speed 2
+1970-01-01T00-00-35.770Z [@xhcid::xhci:864 INFO] port 1.4: speed 2 from its hub (root port speed 3)
+1970-01-01T00-00-35.796Z [@xhcid::xhci:1502 INFO] port 1.4: speed ID 2 not among the port's own IDs [3], default ID used: true
+1970-01-01T00-00-35.817Z [@xhcid::xhci:1169 INFO] port 1.4 parent_hub_slot_id 1 parent_port_num 4
+1970-01-01T00-00-35.964Z [@xhcid::xhci:1387 INFO] Loading subdriver "USB HID" for port 1.4 iface 0 alternate 0 class 3.1 proto 1
+1970-01-01T00-00-35.997Z [@xhcid::xhci:1387 INFO] Loading subdriver "USB HID" for port 1.4 iface 1 alternate 0 class 3.0 proto 0
+1970-01-01T00-00-36.030Z [@usbhidd:229 INFO] USB HID driver spawned with scheme `usb.pci-0000-01-00.0_xhci`, port 1.4, interface 0
+1970-01-01T00-00-36.051Z [@usbhidd:241 INFO] USB HID driver: "Raspberry Pi Internal Keyboard" serial ""
+1970-01-01T00-00-36.070Z [@usbhidd:264 WARN] using endpoint 0x81 Interrupt In
+1970-01-01T00-00-36.089Z [@usbhidd:229 INFO] USB HID driver spawned with scheme `usb.pci-0000-01-00.0_xhci`, port 1.4, interface 1
+1970-01-01T00-00-36.149Z [@xhcid::xhci::scheme:3134 ERROR] CONTROL_TRANSFER transfer Trb { data: 0000000000000000, status: 00000000, control: 00011020 } failed with event Trb { data: 00000000083C8060, status: 06000000, control: 03018001 }
+1970-01-01T00-00-36.180Z [@xhcid::xhci::scheme:1348 WARN] port 1.4: SET_INTERFACE 0 refused (I/O error); it has one alternate setting, going on
+1970-01-01T00-00-36.210Z [@usbhidd:241 INFO] USB HID driver: "Raspberry Pi Internal Keyboard" serial ""
+1970-01-01T00-00-36.229Z [@usbhidd:264 WARN] using endpoint 0x82 Interrupt In
+1970-01-01T00-00-36.255Z [@xhcid::xhci::scheme:3134 ERROR] CONTROL_TRANSFER transfer Trb { data: 0000000000000000, status: 00000000, control: 00011020 } failed with event Trb { data: 00000000083C80D0, status: 06000000, control: 03018001 }
+1970-01-01T00-00-36.286Z [@xhcid::xhci::scheme:1348 WARN] port 1.4: SET_INTERFACE 1 refused (I/O error); it has one alternate setting, going on
+password: 1970-01-01T00-00-41.358Z [@xhcid::xhci::scheme:702 WARN] port 1.4: CUSTOM_DEVICE_REQ timed out after 5 s, stopping endpoint 0
+1970-01-01T00-00-41.395Z [@xhcid::xhci::scheme:3088 ERROR] STOP_ENDPOINT command (TRB Trb { data: 0000000000000000, status: 00000000, control: 03013C01 }) failed with event trb Trb { data: 0000000003329110, status: 13000000, control: 03008401 }
+1970-01-01T00-00-41.426Z [@xhcid::xhci::scheme:714 WARN] port 1.4: endpoint 0 not stopped (I/O error), resetting it
+1970-01-01T00-00-46.508Z [@xhcid::xhci::scheme:702 WARN] port 1: CUSTOM_DEVICE_REQ timed out after 5 s, stopping endpoint 0
+1970-01-01T00-00-46.537Z [@xhcid::xhci::irq_reactor:635 INFO] usb-trace: events [s1e1c1:30 s1e1c27:1 s2e1c1:9 s3e1c1:9 s3e1c6:2 s3e3c1:1] registered {"1 epEndpNum(0)": 30, "1.1 epEndpNum(0)": 9, "1.1 epEndpNum(1)": 1, "1.4 epEndpNum(0)": 12, "1.4 epEndpNum(1)": 1} matched {"1 epEndpNum(0)": 29, "1.1 epEndpNum(0)": 9, "1.4 epEndpNum(0)": 12, "1.4 epEndpNum(1)": 1} dead {} unmatched 1 pending {"1 epEndpNum(0)": 1, "1.1 epEndpNum(1)": 1} early 1
+1970-01-01T00-00-46.587Z [@xhcid::xhci::irq_reactor:653 INFO] usb-trace: resources commands 21 cmd_ring 21/256 cycle 1 workers 2 handles 13 ports 3
+1970-01-01T00-00-47.688Z [@xhcid::xhci::scheme:725 WARN] port 1: no event for the stopped CUSTOM_DEVICE_REQ
+1970-01-01T00-00-47.717Z [@usbhubd:251 WARN] port 1: status not read: IoError(Os { code: 110, kind: TimedOut, message: "Connection timed out" }), trying again
+1970-01-01T00-00-47.741Z [@usbhidd:137 WARN] unknown usage_page 0x7 usage 0x0
+1970-01-01T00-00-47.747Z [@xhcid::xhci::irq_reactor:450 INFO] xhcid: transfer event before its waiter, matched late (#1)
+1970-01-01T00-00-47.777Z [@xhcid::xhci::scheme:3134 ERROR] CONTROL_TRANSFER transfer Trb { data: 00040002000000A3, status: 00000008, control: 00030840 } failed with event Trb { data: 00000000035F7080, status: 1B000000, control: 01018001 }
+1970-01-01T00-00-47.808Z [@usbhubd:251 WARN] port 2: status not read: IoError(Os { code: 5, kind: Uncategorized, message: "I/O error" }), trying again
+1970-01-01T00-00-53.889Z [@xhcid::xhci::scheme:702 WARN] port 1: CUSTOM_DEVICE_REQ timed out after 5 s, stopping endpoint 0
+1970-01-01T00-00-54.969Z [@xhcid::xhci::scheme:725 WARN] port 1: no event for the stopped CUSTOM_DEVICE_REQ
+1970-01-01T00-00-54.998Z [@usbhubd:251 WARN] port 2: status not read: IoError(Os { code: 110, kind: TimedOut, message: "Connection timed out" }), trying again
+1970-01-01T00-00-55.027Z [@xhcid::xhci::irq_reactor:450 INFO] xhcid: transfer event before its waiter, matched late (#2)
+1970-01-01T00-00-55.048Z [@xhcid::xhci::scheme:3134 ERROR] CONTROL_TRANSFER transfer Trb { data: 00040003000000A3, status: 00000008, control: 00030841 } failed with event Trb { data: 00000000035F7080, status: 1B000000, control: 01018001 }
+1970-01-01T00-00-55.079Z [@usbhubd:251 WARN] port 3: status not read: IoError(Os { code: 5, kind: Uncategorized, message: "I/O error" }), trying again
+1970-01-01T00-01-01.132Z [@xhcid::xhci::scheme:702 WARN] port 1: CUSTOM_DEVICE_REQ timed out after 5 s, stopping endpoint 0
+1970-01-01T00-01-01.158Z [@xhcid::xhci::irq_reactor:635 INFO] usb-trace: events [s1e1c1:10 s1e1c27:2] registered {"1 epEndpNum(0)": 10, "1.4 epEndpNum(1)": 1} matched {"1 epEndpNum(0)": 10} dead {} unmatched 4 pending {"1 epEndpNum(0)": 1, "1.1 epEndpNum(1)": 1, "1.4 epEndpNum(1)": 1} early 1
+1970-01-01T00-01-01.196Z [@xhcid::xhci::irq_reactor:653 INFO] usb-trace: resources commands 25 cmd_ring 25/256 cycle 1 workers 2 handles 13 ports 3
+1970-01-01T00-01-02.320Z [@xhcid::xhci::scheme:725 WARN] port 1: no event for the stopped CUSTOM_DEVICE_REQ
+1970-01-01T00-01-02.350Z [@usbhubd:251 WARN] port 3: status not read: IoError(Os { code: 110, kind: TimedOut, message: "Connection timed out" }), trying again
+1970-01-01T00-01-02.380Z [@xhcid::xhci::irq_reactor:450 INFO] xhcid: transfer event before its waiter, matched late (#3)
+1970-01-01T00-01-02.400Z [@xhcid::xhci::scheme:3134 ERROR] CONTROL_TRANSFER transfer Trb { data: 00040004000000A3, status: 00000008, control: 00030840 } failed with event Trb { data: 00000000035F7080, status: 1B000000, control: 01018001 }
+1970-01-01T00-01-02.431Z [@usbhubd:251 WARN] port 4: status not read: IoError(Os { code: 5, kind: Uncategorized, message: "I/O error" }), trying again
+⏎                                                                                ]0;root: /home/rootroot:~# ]0;root: /home/rootroot:~# 1970-01-01T00-01-08.525Z [@xhcid::xhci::scheme:702 WARN] port 1: CUSTOM_DEVICE_REQ timed out after 5 s, stopping endpoint 0
+1970-01-01T00-01-09.604Z [@xhcid::xhci::scheme:725 WARN] port 1: no event for the stopped CUSTOM_DEVICE_REQ
+1970-01-01T00-01-09.634Z [@usbhubd:251 WARN] port 4: status not read: IoError(Os { code: 110, kind: TimedOut, message: "Connection timed out" }), trying again
+1970-01-01T00-01-10.674Z [@xhcid::xhci::irq_reactor:450 INFO] xhcid: transfer event before its waiter, matched late (#4)
+1970-01-01T00-01-10.695Z [@xhcid::xhci::scheme:3134 ERROR] CONTROL_TRANSFER transfer Trb { data: 00040001000000A3, status: 00000008, control: 00030841 } failed with event Trb { data: 00000000035F7080, status: 1B000000, control: 01018001 }
+1970-01-01T00-01-10.728Z [@usbhubd:251 WARN] port 1: status not read: IoError(Os { code: 5, kind: Uncategorized, message: "I/O error" }), trying again
+1970-01-01T00-01-11.785Z [@xhcid::xhci::irq_reactor:635 INFO] usb-trace: events [s1e1c1:10 s1e1c27:1] registered {"1 epEndpNum(0)": 10} matched {"1 epEndpNum(0)": 10} dead {} unmatched 3 pending {"1 epEndpNum(0)": 1, "1.1 epEndpNum(1)": 1, "1.4 epEndpNum(1)": 1} early 1
+1970-01-01T00-01-11.821Z [@xhcid::xhci::irq_reactor:653 INFO] usb-trace: resources commands 28 cmd_ring 28/256 cycle 1 workers 2 handles 13 ports 3
+1970-01-01T00-01-16.876Z [@xhcid::xhci::scheme:702 WARN] port 1: CUSTOM_DEVICE_REQ timed out after 5 s, stopping endpoint 0
+1970-01-01T00-01-17.977Z [@xhcid::xhci::scheme:725 WARN] port 1: no event for the stopped CUSTOM_DEVICE_REQ
+1970-01-01T00-01-18.006Z [@usbhubd:251 WARN] port 1: status not read: IoError(Os { code: 110, kind: TimedOut, message: "Connection timed out" }), trying again
+1970-01-01T00-01-18.035Z [@xhcid::xhci::irq_reactor:450 INFO] xhcid: transfer event before its waiter, matched late (#5)
+1970-01-01T00-01-18.056Z [@xhcid::xhci::scheme:3134 ERROR] CONTROL_TRANSFER transfer Trb { data: 00040002000000A3, status: 00000008, control: 00030840 } failed with event Trb { data: 00000000035F7080, status: 1B000000, control: 01018001 }
+1970-01-01T00-01-18.090Z [@usbhubd:251 WARN] port 2: status not read: IoError(Os { code: 5, kind: Uncategorized, message: "I/O error" }), trying again
+1970-01-01T00-01-24.167Z [@xhcid::xhci::scheme:702 WARN] port 1: CUSTOM_DEVICE_REQ timed out after 5 s, stopping endpoint 0
+1970-01-01T00-01-24.197Z [@xhcid::xhci::irq_reactor:635 INFO] usb-trace: events [s1e1c1:5 s1e1c27:2] registered {"1 epEndpNum(0)": 5} matched {"1 epEndpNum(0)": 5} dead {} unmatched 3 pending {"1 epEndpNum(0)": 1, "1.1 epEndpNum(1)": 1, "1.4 epEndpNum(1)": 1} early 1
+1970-01-01T00-01-24.233Z [@xhcid::xhci::irq_reactor:653 INFO] usb-trace: resources commands 31 cmd_ring 31/256 cycle 1 workers 2 handles 13 ports 3
+1970-01-01T00-01-25.357Z [@xhcid::xhci::scheme:725 WARN] port 1: no event for the stopped CUSTOM_DEVICE_REQ
+1970-01-01T00-01-25.387Z [@usbhubd:251 WARN] port 2: status not read: IoError(Os { code: 110, kind: TimedOut, message: "Connection timed out" }), trying again
+1970-01-01T00-01-25.416Z [@xhcid::xhci::irq_reactor:450 INFO] xhcid: transfer event before its waiter, matched late (#6)
+1970-01-01T00-01-25.438Z [@xhcid::xhci::scheme:3134 ERROR] CONTROL_TRANSFER transfer Trb { data: 00040003000000A3, status: 00000008, control: 00030841 } failed with event Trb { data: 00000000035F7080, status: 1B000000, control: 01018001 }
+1970-01-01T00-01-25.471Z [@usbhubd:251 WARN] port 3: status not read: IoError(Os { code: 5, kind: Uncategorized, message: "I/O error" }), trying again
+1970-01-01T00-01-31.578Z [@xhcid::xhci::scheme:702 WARN] port 1: CUSTOM_DEVICE_REQ timed out after 5 s, stopping endpoint 0
+1970-01-01T00-01-32.638Z [@xhcid::xhci::scheme:725 WARN] port 1: no event for the stopped CUSTOM_DEVICE_REQ
+1970-01-01T00-01-32.678Z [@usbhubd:251 WARN] port 3: status not read: IoError(Os { code: 110, kind: TimedOut, message: "Connection timed out" }), trying again
+1970-01-01T00-01-32.708Z [@xhcid::xhci::irq_reactor:450 INFO] xhcid: transfer event before its waiter, matched late (#7)
+1970-01-01T00-01-32.730Z [@xhcid::xhci::scheme:3134 ERROR] CONTROL_TRANSFER transfer Trb { data: 00040004000000A3, status: 00000008, control: 00030840 } failed with event Trb { data: 00000000035F7080, status: 1B000000, control: 01018001 }
+1970-01-01T00-01-32.763Z [@usbhubd:251 WARN] port 4: status not read: IoError(Os { code: 5, kind: Uncategorized, message: "I/O error" }), trying again
+]0;root: /home/rootroot:~# e]0;root: /home/rootroot:~# ec]0;root: /home/rootroot:~# ech]0;root: /home/rootroot:~# echo]0;root: /home/rootroot:~# echo ]0;root: /home/rootroot:~# echo "]0;root: /home/rootroot:~# echo "2]0;root: /home/rootroot:~# echo "20]0;root: /home/rootroot:~# echo "200]0;root: /home/rootroot:~# echo "2000]0;root: /home/rootroot:~# echo "2000"]0;root: /home/rootroot:~# echo "2000" ]0;root: /home/rootroot:~# echo "2000" >]0;root: /home/rootroot:~# echo "2000" > ]0;root: /home/rootroot:~# echo "2000" > /]0;root: /home/rootroot:~# echo "2000" > /t]0;root: /home/rootroot:~# echo "2000" > /tm]0;root: /home/rootroot:~# echo "2000" > /tmp]0;root: /home/rootroot:~# echo "2000" > /tmp/]0;root: /home/rootroot:~# echo "2000" > /tmp/x]0;root: /home/rootroot:~# echo "2000" > /tmp/xh]0;root: /home/rootroot:~# echo "2000" > /tmp/xhc]0;root: /home/rootroot:~# echo "2000" > /tmp/xhci]0;root: /home/rootroot:~# echo "2000" > /tmp/xhcid]0;root: /home/rootroot:~# echo "2000" > /tmp/xhcid-]0;root: /home/rootroot:~# echo "2000" > /tmp/xhcid-n]0;root: /home/rootroot:~# echo "2000" > /tmp/xhcid-no]0;root: /home/rootroot:~# echo "2000" > /tmp/xhcid-noo]0;root: /home/rootroot:~# echo "2000" > /tmp/xhcid-noop]0;root: /home/rootroot:~# echo "2000" > /tmp/xhcid-noop
+⏎                                                                                ]0;root: /home/rootroot:~# ]0;root: /home/rootroot:~# 1970-01-01T00-01-38.181Z [@xhcid::xhci:1607 INFO] usb-trace: sending 2000 no-op commands
+1970-01-01T00-01-38.210Z [@xhcid::xhci::irq_reactor:635 INFO] usb-trace: events [s1e1c1:10 s1e1c27:1] registered {"1 epEndpNum(0)": 10} matched {"1 epEndpNum(0)": 10} dead {} unmatched 3 pending {"1 epEndpNum(0)": 1, "1.1 epEndpNum(1)": 1, "1.4 epEndpNum(1)": 1} early 1
+1970-01-01T00-01-38.246Z [@xhcid::xhci::irq_reactor:653 INFO] usb-trace: resources commands 36 cmd_ring 36/256 cycle 1 workers 2 handles 13 ports 3
+1970-01-01T00-01-38.890Z [@xhcid::xhci::scheme:702 WARN] port 1: CUSTOM_DEVICE_REQ timed out after 5 s, stopping endpoint 0
+1970-01-01T00-01-39.250Z [@xhcid::xhci:1624 INFO] usb-trace: no-op 100 done, cmd_ring 135 cycle 1
+1970-01-01T00-01-39.930Z [@xhcid::xhci::scheme:725 WARN] port 1: no event for the stopped CUSTOM_DEVICE_REQ
+1970-01-01T00-01-39.960Z [@usbhubd:251 WARN] port 4: status not read: IoError(Os { code: 110, kind: TimedOut, message: "Connection timed out" }), trying again
+1970-01-01T00-01-40.200Z [@xhcid::xhci:1624 INFO] usb-trace: no-op 200 done, cmd_ring 236 cycle 1
+1970-01-01T00-01-41.000Z [@xhcid::xhci::irq_reactor:450 INFO] xhcid: transfer event before its waiter, matched late (#8)
+1970-01-01T00-01-41.020Z [@xhcid::xhci::scheme:3134 ERROR] CONTROL_TRANSFER transfer Trb { data: 00040001000000A3, status: 00000008, control: 00030841 } failed with event Trb { data: 00000000035F7080, status: 1B000000, control: 01018001 }
+1970-01-01T00-01-41.051Z [@usbhubd:251 WARN] port 1: status not read: IoError(Os { code: 5, kind: Uncategorized, message: "I/O error" }), trying again
+1970-01-01T00-01-41.210Z [@xhcid::xhci:1624 INFO] usb-trace: no-op 300 done, cmd_ring 81 cycle 0
+1970-01-01T00-01-42.180Z [@xhcid::xhci:1624 INFO] usb-trace: no-op 400 done, cmd_ring 181 cycle 0
+1970-01-01T00-01-43.150Z [@xhcid::xhci:1624 INFO] usb-trace: no-op 500 done, cmd_ring 26 cycle 1
+1970-01-01T00-01-44.110Z [@xhcid::xhci:1624 INFO] usb-trace: no-op 600 done, cmd_ring 126 cycle 1
+1970-01-01T00-01-45.038Z [@xhcid::xhci:1624 INFO] usb-trace: no-op 700 done, cmd_ring 226 cycle 1
+1970-01-01T00-01-46.010Z [@xhcid::xhci:1624 INFO] usb-trace: no-op 800 done, cmd_ring 71 cycle 0
+1970-01-01T00-01-46.999Z [@xhcid::xhci:1624 INFO] usb-trace: no-op 900 done, cmd_ring 171 cycle 0
+1970-01-01T00-01-47.201Z [@xhcid::xhci::scheme:702 WARN] port 1: CUSTOM_DEVICE_REQ timed out after 5 s, stopping endpoint 0
+1970-01-01T00-01-47.991Z [@xhcid::xhci:1624 INFO] usb-trace: no-op 1000 done, cmd_ring 17 cycle 1
+1970-01-01T00-01-48.249Z [@xhcid::xhci::scheme:725 WARN] port 1: no event for the stopped CUSTOM_DEVICE_REQ
+1970-01-01T00-01-48.271Z [@xhcid::xhci::irq_reactor:635 INFO] usb-trace: events [s1e1c1:5 s1e1c27:2] registered {"1 epEndpNum(0)": 5} matched {"1 epEndpNum(0)": 5} dead {} unmatched 3 pending {"1 epEndpNum(0)": 1, "1.1 epEndpNum(1)": 1, "1.4 epEndpNum(1)": 1} early 1
+1970-01-01T00-01-48.307Z [@xhcid::xhci::irq_reactor:653 INFO] usb-trace: resources commands 1064 cmd_ring 44/256 cycle 1 workers 2 handles 13 ports 3
+1970-01-01T00-01-48.331Z [@usbhubd:251 WARN] port 1: status not read: IoError(Os { code: 110, kind: TimedOut, message: "Connection timed out" }), trying again
+1970-01-01T00-01-48.361Z [@xhcid::xhci::irq_reactor:450 INFO] xhcid: transfer event before its waiter, matched late (#9)
+1970-01-01T00-01-48.382Z [@xhcid::xhci::scheme:3134 ERROR] CONTROL_TRANSFER transfer Trb { data: 00040002000000A3, status: 00000008, control: 00030840 } failed with event Trb { data: 00000000035F7080, status: 1B000000, control: 01018001 }
+1970-01-01T00-01-48.412Z [@usbhubd:251 WARN] port 2: status not read: IoError(Os { code: 5, kind: Uncategorized, message: "I/O error" }), trying again
+1970-01-01T00-01-49.111Z [@xhcid::xhci:1624 INFO] usb-trace: no-op 1100 done, cmd_ring 118 cycle 1
+1970-01-01T00-01-50.032Z [@xhcid::xhci:1624 INFO] usb-trace: no-op 1200 done, cmd_ring 218 cycle 1
+1970-01-01T00-01-50.952Z [@xhcid::xhci:1624 INFO] usb-trace: no-op 1300 done, cmd_ring 63 cycle 0
+1970-01-01T00-01-51.892Z [@xhcid::xhci:1624 INFO] usb-trace: no-op 1400 done, cmd_ring 163 cycle 0
+1970-01-01T00-01-52.842Z [@xhcid::xhci:1624 INFO] usb-trace: no-op 1500 done, cmd_ring 8 cycle 1
+1970-01-01T00-01-53.812Z [@xhcid::xhci:1624 INFO] usb-trace: no-op 1600 done, cmd_ring 108 cycle 1
+1970-01-01T00-01-54.480Z [@xhcid::xhci::scheme:702 WARN] port 1: CUSTOM_DEVICE_REQ timed out after 5 s, stopping endpoint 0
+1970-01-01T00-01-54.812Z [@xhcid::xhci:1624 INFO] usb-trace: no-op 1700 done, cmd_ring 209 cycle 1
+1970-01-01T00-01-55.520Z [@xhcid::xhci::scheme:725 WARN] port 1: no event for the stopped CUSTOM_DEVICE_REQ
+1970-01-01T00-01-55.543Z [@usbhubd:251 WARN] port 2: status not read: IoError(Os { code: 110, kind: TimedOut, message: "Connection timed out" }), trying again
+1970-01-01T00-01-55.572Z [@xhcid::xhci::irq_reactor:450 INFO] xhcid: transfer event before its waiter, matched late (#10)
+1970-01-01T00-01-55.593Z [@xhcid::xhci::scheme:3134 ERROR] CONTROL_TRANSFER transfer Trb { data: 00040003000000A3, status: 00000008, control: 00030841 } failed with event Trb { data: 00000000035F7080, status: 1B000000, control: 01018000 }
+1970-01-01T00-01-55.623Z [@usbhubd:251 WARN] port 3: status not read: IoError(Os { code: 5, kind: Uncategorized, message: "I/O error" }), trying again
+1970-01-01T00-01-55.762Z [@xhcid::xhci:1624 INFO] usb-trace: no-op 1800 done, cmd_ring 55 cycle 0
+1970-01-01T00-01-56.672Z [@xhcid::xhci:1624 INFO] usb-trace: no-op 1900 done, cmd_ring 155 cycle 0
+1970-01-01T00-01-57.612Z [@xhcid::xhci:1624 INFO] usb-trace: no-op 2000 done, cmd_ring 0 cycle 1
+1970-01-01T00-01-57.630Z [@xhcid::xhci:1627 INFO] usb-trace: 2000 no-op commands in 19430 ms, 0 failed
+1970-01-01T00-02-01.740Z [@xhcid::xhci::scheme:702 WARN] port 1: CUSTOM_DEVICE_REQ timed out after 5 s, stopping endpoint 0
+1970-01-01T00-02-01.773Z [@xhcid::xhci::irq_reactor:635 INFO] usb-trace: events [s1e1c1:10 s1e1c27:2] registered {"1 epEndpNum(0)": 10} matched {"1 epEndpNum(0)": 10} dead {} unmatched 4 pending {"1 epEndpNum(0)": 1, "1.1 epEndpNum(1)": 1, "1.4 epEndpNum(1)": 1} early 1
+1970-01-01T00-02-01.809Z [@xhcid::xhci::irq_reactor:653 INFO] usb-trace: resources commands 2041 cmd_ring 1/256 cycle 1 workers 2 handles 13 ports 3
+1970-01-01T00-02-02.930Z [@xhcid::xhci::scheme:725 WARN] port 1: no event for the stopped CUSTOM_DEVICE_REQ
+1970-01-01T00-02-02.953Z [@usbhubd:251 WARN] port 3: status not read: IoError(Os { code: 110, kind: TimedOut, message: "Connection timed out" }), trying again
+1970-01-01T00-02-02.983Z [@xhcid::xhci::scheme:3134 ERROR] CONTROL_TRANSFER transfer Trb { data: 00040004000000A3, status: 00000008, control: 00030840 } failed with event Trb { data: 00000000035F7080, status: 1B000000, control: 01018001 }
+1970-01-01T00-02-03.014Z [@usbhubd:251 WARN] port 4: status not read: IoError(Os { code: 5, kind: Uncategorized, message: "I/O error" }), trying again
+1970-01-01T00-02-09.101Z [@xhcid::xhci::scheme:702 WARN] port 1: CUSTOM_DEVICE_REQ timed out after 5 s, stopping endpoint 0
+1970-01-01T00-02-10.191Z [@xhcid::xhci::scheme:725 WARN] port 1: no event for the stopped CUSTOM_DEVICE_REQ
+1970-01-01T00-02-10.214Z [@usbhubd:251 WARN] port 4: status not read: IoError(Os { code: 110, kind: TimedOut, message: "Connection timed out" }), trying again
+1970-01-01T00-02-11.254Z [@xhcid::xhci::scheme:3134 ERROR] CONTROL_TRANSFER transfer Trb { data: 00040001000000A3, status: 00000008, control: 00030841 } failed with event Trb { data: 00000000035F7080, status: 1B000000, control: 01018001 }
+1970-01-01T00-02-11.287Z [@usbhubd:251 WARN] port 1: status not read: IoError(Os { code: 5, kind: Uncategorized, message: "I/O error" }), trying again
+1970-01-01T00-02-12.364Z [@xhcid::xhci::irq_reactor:635 INFO] usb-trace: events [s1e1c1:10 s1e1c27:1] registered {"1 epEndpNum(0)": 10} matched {"1 epEndpNum(0)": 10} dead {} unmatched 3 pending {"1 epEndpNum(0)": 1, "1.1 epEndpNum(1)": 1, "1.4 epEndpNum(1)": 1} early 1
+1970-01-01T00-02-12.397Z [@xhcid::xhci::irq_reactor:653 INFO] usb-trace: resources commands 2044 cmd_ring 4/256 cycle 1 workers 2 handles 13 ports 3
+1970-01-01T00-02-17.452Z [@xhcid::xhci::scheme:702 WARN] port 1: CUSTOM_DEVICE_REQ timed out after 5 s, stopping endpoint 0
+1970-01-01T00-02-18.532Z [@xhcid::xhci::scheme:725 WARN] port 1: no event for the stopped CUSTOM_DEVICE_REQ
+1970-01-01T00-02-18.561Z [@usbhubd:251 WARN] port 1: status not read: IoError(Os { code: 110, kind: TimedOut, message: "Connection timed out" }), trying again
+1970-01-01T00-02-18.589Z [@xhcid::xhci::scheme:3134 ERROR] CONTROL_TRANSFER transfer Trb { data: 00040002000000A3, status: 00000008, control: 00030840 } failed with event Trb { data: 00000000035F7080, status: 1B000000, control: 01018001 }
+1970-01-01T00-02-18.622Z [@usbhubd:251 WARN] port 2: status not read: IoError(Os { code: 5, kind: Uncategorized, message: "I/O error" }), trying again
+1970-01-01T00-02-24.732Z [@xhcid::xhci::scheme:702 WARN] port 1: CUSTOM_DEVICE_REQ timed out after 5 s, stopping endpoint 0
+1970-01-01T00-02-24.761Z [@xhcid::xhci::irq_reactor:635 INFO] usb-trace: events [s1e1c1:5 s1e1c27:2] registered {"1 epEndpNum(0)": 5} matched {"1 epEndpNum(0)": 5} dead {} unmatched 3 pending {"1 epEndpNum(0)": 1, "1.1 epEndpNum(1)": 1, "1.4 epEndpNum(1)": 1} early 1
+1970-01-01T00-02-24.797Z [@xhcid::xhci::irq_reactor:653 INFO] usb-trace: resources commands 2047 cmd_ring 7/256 cycle 1 workers 2 handles 13 ports 3
+1970-01-01T00-02-25.831Z [@xhcid::xhci::scheme:725 WARN] port 1: no event for the stopped CUSTOM_DEVICE_REQ
+1970-01-01T00-02-25.858Z [@usbhubd:251 WARN] port 2: status not read: IoError(Os { code: 110, kind: TimedOut, message: "Connection timed out" }), trying again
+1970-01-01T00-02-25.891Z [@xhcid::xhci::scheme:3134 ERROR] CONTROL_TRANSFER transfer Trb { data: 00040003000000A3, status: 00000008, control: 00030841 } failed with event Trb { data: 00000000035F7080, status: 1B000000, control: 01018001 }
+1970-01-01T00-02-25.921Z [@usbhubd:251 WARN] port 3: status not read: IoError(Os { code: 5, kind: Uncategorized, message: "I/O error" }), trying again
+1970-01-01T00-02-32.032Z [@xhcid::xhci::scheme:702 WARN] port 1: CUSTOM_DEVICE_REQ timed out after 5 s, stopping endpoint 0
+1970-01-01T00-02-33.124Z [@xhcid::xhci::scheme:725 WARN] port 1: no event for the stopped CUSTOM_DEVICE_REQ
+1970-01-01T00-02-33.153Z [@usbhubd:251 WARN] port 3: status not read: IoError(Os { code: 110, kind: TimedOut, message: "Connection timed out" }), trying again
+1970-01-01T00-02-33.182Z [@xhcid::xhci::scheme:3134 ERROR] CONTROL_TRANSFER transfer Trb { data: 00040004000000A3, status: 00000008, control: 00030840 } failed with event Trb { data: 00000000035F7080, status: 1B000000, control: 01018001 }
+1970-01-01T00-02-33.215Z [@usbhubd:251 WARN] port 4: status not read: IoError(Os { code: 5, kind: Uncategorized, message: "I/O error" }), trying again
+1970-01-01T00-02-39.324Z [@xhcid::xhci::scheme:702 WARN] port 1: CUSTOM_DEVICE_REQ timed out after 5 s, stopping endpoint 0
+1970-01-01T00-02-39.352Z [@xhcid::xhci::irq_reactor:635 INFO] usb-trace: events [s1e1c1:10 s1e1c27:2] registered {"1 epEndpNum(0)": 10} matched {"1 epEndpNum(0)": 10} dead {} unmatched 4 pending {"1 epEndpNum(0)": 1, "1.1 epEndpNum(1)": 1, "1.4 epEndpNum(1)": 1} early 1
+1970-01-01T00-02-39.388Z [@xhcid::xhci::irq_reactor:653 INFO] usb-trace: resources commands 2051 cmd_ring 11/256 cycle 1 workers 2 handles 13 ports 3
+1970-01-01T00-02-40.504Z [@xhcid::xhci::scheme:725 WARN] port 1: no event for the stopped CUSTOM_DEVICE_REQ
+1970-01-01T00-02-40.532Z [@usbhubd:251 WARN] port 4: status not read: IoError(Os { code: 110, kind: TimedOut, message: "Connection timed out" }), trying again
+1970-01-01T00-02-41.572Z [@xhcid::xhci::scheme:3134 ERROR] CONTROL_TRANSFER transfer Trb { data: 00040001000000A3, status: 00000008, control: 00030841 } failed with event Trb { data: 00000000035F7080, status: 1B000000, control: 01018001 }
+1970-01-01T00-02-41.603Z [@usbhubd:251 WARN] port 1: status not read: IoError(Os { code: 5, kind: Uncategorized, message: "I/O error" }), trying again
+1970-01-01T00-02-47.715Z [@xhcid::xhci::scheme:702 WARN] port 1: CUSTOM_DEVICE_REQ timed out after 5 s, stopping endpoint 0
+1970-01-01T00-02-48.805Z [@xhcid::xhci::scheme:725 WARN] port 1: no event for the stopped CUSTOM_DEVICE_REQ
+1970-01-01T00-02-48.833Z [@usbhubd:251 WARN] port 1: status not read: IoError(Os { code: 110, kind: TimedOut, message: "Connection timed out" }), trying again
+1970-01-01T00-02-48.863Z [@xhcid::xhci::scheme:3134 ERROR] CONTROL_TRANSFER transfer Trb { data: 00040002000000A3, status: 00000008, control: 00030840 } failed with event Trb { data: 00000000035F7080, status: 1B000000, control: 01018001 }
+1970-01-01T00-02-48.896Z [@usbhubd:251 WARN] port 2: status not read: IoError(Os { code: 5, kind: Uncategorized, message: "I/O error" }), trying again
+1970-01-01T00-02-49.953Z [@xhcid::xhci::irq_reactor:635 INFO] usb-trace: events [s1e1c1:9 s1e1c27:1] registered {"1 epEndpNum(0)": 9} matched {"1 epEndpNum(0)": 9} dead {} unmatched 3 pending {"1 epEndpNum(0)": 1, "1.1 epEndpNum(1)": 1, "1.4 epEndpNum(1)": 1} early 1
+1970-01-01T00-02-49.986Z [@xhcid::xhci::irq_reactor:653 INFO] usb-trace: resources commands 2054 cmd_ring 14/256 cycle 1 workers 2 handles 13 ports 3
+]0;root: /home/rootroot:~# echo "2000" > /tmp/xhcid-noop]0;root: /home/rootroot:~# echo "2000" > /tmp/xhcid-noop]0;root: /home/rootroot:~# echo "2000" > /tmp/xhcid-noop]0;root: /home/rootroot:~# echo "2000" > /tmp/xhcid-noop]0;root: /home/rootroot:~# echo "2000" > /tmp/xhcid-noop]0;root: /home/rootroot:~# echo "2000" > /tmp/xhcid-noop]0;root: /home/rootroot:~# echo "3]0;root: /home/rootroot:~# echo "30]0;root: /home/rootroot:~# echo "300]0;root: /home/rootroot:~# echo "3000]0;root: /home/rootroot:~# echo "3000"]0;root: /home/rootroot:~# echo "3000" ]0;root: /home/rootroot:~# echo "3000" >1970-01-01T00-02-55.036Z [@xhcid::xhci::scheme:702 WARN] port 1: CUSTOM_DEVICE_REQ timed out after 5 s, stopping endpoint 0
+]0;root: /home/rootroot:~# echo "3000" > ]0;root: /home/rootroot:~# echo "3000" > /]0;root: /home/rootroot:~# echo "3000" > /t]0;root: /home/rootroot:~# echo "3000" > /tm]0;root: /home/rootroot:~# echo "3000" > /tmp]0;root: /home/rootroot:~# echo "3000" > /tmp/]0;root: /home/rootroot:~# echo "3000" > /tmp/x1970-01-01T00-02-56.077Z [@xhcid::xhci::scheme:725 WARN] port 1: no event for the stopped CUSTOM_DEVICE_REQ
+1970-01-01T00-02-56.100Z [@usbhubd:251 WARN] port 2: status not read: IoError(Os { code: 110, kind: TimedOut, message: "Connection timed out" }), trying again
+1970-01-01T00-02-56.130Z [@xhcid::xhci::scheme:3134 ERROR] CONTROL_TRANSFER transfer Trb { data: 00040003000000A3, status: 00000008, control: 00030841 } failed with event Trb { data: 00000000035F7080, status: 1B000000, control: 01018001 }
+1970-01-01T00-02-56.161Z [@usbhubd:251 WARN] port 3: status not read: IoError(Os { code: 5, kind: Uncategorized, message: "I/O error" }), trying again
+]0;root: /home/rootroot:~# echo "3000" > /tmp/xh]0;root: /home/rootroot:~# echo "3000" > /tmp/xhc]0;root: /home/rootroot:~# echo "3000" > /tmp/xhci]0;root: /home/rootroot:~# echo "3000" > /tmp/xhcid]0;root: /home/rootroot:~# echo "3000" > /tmp/xhcid-]0;root: /home/rootroot:~# echo "3000" > /tmp/xhcid-n]0;root: /home/rootroot:~# echo "3000" > /tmp/xhcid-no]0;root: /home/rootroot:~# echo "3000" > /tmp/xhcid-noo]0;root: /home/rootroot:~# echo "3000" > /tmp/xhcid-noop]0;root: /home/rootroot:~# echo "3000" > /tmp/xhcid-noop
+⏎                                                                                ]0;root: /home/rootroot:~# ]0;root: /home/rootroot:~# 1970-01-01T00-02-58.120Z [@xhcid::xhci:1607 INFO] usb-trace: sending 3000 no-op commands
+1970-01-01T00-02-59.080Z [@xhcid::xhci:1624 INFO] usb-trace: no-op 100 done, cmd_ring 116 cycle 1
+1970-01-01T00-03-00.010Z [@xhcid::xhci::irq_reactor:635 INFO] usb-trace: events [s1e1c1:6 s1e1c27:1] registered {"1 epEndpNum(0)": 6} matched {"1 epEndpNum(0)": 6} dead {} unmatched 2 pending {"1 epEndpNum(0)": 1, "1.1 epEndpNum(1)": 1, "1.4 epEndpNum(1)": 1} early 1
+1970-01-01T00-03-00.046Z [@xhcid::xhci::irq_reactor:653 INFO] usb-trace: resources commands 2250 cmd_ring 210/256 cycle 1 workers 2 handles 13 ports 3
+1970-01-01T00-03-00.139Z [@xhcid::xhci:1624 INFO] usb-trace: no-op 200 done, cmd_ring 216 cycle 1
+1970-01-01T00-03-01.139Z [@xhcid::xhci:1624 INFO] usb-trace: no-op 300 done, cmd_ring 61 cycle 0
+1970-01-01T00-03-02.139Z [@xhcid::xhci:1624 INFO] usb-trace: no-op 400 done, cmd_ring 161 cycle 0
+1970-01-01T00-03-02.269Z [@xhcid::xhci::scheme:702 WARN] port 1: CUSTOM_DEVICE_REQ timed out after 5 s, stopping endpoint 0
+1970-01-01T00-03-03.137Z [@xhcid::xhci:1624 INFO] usb-trace: no-op 500 done, cmd_ring 7 cycle 1
+1970-01-01T00-03-03.410Z [@xhcid::xhci::scheme:725 WARN] port 1: no event for the stopped CUSTOM_DEVICE_REQ
+1970-01-01T00-03-03.440Z [@usbhubd:251 WARN] port 3: status not read: IoError(Os { code: 110, kind: TimedOut, message: "Connection timed out" }), trying again
+1970-01-01T00-03-03.470Z [@xhcid::xhci::scheme:3134 ERROR] CONTROL_TRANSFER transfer Trb { data: 00040004000000A3, status: 00000008, control: 00030840 } failed with event Trb { data: 00000000035F7080, status: 1B000000, control: 01018001 }
+1970-01-01T00-03-03.506Z [@usbhubd:251 WARN] port 4: status not read: IoError(Os { code: 5, kind: Uncategorized, message: "I/O error" }), trying again
+1970-01-01T00-03-04.100Z [@xhcid::xhci:1624 INFO] usb-trace: no-op 600 done, cmd_ring 108 cycle 1
+1970-01-01T00-03-05.080Z [@xhcid::xhci:1624 INFO] usb-trace: no-op 700 done, cmd_ring 208 cycle 1
+1970-01-01T00-03-06.060Z [@xhcid::xhci:1624 INFO] usb-trace: no-op 800 done, cmd_ring 53 cycle 0
+1970-01-01T00-03-07.040Z [@xhcid::xhci:1624 INFO] usb-trace: no-op 900 done, cmd_ring 153 cycle 0
+1970-01-01T00-03-07.980Z [@xhcid::xhci:1624 INFO] usb-trace: no-op 1000 done, cmd_ring 253 cycle 0
+1970-01-01T00-03-08.910Z [@xhcid::xhci:1624 INFO] usb-trace: no-op 1100 done, cmd_ring 98 cycle 1
+1970-01-01T00-03-09.600Z [@xhcid::xhci::scheme:702 WARN] port 1: CUSTOM_DEVICE_REQ timed out after 5 s, stopping endpoint 0
+1970-01-01T00-03-09.900Z [@xhcid::xhci:1624 INFO] usb-trace: no-op 1200 done, cmd_ring 199 cycle 1
+1970-01-01T00-03-10.070Z [@xhcid::xhci::irq_reactor:635 INFO] usb-trace: events [s1e1c1:5 s1e1c27:2] registered {"1 epEndpNum(0)": 5} matched {"1 epEndpNum(0)": 5} dead {} unmatched 3 pending {"1 epEndpNum(0)": 1, "1.1 epEndpNum(1)": 1, "1.4 epEndpNum(1)": 1} early 1
+1970-01-01T00-03-10.106Z [@xhcid::xhci::irq_reactor:653 INFO] usb-trace: resources commands 3275 cmd_ring 215/256 cycle 1 workers 2 handles 13 ports 3
+1970-01-01T00-03-10.660Z [@xhcid::xhci::scheme:725 WARN] port 1: no event for the stopped CUSTOM_DEVICE_REQ
+1970-01-01T00-03-10.700Z [@usbhubd:251 WARN] port 4: status not read: IoError(Os { code: 110, kind: TimedOut, message: "Connection timed out" }), trying again
+1970-01-01T00-03-10.930Z [@xhcid::xhci:1624 INFO] usb-trace: no-op 1300 done, cmd_ring 45 cycle 0
+1970-01-01T00-03-11.740Z [@xhcid::xhci::scheme:3134 ERROR] CONTROL_TRANSFER transfer Trb { data: 00040001000000A3, status: 00000008, control: 00030841 } failed with event Trb { data: 00000000035F7080, status: 1B000000, control: 01018000 }
+1970-01-01T00-03-11.773Z [@usbhubd:251 WARN] port 1: status not read: IoError(Os { code: 5, kind: Uncategorized, message: "I/O error" }), trying again
+1970-01-01T00-03-11.910Z [@xhcid::xhci:1624 INFO] usb-trace: no-op 1400 done, cmd_ring 145 cycle 0
+1970-01-01T00-03-12.880Z [@xhcid::xhci:1624 INFO] usb-trace: no-op 1500 done, cmd_ring 245 cycle 0
+1970-01-01T00-03-13.878Z [@xhcid::xhci:1624 INFO] usb-trace: no-op 1600 done, cmd_ring 90 cycle 1
+1970-01-01T00-03-14.876Z [@xhcid::xhci:1624 INFO] usb-trace: no-op 1700 done, cmd_ring 190 cycle 1
+1970-01-01T00-03-15.851Z [@xhcid::xhci:1624 INFO] usb-trace: no-op 1800 done, cmd_ring 35 cycle 0
+1970-01-01T00-03-16.851Z [@xhcid::xhci:1624 INFO] usb-trace: no-op 1900 done, cmd_ring 135 cycle 0
+1970-01-01T00-03-17.831Z [@xhcid::xhci:1624 INFO] usb-trace: no-op 2000 done, cmd_ring 235 cycle 0
+1970-01-01T00-03-17.871Z [@xhcid::xhci::scheme:702 WARN] port 1: CUSTOM_DEVICE_REQ timed out after 5 s, stopping endpoint 0
+1970-01-01T00-03-18.811Z [@xhcid::xhci:1624 INFO] usb-trace: no-op 2100 done, cmd_ring 81 cycle 1
+1970-01-01T00-03-18.990Z [@xhcid::xhci::scheme:725 WARN] port 1: no event for the stopped CUSTOM_DEVICE_REQ
+1970-01-01T00-03-19.030Z [@usbhubd:251 WARN] port 1: status not read: IoError(Os { code: 110, kind: TimedOut, message: "Connection timed out" }), trying again
+1970-01-01T00-03-19.061Z [@xhcid::xhci::scheme:3134 ERROR] CONTROL_TRANSFER transfer Trb { data: 00040002000000A3, status: 00000008, control: 00030840 } failed with event Trb { data: 00000000035F7080, status: 1B000000, control: 01018001 }
+1970-01-01T00-03-19.095Z [@usbhubd:251 WARN] port 2: status not read: IoError(Os { code: 5, kind: Uncategorized, message: "I/O error" }), trying again
+1970-01-01T00-03-19.781Z [@xhcid::xhci:1624 INFO] usb-trace: no-op 2200 done, cmd_ring 182 cycle 1
+1970-01-01T00-03-20.131Z [@xhcid::xhci::irq_reactor:635 INFO] usb-trace: events [s1e1c1:8 s1e1c27:1] registered {"1 epEndpNum(0)": 8} matched {"1 epEndpNum(0)": 8} dead {} unmatched 3 pending {"1 epEndpNum(0)": 1, "1.1 epEndpNum(1)": 1, "1.4 epEndpNum(1)": 1} early 1
+1970-01-01T00-03-20.165Z [@xhcid::xhci::irq_reactor:653 INFO] usb-trace: resources commands 4299 cmd_ring 219/256 cycle 1 workers 2 handles 13 ports 3
+1970-01-01T00-03-20.787Z [@xhcid::xhci:1624 INFO] usb-trace: no-op 2300 done, cmd_ring 27 cycle 0
+1970-01-01T00-03-21.757Z [@xhcid::xhci:1624 INFO] usb-trace: no-op 2400 done, cmd_ring 127 cycle 0
+1970-01-01T00-03-22.715Z [@xhcid::xhci:1624 INFO] usb-trace: no-op 2500 done, cmd_ring 227 cycle 0
+1970-01-01T00-03-23.647Z [@xhcid::xhci:1624 INFO] usb-trace: no-op 2600 done, cmd_ring 72 cycle 1
+1970-01-01T00-03-24.605Z [@xhcid::xhci:1624 INFO] usb-trace: no-op 2700 done, cmd_ring 172 cycle 1
+1970-01-01T00-03-25.233Z [@xhcid::xhci::scheme:702 WARN] port 1: CUSTOM_DEVICE_REQ timed out after 5 s, stopping endpoint 0
+1970-01-01T00-03-25.545Z [@xhcid::xhci:1624 INFO] usb-trace: no-op 2800 done, cmd_ring 18 cycle 0
+1970-01-01T00-03-26.313Z [@xhcid::xhci::scheme:725 WARN] port 1: no event for the stopped CUSTOM_DEVICE_REQ
+1970-01-01T00-03-26.343Z [@usbhubd:251 WARN] port 2: status not read: IoError(Os { code: 110, kind: TimedOut, message: "Connection timed out" }), trying again
+1970-01-01T00-03-26.374Z [@xhcid::xhci::scheme:3134 ERROR] CONTROL_TRANSFER transfer Trb { data: 00040003000000A3, status: 00000008, control: 00030841 } failed with event Trb { data: 00000000035F7080, status: 1B000000, control: 01018000 }
+1970-01-01T00-03-26.410Z [@usbhubd:251 WARN] port 3: status not read: IoError(Os { code: 5, kind: Uncategorized, message: "I/O error" }), trying again
+1970-01-01T00-03-26.454Z [@xhcid::xhci:1624 INFO] usb-trace: no-op 2900 done, cmd_ring 119 cycle 0
+1970-01-01T00-03-27.382Z [@xhcid::xhci:1624 INFO] usb-trace: no-op 3000 done, cmd_ring 219 cycle 0
+1970-01-01T00-03-27.400Z [@xhcid::xhci:1627 INFO] usb-trace: 3000 no-op commands in 29262 ms, 0 failed
+1970-01-01T00-03-32.548Z [@xhcid::xhci::scheme:702 WARN] port 1: CUSTOM_DEVICE_REQ timed out after 5 s, stopping endpoint 0
+1970-01-01T00-03-32.578Z [@xhcid::xhci::irq_reactor:635 INFO] usb-trace: events [s1e1c1:7 s1e1c27:2] registered {"1 epEndpNum(0)": 7} matched {"1 epEndpNum(0)": 7} dead {} unmatched 3 pending {"1 epEndpNum(0)": 1, "1.1 epEndpNum(1)": 1, "1.4 epEndpNum(1)": 1} early 1
+1970-01-01T00-03-32.614Z [@xhcid::xhci::irq_reactor:653 INFO] usb-trace: resources commands 5065 cmd_ring 220/256 cycle 0 workers 2 handles 13 ports 3
+1970-01-01T00-03-33.688Z [@xhcid::xhci::scheme:725 WARN] port 1: no event for the stopped CUSTOM_DEVICE_REQ
+1970-01-01T00-03-33.719Z [@usbhubd:251 WARN] port 3: status not read: IoError(Os { code: 110, kind: TimedOut, message: "Connection timed out" }), trying again
+1970-01-01T00-03-33.749Z [@xhcid::xhci::scheme:3134 ERROR] CONTROL_TRANSFER transfer Trb { data: 00040004000000A3, status: 00000008, control: 00030840 } failed with event Trb { data: 00000000035F7080, status: 1B000000, control: 01018001 }
+1970-01-01T00-03-33.782Z [@usbhubd:251 WARN] port 4: status not read: IoError(Os { code: 5, kind: Uncategorized, message: "I/O error" }), trying again
+1970-01-01T00-03-39.919Z [@xhcid::xhci::scheme:702 WARN] port 1: CUSTOM_DEVICE_REQ timed out after 5 s, stopping endpoint 0
+1970-01-01T00-03-40.979Z [@xhcid::xhci::scheme:725 WARN] port 1: no event for the stopped CUSTOM_DEVICE_REQ
+1970-01-01T00-03-41.010Z [@usbhubd:251 WARN] port 4: status not read: IoError(Os { code: 110, kind: TimedOut, message: "Connection timed out" }), trying again
+1970-01-01T00-03-42.050Z [@xhcid::xhci::scheme:3134 ERROR] CONTROL_TRANSFER transfer Trb { data: 00040001000000A3, status: 00000008, control: 00030841 } failed with event Trb { data: 00000000035F7080, status: 1B000000, control: 01018001 }
+1970-01-01T00-03-42.082Z [@usbhubd:251 WARN] port 1: status not read: IoError(Os { code: 5, kind: Uncategorized, message: "I/O error" }), trying again
+1970-01-01T00-03-43.140Z [@xhcid::xhci::irq_reactor:635 INFO] usb-trace: events [s1e1c1:10 s1e1c27:1] registered {"1 epEndpNum(0)": 10} matched {"1 epEndpNum(0)": 10} dead {} unmatched 3 pending {"1 epEndpNum(0)": 1, "1.1 epEndpNum(1)": 1, "1.4 epEndpNum(1)": 1} early 1
+1970-01-01T00-03-43.173Z [@xhcid::xhci::irq_reactor:653 INFO] usb-trace: resources commands 5068 cmd_ring 223/256 cycle 0 workers 2 handles 13 ports 3
+1970-01-01T00-03-48.156Z [@xhcid::xhci::scheme:702 WARN] port 1: CUSTOM_DEVICE_REQ timed out after 5 s, stopping endpoint 0
+1970-01-01T00-03-49.206Z [@xhcid::xhci::scheme:725 WARN] port 1: no event for the stopped CUSTOM_DEVICE_REQ
+1970-01-01T00-03-49.236Z [@usbhubd:251 WARN] port 1: status not read: IoError(Os { code: 110, kind: TimedOut, message: "Connection timed out" }), trying again
+1970-01-01T00-03-49.266Z [@xhcid::xhci::scheme:3134 ERROR] CONTROL_TRANSFER transfer Trb { data: 00040002000000A3, status: 00000008, control: 00030840 } failed with event Trb { data: 00000000035F7080, status: 1B000000, control: 01018001 }
+1970-01-01T00-03-49.302Z [@usbhubd:251 WARN] port 2: status not read: IoError(Os { code: 5, kind: Uncategorized, message: "I/O error" }), trying again
+1970-01-01T00-03-55.367Z [@xhcid::xhci::scheme:702 WARN] port 1: CUSTOM_DEVICE_REQ timed out after 5 s, stopping endpoint 0
+1970-01-01T00-03-55.397Z [@xhcid::xhci::irq_reactor:635 INFO] usb-trace: events [s1e1c1:5 s1e1c27:2] registered {"1 epEndpNum(0)": 5} matched {"1 epEndpNum(0)": 5} dead {} unmatched 3 pending {"1 epEndpNum(0)": 1, "1.1 epEndpNum(1)": 1, "1.4 epEndpNum(1)": 1} early 1
+1970-01-01T00-03-55.433Z [@xhcid::xhci::irq_reactor:653 INFO] usb-trace: resources commands 5071 cmd_ring 226/256 cycle 0 workers 2 handles 13 ports 3
+1970-01-01T00-03-56.517Z [@xhcid::xhci::scheme:725 WARN] port 1: no event for the stopped CUSTOM_DEVICE_REQ
+1970-01-01T00-03-56.547Z [@usbhubd:251 WARN] port 2: status not read: IoError(Os { code: 110, kind: TimedOut, message: "Connection timed out" }), trying again
+1970-01-01T00-03-56.577Z [@xhcid::xhci::scheme:3134 ERROR] CONTROL_TRANSFER transfer Trb { data: 00040003000000A3, status: 00000008, control: 00030841 } failed with event Trb { data: 00000000035F7080, status: 1B000000, control: 01018001 }
+1970-01-01T00-03-56.608Z [@usbhubd:251 WARN] port 3: status not read: IoError(Os { code: 5, kind: Uncategorized, message: "I/O error" }), trying again
+]0;root: /home/rootroot:~# echo "3000" > /tmp/xhcid-noop]0;root: /home/rootroot:~# echo "3000" > /tmp/xhcid-noop]0;root: /home/rootroot:~# echo "3000" > /tmp/xhcid-noop]0;root: /home/rootroot:~# echo "3000" > /tmp/xhcid-noop]0;root: /home/rootroot:~# echo "3000" > /tmp/xhcid-noop]0;root: /home/rootroot:~# echo "3000" > /tmp/xhcid-noop]0;root: /home/rootroot:~# echo "1]0;root: /home/rootroot:~# echo "1.]0;root: /home/rootroot:~# echo "1.1]0;root: /home/rootroot:~# echo "1.1 ]0;root: /home/rootroot:~# echo "1.1 p]0;root: /home/rootroot:~# echo "1.1 po]0;root: /home/rootroot:~# echo "1.1 pow]0;root: /home/rootroot:~# echo "1.1 powe]0;root: /home/rootroot:~# echo "1.1 power]0;root: /home/rootroot:~# echo "1.1 power"]0;root: /home/rootroot:~# echo "1.1 power" ]0;root: /home/rootroot:~# echo "1.1 power" >]0;root: /home/rootroot:~# echo "1.1 power" > ]0;root: /home/rootroot:~# echo "1.1 power" > /]0;root: /home/rootroot:~# echo "1.1 power" > /t]0;root: /home/rootroot:~# echo "1.1 power" > /tm]0;root: /home/rootroot:~# echo "1.1 power" > /tmp]0;root: /home/rootroot:~# echo "1.1 power" > /tmp/]0;root: /home/rootroot:~# echo "1.1 power" > /tmp/u1970-01-01T00-04-02.668Z [@xhcid::xhci::scheme:702 WARN] port 1: CUSTOM_DEVICE_REQ timed out after 5 s, stopping endpoint 0
+]0;root: /home/rootroot:~# echo "1.1 power" > /tmp/us]0;root: /home/rootroot:~# echo "1.1 power" > /tmp/usb]0;root: /home/rootroot:~# echo "1.1 power" > /tmp/usbh]0;root: /home/rootroot:~# echo "1.1 power" > /tmp/usbhu]0;root: /home/rootroot:~# echo "1.1 power" > /tmp/usbhub]0;root: /home/rootroot:~# echo "1.1 power" > /tmp/usbhubd]0;root: /home/rootroot:~# echo "1.1 power" > /tmp/usbhubd-1970-01-01T00-04-03.747Z [@xhcid::xhci::scheme:725 WARN] port 1: no event for the stopped CUSTOM_DEVICE_REQ
+]0;root: /home/rootroot:~# echo "1.1 power" > /tmp/usbhubd-c1970-01-01T00-04-03.775Z [@usbhubd:251 WARN] port 3: status not read: IoError(Os { code: 110, kind: TimedOut, message: "Connection timed out" }), trying again
+1970-01-01T00-04-03.818Z [@xhcid::xhci::scheme:3134 ERROR] CONTROL_TRANSFER transfer Trb { data: 00040004000000A3, status: 00000008, control: 00030840 } failed with event Trb { data: 00000000035F7080, status: 1B000000, control: 01018001 }
+1970-01-01T00-04-03.848Z [@usbhubd:251 WARN] port 4: status not read: IoError(Os { code: 5, kind: Uncategorized, message: "I/O error" }), trying again
+]0;root: /home/rootroot:~# echo "1.1 power" > /tmp/usbhubd-cy]0;root: /home/rootroot:~# echo "1.1 power" > /tmp/usbhubd-cyc]0;root: /home/rootroot:~# echo "1.1 power" > /tmp/usbhubd-cycl]0;root: /home/rootroot:~# echo "1.1 power" > /tmp/usbhubd-cycle]0;root: /home/rootroot:~# echo "1.1 power" > /tmp/usbhubd-cycle
+⏎                                                                                ]0;root: /home/rootroot:~# ]0;root: /home/rootroot:~# 1970-01-01T00-04-04.888Z [@usbhubd:276 INFO] usb-trace: port 1.1 power off (test)
+1970-01-01T00-04-04.947Z [@xhcid::xhci::scheme:3134 ERROR] EXECUTE_TRANSFER transfer Trb { data: 0000000004F70000, status: 00200004, control: 00000425 } failed with event Trb { data: 0000000008B44000, status: 24000004, control: 02038001 }
+1970-01-01T00-04-04.978Z [@usbhidd:461 WARN] failed to get report: i/o error: I/O error (os error 5), trying again
+1970-01-01T00-04-07.918Z [@xhcid::xhci::irq_reactor:635 INFO] usb-trace: events [s1e1c1:9 s1e1c27:1 s2e3c36:1] registered {"1 epEndpNum(0)": 9} matched {"1 epEndpNum(0)": 9, "1.1 epEndpNum(1)": 1} dead {} unmatched 3 pending {"1 epEndpNum(0)": 1, "1.4 epEndpNum(1)": 1} early 1
+1970-01-01T00-04-07.954Z [@xhcid::xhci::irq_reactor:653 INFO] usb-trace: resources commands 5076 cmd_ring 231/256 cycle 0 workers 2 handles 10 ports 3
+1970-01-01T00-04-13.008Z [@xhcid::xhci::scheme:702 WARN] port 1: CUSTOM_DEVICE_REQ timed out after 5 s, stopping endpoint 0
+1970-01-01T00-04-14.098Z [@xhcid::xhci::scheme:725 WARN] port 1: no event for the stopped CUSTOM_DEVICE_REQ
+1970-01-01T00-04-14.129Z [@usbhubd:251 WARN] port 3: status not read: IoError(Os { code: 110, kind: TimedOut, message: "Connection timed out" }), trying again
+1970-01-01T00-04-14.155Z [@xhcid::xhci::scheme:3134 ERROR] CONTROL_TRANSFER transfer Trb { data: 00040004000000A3, status: 00000008, control: 00030841 } failed with event Trb { data: 00000000035F7070, status: 1B000000, control: 01018001 }
+1970-01-01T00-04-14.186Z [@usbhubd:251 WARN] port 4: status not read: IoError(Os { code: 5, kind: Uncategorized, message: "I/O error" }), trying again
+1970-01-01T00-04-15.229Z [@usbhubd:258 INFO] port 1 status V2(HubPortStatusV2(0x0))
+1970-01-01T00-04-15.246Z [@usbhubd:296 INFO] power on port 1
+1970-01-01T00-04-15.269Z [@xhcid::xhci:1011 INFO] killing driver process 49 for port 1.1
+1970-01-01T00-04-15.286Z [@xhcid::xhci:1014 INFO] killed driver process 49 for port 1.1
+1970-01-01T00-04-20.369Z [@xhcid::xhci::scheme:702 WARN] port 1: CUSTOM_DEVICE_REQ timed out after 5 s, stopping endpoint 0
+1970-01-01T00-04-20.399Z [@xhcid::xhci::irq_reactor:635 INFO] usb-trace: events [s1e1c1:6 s1e1c27:2] registered {"1 epEndpNum(0)": 6} matched {"1 epEndpNum(0)": 6} dead {} unmatched 3 pending {"1 epEndpNum(0)": 1, "1.4 epEndpNum(1)": 1} early 1
+1970-01-01T00-04-20.433Z [@xhcid::xhci::irq_reactor:653 INFO] usb-trace: resources commands 5080 cmd_ring 235/256 cycle 0 workers 2 handles 10 ports 2
+1970-01-01T00-04-21.469Z [@xhcid::xhci::scheme:725 WARN] port 1: no event for the stopped CUSTOM_DEVICE_REQ
+1970-01-01T00-04-21.490Z [@usbhubd:251 WARN] port 3: status not read: IoError(Os { code: 110, kind: TimedOut, message: "Connection timed out" }), trying again
+1970-01-01T00-04-21.517Z [@xhcid::xhci::scheme:3134 ERROR] CONTROL_TRANSFER transfer Trb { data: 00040004000000A3, status: 00000008, control: 00030840 } failed with event Trb { data: 00000000035F7060, status: 1B000000, control: 01018001 }
+1970-01-01T00-04-21.548Z [@usbhubd:251 WARN] port 4: status not read: IoError(Os { code: 5, kind: Uncategorized, message: "I/O error" }), trying again
+1970-01-01T00-04-22.587Z [@usbhubd:258 INFO] port 1 status V2(HubPortStatusV2(CONNECTION | POWER | LOW_SPEED | CONNECTION_CHANGED))
+1970-01-01T00-04-22.608Z [@usbhubd:339 INFO] reset port 1
+1970-01-01T00-04-27.680Z [@xhcid::xhci::scheme:702 WARN] port 1: CUSTOM_DEVICE_REQ timed out after 5 s, stopping endpoint 0
+1970-01-01T00-04-28.770Z [@xhcid::xhci::scheme:725 WARN] port 1: no event for the stopped CUSTOM_DEVICE_REQ
+1970-01-01T00-04-28.798Z [@usbhubd:251 WARN] port 3: status not read: IoError(Os { code: 110, kind: TimedOut, message: "Connection timed out" }), trying again
+1970-01-01T00-04-28.828Z [@xhcid::xhci::scheme:3134 ERROR] CONTROL_TRANSFER transfer Trb { data: 00040004000000A3, status: 00000008, control: 00030841 } failed with event Trb { data: 00000000035F7050, status: 1B000000, control: 01018001 }
+1970-01-01T00-04-28.863Z [@usbhubd:251 WARN] port 4: status not read: IoError(Os { code: 5, kind: Uncategorized, message: "I/O error" }), trying again
+1970-01-01T00-04-29.898Z [@usbhubd:258 INFO] port 1 status V2(HubPortStatusV2(CONNECTION | ENABLE | POWER | LOW_SPEED | CONNECTION_CHANGED | RESET_CHANGED))
+1970-01-01T00-04-29.950Z [@usbhubd:161 INFO] attach port 1.1 at xHCI speed 2
+1970-01-01T00-04-29.967Z [@xhcid::xhci:864 INFO] port 1.1: speed 2 from its hub (root port speed 3)
+1970-01-01T00-04-29.988Z [@xhcid::xhci:1502 INFO] port 1.1: speed ID 2 not among the port's own IDs [3], default ID used: true
+1970-01-01T00-04-30.009Z [@xhcid::xhci:1169 INFO] port 1.1 parent_hub_slot_id 1 parent_port_num 1
+1970-01-01T00-04-30.108Z [@xhcid::xhci:1387 INFO] Loading subdriver "USB HID" for port 1.1 iface 0 alternate 0 class 3.1 proto 2
+1970-01-01T00-04-30.142Z [@usbhidd:229 INFO] USB HID driver spawned with scheme `usb.pci-0000-01-00.0_xhci`, port 1.1, interface 0
+1970-01-01T00-04-30.163Z [@usbhidd:241 INFO] USB HID driver: "USB Optical Mouse" serial ""
+1970-01-01T00-04-30.180Z [@usbhidd:264 WARN] using endpoint 0x81 Interrupt In
+]0;root: /home/rootroot:~# echo "1.1 power" > /tmp/usbhubd-cycle]0;root: /home/rootroot:~# echo "1.1 power" > /tmp/usbhubd-cycle]0;root: /home/rootroot:~# echo "1.1 power" > /tmp/usbhubd-cycle]0;root: /home/rootroot:~# echo "1.1 power" > /tmp/usbhubd-cycle1970-01-01T00-04-35.351Z [@xhcid::xhci::scheme:702 WARN] port 1: CUSTOM_DEVICE_REQ timed out after 5 s, stopping endpoint 0
+1970-01-01T00-04-35.378Z [@xhcid::xhci::irq_reactor:635 INFO] usb-trace: events [s1e1c1:10 s1e1c27:2 s2e1c1:8] registered {"1 epEndpNum(0)": 10, "1.1 epEndpNum(0)": 8} matched {"1 epEndpNum(0)": 10, "1.1 epEndpNum(0)": 8} dead {} unmatched 4 pending {"1 epEndpNum(0)": 1, "1.4 epEndpNum(1)": 1} early 1
+1970-01-01T00-04-35.418Z [@xhcid::xhci::irq_reactor:653 INFO] usb-trace: resources commands 5089 cmd_ring 244/256 cycle 0 workers 2 handles 12 ports 3
+]0;root: /home/rootroot:~# echo "1.1 power" > /tmp/usbhubd-cycle]0;root: /home/rootroot:~# echo "1.1 power" > /tmp/usbhubd-cycle]0;root: /home/rootroot:~# echo "1.1 power" > /tmp/usbhubd-cycle]0;root: /home/rootroot:~# echo "1.1 power" > /tmp/usbhubd-cycle]0;root: /home/rootroot:~# echo "1.1 power" > /tmp/usbhubd-cycle]0;root: /home/rootroot:~# echo "1.1 power" > /tmp/usbhubd-cycle]0;root: /home/rootroot:~# echo "1.1 power" > /tmp/usbhubd-cycle]0;root: /home/rootroot:~# echo "1.1 power" > /tmp/usbhubd-cycle1970-01-01T00-04-36.541Z [@xhcid::xhci::scheme:725 WARN] port 1: no event for the stopped CUSTOM_DEVICE_REQ
+1970-01-01T00-04-36.572Z [@usbhubd:251 WARN] port 4: status not read: IoError(Os { code: 110, kind: TimedOut, message: "Connection timed out" }), trying again
+]0;root: /home/rootroot:~# echo "1.1 power" > /tmp/usbhubd-cycle]0;root: /home/rootroot:~# echo "1.1 power" > /tmp/usbhubd-cycle]0;root: /home/rootroot:~# echo "1.1 power" > /tmp/usbhubd-cycle]0;root: /home/rootroot:~# echo "1.1 power" > /tmp/usbhubd-cycle]0;root: /home/rootroot:~# echo "1.1 power" > /tmp/usbhubd-cycle]0;root: /home/rootroot:~# echo "1.1 power" > /tmp/usbhubd-cycle]0;root: /home/rootroot:~# echo "1.1 power" > /tmp/usbhubd-cycle1970-01-01T00-04-37.602Z [@xhcid::xhci::scheme:3134 ERROR] CONTROL_TRANSFER transfer Trb { data: 00040001000000A3, status: 00000008, control: 00030840 } failed with event Trb { data: 00000000035F7050, status: 1B000000, control: 01018001 }
+1970-01-01T00-04-37.634Z [@usbhubd:251 WARN] port 1: status not read: IoError(Os { code: 5, kind: Uncategorized, message: "I/O error" }), trying again
+]0;root: /home/rootroot:~# echo "1.1 power" > /tmp/usbhubd-cycle]0;root: /home/rootroot:~# echo "1.1 power" > /tmp/usbhubd-cycle]0;root: /home/rootroot:~# echo "1.1 power" > /tmp/usbhubd-cycle]0;root: /home/rootroot:~# echo "1.1 power" > /tmp/usbhubd-cycle]0;root: /home/rootroot:~# echo "1.1 power" > /tmp/usbhubd-cycle]0;root: /home/rootroot:~# echo "1.1 power" > /tmp/usbhubd-cycle]0;root: /home/rootroot:~# echo "1.1 power" > /tmp/usbhubd-cycle]0;root: /home/rootroot:~# echo "1.1 power" > /tmp/usbhubd-cycle]0;root: /home/rootroot:~# echo "1.1 power" > /tmp/usbhubd-cycle]0;root: /home/rootroot:~# echo "1.1 power" > /tmp/usbhubd-cycle]0;root: /home/rootroot:~# echo "1.1 power" > /tmp/usbhubd-cycle]0;root: /home/rootroot:~# echo "1.1 power" > /tmp/usbhubd-cycle]0;root: /home/rootroot:~# echo "1.1 power" > /tmp/usbhubd-cycle]0;root: /home/rootroot:~# echo "1.1 power" > /tmp/usbhubd-cycle]0;root: /home/rootroot:~# echo "1.1 power" > /tmp/usbhubd-cycle]0;root: /home/rootroot:~# echo "1.1 power" > /tmp/usbhubd-cycle]0;root: /home/rootroot:~# echo "1.1 power" > /tmp/usbhubd-cycle]0;root: /home/rootroot:~# echo "1.1 power" > /tmp/usbhubd-cycle]0;root: /home/rootroot:~# echo "1.1 power" > /tmp/usbhubd-cycle
+⏎                                                                                ]0;root: /home/rootroot:~# ]0;root: /home/rootroot:~# 1970-01-01T00-04-43.773Z [@xhcid::xhci::scheme:702 WARN] port 1: CUSTOM_DEVICE_REQ timed out after 5 s, stopping endpoint 0
+1970-01-01T00-04-44.893Z [@xhcid::xhci::scheme:725 WARN] port 1: no event for the stopped CUSTOM_DEVICE_REQ
+1970-01-01T00-04-44.923Z [@usbhubd:251 WARN] port 1: status not read: IoError(Os { code: 110, kind: TimedOut, message: "Connection timed out" }), trying again
+1970-01-01T00-04-44.953Z [@xhcid::xhci::scheme:3134 ERROR] CONTROL_TRANSFER transfer Trb { data: 00040002000000A3, status: 00000008, control: 00030841 } failed with event Trb { data: 00000000035F7050, status: 1B000000, control: 01018001 }
+1970-01-01T00-04-44.986Z [@usbhubd:251 WARN] port 2: status not read: IoError(Os { code: 5, kind: Uncategorized, message: "I/O error" }), trying again
+1970-01-01T00-04-46.033Z [@xhcid::xhci::irq_reactor:635 INFO] usb-trace: events [s1e1c1:9 s1e1c27:1 s2e1c1:1] registered {"1 epEndpNum(0)": 9, "1.1 epEndpNum(0)": 1, "1.1 epEndpNum(1)": 1} matched {"1 epEndpNum(0)": 9, "1.1 epEndpNum(0)": 1} dead {} unmatched 3 pending {"1 epEndpNum(0)": 1, "1.1 epEndpNum(1)": 1, "1.4 epEndpNum(1)": 1} early 1
+1970-01-01T00-04-46.034Z [@usbhubd:276 INFO] usb-trace: port 1.1 power off (test)
+1970-01-01T00-04-46.073Z [@xhcid::xhci::irq_reactor:653 INFO] usb-trace: resources commands 5092 cmd_ring 247/256 cycle 0 workers 2 handles 12 ports 3
+1970-01-01T00-04-46.132Z [@xhcid::xhci::scheme:3134 ERROR] EXECUTE_TRANSFER transfer Trb { data: 0000000008992000, status: 00200004, control: 00000425 } failed with event Trb { data: 0000000004E71000, status: 24000004, control: 02038001 }
+1970-01-01T00-04-46.163Z [@usbhidd:461 WARN] failed to get report: i/o error: I/O error (os error 5), trying again
+1970-01-01T00-04-51.134Z [@xhcid::xhci::scheme:702 WARN] port 1: CUSTOM_DEVICE_REQ timed out after 5 s, stopping endpoint 0
+1970-01-01T00-04-52.234Z [@xhcid::xhci::scheme:725 WARN] port 1: no event for the stopped CUSTOM_DEVICE_REQ
+1970-01-01T00-04-52.263Z [@usbhubd:285 WARN] usb-trace: port 1.1: power off failed: IoError(Os { code: 110, kind: TimedOut, message: "Connection timed out" })
+1970-01-01T00-04-55.294Z [@xhcid::xhci::scheme:3134 ERROR] CONTROL_TRANSFER transfer Trb { data: 00040002000000A3, status: 00000008, control: 00030840 } failed with event Trb { data: 00000000035F7040, status: 1B000000, control: 01018001 }
+1970-01-01T00-04-55.326Z [@usbhubd:251 WARN] port 2: status not read: IoError(Os { code: 5, kind: Uncategorized, message: "I/O error" }), trying again
+1970-01-01T00-04-56.374Z [@usbhubd:258 INFO] port 1 status V2(HubPortStatusV2(0x0))
+1970-01-01T00-04-56.374Z [@xhcid::xhci::irq_reactor:635 INFO] usb-trace: events [s1e1c1:5 s1e1c27:1 s2e3c36:1] registered {"1 epEndpNum(0)": 5} matched {"1 epEndpNum(0)": 5, "1.1 epEndpNum(1)": 1} dead {} unmatched 2 pending {"1 epEndpNum(0)": 1, "1.4 epEndpNum(1)": 1} early 1
+1970-01-01T00-04-56.395Z [@usbhubd:296 INFO] power on port 1
+1970-01-01T00-04-56.431Z [@xhcid::xhci::irq_reactor:653 INFO] usb-trace: resources commands 5096 cmd_ring 251/256 cycle 0 workers 2 handles 10 ports 3
+1970-01-01T00-05-01.446Z [@xhcid::xhci::scheme:702 WARN] port 1: CUSTOM_DEVICE_REQ timed out after 5 s, stopping endpoint 0
+1970-01-01T00-05-02.526Z [@xhcid::xhci::scheme:725 WARN] port 1: no event for the stopped CUSTOM_DEVICE_REQ
+thread 'main' (1) panicked at drivers/usb/usbhubd/src/main.rs:306:22:
+[ERROR usbhubd@src/header/stdlib/mod.rs:121] Abort
+kernel::context::signal:INFO -- UNHANDLED EXCEPTION, CPU #2, PID 33, NAME /usr/lib/drivers/usbhubd, CONTEXT 0xfffffe8000164690
+]0;root: /home/rootroot:~# echo "1.1 power" > /tmp/usbhubd-cycle]0;root: /home/rootroot:~# echo "1.1 power" > /tmp/usbhubd-cycle]0;root: /home/rootroot:~# echo "1.1 power" > /tmp/usbhubd-cycle]0;root: /home/rootroot:~# echo "1.1 power" > /tmp/usbhubd-cycle]0;root: /home/rootroot:~# echo "1.1 power" > /tmp/usbhubd-cycle]0;root: /home/rootroot:~# echo "1.1 power" > /tmp/usbhubd-cycle]0;root: /home/rootroot:~# echo "1.1 power" > /tmp/usbhubd-cycle]0;root: /home/rootroot:~# echo "1.1 power" > /tmp/usbhubd-cycle]0;root: /home/rootroot:~# echo "1.1 power" > /tmp/usbhubd-cycle]0;root: /home/rootroot:~# echo "1.1 power" > /tmp/usbhubd-cycle]0;root: /home/rootroot:~# echo "1.1 power" > /tmp/usbhubd-cycle]0;root: /home/rootroot:~# echo "1.1 power" > /tmp/usbhubd-cycle]0;root: /home/rootroot:~# echo "1.1 power" > /tmp/usbhubd-cycle]0;root: /home/rootroot:~# echo "1.1 power" > /tmp/usbhubd-cycle]0;root: /home/rootroot:~# echo "1.1 power" > /tmp/usbhubd-cycle]0;root: /home/rootroot:~# echo "1.1 power" > /tmp/usbhubd-cycle]0;root: /home/rootroot:~# echo "1.1 power" > /tmp/usbhubd-cycle]0;root: /home/rootroot:~# echo "1.1 power" > /tmp/usbhubd-cycle]0;root: /home/rootroot:~# echo "1.1 power" > /tmp/usbhubd-cycle]0;root: /home/rootroot:~# echo "1.1 power" > /tmp/usbhubd-cycle]0;root: /home/rootroot:~# echo "1.1 power" > /tmp/usbhubd-cycle]0;root: /home/rootroot:~# echo "1.1 power" > /tmp/usbhubd-cycle]0;root: /home/rootroot:~# echo "1.1 power" > /tmp/usbhubd-cycle]0;root: /home/rootroot:~# echo "1.1 power" > /tmp/usbhubd-cycle]0;root: /home/rootroot:~# echo "1.1 power" > /tmp/usbhubd-cycle]0;root: /home/rootroot:~# echo "1.1 power" > /tmp/usbhubd-cycle]0;root: /home/rootroot:~# echo "1.1 power" > /tmp/usbhubd-cycle]0;root: /home/rootroot:~# echo "1.1 power" > /tmp/usbhubd-cycle]0;root: /home/rootroot:~# echo "1.1 power" > /tmp/usbhubd-cycle]0;root: /home/rootroot:~# echo "1.1 power" > /tmp/usbhubd-cycle]0;root: /home/rootroot:~# echo "1.1 power" > /tmp/usbhubd-cycle]0;root: /home/rootroot:~# echo "1.1 power" > /tmp/usbhubd-cycle]0;root: /home/rootroot:~# echo "1.1 power" > /tmp/usbhubd-cycle]0;root: /home/rootroot:~# echo "1.1 power" > /tmp/usbhubd-cycle]0;root: /home/rootroot:~# echo "1.1 power" > /tmp/usbhubd-cycle]0;root: /home/rootroot:~# echo "1.1 power" > /tmp/usbhubd-cycle]0;root: /home/rootroot:~# echo "1.1 power" > /tmp/usbhubd-cycle]0;root: /home/rootroot:~# echo "1.1 power" > /tmp/usbhubd-cycle
