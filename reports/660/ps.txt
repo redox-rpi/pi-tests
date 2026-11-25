@@ -1,0 +1,43 @@
+### 16:12:09 s1
+31    0     0     US    #0    F          00:00:00.05 00:00:00.41 1.73 MB 0 B     /usr/lib/drivers/usbhubd
+49    0     0     UB    #0    F          00:00:00.00 00:00:00.06 1.79 MB 0 B     /usr/lib/drivers/usbhidd
+52    0     0     UB    #0    F          00:00:03.85 00:00:04.03 1.79 MB 0 B     /usr/lib/drivers/usbhidd
+53    0     0     UB    #3    F          00:00:00.00 00:00:00.07 1.79 MB 0 B     /usr/lib/drivers/usbhidd
+### 16:12:59 s2-r1
+31    0     0     US    #0    F          00:00:00.10 00:00:00.69 1.73 MB 0 B     /usr/lib/drivers/usbhubd
+52    0     0     UB    #2    F          00:00:08.52 00:00:08.84 1.79 MB 0 B     /usr/lib/drivers/usbhidd
+53    0     0     UB    #3    F          00:00:00.00 00:00:00.07 1.79 MB 0 B     /usr/lib/drivers/usbhidd
+75    0     0     UB    #3    F          00:00:00.00 00:00:00.06 1.79 MB 0 B     /usr/lib/drivers/usbhidd
+### 16:14:09 s2-r2
+31    0     0     US    #3    F          00:00:00.18 00:00:01.03 1.73 MB 0 B     /usr/lib/drivers/usbhubd
+52    0     0     UB    #1    F          00:00:11.45 00:00:11.87 1.79 MB 0 B     /usr/lib/drivers/usbhidd
+53    0     0     UB    #3    F          00:00:00.00 00:00:00.07 1.79 MB 0 B     /usr/lib/drivers/usbhidd
+92    0     0     UB    #1    F          00:00:00.00 00:00:00.06 1.79 MB 0 B     /usr/lib/drivers/usbhidd
+### 16:14:46 s3a
+31    0     0     US    #3    F          00:00:00.23 00:00:01.29 1.73 MB 0 B     /usr/lib/drivers/usbhubd
+52    0     0     UB    #1    F          00:00:12.07 00:00:12.49 1.79 MB 0 B     /usr/lib/drivers/usbhidd
+53    0     0     UB    #3    F          00:00:00.00 00:00:00.07 1.79 MB 0 B     /usr/lib/drivers/usbhidd
+109   0     0     UB    #1    F          00:00:00.00 00:00:00.06 1.79 MB 0 B     /usr/lib/drivers/usbhidd
+### 16:15:17 s3b
+31    0     0     US    #3    F          00:00:00.27 00:00:01.41 1.73 MB 0 B     /usr/lib/drivers/usbhubd
+52    0     0     UB    #1    F          00:00:12.07 00:00:12.49 1.79 MB 0 B     /usr/lib/drivers/usbhidd
+53    0     0     UB    #3    F          00:00:00.00 00:00:00.07 1.79 MB 0 B     /usr/lib/drivers/usbhidd
+109   0     0     UB    #1    F          00:00:00.00 00:00:00.06 1.79 MB 0 B     /usr/lib/drivers/usbhidd
+### 16:15:47 s4-desk
+31    0     0     US    #3    F          00:00:00.30 00:00:01.52 1.73 MB 0 B     /usr/lib/drivers/usbhubd
+52    0     0     UB    #1    F          00:00:12.07 00:00:12.49 1.79 MB 0 B     /usr/lib/drivers/usbhidd
+53    0     0     UB    #3    F          00:00:00.00 00:00:00.07 1.79 MB 0 B     /usr/lib/drivers/usbhidd
+109   0     0     UB    #1    F          00:00:00.00 00:00:00.06 1.79 MB 0 B     /usr/lib/drivers/usbhidd
+133   0     0     UB    #1    F          00:00:00.06 00:00:00.06 26.6 MB 6.84 MB /usr/bin/orbital
+### 16:16:39 s4a
+31    0     0     US    #0    F          00:00:00.37 00:00:01.83 1.73 MB 0 B     /usr/lib/drivers/usbhubd
+52    0     0     UB    #1    F          00:00:12.29 00:00:12.72 1.79 MB 0 B     /usr/lib/drivers/usbhidd
+53    0     0     UB    #3    F          00:00:00.00 00:00:00.07 1.79 MB 0 B     /usr/lib/drivers/usbhidd
+133   0     0     UB    #1    F          00:00:00.06 00:00:00.06 26.6 MB 6.84 MB /usr/bin/orbital
+148   0     0     UB    #0    F          00:00:00.00 00:00:00.06 1.79 MB 0 B     /usr/lib/drivers/usbhidd
+### 16:17:10 s4b
+31    0     0     US    #2    F          00:00:00.42 00:00:01.96 1.73 MB 0 B     /usr/lib/drivers/usbhubd
+52    0     0     UB    #1    F          00:00:12.29 00:00:12.72 1.79 MB 0 B     /usr/lib/drivers/usbhidd
+53    0     0     UB    #3    F          00:00:00.00 00:00:00.07 1.79 MB 0 B     /usr/lib/drivers/usbhidd
+133   0     0     UB    #1    F          00:00:00.06 00:00:00.06 26.6 MB 6.84 MB /usr/bin/orbital
+148   0     0     UB    #0    F          00:00:00.00 00:00:00.06 1.79 MB 0 B     /usr/lib/drivers/usbhidd
