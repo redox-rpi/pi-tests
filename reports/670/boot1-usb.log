@@ -1,0 +1,68 @@
+1970-01-01T00-00-31.886Z [@pcid_spawner:93 INFO] pcid-spawner: spawn "/usr/lib/drivers/xhcid"
+xhcid: mapping BAR0 Memory64 { addr: 25769803776, size: 4096 }
+xhcid: reading the capability registers at 0x15000
+xhcid: capability registers read, 64-byte contexts: false
+1970-01-01T00-00-31.945Z [@xhcid:98 INFO] XHCI pci-0000-01-00.0 on: 0=0000000600000000 IRQ: (phandle 1, [0, 143, 4])
+1970-01-01T00-00-32.106Z [@xhcid::xhci:1387 INFO] Loading subdriver "USB HUB" for port 1 iface 0 alternate 0 class 9.0 proto 0
+1970-01-01T00-00-32.163Z [@xhcid::xhci::device_enumerator:115 INFO] Device on port 1 was attached
+1970-01-01T00-00-32.212Z [@usbhubd:101 INFO] usb-trace: hub characteristics 0x00e0 (power switching ganged)
+1970-01-01T00-00-32.272Z [@usbhubd:296 INFO] power on port 1
+1970-01-01T00-00-32.306Z [@usbhubd:296 INFO] power on port 2
+1970-01-01T00-00-32.358Z [@usbhubd:296 INFO] power on port 3
+1970-01-01T00-00-32.439Z [@usbhubd:296 INFO] power on port 4
+experiments: desktop netstack-watch orbital orbital-apps pi400 pi400-mem rpi-fb usb-trace
+⏎                                                                                redox login: redox login: 1970-01-01T00-00-33.478Z [@usbhubd:258 INFO] port 1 status V2(HubPortStatusV2(CONNECTION | POWER | LOW_SPEED | CONNECTION_CHANGED))
+1970-01-01T00-00-33.499Z [@usbhubd:339 INFO] reset port 1
+1970-01-01T00-00-33.528Z [@usbhubd:258 INFO] port 2 status V2(HubPortStatusV2(POWER))
+1970-01-01T00-00-33.554Z [@usbhubd:258 INFO] port 3 status V2(HubPortStatusV2(POWER))
+1970-01-01T00-00-33.581Z [@usbhubd:258 INFO] port 4 status V2(HubPortStatusV2(CONNECTION | POWER | LOW_SPEED | CONNECTION_CHANGED))
+1970-01-01T00-00-34.608Z [@usbhubd:258 INFO] port 1 status V2(HubPortStatusV2(CONNECTION | ENABLE | POWER | LOW_SPEED | CONNECTION_CHANGED | RESET_CHANGED))
+1970-01-01T00-00-34.661Z [@usbhubd:161 INFO] attach port 1.1 at xHCI speed 2
+1970-01-01T00-00-34.678Z [@xhcid::xhci:864 INFO] port 1.1: speed 2 from its hub (root port speed 3)
+1970-01-01T00-00-34.713Z [@xhcid::xhci:1502 INFO] port 1.1: speed ID 2 not among the port's own IDs [3], default ID used: true
+1970-01-01T00-00-34.734Z [@xhcid::xhci:1169 INFO] port 1.1 parent_hub_slot_id 1 parent_port_num 1
+1970-01-01T00-00-34.838Z [@xhcid::xhci:1387 INFO] Loading subdriver "USB HID" for port 1.1 iface 0 alternate 0 class 3.1 proto 2
+1970-01-01T00-00-34.917Z [@usbhidd:229 INFO] USB HID driver spawned with scheme `usb.pci-0000-01-00.0_xhci`, port 1.1, interface 0
+1970-01-01T00-00-34.939Z [@usbhidd:241 INFO] USB HID driver: "USB Optical Mouse" serial ""
+1970-01-01T00-00-34.956Z [@usbhidd:264 WARN] using endpoint 0x81 Interrupt In
+1970-01-01T00-00-34.957Z [@usbhubd:339 INFO] reset port 4
+1970-01-01T00-00-36.058Z [@usbhubd:258 INFO] port 4 status V2(HubPortStatusV2(CONNECTION | ENABLE | POWER | LOW_SPEED | CONNECTION_CHANGED | RESET_CHANGED))
+1970-01-01T00-00-36.111Z [@usbhubd:161 INFO] attach port 1.4 at xHCI speed 2
+1970-01-01T00-00-36.127Z [@xhcid::xhci:864 INFO] port 1.4: speed 2 from its hub (root port speed 3)
+1970-01-01T00-00-36.153Z [@xhcid::xhci:1502 INFO] port 1.4: speed ID 2 not among the port's own IDs [3], default ID used: true
+1970-01-01T00-00-36.174Z [@xhcid::xhci:1169 INFO] port 1.4 parent_hub_slot_id 1 parent_port_num 4
+1970-01-01T00-00-36.313Z [@xhcid::xhci:1387 INFO] Loading subdriver "USB HID" for port 1.4 iface 0 alternate 0 class 3.1 proto 1
+1970-01-01T00-00-36.344Z [@xhcid::xhci:1387 INFO] Loading subdriver "USB HID" for port 1.4 iface 1 alternate 0 class 3.0 proto 0
+1970-01-01T00-00-36.347Z [@usbhidd:229 INFO] USB HID driver spawned with scheme `usb.pci-0000-01-00.0_xhci`, port 1.4, interface 0
+1970-01-01T00-00-36.377Z [@usbhidd:229 INFO] USB HID driver spawned with scheme `usb.pci-0000-01-00.0_xhci`, port 1.4, interface 1
+1970-01-01T00-00-36.396Z [@usbhidd:241 INFO] USB HID driver: "Raspberry Pi Internal Keyboard" serial ""
+1970-01-01T00-00-36.417Z [@usbhidd:241 INFO] USB HID driver: "Raspberry Pi Internal Keyboard" serial ""
+1970-01-01T00-00-36.435Z [@usbhidd:264 WARN] using endpoint 0x81 Interrupt In
+1970-01-01T00-00-36.454Z [@usbhidd:264 WARN] using endpoint 0x82 Interrupt In
+1970-01-01T00-00-36.533Z [@xhcid::xhci::scheme:3140 ERROR] CONTROL_TRANSFER transfer Trb { data: 0000000000000000, status: 00000000, control: 00011020 } failed with event Trb { data: 0000000008DDB060, status: 06000000, control: 03018001 }
+1970-01-01T00-00-36.564Z [@xhcid::xhci::scheme:1348 WARN] port 1.4: SET_INTERFACE 0 refused (I/O error); it has one alternate setting, going on
+1970-01-01T00-00-36.613Z [@xhcid::xhci::scheme:3140 ERROR] CONTROL_TRANSFER transfer Trb { data: 0000000000000000, status: 00000000, control: 00011020 } failed with event Trb { data: 0000000008DDB080, status: 06000000, control: 03018001 }
+1970-01-01T00-00-36.644Z [@xhcid::xhci::scheme:1348 WARN] port 1.4: SET_INTERFACE 1 refused (I/O error); it has one alternate setting, going on
+1970-01-01T00-00-36.733Z [@usbhidd:137 WARN] unknown usage_page 0x7 usage 0x0
+1970-01-01T00-00-42.553Z [@xhcid::xhci::irq_reactor:635 INFO] usb-trace: events [s1e1c1:50 s2e1c1:9 s3e1c1:10 s3e1c6:2 s3e3c1:1] registered {"1 epEndpNum(0)": 50, "1.1 epEndpNum(0)": 9, "1.1 epEndpNum(1)": 1, "1.4 epEndpNum(0)": 12, "1.4 epEndpNum(1)": 2, "1.4 epEndpNum(2)": 1} matched {"1 epEndpNum(0)": 50, "1.1 epEndpNum(0)": 9, "1.4 epEndpNum(0)": 12, "1.4 epEndpNum(1)": 1} dead {} unmatched 0 pending {"1.1 epEndpNum(1)": 1, "1.4 epEndpNum(1)": 1, "1.4 epEndpNum(2)": 1} early 0
+1970-01-01T00-00-42.606Z [@xhcid::xhci::irq_reactor:653 INFO] usb-trace: resources commands 19 cmd_ring 19/256 cycle 1 workers 3 handles 16 ports 3
+1970-01-01T00-00-53.019Z [@xhcid::xhci::irq_reactor:635 INFO] usb-trace: events [s1e1c1:40] registered {"1 epEndpNum(0)": 40} matched {"1 epEndpNum(0)": 40} dead {} unmatched 0 pending {"1.1 epEndpNum(1)": 1, "1.4 epEndpNum(1)": 1, "1.4 epEndpNum(2)": 1} early 0
+1970-01-01T00-00-53.052Z [@xhcid::xhci::irq_reactor:653 INFO] usb-trace: resources commands 19 cmd_ring 19/256 cycle 1 workers 3 handles 16 ports 3
+1970-01-01T00-01-03.452Z [@xhcid::xhci::irq_reactor:635 INFO] usb-trace: events [s1e1c1:40] registered {"1 epEndpNum(0)": 40} matched {"1 epEndpNum(0)": 40} dead {} unmatched 0 pending {"1.1 epEndpNum(1)": 1, "1.4 epEndpNum(1)": 1, "1.4 epEndpNum(2)": 1} early 0
+1970-01-01T00-01-03.487Z [@xhcid::xhci::irq_reactor:653 INFO] usb-trace: resources commands 19 cmd_ring 19/256 cycle 1 workers 3 handles 16 ports 3
+1970-01-01T00-01-14.002Z [@xhcid::xhci::irq_reactor:635 INFO] usb-trace: events [s1e1c1:40] registered {"1 epEndpNum(0)": 40} matched {"1 epEndpNum(0)": 40} dead {} unmatched 0 pending {"1.1 epEndpNum(1)": 1, "1.4 epEndpNum(1)": 1, "1.4 epEndpNum(2)": 1} early 0
+1970-01-01T00-01-14.037Z [@xhcid::xhci::irq_reactor:653 INFO] usb-trace: resources commands 19 cmd_ring 19/256 cycle 1 workers 3 handles 16 ports 3
+1970-01-01T00-01-24.502Z [@xhcid::xhci::irq_reactor:635 INFO] usb-trace: events [s1e1c1:40] registered {"1 epEndpNum(0)": 40} matched {"1 epEndpNum(0)": 40} dead {} unmatched 0 pending {"1.1 epEndpNum(1)": 1, "1.4 epEndpNum(1)": 1, "1.4 epEndpNum(2)": 1} early 0
+1970-01-01T00-01-24.537Z [@xhcid::xhci::irq_reactor:653 INFO] usb-trace: resources commands 19 cmd_ring 19/256 cycle 1 workers 3 handles 16 ports 3
+1970-01-01T00-01-35.022Z [@xhcid::xhci::irq_reactor:635 INFO] usb-trace: events [s1e1c1:40] registered {"1 epEndpNum(0)": 40} matched {"1 epEndpNum(0)": 40} dead {} unmatched 0 pending {"1.1 epEndpNum(1)": 1, "1.4 epEndpNum(1)": 1, "1.4 epEndpNum(2)": 1} early 0
+1970-01-01T00-01-35.057Z [@xhcid::xhci::irq_reactor:653 INFO] usb-trace: resources commands 19 cmd_ring 19/256 cycle 1 workers 3 handles 16 ports 3
+1970-01-01T00-01-45.512Z [@xhcid::xhci::irq_reactor:635 INFO] usb-trace: events [s1e1c1:40] registered {"1 epEndpNum(0)": 40} matched {"1 epEndpNum(0)": 40} dead {} unmatched 0 pending {"1.1 epEndpNum(1)": 1, "1.4 epEndpNum(1)": 1, "1.4 epEndpNum(2)": 1} early 0
+1970-01-01T00-01-45.545Z [@xhcid::xhci::irq_reactor:653 INFO] usb-trace: resources commands 19 cmd_ring 19/256 cycle 1 workers 3 handles 16 ports 3
+1970-01-01T00-01-56.068Z [@xhcid::xhci::irq_reactor:635 INFO] usb-trace: events [s1e1c1:40] registered {"1 epEndpNum(0)": 40} matched {"1 epEndpNum(0)": 40} dead {} unmatched 0 pending {"1.1 epEndpNum(1)": 1, "1.4 epEndpNum(1)": 1, "1.4 epEndpNum(2)": 1} early 0
+1970-01-01T00-01-56.103Z [@xhcid::xhci::irq_reactor:653 INFO] usb-trace: resources commands 19 cmd_ring 19/256 cycle 1 workers 3 handles 16 ports 3
+1970-01-01T00-02-06.527Z [@xhcid::xhci::irq_reactor:635 INFO] usb-trace: events [s1e1c1:40] registered {"1 epEndpNum(0)": 40} matched {"1 epEndpNum(0)": 40} dead {} unmatched 0 pending {"1.1 epEndpNum(1)": 1, "1.4 epEndpNum(1)": 1, "1.4 epEndpNum(2)": 1} early 0
+1970-01-01T00-02-06.560Z [@xhcid::xhci::irq_reactor:653 INFO] usb-trace: resources commands 19 cmd_ring 19/256 cycle 1 workers 3 handles 16 ports 3
+1970-01-01T00-02-17.083Z [@xhcid::xhci::irq_reactor:635 INFO] usb-trace: events [s1e1c1:40] registered {"1 epEndpNum(0)": 40} matched {"1 epEndpNum(0)": 40} dead {} unmatched 0 pending {"1.1 epEndpNum(1)": 1, "1.4 epEndpNum(1)": 1, "1.4 epEndpNum(2)": 1} early 0
+1970-01-01T00-02-17.119Z [@xhcid::xhci::irq_reactor:653 INFO] usb-trace: resources commands 19 cmd_ring 19/256 cycle 1 workers 3 handles 16 ports 3
+1970-01-01T00-02-27.643Z [@xhcid::xhci::irq_reactor:635 INFO] usb-trace: events [s1e1c1:40] registered {"1 epEndpNum(0)": 40} matched {"1 epEndpNum(0)": 40} dead {} unmatched 0 pending {"1.1 epEndpNum(1)": 1, "1.4 epEndpNum(1)": 1, "1.4 epEndpNum(2)": 1} early 0
+1970-01-01T00-02-27.679Z [@xhcid::xhci::irq_reactor:653 INFO] usb-trace: resources commands 19 cmd_ring 19/256 cycle 1 workers 3 handles 16 ports 3

@@ -1,0 +1,23 @@
+start 18:34:52
+staged /home/zehrer/redox-rpi-graphics/keep/ut11-netboot (build_id = "v0.7.0-dev-68-g03fcd083+x0aa4") 18:34:52
+boot: login, U-Boot retries 0, banner: redox-rpi v0.7.0-dev-68-g03fcd083+x0aa4 (netboot, 2026-11-25T18:32:20Z) 18:35:48
+boot 1: login 18:35:48
+boot 1 idle: SET_INTERFACE stalls T00-00-36.564Z T00-00-36.644Z ; timed out 5 s 0 []; not stopped 0; not recovered 0; status not read 0; panic/UNHANDLED 0 18:37:43
+staged /home/zehrer/redox-rpi-graphics/keep/ut11-netboot (build_id = "v0.7.0-dev-68-g03fcd083+x0aa4") 18:37:43
+boot: login, U-Boot retries 0, banner: redox-rpi v0.7.0-dev-68-g03fcd083+x0aa4 (netboot, 2026-11-25T18:32:20Z) 18:38:36
+boot 2: login 18:38:36
+boot 2 idle: SET_INTERFACE stalls T00-00-36.380Z T00-00-36.492Z ; timed out 5 s 0 []; not stopped 0; not recovered 0; status not read 0; panic/UNHANDLED 0 18:40:31
+staged /home/zehrer/redox-rpi-graphics/keep/ut11-netboot (build_id = "v0.7.0-dev-68-g03fcd083+x0aa4") 18:40:31
+boot: login, U-Boot retries 0, banner: redox-rpi v0.7.0-dev-68-g03fcd083+x0aa4 (netboot, 2026-11-25T18:32:20Z) 18:41:54
+boot 3: login 18:41:54
+boot 3 idle: SET_INTERFACE stalls T00-00-36.096Z T00-00-36.178Z ; timed out 5 s 0 []; not stopped 0; not recovered 0; status not read 0; panic/UNHANDLED 0 18:43:49
+no-op: summary: 2000 no-op commands in 19659 ms, 0 failed; progress lines 20; Lost event 0; last resources: resources commands 2019 cmd_ring 234/256 cycle 0 workers 3 handles 16 ports 3 18:44:27
+disable 1: kbd ep1 pending yes; kill 1.1 1; attach 1.1 1; new mouse 1; timed out 0; status not read 0; not recovered 0; Lost event 0; port status lines 2; last resources: resources commands 2027 cmd_ring 242/256 cycle 0 workers 3 handles 16 ports 3 18:45:03
+disable 2: kbd ep1 pending yes; kill 1.1 1; attach 1.1 1; new mouse 1; timed out 0; status not read 0; not recovered 0; Lost event 0; port status lines 2; last resources: resources commands 2035 cmd_ring 250/256 cycle 0 workers 3 handles 16 ports 3 18:45:39
+disable 3: kbd ep1 pending yes; kill 1.1 1; attach 1.1 1; new mouse 1; timed out 0; status not read 0; not recovered 0; Lost event 0; port status lines 2; last resources: resources commands 2043 cmd_ring 3/256 cycle 1 workers 3 handles 16 ports 3 18:46:30
+power 1: kbd ep1 pending yes; kill 1.1 1; attach 1.1 1; new mouse 1; timed out 0; status not read 0; not recovered 0; Lost event 0; port status lines 3; last resources: resources commands 2051 cmd_ring 11/256 cycle 1 workers 3 handles 16 ports 3 18:47:21
+power 2: kbd ep1 pending yes; kill 1.1 1; attach 1.1 1; new mouse 1; timed out 0; status not read 0; not recovered 0; Lost event 0; port status lines 3; last resources: resources commands 2059 cmd_ring 19/256 cycle 1 workers 3 handles 16 ports 3 18:47:57
+boot 3 total: panic/UNHANDLED 0; reboots after login 0 18:47:57
+staged /home/zehrer/redox-rpi-graphics/keep/pi400-fbshot-stage (build_id = "v0.6.0-dev-105-gbef6d90a+xcf2a") 18:47:57
+boot: fault, U-Boot retries 0, banner: redox-rpi v0.6.0-dev-105-gbef6d90a+xcf2a (netboot, 2026-11-18T04:35:59Z) 18:49:22
+restore: fault 18:49:22
