@@ -1,0 +1,19 @@
+start 14:08:52
+staged build_id = "v0.7.0-dev-67-g4fa9ed0b+xfa87" 14:08:52
+found after 24 s
+P up 14:09:34
+banner: redox-rpi v0.7.0-dev-67-g4fa9ed0b+xfa87 (netboot, 2026-11-25T13:58:22Z) 14:09:34
+1 pitest rc=0: PASS version: v0.7.0-dev-67-g4fa9ed0b+xfa87 PASS manifest: build ID and libc.so hash match P-manifest.toml PASS ps: 56 processes (piped) PASS ps-tty: 56 lines straight to the terminal, rc=0 PASS sdcard: write, read back, delete on /scheme/data PASS starts: 0 of 100 failed  14:09:50
+2 found: global=yes ula=yes ll=yes 14:10:29
+3-ping-global: 20 sent, 20 received, 0 lost, rtt min/avg/max 0.39/0.50/0.58 ms 14:10:49
+3-ping-ula: 20 sent, 20 received, 0 lost, rtt min/avg/max 0.48/0.67/2.63 ms 14:11:09
+3-ping-ll: 20 sent, 20 received, 0 lost, rtt min/avg/max 0.45/0.54/0.88 ms 14:11:29
+3 neigh: STALE REACHABLE REACHABLE  14:11:29
+4 net6 udp: udp reply from [<global>:<global-addr>]:7777: hello  | echo side: echo 5 bytes to <global>:<pi-iid> port 49152  14:11:32
+5 waiting 10 min 14:11:32
+5 same addresses: global=same ula=same; lists equal: yes 14:21:33
+5-ping-global: 20 sent, 20 received, 0 lost, rtt min/avg/max 0.44/0.89/1.15 ms 14:21:53
+serial: panic=0 relibc=0 exc=0 14:21:53
+found after 24 s
+no devsh, serial reset 1 14:24:49
+stable up build_id = "v0.7.0-dev-9-g368175ee+x2d42" 14:25:49

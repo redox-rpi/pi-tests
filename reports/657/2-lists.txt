@@ -1,0 +1,16 @@
+### cat /scheme/netcfg/ifaces/eth0/addr/list  (0.3 s)
+<lan-ip>/24
+fe80::<pi-iid>/64
+<global>:<pi-iid>/64
+<ula>:<pi-iid>/64
+### cat /scheme/netcfg/route/list  (0.3 s)
+default via fe80::<router-iid> dev eth0 src <global>:<pi-iid>
+default via <lan-ip> dev eth0 src <lan-ip>
+224.0.0.0/4  dev eth0 src <lan-ip>
+ff00::/8  dev eth0 src fe80::<pi-iid>
+127.0.0.0/8  dev loopback src 127.0.0.1
+<lan-ip>/24  dev eth0 src <lan-ip>
+<global>::/64  dev eth0 src <global>:<pi-iid>
+<ula>::/64  dev eth0 src <ula>:<pi-iid>
+fe80::/64  dev eth0 src fe80::<pi-iid>
+::1/128  dev loopback src ::1

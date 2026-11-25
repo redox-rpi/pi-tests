@@ -1,0 +1,21 @@
+seq 1: reply 0.88 ms
+seq 2: reply 0.58 ms
+seq 3: reply 0.49 ms
+seq 4: reply 0.59 ms
+seq 5: reply 0.56 ms
+seq 6: reply 0.60 ms
+seq 7: reply 0.54 ms
+seq 8: reply 0.66 ms
+seq 9: reply 0.45 ms
+seq 10: reply 0.51 ms
+seq 11: reply 0.51 ms
+seq 12: reply 0.50 ms
+seq 13: reply 0.47 ms
+seq 14: reply 0.52 ms
+seq 15: reply 0.48 ms
+seq 16: reply 0.50 ms
+seq 17: reply 0.47 ms
+seq 18: reply 0.50 ms
+seq 19: reply 0.51 ms
+seq 20: reply 0.48 ms
+20 sent, 20 received, 0 lost, rtt min/avg/max 0.45/0.54/0.88 ms

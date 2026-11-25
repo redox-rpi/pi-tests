@@ -1,0 +1,2 @@
+### net6 udp '[<global>:<global-addr>]:7777' hello  (0.3 s)
+udp reply from [<global>:<global-addr>]:7777: hello
