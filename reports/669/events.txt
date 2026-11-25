@@ -1,0 +1,24 @@
+start 18:14:19
+staged /home/zehrer/redox-rpi-graphics/keep/ut10-netboot (build_id = "v0.7.0-dev-67-g6dfa5d6e+x0aa4") 18:14:19
+boot: login, U-Boot retries 0, banner: redox-rpi v0.7.0-dev-67-g6dfa5d6e+x0aa4 (netboot, 2026-11-25T18:02:28Z) 18:15:13
+boot 1 (ut10): login 18:15:13
+boot 1 (ut10): SET_INTERFACE stall at T00-00-36.331Z; timed out 5 s: 1 (first: 00-00-41.443Z [@xhcid::xhci::scheme:702 WARN] port 1.4); by port:       1 port 1.4: ; not stopped 1; not recovered 0; status not read 0; usbhubd in ps: 1; panic/UNHANDLED 0 18:17:09
+staged /home/zehrer/redox-rpi-graphics/keep/ut8-netboot (build_id = "v0.7.0-dev-66-gf8bc952d+x0aa4") 18:17:09
+boot: login, U-Boot retries 0, banner: redox-rpi v0.7.0-dev-66-gf8bc952d+x0aa4 (netboot, 2026-11-25T17:37:52Z) 18:18:02
+boot 2 (ut8): login 18:18:02
+boot 2 (ut8): SET_INTERFACE stall at T00-00-36.184Z; timed out 5 s: 1 (first: 00-00-41.237Z [@xhcid::xhci::scheme:702 WARN] port 1.4); by port:       1 port 1.4: ; not stopped 1; not recovered 0; status not read 0; usbhubd in ps: 1; panic/UNHANDLED 0 18:19:58
+staged /home/zehrer/redox-rpi-graphics/keep/ut10-netboot (build_id = "v0.7.0-dev-67-g6dfa5d6e+x0aa4") 18:19:58
+boot: login, U-Boot retries 0, banner: redox-rpi v0.7.0-dev-67-g6dfa5d6e+x0aa4 (netboot, 2026-11-25T18:02:28Z) 18:20:51
+boot 3 (ut10): login 18:20:51
+boot 3 (ut10): SET_INTERFACE stall at T00-00-36.229Z; timed out 5 s: 1 (first: 00-00-41.378Z [@xhcid::xhci::scheme:702 WARN] port 1.4); by port:       1 port 1.4: ; not stopped 1; not recovered 0; status not read 0; usbhubd in ps: 1; panic/UNHANDLED 0 18:22:47
+staged /home/zehrer/redox-rpi-graphics/keep/ut8-netboot (build_id = "v0.7.0-dev-66-gf8bc952d+x0aa4") 18:22:47
+boot: login, U-Boot retries 0, banner: redox-rpi v0.7.0-dev-66-gf8bc952d+x0aa4 (netboot, 2026-11-25T17:37:52Z) 18:24:00
+boot 4 (ut8): login 18:24:00
+boot 4 (ut8): SET_INTERFACE stall at T00-00-36.230Z; timed out 5 s: 1 (first: 00-00-41.342Z [@xhcid::xhci::scheme:702 WARN] port 1.4); by port:       1 port 1.4: ; not stopped 1; not recovered 0; status not read 0; usbhubd in ps: 1; panic/UNHANDLED 0 18:25:57
+staged /home/zehrer/redox-rpi-graphics/keep/ut10-netboot (build_id = "v0.7.0-dev-67-g6dfa5d6e+x0aa4") 18:25:57
+boot: login, U-Boot retries 0, banner: redox-rpi v0.7.0-dev-67-g6dfa5d6e+x0aa4 (netboot, 2026-11-25T18:02:28Z) 18:27:19
+boot 5 (ut10): login 18:27:19
+boot 5 (ut10): SET_INTERFACE stall at T00-00-36.307Z; timed out 5 s: 1 (first: 00-00-41.485Z [@xhcid::xhci::scheme:702 WARN] port 1.4); by port:       1 port 1.4: ; not stopped 1; not recovered 0; status not read 0; usbhubd in ps: 1; panic/UNHANDLED 0 18:29:16
+staged /home/zehrer/redox-rpi-graphics/keep/pi400-fbshot-stage (build_id = "v0.6.0-dev-105-gbef6d90a+xcf2a") 18:29:16
+boot: login, U-Boot retries 0, banner: redox-rpi v0.6.0-dev-105-gbef6d90a+xcf2a (netboot, 2026-11-18T04:35:59Z) 18:30:09
+restore: login 18:30:09
