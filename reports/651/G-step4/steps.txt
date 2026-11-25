@@ -1,0 +1,123 @@
+### 1a: desktop --yes  (0.6 s)
+Redox desktop (beta)
+Super+F2   back to the text console
+Super+F3   back to the desktop
+(or type desktop on the console)
+Super+T    a terminal
+Known limits:
+- Slow: everything draws in software; dragging a
+window costs much of a core.
+- Once started, the desktop cannot be stopped; its
+memory (40 to 80 MB) comes back only with a reboot.
+- No browser, one screen resolution, no HDMI hotplug.
+desktop: starting Orbital, its log goes to /tmp/desktop.log
+desktop: Super+F2 goes back to the console, Super+F3 to the desktop
+### 1b: pointer-bench --type user  (0.7 s)
+pointer-bench: typed 4 keys
+### 1e0: pointer-bench --keys enter  (0.4 s)
+pointer-bench: enter
+### 1e1: pointer-bench --keys enter  (0.4 s)
+pointer-bench: enter
+### 1e2: pointer-bench --keys enter  (0.5 s)
+pointer-bench: enter
+### 2term: pointer-bench --super t  (0.5 s)
+pointer-bench: super+t
+### 4 before: cosmic-term processes 1; v3dd ps lines:
+35    0     0     UB    #2    F          00:00:00.09 00:00:00.05 24.6 MB 7.91 MB /usr/bin/v3dd
+35    0     0     UB    #1    F          00:00:00.09 00:00:00.10 24.6 MB 7.91 MB /usr/bin/v3dd
+### 4open0: pointer-bench --super t  (0.5 s)
+pointer-bench: super+t
+### 4 open 1: cosmic-term processes 2; v3dd ps lines:
+35    0     0     UB    #0    F          00:00:00.12 00:00:00.06 27.6 MB 7.91 MB /usr/bin/v3dd
+35    0     0     UB    #2    F          00:00:00.10 00:00:00.11 27.6 MB 7.91 MB /usr/bin/v3dd
+### 4shot0: vc4shot /tmp/open0.ppm  (3.6 s)
+vc4shot: channel 1 1920x1080, list at 2048, 2 planes, ctrl 0x87800438 bkgnd 0x81000000 list 2048 active 2048 stat 0xa38c8144 (mode 2, frame 8)
+vc4shot: plane 0: ListPlane { unity: true, format: 7, x: 0, y: 0, width: 1920, height: 1080, bus: 3271557120, pitch: 7680, alpha: false }
+vc4shot: plane 1: ListPlane { unity: true, format: 7, x: 0, y: 0, width: 64, height: 64, bus: 3269185536, pitch: 256, alpha: true }
+vc4shot: wrote /tmp/open0.ppm (6220817 bytes)
+### 4exit0: pointer-bench --type exit  (0.6 s)
+pointer-bench: typed 4 keys
+### 4enter0: pointer-bench --keys enter  (0.4 s)
+pointer-bench: enter
+### 4 closed 1: cosmic-term processes 1; v3dd ps lines:
+35    0     0     UB    #0    F          00:00:00.14 00:00:00.08 27.6 MB 7.91 MB /usr/bin/v3dd
+35    0     0     UB    #2    F          00:00:00.11 00:00:00.11 27.6 MB 7.91 MB /usr/bin/v3dd
+### 4open1: pointer-bench --super t  (0.5 s)
+pointer-bench: super+t
+### 4 open 2: cosmic-term processes 2; v3dd ps lines:
+35    0     0     UB    #2    F          00:00:00.17 00:00:00.10 30.6 MB 7.91 MB /usr/bin/v3dd
+35    0     0     UB    #1    F          00:00:00.12 00:00:00.11 30.6 MB 7.91 MB /usr/bin/v3dd
+### 4shot1: vc4shot /tmp/open1.ppm  (2.0 s)
+vc4shot: channel 1 1920x1080, list at 2304, 2 planes, ctrl 0x87800438 bkgnd 0x81000000 list 2304 active 2304 stat 0xa38c8327 (mode 2, frame 8)
+vc4shot: plane 0: ListPlane { unity: true, format: 7, x: 0, y: 0, width: 1920, height: 1080, bus: 3271557120, pitch: 7680, alpha: false }
+vc4shot: plane 1: ListPlane { unity: true, format: 7, x: 0, y: 0, width: 64, height: 64, bus: 3269185536, pitch: 256, alpha: true }
+vc4shot: wrote /tmp/open1.ppm (6220817 bytes)
+### 4exit1: pointer-bench --type exit  (0.7 s)
+pointer-bench: typed 4 keys
+### 4enter1: pointer-bench --keys enter  (0.4 s)
+pointer-bench: enter
+### 4 closed 2: cosmic-term processes 1; v3dd ps lines:
+35    0     0     UB    #2    F          00:00:00.19 00:00:00.11 27.6 MB 7.91 MB /usr/bin/v3dd
+35    0     0     UB    #1    F          00:00:00.12 00:00:00.11 27.6 MB 7.91 MB /usr/bin/v3dd
+### 4open2: pointer-bench --super t  (0.5 s)
+pointer-bench: super+t
+### 4 open 3: cosmic-term processes 2; v3dd ps lines:
+35    0     0     UB    #2    F          00:00:00.21 00:00:00.12 30.6 MB 7.91 MB /usr/bin/v3dd
+35    0     0     UB    #1    F          00:00:00.13 00:00:00.11 30.6 MB 7.91 MB /usr/bin/v3dd
+### 4shot2: vc4shot /tmp/open2.ppm  (3.3 s)
+vc4shot: channel 1 1920x1080, list at 2048, 2 planes, ctrl 0x87800438 bkgnd 0x81000000 list 2048 active 2048 stat 0xa38e03cd (mode 2, frame 32)
+vc4shot: plane 0: ListPlane { unity: true, format: 7, x: 0, y: 0, width: 1920, height: 1080, bus: 3271557120, pitch: 7680, alpha: false }
+vc4shot: plane 1: ListPlane { unity: true, format: 7, x: 0, y: 0, width: 64, height: 64, bus: 3269185536, pitch: 256, alpha: true }
+vc4shot: wrote /tmp/open2.ppm (6220817 bytes)
+### 4exit2: pointer-bench --type exit  (0.7 s)
+pointer-bench: typed 4 keys
+### 4enter2: pointer-bench --keys enter  (0.4 s)
+pointer-bench: enter
+### 4 closed 3: cosmic-term processes 1; v3dd ps lines:
+35    0     0     UB    #2    F          00:00:00.24 00:00:00.14 27.6 MB 7.91 MB /usr/bin/v3dd
+35    0     0     UB    #1    F          00:00:00.15 00:00:00.12 27.6 MB 7.91 MB /usr/bin/v3dd
+### 4open3: pointer-bench --super t  (0.5 s)
+pointer-bench: super+t
+### 4 open 4: cosmic-term processes 2; v3dd ps lines:
+35    0     0     UB    #2    F          00:00:00.28 00:00:00.16 30.6 MB 7.91 MB /usr/bin/v3dd
+35    0     0     UB    #1    F          00:00:00.16 00:00:00.12 30.6 MB 7.91 MB /usr/bin/v3dd
+### 4shot3: vc4shot /tmp/open3.ppm  (1.2 s)
+vc4shot: channel 1 1920x1080, list at 2048, 2 planes, ctrl 0x87800438 bkgnd 0x81000000 list 2048 active 2048 stat 0x838b80c3 (mode 2, frame 56)
+vc4shot: plane 0: ListPlane { unity: true, format: 7, x: 0, y: 0, width: 1920, height: 1080, bus: 3271557120, pitch: 7680, alpha: false }
+vc4shot: plane 1: ListPlane { unity: true, format: 7, x: 0, y: 0, width: 64, height: 64, bus: 3269185536, pitch: 256, alpha: true }
+vc4shot: wrote /tmp/open3.ppm (6220817 bytes)
+### 4exit3: pointer-bench --type exit  (0.7 s)
+pointer-bench: typed 4 keys
+### 4enter3: pointer-bench --keys enter  (0.3 s)
+pointer-bench: enter
+### 4 closed 4: cosmic-term processes 1; v3dd ps lines:
+35    0     0     UB    #0    F          00:00:00.31 00:00:00.19 27.6 MB 7.91 MB /usr/bin/v3dd
+35    0     0     UB    #2    F          00:00:00.17 00:00:00.12 27.6 MB 7.91 MB /usr/bin/v3dd
+### 4open4: pointer-bench --super t  (0.5 s)
+pointer-bench: super+t
+### 4 open 5: cosmic-term processes 2; v3dd ps lines:
+35    0     0     UB    #3    F          00:00:00.34 00:00:00.20 30.6 MB 7.91 MB /usr/bin/v3dd
+35    0     0     UB    #3    F          00:00:00.18 00:00:00.13 30.6 MB 7.91 MB /usr/bin/v3dd
+### 4shot4: vc4shot /tmp/open4.ppm  (2.8 s)
+vc4shot: channel 1 1920x1080, list at 2048, 2 planes, ctrl 0x87800438 bkgnd 0x81000000 list 2048 active 2048 stat 0xa38042cb (mode 2, frame 4)
+vc4shot: plane 0: ListPlane { unity: true, format: 7, x: 0, y: 0, width: 1920, height: 1080, bus: 3256123392, pitch: 7680, alpha: false }
+vc4shot: plane 1: ListPlane { unity: true, format: 7, x: 0, y: 0, width: 64, height: 64, bus: 3269185536, pitch: 256, alpha: true }
+vc4shot: wrote /tmp/open4.ppm (6220817 bytes)
+### 4exit4: pointer-bench --type exit  (0.7 s)
+pointer-bench: typed 4 keys
+### 4enter4: pointer-bench --keys enter  (0.3 s)
+pointer-bench: enter
+### 4 closed 5: cosmic-term processes 1; v3dd ps lines:
+35    0     0     UB    #3    F          00:00:00.37 00:00:00.22 27.6 MB 7.91 MB /usr/bin/v3dd
+35    0     0     UB    #0    F          00:00:00.20 00:00:00.13 27.6 MB 7.91 MB /usr/bin/v3dd
+### 4 after 10 s: cosmic-term processes 1; v3dd ps lines:
+35    0     0     UB    #1    F          00:00:00.40 00:00:00.23 18.6 MB 7.91 MB /usr/bin/v3dd
+35    0     0     UB    #3    F          00:00:00.21 00:00:00.13 18.6 MB 7.91 MB /usr/bin/v3dd
+### 4shot: vc4shot /tmp/after5.ppm  (3.9 s)
+vc4shot: channel 1 1920x1080, list at 2304, 2 planes, ctrl 0x87800438 bkgnd 0x81000000 list 2304 active 2304 stat 0x838783bf (mode 2, frame 56)
+vc4shot: plane 0: ListPlane { unity: true, format: 7, x: 0, y: 0, width: 1920, height: 1080, bus: 3256123392, pitch: 7680, alpha: false }
+vc4shot: plane 1: ListPlane { unity: true, format: 7, x: 0, y: 0, width: 64, height: 64, bus: 3269185536, pitch: 256, alpha: true }
+vc4shot: wrote /tmp/after5.ppm (6220817 bytes)
+### fetched /tmp/open0.ppm: 6220817 bytes, stats (1920, 1080, 0.5071920709991257, 758)
+### fetched /tmp/open4.ppm: 6220817 bytes, stats (1920, 1080, 0.5071920709991257, 747)
+### fetched /tmp/after5.ppm: 6220817 bytes, stats (1920, 1080, 0.5347855881767146, 717)

@@ -1,0 +1,288 @@
+### 1env: echo ORBITAL_GL=$ORBITAL_GL  (1.0 s)
+ion: expansion error: Variable "ORBITAL_GL" does not exist
+### 1a: desktop --yes  (1.6 s)
+Redox desktop (beta)
+Super+F2   back to the text console
+Super+F3   back to the desktop
+(or type desktop on the console)
+Super+T    a terminal
+Known limits:
+- Slow: everything draws in software; dragging a
+window costs much of a core.
+- Once started, the desktop cannot be stopped; its
+memory (40 to 80 MB) comes back only with a reboot.
+- No browser, one screen resolution, no HDMI hotplug.
+desktop: starting Orbital, its log goes to /tmp/desktop.log
+desktop: Super+F2 goes back to the console, Super+F3 to the desktop
+### 1b: pointer-bench --type user  (0.7 s)
+pointer-bench: typed 4 keys
+### 1e0: pointer-bench --keys enter  (0.3 s)
+pointer-bench: enter
+### 1e1: pointer-bench --keys enter  (0.3 s)
+pointer-bench: enter
+### 1e2: pointer-bench --keys enter  (0.5 s)
+pointer-bench: enter
+### 1log: grep -E 'GL|ERROR' /tmp/desktop.log  (0.3 s)
+libEGL warning: MESA-LOADER: failed to retrieve device information
+1970-01-01T00-01-00.806Z [orbital@orbital::compositor::gl:367 WARN] GL compositing on the GPU
+### 2term: pointer-bench --super t  (0.4 s)
+pointer-bench: super+t
+### 2shot: vc4shot /tmp/term.ppm  (2.4 s)
+vc4shot: channel 1 1920x1080, list at 2048, 2 planes, ctrl 0x87800438 bkgnd 0x81000000 list 2048 active 2048 stat 0xa38081e7 (mode 2, frame 8)
+vc4shot: plane 0: ListPlane { unity: true, format: 7, x: 0, y: 0, width: 1920, height: 1080, bus: 3256127488, pitch: 7680, alpha: false }
+vc4shot: plane 1: ListPlane { unity: true, format: 7, x: 0, y: 0, width: 64, height: 64, bus: 3269189632, pitch: 256, alpha: true }
+vc4shot: wrote /tmp/term.ppm (6220817 bytes)
+### 3start: pointer-bench 30 --hz 60 --super-drag --drag 960 540 --screen 1920 1080 --center 960 540 --radius 150 &> /tmp/pb3.txt &  (0.3 s)
+ion: bg [0] 108
+ion: ([0] 108) exited with 0
+### 3 drag: CPU over 10.3 s (ps ACTTIME deltas, % of one core): /usr/lib/drivers/usbhidd 21.5 %; /usr/bin/v3dd 18.2 %; /usr/lib/drivers/xhcid 13.2 %; /usr/bin/orbital 11.9 %; /scheme/initfs/bin/redoxfs 0.6 %; /usr/bin/netstack 0.5 %; /usr/bin/pointer-bench 0.5 %; /scheme/initfs/bin/rpi-firmwared 0.5 %
+### 3res: cat /tmp/pb3.txt  (0.3 s)
+pointer-bench: 1800 moves in 30.1 s (59.8/s), dragging
+### 3shot: vc4shot /tmp/after.ppm  (2.0 s)
+vc4shot: channel 1 1920x1080, list at 2048, 2 planes, ctrl 0x87800438 bkgnd 0x81000000 list 2048 active 2048 stat 0xa384c1a5 (mode 2, frame 12)
+vc4shot: plane 0: ListPlane { unity: true, format: 7, x: 0, y: 0, width: 1920, height: 1080, bus: 3271557120, pitch: 7680, alpha: false }
+vc4shot: plane 1: ListPlane { unity: true, format: 7, x: 959, y: 532, width: 64, height: 64, bus: 3269189632, pitch: 256, alpha: true }
+vc4shot: wrote /tmp/after.ppm (6220817 bytes)
+### orb: ps  (0.2 s)
+PID   EUID  EGID  STAT  CPU   AFFINITY   ACTTIME     SCHTIME     PRIVATE SHARED  NAME
+0     0     0     RR+   #0    1          00:00:00.00 00:00:00.00 65.0 KB 0 B     [kmain]
+0     0     0     RR+   #1    2          00:00:00.00 00:00:00.00 65.0 KB 0 B     [kmain]
+0     0     0     RR    #2    4          00:00:00.00 00:00:00.00 65.0 KB 0 B     [kmain]
+0     0     0     RR    #3    8          00:00:00.00 00:00:00.00 65.0 KB 0 B     [kmain]
+0     0     0     UB    #1    F          00:00:00.02 00:00:00.00 27.6 MB 4.00 KB initfs
+0     0     0     UB    #0    F          00:00:00.14 00:00:00.00 1.37 MB 512 KB  procmgr
+0     0     0     UB    #3    F          00:00:00.24 00:00:00.00 1.37 MB 8.00 KB initnsmgr
+1     0     0     UB    #1    F          00:00:00.12 00:00:00.29 1.86 MB 0 B     /scheme/initfs/bin/init
+2     0     0     UB    #3    F          00:00:00.00 00:00:00.00 3.64 MB 12.0 KB /scheme/initfs/bin/logd
+2     0     0     UB    #2    F          00:00:01.81 00:00:00.00 3.64 MB 12.0 KB /scheme/initfs/bin/logd
+3     0     0     UB    #3    F          00:00:00.00 00:00:00.01 1.62 MB 184 KB  /scheme/initfs/bin/randd
+4     0     0     UB    #0    F          00:00:00.00 00:00:00.02 1.68 MB 0 B     /scheme/initfs/bin/ipcd
+5     0     0     UB    #0    F          00:00:00.00 00:00:00.00 1.55 MB 0 B     /scheme/initfs/bin/zerod
+6     0     0     UB    #0    F          00:00:00.00 00:00:00.00 1.55 MB 140 KB  /scheme/initfs/bin/zerod
+7     0     0     UB    #0    F          00:00:00.01 00:00:00.00 2.77 MB 0 B     /scheme/initfs/bin/ramfs
+8     0     0     UB    #1    F          00:00:00.09 00:00:00.08 5.77 MB 0 B     /scheme/initfs/bin/rpi-firmwared
+8     0     0     US    #1    F          00:00:00.30 00:00:00.30 5.77 MB 0 B     /scheme/initfs/bin/rpi-firmwared
+8     0     0     US    #0    F          00:00:00.00 00:00:00.00 5.77 MB 0 B     /scheme/initfs/bin/rpi-firmwared
+9     0     0     UB    #0    F          00:00:00.12 00:00:00.00 1.67 MB 0 B     /scheme/initfs/bin/inputd
+10    0     0     UB    #0    F          00:00:00.14 00:00:00.00 2.98 MB 4.00 KB /scheme/initfs/bin/lived
+11    0     0     UB    #1    F          00:00:00.23 00:00:00.12 2.61 MB 4.00 KB /scheme/initfs/bin/bcmgenetd
+12    0     0     UB    #0    F          00:00:00.00 00:00:00.00 1.62 MB 0 B     /scheme/initfs/bin/bcm2835-gpiod
+13    0     0     UB    #0    F          00:00:00.00 00:00:00.00 1.68 MB 0 B     /scheme/initfs/bin/bcm2835-spid
+14    0     0     UB    #0    F          00:00:00.00 00:00:00.00 1.62 MB 0 B     /scheme/initfs/bin/bcm2835-i2cd
+15    0     0     UB    #0    F          00:00:00.25 00:00:00.02 1.74 MB 0 B     /scheme/initfs/bin/vesad
+17    0     0     UB    #0    F          00:00:01.00 00:00:01.36 14.1 MB 7.91 MB /scheme/initfs/bin/fbbootlogd
+21    0     0     UB    #2    F          00:00:00.01 00:00:00.27 1.79 MB 16.0 KB /scheme/initfs/bin/pcid
+24    0     0     UB    #0    F          00:00:02.55 00:00:00.91 35.6 MB 12.0 KB /scheme/initfs/bin/redoxfs
+26    0     0     UB    #2    F          00:00:00.00 00:00:00.04 15.1 MB 12.0 KB /usr/lib/drivers/xhcid
+26    0     0     UB    #1    F          00:00:01.38 00:00:00.44 15.1 MB 12.0 KB /usr/lib/drivers/xhcid
+26    0     0     UB    #3    F          00:00:00.00 00:00:00.00 15.1 MB 12.0 KB /usr/lib/drivers/xhcid
+26    0     0     US    #2    F          00:00:01.81 00:00:01.81 15.1 MB 12.0 KB /usr/lib/drivers/xhcid
+26    0     0     UB    #0    F          00:00:02.78 00:00:01.82 15.1 MB 12.0 KB /usr/lib/drivers/xhcid
+26    0     0     UB    #2    F          00:00:02.74 00:00:01.79 15.1 MB 12.0 KB /usr/lib/drivers/xhcid
+27    0     0     UB    #0    F          00:00:00.14 00:00:00.05 1.62 MB 112 KB  /usr/bin/ptyd
+30    0     0     US    #1    F          00:00:00.10 00:00:00.50 1.73 MB 0 B     /usr/lib/drivers/usbhubd
+31    0     0     UB    #1    F          00:00:00.00 00:00:00.03 5.20 MB 0 B     /usr/bin/sudo
+32    0     0     US    #0    F          00:00:00.00 00:00:00.00 7.11 MB 24.0 KB /usr/bin/netstack
+32    0     0     UB    #1    F          00:00:00.35 00:00:00.47 7.11 MB 24.0 KB /usr/bin/netstack
+32    0     0     US    #1    F          00:00:00.01 00:00:00.01 7.11 MB 24.0 KB /usr/bin/netstack
+33    0     0     UB    #1    F          00:00:00.57 00:00:00.44 47.1 MB 0 B     /usr/bin/vc4d
+33    0     0     US    #2    F          00:00:00.06 00:00:00.14 47.1 MB 0 B     /usr/bin/vc4d
+34    0     0     UB    #3    F          00:00:00.00 00:00:00.09 1.79 MB 0 B     /usr/lib/drivers/usbhidd
+35    0     0     UB    #0    F          00:00:04.91 00:00:02.73 24.6 MB 7.91 MB /usr/bin/v3dd
+35    0     0     UB    #1    F          00:00:00.82 00:00:00.10 24.6 MB 7.91 MB /usr/bin/v3dd
+36    0     0     UB    #1    F          00:00:00.05 00:00:00.08 6.78 MB 7.91 MB /usr/bin/fbcond
+37    0     0     UB    #2    F          00:00:00.55 00:00:00.25 1.86 MB 0 B     /usr/bin/getty
+39    0     0     UB    #0    F          00:00:00.00 00:00:00.03 5.88 MB 0 B     /usr/bin/login
+40    0     0     US    #2    F          00:00:00.02 00:00:00.05 1.86 MB 0 B     /usr/bin/dhcpd
+41    0     0     UB    #2    F          00:00:00.00 00:00:00.00 11.2 MB 0 B     /usr/bin/devshd
+41    0     0     UB    #3    F          00:00:00.00 00:00:00.02 11.2 MB 0 B     /usr/bin/devshd
+41    0     0     UB    #3    F          00:00:00.00 00:00:00.00 11.2 MB 0 B     /usr/bin/devshd
+41    0     0     UB    #1    F          00:00:00.08 00:00:00.15 11.2 MB 0 B     /usr/bin/devshd
+46    0     0     UB    #1    F          00:00:00.00 00:00:00.06 1.86 MB 0 B     /usr/bin/getty
+48    0     0     UB    #1    F          00:00:00.01 00:00:00.03 5.88 MB 0 B     /usr/bin/login
+50    0     0     UB    #1    F          00:00:09.90 00:00:08.77 1.79 MB 0 B     /usr/lib/drivers/usbhidd
+51    0     0     UR+   #2    F          00:00:09.46 00:00:08.43 1.79 MB 0 B     /usr/lib/drivers/usbhidd
+62    0     0     UB    #3    F          00:00:00.13 00:00:00.15 5.82 MB 0 B     /usr/bin/login
+63    0     0     UB    #0    F          00:00:00.21 00:00:00.33 7.66 MB 0 B     /usr/bin/ion
+69    0     0     UB    #3    F          00:00:00.00 00:00:00.00 7.52 MB 0 B     /usr/bin/desktop
+71    0     0     UB    #1    F          00:00:04.52 00:00:05.61 49.5 MB 16.0 MB /usr/bin/orbital
+74    0     0     UB    #0    F          00:00:00.29 00:00:00.22 6.59 MB 0 B     /usr/bin/orblogin
+87    1000  1000  US    #3    F          00:00:00.03 00:00:00.06 9.54 MB 0 B     /usr/bin/desktop-session
+87    1000  1000  US    #0    F          00:00:00.04 00:00:00.06 9.54 MB 0 B     /usr/bin/desktop-session
+88    1000  1000  UB    #2    F          00:00:00.00 00:00:00.00 7.52 MB 0 B     /usr/bin/desktop-session
+89    1000  1000  UB    #1    F          00:00:00.04 00:00:00.08 9.56 MB 540 KB  /usr/bin/launcher
+93    1000  1000  UB    #1    F          00:00:00.00 00:00:00.00 9.54 MB 0 B     /usr/bin/desktop-session
+94    1000  1000  UB    #0    F          00:00:00.02 00:00:00.04 6.20 MB 3.00 MB /usr/bin/orbterm
+95    1000  1000  UB    #0    F          00:00:00.01 00:00:00.03 7.52 MB 0 B     /usr/bin/desktop-welcome
+98    1000  1000  UB    #2    F          00:00:00.04 00:00:00.06 15.5 MB 0 B     /usr/bin/head
+102   1000  1000  UB    #0    F          00:00:00.01 00:00:00.05 6.20 MB 3.00 MB /usr/bin/cosmic-term
+103   1000  1000  UB    #3    F          00:00:00.01 00:00:00.03 7.65 MB 0 B     /usr/bin/ion
+119   0     0     UR+   #3    F          00:00:00.00 00:00:00.02 5.14 MB 0 B     /usr/bin/ps
+### dlog: /usr/bin/tail -n 40 /tmp/desktop.log  (0.3 s)
+[INFO orbital@src/header/sys_ioctl/redox/drm.rs:205] TODO: unimplemented DRM ioctl(11, 0xc1, ReadWrite(0x7fffffffea18, 24))
+[INFO orbital@src/header/sys_ioctl/redox/drm.rs:205] TODO: unimplemented DRM ioctl(11, 0xc1, ReadWrite(0x7fffffffea18, 24))
+[INFO orbital@src/header/sys_ioctl/redox/drm.rs:205] TODO: unimplemented DRM ioctl(11, 0xc1, ReadWrite(0x7fffffffea18, 24))
+[INFO orbital@src/header/sys_ioctl/redox/drm.rs:205] TODO: unimplemented DRM ioctl(11, 0xc1, ReadWrite(0x7fffffffea18, 24))
+[INFO orbital@src/header/sys_ioctl/redox/drm.rs:205] TODO: unimplemented DRM ioctl(11, 0xc1, ReadWrite(0x7fffffffea18, 24))
+[INFO orbital@src/header/sys_ioctl/redox/drm.rs:205] TODO: unimplemented DRM ioctl(11, 0xc1, ReadWrite(0x7fffffffea18, 24))
+[INFO orbital@src/header/sys_ioctl/redox/drm.rs:205] TODO: unimplemented DRM ioctl(11, 0xc1, ReadWrite(0x7fffffffea18, 24))
+[INFO orbital@src/header/sys_ioctl/redox/drm.rs:205] TODO: unimplemented DRM ioctl(11, 0xc1, ReadWrite(0x7fffffffea18, 24))
+[INFO orbital@src/header/sys_ioctl/redox/drm.rs:205] TODO: unimplemented DRM ioctl(11, 0xc1, ReadWrite(0x7fffffffea18, 24))
+[INFO orbital@src/header/sys_ioctl/redox/drm.rs:205] TODO: unimplemented DRM ioctl(11, 0xc1, ReadWrite(0x7fffffffea18, 24))
+[INFO orbital@src/header/sys_ioctl/redox/drm.rs:205] TODO: unimplemented DRM ioctl(11, 0xc1, ReadWrite(0x7fffffffea18, 24))
+[INFO orbital@src/header/sys_ioctl/redox/drm.rs:205] TODO: unimplemented DRM ioctl(11, 0xc1, ReadWrite(0x7fffffffea18, 24))
+[INFO orbital@src/header/sys_ioctl/redox/drm.rs:205] TODO: unimplemented DRM ioctl(11, 0xc1, ReadWrite(0x7fffffffea18, 24))
+[INFO orbital@src/header/sys_ioctl/redox/drm.rs:205] TODO: unimplemented DRM ioctl(11, 0xc1, ReadWrite(0x7fffffffea18, 24))
+[INFO orbital@src/header/sys_ioctl/redox/drm.rs:205] TODO: unimplemented DRM ioctl(11, 0xc1, ReadWrite(0x7fffffffea18, 24))
+[INFO orbital@src/header/sys_ioctl/redox/drm.rs:205] TODO: unimplemented DRM ioctl(11, 0xc1, ReadWrite(0x7fffffffea18, 24))
+[INFO orbital@src/header/sys_ioctl/redox/drm.rs:205] TODO: unimplemented DRM ioctl(11, 0xc1, ReadWrite(0x7fffffffea18, 24))
+[INFO orbital@src/header/sys_ioctl/redox/drm.rs:205] TODO: unimplemented DRM ioctl(11, 0xc1, ReadWrite(0x7fffffffea18, 24))
+[INFO orbital@src/header/sys_ioctl/redox/drm.rs:205] TODO: unimplemented DRM ioctl(11, 0xc1, ReadWrite(0x7fffffffea18, 24))
+[INFO orbital@src/header/sys_ioctl/redox/drm.rs:205] TODO: unimplemented DRM ioctl(11, 0xc1, ReadWrite(0x7fffffffea18, 24))
+[INFO orbital@src/header/sys_ioctl/redox/drm.rs:205] TODO: unimplemented DRM ioctl(11, 0xc1, ReadWrite(0x7fffffffea18, 24))
+[INFO orbital@src/header/sys_ioctl/redox/drm.rs:205] TODO: unimplemented DRM ioctl(11, 0xc1, ReadWrite(0x7fffffffea18, 24))
+[INFO orbital@src/header/sys_ioctl/redox/drm.rs:205] TODO: unimplemented DRM ioctl(11, 0xc1, ReadWrite(0x7fffffffea18, 24))
+[INFO orbital@src/header/sys_ioctl/redox/drm.rs:205] TODO: unimplemented DRM ioctl(11, 0xc1, ReadWrite(0x7fffffffea18, 24))
+[INFO orbital@src/header/sys_ioctl/redox/drm.rs:205] TODO: unimplemented DRM ioctl(11, 0xc1, ReadWrite(0x7fffffffea18, 24))
+[INFO orbital@src/header/sys_ioctl/redox/drm.rs:205] TODO: unimplemented DRM ioctl(11, 0xc1, ReadWrite(0x7fffffffea18, 24))
+[INFO orbital@src/header/sys_ioctl/redox/drm.rs:205] TODO: unimplemented DRM ioctl(11, 0xc1, ReadWrite(0x7fffffffea18, 24))
+[INFO orbital@src/header/sys_ioctl/redox/drm.rs:205] TODO: unimplemented DRM ioctl(11, 0xc1, ReadWrite(0x7fffffffea18, 24))
+[INFO orbital@src/header/sys_ioctl/redox/drm.rs:205] TODO: unimplemented DRM ioctl(11, 0xc1, ReadWrite(0x7fffffffea18, 24))
+[INFO orbital@src/header/sys_ioctl/redox/drm.rs:205] TODO: unimplemented DRM ioctl(11, 0xc1, ReadWrite(0x7fffffffea18, 24))
+[INFO orbital@src/header/sys_ioctl/redox/drm.rs:205] TODO: unimplemented DRM ioctl(11, 0xc1, ReadWrite(0x7fffffffea18, 24))
+[INFO orbital@src/header/sys_ioctl/redox/drm.rs:205] TODO: unimplemented DRM ioctl(11, 0xc1, ReadWrite(0x7fffffffea18, 24))
+[INFO orbital@src/header/sys_ioctl/redox/drm.rs:205] TODO: unimplemented DRM ioctl(11, 0xc1, ReadWrite(0x7fffffffea18, 24))
+[INFO orbital@src/header/sys_ioctl/redox/drm.rs:205] TODO: unimplemented DRM ioctl(11, 0xc1, ReadWrite(0x7fffffffea18, 24))
+[INFO orbital@src/header/sys_ioctl/redox/drm.rs:205] TODO: unimplemented DRM ioctl(11, 0xc1, ReadWrite(0x7fffffffea18, 24))
+[INFO orbital@src/header/sys_ioctl/redox/drm.rs:205] TODO: unimplemented DRM ioctl(11, 0xc1, ReadWrite(0x7fffffffea18, 24))
+[INFO orbital@src/header/sys_ioctl/redox/drm.rs:205] TODO: unimplemented DRM ioctl(11, 0xc1, ReadWrite(0x7fffffffea18, 24))
+[INFO orbital@src/header/sys_ioctl/redox/drm.rs:205] TODO: unimplemented DRM ioctl(11, 0xc1, ReadWrite(0x7fffffffea18, 24))
+[INFO orbital@src/header/sys_ioctl/redox/drm.rs:205] TODO: unimplemented DRM ioctl(11, 0xc1, ReadWrite(0x7fffffffea18, 24))
+[INFO orbital@src/header/sys_ioctl/redox/drm.rs:205] TODO: unimplemented DRM ioctl(11, 0xc1, ReadWrite(0x7fffffffea18, 24))
+### 4 before v3dd ps lines:
+35    0     0     UB    #0    F          00:00:04.91 00:00:02.73 24.6 MB 7.91 MB /usr/bin/v3dd
+35    0     0     UB    #1    F          00:00:00.82 00:00:00.10 24.6 MB 7.91 MB /usr/bin/v3dd
+### 4open0: pointer-bench --super t  (0.5 s)
+pointer-bench: super+t
+### 4exit0: pointer-bench --type exit  (0.7 s)
+pointer-bench: typed 4 keys
+### 4enter0: pointer-bench --keys enter  (0.4 s)
+pointer-bench: enter
+### 4open1: pointer-bench --super t  (0.5 s)
+pointer-bench: super+t
+### 4exit1: pointer-bench --type exit  (0.7 s)
+pointer-bench: typed 4 keys
+### 4enter1: pointer-bench --keys enter  (0.4 s)
+pointer-bench: enter
+### 4open2: pointer-bench --super t  (0.5 s)
+pointer-bench: super+t
+### 4exit2: pointer-bench --type exit  (0.7 s)
+pointer-bench: typed 4 keys
+### 4enter2: pointer-bench --keys enter  (0.4 s)
+pointer-bench: enter
+### 4open3: pointer-bench --super t  (0.5 s)
+pointer-bench: super+t
+### 4exit3: pointer-bench --type exit  (0.7 s)
+pointer-bench: typed 4 keys
+### 4enter3: pointer-bench --keys enter  (0.4 s)
+pointer-bench: enter
+### 4open4: pointer-bench --super t  (0.5 s)
+pointer-bench: super+t
+### 4exit4: pointer-bench --type exit  (0.7 s)
+pointer-bench: typed 4 keys
+### 4enter4: pointer-bench --keys enter  (0.4 s)
+pointer-bench: enter
+### 4 after v3dd ps lines:
+35    0     0     UB    #3    F          00:00:05.18 00:00:02.88 18.6 MB 7.91 MB /usr/bin/v3dd
+35    0     0     UB    #2    F          00:00:00.90 00:00:00.11 18.6 MB 7.91 MB /usr/bin/v3dd
+### 4shot: vc4shot /tmp/after5.ppm  (0.9 s)
+vc4shot: channel 1 1920x1080, list at 2176, 2 planes, ctrl 0x87800438 bkgnd 0x81000000 list 2176 active 2176 stat 0xa38682f1 (mode 2, frame 40)
+vc4shot: plane 0: ListPlane { unity: true, format: 7, x: 0, y: 0, width: 1920, height: 1080, bus: 3271557120, pitch: 7680, alpha: false }
+vc4shot: plane 1: ListPlane { unity: true, format: 7, x: 959, y: 532, width: 64, height: 64, bus: 3269189632, pitch: 256, alpha: true }
+vc4shot: wrote /tmp/after5.ppm (6220817 bytes)
+### 4ps: ps  (0.2 s)
+PID   EUID  EGID  STAT  CPU   AFFINITY   ACTTIME     SCHTIME     PRIVATE SHARED  NAME
+0     0     0     RR+   #0    1          00:00:00.00 00:00:00.00 65.0 KB 0 B     [kmain]
+0     0     0     RR    #1    2          00:00:00.00 00:00:00.00 65.0 KB 0 B     [kmain]
+0     0     0     RR    #2    4          00:00:00.00 00:00:00.00 65.0 KB 0 B     [kmain]
+0     0     0     RR+   #3    8          00:00:00.00 00:00:00.00 65.0 KB 0 B     [kmain]
+0     0     0     UB    #1    F          00:00:00.02 00:00:00.00 27.6 MB 4.00 KB initfs
+0     0     0     UB    #0    F          00:00:00.21 00:00:00.00 1.37 MB 512 KB  procmgr
+0     0     0     UB    #2    F          00:00:00.26 00:00:00.00 1.37 MB 8.00 KB initnsmgr
+1     0     0     UB    #1    F          00:00:00.12 00:00:00.29 1.86 MB 0 B     /scheme/initfs/bin/init
+2     0     0     UB    #3    F          00:00:00.00 00:00:00.00 3.70 MB 12.0 KB /scheme/initfs/bin/logd
+2     0     0     UB    #1    F          00:00:01.84 00:00:00.00 3.70 MB 12.0 KB /scheme/initfs/bin/logd
+3     0     0     UB    #2    F          00:00:00.00 00:00:00.01 1.62 MB 240 KB  /scheme/initfs/bin/randd
+4     0     0     UB    #0    F          00:00:00.00 00:00:00.02 1.68 MB 0 B     /scheme/initfs/bin/ipcd
+5     0     0     UB    #0    F          00:00:00.00 00:00:00.00 1.55 MB 0 B     /scheme/initfs/bin/zerod
+6     0     0     UB    #3    F          00:00:00.00 00:00:00.00 1.55 MB 240 KB  /scheme/initfs/bin/zerod
+7     0     0     UB    #0    F          00:00:00.01 00:00:00.00 2.77 MB 0 B     /scheme/initfs/bin/ramfs
+8     0     0     UB    #1    F          00:00:00.09 00:00:00.08 5.77 MB 0 B     /scheme/initfs/bin/rpi-firmwared
+8     0     0     US    #3    F          00:00:00.40 00:00:00.40 5.77 MB 0 B     /scheme/initfs/bin/rpi-firmwared
+8     0     0     US    #0    F          00:00:00.00 00:00:00.00 5.77 MB 0 B     /scheme/initfs/bin/rpi-firmwared
+9     0     0     UB    #0    F          00:00:00.13 00:00:00.00 1.67 MB 0 B     /scheme/initfs/bin/inputd
+10    0     0     UB    #0    F          00:00:00.16 00:00:00.00 3.54 MB 4.00 KB /scheme/initfs/bin/lived
+11    0     0     UB    #1    F          00:00:00.39 00:00:00.17 2.61 MB 4.00 KB /scheme/initfs/bin/bcmgenetd
+12    0     0     UB    #0    F          00:00:00.00 00:00:00.00 1.62 MB 0 B     /scheme/initfs/bin/bcm2835-gpiod
+13    0     0     UB    #0    F          00:00:00.00 00:00:00.00 1.68 MB 0 B     /scheme/initfs/bin/bcm2835-spid
+14    0     0     UB    #0    F          00:00:00.00 00:00:00.00 1.62 MB 0 B     /scheme/initfs/bin/bcm2835-i2cd
+15    0     0     UB    #0    F          00:00:00.25 00:00:00.02 1.74 MB 0 B     /scheme/initfs/bin/vesad
+17    0     0     UB    #0    F          00:00:01.05 00:00:01.40 14.1 MB 7.91 MB /scheme/initfs/bin/fbbootlogd
+21    0     0     UB    #2    F          00:00:00.01 00:00:00.27 1.79 MB 16.0 KB /scheme/initfs/bin/pcid
+24    0     0     UB    #0    F          00:00:03.75 00:00:01.03 35.6 MB 12.0 KB /scheme/initfs/bin/redoxfs
+26    0     0     UB    #2    F          00:00:00.00 00:00:00.04 15.1 MB 12.0 KB /usr/lib/drivers/xhcid
+26    0     0     UB    #1    F          00:00:01.90 00:00:00.45 15.1 MB 12.0 KB /usr/lib/drivers/xhcid
+26    0     0     UB    #3    F          00:00:00.00 00:00:00.00 15.1 MB 12.0 KB /usr/lib/drivers/xhcid
+26    0     0     US    #3    F          00:00:02.42 00:00:02.42 15.1 MB 12.0 KB /usr/lib/drivers/xhcid
+26    0     0     UB    #0    F          00:00:03.80 00:00:02.48 15.1 MB 12.0 KB /usr/lib/drivers/xhcid
+26    0     0     UB    #0    F          00:00:03.74 00:00:02.49 15.1 MB 12.0 KB /usr/lib/drivers/xhcid
+27    0     0     UB    #0    F          00:00:00.31 00:00:00.06 1.62 MB 112 KB  /usr/bin/ptyd
+30    0     0     US    #2    F          00:00:00.13 00:00:00.56 1.73 MB 0 B     /usr/lib/drivers/usbhubd
+31    0     0     UB    #1    F          00:00:00.00 00:00:00.03 5.20 MB 0 B     /usr/bin/sudo
+32    0     0     US    #3    F          00:00:00.00 00:00:00.00 7.11 MB 24.0 KB /usr/bin/netstack
+32    0     0     UB    #1    F          00:00:00.64 00:00:00.81 7.11 MB 24.0 KB /usr/bin/netstack
+32    0     0     US    #1    F          00:00:00.01 00:00:00.02 7.11 MB 24.0 KB /usr/bin/netstack
+33    0     0     UB    #2    F          00:00:00.99 00:00:00.63 47.1 MB 0 B     /usr/bin/vc4d
+33    0     0     US    #1    F          00:00:00.09 00:00:00.20 47.1 MB 0 B     /usr/bin/vc4d
+34    0     0     UB    #3    F          00:00:00.00 00:00:00.09 1.79 MB 0 B     /usr/lib/drivers/usbhidd
+35    0     0     UB    #3    F          00:00:05.18 00:00:02.88 18.6 MB 7.91 MB /usr/bin/v3dd
+35    0     0     UB    #2    F          00:00:00.90 00:00:00.11 18.6 MB 7.91 MB /usr/bin/v3dd
+36    0     0     UB    #1    F          00:00:00.05 00:00:00.08 6.78 MB 7.91 MB /usr/bin/fbcond
+37    0     0     UB    #2    F          00:00:00.55 00:00:00.25 1.86 MB 0 B     /usr/bin/getty
+39    0     0     UB    #0    F          00:00:00.00 00:00:00.03 5.88 MB 0 B     /usr/bin/login
+40    0     0     US    #2    F          00:00:00.03 00:00:00.06 1.86 MB 0 B     /usr/bin/dhcpd
+41    0     0     UB    #2    F          00:00:00.00 00:00:00.00 11.2 MB 0 B     /usr/bin/devshd
+41    0     0     UB    #3    F          00:00:00.00 00:00:00.02 11.2 MB 0 B     /usr/bin/devshd
+41    0     0     UB    #0    F          00:00:00.00 00:00:00.00 11.2 MB 0 B     /usr/bin/devshd
+41    0     0     UB    #1    F          00:00:00.19 00:00:00.35 11.2 MB 0 B     /usr/bin/devshd
+46    0     0     UB    #1    F          00:00:00.00 00:00:00.06 1.86 MB 0 B     /usr/bin/getty
+48    0     0     UB    #1    F          00:00:00.01 00:00:00.03 5.88 MB 0 B     /usr/bin/login
+50    0     0     UR+   #1    F          00:00:14.05 00:00:12.70 1.79 MB 0 B     /usr/lib/drivers/usbhidd
+51    0     0     UR    #2    F          00:00:13.53 00:00:11.58 1.79 MB 0 B     /usr/lib/drivers/usbhidd
+62    0     0     UB    #3    F          00:00:00.13 00:00:00.15 5.82 MB 0 B     /usr/bin/login
+63    0     0     UB    #0    F          00:00:00.45 00:00:00.70 7.66 MB 0 B     /usr/bin/ion
+69    0     0     UB    #3    F          00:00:00.00 00:00:00.00 7.52 MB 0 B     /usr/bin/desktop
+71    0     0     UB    #2    F          00:00:05.11 00:00:06.53 49.5 MB 10.0 MB /usr/bin/orbital
+74    0     0     UB    #0    F          00:00:00.29 00:00:00.22 6.59 MB 0 B     /usr/bin/orblogin
+87    1000  1000  US    #3    F          00:00:00.04 00:00:00.07 9.54 MB 0 B     /usr/bin/desktop-session
+87    1000  1000  US    #3    F          00:00:00.06 00:00:00.09 9.54 MB 0 B     /usr/bin/desktop-session
+88    1000  1000  UB    #2    F          00:00:00.00 00:00:00.00 7.52 MB 0 B     /usr/bin/desktop-session
+89    1000  1000  UB    #2    F          00:00:00.08 00:00:00.14 9.56 MB 540 KB  /usr/bin/launcher
+93    1000  1000  UB    #1    F          00:00:00.00 00:00:00.00 9.54 MB 0 B     /usr/bin/desktop-session
+94    1000  1000  UB    #0    F          00:00:00.02 00:00:00.04 6.20 MB 3.00 MB /usr/bin/orbterm
+95    1000  1000  UB    #0    F          00:00:00.01 00:00:00.03 7.52 MB 0 B     /usr/bin/desktop-welcome
+98    1000  1000  UB    #2    F          00:00:00.04 00:00:00.06 15.5 MB 0 B     /usr/bin/head
+102   1000  1000  UB    #0    F          00:00:00.02 00:00:00.05 6.20 MB 3.00 MB /usr/bin/cosmic-term
+103   1000  1000  UB    #3    F          00:00:00.01 00:00:00.03 7.65 MB 0 B     /usr/bin/ion
+174   0     0     UR+   #2    F          00:00:00.00 00:00:00.02 5.14 MB 0 B     /usr/bin/ps
+### dlog2: grep -vc 'unimplemented DRM' /tmp/desktop.log; grep -v 'unimplemented DRM' /tmp/desktop.log  (0.3 s)
+7
+libEGL warning: MESA-LOADER: failed to retrieve device information
+MESA-LOADER: failed to retrieve device information
+MESA-LOADER: failed to retrieve device information
+1970-01-01T00-01-00.806Z [orbital@orbital::compositor::gl:367 WARN] GL compositing on the GPU
+ion: bg [0] 88
+failed to load icon None
+### fetched /tmp/term.ppm: 6220817 bytes, stats (1920, 1080, 0.5347855881767146, 724)
+### fetched /tmp/after.ppm: 6220817 bytes, stats (1920, 1080, 0.5390728119124056, 710)
+### fetched /tmp/after5.ppm: 6220817 bytes, stats (1920, 1080, 0.5390728119124056, 710)
