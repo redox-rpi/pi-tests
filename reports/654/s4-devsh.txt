@@ -1,0 +1,15 @@
+### ps before kill:
+149   0     0     UB    #1    F          00:00:00.00 00:00:00.03 4.28 MB 0 B     /usr/bin/vtrun
+150   0     0     UB    #1    F          00:00:00.02 00:00:00.06 4.97 MB 0 B     /usr/bin/modetest
+### vtrun pids: ['149']
+### kill: kill -9 149  (0.3 s)
+
+### ps after kill:
+150   0     0     UB    #1    F          00:00:00.02 00:00:00.06 4.97 MB 0 B     /usr/bin/modetest
+### shot-s4-after-kill: vc4shot /tmp/s4-after-kill.ppm  (3.1 s)
+vc4shot: channel 1 640x480, list at 2176, 1 planes, ctrl 0x828001e0 bkgnd 0x81000000 list 2176 active 2176 stat 0xa3800091 (mode 2, frame 0)
+vc4shot: plane 0: ListPlane { unity: true, format: 7, x: 0, y: 0, width: 640, height: 480, bus: 3257376768, pitch: 2560, alpha: false }
+vc4shot: wrote /tmp/s4-after-kill.ppm (921615 bytes)
+### fetched /tmp/s4-after-kill.ppm: 921615 bytes, stats (640, 480, 0.9830925579911589, 2)
+### ps:
+

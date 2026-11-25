@@ -1,0 +1,18 @@
+start 09:15:34
+config: 20d19 < total_mem=1024 24a24,25 > hdmi_force_hotplug=1 > hdmi_drive=2  09:15:34
+staged /home/zehrer/redox-rpi-graphics/keep/kms3-netboot (build_id = "v0.7.0-dev-91-gecd646b3+x072c") 09:15:34
+boot: login, U-Boot retries 0, banner: redox-rpi v0.7.0-dev-91-gecd646b3+x072c (netboot, 2026-11-25T09:14:17Z) 09:16:31
+boot: login; taking over channel 1 at 640x480 09:16:46
+devsh up 09:16:47
+step 1 typed 09:17:49
+step 2 typed 09:19:17
+step 3 typed 09:20:53
+step 4 typed 09:22:22
+step 4 kill: ### vtrun pids: ['149'] ### kill: kill -9 149  (0.3 s)  09:23:37
+shots: /tmp/s0-console.ppm: 921615 bytes, stats (640, 480, 0.9830925579911589, 2) /tmp/s1-pattern.ppm: 921615 bytes, stats (640, 480, 0.1293123091646539, 13) /tmp/s1-console.ppm: 921615 bytes, stats (640, 480, 0.9830925579911589, 2) /tmp/s2-flip.ppm: 921615 bytes, stats (640, 480, 0.1293123091646539, 13) /tmp/s2-console.ppm: 921615 bytes, stats (640, 480, 0.9830925579911589, 2) /tmp/s3-plane.ppm: 921615 bytes, stats (640, 480, 0.1293123091646539, 19) /tmp/s3-console.ppm: 921615 bytes, stats (640, 480, 0.9830925579911589, 2) /tmp/s4-before-kill.ppm: 921615 bytes, stats (640, 480, 0.1293123091646539, 13) /tmp/s4-typed.ppm: 921615 bytes, stats (640, 480, 0.9830925579911589, 2) /tmp/s4-after-kill.ppm: 921615 bytes, stats (640, 480, 0.9830925579911589, 2)  09:24:34
+still answers 09:24:35
+reboots after login: 0; panic/UNHANDLED: 0 09:24:35
+config restored: same 09:24:35
+staged /home/zehrer/redox-rpi-graphics/keep/pi400-fbshot-stage (build_id = "v0.6.0-dev-105-gbef6d90a+xcf2a") 09:24:35
+boot: login, U-Boot retries 0, banner: redox-rpi v0.6.0-dev-105-gbef6d90a+xcf2a (netboot, 2026-11-18T04:35:59Z) 09:25:22
+restore: login 09:25:22

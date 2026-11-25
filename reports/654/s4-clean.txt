@@ -1,0 +1,8 @@
+### vtrun modetest -D '{}' -s 27:640x480  (typing 5.4 s, total 15.6 s, NO PROMPT)
+vtrun: VT 6 active, display node /scheme/display.vc4/6
+opened device `VideoCore IV HVS` on driver `vc4d` (version 1.4.0 at 0)
+setting mode 640x480-60.00Hz on connectors 27, crtc 22
+###   (typing 0.0 s, total 15.0 s, NO PROMPT)
+
+### echo typing works  (typing 2.6 s, total 2.9 s)
+typing works

@@ -1,0 +1,9 @@
+### vtrun modetest -D '{}' -s 27:640x480 -P '23@22:128x128@AR24'  (typing 9.0 s, total 19.2 s, NO PROMPT)
+vtrun: VT 5 active, display node /scheme/display.vc4/5
+opened device `VideoCore IV HVS` on driver `vc4d` (version 1.4.0 at 0)
+setting mode 640x480-60.00Hz on connectors 27, crtc 22
+testing 128x128@AR24 overlay plane 23
+###   (typing 0.0 s, total 0.3 s)
+vtrun: VT 5 closed, program exit 0
+### echo rc=$?  (typing 1.5 s, total 1.8 s)
+rc=0

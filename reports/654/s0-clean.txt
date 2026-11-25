@@ -1,0 +1,30 @@
+### serial login done
+
+### modetest -D /dev/dri/card0 -c; echo rc=$?  (typing 6.2 s, total 6.5 s)
+opened device `VideoCore IV HVS` on driver `vc4d` (version 1.4.0 at 0)
+Connectors:
+id	encoder	status		name		size (mm)	modes	encoders
+27	0	connected	Unknown-0      	0x0		1	26
+  modes:
+	index name refresh (Hz) hdisp hss hse htot vdisp vss vse vtot
+  #0 640x480 60.00 640 640 640 640 480 480 480 480 18432 flags: ; type: preferred, driver
+  props:
+	2 EDID:
+		flags: immutable blob
+		blobs:
+		value:
+	3 DPMS:
+		flags: enum
+		enums: On=0 Standby=1 Suspend=2 Off=3
+		value: 0
+	4 TILE:
+		flags: immutable blob
+		blobs:
+		value:
+	1 CRTC_ID:
+		flags: object
+		value: 22
+rc=0
+### ls -l /dev/dri  (typing 2.1 s, total 2.4 s)
+total 4
+lrwxrwxrwx 1 root root 21 Nov 25  2026 card0 -> /scheme/display.vc4/7
