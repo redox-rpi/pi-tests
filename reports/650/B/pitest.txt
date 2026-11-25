@@ -1,0 +1,6 @@
+PASS version: v0.7.0-dev-69-gd76fee66+x54e8
+PASS manifest: build ID and libc.so hash match manifest.toml
+PASS ps: 61 processes (piped)
+PASS ps-tty: 61 lines straight to the terminal, rc=0
+FAIL sdcard: got ion: pipeline execution error: failed to redirect stdout to file '/scheme/data/pi-test.txt': No such device (os error 19)
+PASS starts: 0 of 50 failed

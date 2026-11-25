@@ -1,0 +1,20 @@
+start 07:49:57
+staged /home/zehrer/pitest-tools/keep650/A (build_id = "v0.7.0-dev-66-gcb2272cb+x54e8") 07:49:57
+boot: login, U-Boot retries 0, banner: redox-rpi v0.7.0-dev-66-gcb2272cb+x54e8 (netboot, 2026-11-25T07:42:51Z) 07:50:47
+A boot: login 07:50:47
+A DHCP lines: DHCP client bound to address <lan-ip> (3 ms)  07:53:47
+A dhcpd/netcfg lines:  07:53:47
+A devsh does not answer 07:54:53
+A ERROR/WARN distinct: 22; panic/UNHANDLED: 0 07:54:53
+staged /home/zehrer/pitest-tools/keep650/B (build_id = "v0.7.0-dev-69-gd76fee66+x54e8") 07:54:53
+boot: login, U-Boot retries 0, banner: redox-rpi v0.7.0-dev-69-gd76fee66+x54e8 (netboot, 2026-11-25T07:39:50Z) 07:55:43
+B boot: login 07:55:43
+B DHCP lines: DHCP client bound to address <lan-ip> (2 ms) DHCP: eth0 got <lan-ip>/24 DHCP: default route via <router> (eth0)  07:56:04
+B dhcpd/netcfg lines:  07:56:04
+B devsh answers 07:56:05
+B pitest rc=1: PASS version: v0.7.0-dev-69-gd76fee66+x54e8 PASS manifest: build ID and libc.so hash match manifest.toml PASS ps: 61 processes (piped) PASS ps-tty: 61 lines straight to the terminal, rc=0 FAIL sdcard: got ion: pipeline execution error: failed to redirect stdout to file '/scheme/data/pi-test.txt': No such device (os error 19) PASS starts: 0 of 50 failed  07:56:17
+B ERROR/WARN distinct: 22; panic/UNHANDLED: 0 07:56:17
+error lines only in B: 1970-01-01T01-00-22.065+01:00 [@fbcond::text:45 ERROR] fbcond: No display present yet: Invalid argument (os error 22) 1970-01-01T01-00-24.604+01:00 [@usbhidd:264 WARN] using endpoint 0x81 Interrupt In 1970-01-01T01-00-24.710+01:00 [@xhcid::xhci::scheme:2978 ERROR] CONTROL_TRANSFER transfer Trb { data: 0000000000000000, status: 00000000, control: 00011020 } failed with event Trb { data: 0000000008765080, status: 06000000, control: 02018001 } 1970-01-01T01-00-24.741+01:00 [@usbhidd:326 WARN] failed to set idle: i/o error: I/O error (os error 5) 1970-01-01T01-00-26.028+01:00 [@usbhidd:264 WARN] u 07:56:17
+staged /home/zehrer/redox-rpi-graphics/keep/pi400-fbshot-stage (build_id = "v0.6.0-dev-105-gbef6d90a+xcf2a") 07:56:17
+boot: login, U-Boot retries 0, banner: redox-rpi v0.6.0-dev-105-gbef6d90a+xcf2a (netboot, 2026-11-18T04:35:59Z) 07:57:07
+restore: login 07:57:07

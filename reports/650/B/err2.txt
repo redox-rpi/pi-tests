@@ -1,0 +1,20 @@
+RedoxFS: IO ERROR: No such device (os error 19)
+WARN - Failed to find SimpleFileSystem protocol: Status(0x8000000000000003) "unsupported"
+WARN - Failed to locate Outputs: Status(0x800000000000000E) "not found"
+[@fbcond::text:45 ERROR] fbcond: No display present yet: Invalid argument (os error 22)
+[@usbhidd:137 WARN] unknown usage_page 0x7 usage 0x0
+[@usbhidd:264 WARN] using endpoint 0x81 Interrupt In
+[@usbhidd:264 WARN] using endpoint 0x82 Interrupt In
+[@usbhidd:326 WARN] failed to set idle: i/o error: I/O error (os error 5)
+[@xhcid::xhci::scheme:1285 WARN] port 1.4: SET_INTERFACE 0 refused (I/O error); it has one alternate setting, going on
+[@xhcid::xhci::scheme:1285 WARN] port 1.4: SET_INTERFACE 1 refused (I/O error); it has one alternate setting, going on
+[@xhcid::xhci::scheme:2978 ERROR] CONTROL_TRANSFER transfer Trb { data: X, status: 00000000, control: 00011020 } failed with event Trb { data: X, status: 06000000, control: 02018001 }
+[@xhcid::xhci::scheme:2978 ERROR] CONTROL_TRANSFER transfer Trb { data: X, status: 00000000, control: 00011020 } failed with event Trb { data: X, status: 06000000, control: 03018001 }
+[ERROR redoxfs] failed to open image /scheme/disk.mmc/0p1: I/O error
+[ERROR redoxfs] not able to mount path /scheme/disk.mmc/0p1
+kernel::acpi:ERROR -- NO RSDP FOUND
+kernel::arch::aarch64::device::irqchip:WARN -- no driver for interrupt controller "brcm,bcm2711-gpio"
+kernel::arch::aarch64::device::irqchip:WARN -- no driver for interrupt controller "brcm,bcm2711-l2-intc"
+kernel::arch::aarch64::device::psci:WARN -- PSCI v0.2+ node not found; reset and power-off are unavailable
+kernel::arch::aarch64::device::rtc:WARN -- No PL031 RTC found
+kernel::scheme::acpi:WARN -- expected RXSDT_ENUM to be initialized before AcpiScheme, is ACPI available?
