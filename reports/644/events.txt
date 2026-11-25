@@ -1,0 +1,18 @@
+start 02:30:41
+staged /home/zehrer/redox-rpi-graphics/keep/gfx-g4i-netboot (build_id = "v0.7.0-dev-81-ge204427e+xa9ee") 02:30:41
+part A config A 02:30:41
+boot: login, U-Boot retries 0, banner: redox-rpi v0.7.0-dev-81-ge204427e+xa9ee (netboot, 2026-11-25T02:28:49Z) 02:31:37
+part A boot: login; taking over channel 1 at 640x480 02:31:52
+part A steps rc=0 02:32:46
+part A still answers 02:32:47
+part A reboots after login: 0; panic/UNHANDLED: 0 02:32:47
+part B config B 02:32:47
+boot: login, U-Boot retries 0, banner: redox-rpi v0.7.0-dev-81-ge204427e+xa9ee (netboot, 2026-11-25T02:28:49Z) 02:33:44
+part B boot: login; taking over channel 1 at 1920x1080 02:33:59
+part B steps rc=0 02:34:13
+part B still answers 02:34:14
+part B reboots after login: 0; panic/UNHANDLED: 0 02:34:14
+config restored: same 02:34:14
+staged /home/zehrer/redox-rpi-graphics/keep/pi400-fbshot-stage (build_id = "v0.6.0-dev-105-gbef6d90a+xcf2a") 02:34:14
+boot: login, U-Boot retries 0, banner: redox-rpi v0.6.0-dev-105-gbef6d90a+xcf2a (netboot, 2026-11-18T04:35:59Z) 02:34:55
+restore: login 02:34:55
