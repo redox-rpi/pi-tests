@@ -1,0 +1,664 @@
+### 1: gles-probe 1  (0.5 s)
+libEGL warning: MESA-LOADER: failed to retrieve device information
+MESA-LOADER: failed to retrieve device information
+MESA-LOADER: failed to retrieve device information
+gles-probe: EGL 1.4, Mesa Project
+gles-probe: GL_RENDERER V3D 4.2.14, GL_VERSION OpenGL ES 3.0 Mesa 24.0.8 (git-9850ea1ad7)
+gles-probe: PASS: V3D 4.2.14, 1 of 1 frames right, 2080 red pixels, hash 57aafac5, 2.93 ms per frame
+### 2: prime-probe --frames 300  (1.6 s)
+prime-probe: VT 3
+prime-probe: connector 27, CRTC 22, mode 640x480
+libEGL warning: MESA-LOADER: failed to retrieve device information
+MESA-LOADER: failed to retrieve device information
+MESA-LOADER: failed to retrieve device information
+prime-probe: EGL_EXT_image_dma_buf_import yes, _modifiers yes
+prime-probe: GL_RENDERER V3D 4.2.14
+prime-probe: direct import: vc4d's buffer is BO 1 on the render node
+prime-probe: buffer 0: handle 1, pitch 2560, 1228800 bytes, fb 30, dma-buf fd 10, imported
+prime-probe: buffer 1: handle 2, pitch 2560, 1228800 bytes, fb 31, dma-buf fd 11, imported
+[INFO prime-probe@src/header/sys_ioctl/redox/drm.rs:205] TODO: unimplemented DRM ioctl(9, 0xc1, ReadWrite(0x7ffffffff828, 24))
+export failed
+prime-probe: frame 0: 0 pattern pixels left, 0 pixels differ from glReadPixels, cube 61276 of 307200 pixels, hash 05f3f32f
+[INFO prime-probe@src/header/sys_ioctl/redox/drm.rs:205] TODO: unimplemented DRM ioctl(9, 0xc1, ReadWrite(0x7ffffffff828, 24))
+export failed
+[INFO prime-probe@src/header/sys_ioctl/redox/drm.rs:205] TODO: unimplemented DRM ioctl(9, 0xc1, ReadWrite(0x7ffffffff828, 24))
+export failed
+[INFO prime-probe@src/header/sys_ioctl/redox/drm.rs:205] TODO: unimplemented DRM ioctl(9, 0xc1, ReadWrite(0x7ffffffff828, 24))
+export failed
+[INFO prime-probe@src/header/sys_ioctl/redox/drm.rs:205] TODO: unimplemented DRM ioctl(9, 0xc1, ReadWrite(0x7ffffffff828, 24))
+export failed
+[INFO prime-probe@src/header/sys_ioctl/redox/drm.rs:205] TODO: unimplemented DRM ioctl(9, 0xc1, ReadWrite(0x7ffffffff828, 24))
+export failed
+[INFO prime-probe@src/header/sys_ioctl/redox/drm.rs:205] TODO: unimplemented DRM ioctl(9, 0xc1, ReadWrite(0x7ffffffff828, 24))
+export failed
+[INFO prime-probe@src/header/sys_ioctl/redox/drm.rs:205] TODO: unimplemented DRM ioctl(9, 0xc1, ReadWrite(0x7ffffffff828, 24))
+export failed
+[INFO prime-probe@src/header/sys_ioctl/redox/drm.rs:205] TODO: unimplemented DRM ioctl(9, 0xc1, ReadWrite(0x7ffffffff828, 24))
+export failed
+[INFO prime-probe@src/header/sys_ioctl/redox/drm.rs:205] TODO: unimplemented DRM ioctl(9, 0xc1, ReadWrite(0x7ffffffff828, 24))
+export failed
+[INFO prime-probe@src/header/sys_ioctl/redox/drm.rs:205] TODO: unimplemented DRM ioctl(9, 0xc1, ReadWrite(0x7ffffffff828, 24))
+export failed
+[INFO prime-probe@src/header/sys_ioctl/redox/drm.rs:205] TODO: unimplemented DRM ioctl(9, 0xc1, ReadWrite(0x7ffffffff828, 24))
+export failed
+[INFO prime-probe@src/header/sys_ioctl/redox/drm.rs:205] TODO: unimplemented DRM ioctl(9, 0xc1, ReadWrite(0x7ffffffff828, 24))
+export failed
+[INFO prime-probe@src/header/sys_ioctl/redox/drm.rs:205] TODO: unimplemented DRM ioctl(9, 0xc1, ReadWrite(0x7ffffffff828, 24))
+export failed
+[INFO prime-probe@src/header/sys_ioctl/redox/drm.rs:205] TODO: unimplemented DRM ioctl(9, 0xc1, ReadWrite(0x7ffffffff828, 24))
+export failed
+[INFO prime-probe@src/header/sys_ioctl/redox/drm.rs:205] TODO: unimplemented DRM ioctl(9, 0xc1, ReadWrite(0x7ffffffff828, 24))
+export failed
+[INFO prime-probe@src/header/sys_ioctl/redox/drm.rs:205] TODO: unimplemented DRM ioctl(9, 0xc1, ReadWrite(0x7ffffffff828, 24))
+export failed
+[INFO prime-probe@src/header/sys_ioctl/redox/drm.rs:205] TODO: unimplemented DRM ioctl(9, 0xc1, ReadWrite(0x7ffffffff828, 24))
+export failed
+[INFO prime-probe@src/header/sys_ioctl/redox/drm.rs:205] TODO: unimplemented DRM ioctl(9, 0xc1, ReadWrite(0x7ffffffff828, 24))
+export failed
+[INFO prime-probe@src/header/sys_ioctl/redox/drm.rs:205] TODO: unimplemented DRM ioctl(9, 0xc1, ReadWrite(0x7ffffffff828, 24))
+export failed
+[INFO prime-probe@src/header/sys_ioctl/redox/drm.rs:205] TODO: unimplemented DRM ioctl(9, 0xc1, ReadWrite(0x7ffffffff828, 24))
+export failed
+[INFO prime-probe@src/header/sys_ioctl/redox/drm.rs:205] TODO: unimplemented DRM ioctl(9, 0xc1, ReadWrite(0x7ffffffff828, 24))
+export failed
+[INFO prime-probe@src/header/sys_ioctl/redox/drm.rs:205] TODO: unimplemented DRM ioctl(9, 0xc1, ReadWrite(0x7ffffffff828, 24))
+export failed
+[INFO prime-probe@src/header/sys_ioctl/redox/drm.rs:205] TODO: unimplemented DRM ioctl(9, 0xc1, ReadWrite(0x7ffffffff828, 24))
+export failed
+[INFO prime-probe@src/header/sys_ioctl/redox/drm.rs:205] TODO: unimplemented DRM ioctl(9, 0xc1, ReadWrite(0x7ffffffff828, 24))
+export failed
+[INFO prime-probe@src/header/sys_ioctl/redox/drm.rs:205] TODO: unimplemented DRM ioctl(9, 0xc1, ReadWrite(0x7ffffffff828, 24))
+export failed
+[INFO prime-probe@src/header/sys_ioctl/redox/drm.rs:205] TODO: unimplemented DRM ioctl(9, 0xc1, ReadWrite(0x7ffffffff828, 24))
+export failed
+[INFO prime-probe@src/header/sys_ioctl/redox/drm.rs:205] TODO: unimplemented DRM ioctl(9, 0xc1, ReadWrite(0x7ffffffff828, 24))
+export failed
+[INFO prime-probe@src/header/sys_ioctl/redox/drm.rs:205] TODO: unimplemented DRM ioctl(9, 0xc1, ReadWrite(0x7ffffffff828, 24))
+export failed
+[INFO prime-probe@src/header/sys_ioctl/redox/drm.rs:205] TODO: unimplemented DRM ioctl(9, 0xc1, ReadWrite(0x7ffffffff828, 24))
+export failed
+[INFO prime-probe@src/header/sys_ioctl/redox/drm.rs:205] TODO: unimplemented DRM ioctl(9, 0xc1, ReadWrite(0x7ffffffff828, 24))
+export failed
+[INFO prime-probe@src/header/sys_ioctl/redox/drm.rs:205] TODO: unimplemented DRM ioctl(9, 0xc1, ReadWrite(0x7ffffffff828, 24))
+export failed
+[INFO prime-probe@src/header/sys_ioctl/redox/drm.rs:205] TODO: unimplemented DRM ioctl(9, 0xc1, ReadWrite(0x7ffffffff828, 24))
+export failed
+[INFO prime-probe@src/header/sys_ioctl/redox/drm.rs:205] TODO: unimplemented DRM ioctl(9, 0xc1, ReadWrite(0x7ffffffff828, 24))
+export failed
+[INFO prime-probe@src/header/sys_ioctl/redox/drm.rs:205] TODO: unimplemented DRM ioctl(9, 0xc1, ReadWrite(0x7ffffffff828, 24))
+export failed
+[INFO prime-probe@src/header/sys_ioctl/redox/drm.rs:205] TODO: unimplemented DRM ioctl(9, 0xc1, ReadWrite(0x7ffffffff828, 24))
+export failed
+[INFO prime-probe@src/header/sys_ioctl/redox/drm.rs:205] TODO: unimplemented DRM ioctl(9, 0xc1, ReadWrite(0x7ffffffff828, 24))
+export failed
+[INFO prime-probe@src/header/sys_ioctl/redox/drm.rs:205] TODO: unimplemented DRM ioctl(9, 0xc1, ReadWrite(0x7ffffffff828, 24))
+export failed
+[INFO prime-probe@src/header/sys_ioctl/redox/drm.rs:205] TODO: unimplemented DRM ioctl(9, 0xc1, ReadWrite(0x7ffffffff828, 24))
+export failed
+[INFO prime-probe@src/header/sys_ioctl/redox/drm.rs:205] TODO: unimplemented DRM ioctl(9, 0xc1, ReadWrite(0x7ffffffff828, 24))
+export failed
+[INFO prime-probe@src/header/sys_ioctl/redox/drm.rs:205] TODO: unimplemented DRM ioctl(9, 0xc1, ReadWrite(0x7ffffffff828, 24))
+export failed
+[INFO prime-probe@src/header/sys_ioctl/redox/drm.rs:205] TODO: unimplemented DRM ioctl(9, 0xc1, ReadWrite(0x7ffffffff828, 24))
+export failed
+[INFO prime-probe@src/header/sys_ioctl/redox/drm.rs:205] TODO: unimplemented DRM ioctl(9, 0xc1, ReadWrite(0x7ffffffff828, 24))
+export failed
+[INFO prime-probe@src/header/sys_ioctl/redox/drm.rs:205] TODO: unimplemented DRM ioctl(9, 0xc1, ReadWrite(0x7ffffffff828, 24))
+export failed
+[INFO prime-probe@src/header/sys_ioctl/redox/drm.rs:205] TODO: unimplemented DRM ioctl(9, 0xc1, ReadWrite(0x7ffffffff828, 24))
+export failed
+[INFO prime-probe@src/header/sys_ioctl/redox/drm.rs:205] TODO: unimplemented DRM ioctl(9, 0xc1, ReadWrite(0x7ffffffff828, 24))
+export failed
+[INFO prime-probe@src/header/sys_ioctl/redox/drm.rs:205] TODO: unimplemented DRM ioctl(9, 0xc1, ReadWrite(0x7ffffffff828, 24))
+export failed
+[INFO prime-probe@src/header/sys_ioctl/redox/drm.rs:205] TODO: unimplemented DRM ioctl(9, 0xc1, ReadWrite(0x7ffffffff828, 24))
+export failed
+[INFO prime-probe@src/header/sys_ioctl/redox/drm.rs:205] TODO: unimplemented DRM ioctl(9, 0xc1, ReadWrite(0x7ffffffff828, 24))
+export failed
+[INFO prime-probe@src/header/sys_ioctl/redox/drm.rs:205] TODO: unimplemented DRM ioctl(9, 0xc1, ReadWrite(0x7ffffffff828, 24))
+export failed
+[INFO prime-probe@src/header/sys_ioctl/redox/drm.rs:205] TODO: unimplemented DRM ioctl(9, 0xc1, ReadWrite(0x7ffffffff828, 24))
+export failed
+[INFO prime-probe@src/header/sys_ioctl/redox/drm.rs:205] TODO: unimplemented DRM ioctl(9, 0xc1, ReadWrite(0x7ffffffff828, 24))
+export failed
+[INFO prime-probe@src/header/sys_ioctl/redox/drm.rs:205] TODO: unimplemented DRM ioctl(9, 0xc1, ReadWrite(0x7ffffffff828, 24))
+export failed
+[INFO prime-probe@src/header/sys_ioctl/redox/drm.rs:205] TODO: unimplemented DRM ioctl(9, 0xc1, ReadWrite(0x7ffffffff828, 24))
+export failed
+[INFO prime-probe@src/header/sys_ioctl/redox/drm.rs:205] TODO: unimplemented DRM ioctl(9, 0xc1, ReadWrite(0x7ffffffff828, 24))
+export failed
+[INFO prime-probe@src/header/sys_ioctl/redox/drm.rs:205] TODO: unimplemented DRM ioctl(9, 0xc1, ReadWrite(0x7ffffffff828, 24))
+export failed
+[INFO prime-probe@src/header/sys_ioctl/redox/drm.rs:205] TODO: unimplemented DRM ioctl(9, 0xc1, ReadWrite(0x7ffffffff828, 24))
+export failed
+[INFO prime-probe@src/header/sys_ioctl/redox/drm.rs:205] TODO: unimplemented DRM ioctl(9, 0xc1, ReadWrite(0x7ffffffff828, 24))
+export failed
+[INFO prime-probe@src/header/sys_ioctl/redox/drm.rs:205] TODO: unimplemented DRM ioctl(9, 0xc1, ReadWrite(0x7ffffffff828, 24))
+export failed
+[INFO prime-probe@src/header/sys_ioctl/redox/drm.rs:205] TODO: unimplemented DRM ioctl(9, 0xc1, ReadWrite(0x7ffffffff828, 24))
+export failed
+[INFO prime-probe@src/header/sys_ioctl/redox/drm.rs:205] TODO: unimplemented DRM ioctl(9, 0xc1, ReadWrite(0x7ffffffff828, 24))
+export failed
+[INFO prime-probe@src/header/sys_ioctl/redox/drm.rs:205] TODO: unimplemented DRM ioctl(9, 0xc1, ReadWrite(0x7ffffffff828, 24))
+export failed
+[INFO prime-probe@src/header/sys_ioctl/redox/drm.rs:205] TODO: unimplemented DRM ioctl(9, 0xc1, ReadWrite(0x7ffffffff828, 24))
+export failed
+[INFO prime-probe@src/header/sys_ioctl/redox/drm.rs:205] TODO: unimplemented DRM ioctl(9, 0xc1, ReadWrite(0x7ffffffff828, 24))
+export failed
+[INFO prime-probe@src/header/sys_ioctl/redox/drm.rs:205] TODO: unimplemented DRM ioctl(9, 0xc1, ReadWrite(0x7ffffffff828, 24))
+export failed
+[INFO prime-probe@src/header/sys_ioctl/redox/drm.rs:205] TODO: unimplemented DRM ioctl(9, 0xc1, ReadWrite(0x7ffffffff828, 24))
+export failed
+[INFO prime-probe@src/header/sys_ioctl/redox/drm.rs:205] TODO: unimplemented DRM ioctl(9, 0xc1, ReadWrite(0x7ffffffff828, 24))
+export failed
+[INFO prime-probe@src/header/sys_ioctl/redox/drm.rs:205] TODO: unimplemented DRM ioctl(9, 0xc1, ReadWrite(0x7ffffffff828, 24))
+export failed
+[INFO prime-probe@src/header/sys_ioctl/redox/drm.rs:205] TODO: unimplemented DRM ioctl(9, 0xc1, ReadWrite(0x7ffffffff828, 24))
+export failed
+[INFO prime-probe@src/header/sys_ioctl/redox/drm.rs:205] TODO: unimplemented DRM ioctl(9, 0xc1, ReadWrite(0x7ffffffff828, 24))
+export failed
+[INFO prime-probe@src/header/sys_ioctl/redox/drm.rs:205] TODO: unimplemented DRM ioctl(9, 0xc1, ReadWrite(0x7ffffffff828, 24))
+export failed
+[INFO prime-probe@src/header/sys_ioctl/redox/drm.rs:205] TODO: unimplemented DRM ioctl(9, 0xc1, ReadWrite(0x7ffffffff828, 24))
+export failed
+[INFO prime-probe@src/header/sys_ioctl/redox/drm.rs:205] TODO: unimplemented DRM ioctl(9, 0xc1, ReadWrite(0x7ffffffff828, 24))
+export failed
+[INFO prime-probe@src/header/sys_ioctl/redox/drm.rs:205] TODO: unimplemented DRM ioctl(9, 0xc1, ReadWrite(0x7ffffffff828, 24))
+export failed
+[INFO prime-probe@src/header/sys_ioctl/redox/drm.rs:205] TODO: unimplemented DRM ioctl(9, 0xc1, ReadWrite(0x7ffffffff828, 24))
+export failed
+[INFO prime-probe@src/header/sys_ioctl/redox/drm.rs:205] TODO: unimplemented DRM ioctl(9, 0xc1, ReadWrite(0x7ffffffff828, 24))
+export failed
+[INFO prime-probe@src/header/sys_ioctl/redox/drm.rs:205] TODO: unimplemented DRM ioctl(9, 0xc1, ReadWrite(0x7ffffffff828, 24))
+export failed
+[INFO prime-probe@src/header/sys_ioctl/redox/drm.rs:205] TODO: unimplemented DRM ioctl(9, 0xc1, ReadWrite(0x7ffffffff828, 24))
+export failed
+[INFO prime-probe@src/header/sys_ioctl/redox/drm.rs:205] TODO: unimplemented DRM ioctl(9, 0xc1, ReadWrite(0x7ffffffff828, 24))
+export failed
+[INFO prime-probe@src/header/sys_ioctl/redox/drm.rs:205] TODO: unimplemented DRM ioctl(9, 0xc1, ReadWrite(0x7ffffffff828, 24))
+export failed
+[INFO prime-probe@src/header/sys_ioctl/redox/drm.rs:205] TODO: unimplemented DRM ioctl(9, 0xc1, ReadWrite(0x7ffffffff828, 24))
+export failed
+[INFO prime-probe@src/header/sys_ioctl/redox/drm.rs:205] TODO: unimplemented DRM ioctl(9, 0xc1, ReadWrite(0x7ffffffff828, 24))
+export failed
+[INFO prime-probe@src/header/sys_ioctl/redox/drm.rs:205] TODO: unimplemented DRM ioctl(9, 0xc1, ReadWrite(0x7ffffffff828, 24))
+export failed
+[INFO prime-probe@src/header/sys_ioctl/redox/drm.rs:205] TODO: unimplemented DRM ioctl(9, 0xc1, ReadWrite(0x7ffffffff828, 24))
+export failed
+[INFO prime-probe@src/header/sys_ioctl/redox/drm.rs:205] TODO: unimplemented DRM ioctl(9, 0xc1, ReadWrite(0x7ffffffff828, 24))
+export failed
+[INFO prime-probe@src/header/sys_ioctl/redox/drm.rs:205] TODO: unimplemented DRM ioctl(9, 0xc1, ReadWrite(0x7ffffffff828, 24))
+export failed
+[INFO prime-probe@src/header/sys_ioctl/redox/drm.rs:205] TODO: unimplemented DRM ioctl(9, 0xc1, ReadWrite(0x7ffffffff828, 24))
+export failed
+[INFO prime-probe@src/header/sys_ioctl/redox/drm.rs:205] TODO: unimplemented DRM ioctl(9, 0xc1, ReadWrite(0x7ffffffff828, 24))
+export failed
+[INFO prime-probe@src/header/sys_ioctl/redox/drm.rs:205] TODO: unimplemented DRM ioctl(9, 0xc1, ReadWrite(0x7ffffffff828, 24))
+export failed
+[INFO prime-probe@src/header/sys_ioctl/redox/drm.rs:205] TODO: unimplemented DRM ioctl(9, 0xc1, ReadWrite(0x7ffffffff828, 24))
+export failed
+[INFO prime-probe@src/header/sys_ioctl/redox/drm.rs:205] TODO: unimplemented DRM ioctl(9, 0xc1, ReadWrite(0x7ffffffff828, 24))
+export failed
+[INFO prime-probe@src/header/sys_ioctl/redox/drm.rs:205] TODO: unimplemented DRM ioctl(9, 0xc1, ReadWrite(0x7ffffffff828, 24))
+export failed
+[INFO prime-probe@src/header/sys_ioctl/redox/drm.rs:205] TODO: unimplemented DRM ioctl(9, 0xc1, ReadWrite(0x7ffffffff828, 24))
+export failed
+[INFO prime-probe@src/header/sys_ioctl/redox/drm.rs:205] TODO: unimplemented DRM ioctl(9, 0xc1, ReadWrite(0x7ffffffff828, 24))
+export failed
+[INFO prime-probe@src/header/sys_ioctl/redox/drm.rs:205] TODO: unimplemented DRM ioctl(9, 0xc1, ReadWrite(0x7ffffffff828, 24))
+export failed
+[INFO prime-probe@src/header/sys_ioctl/redox/drm.rs:205] TODO: unimplemented DRM ioctl(9, 0xc1, ReadWrite(0x7ffffffff828, 24))
+export failed
+[INFO prime-probe@src/header/sys_ioctl/redox/drm.rs:205] TODO: unimplemented DRM ioctl(9, 0xc1, ReadWrite(0x7ffffffff828, 24))
+export failed
+[INFO prime-probe@src/header/sys_ioctl/redox/drm.rs:205] TODO: unimplemented DRM ioctl(9, 0xc1, ReadWrite(0x7ffffffff828, 24))
+export failed
+[INFO prime-probe@src/header/sys_ioctl/redox/drm.rs:205] TODO: unimplemented DRM ioctl(9, 0xc1, ReadWrite(0x7ffffffff828, 24))
+export failed
+[INFO prime-probe@src/header/sys_ioctl/redox/drm.rs:205] TODO: unimplemented DRM ioctl(9, 0xc1, ReadWrite(0x7ffffffff828, 24))
+export failed
+[INFO prime-probe@src/header/sys_ioctl/redox/drm.rs:205] TODO: unimplemented DRM ioctl(9, 0xc1, ReadWrite(0x7ffffffff828, 24))
+export failed
+[INFO prime-probe@src/header/sys_ioctl/redox/drm.rs:205] TODO: unimplemented DRM ioctl(9, 0xc1, ReadWrite(0x7ffffffff828, 24))
+export failed
+[INFO prime-probe@src/header/sys_ioctl/redox/drm.rs:205] TODO: unimplemented DRM ioctl(9, 0xc1, ReadWrite(0x7ffffffff828, 24))
+export failed
+[INFO prime-probe@src/header/sys_ioctl/redox/drm.rs:205] TODO: unimplemented DRM ioctl(9, 0xc1, ReadWrite(0x7ffffffff828, 24))
+export failed
+[INFO prime-probe@src/header/sys_ioctl/redox/drm.rs:205] TODO: unimplemented DRM ioctl(9, 0xc1, ReadWrite(0x7ffffffff828, 24))
+export failed
+[INFO prime-probe@src/header/sys_ioctl/redox/drm.rs:205] TODO: unimplemented DRM ioctl(9, 0xc1, ReadWrite(0x7ffffffff828, 24))
+export failed
+[INFO prime-probe@src/header/sys_ioctl/redox/drm.rs:205] TODO: unimplemented DRM ioctl(9, 0xc1, ReadWrite(0x7ffffffff828, 24))
+export failed
+[INFO prime-probe@src/header/sys_ioctl/redox/drm.rs:205] TODO: unimplemented DRM ioctl(9, 0xc1, ReadWrite(0x7ffffffff828, 24))
+export failed
+[INFO prime-probe@src/header/sys_ioctl/redox/drm.rs:205] TODO: unimplemented DRM ioctl(9, 0xc1, ReadWrite(0x7ffffffff828, 24))
+export failed
+[INFO prime-probe@src/header/sys_ioctl/redox/drm.rs:205] TODO: unimplemented DRM ioctl(9, 0xc1, ReadWrite(0x7ffffffff828, 24))
+export failed
+[INFO prime-probe@src/header/sys_ioctl/redox/drm.rs:205] TODO: unimplemented DRM ioctl(9, 0xc1, ReadWrite(0x7ffffffff828, 24))
+export failed
+[INFO prime-probe@src/header/sys_ioctl/redox/drm.rs:205] TODO: unimplemented DRM ioctl(9, 0xc1, ReadWrite(0x7ffffffff828, 24))
+export failed
+[INFO prime-probe@src/header/sys_ioctl/redox/drm.rs:205] TODO: unimplemented DRM ioctl(9, 0xc1, ReadWrite(0x7ffffffff828, 24))
+export failed
+[INFO prime-probe@src/header/sys_ioctl/redox/drm.rs:205] TODO: unimplemented DRM ioctl(9, 0xc1, ReadWrite(0x7ffffffff828, 24))
+export failed
+[INFO prime-probe@src/header/sys_ioctl/redox/drm.rs:205] TODO: unimplemented DRM ioctl(9, 0xc1, ReadWrite(0x7ffffffff828, 24))
+export failed
+[INFO prime-probe@src/header/sys_ioctl/redox/drm.rs:205] TODO: unimplemented DRM ioctl(9, 0xc1, ReadWrite(0x7ffffffff828, 24))
+export failed
+[INFO prime-probe@src/header/sys_ioctl/redox/drm.rs:205] TODO: unimplemented DRM ioctl(9, 0xc1, ReadWrite(0x7ffffffff828, 24))
+export failed
+[INFO prime-probe@src/header/sys_ioctl/redox/drm.rs:205] TODO: unimplemented DRM ioctl(9, 0xc1, ReadWrite(0x7ffffffff828, 24))
+export failed
+[INFO prime-probe@src/header/sys_ioctl/redox/drm.rs:205] TODO: unimplemented DRM ioctl(9, 0xc1, ReadWrite(0x7ffffffff828, 24))
+export failed
+[INFO prime-probe@src/header/sys_ioctl/redox/drm.rs:205] TODO: unimplemented DRM ioctl(9, 0xc1, ReadWrite(0x7ffffffff828, 24))
+export failed
+[INFO prime-probe@src/header/sys_ioctl/redox/drm.rs:205] TODO: unimplemented DRM ioctl(9, 0xc1, ReadWrite(0x7ffffffff828, 24))
+export failed
+[INFO prime-probe@src/header/sys_ioctl/redox/drm.rs:205] TODO: unimplemented DRM ioctl(9, 0xc1, ReadWrite(0x7ffffffff828, 24))
+export failed
+[INFO prime-probe@src/header/sys_ioctl/redox/drm.rs:205] TODO: unimplemented DRM ioctl(9, 0xc1, ReadWrite(0x7ffffffff828, 24))
+export failed
+[INFO prime-probe@src/header/sys_ioctl/redox/drm.rs:205] TODO: unimplemented DRM ioctl(9, 0xc1, ReadWrite(0x7ffffffff828, 24))
+export failed
+[INFO prime-probe@src/header/sys_ioctl/redox/drm.rs:205] TODO: unimplemented DRM ioctl(9, 0xc1, ReadWrite(0x7ffffffff828, 24))
+export failed
+[INFO prime-probe@src/header/sys_ioctl/redox/drm.rs:205] TODO: unimplemented DRM ioctl(9, 0xc1, ReadWrite(0x7ffffffff828, 24))
+export failed
+[INFO prime-probe@src/header/sys_ioctl/redox/drm.rs:205] TODO: unimplemented DRM ioctl(9, 0xc1, ReadWrite(0x7ffffffff828, 24))
+export failed
+[INFO prime-probe@src/header/sys_ioctl/redox/drm.rs:205] TODO: unimplemented DRM ioctl(9, 0xc1, ReadWrite(0x7ffffffff828, 24))
+export failed
+[INFO prime-probe@src/header/sys_ioctl/redox/drm.rs:205] TODO: unimplemented DRM ioctl(9, 0xc1, ReadWrite(0x7ffffffff828, 24))
+export failed
+[INFO prime-probe@src/header/sys_ioctl/redox/drm.rs:205] TODO: unimplemented DRM ioctl(9, 0xc1, ReadWrite(0x7ffffffff828, 24))
+export failed
+[INFO prime-probe@src/header/sys_ioctl/redox/drm.rs:205] TODO: unimplemented DRM ioctl(9, 0xc1, ReadWrite(0x7ffffffff828, 24))
+export failed
+[INFO prime-probe@src/header/sys_ioctl/redox/drm.rs:205] TODO: unimplemented DRM ioctl(9, 0xc1, ReadWrite(0x7ffffffff828, 24))
+export failed
+[INFO prime-probe@src/header/sys_ioctl/redox/drm.rs:205] TODO: unimplemented DRM ioctl(9, 0xc1, ReadWrite(0x7ffffffff828, 24))
+export failed
+[INFO prime-probe@src/header/sys_ioctl/redox/drm.rs:205] TODO: unimplemented DRM ioctl(9, 0xc1, ReadWrite(0x7ffffffff828, 24))
+export failed
+[INFO prime-probe@src/header/sys_ioctl/redox/drm.rs:205] TODO: unimplemented DRM ioctl(9, 0xc1, ReadWrite(0x7ffffffff828, 24))
+export failed
+[INFO prime-probe@src/header/sys_ioctl/redox/drm.rs:205] TODO: unimplemented DRM ioctl(9, 0xc1, ReadWrite(0x7ffffffff828, 24))
+export failed
+[INFO prime-probe@src/header/sys_ioctl/redox/drm.rs:205] TODO: unimplemented DRM ioctl(9, 0xc1, ReadWrite(0x7ffffffff828, 24))
+export failed
+[INFO prime-probe@src/header/sys_ioctl/redox/drm.rs:205] TODO: unimplemented DRM ioctl(9, 0xc1, ReadWrite(0x7ffffffff828, 24))
+export failed
+[INFO prime-probe@src/header/sys_ioctl/redox/drm.rs:205] TODO: unimplemented DRM ioctl(9, 0xc1, ReadWrite(0x7ffffffff828, 24))
+export failed
+[INFO prime-probe@src/header/sys_ioctl/redox/drm.rs:205] TODO: unimplemented DRM ioctl(9, 0xc1, ReadWrite(0x7ffffffff828, 24))
+export failed
+[INFO prime-probe@src/header/sys_ioctl/redox/drm.rs:205] TODO: unimplemented DRM ioctl(9, 0xc1, ReadWrite(0x7ffffffff828, 24))
+export failed
+[INFO prime-probe@src/header/sys_ioctl/redox/drm.rs:205] TODO: unimplemented DRM ioctl(9, 0xc1, ReadWrite(0x7ffffffff828, 24))
+export failed
+[INFO prime-probe@src/header/sys_ioctl/redox/drm.rs:205] TODO: unimplemented DRM ioctl(9, 0xc1, ReadWrite(0x7ffffffff828, 24))
+export failed
+[INFO prime-probe@src/header/sys_ioctl/redox/drm.rs:205] TODO: unimplemented DRM ioctl(9, 0xc1, ReadWrite(0x7ffffffff828, 24))
+export failed
+[INFO prime-probe@src/header/sys_ioctl/redox/drm.rs:205] TODO: unimplemented DRM ioctl(9, 0xc1, ReadWrite(0x7ffffffff828, 24))
+export failed
+[INFO prime-probe@src/header/sys_ioctl/redox/drm.rs:205] TODO: unimplemented DRM ioctl(9, 0xc1, ReadWrite(0x7ffffffff828, 24))
+export failed
+[INFO prime-probe@src/header/sys_ioctl/redox/drm.rs:205] TODO: unimplemented DRM ioctl(9, 0xc1, ReadWrite(0x7ffffffff828, 24))
+export failed
+[INFO prime-probe@src/header/sys_ioctl/redox/drm.rs:205] TODO: unimplemented DRM ioctl(9, 0xc1, ReadWrite(0x7ffffffff828, 24))
+export failed
+[INFO prime-probe@src/header/sys_ioctl/redox/drm.rs:205] TODO: unimplemented DRM ioctl(9, 0xc1, ReadWrite(0x7ffffffff828, 24))
+export failed
+[INFO prime-probe@src/header/sys_ioctl/redox/drm.rs:205] TODO: unimplemented DRM ioctl(9, 0xc1, ReadWrite(0x7ffffffff828, 24))
+export failed
+[INFO prime-probe@src/header/sys_ioctl/redox/drm.rs:205] TODO: unimplemented DRM ioctl(9, 0xc1, ReadWrite(0x7ffffffff828, 24))
+export failed
+[INFO prime-probe@src/header/sys_ioctl/redox/drm.rs:205] TODO: unimplemented DRM ioctl(9, 0xc1, ReadWrite(0x7ffffffff828, 24))
+export failed
+[INFO prime-probe@src/header/sys_ioctl/redox/drm.rs:205] TODO: unimplemented DRM ioctl(9, 0xc1, ReadWrite(0x7ffffffff828, 24))
+export failed
+[INFO prime-probe@src/header/sys_ioctl/redox/drm.rs:205] TODO: unimplemented DRM ioctl(9, 0xc1, ReadWrite(0x7ffffffff828, 24))
+export failed
+[INFO prime-probe@src/header/sys_ioctl/redox/drm.rs:205] TODO: unimplemented DRM ioctl(9, 0xc1, ReadWrite(0x7ffffffff828, 24))
+export failed
+[INFO prime-probe@src/header/sys_ioctl/redox/drm.rs:205] TODO: unimplemented DRM ioctl(9, 0xc1, ReadWrite(0x7ffffffff828, 24))
+export failed
+[INFO prime-probe@src/header/sys_ioctl/redox/drm.rs:205] TODO: unimplemented DRM ioctl(9, 0xc1, ReadWrite(0x7ffffffff828, 24))
+export failed
+[INFO prime-probe@src/header/sys_ioctl/redox/drm.rs:205] TODO: unimplemented DRM ioctl(9, 0xc1, ReadWrite(0x7ffffffff828, 24))
+export failed
+[INFO prime-probe@src/header/sys_ioctl/redox/drm.rs:205] TODO: unimplemented DRM ioctl(9, 0xc1, ReadWrite(0x7ffffffff828, 24))
+export failed
+[INFO prime-probe@src/header/sys_ioctl/redox/drm.rs:205] TODO: unimplemented DRM ioctl(9, 0xc1, ReadWrite(0x7ffffffff828, 24))
+export failed
+[INFO prime-probe@src/header/sys_ioctl/redox/drm.rs:205] TODO: unimplemented DRM ioctl(9, 0xc1, ReadWrite(0x7ffffffff828, 24))
+export failed
+[INFO prime-probe@src/header/sys_ioctl/redox/drm.rs:205] TODO: unimplemented DRM ioctl(9, 0xc1, ReadWrite(0x7ffffffff828, 24))
+export failed
+[INFO prime-probe@src/header/sys_ioctl/redox/drm.rs:205] TODO: unimplemented DRM ioctl(9, 0xc1, ReadWrite(0x7ffffffff828, 24))
+export failed
+[INFO prime-probe@src/header/sys_ioctl/redox/drm.rs:205] TODO: unimplemented DRM ioctl(9, 0xc1, ReadWrite(0x7ffffffff828, 24))
+export failed
+[INFO prime-probe@src/header/sys_ioctl/redox/drm.rs:205] TODO: unimplemented DRM ioctl(9, 0xc1, ReadWrite(0x7ffffffff828, 24))
+export failed
+[INFO prime-probe@src/header/sys_ioctl/redox/drm.rs:205] TODO: unimplemented DRM ioctl(9, 0xc1, ReadWrite(0x7ffffffff828, 24))
+export failed
+[INFO prime-probe@src/header/sys_ioctl/redox/drm.rs:205] TODO: unimplemented DRM ioctl(9, 0xc1, ReadWrite(0x7ffffffff828, 24))
+export failed
+[INFO prime-probe@src/header/sys_ioctl/redox/drm.rs:205] TODO: unimplemented DRM ioctl(9, 0xc1, ReadWrite(0x7ffffffff828, 24))
+export failed
+[INFO prime-probe@src/header/sys_ioctl/redox/drm.rs:205] TODO: unimplemented DRM ioctl(9, 0xc1, ReadWrite(0x7ffffffff828, 24))
+export failed
+[INFO prime-probe@src/header/sys_ioctl/redox/drm.rs:205] TODO: unimplemented DRM ioctl(9, 0xc1, ReadWrite(0x7ffffffff828, 24))
+export failed
+[INFO prime-probe@src/header/sys_ioctl/redox/drm.rs:205] TODO: unimplemented DRM ioctl(9, 0xc1, ReadWrite(0x7ffffffff828, 24))
+export failed
+[INFO prime-probe@src/header/sys_ioctl/redox/drm.rs:205] TODO: unimplemented DRM ioctl(9, 0xc1, ReadWrite(0x7ffffffff828, 24))
+export failed
+[INFO prime-probe@src/header/sys_ioctl/redox/drm.rs:205] TODO: unimplemented DRM ioctl(9, 0xc1, ReadWrite(0x7ffffffff828, 24))
+export failed
+[INFO prime-probe@src/header/sys_ioctl/redox/drm.rs:205] TODO: unimplemented DRM ioctl(9, 0xc1, ReadWrite(0x7ffffffff828, 24))
+export failed
+[INFO prime-probe@src/header/sys_ioctl/redox/drm.rs:205] TODO: unimplemented DRM ioctl(9, 0xc1, ReadWrite(0x7ffffffff828, 24))
+export failed
+[INFO prime-probe@src/header/sys_ioctl/redox/drm.rs:205] TODO: unimplemented DRM ioctl(9, 0xc1, ReadWrite(0x7ffffffff828, 24))
+export failed
+[INFO prime-probe@src/header/sys_ioctl/redox/drm.rs:205] TODO: unimplemented DRM ioctl(9, 0xc1, ReadWrite(0x7ffffffff828, 24))
+export failed
+[INFO prime-probe@src/header/sys_ioctl/redox/drm.rs:205] TODO: unimplemented DRM ioctl(9, 0xc1, ReadWrite(0x7ffffffff828, 24))
+export failed
+[INFO prime-probe@src/header/sys_ioctl/redox/drm.rs:205] TODO: unimplemented DRM ioctl(9, 0xc1, ReadWrite(0x7ffffffff828, 24))
+export failed
+[INFO prime-probe@src/header/sys_ioctl/redox/drm.rs:205] TODO: unimplemented DRM ioctl(9, 0xc1, ReadWrite(0x7ffffffff828, 24))
+export failed
+[INFO prime-probe@src/header/sys_ioctl/redox/drm.rs:205] TODO: unimplemented DRM ioctl(9, 0xc1, ReadWrite(0x7ffffffff828, 24))
+export failed
+[INFO prime-probe@src/header/sys_ioctl/redox/drm.rs:205] TODO: unimplemented DRM ioctl(9, 0xc1, ReadWrite(0x7ffffffff828, 24))
+export failed
+[INFO prime-probe@src/header/sys_ioctl/redox/drm.rs:205] TODO: unimplemented DRM ioctl(9, 0xc1, ReadWrite(0x7ffffffff828, 24))
+export failed
+[INFO prime-probe@src/header/sys_ioctl/redox/drm.rs:205] TODO: unimplemented DRM ioctl(9, 0xc1, ReadWrite(0x7ffffffff828, 24))
+export failed
+[INFO prime-probe@src/header/sys_ioctl/redox/drm.rs:205] TODO: unimplemented DRM ioctl(9, 0xc1, ReadWrite(0x7ffffffff828, 24))
+export failed
+[INFO prime-probe@src/header/sys_ioctl/redox/drm.rs:205] TODO: unimplemented DRM ioctl(9, 0xc1, ReadWrite(0x7ffffffff828, 24))
+export failed
+[INFO prime-probe@src/header/sys_ioctl/redox/drm.rs:205] TODO: unimplemented DRM ioctl(9, 0xc1, ReadWrite(0x7ffffffff828, 24))
+export failed
+[INFO prime-probe@src/header/sys_ioctl/redox/drm.rs:205] TODO: unimplemented DRM ioctl(9, 0xc1, ReadWrite(0x7ffffffff828, 24))
+export failed
+[INFO prime-probe@src/header/sys_ioctl/redox/drm.rs:205] TODO: unimplemented DRM ioctl(9, 0xc1, ReadWrite(0x7ffffffff828, 24))
+export failed
+[INFO prime-probe@src/header/sys_ioctl/redox/drm.rs:205] TODO: unimplemented DRM ioctl(9, 0xc1, ReadWrite(0x7ffffffff828, 24))
+export failed
+[INFO prime-probe@src/header/sys_ioctl/redox/drm.rs:205] TODO: unimplemented DRM ioctl(9, 0xc1, ReadWrite(0x7ffffffff828, 24))
+export failed
+[INFO prime-probe@src/header/sys_ioctl/redox/drm.rs:205] TODO: unimplemented DRM ioctl(9, 0xc1, ReadWrite(0x7ffffffff828, 24))
+export failed
+[INFO prime-probe@src/header/sys_ioctl/redox/drm.rs:205] TODO: unimplemented DRM ioctl(9, 0xc1, ReadWrite(0x7ffffffff828, 24))
+export failed
+[INFO prime-probe@src/header/sys_ioctl/redox/drm.rs:205] TODO: unimplemented DRM ioctl(9, 0xc1, ReadWrite(0x7ffffffff828, 24))
+export failed
+[INFO prime-probe@src/header/sys_ioctl/redox/drm.rs:205] TODO: unimplemented DRM ioctl(9, 0xc1, ReadWrite(0x7ffffffff828, 24))
+export failed
+[INFO prime-probe@src/header/sys_ioctl/redox/drm.rs:205] TODO: unimplemented DRM ioctl(9, 0xc1, ReadWrite(0x7ffffffff828, 24))
+export failed
+[INFO prime-probe@src/header/sys_ioctl/redox/drm.rs:205] TODO: unimplemented DRM ioctl(9, 0xc1, ReadWrite(0x7ffffffff828, 24))
+export failed
+[INFO prime-probe@src/header/sys_ioctl/redox/drm.rs:205] TODO: unimplemented DRM ioctl(9, 0xc1, ReadWrite(0x7ffffffff828, 24))
+export failed
+[INFO prime-probe@src/header/sys_ioctl/redox/drm.rs:205] TODO: unimplemented DRM ioctl(9, 0xc1, ReadWrite(0x7ffffffff828, 24))
+export failed
+[INFO prime-probe@src/header/sys_ioctl/redox/drm.rs:205] TODO: unimplemented DRM ioctl(9, 0xc1, ReadWrite(0x7ffffffff828, 24))
+export failed
+[INFO prime-probe@src/header/sys_ioctl/redox/drm.rs:205] TODO: unimplemented DRM ioctl(9, 0xc1, ReadWrite(0x7ffffffff828, 24))
+export failed
+[INFO prime-probe@src/header/sys_ioctl/redox/drm.rs:205] TODO: unimplemented DRM ioctl(9, 0xc1, ReadWrite(0x7ffffffff828, 24))
+export failed
+[INFO prime-probe@src/header/sys_ioctl/redox/drm.rs:205] TODO: unimplemented DRM ioctl(9, 0xc1, ReadWrite(0x7ffffffff828, 24))
+export failed
+[INFO prime-probe@src/header/sys_ioctl/redox/drm.rs:205] TODO: unimplemented DRM ioctl(9, 0xc1, ReadWrite(0x7ffffffff828, 24))
+export failed
+[INFO prime-probe@src/header/sys_ioctl/redox/drm.rs:205] TODO: unimplemented DRM ioctl(9, 0xc1, ReadWrite(0x7ffffffff828, 24))
+export failed
+[INFO prime-probe@src/header/sys_ioctl/redox/drm.rs:205] TODO: unimplemented DRM ioctl(9, 0xc1, ReadWrite(0x7ffffffff828, 24))
+export failed
+[INFO prime-probe@src/header/sys_ioctl/redox/drm.rs:205] TODO: unimplemented DRM ioctl(9, 0xc1, ReadWrite(0x7ffffffff828, 24))
+export failed
+[INFO prime-probe@src/header/sys_ioctl/redox/drm.rs:205] TODO: unimplemented DRM ioctl(9, 0xc1, ReadWrite(0x7ffffffff828, 24))
+export failed
+[INFO prime-probe@src/header/sys_ioctl/redox/drm.rs:205] TODO: unimplemented DRM ioctl(9, 0xc1, ReadWrite(0x7ffffffff828, 24))
+export failed
+[INFO prime-probe@src/header/sys_ioctl/redox/drm.rs:205] TODO: unimplemented DRM ioctl(9, 0xc1, ReadWrite(0x7ffffffff828, 24))
+export failed
+[INFO prime-probe@src/header/sys_ioctl/redox/drm.rs:205] TODO: unimplemented DRM ioctl(9, 0xc1, ReadWrite(0x7ffffffff828, 24))
+export failed
+[INFO prime-probe@src/header/sys_ioctl/redox/drm.rs:205] TODO: unimplemented DRM ioctl(9, 0xc1, ReadWrite(0x7ffffffff828, 24))
+export failed
+[INFO prime-probe@src/header/sys_ioctl/redox/drm.rs:205] TODO: unimplemented DRM ioctl(9, 0xc1, ReadWrite(0x7ffffffff828, 24))
+export failed
+[INFO prime-probe@src/header/sys_ioctl/redox/drm.rs:205] TODO: unimplemented DRM ioctl(9, 0xc1, ReadWrite(0x7ffffffff828, 24))
+export failed
+[INFO prime-probe@src/header/sys_ioctl/redox/drm.rs:205] TODO: unimplemented DRM ioctl(9, 0xc1, ReadWrite(0x7ffffffff828, 24))
+export failed
+[INFO prime-probe@src/header/sys_ioctl/redox/drm.rs:205] TODO: unimplemented DRM ioctl(9, 0xc1, ReadWrite(0x7ffffffff828, 24))
+export failed
+[INFO prime-probe@src/header/sys_ioctl/redox/drm.rs:205] TODO: unimplemented DRM ioctl(9, 0xc1, ReadWrite(0x7ffffffff828, 24))
+export failed
+[INFO prime-probe@src/header/sys_ioctl/redox/drm.rs:205] TODO: unimplemented DRM ioctl(9, 0xc1, ReadWrite(0x7ffffffff828, 24))
+export failed
+[INFO prime-probe@src/header/sys_ioctl/redox/drm.rs:205] TODO: unimplemented DRM ioctl(9, 0xc1, ReadWrite(0x7ffffffff828, 24))
+export failed
+[INFO prime-probe@src/header/sys_ioctl/redox/drm.rs:205] TODO: unimplemented DRM ioctl(9, 0xc1, ReadWrite(0x7ffffffff828, 24))
+export failed
+[INFO prime-probe@src/header/sys_ioctl/redox/drm.rs:205] TODO: unimplemented DRM ioctl(9, 0xc1, ReadWrite(0x7ffffffff828, 24))
+export failed
+[INFO prime-probe@src/header/sys_ioctl/redox/drm.rs:205] TODO: unimplemented DRM ioctl(9, 0xc1, ReadWrite(0x7ffffffff828, 24))
+export failed
+[INFO prime-probe@src/header/sys_ioctl/redox/drm.rs:205] TODO: unimplemented DRM ioctl(9, 0xc1, ReadWrite(0x7ffffffff828, 24))
+export failed
+[INFO prime-probe@src/header/sys_ioctl/redox/drm.rs:205] TODO: unimplemented DRM ioctl(9, 0xc1, ReadWrite(0x7ffffffff828, 24))
+export failed
+[INFO prime-probe@src/header/sys_ioctl/redox/drm.rs:205] TODO: unimplemented DRM ioctl(9, 0xc1, ReadWrite(0x7ffffffff828, 24))
+export failed
+[INFO prime-probe@src/header/sys_ioctl/redox/drm.rs:205] TODO: unimplemented DRM ioctl(9, 0xc1, ReadWrite(0x7ffffffff828, 24))
+export failed
+[INFO prime-probe@src/header/sys_ioctl/redox/drm.rs:205] TODO: unimplemented DRM ioctl(9, 0xc1, ReadWrite(0x7ffffffff828, 24))
+export failed
+[INFO prime-probe@src/header/sys_ioctl/redox/drm.rs:205] TODO: unimplemented DRM ioctl(9, 0xc1, ReadWrite(0x7ffffffff828, 24))
+export failed
+[INFO prime-probe@src/header/sys_ioctl/redox/drm.rs:205] TODO: unimplemented DRM ioctl(9, 0xc1, ReadWrite(0x7ffffffff828, 24))
+export failed
+[INFO prime-probe@src/header/sys_ioctl/redox/drm.rs:205] TODO: unimplemented DRM ioctl(9, 0xc1, ReadWrite(0x7ffffffff828, 24))
+export failed
+[INFO prime-probe@src/header/sys_ioctl/redox/drm.rs:205] TODO: unimplemented DRM ioctl(9, 0xc1, ReadWrite(0x7ffffffff828, 24))
+export failed
+[INFO prime-probe@src/header/sys_ioctl/redox/drm.rs:205] TODO: unimplemented DRM ioctl(9, 0xc1, ReadWrite(0x7ffffffff828, 24))
+export failed
+[INFO prime-probe@src/header/sys_ioctl/redox/drm.rs:205] TODO: unimplemented DRM ioctl(9, 0xc1, ReadWrite(0x7ffffffff828, 24))
+export failed
+[INFO prime-probe@src/header/sys_ioctl/redox/drm.rs:205] TODO: unimplemented DRM ioctl(9, 0xc1, ReadWrite(0x7ffffffff828, 24))
+export failed
+[INFO prime-probe@src/header/sys_ioctl/redox/drm.rs:205] TODO: unimplemented DRM ioctl(9, 0xc1, ReadWrite(0x7ffffffff828, 24))
+export failed
+[INFO prime-probe@src/header/sys_ioctl/redox/drm.rs:205] TODO: unimplemented DRM ioctl(9, 0xc1, ReadWrite(0x7ffffffff828, 24))
+export failed
+[INFO prime-probe@src/header/sys_ioctl/redox/drm.rs:205] TODO: unimplemented DRM ioctl(9, 0xc1, ReadWrite(0x7ffffffff828, 24))
+export failed
+[INFO prime-probe@src/header/sys_ioctl/redox/drm.rs:205] TODO: unimplemented DRM ioctl(9, 0xc1, ReadWrite(0x7ffffffff828, 24))
+export failed
+[INFO prime-probe@src/header/sys_ioctl/redox/drm.rs:205] TODO: unimplemented DRM ioctl(9, 0xc1, ReadWrite(0x7ffffffff828, 24))
+export failed
+[INFO prime-probe@src/header/sys_ioctl/redox/drm.rs:205] TODO: unimplemented DRM ioctl(9, 0xc1, ReadWrite(0x7ffffffff828, 24))
+export failed
+[INFO prime-probe@src/header/sys_ioctl/redox/drm.rs:205] TODO: unimplemented DRM ioctl(9, 0xc1, ReadWrite(0x7ffffffff828, 24))
+export failed
+[INFO prime-probe@src/header/sys_ioctl/redox/drm.rs:205] TODO: unimplemented DRM ioctl(9, 0xc1, ReadWrite(0x7ffffffff828, 24))
+export failed
+[INFO prime-probe@src/header/sys_ioctl/redox/drm.rs:205] TODO: unimplemented DRM ioctl(9, 0xc1, ReadWrite(0x7ffffffff828, 24))
+export failed
+[INFO prime-probe@src/header/sys_ioctl/redox/drm.rs:205] TODO: unimplemented DRM ioctl(9, 0xc1, ReadWrite(0x7ffffffff828, 24))
+export failed
+[INFO prime-probe@src/header/sys_ioctl/redox/drm.rs:205] TODO: unimplemented DRM ioctl(9, 0xc1, ReadWrite(0x7ffffffff828, 24))
+export failed
+[INFO prime-probe@src/header/sys_ioctl/redox/drm.rs:205] TODO: unimplemented DRM ioctl(9, 0xc1, ReadWrite(0x7ffffffff828, 24))
+export failed
+[INFO prime-probe@src/header/sys_ioctl/redox/drm.rs:205] TODO: unimplemented DRM ioctl(9, 0xc1, ReadWrite(0x7ffffffff828, 24))
+export failed
+[INFO prime-probe@src/header/sys_ioctl/redox/drm.rs:205] TODO: unimplemented DRM ioctl(9, 0xc1, ReadWrite(0x7ffffffff828, 24))
+export failed
+[INFO prime-probe@src/header/sys_ioctl/redox/drm.rs:205] TODO: unimplemented DRM ioctl(9, 0xc1, ReadWrite(0x7ffffffff828, 24))
+export failed
+[INFO prime-probe@src/header/sys_ioctl/redox/drm.rs:205] TODO: unimplemented DRM ioctl(9, 0xc1, ReadWrite(0x7ffffffff828, 24))
+export failed
+[INFO prime-probe@src/header/sys_ioctl/redox/drm.rs:205] TODO: unimplemented DRM ioctl(9, 0xc1, ReadWrite(0x7ffffffff828, 24))
+export failed
+[INFO prime-probe@src/header/sys_ioctl/redox/drm.rs:205] TODO: unimplemented DRM ioctl(9, 0xc1, ReadWrite(0x7ffffffff828, 24))
+export failed
+[INFO prime-probe@src/header/sys_ioctl/redox/drm.rs:205] TODO: unimplemented DRM ioctl(9, 0xc1, ReadWrite(0x7ffffffff828, 24))
+export failed
+[INFO prime-probe@src/header/sys_ioctl/redox/drm.rs:205] TODO: unimplemented DRM ioctl(9, 0xc1, ReadWrite(0x7ffffffff828, 24))
+export failed
+[INFO prime-probe@src/header/sys_ioctl/redox/drm.rs:205] TODO: unimplemented DRM ioctl(9, 0xc1, ReadWrite(0x7ffffffff828, 24))
+export failed
+[INFO prime-probe@src/header/sys_ioctl/redox/drm.rs:205] TODO: unimplemented DRM ioctl(9, 0xc1, ReadWrite(0x7ffffffff828, 24))
+export failed
+[INFO prime-probe@src/header/sys_ioctl/redox/drm.rs:205] TODO: unimplemented DRM ioctl(9, 0xc1, ReadWrite(0x7ffffffff828, 24))
+export failed
+[INFO prime-probe@src/header/sys_ioctl/redox/drm.rs:205] TODO: unimplemented DRM ioctl(9, 0xc1, ReadWrite(0x7ffffffff828, 24))
+export failed
+[INFO prime-probe@src/header/sys_ioctl/redox/drm.rs:205] TODO: unimplemented DRM ioctl(9, 0xc1, ReadWrite(0x7ffffffff828, 24))
+export failed
+[INFO prime-probe@src/header/sys_ioctl/redox/drm.rs:205] TODO: unimplemented DRM ioctl(9, 0xc1, ReadWrite(0x7ffffffff828, 24))
+export failed
+[INFO prime-probe@src/header/sys_ioctl/redox/drm.rs:205] TODO: unimplemented DRM ioctl(9, 0xc1, ReadWrite(0x7ffffffff828, 24))
+export failed
+[INFO prime-probe@src/header/sys_ioctl/redox/drm.rs:205] TODO: unimplemented DRM ioctl(9, 0xc1, ReadWrite(0x7ffffffff828, 24))
+export failed
+[INFO prime-probe@src/header/sys_ioctl/redox/drm.rs:205] TODO: unimplemented DRM ioctl(9, 0xc1, ReadWrite(0x7ffffffff828, 24))
+export failed
+[INFO prime-probe@src/header/sys_ioctl/redox/drm.rs:205] TODO: unimplemented DRM ioctl(9, 0xc1, ReadWrite(0x7ffffffff828, 24))
+export failed
+[INFO prime-probe@src/header/sys_ioctl/redox/drm.rs:205] TODO: unimplemented DRM ioctl(9, 0xc1, ReadWrite(0x7ffffffff828, 24))
+export failed
+[INFO prime-probe@src/header/sys_ioctl/redox/drm.rs:205] TODO: unimplemented DRM ioctl(9, 0xc1, ReadWrite(0x7ffffffff828, 24))
+export failed
+[INFO prime-probe@src/header/sys_ioctl/redox/drm.rs:205] TODO: unimplemented DRM ioctl(9, 0xc1, ReadWrite(0x7ffffffff828, 24))
+export failed
+[INFO prime-probe@src/header/sys_ioctl/redox/drm.rs:205] TODO: unimplemented DRM ioctl(9, 0xc1, ReadWrite(0x7ffffffff828, 24))
+export failed
+[INFO prime-probe@src/header/sys_ioctl/redox/drm.rs:205] TODO: unimplemented DRM ioctl(9, 0xc1, ReadWrite(0x7ffffffff828, 24))
+export failed
+[INFO prime-probe@src/header/sys_ioctl/redox/drm.rs:205] TODO: unimplemented DRM ioctl(9, 0xc1, ReadWrite(0x7ffffffff828, 24))
+export failed
+[INFO prime-probe@src/header/sys_ioctl/redox/drm.rs:205] TODO: unimplemented DRM ioctl(9, 0xc1, ReadWrite(0x7ffffffff828, 24))
+export failed
+[INFO prime-probe@src/header/sys_ioctl/redox/drm.rs:205] TODO: unimplemented DRM ioctl(9, 0xc1, ReadWrite(0x7ffffffff828, 24))
+export failed
+[INFO prime-probe@src/header/sys_ioctl/redox/drm.rs:205] TODO: unimplemented DRM ioctl(9, 0xc1, ReadWrite(0x7ffffffff828, 24))
+export failed
+[INFO prime-probe@src/header/sys_ioctl/redox/drm.rs:205] TODO: unimplemented DRM ioctl(9, 0xc1, ReadWrite(0x7ffffffff828, 24))
+export failed
+[INFO prime-probe@src/header/sys_ioctl/redox/drm.rs:205] TODO: unimplemented DRM ioctl(9, 0xc1, ReadWrite(0x7ffffffff828, 24))
+export failed
+[INFO prime-probe@src/header/sys_ioctl/redox/drm.rs:205] TODO: unimplemented DRM ioctl(9, 0xc1, ReadWrite(0x7ffffffff828, 24))
+export failed
+[INFO prime-probe@src/header/sys_ioctl/redox/drm.rs:205] TODO: unimplemented DRM ioctl(9, 0xc1, ReadWrite(0x7ffffffff828, 24))
+export failed
+[INFO prime-probe@src/header/sys_ioctl/redox/drm.rs:205] TODO: unimplemented DRM ioctl(9, 0xc1, ReadWrite(0x7ffffffff828, 24))
+export failed
+[INFO prime-probe@src/header/sys_ioctl/redox/drm.rs:205] TODO: unimplemented DRM ioctl(9, 0xc1, ReadWrite(0x7ffffffff828, 24))
+export failed
+[INFO prime-probe@src/header/sys_ioctl/redox/drm.rs:205] TODO: unimplemented DRM ioctl(9, 0xc1, ReadWrite(0x7ffffffff828, 24))
+export failed
+[INFO prime-probe@src/header/sys_ioctl/redox/drm.rs:205] TODO: unimplemented DRM ioctl(9, 0xc1, ReadWrite(0x7ffffffff828, 24))
+export failed
+[INFO prime-probe@src/header/sys_ioctl/redox/drm.rs:205] TODO: unimplemented DRM ioctl(9, 0xc1, ReadWrite(0x7ffffffff828, 24))
+export failed
+[INFO prime-probe@src/header/sys_ioctl/redox/drm.rs:205] TODO: unimplemented DRM ioctl(9, 0xc1, ReadWrite(0x7ffffffff828, 24))
+export failed
+[INFO prime-probe@src/header/sys_ioctl/redox/drm.rs:205] TODO: unimplemented DRM ioctl(9, 0xc1, ReadWrite(0x7ffffffff828, 24))
+export failed
+[INFO prime-probe@src/header/sys_ioctl/redox/drm.rs:205] TODO: unimplemented DRM ioctl(9, 0xc1, ReadWrite(0x7ffffffff828, 24))
+export failed
+[INFO prime-probe@src/header/sys_ioctl/redox/drm.rs:205] TODO: unimplemented DRM ioctl(9, 0xc1, ReadWrite(0x7ffffffff828, 24))
+export failed
+[INFO prime-probe@src/header/sys_ioctl/redox/drm.rs:205] TODO: unimplemented DRM ioctl(9, 0xc1, ReadWrite(0x7ffffffff828, 24))
+export failed
+[INFO prime-probe@src/header/sys_ioctl/redox/drm.rs:205] TODO: unimplemented DRM ioctl(9, 0xc1, ReadWrite(0x7ffffffff828, 24))
+export failed
+[INFO prime-probe@src/header/sys_ioctl/redox/drm.rs:205] TODO: unimplemented DRM ioctl(9, 0xc1, ReadWrite(0x7ffffffff828, 24))
+export failed
+[INFO prime-probe@src/header/sys_ioctl/redox/drm.rs:205] TODO: unimplemented DRM ioctl(9, 0xc1, ReadWrite(0x7ffffffff828, 24))
+export failed
+[INFO prime-probe@src/header/sys_ioctl/redox/drm.rs:205] TODO: unimplemented DRM ioctl(9, 0xc1, ReadWrite(0x7ffffffff828, 24))
+export failed
+[INFO prime-probe@src/header/sys_ioctl/redox/drm.rs:205] TODO: unimplemented DRM ioctl(9, 0xc1, ReadWrite(0x7ffffffff828, 24))
+export failed
+[INFO prime-probe@src/header/sys_ioctl/redox/drm.rs:205] TODO: unimplemented DRM ioctl(9, 0xc1, ReadWrite(0x7ffffffff828, 24))
+export failed
+[INFO prime-probe@src/header/sys_ioctl/redox/drm.rs:205] TODO: unimplemented DRM ioctl(9, 0xc1, ReadWrite(0x7ffffffff828, 24))
+export failed
+[INFO prime-probe@src/header/sys_ioctl/redox/drm.rs:205] TODO: unimplemented DRM ioctl(9, 0xc1, ReadWrite(0x7ffffffff828, 24))
+export failed
+[INFO prime-probe@src/header/sys_ioctl/redox/drm.rs:205] TODO: unimplemented DRM ioctl(9, 0xc1, ReadWrite(0x7ffffffff828, 24))
+export failed
+[INFO prime-probe@src/header/sys_ioctl/redox/drm.rs:205] TODO: unimplemented DRM ioctl(9, 0xc1, ReadWrite(0x7ffffffff828, 24))
+export failed
+[INFO prime-probe@src/header/sys_ioctl/redox/drm.rs:205] TODO: unimplemented DRM ioctl(9, 0xc1, ReadWrite(0x7ffffffff828, 24))
+export failed
+[INFO prime-probe@src/header/sys_ioctl/redox/drm.rs:205] TODO: unimplemented DRM ioctl(9, 0xc1, ReadWrite(0x7ffffffff828, 24))
+export failed
+[INFO prime-probe@src/header/sys_ioctl/redox/drm.rs:205] TODO: unimplemented DRM ioctl(9, 0xc1, ReadWrite(0x7ffffffff828, 24))
+export failed
+prime-probe: 300 frames at 640x480, 3.70 ms per frame (render+glFinish 3.63, SET_CRTC 0.07), import of 2 buffers 50.8 ms
+prime-probe: PASS: V3D 4.2.14, 640x480, 300 frames into display buffers, frame 0 hash 05f3f32f, 3.70 ms per frame
+### s3start: prime-probe --frames 900 --show &> /tmp/s3.txt &  (0.2 s)
+ion: bg [0] 69
+### s3shot1: vc4shot /tmp/s3a.ppm  (1.0 s)
+vc4shot: channel 1 640x480, list at 2304, 1 planes, ctrl 0x828001e0 bkgnd 0x81000000 list 2304 active 2304 stat 0xa20640ca (mode 2, frame 36)
+vc4shot: plane 0: ListPlane { unity: true, format: 7, x: 0, y: 0, width: 640, height: 480, bus: 3256123392, pitch: 2560, alpha: false }
+vc4shot: wrote /tmp/s3a.ppm (921615 bytes)
+### s3 result:
+prime-probe: VT 4
+prime-probe: connector 27, CRTC 22, mode 640x480
+libEGL warning: MESA-LOADER: failed to retrieve device information
+MESA-LOADER: failed to retrieve device information
+MESA-LOADER: failed to retrieve device information
+prime-probe: EGL_EXT_image_dma_buf_import yes, _modifiers yes
+prime-probe: GL_RENDERER V3D 4.2.14
+prime-probe: direct import: vc4d's buffer is BO 1 on the render node
+prime-probe: buffer 0: handle 1, pitch 2560, 1228800 bytes, fb 32, dma-buf fd 9, imported
+prime-probe: buffer 1: handle 2, pitch 2560, 1228800 bytes, fb 33, dma-buf fd 10, imported
+[INFO prime-probe@src/header/sys_ioctl/redox/drm.rs:205] TODO: unimplemented DRM ioctl(8, 0xc1, ReadWrite(0x7ffffffff828, 24))
+export failed
+prime-probe: FAIL: frame 0: corners wrong (55aa55aa 55aa55aa 55aa55aa 55aa55aa), centre right
+### s3shot2: vc4shot /tmp/s3b.ppm  (0.8 s)
+vc4shot: channel 1 640x480, list at 2304, 1 planes, ctrl 0x828001e0 bkgnd 0x81000000 list 2304 active 2304 stat 0xa209017b (mode 2, frame 16)
+vc4shot: plane 0: ListPlane { unity: true, format: 7, x: 0, y: 0, width: 640, height: 480, bus: 3256123392, pitch: 2560, alpha: false }
+vc4shot: wrote /tmp/s3b.ppm (921615 bytes)
+### 4: prime-probe --frames 10 --lifetime --foreign  (0.5 s)
+prime-probe: VT 5
+prime-probe: connector 27, CRTC 22, mode 640x480
+libEGL warning: MESA-LOADER: failed to retrieve device information
+MESA-LOADER: failed to retrieve device information
+MESA-LOADER: failed to retrieve device information
+prime-probe: EGL_EXT_image_dma_buf_import yes, _modifiers yes
+prime-probe: GL_RENDERER V3D 4.2.14
+prime-probe: direct import: vc4d's buffer is BO 1 on the render node
+prime-probe: buffer 0: handle 1, pitch 2560, 1228800 bytes, fb 34, dma-buf fd 10, imported
+prime-probe: buffer 1: handle 2, pitch 2560, 1228800 bytes, fb 35, dma-buf fd 11, imported
+[INFO prime-probe@src/header/sys_ioctl/redox/drm.rs:205] TODO: unimplemented DRM ioctl(9, 0xc1, ReadWrite(0x7ffffffff818, 24))
+export failed
+prime-probe: frame 0: 0 pattern pixels left, 0 pixels differ from glReadPixels, cube 61276 of 307200 pixels, hash 05f3f32f
+[INFO prime-probe@src/header/sys_ioctl/redox/drm.rs:205] TODO: unimplemented DRM ioctl(9, 0xc1, ReadWrite(0x7ffffffff818, 24))
+export failed
+prime-probe: FAIL: frame 1: corners wrong (ff101830 ff101830 ff101830 00000000), centre right
+### fetched /tmp/s3a.ppm: 921615 bytes, stats (640, 480, 0.9775782709747983, 2)
+### fetched /tmp/s3b.ppm: 921615 bytes, stats (640, 480, 0.9775782709747983, 2)
