@@ -1,0 +1,42 @@
+### 2: prime-probe --frames 300  (0.6 s)
+prime-probe: VT 3
+prime-probe: connector 27, CRTC 22, mode 1920x1080
+libEGL warning: MESA-LOADER: failed to retrieve device information
+MESA-LOADER: failed to retrieve device information
+MESA-LOADER: failed to retrieve device information
+prime-probe: EGL_EXT_image_dma_buf_import yes, _modifiers yes
+prime-probe: GL_RENDERER V3D 4.2.14
+prime-probe: direct import: vc4d's buffer is BO 1 on the render node
+prime-probe: buffer 0: handle 1, pitch 7680, 8294400 bytes, fb 30, dma-buf fd 10, imported
+prime-probe: buffer 1: handle 2, pitch 7680, 8294400 bytes, fb 31, dma-buf fd 11, imported
+[INFO prime-probe@src/header/sys_ioctl/redox/drm.rs:205] TODO: unimplemented DRM ioctl(9, 0xc1, ReadWrite(0x7ffffffff828, 24))
+export failed
+prime-probe: stale: 23120 pattern, 0 zero, 1740265 background pixels of 2073600; stale rows 0 to 23, in 39 pages of 2025
+prime-probe: FAIL: frame 0: corners wrong (55aa55aa 55aa55aa 55aa55aa 55aa55aa), centre right
+### s3start: prime-probe --frames 3000 --show &> /tmp/s3.txt &  (0.2 s)
+ion: bg [0] 67
+### s3shot1: vc4shot /tmp/s3a.ppm  (1.9 s)
+vc4shot: channel 1 1920x1080, list at 2048, 1 planes, ctrl 0x87800438 bkgnd 0x81000000 list 2048 active 2048 stat 0xa3990017 (mode 2, frame 16)
+vc4shot: plane 0: ListPlane { unity: true, format: 7, x: 0, y: 0, width: 1920, height: 1080, bus: 3271557120, pitch: 7680, alpha: false }
+vc4shot: wrote /tmp/s3a.ppm (6220817 bytes)
+### s3 result:
+prime-probe: VT 4
+prime-probe: connector 27, CRTC 22, mode 1920x1080
+libEGL warning: MESA-LOADER: failed to retrieve device information
+MESA-LOADER: failed to retrieve device information
+MESA-LOADER: failed to retrieve device information
+prime-probe: EGL_EXT_image_dma_buf_import yes, _modifiers yes
+prime-probe: GL_RENDERER V3D 4.2.14
+prime-probe: direct import: vc4d's buffer is BO 1 on the render node
+prime-probe: buffer 0: handle 1, pitch 7680, 8294400 bytes, fb 32, dma-buf fd 9, imported
+prime-probe: buffer 1: handle 2, pitch 7680, 8294400 bytes, fb 33, dma-buf fd 10, imported
+[INFO prime-probe@src/header/sys_ioctl/redox/drm.rs:205] TODO: unimplemented DRM ioctl(8, 0xc1, ReadWrite(0x7ffffffff828, 24))
+export failed
+prime-probe: stale: 341456 pattern, 0 zero, 1421929 background pixels of 2073600; stale rows 0 to 189, in 351 pages of 2025
+prime-probe: FAIL: frame 0: corners wrong (55aa55aa 55aa55aa 55aa55aa 55aa55aa), centre right
+### s3shot2: vc4shot /tmp/s3b.ppm  (2.8 s)
+vc4shot: channel 1 1920x1080, list at 2048, 1 planes, ctrl 0x87800438 bkgnd 0x81000000 list 2048 active 2048 stat 0xa3988361 (mode 2, frame 8)
+vc4shot: plane 0: ListPlane { unity: true, format: 7, x: 0, y: 0, width: 1920, height: 1080, bus: 3271557120, pitch: 7680, alpha: false }
+vc4shot: wrote /tmp/s3b.ppm (6220817 bytes)
+### fetched /tmp/s3a.ppm: 6220817 bytes, stats (1920, 1080, 0.996722130513893, 2)
+### fetched /tmp/s3b.ppm: 6220817 bytes, stats (1920, 1080, 0.996722130513893, 2)
