@@ -108,3 +108,5 @@
 {"date": "2026-11-24", "build": "v0.7.0-dev-21-g91dd63a0+x2d42", "source": "nightly", "kind": "soak", "minutes": 15, "pings": 90, "pings_lost": 90, "logins": 15, "logins_failed": 15, "losses": [{"at_s": 6, "down_s": null}], "ping": "tcp"}
 {"date": "2026-11-25", "build": "v0.7.0-dev-45-gc15a26aa+x2d42", "source": "nightly", "kind": "boot", "devsh_s": null, "login_s": 5.0}
 {"date": "2026-11-25", "build": "v0.7.0-dev-45-gc15a26aa+x2d42", "source": "nightly", "kind": "soak", "minutes": 15, "pings": 90, "pings_lost": 90, "logins": 15, "logins_failed": 15, "losses": [{"at_s": 6, "down_s": null}], "ping": "tcp"}
+{"date": "2026-11-26", "build": "v0.7.0-dev-83-g2fb1c217+x27b9", "source": "nightly", "kind": "boot", "devsh_s": 4.6, "login_s": 3.5}
+{"date": "2026-11-26", "build": "v0.7.0-dev-83-g2fb1c217+x27b9", "source": "nightly", "kind": "soak", "minutes": 15, "pings": 90, "pings_lost": 0, "logins": 15, "logins_failed": 0, "losses": [], "ping": "icmp"}

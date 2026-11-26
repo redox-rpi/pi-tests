@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-25T03:30+00:00",
+ "generated": "2026-11-26T03:30+00:00",
  "days": 30,
  "rev": "HEAD",
  "tests_repo": "redox-rpi/pi-tests",
@@ -15,13 +15,10 @@
   "vc4d"
  ],
  "open_by_repo_type": {
-  "apps": {
-   "none": 1
-  },
   "redox-rpi": {
-   "none": 66,
+   "none": 57,
    "Task": 49,
-   "Bug": 22,
+   "Bug": 17,
    "Feature": 76,
    "Epic": 5
   },
@@ -44,52 +41,43 @@
   }
  },
  "no_type": [
-  "apps#1",
+  "#751",
+  "#752",
+  "#749",
+  "#746",
+  "#712",
+  "#728",
+  "#713",
+  "#616",
+  "#617",
+  "#724",
   "#721",
+  "#602",
   "#710",
   "#714",
-  "#713",
-  "#712",
   "#711",
   "#707",
   "#679",
   "#704",
   "#678",
-  "#117",
-  "#387",
-  "#386",
-  "#690",
-  "#211",
-  "#177",
   "#677",
-  "#599",
   "#687",
-  "#680",
-  "#676",
-  "#449",
-  "#675",
-  "#674",
   "#673",
   "#681",
   "#664",
   "#660",
   "#654",
-  "#653",
   "#439",
   "#656",
   "#655",
-  "#602",
   "#643",
   "#622",
   "#619",
   "#556",
   "#624",
-  "#617",
-  "#616",
   "#615",
   "#611",
   "#610",
-  "#576",
   "#605",
   "#588",
   "#601",
@@ -109,7 +97,6 @@
   "#424",
   "#422",
   "#410",
-  "#375",
   "#372",
   "rpi-open-firmware#72",
   "rpi-open-firmware#68",
@@ -141,11 +128,6 @@
   ],
   "S2": [
    "#197",
-   "#205",
-   "#690",
-   "#119",
-   "#92",
-   "#217",
    "#338",
    "#129",
    "#108",
@@ -156,7 +138,7 @@
    "#3"
   ],
   "S3": [
-   "#291",
+   "#751",
    "#663",
    "#591",
    "#28",
@@ -167,16 +149,11 @@
    "#94"
   ],
   "unclassified": [
+   "#746",
    "#710",
    "#711",
-   "#117",
-   "#387",
-   "#386",
-   "#177",
    "#687",
-   "#449",
    "#654",
-   "#653",
    "#611",
    "#563",
    "#372",
@@ -193,7 +170,6 @@
   "#332"
  ],
  "unlabelled": [
-  117,
   433,
   435,
   439,
@@ -216,7 +192,8 @@
   649,
   660,
   704,
-  707
+  707,
+  749
  ],
  "stale_in_progress": [
   3,
@@ -252,12 +229,15 @@
   560
  ],
  "closed_but_tracked": [
-  207
+  92,
+  205,
+  207,
+  217
  ],
- "prs_merged": 262,
+ "prs_merged": 290,
  "lead_time_h": {
-  "median": 15.0,
-  "p90": 145.8
+  "median": 14.4,
+  "p90": 132.3
  },
  "prs_without_issue": [
   124,
@@ -308,7 +288,21 @@
   627,
   628,
   400,
-  700
+  700,
+  717,
+  718,
+  725,
+  720,
+  748,
+  747,
+  745,
+  659,
+  726,
+  722,
+  705,
+  699,
+  686,
+  701
  ],
  "stale_ci_merges": [
   59,
@@ -403,7 +397,22 @@
   463,
   262,
   460,
-  412
+  412,
+  718,
+  725,
+  747,
+  745,
+  694,
+  743,
+  726,
+  722,
+  705,
+  695,
+  689,
+  686,
+  685,
+  697,
+  701
  ],
  "main_red_hours": 42.2,
  "main_red_streaks": [
@@ -435,13 +444,13 @@
  ],
  "nightly": {
   "pass": 21,
-  "fail": 3
+  "fail": 4
  },
  "direct_patch_commits": [],
  "pi_rows": {
-  "pass": 327,
-  "fail": 67,
-  "other": 134
+  "pass": 345,
+  "fail": 72,
+  "other": 137
  },
  "sightings": {
   "28": [
@@ -516,21 +525,21 @@
  "pi_rows_per_topic": {
   "assistant": 5,
   "audio": 17,
-  "boards": 16,
-  "boot": 47,
+  "boards": 17,
+  "boot": 49,
   "ci": 34,
   "firmware": 29,
   "gpio": 2,
-  "graphics": 37,
-  "network": 72,
+  "graphics": 44,
+  "network": 73,
   "quality": 7,
-  "relibc": 28,
-  "sdcard": 18,
+  "relibc": 30,
+  "sdcard": 19,
   "smarthome": 9,
-  "stability": 45,
+  "stability": 47,
   "tcc": 6,
-  "time": 6,
-  "usb": 49,
+  "time": 7,
+  "usb": 51,
   "verification": 3,
   "zero2w": 2
  },
@@ -544,10 +553,12 @@
   "icachetest": 0,
   "mcast": 0,
   "mdnsd": 4,
+  "mmapstop": 0,
   "net6": 0,
   "netdiag": 2,
   "oomtest": 0,
   "pkg-persist": 4,
+  "pointer-bench": 0,
   "polltest": 0,
   "reboot": 0,
   "redox-fatfs2": 0,
@@ -565,8 +576,8 @@
  },
  "req_rev": "HEAD",
  "patches_with_issue": {
-  "named": 39,
-  "total": 112
+  "named": 45,
+  "total": 123
  },
  "boot_time": {
   "3B+": [
@@ -598,16 +609,67 @@
    }
   ]
  },
+ "panic": {
+  "patches": {
+   "kernel": {
+    "todo": 0,
+    "unimplemented": 0,
+    "expect_todo": 0,
+    "panic": 0,
+    "unreachable": 0,
+    "unwrap": 0,
+    "expect": 2
+   },
+   "base": {
+    "todo": 0,
+    "unimplemented": 0,
+    "expect_todo": 0,
+    "panic": 1,
+    "unreachable": 5,
+    "unwrap": 48,
+    "expect": 74
+   }
+  },
+  "kernel": {
+   "todo": 2,
+   "unimplemented": 1,
+   "expect_todo": 4,
+   "panic": 30,
+   "unreachable": 16,
+   "unwrap": 123,
+   "expect": 111
+  },
+  "runtime": {
+   "panics": [
+    {
+     "board": "zero2w",
+     "day": "2026-11-24",
+     "panics": 2,
+     "builds": [
+      "v0.6.0-dev-135-g0897391f+x6a9f"
+     ],
+     "file": "serial-zero-2026-11-24T0317.log.gz"
+    }
+   ],
+   "logs_read": {
+    "3b+": 16,
+    "pi400": 15,
+    "zero2w": 4
+   },
+   "since": "2026-10-27"
+  },
+  "over_limits": []
+ },
  "code": {
   "tools": {
-   "code": 9676,
+   "code": 11186,
    "by_language": {
     "c": {
-     "files": 5,
-     "code": 1115,
-     "comment": 95,
-     "functions": 39,
-     "long_functions": 6
+     "files": 9,
+     "code": 2333,
+     "comment": 211,
+     "functions": 72,
+     "long_functions": 10
     },
     "python": {
      "files": 1,
@@ -617,15 +679,15 @@
      "long_functions": 0
     },
     "rust": {
-     "files": 38,
-     "code": 8135,
-     "comment": 1085,
-     "functions": 447,
-     "long_functions": 11
+     "files": 40,
+     "code": 8427,
+     "comment": 1142,
+     "functions": 455,
+     "long_functions": 13
     }
    },
-   "duplicated": 50,
-   "duplicated_pct": 0.5,
+   "duplicated": 340,
+   "duplicated_pct": 3.0,
    "over_limit": [
     [
      "chaos/chaos.c",
@@ -640,48 +702,48 @@
      426
     ]
    ],
-   "long_functions": 17,
+   "long_functions": 23,
    "tests": 61,
-   "unsafe": 105,
+   "unsafe": 120,
    "req_refs": 1,
-   "issue_refs": 40
+   "issue_refs": 46
   },
   "scripts": {
-   "code": 8804,
+   "code": 9156,
    "by_language": {
     "python": {
-     "files": 25,
-     "code": 5302,
-     "comment": 195,
-     "functions": 252,
+     "files": 26,
+     "code": 5599,
+     "comment": 203,
+     "functions": 268,
      "long_functions": 15
     },
     "shell": {
      "files": 32,
-     "code": 3502,
-     "comment": 1258,
+     "code": 3557,
+     "comment": 1282,
      "functions": 0,
      "long_functions": 0
     }
    },
-   "duplicated": 250,
-   "duplicated_pct": 2.8,
+   "duplicated": 238,
+   "duplicated_pct": 2.6,
    "over_limit": [
     [
      "build-image.sh",
-     600
+     642
     ],
     [
      "quality-kpis.py",
-     572
+     616
     ],
     [
      "regression-set.py",
-     543
+     610
     ],
     [
      "pi-test.py",
-     529
+     568
     ],
     [
      "chaos-host.py",
@@ -692,37 +754,37 @@
    "tests": 1,
    "unsafe": 0,
    "req_refs": 13,
-   "issue_refs": 127
+   "issue_refs": 149
   }
  },
  "kpis": [
   {
    "key": "open_by_repo_type",
    "name": "Open issues by repo and type",
-   "value": "apps: none 1; redox-rpi: Bug 22, Epic 5, Feature 76, Task 49, none 66; rpi-open-firmware: Epic 9, Feature 23, Task 2, none 20; tinycc: Bug 1, Feature 5, Task 2, none 2; vc4d: Bug 1, Feature 1, none 1",
+   "value": "redox-rpi: Bug 17, Epic 5, Feature 76, Task 49, none 57; rpi-open-firmware: Epic 9, Feature 23, Task 2, none 20; tinycc: Bug 1, Feature 5, Task 2, none 2; vc4d: Bug 1, Feature 1, none 1",
    "ok": true,
    "details": "types in use: Bug, Epic, Feature, Task, none; repos read: .github, apps, drivers, pi-tests, redox-rpi, rpi-open-firmware, tinycc, vc4-toolchain, vc4d"
   },
   {
    "key": "no_type",
    "name": "Open issues without a type",
-   "value": "90",
+   "value": "80",
    "ok": false,
    "details": "Task/Bug/Feature not set yet"
   },
   {
    "key": "open_bugs",
    "name": "Open bugs (type Bug or label `bug`)",
-   "value": "S1: 1, S2: 14, S3: 9, unclassified: 20",
+   "value": "S1: 1, S2: 9, S3: 9, unclassified: 15",
    "ok": false,
-   "details": "S1: #332; S2: #197, #205, #690, #119, #92, #217, #338, #129, #108, #86, #79, #55, #4, #3; S3: #291, #663, #591, #28, #57, #159, #155, #104, #94; unclassified: #710, #711, #117, #387, #386, #177, #687, #449, #654, #653, #611, #563, #372, rpi-open-firmware#72, rpi-open-firmware#82, rpi-open-firmware#81, rpi-open-firmware#47, tinycc#20, tinycc#10, vc4d#9; **S1 older than 7 days:** #332"
+   "details": "S1: #332; S2: #197, #338, #129, #108, #86, #79, #55, #4, #3; S3: #751, #663, #591, #28, #57, #159, #155, #104, #94; unclassified: #746, #710, #711, #687, #654, #611, #563, #372, rpi-open-firmware#72, rpi-open-firmware#82, rpi-open-firmware#81, rpi-open-firmware#47, tinycc#20, tinycc#10, vc4d#9; **S1 older than 7 days:** #332"
   },
   {
    "key": "no_topic",
    "name": "Unlabelled open issues",
    "value": "24",
    "ok": false,
-   "details": "[#117](https://github.com/redox-rpi/redox-rpi/issues/117), [#433](https://github.com/redox-rpi/redox-rpi/issues/433), [#435](https://github.com/redox-rpi/redox-rpi/issues/435), [#439](https://github.com/redox-rpi/redox-rpi/issues/439), [#450](https://github.com/redox-rpi/redox-rpi/issues/450), [#566](https://github.com/redox-rpi/redox-rpi/issues/566), [#577](https://github.com/redox-rpi/redox-rpi/issues/577), [#579](https://github.com/redox-rpi/redox-rpi/issues/579), [#601](https://github.com/redox-rpi/redox-rpi/issues/601), [#610](https://github.com/redox-rpi/redox-rpi/issues/610), [#615](https://github.com/redox-rpi/redox-rpi/issues/615), [#619](https://github.com/redox-rpi/redox-rpi/issues/619) and 12 more"
+   "details": "[#433](https://github.com/redox-rpi/redox-rpi/issues/433), [#435](https://github.com/redox-rpi/redox-rpi/issues/435), [#439](https://github.com/redox-rpi/redox-rpi/issues/439), [#450](https://github.com/redox-rpi/redox-rpi/issues/450), [#566](https://github.com/redox-rpi/redox-rpi/issues/566), [#577](https://github.com/redox-rpi/redox-rpi/issues/577), [#579](https://github.com/redox-rpi/redox-rpi/issues/579), [#601](https://github.com/redox-rpi/redox-rpi/issues/601), [#610](https://github.com/redox-rpi/redox-rpi/issues/610), [#615](https://github.com/redox-rpi/redox-rpi/issues/615), [#619](https://github.com/redox-rpi/redox-rpi/issues/619), [#624](https://github.com/redox-rpi/redox-rpi/issues/624) and 12 more"
   },
   {
    "key": "stale_in_progress",
@@ -741,14 +803,14 @@
   {
    "key": "closed_but_tracked",
    "name": "Tracked bugs closed on GitHub",
-   "value": "1",
+   "value": "4",
    "ok": false,
-   "details": "[#207](https://github.com/redox-rpi/redox-rpi/issues/207) (still seen: see quality.md)"
+   "details": "[#92](https://github.com/redox-rpi/redox-rpi/issues/92), [#205](https://github.com/redox-rpi/redox-rpi/issues/205), [#207](https://github.com/redox-rpi/redox-rpi/issues/207), [#217](https://github.com/redox-rpi/redox-rpi/issues/217) (still seen: see quality.md)"
   },
   {
    "key": "pr_lead_time",
    "name": "PR lead time (median / p90)",
-   "value": "15.0 h / 145.8 h over 262 PRs",
+   "value": "14.4 h / 132.3 h over 290 PRs",
    "ok": true,
    "details": ""
   },
@@ -762,16 +824,16 @@
   {
    "key": "code_prs_without_pi_test",
    "name": "Code PRs without a Pi test named (P2)",
-   "value": "21",
+   "value": "35",
    "ok": false,
-   "details": "[#124](https://github.com/redox-rpi/redox-rpi/pull/124), [#192](https://github.com/redox-rpi/redox-rpi/pull/192), [#166](https://github.com/redox-rpi/redox-rpi/pull/166), [#195](https://github.com/redox-rpi/redox-rpi/pull/195), [#161](https://github.com/redox-rpi/redox-rpi/pull/161), [#417](https://github.com/redox-rpi/redox-rpi/pull/417), [#402](https://github.com/redox-rpi/redox-rpi/pull/402), [#437](https://github.com/redox-rpi/redox-rpi/pull/437), [#164](https://github.com/redox-rpi/redox-rpi/pull/164), [#457](https://github.com/redox-rpi/redox-rpi/pull/457), [#559](https://github.com/redox-rpi/redox-rpi/pull/559), [#590](https://github.com/redox-rpi/redox-rpi/pull/590) and 9 more"
+   "details": "[#124](https://github.com/redox-rpi/redox-rpi/pull/124), [#192](https://github.com/redox-rpi/redox-rpi/pull/192), [#166](https://github.com/redox-rpi/redox-rpi/pull/166), [#195](https://github.com/redox-rpi/redox-rpi/pull/195), [#161](https://github.com/redox-rpi/redox-rpi/pull/161), [#417](https://github.com/redox-rpi/redox-rpi/pull/417), [#402](https://github.com/redox-rpi/redox-rpi/pull/402), [#437](https://github.com/redox-rpi/redox-rpi/pull/437), [#164](https://github.com/redox-rpi/redox-rpi/pull/164), [#457](https://github.com/redox-rpi/redox-rpi/pull/457), [#559](https://github.com/redox-rpi/redox-rpi/pull/559), [#590](https://github.com/redox-rpi/redox-rpi/pull/590) and 23 more"
   },
   {
    "key": "stale_ci_merges",
    "name": "Stale-CI merges (P3)",
-   "value": "93",
+   "value": "108",
    "ok": false,
-   "details": "last commit older than an earlier merge in the same patch directory: [#59](https://github.com/redox-rpi/redox-rpi/pull/59), [#87](https://github.com/redox-rpi/redox-rpi/pull/87), [#122](https://github.com/redox-rpi/redox-rpi/pull/122), [#68](https://github.com/redox-rpi/redox-rpi/pull/68), [#61](https://github.com/redox-rpi/redox-rpi/pull/61), [#62](https://github.com/redox-rpi/redox-rpi/pull/62), [#66](https://github.com/redox-rpi/redox-rpi/pull/66), [#69](https://github.com/redox-rpi/redox-rpi/pull/69) and 85 more"
+   "details": "last commit older than an earlier merge in the same patch directory: [#59](https://github.com/redox-rpi/redox-rpi/pull/59), [#87](https://github.com/redox-rpi/redox-rpi/pull/87), [#122](https://github.com/redox-rpi/redox-rpi/pull/122), [#68](https://github.com/redox-rpi/redox-rpi/pull/68), [#61](https://github.com/redox-rpi/redox-rpi/pull/61), [#62](https://github.com/redox-rpi/redox-rpi/pull/62), [#66](https://github.com/redox-rpi/redox-rpi/pull/66), [#69](https://github.com/redox-rpi/redox-rpi/pull/69) and 100 more"
   },
   {
    "key": "direct_patch_commits",
@@ -790,28 +852,28 @@
   {
    "key": "nightly_pass_rate",
    "name": "Nightly pass rate",
-   "value": "88 % (21 pass, 3 fail)",
+   "value": "84 % (21 pass, 4 fail)",
    "ok": false,
    "details": ""
   },
   {
    "key": "pi_pass_rate",
    "name": "Pi pass rate",
-   "value": "62 % (327 pass, 67 fail, 134 other)",
+   "value": "62 % (345 pass, 72 fail, 137 other)",
    "ok": true,
    "details": "\"other\": partly, finding, diagnosis"
   },
   {
    "key": "flaky_rate",
    "name": "Flaky rate",
-   "value": "7 % (37 of 528 rows)",
+   "value": "7 % (37 of 554 rows)",
    "ok": true,
    "details": "rows that name a tracked bug"
   },
   {
    "key": "patches_with_issue",
    "name": "Patches with an issue (P8)",
-   "value": "35 % (39 of 112)",
+   "value": "37 % (45 of 123)",
    "ok": true,
    "details": ""
   },
@@ -825,14 +887,14 @@
   {
    "key": "host_tests",
    "name": "Host tests (Rust crates in tools/)",
-   "value": "11 of 27 crates, 61 tests",
+   "value": "11 of 29 crates, 61 tests",
    "ok": true,
    "details": "assistant 13, audiotop 6, cputop 1, gamepad-test 4, mdnsd 4, netdiag 2, pkg-persist 4, socdump 19, timerd 4, timesync 2, welcome 2; line coverage not measured yet"
   },
   {
    "key": "pi_rows_per_topic",
    "name": "Pi rows per topic",
-   "value": "network 72, usb 49, boot 47, stability 45, graphics 37, ci 34, firmware 29, relibc 28, sdcard 18, audio 17, boards 16, smarthome 9, quality 7, tcc 6, time 6, assistant 5, verification 3, gpio 2, zero2w 2",
+   "value": "network 73, usb 51, boot 49, stability 47, graphics 44, ci 34, relibc 30, firmware 29, sdcard 19, audio 17, boards 17, smarthome 9, quality 7, time 7, tcc 6, assistant 5, verification 3, gpio 2, zero2w 2",
    "ok": true,
    "details": "rows naming an issue of the topic (heuristic); no rows: none"
   },
@@ -858,16 +920,30 @@
    "details": "3B+: Test 473 (2026-11-17, SD at 50 MHz (PR #45)), before 13.2 s, best 11.3 s; Zero 2 W: Test 505 (2026-11-18, card, SD at 50 MHz (initramfs 22.6 MB/s)), before 31.8 s, best 21.4 s; goal: down ([rof #44](https://github.com/redox-rpi/rpi-open-firmware/issues/44), [how measured](https://github.com/redox-rpi/rpi-open-firmware/blob/redox-rpi/docs/boot-time.md))"
   },
   {
+   "key": "panic_static",
+   "name": "Panic paths in the kernel (aarch64 and generic)",
+   "value": "todo! 2, unimplemented! 1, expect(\"TODO 4, panic! 30, unreachable! 16, unwrap 123, expect 111",
+   "ok": true,
+   "details": "lines our kernel patches add: expect 2; lines our base patches add: panic! 1, unreachable! 5, unwrap 48, expect 74; check: todo!, unimplemented! or TODO expects rise, or a panic path in our kernel patches"
+  },
+  {
+   "key": "panic_runtime",
+   "name": "Kernel panics in the serial logs",
+   "value": "2",
+   "ok": false,
+   "details": "zero2w 2026-11-24: 2 (v0.6.0-dev-135-g0897391f+x6a9f); since 2026-10-27, logs read: 3b+ 16, pi400 15, zero2w 4; check: any panic, each needs an issue"
+  },
+  {
    "key": "code_lines",
    "name": "Code lines (no blank or comment lines)",
-   "value": "scripts: 8804; tools: 9676",
+   "value": "scripts: 9156; tools: 11186",
    "ok": true,
    "details": "growth shows here; [rules](https://github.com/redox-rpi/redox-rpi/blob/main/docs/process/coding-standards.md#code-rules)"
   },
   {
    "key": "code_duplicated",
    "name": "Duplicated code (6-line blocks)",
-   "value": "scripts: 2.8 %; tools: 0.5 %",
+   "value": "scripts: 2.6 %; tools: 3.0 %",
    "ok": true,
    "details": "check above 3 % in an area"
   },
@@ -876,12 +952,12 @@
    "name": "Files over the size limit (600 Rust/C, 400 script)",
    "value": "8",
    "ok": false,
-   "details": "scripts/build-image.sh 600, scripts/quality-kpis.py 572, scripts/regression-set.py 543, scripts/pi-test.py 529, scripts/chaos-host.py 463, tools/chaos/chaos.c 1001, tools/socdump/src/main.rs 679, tools/log-triage/log-triage.py 426"
+   "details": "scripts/build-image.sh 642, scripts/quality-kpis.py 616, scripts/regression-set.py 610, scripts/pi-test.py 568, scripts/chaos-host.py 463, tools/chaos/chaos.c 1001, tools/socdump/src/main.rs 679, tools/log-triage/log-triage.py 426"
   },
   {
    "key": "code_long_functions",
    "name": "Functions over 60 lines",
-   "value": "scripts: 15; tools: 17",
+   "value": "scripts: 15; tools: 23",
    "ok": true,
    "details": "target: down"
   },
@@ -902,7 +978,7 @@
   {
    "key": "code_unsafe",
    "name": "`unsafe` in Rust",
-   "value": "scripts: 0; tools: 105",
+   "value": "scripts: 0; tools: 120",
    "ok": true,
    "details": "each needs a SAFETY line; see the clippy row for undocumented ones"
   }
