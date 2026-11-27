@@ -1,0 +1,88 @@
+start 21:38:12
+C1-1 staged build_id = "v0.7.0-dev-84-gc89fa8b1+xa3ca" 21:38:12
+power cycle 21:38:24
+found after 36 s
+C1-1 up 21:39:06
+C1-1 banner: redox-rpi v0.7.0-dev-84-gc89fa8b1+xa3ca (netboot, 2026-11-27T10:14:50Z) | startup-sound: played 21:39:26
+C1-1 t683 rc=0: RESULT chime fresh: 9.8 s RESULT chime after desktop: 2.4 s  21:40:26
+C1-1 console: call_fdread=36 DEBUG=272 WARN=9 ERROR=3 | panic=0 relibc=0 exc=0 21:40:29
+P-1 staged build_id = "v0.7.0-dev-90-gd7163a5e+xa3ca" 21:40:29
+power cycle 21:40:42
+found after 36 s
+P-1 up 21:41:22
+P-1 banner: redox-rpi v0.7.0-dev-90-gd7163a5e+xa3ca (netboot, 2026-11-27T20:22:27Z) | startup-sound: played 21:41:42
+P-1 t683 rc=0: RESULT chime fresh: 6.4 s RESULT chime after desktop: NOT DONE after 130 s  21:45:23
+P-1 console: call_fdread=36 DEBUG=272 WARN=9 ERROR=3 | panic=0 relibc=0 exc=0 21:45:26
+R-1 staged build_id = "v0.7.0-dev-91-gae565d0c+xa3ca" 21:45:26
+power cycle 21:45:39
+found after 36 s
+R-1 up 21:46:20
+R-1 banner: redox-rpi v0.7.0-dev-91-gae565d0c+xa3ca (netboot, 2026-11-27T21:01:11Z) | startup-sound: played 21:46:40
+R-1 t683 rc=0: RESULT chime fresh: 6.5 s RESULT chime after desktop: 2.0 s  21:47:37
+R-1 console: call_fdread=36 DEBUG=272 WARN=8 ERROR=3 | panic=0 relibc=0 exc=0 21:47:40
+REV-1 staged build_id = "v0.7.0-dev-113-g92bdf25c+xa3ca" 21:47:40
+power cycle 21:47:52
+found after 36 s
+REV-1 up 21:48:41
+REV-1 banner: redox-rpi v0.7.0-dev-113-g92bdf25c+xa3ca (netboot, 2026-11-27T20:57:52Z) | startup-sound: played 21:49:01
+REV-1 t683 rc=0: RESULT chime fresh: 3.7 s RESULT chime after desktop: 2.0 s  21:49:56
+REV-1 console: call_fdread=36 DEBUG=272 WARN=8 ERROR=3 | panic=0 relibc=0 exc=0 21:49:59
+C1-2 staged build_id = "v0.7.0-dev-84-gc89fa8b1+xa3ca" 21:49:59
+power cycle 21:50:12
+found after 36 s
+C1-2 up 21:50:53
+C1-2 banner: redox-rpi v0.7.0-dev-84-gc89fa8b1+xa3ca (netboot, 2026-11-27T10:14:50Z) |  21:51:13
+C1-2 t683 rc=0: RESULT chime fresh: 2.0 s RESULT chime after desktop: 2.0 s  21:52:05
+C1-2 console: call_fdread=36 DEBUG=272 WARN=11 ERROR=3 | panic=0 relibc=0 exc=0 21:52:08
+P-2 staged build_id = "v0.7.0-dev-90-gd7163a5e+xa3ca" 21:52:09
+power cycle 21:52:21
+found after 36 s
+P-2 up 21:53:02
+P-2 banner: redox-rpi v0.7.0-dev-90-gd7163a5e+xa3ca (netboot, 2026-11-27T20:22:27Z) | startup-sound: played 21:53:22
+P-2 t683 rc=0: RESULT chime fresh: 6.3 s RESULT chime after desktop: 2.0 s  21:54:20
+P-2 console: call_fdread=36 DEBUG=272 WARN=9 ERROR=3 | panic=0 relibc=0 exc=0 21:54:23
+R-2 staged build_id = "v0.7.0-dev-91-gae565d0c+xa3ca" 21:54:23
+power cycle 21:54:36
+found after 36 s
+R-2 up 21:55:24
+R-2 banner: redox-rpi v0.7.0-dev-91-gae565d0c+xa3ca (netboot, 2026-11-27T21:01:11Z) | startup-sound: played 21:55:44
+R-2 t683 rc=0: RESULT chime fresh: 2.0 s RESULT chime after desktop: 2.0 s  21:56:37
+R-2 console: call_fdread=36 DEBUG=272 WARN=8 ERROR=3 | panic=0 relibc=0 exc=0 21:56:40
+REV-2 staged build_id = "v0.7.0-dev-113-g92bdf25c+xa3ca" 21:56:40
+power cycle 21:56:53
+found after 36 s
+REV-2 up 21:57:33
+REV-2 banner: redox-rpi v0.7.0-dev-113-g92bdf25c+xa3ca (netboot, 2026-11-27T20:57:52Z) | startup-sound: played 21:57:53
+REV-2 t683 rc=0: RESULT chime fresh: 2.0 s RESULT chime after desktop: 2.0 s  21:58:47
+REV-2 console: call_fdread=36 DEBUG=272 WARN=8 ERROR=3 | panic=0 relibc=0 exc=0 21:58:50
+C1-3 staged build_id = "v0.7.0-dev-84-gc89fa8b1+xa3ca" 21:58:50
+power cycle 21:59:02
+found after 36 s
+C1-3 up 21:59:42
+C1-3 banner: redox-rpi v0.7.0-dev-84-gc89fa8b1+xa3ca (netboot, 2026-11-27T10:14:50Z) | startup-sound: played 22:00:02
+C1-3 t683 rc=0: RESULT chime fresh: 2.0 s RESULT chime after desktop: NOT DONE after 130 s  22:03:35
+C1-3 console: call_fdread=36 DEBUG=272 WARN=8 ERROR=3 | panic=0 relibc=0 exc=0 22:03:38
+P-3 staged build_id = "v0.7.0-dev-90-gd7163a5e+xa3ca" 22:03:38
+power cycle 22:03:50
+found after 36 s
+P-3 up 22:04:32
+P-3 banner: redox-rpi v0.7.0-dev-90-gd7163a5e+xa3ca (netboot, 2026-11-27T20:22:27Z) | startup-sound: played 22:04:52
+P-3 t683 rc=0: RESULT chime fresh: 2.0 s RESULT chime after desktop: 2.0 s  22:05:49
+P-3 console: call_fdread=36 DEBUG=272 WARN=8 ERROR=3 | panic=0 relibc=0 exc=0 22:05:52
+R-3 staged build_id = "v0.7.0-dev-91-gae565d0c+xa3ca" 22:05:52
+power cycle 22:06:04
+found after 36 s
+R-3 up 22:06:52
+R-3 banner: redox-rpi v0.7.0-dev-91-gae565d0c+xa3ca (netboot, 2026-11-27T21:01:11Z) | startup-sound: played 22:07:12
+R-3 t683 rc=0: RESULT chime fresh: 2.0 s RESULT chime after desktop: 2.0 s  22:08:00
+R-3 console: call_fdread=36 DEBUG=272 WARN=8 ERROR=3 | panic=0 relibc=0 exc=0 22:08:03
+REV-3 staged build_id = "v0.7.0-dev-113-g92bdf25c+xa3ca" 22:08:04
+power cycle 22:08:16
+found after 36 s
+REV-3 up 22:08:56
+REV-3 banner: redox-rpi v0.7.0-dev-113-g92bdf25c+xa3ca (netboot, 2026-11-27T20:57:52Z) | startup-sound: played 22:09:16
+REV-3 t683 rc=0: RESULT chime fresh: 2.0 s RESULT chime after desktop: 2.0 s  22:10:04
+REV-3 console: call_fdread=36 DEBUG=272 WARN=8 ERROR=3 | panic=0 relibc=0 exc=0 22:10:07
+power cycle 22:10:19
+found after 34 s
+stable up build_id = "v0.7.0-dev-83-g2fb1c217+x27b9" 22:10:58
