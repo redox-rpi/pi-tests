@@ -1,0 +1,26 @@
+start 20:24:38
+staged build_id = "v0.7.0-dev-101-gbcc11daf+xa3ca" 20:24:38
+found after 26 s
+A up 20:25:20
+A1 banner: redox-rpi v0.7.0-dev-101-gbcc11daf+xa3ca (netboot, 2026-11-27T18:49:16Z) | sound 0 | hdmiaudiod bcm2835-hdmiaudiod: HDMI vc4 at 0x3f902000, hotplug no, HDMI mode, pixel clock 148.500 MHz (pllh), sample clock from 163.683 MHz (cprman), N 5644 CTS 148478, info frame sent, DMA channel 0 (DREQ 17),  | usb dwc2d: root port working at start, no core reset 20:25:40
+A2 pitest rc=0: PASS version: v0.7.0-dev-101-gbcc11daf+xa3ca PASS manifest: build ID and libc.so hash match manifest.toml PASS ps: 57 processes (piped) PASS ps-tty: 57 lines straight to the terminal, rc=0 PASS sdcard: write, read back, delete on /scheme/data PASS starts: 0 of 100 failed  20:26:01
+A3 date: Fri Nov 27 21:26:02 CET 2026 Fri Nov 27 20:26:02 UTC 2026 lrwxrwxrwx 1 root root 33 Nov 27 19:52 /etc/localtime -> /usr/share/zoneinfo/Europe/Berlin  | host 20:26:03 20:26:03
+A4-free1: Mem:        734108    144376    589732  20:26:11
+A4-oom1: kernel::memory:ERROR -- OUT OF MEMORY: killing PID 184 NAME /usr/bin/oomtest on CPU ##3 ion: pipeline execution error: process (184) ended by signal SIGKILL  20:31:16
+A4-free2: Mem:        734108    145828    588280  20:31:20
+A5 1 ok 46 s; nocore=1 empty=0 link=1 20:32:11
+A5 2 ok 59 s; nocore=1 empty=0 link=1 20:33:14
+A5 3 ok 69 s; nocore=1 empty=0 link=1 20:34:26
+A5 4 ok 49 s; nocore=1 empty=0 link=1 20:35:19
+A5 5 ok 49 s; nocore=1 empty=0 link=1 20:36:12
+A5 5/5 on the first reset, 0 needed more 20:36:12
+A serial: panic=0 relibc=0 exc=0 stuck=0 oom=1 20:36:12
+staged build_id = "v0.7.0-dev-101-gbcc11daf+x6a9f" 20:36:13
+found after 26 s
+B1 banner: redox-rpi v0.7.0-dev-101-gbcc11daf+x6a9f (release-netboot, 2026-11-27T18:58:46Z) 20:37:20
+B2 nc 2323 rc=1 nc: connect to <lan-ip> port 2323 (tcp) failed: Connection refused  20:37:20
+B2 open TCP ports: [] 20:37:27
+B3: login ok=1 ps-devshd=0 20:37:35
+B serial: panic=0 relibc=0 exc=0 stuck=0 20:37:35
+found after 32 s
+stable up build_id = "v0.7.0-dev-83-g2fb1c217+x27b9" 20:38:15
