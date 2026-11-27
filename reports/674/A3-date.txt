@@ -1,0 +1,6 @@
+### date  (0.3 s)
+Fri Nov 27 11:47:16 CET 2026
+### env TZ=UTC date  (0.5 s)
+Fri Nov 27 10:47:16 UTC 2026
+### ls -l /etc/localtime  (0.3 s)
+lrwxrwxrwx 1 root root 33 Nov 27 11:22 /etc/localtime -> /usr/share/zoneinfo/Europe/Berlin
