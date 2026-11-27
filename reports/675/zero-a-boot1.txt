@@ -1,0 +1,22 @@
+dwc2d: controller at 0x3f980000, core id 0x4f54280a
+dwc2d: at start HPRT0 0x400 PCGCCTL 0x0
+dwc2d: host mode, 8 channels
+dwc2d: device on root port, High speed
+dwc2d: address 1: 05e3:0610, USB 2.00, class 0x09, High speed
+dwc2d:   interface 0 alt 0: class 0x09 subclass 0x00 protocol 0x01
+dwc2d:     endpoint 0x81: interrupt max packet 1
+dwc2d:   interface 0 alt 1: class 0x09 subclass 0x00 protocol 0x02
+dwc2d:     endpoint 0x81: interrupt max packet 1
+dwc2d: hub at address 1: 4 ports, power switching ganged
+dwc2d: hub 1 port 1: device connected
+dwc2d:   address 2: 04d9:0006, USB 2.00, class 0x00, Low speed
+dwc2d:     interface 0 alt 0: class 0x03 subclass 0x01 protocol 0x01
+dwc2d:       endpoint 0x81: interrupt max packet 8
+dwc2d:     interface 1 alt 0: class 0x03 subclass 0x00 protocol 0x00
+dwc2d:       endpoint 0x82: interrupt max packet 5
+dwc2d: 2 device(s) enumerated
+dwc2d: keyboard at address 2
+dwc2d: devices ready after 1554 ms
+dwc2d: network address <mac>
+dwc2d: interrupt /scheme/irq/phandle-1/1,9
+redox-rpi v0.7.0-dev-95-g7f4dd1e1+x6a9f (direct, 2026-11-27T13:28:14Z)

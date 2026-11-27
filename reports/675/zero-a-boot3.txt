@@ -1,0 +1,10 @@
+dwc2d: controller at 0x3f980000, core id 0x4f54280a
+dwc2d: at start HPRT0 0x0 PCGCCTL 0x0
+dwc2d: host mode, 8 channels
+dwc2d: root port empty: Timeout("device connect"), HPRT0 0x1000 GUSBCFG 0x20401400 GOTGCTL 0x1c0000 PCGCCTL 0x0 GINTSTS 0x54008829; port reset (1/2)
+dwc2d: root port empty: Timeout("device connect"), HPRT0 0x1000 GUSBCFG 0x20401400 GOTGCTL 0x1c0000 PCGCCTL 0x0 GINTSTS 0x54008829; port power off and on (2/2)
+dwc2d: nothing on the root port, HPRT0 0x1000 GUSBCFG 0x20401400 GOTGCTL 0x1c0000 PCGCCTL 0x0 GINTSTS 0x54008829
+dwc2d: devices ready after 7678 ms
+dwc2d: network address <mac>
+dwc2d: interrupt /scheme/irq/phandle-1/1,9
+redox-rpi v0.7.0-dev-95-g7f4dd1e1+x6a9f (direct, 2026-11-27T13:28:14Z)
