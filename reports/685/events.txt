@@ -1,0 +1,32 @@
+start 20:44:10
+P staged build_id = "v0.7.0-dev-90-gd7163a5e+xa3ca" 20:44:10
+power cycle 20:44:22
+found after 37 s
+P up 20:45:03
+P banner: redox-rpi v0.7.0-dev-90-gd7163a5e+xa3ca (netboot, 2026-11-27T20:22:27Z) | startup-sound: played 20:45:23
+P t683 rc=0: RESULT chime fresh: 2.0 s RESULT chime after desktop: 2.0 s  20:46:15
+P console: call_fdread=36 DEBUG=272 WARN=10 ERROR=3 | panic=0 relibc=0 exc=0 20:46:18
+Q staged build_id = "v0.7.0-dev-93-g67ba9bee+xa3ca" 20:46:18
+power cycle 20:46:30
+found after 37 s
+Q up 20:47:11
+Q banner: redox-rpi v0.7.0-dev-93-g67ba9bee+xa3ca (netboot, 2026-11-27T20:30:09Z) | startup-sound: played 20:47:31
+Q t683 rc=0: RESULT chime fresh: 2.0 s RESULT chime after desktop: 2.0 s  20:48:19
+Q console: call_fdread=36 DEBUG=272 WARN=8 ERROR=3 | panic=0 relibc=0 exc=0 20:48:22
+X1 staged build_id = "v0.7.0-dev-85-g53550a40+xa3ca" 20:48:22
+power cycle 20:48:34
+found after 36 s
+X1 up 20:49:15
+X1 banner: redox-rpi v0.7.0-dev-85-g53550a40+xa3ca (netboot, 2026-11-27T20:23:12Z) | startup-sound: played 20:49:35
+X1 t683 rc=0: RESULT chime fresh: 7.9 s RESULT chime after desktop: 2.0 s  20:50:33
+X1 console: call_fdread=36 DEBUG=272 WARN=8 ERROR=3 | panic=0 relibc=0 exc=0 20:50:36
+X2 staged build_id = "v0.7.0-dev-96-g67d78cb1+xa3ca" 20:50:36
+power cycle 20:50:49
+found after 36 s
+X2 up 20:51:30
+X2 banner: redox-rpi v0.7.0-dev-96-g67d78cb1+xa3ca (netboot, 2026-11-27T20:30:08Z) | startup-sound: played 20:51:50
+X2 t683 rc=0: RESULT chime fresh: 2.0 s RESULT chime after desktop: 5.5 s  20:52:47
+X2 console: call_fdread=36 DEBUG=272 WARN=8 ERROR=3 | panic=0 relibc=0 exc=0 20:52:50
+power cycle 20:53:02
+found after 34 s
+stable up build_id = "v0.7.0-dev-83-g2fb1c217+x27b9" 20:53:41
