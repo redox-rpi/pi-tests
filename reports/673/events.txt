@@ -1,0 +1,10 @@
+start 13:18:24
+staged build_id = "v0.7.0-dev-90-g4a0023be+xe16d" 13:18:24
+found after 24 s
+up 13:19:04
+banner: redox-rpi v0.7.0-dev-90-g4a0023be+xe16d (netboot, 2026-11-27T10:24:09Z); DHCP lines: 1 13:19:19
+1 pitest rc=0: PASS version: v0.7.0-dev-90-g4a0023be+xe16d PASS manifest: build ID and libc.so hash match manifest.toml PASS ps: 52 processes (piped) PASS ps-tty: 52 lines straight to the terminal, rc=0 PASS sdcard: write, read back, delete on /scheme/data PASS starts: 0 of 100 failed  13:19:36
+2 script rc=0: serverfs Pi test: pass 13:19:46
+serial: panic 0; RELIBC PANIC 0; UNHANDLED 0 13:19:46
+found after 24 s
+stable up build_id = "v0.7.0-dev-83-g2fb1c217+x27b9" 13:20:25

@@ -1,0 +1,60 @@
+### date -u  (0.4 s)
+Thu Jan  1 00:01:05 UTC 1970
+### printf 'sfuser:%s\n' <password> > /tmp/sfauth  (0.4 s)
+
+### printf '%s\n' '-----BEGIN CERTIFICATE-----' 'MIIBiTCCAS+gAwIBAgIUMVGmZpAcfsCgRF8x+dR3oePRR2QwCgYIKoZIzj0EAwIw' 'GTEXMBUGA1UEAwwOc2VydmVyZnMtcGktY2EwIBcNNzAwMTAxMDAwMDAwWhgPMjA5' 'OTEyMzEwMDAwMDBaMBkxFzAVBgNVBAMMDnNlcnZlcmZzLXBpLWNhMFkwEwYHKoZI' 'zj0CAQYIKoZIzj0DAQcDQgAEwDZri/pVL+YS5mx+m0ZHyloauWhPJ0yX5FG2D+d7' 'lg/nOEtii+UaswvDzFRPLJLjPLwMZwHSrZuInKuiTIM9paNTMFEwHQYDVR0OBBYE' 'FCutytOYF5jdbTzEbvbuQJpNGf57MB8GA1UdIwQYMBaAFCutytOYF5jdbTzEbvbu' 'QJpNGf57MA8GA1UdEwEB/wQFMAMBAf8wCgYIKoZIzj0EAwIDSAAwRQIgf1oto23D' 'tuSI3EHt+SM1/5qWWA9q8siVyrKiIjB3IiwCIQDKQmUA49F7O93eG/TuVTEcsTUp' 'O/JeaSiNqf1EJMEezw==' '-----END CERTIFICATE-----' > /tmp/ca.pem  (0.6 s)
+
+### serverfs -d --auth /tmp/sfauth --ca /tmp/ca.pem https://<build host>:35555/ server; echo SF-START $?  (0.3 s)
+serverfs: https://<build host>:35555/: 5 entries at the top
+serverfs: serving /scheme/server (read-only)
+SF-START 0
+### ls -l /scheme/server  (0.4 s)
+total 3072
+-r--r--r-- 1 root root      18 Nov 27  2026 'a b '$'\303\244''.txt'
+-r--r--r-- 1 root root 3145728 Nov 27  2026  big.bin
+dr-xr-xr-x 1 root root       0 Nov 27  2026  empty
+-r--r--r-- 1 root root      22 Nov 27  2026  hello.txt
+dr-xr-xr-x 1 root root       0 Nov 27  2026  sub
+### echo LS-COUNT $(ls /scheme/server | wc -l)  (0.5 s)
+LS-COUNT 5
+### cat /scheme/server/hello.txt  (0.4 s)
+hello from the server
+### cat /scheme/server/sub/nested.txt  (0.4 s)
+nested file
+### cat '/scheme/server/a b ä.txt'  (0.4 s)
+spaces and umlaut
+### echo LS-EMPTY $(ls /scheme/server/empty | wc -l)  (0.5 s)
+LS-EMPTY 0
+### sha256sum /scheme/server/big.bin  (0.8 s)
+bbb2ebf5e47388c455e200c132db69324621a7a268c76f42ee4580c53b9f7b47  /scheme/server/big.bin
+### cat /scheme/server/missing.txt; echo RC-MISSING $?  (0.4 s)
+cat: /scheme/server/missing.txt: No such file or directory
+RC-MISSING 1
+### touch /scheme/server/new.txt; echo RC-WRITE $?  (0.4 s)
+touch: cannot touch '/scheme/server/new.txt': Read-only file system
+RC-WRITE 1
+### printf 'sfuser:wrong\n' > /tmp/sfbad  (0.4 s)
+
+### serverfs -d --auth /tmp/sfbad --ca /tmp/ca.pem https://<build host>:35555/ server2; ls /scheme/server2; echo RC-BADAUTH $?  (0.4 s)
+serverfs: PROPFIND /: status 401 (login refused)
+serverfs: https://<build host>:35555/: first listing failed (Permission denied); serving anyway
+serverfs: serving /scheme/server2 (read-only)
+serverfs: PROPFIND /: status 401 (login refused)
+ls: general io error: Permission denied (os error 13)
+RC-BADAUTH 1
+### serverfs -d --auth /tmp/sfauth https://<build host>:35555/ server3; ls /scheme/server3; echo RC-NOCA $?  (0.5 s)
+serverfs: connection failed: TLS: invalid peer certificate: UnknownIssuer (give the server's CA certificate with --ca)
+serverfs: https://<build host>:35555/: first listing failed (I/O error); serving anyway
+serverfs: serving /scheme/server3 (read-only)
+serverfs: connection failed: TLS: invalid peer certificate: UnknownIssuer (give the server's CA certificate with --ca)
+ls: general io error: I/O error (os error 5)
+RC-NOCA 1
+### serverfs -d --ca /tmp/ca.pem https://<build host>:1/ server4; ls /scheme/server4; echo RC-DOWN $?  (0.4 s)
+serverfs: connection failed: Transport endpoint is not connected (os error 107)
+serverfs: https://<build host>:1/: first listing failed (No route to host); serving anyway
+serverfs: serving /scheme/server4 (read-only)
+serverfs: connection failed: Transport endpoint is not connected (os error 107)
+ls: general io error: No route to host (os error 113)
+RC-DOWN 1
+### rm /tmp/sfauth /tmp/sfbad /tmp/ca.pem; echo CLEANED $?  (0.4 s)
+CLEANED 0

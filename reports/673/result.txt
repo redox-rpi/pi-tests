@@ -1,0 +1,15 @@
+pass  starts and registers
+pass  lists 5 entries
+pass  reads a file
+pass  reads in a subdirectory
+pass  name with space, umlaut
+pass  empty directory
+pass  3 MiB file intact
+pass  missing file fails
+pass  write is refused
+pass  wrong password refused
+pass  unknown CA refused
+pass  server not there fails
+pass  test files removed on the Pi
+server: 5 PROPFIND, 4 GET, 0 other
+serverfs Pi test: pass

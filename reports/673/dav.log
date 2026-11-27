@@ -1,0 +1,9 @@
+<lan-ip> - - [27/Nov/2026 13:19:39] "PROPFIND / HTTP/1.1" 207 -
+<lan-ip> - - [27/Nov/2026 13:19:41] "GET /hello.txt HTTP/1.1" 200 -
+<lan-ip> - - [27/Nov/2026 13:19:41] "PROPFIND /sub/nested.txt HTTP/1.1" 207 -
+<lan-ip> - - [27/Nov/2026 13:19:41] "GET /sub/nested.txt HTTP/1.1" 200 -
+<lan-ip> - - [27/Nov/2026 13:19:41] "GET /a%20b%20%C3%A4.txt HTTP/1.1" 200 -
+<lan-ip> - - [27/Nov/2026 13:19:42] "PROPFIND /empty/ HTTP/1.1" 207 -
+<lan-ip> - - [27/Nov/2026 13:19:42] "GET /big.bin HTTP/1.1" 200 -
+<lan-ip> - - [27/Nov/2026 13:19:44] "PROPFIND / HTTP/1.1" 401 -
+<lan-ip> - - [27/Nov/2026 13:19:44] "PROPFIND / HTTP/1.1" 401 -
