@@ -1,0 +1,12 @@
+start 20:39:39
+staged build_id = "v0.6.0-dev-260-gb242447c+xce20" 20:39:39
+found after 24 s
+up 20:40:19
+banner: redox-rpi v0.6.0-dev-260-gb242447c+xce20 (netboot, 2026-11-27T20:26:34Z) 20:40:34
+1 pitest rc=0: PASS version: v0.6.0-dev-260-gb242447c+xce20 PASS manifest: build ID and libc.so hash match manifest.toml PASS ps: 53 processes (piped) PASS ps-tty: 53 lines straight to the terminal, rc=0 PASS sdcard: write, read back, delete on /scheme/data PASS starts: 0 of 100 failed  20:40:49
+2 regr rc=0: PASS bugreport: bugreport-19700101-000104.txt, 22127 bytes, board Raspberry Pi 3 Model B Plus Rev 1.3; all sections, no home file, MACs cut 1 pass, 0 fail, 0 skip in 5 s  20:40:54
+3 bugreport: Report written to /home/root/bugreport-19700101-000108.txt  20:40:56
+4 file /home/root/bugreport-19700101-000108.txt: eth0: mac b8-27-eb-xx-xx-xx link 1 addr <lan-ip>/24  RM 0 20:40:58
+serial: panic=0 relibc=0 exc=0 20:40:58
+found after 24 s
+stable up build_id = "v0.7.0-dev-83-g2fb1c217+x27b9" 20:41:38

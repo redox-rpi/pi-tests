@@ -1,0 +1,2 @@
+PASS bugreport: bugreport-19700101-000104.txt, 22127 bytes, board Raspberry Pi 3 Model B Plus Rev 1.3; all sections, no home file, MACs cut
+1 pass, 0 fail, 0 skip in 5 s

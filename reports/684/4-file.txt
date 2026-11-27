@@ -1,0 +1,15 @@
+### grep -a -A10 '^== Network' /home/root/bugreport-19700101-000108.txt  (0.3 s)
+== Network
+eth0: mac b8-27-eb-xx-xx-xx link 1 addr <lan-ip>/24
+routes:
+default via <lan-ip> dev eth0 src <lan-ip>
+224.0.0.0/4  dev eth0 src <lan-ip>
+127.0.0.0/8  dev loopback src 127.0.0.1
+<lan-ip>/24  dev eth0 src <lan-ip>
+name server: <lan-ip>
+drivers: network.usb_lan78xx
+== Processes
+### grep -a -c 'b8-27-eb' /home/root/bugreport-19700101-000108.txt  (0.3 s)
+1
+### rm /home/root/bugreport-19700101-000108.txt; echo RM $?  (0.4 s)
+RM 0
