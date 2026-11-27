@@ -1,0 +1,5 @@
+start 13:22:45
+staged ~/redox-rpi-graphics/keep/ut11-netboot (build_id = "v0.7.0-dev-68-g03fcd083+x0aa4") 13:22:45
+boot: login, U-Boot retries 0, banner: redox-rpi v0.7.0-dev-68-g03fcd083+x0aa4 (netboot, 2026-11-25T18:32:20Z) 13:23:38
+boot: login; redox-rpi v0.7.0-dev-68-g03fcd083+x0aa4 (netboot, 2026-11-25T18:32:20Z); EDID: rpi-fbd: EDID 256 bytes, monitor HP 27 FHD; usb-trace lines so far 1 13:23:38
+user: all rounds and done typed in full, mouse moved each time 13:29:44
