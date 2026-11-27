@@ -1,0 +1,46 @@
+start 22:37:02
+V6-1 staged build_id = "v0.6.0+x2f32" 22:37:02
+power cycle 22:37:14
+found after 40 s
+V6-1 up 22:37:55
+V6-1 banner: redox-rpi v0.6.0+x2f32 (netboot, 2026-11-27T19:44:43Z) | startup-sound: played 22:38:15
+V6-1 t683 rc=0: RESULT chime fresh 1: 2.0 s RESULT chime fresh 2: 2.0 s RESULT chime fresh 3: 2.0 s RESULT chime fresh 4: 2.0 s RESULT chime fresh 5: 2.0 s RESULT chime after desktop: 2.0 s  22:39:14
+V6-1 console: call_fdread=36 DEBUG=272 WARN=7 ERROR=3 | panic=0 relibc=0 exc=0 22:39:17
+V6-2 staged build_id = "v0.6.0+x2f32" 22:39:17
+power cycle 22:39:29
+found after 40 s
+V6-2 up 22:40:10
+V6-2 banner: redox-rpi v0.6.0+x2f32 (netboot, 2026-11-27T19:44:43Z) | startup-sound: played 22:40:30
+V6-2 t683 rc=0: RESULT chime fresh 1: 2.0 s RESULT chime fresh 2: 2.0 s RESULT chime fresh 3: 2.0 s RESULT chime fresh 4: 2.0 s RESULT chime fresh 5: 2.0 s RESULT chime after desktop: 2.0 s  22:41:28
+V6-2 console: call_fdread=36 DEBUG=272 WARN=7 ERROR=3 | panic=0 relibc=0 exc=0 22:41:31
+V6-3 staged build_id = "v0.6.0+x2f32" 22:41:31
+power cycle 22:41:43
+found after 40 s
+V6-3 up 22:42:24
+V6-3 banner: redox-rpi v0.6.0+x2f32 (netboot, 2026-11-27T19:44:43Z) | startup-sound: played 22:42:44
+V6-3 t683 rc=0: RESULT chime fresh 1: 2.0 s RESULT chime fresh 2: 2.0 s RESULT chime fresh 3: 2.0 s RESULT chime fresh 4: 2.0 s RESULT chime fresh 5: 2.0 s RESULT chime after desktop: 2.0 s  22:43:42
+V6-3 console: call_fdread=36 DEBUG=272 WARN=8 ERROR=3 | panic=0 relibc=0 exc=0 22:43:45
+V6-4 staged build_id = "v0.6.0+x2f32" 22:43:46
+power cycle 22:43:58
+found after 40 s
+V6-4 up 22:44:39
+V6-4 banner: redox-rpi v0.6.0+x2f32 (netboot, 2026-11-27T19:44:43Z) | startup-sound: played 22:44:59
+V6-4 t683 rc=0: RESULT chime fresh 1: 2.0 s RESULT chime fresh 2: 2.0 s RESULT chime fresh 3: 2.0 s RESULT chime fresh 4: 2.0 s RESULT chime fresh 5: 2.0 s RESULT chime after desktop: 2.0 s  22:46:01
+V6-4 console: call_fdread=36 DEBUG=272 WARN=7 ERROR=3 | panic=0 relibc=0 exc=0 22:46:04
+V6-5 staged build_id = "v0.6.0+x2f32" 22:46:04
+power cycle 22:46:16
+found after 41 s
+V6-5 up 22:46:58
+V6-5 banner: redox-rpi v0.6.0+x2f32 (netboot, 2026-11-27T19:44:43Z) | startup-sound: played 22:47:18
+V6-5 t683 rc=0: RESULT chime fresh 1: 2.0 s RESULT chime fresh 2: 2.0 s RESULT chime fresh 3: 2.0 s RESULT chime fresh 4: 2.0 s RESULT chime fresh 5: 2.0 s RESULT chime after desktop: 2.0 s  22:48:25
+V6-5 console: call_fdread=36 DEBUG=272 WARN=8 ERROR=3 | panic=0 relibc=0 exc=0 22:48:28
+V6-6 staged build_id = "v0.6.0+x2f32" 22:48:28
+power cycle 22:48:40
+found after 40 s
+V6-6 up 22:49:22
+V6-6 banner: redox-rpi v0.6.0+x2f32 (netboot, 2026-11-27T19:44:43Z) | startup-sound: played 22:49:42
+V6-6 t683 rc=0: RESULT chime fresh 1: 2.0 s RESULT chime fresh 2: 2.0 s RESULT chime fresh 3: 2.0 s RESULT chime fresh 4: 2.0 s RESULT chime fresh 5: 2.0 s RESULT chime after desktop: 2.0 s  22:50:40
+V6-6 console: call_fdread=36 DEBUG=272 WARN=7 ERROR=3 | panic=0 relibc=0 exc=0 22:50:43
+power cycle 22:50:55
+found after 34 s
+stable up build_id = "v0.7.0-dev-83-g2fb1c217+x27b9" 22:51:33
