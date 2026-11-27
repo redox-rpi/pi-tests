@@ -1,0 +1,27 @@
+Server listening on <lan-ip> port 30905.
+Connection closed by authenticating user <user> <lan-ip> port 49152 [preauth]
+Accepted publickey for <user> from <lan-ip> port 49153 ssh2: ED25519 SHA256:4zHmcogmrxjU6k41QGCIC4n1q/I3XoDqX29IxwXYL48
+Received disconnect from <lan-ip> port 49153:11: disconnected by user
+Disconnected from user <user> <lan-ip> port 49153
+Accepted publickey for <user> from <lan-ip> port 49154 ssh2: ED25519 SHA256:4zHmcogmrxjU6k41QGCIC4n1q/I3XoDqX29IxwXYL48
+Received disconnect from <lan-ip> port 49154:11: disconnected by user
+Disconnected from user <user> <lan-ip> port 49154
+Accepted publickey for <user> from <lan-ip> port 49155 ssh2: ED25519 SHA256:4zHmcogmrxjU6k41QGCIC4n1q/I3XoDqX29IxwXYL48
+Received disconnect from <lan-ip> port 49155:11: disconnected by user
+Disconnected from user <user> <lan-ip> port 49155
+Accepted publickey for <user> from <lan-ip> port 49156 ssh2: ED25519 SHA256:4zHmcogmrxjU6k41QGCIC4n1q/I3XoDqX29IxwXYL48
+Received disconnect from <lan-ip> port 49156:11: disconnected by user
+Disconnected from user <user> <lan-ip> port 49156
+Accepted publickey for <user> from <lan-ip> port 49157 ssh2: ED25519 SHA256:4zHmcogmrxjU6k41QGCIC4n1q/I3XoDqX29IxwXYL48
+Received disconnect from <lan-ip> port 49157:11: disconnected by user
+Disconnected from user <user> <lan-ip> port 49157
+Accepted publickey for <user> from <lan-ip> port 49158 ssh2: ED25519 SHA256:4zHmcogmrxjU6k41QGCIC4n1q/I3XoDqX29IxwXYL48
+Received disconnect from <lan-ip> port 49158:11: disconnected by user
+Disconnected from user <user> <lan-ip> port 49158
+Accepted publickey for <user> from <lan-ip> port 49159 ssh2: ED25519 SHA256:4zHmcogmrxjU6k41QGCIC4n1q/I3XoDqX29IxwXYL48
+Received disconnect from <lan-ip> port 49159:11: disconnected by user
+Disconnected from user <user> <lan-ip> port 49159
+Accepted publickey for <user> from <lan-ip> port 49160 ssh2: ED25519 SHA256:4zHmcogmrxjU6k41QGCIC4n1q/I3XoDqX29IxwXYL48
+Received disconnect from <lan-ip> port 49160:11: disconnected by user
+Disconnected from user <user> <lan-ip> port 49160
+Received signal 15; terminating.

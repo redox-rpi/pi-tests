@@ -1,0 +1,42 @@
+pass  100 test files
+pass  setup 1 prints the key, exit 1
+pass  setup 2: login works
+pass  setup 2 exit 0
+pass  key: other commands refused
+pass  first push
+pass  second push: 1 file
+pass  second push exit 0
+pass  third push exit 0
+pass  20 MiB push exit 0
+pass  status: reachable
+pass  status exit 0
+pass  pull exit 0
+pass  server away: message
+pass  server away: exit 1
+pass  pull: same content
+pass  server: 99 files now
+pass  server: f9 gone
+pass  server: no .cache
+pass  server: big file intact
+pass  server: old f7 and f9 kept
+### homesync setup '<user>@<lan-ip>:30905:/tmp/homesync-pi.XXXX/server'; echo RC-SETUP1 $?  (1.0 s)
+homesync: this Pi's key (add it to ~/.ssh/authorized_keys of <user> on the server):
+homesync: cannot log in to <user>@<lan-ip> port 30905 yet: add the key above, then run setup again
+### homesync setup '<user>@<lan-ip>:30905:/tmp/homesync-pi.XXXX/server'; echo RC-SETUP2 $?  (0.8 s)
+homesync: this Pi's key (add it to ~/.ssh/authorized_keys of <user> on the server):
+homesync: login to <user>@<lan-ip> works, backups go to /tmp/homesync-pi.XXXX/server/current
+### homesync push; echo RC-PUSH1 $?  (2.9 s)
+homesync: pushed 107 files (6554334 bytes) to <user>@<lan-ip>:/tmp/homesync-pi.XXXX/server/current
+### homesync push; echo RC-PUSH2 $?  (1.2 s)
+homesync: pushed 1 files (65536 bytes) to <user>@<lan-ip>:/tmp/homesync-pi.XXXX/server/current
+### homesync push; echo RC-PUSH3 $?  (1.1 s)
+homesync: pushed 0 files (0 bytes) to <user>@<lan-ip>:/tmp/homesync-pi.XXXX/server/current
+### homesync push; echo RC-PUSH4 $?  (6.7 s)
+homesync: pushed 1 files (20971520 bytes) to <user>@<lan-ip>:/tmp/homesync-pi.XXXX/server/current
+### homesync status; echo RC-STATUS $?  (1.1 s)
+last push: 1970-01-01-000110 ok pushed 1 files (20971520 bytes) to <user>@<lan-ip>:/tmp/homesync-pi.XXXX/server/current
+would change: 0
+### homesync pull data; echo RC-PULL $?  (3.2 s)
+homesync: restored 99 files into /home/root/restore-1970-01-01-000118
+homesync: server <lan-ip> port 1 not reachable, nothing changed
+homesync Pi test: pass

@@ -1,0 +1,10 @@
+start 13:50:16
+staged build_id = "v0.7.0-dev-100-g1977ea28+x11c8" 13:50:16
+found after 24 s
+P up 13:50:57
+banner: redox-rpi v0.7.0-dev-100-g1977ea28+x11c8 (netboot, 2026-11-27T13:12:34Z); sshd lines: experiments: homesync netstack-watch oom-test sshd [INFO sshd@src/platform/redox/mod.rs:986] TODO: madvise(0x1487000, 0x4000, 0x5): not implemented [INFO sshd@src/platform/redox/mod.rs:986] TODO: madv 13:51:07
+script rc=0: homesync Pi test: pass sshd stopped, /tmp/homesync-pi.HNjpBu removed  13:51:52
+serial: panic=0 relibc=0 exc=0 13:51:52
+leftover sshd:  tmp:  13:51:52
+found after 24 s
+stable up build_id = "v0.7.0-dev-83-g2fb1c217+x27b9" 13:52:31
