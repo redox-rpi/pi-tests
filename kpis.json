@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-26T03:30+00:00",
+ "generated": "2026-11-27T03:30+00:00",
  "days": 30,
  "rev": "HEAD",
  "tests_repo": "redox-rpi/pi-tests",
@@ -202,6 +202,7 @@
   27,
   36,
   40,
+  47,
   54,
   55,
   58,
@@ -443,14 +444,14 @@
   }
  ],
  "nightly": {
-  "pass": 21,
+  "pass": 22,
   "fail": 4
  },
  "direct_patch_commits": [],
  "pi_rows": {
   "pass": 345,
   "fail": 72,
-  "other": 137
+  "other": 130
  },
  "sightings": {
   "28": [
@@ -653,10 +654,10 @@
    ],
    "logs_read": {
     "3b+": 16,
-    "pi400": 15,
+    "pi400": 16,
     "zero2w": 4
    },
-   "since": "2026-10-27"
+   "since": "2026-10-28"
   },
   "over_limits": []
  },
@@ -789,9 +790,9 @@
   {
    "key": "stale_in_progress",
    "name": "Stale `in-progress` (14 days)",
-   "value": "13",
+   "value": "14",
    "ok": false,
-   "details": "[#3](https://github.com/redox-rpi/redox-rpi/issues/3), [#15](https://github.com/redox-rpi/redox-rpi/issues/15), [#24](https://github.com/redox-rpi/redox-rpi/issues/24), [#27](https://github.com/redox-rpi/redox-rpi/issues/27), [#36](https://github.com/redox-rpi/redox-rpi/issues/36), [#40](https://github.com/redox-rpi/redox-rpi/issues/40), [#54](https://github.com/redox-rpi/redox-rpi/issues/54), [#55](https://github.com/redox-rpi/redox-rpi/issues/55), [#58](https://github.com/redox-rpi/redox-rpi/issues/58), [#108](https://github.com/redox-rpi/redox-rpi/issues/108), [#196](https://github.com/redox-rpi/redox-rpi/issues/196), [#235](https://github.com/redox-rpi/redox-rpi/issues/235) and 1 more"
+   "details": "[#3](https://github.com/redox-rpi/redox-rpi/issues/3), [#15](https://github.com/redox-rpi/redox-rpi/issues/15), [#24](https://github.com/redox-rpi/redox-rpi/issues/24), [#27](https://github.com/redox-rpi/redox-rpi/issues/27), [#36](https://github.com/redox-rpi/redox-rpi/issues/36), [#40](https://github.com/redox-rpi/redox-rpi/issues/40), [#47](https://github.com/redox-rpi/redox-rpi/issues/47), [#54](https://github.com/redox-rpi/redox-rpi/issues/54), [#55](https://github.com/redox-rpi/redox-rpi/issues/55), [#58](https://github.com/redox-rpi/redox-rpi/issues/58), [#108](https://github.com/redox-rpi/redox-rpi/issues/108), [#196](https://github.com/redox-rpi/redox-rpi/issues/196) and 2 more"
   },
   {
    "key": "reopened",
@@ -852,21 +853,21 @@
   {
    "key": "nightly_pass_rate",
    "name": "Nightly pass rate",
-   "value": "84 % (21 pass, 4 fail)",
+   "value": "85 % (22 pass, 4 fail)",
    "ok": false,
    "details": ""
   },
   {
    "key": "pi_pass_rate",
    "name": "Pi pass rate",
-   "value": "62 % (345 pass, 72 fail, 137 other)",
+   "value": "63 % (345 pass, 72 fail, 130 other)",
    "ok": true,
    "details": "\"other\": partly, finding, diagnosis"
   },
   {
    "key": "flaky_rate",
    "name": "Flaky rate",
-   "value": "7 % (37 of 554 rows)",
+   "value": "7 % (37 of 547 rows)",
    "ok": true,
    "details": "rows that name a tracked bug"
   },
@@ -931,7 +932,7 @@
    "name": "Kernel panics in the serial logs",
    "value": "2",
    "ok": false,
-   "details": "zero2w 2026-11-24: 2 (v0.6.0-dev-135-g0897391f+x6a9f); since 2026-10-27, logs read: 3b+ 16, pi400 15, zero2w 4; check: any panic, each needs an issue"
+   "details": "zero2w 2026-11-24: 2 (v0.6.0-dev-135-g0897391f+x6a9f); since 2026-10-28, logs read: 3b+ 16, pi400 16, zero2w 4; check: any panic, each needs an issue"
   },
   {
    "key": "code_lines",
