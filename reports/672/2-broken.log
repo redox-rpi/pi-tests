@@ -1,0 +1,7 @@
+### echo '[interface.eth0]' > /etc/net/config.toml  (5.0 s)
+
+### echo 'ipv4 = "static"' >> /etc/net/config.toml  (0.3 s)
+
+### dhcpd -v; echo RC $?  (0.2 s)
+dhcpd: /etc/net/config.toml: eth0: ipv4 = "static" needs address = "a.b.c.d/len"
+RC 0

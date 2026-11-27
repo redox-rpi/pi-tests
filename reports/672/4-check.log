@@ -1,0 +1,77 @@
+### cat /tmp/static.log  (0.4 s)
+DHCP: eth0 fixed address <lease>/24
+DHCP: default route via <router> (eth0)
+DHCP: name server 9.9.9.9
+### cat /scheme/netcfg/ifaces/eth0/addr/list  (0.4 s)
+<lease>/24
+### cat /scheme/netcfg/route/list  (0.4 s)
+default via <router> dev eth0 src <lease>
+224.0.0.0/4  dev eth0 src <lease>
+127.0.0.0/8  dev loopback src 127.0.0.1
+<lan-ip>/24  dev eth0 src <lease>
+### cat /scheme/netcfg/resolv/nameserver  (0.4 s)
+9.9.9.9
+### ping -c 3 <router>  (2.3 s)
+PING <router> (<router>) 40(68) bytes of data.
+From <router> icmp_seq=0 time=1.654ms
+From <router> icmp_seq=1 time=0.862ms
+From <router> icmp_seq=2 time=0.88ms
+--- <router> ping statistics ---
+3 packets transmitted, 3 packets received, 0.00% packet loss
+rtt min/avg/max = 0.862/1.132/1.654 ms
+### ps  (0.3 s)
+PID   EUID  EGID  STAT  CPU   AFFINITY   ACTTIME     SCHTIME     PRIVATE SHARED  NAME
+0     0     0     RR+   #0    1          00:00:00.00 00:00:00.00 65.0 KB 0 B     [kmain]
+0     0     0     RR+   #1    2          00:00:00.00 00:00:00.00 65.0 KB 0 B     [kmain]
+0     0     0     RR    #2    4          00:00:00.00 00:00:00.00 65.0 KB 0 B     [kmain]
+0     0     0     RR+   #3    8          00:00:00.00 00:00:00.00 65.0 KB 0 B     [kmain]
+0     0     0     UB    #1    F          00:00:00.02 00:00:00.00 26.6 MB 4.00 KB initfs
+0     0     0     UB    #2    F          00:00:00.39 00:00:00.02 1.37 MB 368 KB  procmgr
+0     0     0     UB    #2    F          00:00:00.26 00:00:00.00 1.37 MB 8.00 KB initnsmgr
+1     0     0     UB    #3    F          00:00:00.17 00:00:00.30 1.86 MB 0 B     /scheme/initfs/bin/init
+2     0     0     UB    #2    F          00:00:00.00 00:00:00.00 3.64 MB 12.0 KB /scheme/initfs/bin/logd
+2     0     0     UB    #2    F          00:00:00.31 00:00:00.00 3.64 MB 12.0 KB /scheme/initfs/bin/logd
+3     0     0     UB    #2    F          00:00:00.00 00:00:00.00 1.62 MB 156 KB  /scheme/initfs/bin/randd
+4     0     0     UB    #0    F          00:00:00.00 00:00:00.02 1.68 MB 0 B     /scheme/initfs/bin/ipcd
+5     0     0     UB    #0    F          00:00:00.00 00:00:00.00 1.55 MB 0 B     /scheme/initfs/bin/zerod
+6     0     0     UB    #2    F          00:00:00.01 00:00:00.00 1.55 MB 560 KB  /scheme/initfs/bin/zerod
+7     0     0     UB    #0    F          00:00:00.00 00:00:00.00 2.77 MB 0 B     /scheme/initfs/bin/ramfs
+8     0     0     UB    #1    F          00:00:00.00 00:00:00.01 5.64 MB 0 B     /scheme/initfs/bin/rpi-firmwared
+8     0     0     US    #3    F          00:00:00.16 00:00:00.16 5.64 MB 0 B     /scheme/initfs/bin/rpi-firmwared
+8     0     0     US    #0    F          00:00:00.00 00:00:00.00 5.64 MB 0 B     /scheme/initfs/bin/rpi-firmwared
+9     0     0     UB    #3    F          00:00:00.00 00:00:00.00 1.67 MB 0 B     /scheme/initfs/bin/inputd
+10    0     0     UB    #2    F          00:00:00.15 00:00:00.01 1.86 MB 4.00 KB /scheme/initfs/bin/lived
+11    0     0     UB    #0    F          00:00:00.00 00:00:00.00 1.55 MB 0 B     /scheme/initfs/bin/bcm2835-gpiod
+12    0     0     UB    #0    F          00:00:00.00 00:00:00.00 1.55 MB 0 B     /scheme/initfs/bin/bcm2835-spid
+13    0     0     UB    #0    F          00:00:00.00 00:00:00.00 1.55 MB 0 B     /scheme/initfs/bin/bcm2835-i2cd
+14    0     0     UB    #0    F          00:00:00.23 00:00:00.02 15.4 MB 0 B     /scheme/initfs/bin/vesad
+15    0     0     UB    #3    F          00:00:00.39 00:00:00.24 1.65 MB 8.00 KB /scheme/initfs/bin/bcm2835-pwmau
+16    0     0     UB    #0    F          00:00:00.52 00:00:00.73 11.6 MB 6.84 MB /scheme/initfs/bin/fbbootlogd
+17    0     0     UB    #0    F          00:00:01.20 00:00:00.64 3.79 MB 4.00 KB /scheme/initfs/bin/dwc2d
+17    0     0     US    #0    F          00:00:00.02 00:00:00.07 3.79 MB 4.00 KB /scheme/initfs/bin/dwc2d
+18    0     0     UB    #2    F          00:00:00.30 00:00:00.07 1.61 MB 4.00 KB /scheme/initfs/bin/bcm2835-sdhos
+21    0     0     UB    #2    F          00:00:11.05 00:00:03.03 34.6 MB 816 KB  /scheme/initfs/bin/redoxfs
+22    0     0     UB    #2    F          00:00:00.26 00:00:00.05 1.55 MB 40.0 KB /usr/bin/ptyd
+25    0     0     UB    #3    F          00:00:00.00 00:00:00.03 5.05 MB 0 B     /usr/bin/sudo
+26    0     0     UB    #0    F          00:00:00.38 00:00:00.45 7.61 MB 24.0 KB /usr/bin/netstack
+26    0     0     US    #0    F          00:00:00.00 00:00:00.00 7.61 MB 24.0 KB /usr/bin/netstack
+26    0     0     US    #0    F          00:00:00.00 00:00:00.00 7.61 MB 24.0 KB /usr/bin/netstack
+27    0     0     UB    #3    F          00:00:00.06 00:00:00.05 6.71 MB 6.85 MB /usr/bin/fbcond
+28    0     0     UB    #0    F          00:00:00.49 00:00:00.44 1.86 MB 0 B     /usr/bin/getty
+30    0     0     UB    #2    F          00:00:00.00 00:00:00.00 15.2 MB 0 B     /usr/bin/devshd
+30    0     0     UB    #2    F          00:00:00.01 00:00:00.04 15.2 MB 0 B     /usr/bin/devshd
+30    0     0     UB    #2    F          00:00:00.00 00:00:00.00 15.2 MB 0 B     /usr/bin/devshd
+30    0     0     UB    #2    F          00:00:00.00 00:00:00.00 15.2 MB 0 B     /usr/bin/devshd
+30    0     0     UB    #0    F          00:00:00.03 00:00:00.06 15.2 MB 0 B     /usr/bin/devshd
+30    0     0     UB    #2    F          00:00:00.00 00:00:00.01 15.2 MB 0 B     /usr/bin/devshd
+32    0     0     UB    #2    F          00:00:00.07 00:00:00.08 3.62 MB 4.00 KB /usr/bin/audiod
+32    0     0     UB    #3    F          00:00:00.32 00:00:00.61 3.62 MB 4.00 KB /usr/bin/audiod
+34    0     0     UB    #2    F          00:00:00.10 00:00:00.25 34.3 MB 12.0 KB /usr/bin/redoxfs
+35    0     0     UB    #3    F          00:00:00.00 00:00:00.06 1.86 MB 0 B     /usr/bin/getty
+37    0     0     UB    #3    F          00:00:00.01 00:00:00.02 5.73 MB 0 B     /usr/bin/login
+40    0     0     UB    #0    F          00:00:00.01 00:00:00.03 5.73 MB 0 B     /usr/bin/login
+203   0     0     UB    #3    F          00:00:00.00 00:00:00.00 7.50 MB 0 B     /usr/bin/ion
+204   0     0     US    #0    F          00:00:00.00 00:00:00.04 1.80 MB 0 B     /usr/bin/dhcpd
+206   0     0     UB    #2    F          00:00:00.28 00:00:00.33 5.66 MB 0 B     /usr/bin/login
+207   0     0     UB    #2    F          00:00:00.09 00:00:00.17 7.50 MB 0 B     /usr/bin/ion
+219   0     0     UR+   #2    F          00:00:00.01 00:00:00.06 4.99 MB 0 B     /usr/bin/ps

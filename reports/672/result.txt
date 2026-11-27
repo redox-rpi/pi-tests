@@ -1,0 +1,17 @@
+pass  lease read (address and router)
+pass  dhcpd running from boot
+pass  broken section: one line
+pass  broken section: exit 0, nothing started
+pass  old dhcpd stopped
+pass  log: fixed address <lease>/24
+pass  log: default route via the router
+pass  log: name server 9.9.9.9
+pass  log: no DHCP request
+pass  address is <lease>/24
+pass  default route via the router
+pass  name server 9.9.9.9
+pass  ping router 3 of 3
+pass  dhcpd running with the file
+pass  devsh answers on the fixed address
+pass  original config back
+static Pi test: pass

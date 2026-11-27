@@ -1,0 +1,8 @@
+### cp /tmp/net-config.orig /etc/net/config.toml  (0.4 s)
+
+### cat /etc/net/config.toml  (0.4 s)
+# How the network starts (docs/network-config.md in redox-rpi).
+# No section for an interface: nothing is started on it.
+[interface.eth0]
+ipv4 = "dhcp"
+ipv6 = "off"
