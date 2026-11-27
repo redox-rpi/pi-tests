@@ -1,0 +1,67 @@
+start 22:11:14
+D1 staged build_id = "v0.7.0-dev-96-gdfe18432+xa3ca" 22:11:14
+power cycle 22:11:26
+found after 37 s
+D1 up 22:12:07
+D1 banner: redox-rpi v0.7.0-dev-96-gdfe18432+xa3ca (netboot, 2026-11-27T21:42:27Z) | startup-sound: played 22:12:27
+D1 t683 rc=0: RESULT chime fresh 1: 2.0 s RESULT chime fresh 2: 2.0 s RESULT chime fresh 3: 2.0 s RESULT chime fresh 4: 2.0 s RESULT chime fresh 5: 2.0 s RESULT chime after desktop: 2.0 s  22:13:29
+D1 console: call_fdread=36 DEBUG=272 WARN=9 ERROR=3 | panic=0 relibc=0 exc=0 22:13:32
+A2 staged build_id = "v0.7.0-dev-95-g7f4dd1e1+xa3ca" 22:13:32
+power cycle 22:13:44
+found after 36 s
+A2 up 22:14:25
+A2 banner: redox-rpi v0.7.0-dev-95-g7f4dd1e1+xa3ca (netboot, 2026-11-27T21:01:06Z) | startup-sound: played 22:14:45
+A2 t683 rc=0: RESULT chime fresh 1: 2.0 s RESULT chime fresh 2: 2.0 s RESULT chime fresh 3: 2.0 s RESULT chime fresh 4: NOT DONE after 130 s RESULT chime fresh 5: 3.0 s RESULT chime after desktop: 2.0 s  22:18:34
+A2 console: call_fdread=36 DEBUG=272 WARN=8 ERROR=3 | panic=0 relibc=0 exc=0 22:18:37
+D3 staged build_id = "v0.7.0-dev-96-gdfe18432+xa3ca" 22:18:37
+power cycle 22:18:49
+found after 36 s
+D3 up 22:19:30
+D3 banner: redox-rpi v0.7.0-dev-96-gdfe18432+xa3ca (netboot, 2026-11-27T21:42:27Z) | startup-sound: played 22:19:51
+D3 t683 rc=0: RESULT chime fresh 1: 2.0 s RESULT chime fresh 2: 2.0 s RESULT chime fresh 3: 2.0 s RESULT chime fresh 4: 2.0 s RESULT chime fresh 5: 2.0 s RESULT chime after desktop: 2.0 s  22:20:52
+D3 console: call_fdread=36 DEBUG=272 WARN=10 ERROR=3 | panic=0 relibc=0 exc=0 22:20:55
+D4 staged build_id = "v0.7.0-dev-96-gdfe18432+xa3ca" 22:20:55
+power cycle 22:21:07
+found after 36 s
+D4 up 22:21:48
+D4 banner: redox-rpi v0.7.0-dev-96-gdfe18432+xa3ca (netboot, 2026-11-27T21:42:27Z) | startup-sound: played 22:22:08
+D4 t683 rc=0: RESULT chime fresh 1: 2.0 s RESULT chime fresh 2: 2.0 s RESULT chime fresh 3: 2.0 s RESULT chime fresh 4: 2.0 s RESULT chime fresh 5: 2.0 s RESULT chime after desktop: 2.0 s  22:23:09
+D4 console: call_fdread=36 DEBUG=272 WARN=8 ERROR=3 | panic=0 relibc=0 exc=0 22:23:12
+A5 staged build_id = "v0.7.0-dev-95-g7f4dd1e1+xa3ca" 22:23:13
+power cycle 22:23:25
+found after 36 s
+A5 up 22:24:06
+A5 banner: redox-rpi v0.7.0-dev-95-g7f4dd1e1+xa3ca (netboot, 2026-11-27T21:01:06Z) | startup-sound: played 22:24:26
+A5 t683 rc=0: RESULT chime fresh 1: 8.3 s RESULT chime fresh 2: 2.0 s RESULT chime fresh 3: 2.0 s RESULT chime fresh 4: 4.1 s RESULT chime fresh 5: 4.4 s RESULT chime after desktop: 2.0 s  22:25:39
+A5 console: call_fdread=36 DEBUG=272 WARN=9 ERROR=3 | panic=0 relibc=0 exc=0 22:25:42
+D6 staged build_id = "v0.7.0-dev-96-gdfe18432+xa3ca" 22:25:42
+power cycle 22:25:54
+found after 36 s
+D6 up 22:26:35
+D6 banner: redox-rpi v0.7.0-dev-96-gdfe18432+xa3ca (netboot, 2026-11-27T21:42:27Z) | startup-sound: played 22:26:55
+D6 t683 rc=0: RESULT chime fresh 1: 2.0 s RESULT chime fresh 2: 2.0 s RESULT chime fresh 3: 2.0 s RESULT chime fresh 4: 2.0 s RESULT chime fresh 5: 2.0 s RESULT chime after desktop: 2.0 s  22:27:57
+D6 console: call_fdread=36 DEBUG=272 WARN=9 ERROR=3 | panic=0 relibc=0 exc=0 22:28:00
+D7 staged build_id = "v0.7.0-dev-96-gdfe18432+xa3ca" 22:28:00
+power cycle 22:28:12
+found after 37 s
+D7 up 22:28:53
+D7 banner: redox-rpi v0.7.0-dev-96-gdfe18432+xa3ca (netboot, 2026-11-27T21:42:27Z) | startup-sound: played 22:29:13
+D7 t683 rc=0: RESULT chime fresh 1: 2.0 s RESULT chime fresh 2: 2.0 s RESULT chime fresh 3: 2.0 s RESULT chime fresh 4: 2.0 s RESULT chime fresh 5: 2.0 s RESULT chime after desktop: 2.0 s  22:30:16
+D7 console: call_fdread=36 DEBUG=272 WARN=9 ERROR=3 | panic=0 relibc=0 exc=0 22:30:19
+A8 staged build_id = "v0.7.0-dev-95-g7f4dd1e1+xa3ca" 22:30:19
+power cycle 22:30:31
+found after 36 s
+A8 up 22:31:12
+A8 banner: redox-rpi v0.7.0-dev-95-g7f4dd1e1+xa3ca (netboot, 2026-11-27T21:01:06Z) | startup-sound: played 22:31:32
+A8 t683 rc=0: RESULT chime fresh 1: 2.0 s RESULT chime fresh 2: 2.0 s RESULT chime fresh 3: 2.0 s RESULT chime fresh 4: 2.0 s RESULT chime fresh 5: 2.0 s RESULT chime after desktop: 2.0 s  22:32:35
+A8 console: call_fdread=36 DEBUG=272 WARN=9 ERROR=3 | panic=0 relibc=0 exc=0 22:32:38
+D9 staged build_id = "v0.7.0-dev-96-gdfe18432+xa3ca" 22:32:38
+power cycle 22:32:51
+found after 36 s
+D9 up 22:33:31
+D9 banner: redox-rpi v0.7.0-dev-96-gdfe18432+xa3ca (netboot, 2026-11-27T21:42:27Z) | startup-sound: played 22:33:51
+D9 t683 rc=0: RESULT chime fresh 1: 2.0 s RESULT chime fresh 2: 2.0 s RESULT chime fresh 3: 2.0 s RESULT chime fresh 4: 2.0 s RESULT chime fresh 5: 2.0 s RESULT chime after desktop: 2.0 s  22:34:53
+D9 console: call_fdread=36 DEBUG=272 WARN=9 ERROR=3 | panic=0 relibc=0 exc=0 22:34:56
+power cycle 22:35:08
+found after 34 s
+stable up build_id = "v0.7.0-dev-83-g2fb1c217+x27b9" 22:35:46
