@@ -1,0 +1,25 @@
+start 20:13:45
+V6 staged build_id = "v0.6.0+x2f32" 20:13:45
+power cycle 20:13:57
+found after 41 s
+V6 up 20:14:39
+V6 banner: redox-rpi v0.6.0+x2f32 (netboot, 2026-11-27T19:44:43Z) | startup-sound: played 20:14:59
+V6 t683 rc=0: RESULT chime fresh: 2.0 s RESULT chime after desktop: 2.0 s  20:15:48
+V6 console: call_fdread=36 DEBUG=272 WARN=7 ERROR=3 | panic=0 relibc=0 exc=0 20:15:51
+C1 staged build_id = "v0.7.0-dev-84-gc89fa8b1+xa3ca" 20:15:51
+power cycle 20:16:03
+found after 36 s
+C1 up 20:16:45
+C1 banner: redox-rpi v0.7.0-dev-84-gc89fa8b1+xa3ca (netboot, 2026-11-27T10:14:50Z) | startup-sound: played 20:17:05
+C1 t683 rc=0: RESULT chime fresh: 6.0 s RESULT chime after desktop: 2.0 s  20:18:01
+C1 console: call_fdread=36 DEBUG=272 WARN=8 ERROR=3 | panic=0 relibc=0 exc=0 20:18:04
+C2 staged build_id = "v0.7.0-dev-95-g7f4dd1e1+xa3ca" 20:18:04
+power cycle 20:18:16
+found after 36 s
+C2 up 20:18:57
+C2 banner: redox-rpi v0.7.0-dev-95-g7f4dd1e1+xa3ca (netboot, 2026-11-27T13:12:16Z) | ⏎                                                            20:19:17
+C2 t683 rc=0: RESULT chime fresh: 8.0 s RESULT chime after desktop: 6.2 s  20:20:20
+C2 console: call_fdread=36 DEBUG=272 WARN=8 ERROR=3 | panic=0 relibc=0 exc=0 20:20:24
+power cycle 20:20:36
+found after 34 s
+stable up build_id = "v0.7.0-dev-83-g2fb1c217+x27b9" 20:21:14
