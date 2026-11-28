@@ -1,0 +1,22 @@
+usb
+usb: DWC2 2.80A, 8 channels, device on the root port, high speed
+usb: device 1: 0424:2514, USB 2.00, class 09, max packet 64, 1 configuration(s)
+usb: hub 1: 4 ports, power good after 100 ms
+usb: hub 1 port 1: high-speed device
+usb: device 2: 0424:2514, USB 2.00, class 09, max packet 64, 1 configuration(s)
+usb: hub 2: 3 ports, power good after 100 ms
+usb: hub 2 port 1: empty
+usb: hub 2 port 2: empty
+usb: hub 2 port 3: high-speed device
+usb: device 3: 05E3:0610, USB 2.00, class 09, max packet 64, 1 configuration(s)
+usb: hub 3: 4 ports, power good after 100 ms
+usb: hub 3 port 1: low-speed device, skipped
+usb: hub 3 port 2: empty
+usb: hub 3 port 3: empty
+usb: hub 3 port 4: empty
+usb: hub 1 port 2: empty
+usb: hub 1 port 3: empty
+usb: hub 1 port 4: empty
+usb: 2 high-speed device(s) behind the root hub
+ok usb
+rbc> 
