@@ -1,0 +1,12 @@
+start 11:10:15
+stable staged 11:10:15
+power on 11:10:28
+rbc-load rc=0 11:10:42
+banner: redox-rpi bootcode nb122-e6401fe (M1, monitor, test build) 11:10:44
+sdram: [sdram] already up (SD_CS 0x21CE43), kept as it is SDRAM ready after 14126 us  11:10:44
+usbon: ok usbon 11:10:45
+eth: hang 11:12:49
+lines: power: USB on, PM_IMAGE 0003107F PM_USB 00000001|power: ETH_CLK GPIO 42 on, CM_GP1CTL 00000295 DIV 00014D55, PLLC PER 499999 kHz, core 249999 kHz|expander: FXL6408 id A2, LAN_RUN on, dir 0C out 08 hiz F3|power: LAN reset on GPIO 30 pulsed, GPLEV0 4000C1FF (GPIO 31 0)|ok usbon|usb: DWC2 2.80A, 8 channels, device on the root port, high speed|usb: device 1: 0424:2514, USB 2.00, class 09, max packet 64, 1 configuration(s)|usb: hub 1: 4 ports, power good after 100 ms|usb: hub 1 port 1: connected after 0 ms|usb: hub 1 port 1: high-speed device|usb: device 2: 0424:2514, USB 2.00, class 09, max packet 64, 1 configuration(s)|usb: hub 2: 3 ports, power good after 100 ms|usb: hub 2 port 1: connected after 260 ms|usb: hub 2 port 1: high-speed device|usb: device 3: 0424:7800, USB 2.10, class FF, max packet 64, 1 configuration(s)|usb: hub 2 port 2: empty (status 00000100)|usb: hub 2 port 3: connected after 1003 ms|usb: hub 2 port 3: high-speed device|usb: device 4: 05E3:0610, USB 2.00, class 09, max packet 64, 1 configuration(s)|usb: hub 4: 4 ports, power good after 100 ms|usb: hub 4 port 1: connected after 0 ms|usb: hub 4 port 1: low-speed device, skipped|usb: hub 4 port 2: empty (status 00000100)|usb: hub 4 port 3: empty (status 00000100)|usb: hub 4 port 4: empty (status 00000100)|usb: hub 1 port 2: empty (status 00000100)|usb: hub 1 port 3: empty (status 00000100)|usb: hub 1 port 4: empty (status 00000100)|usb: 3 high-speed device(s) behind the root hub|eth: LAN7800 rev 2, endpoints in 1 out 2 (max packet 512), MAC <mac>|eth: FIFOs and receive filter set|eth: PHY 0007:C132, autonegotiation restarted (0)| 11:12:54
+power on 11:13:06
+found after 34 s
+stable up 11:13:52

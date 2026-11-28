@@ -1,0 +1,5 @@
+monitor open
+loading 63068 bytes to c1000000, crc32 8F615A6E, about 11 s
+loaded 63068 bytes at c1000000, crc32 8F615A6E
+ok chain 63068 bytes, start 0x80000200, SDRAM running
+chained monitor open
