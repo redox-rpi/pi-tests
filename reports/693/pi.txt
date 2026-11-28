@@ -1,0 +1,107 @@
+### echo ETH0-BEFORE $(cat /scheme/netcfg/ifaces/eth0/addr/list)  (0.4 s)
+ETH0-BEFORE <lan>/24
+### cat /etc/net/config.toml > /tmp/config.toml.boot  (0.4 s)
+
+### echo '[interface.eth1]' > /tmp/eth1.toml  (0.2 s)
+
+### echo 'ipv4 = "dhcp"' >> /tmp/eth1.toml  (0.2 s)
+
+### cp /tmp/eth1.toml /etc/net/config.toml  (0.4 s)
+
+### dhcpd -v &> /tmp/d.log &  (0.2 s)
+ion: bg [0] 58
+### sleep 2  (2.3 s)
+
+### cp /tmp/config.toml.boot /etc/net/config.toml  (0.4 s)
+
+### /usr/lib/drivers/testnetd  (0.2 s)
+testnetd: network.test0 registered, counters in /tmp/testnetd.log
+### sleep 15  (15.4 s)
+
+### echo IFACES $(ls /scheme/netcfg/ifaces)  (0.5 s)
+IFACES eth0
+eth1
+### echo UP1-ADDR $(cat /scheme/netcfg/ifaces/eth1/addr/list)  (0.4 s)
+UP1-ADDR 10.0.9.2/24
+### cat /scheme/netcfg/route/list  (0.3 s)
+default via 10.0.9.1 dev eth1 src 10.0.9.2
+<lan>/4  dev eth1 src 10.0.9.2
+<lan>/4  dev eth0 src <lan>
+127.0.0.0/8  dev loopback src 127.0.0.1
+10.0.9.0/24  dev eth1 src 10.0.9.2
+<lan>/24  dev eth0 src <lan>
+### echo UP1-STATUS $(grep eth1 /tmp/dhcpd.status)  (0.3 s)
+UP1-STATUS eth1: bound 10.0.9.2/24 via 10.0.9.1
+### echo 0 > /tmp/testnetd.link  (0.2 s)
+
+### sleep 5  (5.4 s)
+
+### echo DOWN-ADDR $(cat /scheme/netcfg/ifaces/eth1/addr/list)  (0.4 s)
+DOWN-ADDR Not configured
+### echo DOWN-ROUTES $(grep -c eth1 /scheme/netcfg/route/list)  (0.3 s)
+DOWN-ROUTES 0
+### echo DOWN-STATUS $(grep eth1 /tmp/dhcpd.status)  (0.3 s)
+DOWN-STATUS eth1: no link
+### echo DOWN-LINES-A $(wc -l < /tmp/d.log)  (0.3 s)
+DOWN-LINES-A 21
+### sleep 30  (30.4 s)
+
+### echo DOWN-LINES-B $(wc -l < /tmp/d.log)  (0.4 s)
+DOWN-LINES-B 21
+### echo 1 > /tmp/testnetd.link  (0.2 s)
+
+### sleep 15  (15.4 s)
+
+### echo UP2-ADDR $(cat /scheme/netcfg/ifaces/eth1/addr/list)  (0.4 s)
+UP2-ADDR 10.0.9.2/24
+### echo UP2-STATUS $(grep eth1 /tmp/dhcpd.status)  (0.3 s)
+UP2-STATUS eth1: bound 10.0.9.2/24 via 10.0.9.1
+### echo ETH0-AFTER $(cat /scheme/netcfg/ifaces/eth0/addr/list)  (0.4 s)
+ETH0-AFTER <lan>/24
+### cat /tmp/d.log  (0.3 s)
+DHCP: eth1 MAC 02-00-00-00-09-02
+DHCP: eth1 sent Discover
+DHCP: option 53: [2]
+DHCP: option 54: [10, 0, 9, 1]
+DHCP: option 51: [0, 0, 14, 16]
+DHCP: option 1: [255, 255, 255, 0]
+DHCP: option 3: [10, 0, 9, 1]
+DHCP: option 6: [10, 0, 9, 1]
+DHCP: eth1 offer 10.0.9.2
+DHCP: eth1 sent Request
+DHCP: option 53: [5]
+DHCP: option 54: [10, 0, 9, 1]
+DHCP: option 51: [0, 0, 14, 16]
+DHCP: option 1: [255, 255, 255, 0]
+DHCP: option 3: [10, 0, 9, 1]
+DHCP: option 6: [10, 0, 9, 1]
+DHCP: eth1 got 10.0.9.2/24
+DHCP: default route via 10.0.9.1 (eth1)
+DHCP: name server 10.0.9.1
+DHCP: eth1 link down, 10.0.9.2/24 and its routes removed
+DHCP: no lease, name server 9.9.9.9
+DHCP: eth1 MAC 02-00-00-00-09-02
+DHCP: eth1 sent Discover
+DHCP: option 53: [2]
+DHCP: option 54: [10, 0, 9, 1]
+DHCP: option 51: [0, 0, 14, 16]
+DHCP: option 1: [255, 255, 255, 0]
+DHCP: option 3: [10, 0, 9, 1]
+DHCP: option 6: [10, 0, 9, 1]
+DHCP: eth1 offer 10.0.9.2
+DHCP: eth1 sent Request
+DHCP: option 53: [5]
+DHCP: option 54: [10, 0, 9, 1]
+DHCP: option 51: [0, 0, 14, 16]
+DHCP: option 1: [255, 255, 255, 0]
+DHCP: option 3: [10, 0, 9, 1]
+DHCP: option 6: [10, 0, 9, 1]
+DHCP: eth1 got 10.0.9.2/24
+DHCP: default route via 10.0.9.1 (eth1)
+DHCP: name server 10.0.9.1
+### cat /etc/net/config.toml  (0.3 s)
+# How the network starts (docs/network-config.md in redox-rpi).
+# No section for an interface: nothing is started on it.
+[interface.eth0]
+ipv4 = "dhcp"
+ipv6 = "off"

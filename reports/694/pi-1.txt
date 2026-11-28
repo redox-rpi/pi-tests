@@ -1,0 +1,17 @@
+### rm -rf /home/root/.ssh/id_ed25519 /home/root/.ssh/id_ed25519.pub /home/root/.ssh/known_hosts /home/root/.config/homesync /home/root/.cache/homesync /home/root/data /home/root/restore-*  (0.4 s)
+
+### mkdir -p /home/root/data /home/root/.cache/junk  (0.4 s)
+
+### for i in 1..=100; head -c 65536 /dev/urandom > /home/root/data/f$i; end  (13.6 s)
+
+### echo cache > /home/root/.cache/junk/x  (0.2 s)
+
+### echo DATA-COUNT $(ls /home/root/data | wc -l)  (0.5 s)
+DATA-COUNT 100
+### homesync setup '<user>@<lan-ip>:22414:/tmp/homesync-pi.<tmp>/server'; echo RC-SETUP1 $?  (1.0 s)
+homesync: this Pi's key (add it to ~/.ssh/authorized_keys of <user> on the server):
+ssh-ed25519 <pubkey> root@redox
+Warning: Permanently added '[<lan-ip>]:22414' (ED25519) to the list of known hosts.
+<user>@<lan-ip>: Permission denied (publickey).
+homesync: cannot log in to <user>@<lan-ip> port 22414 yet: add the key above, then run setup again
+RC-SETUP1 1

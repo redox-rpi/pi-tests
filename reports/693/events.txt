@@ -1,0 +1,9 @@
+start 10:26:25
+staged build_id = "v0.7.0-dev-121-gaa8bdc53+x9cc2" 10:26:25
+found after 24 s
+P up 10:27:05
+banner: redox-rpi v0.7.0-dev-121-gaa8bdc53+x9cc2 (netboot, 2026-11-28T09:23:20Z); dhcpd lines: DHCP client bound to address <lan-ip> (3 ms) DHCP: eth0 got <lan-ip>/24 DHCP: default route via <lan-ip> (eth0)  10:27:15
+script rc=1: DHCP: default route via 10.0.9.1 (eth1) dhcpd link Pi test: FAIL  10:28:32
+serial: panic=0 relibc=0 exc=0 10:28:32
+found after 24 s
+stable up build_id = "v0.7.0-dev-83-g2fb1c217+x27b9" 10:29:12

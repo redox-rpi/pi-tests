@@ -1,0 +1,8 @@
+10:30:27 mkdir -p '/tmp/homesync-pi.<tmp>/server/current' '/tmp/homesync-pi.<tmp>/server/deleted'
+10:30:27 id
+10:30:28 rsync --server -blogDtpre.iLfxCIvu --backup-dir ../deleted/2026-11-28-103028 --delete --stats . /tmp/homesync-pi.<tmp>/server/current/
+10:30:32 rsync --server -blogDtpre.iLfxCIvu --backup-dir ../deleted/2026-11-28-103031 --delete --stats . /tmp/homesync-pi.<tmp>/server/current/
+10:30:34 rsync --server -blogDtpre.iLfxCIvu --backup-dir ../deleted/2026-11-28-103033 --delete --stats . /tmp/homesync-pi.<tmp>/server/current/
+10:30:36 rsync --server -blogDtpre.iLfxCIvu --backup-dir ../deleted/2026-11-28-103035 --delete --stats . /tmp/homesync-pi.<tmp>/server/current/
+10:30:43 rsync --server -nlogDtpre.iLfxCIvu --log-format=%i --delete . /tmp/homesync-pi.<tmp>/server/current/
+10:30:44 rsync --server --sender -logDtpre.iLfxCIvu . /tmp/homesync-pi.<tmp>/server/current/data

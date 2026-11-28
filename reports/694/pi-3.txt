@@ -1,0 +1,2 @@
+### rm -rf /home/root/.ssh/id_ed25519 /home/root/.ssh/id_ed25519.pub /home/root/.ssh/known_hosts /home/root/.config/homesync /home/root/.cache/homesync /home/root/data /home/root/big /home/root/restore-* /tmp/h2  (1.0 s)
+

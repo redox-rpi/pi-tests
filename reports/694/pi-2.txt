@@ -1,0 +1,97 @@
+### homesync setup '<user>@<lan-ip>:22414:/tmp/homesync-pi.<tmp>/server'; echo RC-SETUP2 $?  (0.8 s)
+homesync: this Pi's key (add it to ~/.ssh/authorized_keys of <user> on the server):
+ssh-ed25519 <pubkey> root@redox
+[INFO ssh@src/platform/redox/socket.rs:733] TODO: getsockopt(3, 6, 1, [
+0x0,
+0x0,
+0x0,
+0x0,
+])
+homesync: login to <user>@<lan-ip> works, backups go to /tmp/homesync-pi.<tmp>/server/current
+RC-SETUP2 0
+### ssh -p 22414 -o BatchMode=yes '<user>@<lan-ip>' id; echo RC-SHELL $?  (0.8 s)
+[INFO ssh@src/platform/redox/socket.rs:733] TODO: getsockopt(3, 6, 1, [
+0x0,
+0x0,
+0x0,
+0x0,
+])
+refused
+RC-SHELL 1
+### homesync push; echo RC-PUSH1 $?  (3.1 s)
+[INFO ssh@src/platform/redox/socket.rs:733] TODO: getsockopt(3, 6, 1, [
+0x0,
+0x0,
+0x0,
+0x0,
+])
+homesync: pushed 107 files (6554334 bytes) to <user>@<lan-ip>:/tmp/homesync-pi.<tmp>/server/current
+RC-PUSH1 0
+### head -c 65536 /dev/urandom > /home/root/data/f7  (0.4 s)
+
+### homesync push; echo RC-PUSH2 $?  (1.3 s)
+[INFO ssh@src/platform/redox/socket.rs:733] TODO: getsockopt(3, 6, 1, [
+0x0,
+0x0,
+0x0,
+0x0,
+])
+homesync: pushed 1 files (65536 bytes) to <user>@<lan-ip>:/tmp/homesync-pi.<tmp>/server/current
+RC-PUSH2 0
+### rm /home/root/data/f9  (0.4 s)
+
+### homesync push; echo RC-PUSH3 $?  (1.2 s)
+[INFO ssh@src/platform/redox/socket.rs:733] TODO: getsockopt(3, 6, 1, [
+0x0,
+0x0,
+0x0,
+0x0,
+])
+homesync: pushed 0 files (0 bytes) to <user>@<lan-ip>:/tmp/homesync-pi.<tmp>/server/current
+RC-PUSH3 0
+### head -c 20971520 /dev/urandom > /home/root/big  (1.3 s)
+
+### homesync push; echo RC-PUSH4 $?  (6.9 s)
+[INFO ssh@src/platform/redox/socket.rs:733] TODO: getsockopt(3, 6, 1, [
+0x0,
+0x0,
+0x0,
+0x0,
+])
+homesync: pushed 1 files (20971520 bytes) to <user>@<lan-ip>:/tmp/homesync-pi.<tmp>/server/current
+RC-PUSH4 0
+### homesync status; echo RC-STATUS $?  (1.2 s)
+server: <user>@<lan-ip>:/tmp/homesync-pi.<tmp>/server/current
+last push: 2026-11-28-103035 ok pushed 1 files (20971520 bytes) to <user>@<lan-ip>:/tmp/homesync-pi.<tmp>/server/current
+[INFO ssh@src/platform/redox/socket.rs:733] TODO: getsockopt(3, 6, 1, [
+0x0,
+0x0,
+0x0,
+0x0,
+])
+reachable: yes
+would change: 0
+RC-STATUS 0
+### homesync pull data; echo RC-PULL $?  (3.3 s)
+[INFO ssh@src/platform/redox/socket.rs:733] TODO: getsockopt(3, 6, 1, [
+0x0,
+0x0,
+0x0,
+0x0,
+])
+homesync: restored 99 files into /home/root/restore-2026-11-28-103043
+RC-PULL 0
+### echo SUM-A $(cat /home/root/data/* | sha256sum)  (0.8 s)
+SUM-A bcd09f58739620198d69c0c7b4536efe7319438a552ddbe130f6dc88e5250f74  -
+### echo SUM-B $(cat /home/root/restore-*/data/* | sha256sum)  (0.8 s)
+SUM-B bcd09f58739620198d69c0c7b4536efe7319438a552ddbe130f6dc88e5250f74  -
+### mkdir -p /tmp/h2/.config/homesync  (0.4 s)
+
+### echo 'root@<lan-ip>:1:/nowhere' > /tmp/h2/.config/homesync/server  (5.0 s)
+
+### env HOME=/tmp/h2 homesync push; echo RC-DOWN $?  (1.1 s)
+banner exchange: Connection to 0.0.0.0 port 0: Transport endpoint is not connected
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: error in rsync protocol data stream (code 12) at io.c(232) [sender=3.4.1]
+homesync: server <lan-ip> port 1 not reachable, nothing changed
+RC-DOWN 1
