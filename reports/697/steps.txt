@@ -1,0 +1,172 @@
+### uname -a; cat /etc/vc4d-edid-on; ls -l /etc/vc4d-edid-on  (0.4 s)
+Redox redox 0.5.12 c951af42c02ba6b7e6355923d46650ea4eadb367 aarch64 Redox
+-rw-r--r-- 1 root root 0 Nov 28  2026 /etc/vc4d-edid-on
+### mailbox/edid tools  (0.3 s)
+
+### vc4d in kernel log  (0.3 s)
+grep: 2: No such file or directory
+/scheme/sys/log:vc4d: edid: raw 020: 0f 50 54 a5 4b 00 d1 c0 a9 c0 81 c0 b3 00 95 00
+/scheme/sys/log:vc4d: edid: raw 030: 81 00 81 80 01 01 02 3a 80 18 71 38 2d 40 58 2c
+/scheme/sys/log:vc4d: edid: raw 040: 45 00 55 50 21 00 00 1e 00 00 00 fd 00 30 4b 1e
+/scheme/sys/log:vc4d: edid: raw 050: 53 12 00 0a 20 20 20 20 20 20 00 00 00 fc 00 48
+/scheme/sys/log:vc4d: edid: raw 060: (serial descriptor bytes removed)
+/scheme/sys/log:vc4d: edid: raw 070: (serial descriptor bytes removed)
+/scheme/sys/log:vc4d: edid: raw 080: 02 03 2a f1 49 90 1f 04 13 03 02 12 11 01 23 09
+/scheme/sys/log:vc4d: edid: raw 090: 07 07 83 01 00 00 67 03 0c 00 10 00 00 24 68 1a
+/scheme/sys/log:vc4d: edid: raw 0a0: 00 00 01 01 30 4b ed e2 00 2b 02 3a 80 18 71 38
+/scheme/sys/log:vc4d: edid: raw 0b0: 2d 40 58 2c 45 00 55 50 21 00 00 1e 01 1d 00 72
+/scheme/sys/log:vc4d: edid: raw 0c0: 51 d0 1e 20 6e 28 55 00 55 50 21 00 00 1e 8c 0a
+/scheme/sys/log:vc4d: edid: raw 0d0: d0 8a 20 e0 2d 10 10 3e 96 00 55 50 21 00 00 18
+/scheme/sys/log:vc4d: edid: raw 0e0: 2a 44 80 a0 70 38 27 40 30 20 35 00 55 50 21 00
+/scheme/sys/log:vc4d: edid: raw 0f0: 00 1e 00 00 00 00 00 00 00 00 00 00 00 00 00 fd
+/scheme/sys/log:vc4d: edid: PASS: HPN product 0x3573 serial 16843009 "HP 27 FHD", EDID 1.3, made week 45 of 2018, digital, 60x34 cm, 1 extension(s)
+/scheme/sys/log:vc4d: edid: preferred 1920x1080@60.000 Hz, pixel clock 148.500 MHz, h 1920 fp 88 sync 44 bp 148 (total 2200), v 1080 fp 4 sync 5 bp 36 (total 1125), sync ++
+/scheme/sys/log:vc4d: edid: range 48-75 Hz vertical, 30-83 kHz horizontal, pixel clock up to 180 MHz
+/scheme/sys/log:vc4d: edid: established 720x400@70 640x480@60 640x480@75 800x600@60 800x600@75 1024x768@60 1024x768@75 1280x1024@75
+/scheme/sys/log:vc4d: edid: standard 1920x1080@60 1600x900@60 1280x720@60 1680x1050@60 1440x900@60 1280x800@60 1280x1024@60
+/scheme/sys/log:vc4d: edid: CEA-861 rev 3, HDMI, audio, underscan, video codes 16=1920x1080@60* 31=1920x1080@50 4=1280x720@60 19=1280x720@50 3=720x480@60 2=720x480@60 18=720x576@50 17=720x576@50 1=640x480@60
+/scheme/sys/log:vc4d: edid: CEA detailed 1920x1080@60.000 Hz, pixel clock 148.500 MHz, h 1920 fp 88 sync 44 bp 148 (total 2200), v 1080 fp 4 sync 5 bp 36 (total 1125), sync ++
+/scheme/sys/log:vc4d: edid: CEA detailed 1280x720@60.000 Hz, pixel clock 74.250 MHz, h 1280 fp 110 sync 40 bp 220 (total 1650), v 720 fp 5 sync 5 bp 20 (total 750), sync ++
+/scheme/sys/log:vc4d: edid: CEA detailed 720x480@59.940 Hz, pixel clock 27.000 MHz, h 720 fp 16 sync 62 bp 60 (total 858), v 480 fp 9 sync 6 bp 30 (total 525), sync --
+/scheme/sys/log:vc4d: edid: CEA detailed 1920x1080@74.972 Hz, pixel clock 174.500 MHz, h 1920 fp 48 sync 32 bp 80 (total 2080), v 1080 fp 3 sync 5 bp 31 (total 1119), sync ++
+/scheme/sys/log:vc4d: HVS at 0xfe400000, id 0x64647276, enabled
+/scheme/sys/log:vc4d: dispctrl 0x9a0ddfff dispstat 0x00200000
+/scheme/sys/log:vc4d: channel 0: ctrl 0x00000000 bkgnd 0x01000000 list 0 active 0 stat 0x11990000 (mode 0, frame 0)
+/scheme/sys/log:vc4d: channel 1: ctrl 0x87800438 bkgnd 0x81000000 list 1636 active 1636 stat 0xa003c367 (mode 2, frame 60)
+/scheme/sys/log:vc4d: channel 1: 1920x1080, list [4f007807, 00160000, 4000fff0, 040b0780, 03d80720, 01570000, fe3c8000, fe62af80, 00001c80, 00008300, 40f33261, 40f36260, 0001a894, 00000ff4, 00000ff4, 80000000]
+/scheme/sys/log:vc4d: channel 2: ctrl 0x00000000 bkgnd 0x00000000 list 0 active 0 stat 0x10300000 (mode 0, frame 0)
+/scheme/sys/log:vc4d: taking over channel 1 at 1920x1080
+/scheme/sys/log:vc4d: irq probe: hvs at 0xfe400000, DISPCTRL DISPSTAT DISPSTAT before [9a0ddfff, 00200000, 00200000] after [9a0ddfff, 00000000, 00000000], /scheme/irq/phandle-1/0,97,4: 102 interrupts in 1000 ms
+/scheme/sys/log:vc4d: irq probe: pv2 at 0xfe20a000, CONTROL INTEN INTSTAT before [07174001, 00000000, 00000000] after [07174001, 00000000, 00000000], /scheme/irq/phandle-1/0,101,4: 0 interrupts in 1000 ms
+/scheme/sys/log:vc4d: check: start on channel 1, ctrl 0x87800438 bkgnd 0x81000000 list 1636 active 1636 stat 0xa0040198 (mode 2, frame 0)
+/scheme/sys/log:vc4d: check: before: errors [], dispctrl 0x9a0ddfff dispstat 0x00200000
+/scheme/sys/log:vc4d: check: PASS channel 1 list start is 2176
+/scheme/sys/log:vc4d: check: PASS list at 2176 reads back as written, 4 context words filled in by the HVS: [4800d807, 00000000, 4000fff0, 04380780, 01520000, c5800000, c5a79c00, 00001e00, 4800d807, 00100010, 0000fff0, 00400040, 003f0000, c5fec000, c5feff00, 00000100, 80000000]
+/scheme/sys/log:vc4d: check: PASS frame count advances (2 frames)
+/scheme/sys/log:vc4d: check: PASS active word 2176 is in the list 2176..=2193
+/scheme/sys/log:vc4d: check: PASS cursor at (16, 16) in the HVS, wanted (16, 16)
+/scheme/sys/log:vc4d: check: PASS channel 1 list start is 2240
+/scheme/sys/log:vc4d: check: PASS list at 2240 reads back as written, 4 context words filled in by the HVS: [4800d807, 00000000, 4000fff0, 04380780, 01680000, c5800000, c5aa3000, 00001e00, 4800d807, 021c03c0, 0000fff0, 00400040, 00000000, c5fec000, c5fec000, 00000100, 80000000]
+/scheme/sys/log:vc4d: check: PASS frame count advances (2 frames)
+/scheme/sys/log:vc4d: check: PASS active word 2240 is in the list 2240..=2257
+/scheme/sys/log:vc4d: check: PASS cursor at (960, 540) in the HVS, wanted (960, 540)
+/scheme/sys/log:vc4d: check: PASS no HVS errors on channel 1: []
+/scheme/sys/log:vc4d: check: back on the firmware list 1636; 11 passed, 0 failed
+/scheme/sys/log:vc4d: check: PASSED
+/scheme/sys/log:vc4d: flip: two scanout buffers, damage copied
+/scheme/sys/log:vc4d: vblank: pixel valve 2, /scheme/irq/phandle-1/0,101,4
+/scheme/sys/log:vc4d: no primary plane, firmware list again
+/scheme/sys/log:vc4d: no primary plane, firmware list again
+/scheme/sys/log:vc4d: list 1 at 2048: [Plane { bus: 3330277376, pitch: 7680, x: 0, y: 0, width: 1920, height: 1080, alpha: false, scale: None }] [4800d807, 00000000, 4000fff0, 04380780, c0c0c0c0, c6800000, c0c0c0c0, 00001e00, 80000000]
+/scheme/sys/log:vc4d: list 2 at 2176: [Plane { bus: 3321888768, pitch: 7680, x: 0, y: 0, width: 1920, height: 1080, alpha: false, scale: None }] [4800d807, 00000000, 4000fff0, 04380780, c0c0c0c0, c6000000, c0c0c0c0, 00001e00, 80000000]
+/scheme/sys/log:vc4d: list 3 at 2304: [Plane { bus: 3330277376, pitch: 7680, x: 0, y: 0, width: 1920, height: 1080, alpha: false, scale: None }] [4800d807, 00000000, 4000fff0, 04380780, c0c0c0c0, c6800000, c0c0c0c0, 00001e00, 80000000]
+/scheme/sys/log:vc4d: list 4 at 2048: [Plane { bus: 3321888768, pitch: 7680, x: 0, y: 0, width: 1920, height: 1080, alpha: false, scale: None }] [4800d807, 00000000, 4000fff0, 04380780, c0c0c0c0, c6000000, c0c0c0c0, 00001e00, 80000000]
+/scheme/sys/log:vc4d: check: after 2 s: PASS frames advance, errors [], ctrl 0x87800438 bkgnd 0x81000000 list 2304 active 2304 stat 0xa008c2b4 (mode 2, frame 12)
+/scheme/sys/log:vc4d: check: after 5 s: PASS frames advance, errors [], ctrl 0x87800438 bkgnd 0x81000000 list 2304 active 2304 stat 0xa0064007 (mode 2, frame 36)
+/scheme/sys/log:vc4d: check: after 10 s: PASS frames advance, errors [], ctrl 0x87800438 bkgnd 0x81000000 list 2304 active 2304 stat 0xa000c1e0 (mode 2, frame 12)
+/scheme/sys/log:vc4d: check: after 30 s: PASS frames advance, errors [], ctrl 0x87800438 bkgnd 0x81000000 list 2304 active 2304 stat 0x800d013e (mode 2, frame 16)
+### ls /scheme; ls /scheme/display* 2>/dev/null  (0.4 s)
+chan	      fbcon.2  input	    logging	   pipe		 shm   udp
+debug	      file     ip	    memory	   proc		 spi   uds_dgram
+disk.live     gpio     irq	    netcfg	   pty		 sudo  uds_stream
+display.vc4   i2c      kernel.acpi  network.genet  rand		 sys   usb.pci-0000-01-00.0_xhci
+display.vesa  icmp     kernel.dtb   null	   rpi-firmware	 tcp   v3d
+event	      initfs   log	    pci		   serio	 time  zero
+ls: cannot access '/scheme/display.vc4': Invalid argument
+ls: cannot access '/scheme/display.vesa': Invalid argument
+ls: cannot access '2': No such file or directory
+### vc4shot before  (2.7 s)
+vc4shot: channel 1 1920x1080, list at 2304, 1 planes, ctrl 0x87800438 bkgnd 0x81000000 list 2304 active 2304 stat 0xa00c0293 (mode 2, frame 0)
+vc4shot: plane 0: ListPlane { unity: true, format: 7, x: 0, y: 0, width: 1920, height: 1080, bus: 3321888768, pitch: 7680, alpha: false }
+vc4shot: wrote /tmp/before.ppm (6220817 bytes)
+-rw-r--r-- 1 root root 6220817 Jan  1 01:01 /tmp/before.ppm
+saved before.ppm
+### desktop --yes  (1.7 s)
+Redox desktop (beta)
+Super+F2   back to the text console
+Super+F3   back to the desktop
+(or type desktop on the console)
+Super+T    a terminal
+Known limits:
+- Slow: everything draws in software; dragging a
+window costs much of a core.
+- Once started, the desktop cannot be stopped; its
+memory (40 to 80 MB) comes back only with a reboot.
+- No browser, one screen resolution, no HDMI hotplug.
+desktop: starting Orbital, its log goes to /tmp/desktop.log
+desktop: Super+F2 goes back to the console, Super+F3 to the desktop
+### desktop log  (0.4 s)
+
+### vc4shot desktop  (2.0 s)
+vc4shot: channel 1 1920x1080, list at 2176, 2 planes, ctrl 0x87800438 bkgnd 0x81000000 list 2176 active 2176 stat 0xa00b8424 (mode 2, frame 56)
+vc4shot: plane 0: ListPlane { unity: true, format: 7, x: 0, y: 0, width: 1920, height: 1080, bus: 3321888768, pitch: 7680, alpha: false }
+vc4shot: plane 1: ListPlane { unity: true, format: 7, x: 0, y: 0, width: 64, height: 64, bus: 3405414400, pitch: 256, alpha: true }
+vc4shot: wrote /tmp/desktop.ppm (6220817 bytes)
+-rw-r--r-- 1 root root 6220817 Jan  1 01:01 /tmp/desktop.ppm
+saved desktop.ppm
+### ps  (0.3 s)
+PID   EUID  EGID  STAT  CPU   AFFINITY   ACTTIME     SCHTIME     PRIVATE SHARED  NAME
+0     0     0     RR+   #0    1          00:00:00.00 00:00:00.00 65.0 KB 0 B     [kmain]
+0     0     0     RR+   #1    2          00:00:00.00 00:00:00.00 65.0 KB 0 B     [kmain]
+0     0     0     RR    #2    4          00:00:00.00 00:00:00.00 65.0 KB 0 B     [kmain]
+0     0     0     RR+   #3    8          00:00:00.00 00:00:00.00 65.0 KB 0 B     [kmain]
+0     0     0     UB    #0    F          00:00:00.02 00:00:00.00 27.4 MB 12.0 KB initfs
+0     0     0     UB    #2    F          00:00:00.09 00:00:00.00 1.37 MB 428 KB  procmgr
+0     0     0     UB    #2    F          00:00:00.22 00:00:00.00 1.37 MB 32.0 KB initnsmgr
+1     0     0     UB    #2    F          00:00:00.12 00:00:00.27 1.86 MB 0 B     /scheme/initfs/bin/init
+2     0     0     UB    #2    F          00:00:00.00 00:00:00.00 3.70 MB 24.0 KB /scheme/initfs/bin/logd
+2     0     0     UB    #2    F          00:00:01.90 00:00:00.00 3.70 MB 24.0 KB /scheme/initfs/bin/logd
+3     0     0     UB    #2    F          00:00:00.00 00:00:00.01 1.62 MB 148 KB  /scheme/initfs/bin/randd
+4     0     0     UB    #0    F          00:00:00.00 00:00:00.02 1.68 MB 48.0 KB /scheme/initfs/bin/ipcd
+5     0     0     UB    #0    F          00:00:00.00 00:00:00.00 1.55 MB 8.00 KB /scheme/initfs/bin/zerod
+6     0     0     UB    #2    F          00:00:00.00 00:00:00.00 1.55 MB 108 KB  /scheme/initfs/bin/zerod
+7     0     0     UB    #0    F          00:00:00.00 00:00:00.00 2.77 MB 8.00 KB /scheme/initfs/bin/ramfs
+8     0     0     UB    #0    F          00:00:00.09 00:00:00.08 5.70 MB 8.00 KB /scheme/initfs/bin/rpi-firmwared
+8     0     0     US    #3    F          00:00:00.13 00:00:00.13 5.70 MB 8.00 KB /scheme/initfs/bin/rpi-firmwared
+8     0     0     US    #2    F          00:00:00.00 00:00:00.00 5.70 MB 8.00 KB /scheme/initfs/bin/rpi-firmwared
+9     0     0     UB    #3    F          00:00:00.01 00:00:00.04 1.67 MB 12.0 KB /scheme/initfs/bin/inputd
+10    0     0     UB    #2    F          00:00:00.08 00:00:00.02 2.42 MB 12.0 KB /scheme/initfs/bin/lived
+11    0     0     UB    #1    F          00:00:00.52 00:00:00.11 2.61 MB 12.0 KB /scheme/initfs/bin/bcmgenetd
+12    0     0     UB    #1    F          00:00:00.00 00:00:00.00 1.55 MB 8.00 KB /scheme/initfs/bin/bcm2835-gpiod
+13    0     0     UB    #2    F          00:00:00.00 00:00:00.00 1.55 MB 8.00 KB /scheme/initfs/bin/bcm2835-spid
+14    0     0     UB    #2    F          00:00:00.00 00:00:00.00 1.55 MB 8.00 KB /scheme/initfs/bin/bcm2835-i2cd
+15    0     0     UB    #0    F          00:00:00.38 00:00:00.02 1.74 MB 20.0 KB /scheme/initfs/bin/vesad
+17    0     0     UB    #2    F          00:00:01.24 00:00:01.67 14.2 MB 7.91 MB /scheme/initfs/bin/fbbootlogd
+21    0     0     UB    #1    F          00:00:00.01 00:00:00.26 1.79 MB 24.0 KB /scheme/initfs/bin/pcid
+24    0     0     UB    #2    F          00:00:02.24 00:00:00.59 35.6 MB 24.0 KB /scheme/initfs/bin/redoxfs
+26    0     0     UB    #1    F          00:00:00.01 00:00:00.05 17.2 MB 24.0 KB /usr/lib/drivers/xhcid
+26    0     0     UB    #1    F          00:00:00.11 00:00:00.38 17.2 MB 24.0 KB /usr/lib/drivers/xhcid
+26    0     0     US    #0    F          00:00:00.11 00:00:00.11 17.2 MB 24.0 KB /usr/lib/drivers/xhcid
+26    0     0     US    #1    F          00:00:00.01 00:00:00.01 17.2 MB 24.0 KB /usr/lib/drivers/xhcid
+26    0     0     UB    #1    F          00:00:00.00 00:00:00.00 17.2 MB 24.0 KB /usr/lib/drivers/xhcid
+26    0     0     UB    #1    F          00:00:00.00 00:00:00.00 17.2 MB 24.0 KB /usr/lib/drivers/xhcid
+26    0     0     UB    #1    F          00:00:00.00 00:00:00.00 17.2 MB 24.0 KB /usr/lib/drivers/xhcid
+27    0     0     UB    #2    F          00:00:00.34 00:00:00.02 2.05 MB 44.0 KB /usr/bin/ptyd
+30    0     0     UB    #3    F          00:00:00.00 00:00:00.02 5.04 MB 12.0 KB /usr/bin/sudo
+31    0     0     UB    #1    F          00:00:00.97 00:00:01.16 7.24 MB 80.0 KB /usr/bin/netstack
+31    0     0     US    #3    F          00:00:00.00 00:00:00.00 7.24 MB 80.0 KB /usr/bin/netstack
+31    0     0     US    #3    F          00:00:00.00 00:00:00.00 7.24 MB 80.0 KB /usr/bin/netstack
+32    0     0     US    #2    F          00:00:00.06 00:00:00.14 46.9 MB 20.0 KB /usr/bin/vc4d
+32    0     0     UB    #2    F          00:00:00.27 00:00:00.53 46.9 MB 20.0 KB /usr/bin/vc4d
+33    0     0     US    #1    F          00:00:00.14 00:00:00.55 1.67 MB 0 B     /usr/lib/drivers/usbhubd
+34    0     0     UB    #3    F          00:00:00.05 00:00:00.12 11.7 MB 8.00 KB /usr/bin/v3dd
+34    0     0     UB    #1    F          00:00:00.00 00:00:00.00 11.7 MB 8.00 KB /usr/bin/v3dd
+35    0     0     UB    #1    F          00:00:00.02 00:00:00.10 1.79 MB 0 B     /usr/lib/drivers/usbhidd
+36    0     0     UB    #3    F          00:00:00.05 00:00:00.10 6.78 MB 7.92 MB /usr/bin/fbcond
+37    0     0     UB    #3    F          00:00:00.54 00:00:00.21 1.86 MB 0 B     /usr/bin/getty
+39    0     0     US    #0    F          00:00:00.02 00:00:00.03 1.80 MB 0 B     /usr/bin/dhcpd
+40    0     0     UB    #1    F          00:00:00.00 00:00:00.00 11.0 MB 0 B     /usr/bin/devshd
+40    0     0     UB    #3    F          00:00:00.38 00:00:00.90 11.0 MB 0 B     /usr/bin/devshd
+40    0     0     UB    #1    F          00:00:00.00 00:00:00.00 11.0 MB 0 B     /usr/bin/devshd
+40    0     0     UB    #1    F          00:00:00.00 00:00:00.02 11.0 MB 0 B     /usr/bin/devshd
+45    0     0     UB    #2    F          00:00:00.00 00:00:00.06 1.86 MB 0 B     /usr/bin/getty
+47    0     0     UB    #2    F          00:00:00.00 00:00:00.02 5.72 MB 0 B     /usr/bin/login
+49    0     0     UB    #3    F          00:00:00.00 00:00:00.02 5.72 MB 0 B     /usr/bin/login
+50    0     0     UB    #1    F          00:00:00.00 00:00:00.06 1.79 MB 0 B     /usr/lib/drivers/usbhidd
+51    0     0     UB    #1    F          00:00:00.00 00:00:00.06 1.79 MB 0 B     /usr/lib/drivers/usbhidd
+58    0     0     UB    #0    F          00:00:00.14 00:00:00.18 5.66 MB 0 B     /usr/bin/login
+59    0     0     UB    #2    F          00:00:00.15 00:00:00.24 7.49 MB 0 B     /usr/bin/ion
+83    0     0     UB    #3    F          00:00:00.00 00:00:00.00 7.36 MB 0 B     /usr/bin/desktop
+85    0     0     UB    #2    F          00:00:00.06 00:00:00.09 28.6 MB 7.92 MB /usr/bin/orbital
+88    0     0     UB    #2    F          00:00:00.18 00:00:00.25 17.9 MB 0 B     /usr/bin/orblogin
+103   0     0     UR+   #2    F          00:00:00.01 00:00:00.04 4.98 MB 0 B     /usr/bin/ps
