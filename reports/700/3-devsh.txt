@@ -1,0 +1,8 @@
+### ls -l /usr/lib/init.d/65_timesync.service  (0.4 s)
+-rw-r--r-- 1 root root 175 Nov 28 11:20 /usr/lib/init.d/65_timesync.service
+### cat /scheme/data/timesync.last  (0.4 s)
+1795861938
+### date -u +%s  (0.3 s)
+1795861941
+### date -u  (0.3 s)
+Sat Nov 28 10:32:21 UTC 2026

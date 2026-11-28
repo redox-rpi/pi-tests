@@ -1,0 +1,14 @@
+start 10:31:40
+P-harddrive.img.gz: OK
+P-manifest.toml: OK
+staged build_id = "v0.7.0-dev-125-g0a62cd67+x9cc2" 10:31:40
+found after 24 s
+P up 10:32:19
+ntp line after 4 s after login prompt 10:32:19
+banner: redox-rpi v0.7.0-dev-125-g0a62cd67+x9cc2 (netboot, 2026-11-28T10:17:32Z) 10:32:19
+timesync lines: timesync: clock set to 2026-11-28 10:31:36 UTC from the saved time|timesync: clock set to 2026-11-28 10:32:18 UTC from pool.ntp.org| 10:32:19
+3 devsh: -rw-r--r-- 1 root root 175 Nov 28 11:20 /usr/lib/init.d/65_timesync.service 1795861938 1795861941 Sat Nov 28 10:32:21 UTC 2026  | host now 1795861942 Sat Nov 28 10:32:22 UTC 2026 10:32:22
+4 pitest rc=0: PASS version: v0.7.0-dev-125-g0a62cd67+x9cc2 PASS manifest: build ID and libc.so hash match P-manifest.toml PASS ps: 59 processes (piped) PASS ps-tty: 59 lines straight to the terminal, rc=0 PASS sdcard: write, read back, delete on /scheme/data PASS starts: 0 of 300 failed  10:33:04
+serial: panic=0 relibc=0 exc=0 10:33:04
+found after 24 s
+stable up build_id = "v0.7.0-dev-83-g2fb1c217+x27b9" 10:33:43
