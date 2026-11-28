@@ -1,0 +1,5 @@
+usb
+usb: DWC2 2.80A, 8 channels, device on the root port, high speed
+usb: device 0424:2514, USB 2.00, class 09, max packet 64, 1 configuration(s)
+ok usb
+rbc> 
