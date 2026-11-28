@@ -1,0 +1,83 @@
+vc4d: mode: pv2(2711) HORZA     ours 0x004a0016 firmware 0x004a0016
+vc4d: mode: pv2(2711) HORZB     ours 0x002c03c0 firmware 0x002c03c0
+vc4d: mode: pv2(2711) VERTA     ours 0x00240005 firmware 0x00240005
+vc4d: mode: pv2(2711) VERTB     ours 0x00040438 firmware 0x00040438
+vc4d: mode: pv2(2711) CONTROL   ours 0x07174001 firmware 0x07174001
+vc4d: mode: pv2(2711) V_CONTROL ours 0x00000003 firmware 0x00000003
+vc4d: mode5: PASS: pixel valve 2 for 1920x1080@60 equals the firmware's
+vc4d: mode5: pv2 raw 00-3c: 07174001 00000003 00000000 004a0016 002c03c0 00240005 00040438 00000000 00000000 00000000 00000000 00000410 00000000 00000020 00000001 00020000
+vc4d: mode: hdmi(2711) HORZA     ours 0x0058c780 firmware 0x0058c780
+vc4d: mode: hdmi(2711) HORZB     ours 0x0094002c firmware 0x0094002c
+vc4d: mode: hdmi(2711) VERTA0    ours 0x05040438 firmware 0x05040438
+vc4d: mode: hdmi(2711) VERTB0    ours 0x00000024 firmware 0x00000024
+vc4d: mode: hdmi(2711) VERTA1    ours 0x05040438 firmware 0x05040438
+vc4d: mode: hdmi(2711) VERTB1    ours 0x00000024 firmware 0x00000024
+vc4d: mode5: PASS: HDMI0 timing for 1920x1080@60 equals the firmware's
+vc4d: mode5: PASS: pixel valve 2 and HDMI0 timing for 1920x1080@60 equal the firmware's
+vc4d: mode5: hdmi 000: 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000
+vc4d: mode5: hdmi 020: 00000000 00000000 80000000 00000000 00001000 00000000 00000000 00000000
+vc4d: mode5: hdmi 040: 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000
+vc4d: mode5: hdmi 060: 00000000 00000000 00130080 00000000 00000000 00044045 43304446 00000000
+vc4d: mode5: hdmi 080: 00000000 00000000 00000000 00000000 00000000 00000000 00000000 76543210
+vc4d: mode5: hdmi 0a0: 00000003 00000000 00000009 00000000 ffff0000 00000000 21000403 00010015
+vc4d: mode5: hdmi 0c0: 00000000 00000015 0c000000 00000000 00000000 01000030 01000030 00000083
+vc4d: mode5: hdmi 0e0: 000cb00b 0058c780 0094002c 05040438 00000024 05040438 00000024 00000000
+vc4d: mode5: hdmi 100: 00000000 00000008 00000000 00000000 03010200 000000c8 00000000 000000ff
+vc4d: mode5: hdmi 120: 000101ff b87dff7b 00000000 00000000 00000000 402c0094 00580780 54008005
+vc4d: mode5: hdmi 140: 00240000 00040438 00240000 00000460 00050438 002c086c 002d002d 08ad08ad
+vc4d: mode5: hdmi 160: 002625a0 002625a0 0025c3f8 0025c3f8 00000204 00000000 00000003 00000000
+vc4d: mode5: hdmi 180: 00000000 00000000 00000000 00000000 00000000 00000fff 00000fff 00000fff
+vc4d: mode5: hdmi 1a0: 00000000 00000000 00000001 00000000 00000000 0000ffff 0000fffe 0000fffd
+vc4d: mode5: hdmi 1c0: 00000000 11f80290 1542af54 000002ab 01bfa017 3e2077e4 027f841e 3cc0cfd8
+vc4d: mode5: hdmi 1e0: 03cf1839 3b811fc3 071e7063 3871e38e 0c3de087 31e3873c 000c3cf0 00000000
+vc4d: mode5: hdmi 200: 00000000 00000000 00000000 00000018 00000000 00000000 00000000 00000000
+vc4d: mode5: hdmi 220: 00000001 00000000 00000001 00000000 00000002 00000000 00000003 00000000
+vc4d: mode5: hdmi 240: 00000000 00000000 00000000 00000000 00000000 00020080 00000000 80180004
+vc4d: mode5: hdmi 260: 00000004 0000027e 00000000 20010040 00000000 00004cf9 00000000 00000000
+vc4d: mode5: hdmi 280: 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000
+vc4d: mode5: hdmi 2a0: 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000
+vc4d: mode5: hdmi 2c0: 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000
+vc4d: mode5: hdmi 2e0: 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000
+vc4d: mode5: hdmi words holding the active size in bits 12:0: 0x0e4=0x0058c780(hactive) 0x0ec=0x05040438(vactive) 0x0f4=0x05040438(vactive) 0x138=0x00580780(hactive) 0x144=0x00040438(vactive) 0x150=0x00050438(vactive)
+vc4d: mode5: 720p: from the firmware's 1920x1080@60 to 1280x720@60 on channel 1 (Restore(15))
+vc4d: mode5: phy(1080) RESET_CTL ours 0x00000030 firmware 0x00000030
+vc4d: mode5: phy(1080) POWERDOWN ours 0x00000010 firmware 0x00000010
+vc4d: mode5: phy(1080) CTL_0     ours 0x0909090c firmware 0x0909090c
+vc4d: mode5: phy(1080) CTL_1     ours 0x00094a58 firmware 0x00094a58
+vc4d: mode5: phy(1080) CTL_2     ours 0x00050003 firmware 0x00050003
+vc4d: mode5: phy(1080) CTL_3     ours 0x000865d8 firmware 0x000865c8  DIFFERENT
+vc4d: mode5: phy(1080) PLL_CTL_0 ours 0x00002060 firmware 0x00002060
+vc4d: mode5: phy(1080) PLL_CTL_1 ours 0x008a7800 firmware 0x008a7800
+vc4d: mode5: phy(1080) CLK_DIV   ours 0x00000300 firmware 0x00000300
+vc4d: mode5: phy(1080) PLL_CFG   ours 0x00000001 firmware 0x00000001
+vc4d: mode5: phy(1080) WORD_SEL  ours 0x00000000 firmware 0x00000000
+vc4d: mode5: phy(1080) CH_SWAP   ours 0x00003210 firmware 0x00003210
+vc4d: mode5: phy(1080) PLL_CAL_1 ours 0x30000000 firmware 0x30000000
+vc4d: mode5: phy(1080) PLL_CAL_2 ours 0x00000000 firmware 0x00000000
+vc4d: mode5: phy(1080) PLL_CAL_4 ours 0x0e14e147 firmware 0x0e14e147
+vc4d: mode5: phy(1080) RM_CTL    ours 0x000a0910 firmware 0x000a0910
+vc4d: mode5: phy(1080) RM_OFFSET ours 0x8a500000 firmware 0x8a500000
+vc4d: mode5: phy(1080) RM_FORMAT ours 0x02002710 firmware 0x02002710
+vc4d: mode5: phy(1080): 17 of 18 registers equal the firmware's
+vc4d: mode5: 720p: clock hdmi (HSM) (firmware id 13) 0 Hz, needs 74992500: set, now 74992500
+vc4d: mode5: 720p: clock bvb (firmware id 14) 75000000 Hz, needs 75000000: kept
+vc4d: mode5: before: 240 HVS frames/s, 60 encoder frames/s (frame count 0x000008b4, VID_CTL 0x80000000)
+vc4d: mode5: 720p: switching (screen blank for a moment)
+vc4d: mode5: 720p: phy RESET_CTL=00000030 POWERDOWN=00000010 CTL_0=0909090c CTL_1=00094a58 CTL_2=00060003 CTL_3=000865d8 PLL_CTL_0=00002060 PLL_CTL_1=008a7800 CLK_DIV=00000500 PLL_CFG=00000001 WORD_SEL=00000000 CH_SWAP=00003210 PLL_CAL_1=30000000 PLL_CAL_2=00000000 PLL_CAL_4=0e14e147 RM_CTL=000a0910 RM_OFFSET=88980000 RM_FORMAT=02002710
+vc4d: mode5: 720p: 240 HVS frames/s, 60 encoder frames/s (frame count 0x0000090a), 60 expected
+vc4d: mode5: 720p: check FAILED: HVS channel counts 240 frames/s, not 60
+vc4d: mode5: 720p: SCHEDULER_CONTROL 0x000cb00b FIFO_CTL 0x00004045 MISC_CONTROL 0x00000000 VID_CTL 0x80000000
+vc4d: mode5: 720p: EDID still answers, checksum good
+vc4d: mode5: 720p: SCDC version 3 status 0x03: clock detected, channels locked 100
+vc4d: mode5: 720p: check FAILED: the monitor's SCDC reports no lock (status 0x03)
+vc4d: mode5: 720p: FAILED
+vc4d: mode5: restore: 720p failed its checks, back to the firmware's mode
+vc4d: mode5: restore: phy RESET_CTL=00000030 POWERDOWN=00000010 CTL_0=0909090c CTL_1=00094a58 CTL_2=00050003 CTL_3=000865c8 PLL_CTL_0=00002060 PLL_CTL_1=008a7800 CLK_DIV=00000300 PLL_CFG=00000001 WORD_SEL=00000000 CH_SWAP=00003210 PLL_CAL_1=30000000 PLL_CAL_2=00000000 PLL_CAL_4=0e14e147 RM_CTL=000a0910 RM_OFFSET=8a500000 RM_FORMAT=02002710
+vc4d: mode5: restore: 244 HVS frames/s, 61 encoder frames/s (frame count 0x00000964), 60 expected
+vc4d: mode5: restore: check FAILED: HVS channel counts 244 frames/s, not 60
+vc4d: mode5: restore: SCHEDULER_CONTROL 0x000cb00b FIFO_CTL 0x00004045 MISC_CONTROL 0x00000000 VID_CTL 0x80000000
+vc4d: mode5: restore: EDID still answers, checksum good
+vc4d: mode5: restore: SCDC version 3 status 0x03: clock detected, channels locked 100
+vc4d: mode5: restore: check FAILED: the monitor's SCDC reports no lock (status 0x03)
+vc4d: mode5: restore: FAILED
+vc4d: taking over channel 1 at 1920x1080
