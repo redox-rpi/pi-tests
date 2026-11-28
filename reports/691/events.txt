@@ -1,0 +1,66 @@
+start 10:03:54
+staged build_id = "v0.7.0-dev-120-g637c7514+x6a9f" 10:03:54
+manual power on (plug was off by button after the card swap) 10:05:01
+found after 94 s
+A up 10:05:42
+A1 banner: redox-rpi v0.7.0-rc1 (v0.7.0-dev-120-g637c7514+x6a9f) (netboot, 2026-11-28T09:11:40Z) | sound 1 | hdmiaudiod bcm2835-hdmiaudiod: HDMI vc4 at 0x3f902000, hotplug no, HDMI mode, pixel clock 148.500 MHz (pllh), sample clock from 163.683 MHz (cprman), N 5644 CTS 148478, info frame sent, DMA channel 0 (DREQ 17),  | usb dwc2d: root port working at start, no core reset 10:06:02
+A2 pitest rc=0: PASS version: v0.7.0-rc1 (v0.7.0-dev-120-g637c7514+x6a9f) PASS manifest: build ID and libc.so hash match manifest.toml PASS ps: 54 processes (piped) PASS ps-tty: 54 lines straight to the terminal, rc=0 PASS sdcard: write, read back, delete on /scheme/data PASS starts: 0 of 100 failed  10:06:19
+A3 date: Sat Nov 28 11:06:20 CET 2026 Sat Nov 28 10:06:20 UTC 2026 lrwxrwxrwx 1 root root 33 Nov 28 10:14 /etc/localtime -> /usr/share/zoneinfo/Europe/Berlin  | host 10:06:21 10:06:21
+A5 1 ok 48 s; nocore=1 empty=0 link=1 10:07:15
+A5 2 ok 48 s; nocore=1 empty=0 link=1 10:08:08
+A5 3 ok 48 s; nocore=1 empty=0 link=1 10:09:02
+A5 4 ok 69 s; nocore=1 empty=0 link=1 10:10:15
+A5 5 ok 48 s; nocore=1 empty=0 link=1 10:11:08
+A5 5/5 on the first reset, 0 needed more 10:11:08
+A serial: panic=0 relibc=0 exc=0 stuck=0 oom=0 10:11:08
+power cycle 10:11:20
+found after 36 s
+B1 up 10:12:02
+B1 banner: redox-rpi v0.7.0-rc1 (v0.7.0-dev-120-g637c7514+x6a9f) (netboot, 2026-11-28T09:11:40Z) | startup-sound: played 10:12:22
+B1 t683 rc=0: RESULT chime fresh: 2.0 s RESULT chime after desktop: 2.0 s  10:13:14
+### stats 1 fresh  (0.3 s) ### stats 2 after fresh chime  (0.3 s) ### stats 3 sopwith 30 s  (0.4 s) ### stats 4 after desktop  (0.4 s) ### stats 5 after second chime  (0.4 s) 
+B1 console: panic=0 relibc=0 exc=0 10:13:17
+power cycle 10:13:29
+found after 36 s
+B2 up 10:14:10
+B2 banner: redox-rpi v0.7.0-rc1 (v0.7.0-dev-120-g637c7514+x6a9f) (netboot, 2026-11-28T09:11:40Z) | startup-sound: played 10:14:30
+B2 t683 rc=0: RESULT chime fresh: 2.0 s RESULT chime after desktop: 2.0 s  10:15:22
+### stats 1 fresh  (0.3 s) ### stats 2 after fresh chime  (0.3 s) ### stats 3 sopwith 30 s  (0.4 s) ### stats 4 after desktop  (0.4 s) ### stats 5 after second chime  (0.3 s) 
+B2 console: panic=0 relibc=0 exc=0 10:15:25
+power cycle 10:15:37
+found after 36 s
+B3 up 10:16:18
+B3 banner: redox-rpi v0.7.0-rc1 (v0.7.0-dev-120-g637c7514+x6a9f) (netboot, 2026-11-28T09:11:40Z) | startup-sound: played 10:16:38
+B3 t683 rc=0: RESULT chime fresh: 2.0 s RESULT chime after desktop: 2.0 s  10:17:32
+### stats 1 fresh  (0.3 s) ### stats 2 after fresh chime  (0.3 s) ### stats 3 sopwith 30 s  (0.4 s) ### stats 4 after desktop  (0.4 s) ### stats 5 after second chime  (0.3 s) 
+B3 console: panic=0 relibc=0 exc=0 10:17:35
+power cycle 10:17:47
+found after 36 s
+B4 up 10:18:28
+B4 banner: redox-rpi v0.7.0-rc1 (v0.7.0-dev-120-g637c7514+x6a9f) (netboot, 2026-11-28T09:11:40Z) | startup-sound: played 10:18:48
+B4 t683 rc=0: RESULT chime fresh: 2.0 s RESULT chime after desktop: 2.0 s  10:19:40
+### stats 1 fresh  (0.3 s) ### stats 2 after fresh chime  (0.3 s) ### stats 3 sopwith 30 s  (0.4 s) ### stats 4 after desktop  (0.4 s) ### stats 5 after second chime  (0.3 s) 
+B4 console: panic=0 relibc=0 exc=0 10:19:43
+power cycle 10:19:55
+found after 36 s
+B5 up 10:20:37
+B5 banner: redox-rpi v0.7.0-rc1 (v0.7.0-dev-120-g637c7514+x6a9f) (netboot, 2026-11-28T09:11:40Z) | startup-sound: played 10:20:57
+B5 t683 rc=0: RESULT chime fresh: 2.0 s RESULT chime after desktop: 2.0 s  10:21:50
+### stats 1 fresh  (0.3 s) ### stats 2 after fresh chime  (0.3 s) ### stats 3 sopwith 30 s  (0.4 s) ### stats 4 after desktop  (0.4 s) ### stats 5 after second chime  (0.3 s) 
+B5 console: panic=0 relibc=0 exc=0 10:21:53
+power cycle 10:22:05
+found after 36 s
+B6 up 10:22:47
+B6 banner: redox-rpi v0.7.0-rc1 (v0.7.0-dev-120-g637c7514+x6a9f) (netboot, 2026-11-28T09:11:40Z) | startup-sound: played 10:23:07
+B6 t683 rc=0: RESULT chime fresh: 2.0 s RESULT chime after desktop: 2.0 s  10:23:59
+### stats 1 fresh  (0.3 s) ### stats 2 after fresh chime  (0.4 s) ### stats 3 sopwith 30 s  (0.4 s) ### stats 4 after desktop  (0.4 s) ### stats 5 after second chime  (0.3 s) 
+B6 console: panic=0 relibc=0 exc=0 10:24:02
+staged build_id = "v0.7.0-dev-120-g637c7514+x6a9f" 10:24:02
+found after 26 s
+C1 banner: redox-rpi v0.7.0-rc1 (v0.7.0-dev-120-g637c7514+x6a9f) (release-netboot, 2026-11-28T09:20:08Z) 10:25:09
+C2 nc 2323 rc=1 nc: connect to <lan-ip> port 2323 (tcp) failed: Connection refused  10:25:09
+C2 open TCP ports: [] 10:25:16
+C3: login ok=1 ps-devshd=0 10:25:24
+C serial: panic=0 relibc=0 exc=0 stuck=0 10:25:25
+found after 32 s
+stable up build_id = "v0.7.0-dev-83-g2fb1c217+x27b9" 10:26:04
