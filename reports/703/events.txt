@@ -1,0 +1,13 @@
+start 10:46:31
+stable staged 10:46:31
+power on 10:46:44
+rbc-load rc=0 10:46:56
+banner: redox-rpi bootcode nb117-8118195 (M1, monitor, test build) 10:46:58
+sdram: [sdram] already up (SD_CS 0x21CE43), kept as it is SDRAM ready after 14126 us  10:46:58
+usbon: ok usbon 10:46:59
+usb 1: ok usb 10:47:01
+usb 2: ok usb 10:47:04
+lines: power: USB on, PM_IMAGE 0003107F PM_USB 00000001|power: ETH_CLK GPIO 42 on, CM_GP1CTL 00000295 DIV 00014D55, PLLC PER 499999 kHz, core 249999 kHz|expander: FXL6408 id A2, LAN_RUN on, dir 0C out 08 hiz F3|power: LAN reset on GPIO 30 pulsed, GPLEV0 4000C1FF (GPIO 31 0)|ok usbon|usb: DWC2 2.80A, 8 channels, device on the root port, high speed|usb: device 1: 0424:2514, USB 2.00, class 09, max packet 64, 1 configuration(s)|usb: hub 1: 4 ports, power good after 100 ms|usb: hub 1 port 1: high-speed device|usb: device 2: 0424:2514, USB 2.00, class 09, max packet 64, 1 configuration(s)|usb: hub 1 port 2: empty|usb: hub 1 port 3: empty|usb: hub 1 port 4: empty|usb: 1 high-speed device(s) behind the hub|ok usb|usb: DWC2 2.80A, 8 channels, device on the root port, high speed|usb: device 1: 0424:2514, USB 2.00, class 09, max packet 64, 1 configuration(s)|usb: hub 1: 4 ports, power good after 100 ms|usb: hub 1 port 1: high-speed device|usb: device 2: 0424:2514, USB 2.00, class 09, max packet 64, 1 configuration(s)|usb: hub 1 port 2: empty|usb: hub 1 port 3: empty|usb: hub 1 port 4: empty|usb: 1 high-speed device(s) behind the hub|ok usb| 10:47:06
+power on 10:47:18
+found after 34 s
+stable up 10:47:57
