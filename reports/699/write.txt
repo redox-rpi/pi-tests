@@ -1,0 +1,161 @@
+### setenv autoload no
+setenv autoload no
+U-Boot>
+### usb start
+usb start
+U-Boot>
+### dhcp
+dhcp
+lan78xx_eth Waiting for PHY auto negotiation to complete........ done
+DHCP client bound to address <lan-ip> (6 ms)
+U-Boot>
+### mmc dev 2
+mmc dev 2
+switch to partitions #0, OK
+mmc2 is current device
+U-Boot>
+### fatls mmc 2:1
+fatls mmc 2:1
+    61376   bootcode.bin
+  3023104   start.elf
+     7381   fixup.dat
+   844380   start_cd.elf
+     3280   fixup_cd.dat
+     1594   LICENCE.broadcom
+    34731   bcm2710-rpi-3-b.dtb
+    35252   bcm2710-rpi-3-b-plus.dtb
+    33708   bcm2710-rpi-zero-2-w.dtb
+            overlays/
+      605   config.txt
+      675   .uuid
+   956952   u-boot.bin
+      278   boot.scr
+     4096   ._config.txt
+      256   armstub8-redox.bin
+            .fseventsd/
+     4096   ._.uuid
+     4096   ._bootcode.bin
+    60686   bootcode-selector.bin
+            .TemporaryItems/
+     4096   ._bootcode-selector.bin
+    52624   bootcode-broadcom.bin
+    61040   bootcode-selector-233c8c5.bin
+    61040   redox-rpi-bootselect-3bp-20261110c-bootcode.bin
+     4096   ._redox-rpi-bootselect-3bp-20261110c-bootcode.bin
+    60812   redox-rpi-bootselect-3bp-20261110b-bootcode.bin
+     4096   ._redox-rpi-bootselect-3bp-20261110b-bootcode.bin
+
+25 file(s), 3 dir(s)
+
+U-Boot>
+### fatload mmc 2:1 0x10000000 armstub8-redox.bin
+fatload mmc 2:1 0x10000000 armstub8-redox.bin
+256 bytes read in 12 ms (20.5 KiB/s)
+U-Boot>
+### crc32 0x10000000 ${filesize}
+crc32 0x10000000 ${filesize}
+crc32 for 10000000 ... 100000ff ==> 17a03c01
+U-Boot>
+### fatwrite mmc 2:1 0x10000000 armstub8-redox.bin.t699 ${filesize}
+fatwrite mmc 2:1 0x10000000 armstub8-redox.bin.t699 ${filesize}
+256 bytes written in 74 ms (2.9 KiB/s)
+U-Boot>
+### fatload mmc 2:1 0x10000000 armstub8-redox.bin.t699
+fatload mmc 2:1 0x10000000 armstub8-redox.bin.t699
+256 bytes read in 23 ms (10.7 KiB/s)
+U-Boot>
+### crc32 0x10000000 ${filesize}
+crc32 0x10000000 ${filesize}
+crc32 for 10000000 ... 100000ff ==> 17a03c01
+U-Boot>
+### fatrm mmc 2:1 armstub8-redox.bin
+fatrm mmc 2:1 armstub8-redox.bin
+U-Boot>
+### wget 0x10000000 http://<lan-ip>:8080/cw699/config-r90.txt
+wget 0x10000000 http://<lan-ip>:8080/cw699/config-r90.txt
+##################################################
+214 bytes transferred in 3 ms (69.3 KiB/s)
+Bytes transferred = 214 (d6 hex)
+U-Boot>
+### crc32 0x10000000 ${filesize}
+crc32 0x10000000 ${filesize}
+crc32 for 10000000 ... 100000d5 ==> 1f62fda9
+U-Boot>
+### fatwrite mmc 2:1 0x10000000 config-r90.txt ${filesize}
+fatwrite mmc 2:1 0x10000000 config-r90.txt ${filesize}
+214 bytes written in 40 ms (4.9 KiB/s)
+U-Boot>
+### fatload mmc 2:1 0x10000000 config-r90.txt
+fatload mmc 2:1 0x10000000 config-r90.txt
+214 bytes read in 12 ms (16.6 KiB/s)
+U-Boot>
+### crc32 0x10000000 ${filesize}
+crc32 0x10000000 ${filesize}
+crc32 for 10000000 ... 100000d5 ==> 1f62fda9
+U-Boot>
+### wget 0x10000000 http://<lan-ip>:8080/cw699/cmdline-r90.txt
+wget 0x10000000 http://<lan-ip>:8080/cw699/cmdline-r90.txt
+##################################################
+16 bytes transferred in 3 ms (4.9 KiB/s)
+Bytes transferred = 16 (10 hex)
+U-Boot>
+### crc32 0x10000000 ${filesize}
+crc32 0x10000000 ${filesize}
+crc32 for 10000000 ... 1000000f ==> fdcffa2f
+U-Boot>
+### fatwrite mmc 2:1 0x10000000 cmdline-r90.txt ${filesize}
+fatwrite mmc 2:1 0x10000000 cmdline-r90.txt ${filesize}
+16 bytes written in 71 ms (0 Bytes/s)
+U-Boot>
+### fatload mmc 2:1 0x10000000 cmdline-r90.txt
+fatload mmc 2:1 0x10000000 cmdline-r90.txt
+16 bytes read in 24 ms (0 Bytes/s)
+U-Boot>
+### crc32 0x10000000 ${filesize}
+crc32 0x10000000 ${filesize}
+crc32 for 10000000 ... 1000000f ==> fdcffa2f
+U-Boot>
+### wget 0x10000000 http://<lan-ip>:8080/cw699/kernel8-r90.img
+wget 0x10000000 http://<lan-ip>:8080/cw699/kernel8-r90.img
+##################################################
+1908736 bytes transferred in 112 ms (16.3 MiB/s)
+Bytes transferred = 1908736 (1d2000 hex)
+U-Boot>
+### crc32 0x10000000 ${filesize}
+crc32 0x10000000 ${filesize}
+crc32 for 10000000 ... 101d1fff ==> 6df256d9
+U-Boot>
+### fatwrite mmc 2:1 0x10000000 kernel8-r90.img ${filesize}
+fatwrite mmc 2:1 0x10000000 kernel8-r90.img ${filesize}
+1908736 bytes written in 353 ms (5.2 MiB/s)
+U-Boot>
+### fatload mmc 2:1 0x10000000 kernel8-r90.img
+fatload mmc 2:1 0x10000000 kernel8-r90.img
+1908736 bytes read in 195 ms (9.3 MiB/s)
+U-Boot>
+### crc32 0x10000000 ${filesize}
+crc32 0x10000000 ${filesize}
+crc32 for 10000000 ... 101d1fff ==> 6df256d9
+U-Boot>
+### wget 0x10000000 http://<lan-ip>:8080/cw699/initramfs-r90
+wget 0x10000000 http://<lan-ip>:8080/cw699/initramfs-r90
+##################################################
+12284480 bytes transferred in 720 ms (16.3 MiB/s)
+Bytes transferred = 12284480 (bb7240 hex)
+U-Boot>
+### crc32 0x10000000 ${filesize}
+crc32 0x10000000 ${filesize}
+crc32 for 10000000 ... 10bb723f ==> 8c1e8c70
+U-Boot>
+### fatwrite mmc 2:1 0x10000000 initramfs-r90 ${filesize}
+fatwrite mmc 2:1 0x10000000 initramfs-r90 ${filesize}
+12284480 bytes written in 2318 ms (5.1 MiB/s)
+U-Boot>
+### fatload mmc 2:1 0x10000000 initramfs-r90
+fatload mmc 2:1 0x10000000 initramfs-r90
+12284480 bytes read in 1120 ms (10.5 MiB/s)
+U-Boot>
+### crc32 0x10000000 ${filesize}
+crc32 0x10000000 ${filesize}
+crc32 for 10000000 ... 10bb723f ==> 8c1e8c70
+U-Boot>

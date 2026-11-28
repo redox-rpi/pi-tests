@@ -1,0 +1,30 @@
+start 11:18:42
+setup: power cycle into U-Boot 11:18:42
+power on 11:18:55
+at U-Boot prompt
+write crcs: 17a03c01 17a03c01 1f62fda9 1f62fda9 fdcffa2f fdcffa2f 6df256d9 6df256d9 8c1e8c70 8c1e8c70  11:22:18
+power on 11:22:31
+A1 rbc-load: ok chain 49312 bytes, start 0x80000200, SDRAM running 11:22:41
+found after 2 s
+A1: redox-rpi bootcode 56354b8 (M1, monitor, test build, boot selector) redox-rpi bootcode r90-2c235f9-A (release, boots from the SD card, boot screen on HDMI)  | rng: rng: started, warm-up 262144 words  | randd: randd: seeded from the hardware RNG at 0x3f104000 (7 ms)|rpi-firmwared: mailbox at 0x3f00b880, revision 0x00a020d3, model Raspberry Pi 3 Model B+| 11:23:13
+power on 11:23:26
+A2 rbc-load: ok chain 49312 bytes, start 0x80000200, SDRAM running 11:23:36
+found after 2 s
+A2: redox-rpi bootcode 56354b8 (M1, monitor, test build, boot selector) redox-rpi bootcode r90-2c235f9-A (release, boots from the SD card, boot screen on HDMI)  | rng: rng: started, warm-up 262144 words  | randd: randd: seeded from the hardware RNG at 0x3f104000 (7 ms)|rpi-firmwared: mailbox at 0x3f00b880, revision 0x00a020d3, model Raspberry Pi 3 Model B+| 11:24:08
+power on 11:24:21
+B1 rbc-load: ok chain 49224 bytes, start 0x80000200, SDRAM running 11:24:32
+found after 4 s
+B1: redox-rpi bootcode 56354b8 (M1, monitor, test build, boot selector) redox-rpi bootcode r90-78d1f90-B (release, boots from the SD card, boot screen on HDMI)  | rng:  | randd: randd: seeded from the hardware RNG at 0x3f104000 (877 ms)|rpi-firmwared: mailbox at 0x3f00b880, revision 0x00a020d3, model Raspberry Pi 3 Model B+| 11:25:06
+power on 11:25:19
+B2 rbc-load: ok chain 49224 bytes, start 0x80000200, SDRAM running 11:25:29
+found after 4 s
+B2: redox-rpi bootcode 56354b8 (M1, monitor, test build, boot selector) redox-rpi bootcode r90-78d1f90-B (release, boots from the SD card, boot screen on HDMI)  | rng:  | randd: randd: seeded from the hardware RNG at 0x3f104000 (877 ms)|rpi-firmwared: mailbox at 0x3f00b880, revision 0x00a020d3, model Raspberry Pi 3 Model B+| 11:26:03
+all: UNHANDLED 0 panic 0 11:26:03
+restore: power cycle into U-Boot 11:26:03
+power on 11:26:15
+at U-Boot prompt
+restore crcs: 17a03c01 17a03c01  11:27:28
+fatls same as before 11:27:28
+power on 11:27:40
+found after 34 s
+stable up: redox-rpi v0.7.0-dev-83-g2fb1c217+x27b9 (netboot, 2026-11-26T03:31:59Z) 11:28:19
