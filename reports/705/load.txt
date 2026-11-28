@@ -1,0 +1,5 @@
+monitor open
+loading 57832 bytes to c1000000, crc32 7111745A, about 11 s
+loaded 57832 bytes at c1000000, crc32 7111745A
+ok chain 57832 bytes, start 0x80000200, SDRAM running
+chained monitor open

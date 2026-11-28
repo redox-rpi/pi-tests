@@ -1,0 +1,4 @@
+exp
+expander: FXL6408 id A0, LAN_RUN on, dir 0C out 08 hiz F3
+ok exp
+rbc> 
