@@ -1,0 +1,33 @@
+eth C0A8B278 1
+usb: DWC2 2.80A, 8 channels, device on the root port, high speed
+usb: device 1: 0424:2514, USB 2.00, class 09, max packet 64, 1 configuration(s)
+usb: hub 1: 4 ports, power good after 100 ms
+usb: hub 1 port 1: connected after 0 ms
+usb: hub 1 port 1: high-speed device
+usb: device 2: 0424:2514, USB 2.00, class 09, max packet 64, 1 configuration(s)
+usb: hub 2: 3 ports, power good after 100 ms
+usb: hub 2 port 1: connected after 260 ms
+usb: hub 2 port 1: high-speed device
+usb: device 3: 0424:7800, USB 2.10, class FF, max packet 64, 1 configuration(s)
+usb: hub 2 port 2: empty (status 00000100)
+usb: hub 2 port 3: connected after 1003 ms
+usb: hub 2 port 3: high-speed device
+usb: device 4: 05E3:0610, USB 2.00, class 09, max packet 64, 1 configuration(s)
+usb: hub 4: 4 ports, power good after 100 ms
+usb: hub 4 port 1: connected after 0 ms
+usb: hub 4 port 1: low-speed device, skipped
+usb: hub 4 port 2: empty (status 00000100)
+usb: hub 4 port 3: empty (status 00000100)
+usb: hub 4 port 4: empty (status 00000100)
+usb: hub 1 port 2: empty (status 00000100)
+usb: hub 1 port 3: empty (status 00000100)
+usb: hub 1 port 4: empty (status 00000100)
+usb: 3 high-speed device(s) behind the root hub
+eth: LAN7800 rev 2, endpoints in 1 out 2 (max packet 512), MAC <mac>
+eth: FIFOs and receive filter set
+eth: PHY 0007:C132, autonegotiation restarted (0)
+eth: 11 ms: BMSR 79C9
+
+EXCEPTION 12 (bad L2 alias): sr 0x2000000A pc 0x80006E46 sp 0xfffffff8
+IC0 C 00000000 S 00000000 SRC 00000000 00000000  IC1 C 00000000 S 00000000 SRC 00000000 00000000
+IC0 MASK 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000

@@ -1,0 +1,7 @@
+usbon
+power: USB on, PM_IMAGE 0003107F PM_USB 00000001
+power: ETH_CLK GPIO 42 on, CM_GP1CTL 00000295 DIV 00014D55, PLLC PER 499999 kHz, core 249999 kHz
+expander: FXL6408 id A2, LAN_RUN on, dir 0C out 08 hiz F3
+power: LAN reset on GPIO 30 pulsed, GPLEV0 4000C1FF (GPIO 31 0)
+ok usbon
+rbc> 
