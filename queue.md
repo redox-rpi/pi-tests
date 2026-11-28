@@ -95,7 +95,7 @@ waited for.
 
 ## Queue
 
-**Next number: 696**
+**Next number: 697**
 
 | # | Test | Owner | Image | Needs | Status |
 |---|---|---|---|---|---|
@@ -362,6 +362,7 @@ waited for.
 | 494 | No release, #543 Pi 400 socdump hdmi rerun (fix 7c58ff66) | done: both ports read. A: both idle (PHY in reset, 0 frames, 640x480 timing set). B: firmware drives HDMI0 without sink, 25.2 MHz 60 fps, audio info frame on, but MAI off and N/CTS 0; HDMI1 idle. No hang | [report](reports/494.md) |
 | 493 | No release, tinycc #13 GCC -O2 baseline (G/O2/T) | pass: all crc right; O2/G 1.01–1.02 (no gain); T/O2 fl 1.12, fb 1.71 and 1.91 | [report](reports/493.md) |
 | 486 | No release, #543 Pi 400 socdump hdmi | blocked by tool: socdump stops at 'map 0xfef00700: Invalid argument' (unaligned map?) in both boots; DVP sw_init/misc_config 0; no hang. Boot B (hotplug forced) gives a 640x480 firmware framebuffer, A none | [report](reports/486.md) |
+| 696 | No release, rof [#116](https://github.com/redox-rpi/rpi-open-firmware/issues/116) (network boot N1) **DWC2 USB host from our VPU firmware: enumerate the LAN7515 hub on the 3B+'s root port, Pi 3B+, no person, no card write, about 10 minutes.** First step of network boot without U-Boot: our bootcode drives the USB controller as a host (polled, DMA) and reads the device descriptor of the device on the root port. On the 3B+ that is the LAN7515's hub (expected `0424:2514`, class 09). Firmware branch `netboot-116` (ae7ad09), monitor build. Payload `~/rbc-build/payloads/netboot-n1-20261128a/` (`sha256sum -c SHA256SUMS`; `bootcode-n1-20261128a.bin` e3e4fb1a…). **Steps:** 1) Power cycle, `rbc-load.sh --enter bootcode-n1-20261128a.bin c1000000 chainmon` as in Test 380. Banner `nb116-ae7ad09`. 2) `usbon`: copy its `power:` and `expander:` lines and `ok usbon`. 3) `usb`: copy all `usb:` and `err usb:` lines and `ok usb`. 4) `usb` a second time (core reset again), copy the lines. 5) Shelly power cycle; the selector boots stable. **Pass:** step 3 prints `usb: DWC2 …, device on the root port, high speed` and `usb: device 0424:2514 … class 09` (any 0424:xxxx hub is a pass; note the ID) and `ok usb`. If it fails, the `err usb:` line names the step (no core, core reset, host mode, root port, descriptor with an error number); report it as it is. | firmware session | `~/rbc-build/payloads/netboot-n1-20261128a/` + selector card (no write) | test Pi 3B+, serial, Shelly | ready |
 | 485 | v0.7.0 outlook, #540 REQ-NET-8 Pi 400 Ethernet rerun (net8b) | no crash; MAC right 3/3, DHCP 3/3 but within 60 s of reboot only 1/3 (U-Boot TFTP retries #394); NTP + 4 dns PASS; 100 MiB SHA right, ~11 MB/s curl, 8.7 nc, 12.8 nc→null (< 20); ifconfig MAC 00:00:00:00:00:00 | [report](reports/485.md) |
 | 491 | v0.6.0, #481 serial-rx2 rerun with fixed script (PR #547 b4bf832b) | pass: B 20/20 and 100/100, 0 late, 0 LOST, longest line 17 s; rx_overruns 0; pi-test 6/6. Stable A also 100/100, 0 LOST (longest 28 s) | [report](reports/491.md) |
 | 490 | v0.6.0, #481 serial-rx2 (PR #547) | fail as written (19/20, 97/100, 96/100), but every LOST line is complete in the console log; rx_overruns 0 in all readings, rx_bytes matches bytes sent; pi-test 6/6. Lost = late (30 s wait vs. per-char redraw), not short | [report](reports/490.md) |
